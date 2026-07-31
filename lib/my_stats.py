@@ -33,8 +33,8 @@ if __name__ == "__main__":
 
         
 def minuit_stats(m):
-    print (f"chi-quadro: {m.fval:.2f}")
-    print (f"chi-quadro ridotto: {m.fval / m.ndof:.2f}")
+    print (f"chi-squared: {m.fval:.2f}")
+    print (f"reduced chi-squared: {m.fval / m.ndof:.2f}")
     print (f"dof: {m.ndof:.2f}")
     print (f"p-value: {(1. - chi2.cdf (m.fval, df = m.ndof)):.2f}")
     
