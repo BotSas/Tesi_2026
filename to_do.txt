@@ -1,5 +1,0 @@
-- tradurre in inglese commenti e nomi variabili
-- sistemare grafico finale / riflarlo con plotly
-- capire come funziona metodo unbinned log likelihood
-- ripassare teoria statistica
-- leggere 5 paper

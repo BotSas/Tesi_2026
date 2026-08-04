@@ -1,0 +1,15 @@
+Io carico in questa cartella drive tutti i miei file, ma ho fatto anche una repository perché mi piace vedere i quadratini verdi su GitHub.
+Link: https://github.com/BotSas/Tesi_2026 
+
+
+
+4/08
+
+- generazione dati in distribuzione esponenziale, plot su istogramma
+- funzioni per calcolo S e G, plot sul piando dei fasori
+- funzione per aggiunta rumore (forse da sistemare, non vedo cambiamenti significativi alzando il signal to noise ratio)
+
+
+
+
+
