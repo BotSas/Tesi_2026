@@ -1,5 +1,5 @@
-Io carico in questa cartella drive tutti i miei file, ma ho fatto anche una repository perché mi piace vedere i quadratini verdi su GitHub.
-Link: https://github.com/BotSas/Tesi_2026 
+Io carico in questa cartella drive tutti i miei file, ma ho fatto anche una repository.
+Link: (per ora è privata)
 
 
 
@@ -12,4 +12,13 @@ Link: https://github.com/BotSas/Tesi_2026
 
 
 
+5/08
 
+- ancora da sistemare il problema con il rumore
+- non ho scritto nulla, ho solo appuntato logica e struttura dietro la deconvoluzione dei dati
+
+
+
+
+DOMANDE: 
+Posso mettere la repo pubblica in modo che sia accessibile anche a voi?
