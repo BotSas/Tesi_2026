@@ -23,8 +23,12 @@ Link: (per ora è privata)
 
 - sistemato il rumore ->  ora vorrei inserire un modo consistente per fare la stessa cosa in altri punti del codice
 - Implementata simulazione di dati + rumore + IRF
-- scritte funzioni per la lettura/importazione di file tiff
+- scritte funzioni per la lettura/importazione di file tiff - non finito
 
+
+7/08
+
+- Finita la parte di generazione di segnale + IRF (solo singolo esponenziale), con deconvoluzione e plot sul piano dei fasori
 
 
 
