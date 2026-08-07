@@ -19,6 +19,20 @@ Link: (per ora è privata)
 
 
 
+6/08
+
+- sistemato il rumore ->  ora vorrei inserire un modo consistente per fare la stessa cosa in altri punti del codice
+- Implementata simulazione di dati + rumore + IRF
+- scritte funzioni per la lettura/importazione di file tiff
+
+
+
+
 
 DOMANDE: 
-Posso mettere la repo pubblica in modo che sia accessibile anche a voi?
+- Posso mettere la repo pubblica? c'è qualcosa che dovrei evitare di inserire? (ad esempio i paper su cui mi baso per la teoria) 
+- Nell'immagine che mi avete fornito, si conosce per caso la larghezza dei bin temporali? Io ho considerato 12.5 ns
+
+COSE DA RISOLVERE
+- Nella parte di convoluzione/deconvoluzione manca il piano dei fasori
+- ho sbagliato qualcosa nel binning dell'istogramma (sempre sezione 3)
