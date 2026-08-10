@@ -26,9 +26,23 @@ Link: (per ora è privata)
 - scritte funzioni per la lettura/importazione di file tiff - non finito
 
 
+
 7/08
 
 - Finita la parte di generazione di segnale + IRF (solo singolo esponenziale), con deconvoluzione e plot sul piano dei fasori
+
+
+
+10/08
+
+- Corretto un errore semi-grave che si ripeteva in 2 punti diversi: un tempo di 13 ns veniva salvato nel bin "13ns" del primo impulso laser invece
+  che nel bin 0.5 del secondo impulso. Questo sballava i risultati nel piano dei fasori soprattutto per tau >3
+- Modificato binning prima parte, ora ho messo 4096 invece che un calcolo automatico. In teoria dovrebbe assomigliare di più a dati reali ma si perde 
+  la dipendenza tra bin e numero di eventi quindi potrebbe essere sbagliato. Inoltre il grafico è meno leggibile
+- Introdotta una nuova funzione per il plot del piano dei fasori, aggiornamento sezioni vecchie
+- Generazione di dati semplice a doppio esponenziale
+
+
 
 
 
@@ -36,7 +50,3 @@ Link: (per ora è privata)
 DOMANDE: 
 - Posso mettere la repo pubblica? c'è qualcosa che dovrei evitare di inserire? (ad esempio i paper su cui mi baso per la teoria) 
 - Nell'immagine che mi avete fornito, si conosce per caso la larghezza dei bin temporali? Io ho considerato 12.5 ns
-
-COSE DA RISOLVERE
-- Nella parte di convoluzione/deconvoluzione manca il piano dei fasori
-- ho sbagliato qualcosa nel binning dell'istogramma (sempre sezione 3)
