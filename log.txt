@@ -43,6 +43,15 @@ Link: (per ora è privata)
 - Generazione di dati semplice a doppio esponenziale
 
 
+11/08
+
+- Generazione di dati con IRF a doppio esponenziale
+
+
+12/08
+
+- Inizio a far fatica a tener traccia dei nomi delle variabili che uso per testare le funzioni...
+- Generazione di dati semplici a 3 componenti esponenziali. Switch tra 2-3 esponenziali
 
 
 
