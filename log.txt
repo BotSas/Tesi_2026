@@ -43,19 +43,29 @@ Link: (per ora è privata)
 - Generazione di dati semplice a doppio esponenziale
 
 
+
 11/08
 
 - Generazione di dati con IRF a doppio esponenziale
+
 
 
 12/08
 
 - Inizio a far fatica a tener traccia dei nomi delle variabili che uso per testare le funzioni...
 - Generazione di dati semplici a 3 componenti esponenziali. Switch tra 2-3 esponenziali
+- Plot sul piano dei fasori delle esponenziali associate a tutti i pixel. Ovviamente senza fare deconvolulzione con IRF viene un casino
+
+
+
+13/08
+
+- Importate immagini di test da "Zenodo" (repository di phasor.py)
+- Inizio separazione immagine - IRF con rappresentazione su piano dei fasori (da rivedere)
+- Sistemato errore convoluzione exp generata - IRF generata (da rivedere)
 
 
 
 
-DOMANDE: 
-- Posso mettere la repo pubblica? c'è qualcosa che dovrei evitare di inserire? (ad esempio i paper su cui mi baso per la teoria) 
-- Nell'immagine che mi avete fornito, si conosce per caso la larghezza dei bin temporali? Io ho considerato 12.5 ns
+TO DO assolutamente: trovare un modo sensato per organizzare le variabili (adesso metà sono ridefinite, l'altra metà sono chiamate 1, 2, 3, 4... un disastro)
+TO DO: sistemare la parte finale in funzioni. Adesso è un blocco di codice
