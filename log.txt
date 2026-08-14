@@ -66,6 +66,11 @@ Link: (per ora è privata)
 
 
 
+14/08
+
+- Sistemata deconvoluzione immagine di calibrazione in fluoroforo - IRF, poi deconvoluzione immagine con IRF ora nota
+
+
+
 
 TO DO assolutamente: trovare un modo sensato per organizzare le variabili (adesso metà sono ridefinite, l'altra metà sono chiamate 1, 2, 3, 4... un disastro)
-TO DO: sistemare la parte finale in funzioni. Adesso è un blocco di codice
