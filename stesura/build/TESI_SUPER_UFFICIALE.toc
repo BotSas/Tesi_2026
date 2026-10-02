@@ -1,0 +1,7 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
+\contentsline {section}{\numberline {2}Cenni teorici}{2}{section.2}%
+\contentsline {section}{\numberline {3}Sviluppo del modello}{2}{section.3}%
+\contentsline {section}{\numberline {4}Test su immagini}{2}{section.4}%
+\contentsline {section}{\numberline {5}Conclusioni}{2}{section.5}%

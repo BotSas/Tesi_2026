@@ -1,0 +1,100 @@
+% Benvenuti nel template per le relazioni di Sperimentazioni di Fisica 1 del corso triennale in Astronomia dell'Università di Padova.
+% Per compilarlo, cliccate su Menu, selezionate come compilatore "pdfLaTeX", TeX Live Version 2020 (o uno degli altri, whatever works), e come documento principale "Relazione.tex"
+
+%%% Preambolo del documento %%%
+% Non toccate questa roba, a meno che non siate abbastanza sgamati da sapere quello che state facendo, tipo vi piacciono di più certi pacchetti rispetto ad altri, o magari ve ne manca qualcuno.
+\documentclass[a4paper, 12pt]{article} %titlepage
+\usepackage[margin=1in]{geometry}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{fixmath}
+\usepackage{graphicx}
+\usepackage{floatflt}
+\usepackage[export]{adjustbox}
+\usepackage{epsfig}
+% \usepackage{pstricks}
+\usepackage[labelfont=bf, font=scriptsize]{caption}
+\usepackage[italian]{varioref}
+\usepackage[suftesi]{frontespizio}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage{comment}
+\usepackage{lipsum}
+\usepackage{wrapfig}
+\pgfplotsset{compat=1.16}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
+\usepackage{svg}
+\usepackage{siunitx}
+\usepackage{tabularx}
+
+% ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte
+\usepackage{geometry}
+\usepackage{changepage}
+\usepackage{colortbl}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{10ex plus 3ex minus 2ex}{4.3ex plus .22ex}
+\titlespacing*{\subsection}{0pt}{5.4ex plus .3ex minus .2ex}{2.8ex plus .2ex}
+\usepackage[italian]{babel}
+
+% FINE ROBA AGGIUNTA DA SAS
+
+\begin{document}
+
+\begin{frontespizio}
+
+\Universita{Milano-Bicocca}
+\Logo{immagini/logoUNIMIB.png}
+\Dipartimento{Fisica}
+\Corso[Laurea Triennale]{Fisica} 
+\Annoaccademico{2025-2026}
+\Titoletto{Tesi di Laurea Triennale}
+\Titolo{Metodo dei fasori per l'analisi dei tempi di vita di fluorescenza}
+\Sottotitolo{Novembre 2026}
+
+\Candidato[898437]{Di Lernia Sara, \textsf {s.dilernia1@campus.unimib.it}}
+\NRelatore{Relatrice}{} 
+\Relatore{Prof.ssa Laura Sironi}
+\NCorrelatore{Correlatore}{}
+\Correlatore{Dott. Davide Panzeri}
+
+
+\end{frontespizio}
+
+
+\IfFileExists{\jobname-frn.pdf}{}{%
+\immediate\write18{lualatex -interaction=nonstopmode -output-directory=build \jobname-frn.tex}}
+
+
+
+
+%%% Indice %%%
+\vspace*{\fill}
+\tableofcontents
+\vspace*{\fill}
+\newpage
+
+
+%\input{SEZIONI/01_OBIETTIVI.tex}
+
+\input{sezioni/01_introduzione.tex}
+\input{sezioni/02_cenni_teorici.tex}
+\input{sezioni/03_sviluppo_del_modello.tex}
+\input{sezioni/04_test_su_immagini.tex}
+\input{sezioni/05_conclusioni.tex}
+
+
+
+
+\end{document}
+
+
