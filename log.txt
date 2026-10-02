@@ -79,6 +79,7 @@ Link: (per ora è privata)
 - Conversione numpy -> xarray. Ho tenuto i Pandas dataframe per il plotting, da vedere se ci sono problemi di compatibilità
 
 
+
 1/10
 
 - Sistemata funzione per la proiezione ortogonale
@@ -91,8 +92,8 @@ Link: (per ora è privata)
 2/10
 
 - Sistemati problemi (gravi) con il rumore. Praticamente non aggiungevo rumore nella parte di doppio/triplo esponenziale
-
-
+- Aggiunto scheletro della tesi (file Latex, frontespizio, cartella per le fonti)
+- Iniziato filtro median sul piano dei fasori (utilizzata funzione preesistente di phasorpy)
 
 
 
