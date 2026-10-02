@@ -93,7 +93,10 @@ Link: (per ora è privata)
 
 - Sistemati problemi (gravi) con il rumore. Praticamente non aggiungevo rumore nella parte di doppio/triplo esponenziale
 - Aggiunto scheletro della tesi (file Latex, frontespizio, cartella per le fonti)
-- Iniziato filtro median sul piano dei fasori (utilizzata funzione preesistente di phasorpy)
+- Iniziato (e circa finito) filtro median sul piano dei fasori (utilizzata funzione preesistente di phasorpy)
+
+
+DA SEPARARE (FORSE) MASK E FILTRO MEDIAN (ad ora phasors_from_region fa entrambe le cose e non so se mi piace))
 
 
 
