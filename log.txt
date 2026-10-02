@@ -72,5 +72,20 @@ Link: (per ora è privata)
 
 
 
+26/09
+
+- Aggiunta funzione per proiezione ortogonale di un punto su un segmento, per calcolo del rapporto tra i 2 fluorofori
+- Calcolo del rapporto tra segmenti per esponenziale singola
+- Conversione numpy -> xarray. Ho tenuto i Pandas dataframe per il plotting, da vedere se ci sono problemi di compatibilità
+
+
+1/10
+
+- Sistemata funzione per la proiezione ortogonale
+- Inserita funzione per l'area dei triangoli (rapporto fluorofori per decadimenti a 3 esponenziali)
+
+
+
+
 
 TO DO assolutamente: trovare un modo sensato per organizzare le variabili (adesso metà sono ridefinite, l'altra metà sono chiamate 1, 2, 3, 4... un disastro)
