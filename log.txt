@@ -88,6 +88,11 @@ Link: (per ora è privata)
 
 
 
+2/10
+
+- Sistemati problemi (gravi) con il rumore. Praticamente non aggiungevo rumore nella parte di doppio/triplo esponenziale
+
+
 
 
 
