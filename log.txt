@@ -83,6 +83,9 @@ Link: (per ora è privata)
 
 - Sistemata funzione per la proiezione ortogonale
 - Inserita funzione per l'area dei triangoli (rapporto fluorofori per decadimenti a 3 esponenziali)
+- Aggiunte error bar a universal_phasor_plot
+- Calcolo statistiche della nuvola di dati: media e deviazione standard
+
 
 
 
