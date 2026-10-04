@@ -156,7 +156,7 @@ def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8)):     
 
 def image_flattener(image):
 
-    ''' Plots a 2d image with the amount of photons per pixel in total time, also returns pixel with highest count '''
+    ''' Plots a 2d image with the amount of photons per pixel in total time '''
 
     flat_image = image.sum(dim = "time")      # sum of total photons
     flat_pixels = flat_image.stack(pixel = ("x", "y"))
@@ -164,22 +164,21 @@ def image_flattener(image):
     plt.imshow(flat_image.values, cmap = "magma")         # alternatives I like: plasma, viridis, gray
     plt.colorbar(label = "total counts")
 
-    max_index = flat_pixels.argmax(dim="pixel").item()               # auto select point with highest counts
-    max_pixel = np.unravel_index(max_index, flat_image.shape)
+    # max_index = flat_pixels.argmax(dim="pixel").item()               # auto select point with highest counts
+    # max_pixel = np.unravel_index(max_index, flat_image.shape)
 
-    plt.scatter(
-        max_pixel[1],
-        max_pixel[0],
-        facecolors = "none",
-        edgecolors = "cyan",
-        marker = "o",
-        s = 100,
-        linewidths = 2,
-    )
+    # plt.scatter(              # commented highest count pixel selection, pointless
+    #     max_pixel[1],
+    #     max_pixel[0],
+    #     facecolors = "none",
+    #     edgecolors = "cyan",
+    #     marker = "o",
+    #     s = 100,
+    #     linewidths = 2,
+    # )
 
     plt.show()
 
-    return max_pixel
 
 
 
