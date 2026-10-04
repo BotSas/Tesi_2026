@@ -3,5 +3,7 @@
 \contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
 \contentsline {section}{\numberline {2}Cenni teorici}{2}{section.2}%
 \contentsline {section}{\numberline {3}Sviluppo del modello}{2}{section.3}%
-\contentsline {section}{\numberline {4}Test su immagini}{2}{section.4}%
-\contentsline {section}{\numberline {5}Conclusioni}{2}{section.5}%
+\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Deconvoluzione del segnale IRF}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Test su immagini}{3}{section.4}%
+\contentsline {section}{\numberline {5}Conclusioni}{3}{section.5}%

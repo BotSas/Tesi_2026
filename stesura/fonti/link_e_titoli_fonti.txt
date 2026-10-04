@@ -1,1 +1,14 @@
-nothing to see
+Risorse teoriche: link a tutto ci di cui non ho un pdf
+
+
+PARTE COMPUTAZIONALE
+
+https://napari-phasors.readthedocs.io/en/stable/guides/flim_workflow.html
+
+Davide repo: https://github.com/DBP008/spectral-phasors-analysis
+
+
+
+PARTE TEORICA
+
+Wiki - analisi fasoriale: https://en.wikipedia.org/wiki/Phasor_approach_to_fluorescence_lifetime_and_spectral_imaging

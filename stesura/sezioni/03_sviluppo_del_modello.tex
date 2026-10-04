@@ -1,2 +1,50 @@
 \section{Sviluppo del modello}\label{sec:sviluppo_del_modello} 
 
+
+la stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e l'analisi dei suddetti)
+e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
+
+Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
+
+
+
+
+
+\subsection{Generazione dei segnali}
+
+% vedrò in seguito se spostare questa roba nella parte teorica
+
+Come citato nella sezione (), %aggiungere riferimento ai cenni teorici nella sezione adeguata
+i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
+
+\begin{equation}
+    N(t) = N_0 e^{-\frac{t}{\tau}}
+    \label{eq:exp_decay}
+\end{equation}
+
+dove \tau indica il tempo di vita di fluorescenza.\\
+
+Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser
+periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa 
+probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà 
+dettata da \ref{eq:exp_decay}.\\
+
+% Supponiamo ora di analizzare in tempo reale l'emissione di fluorescenza del campione per mezzo di un microscopio
+% a fluorescenza. I fotoni emessi dal campione possono essere raggruppati in \textit{pixel}: l'intensità di ogni
+% pixel avrà lo stesso andamento temporale di \ref{eq:exp_decay}.\\
+
+Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la 
+diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata
+dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale
+decrescente, con tempo caratteristico \tau pari al tempo di vita di fluorescenza associato al fluoroforo.\\
+
+Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \tau
+verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit}).
+
+% reference teoria iminuit
+
+
+
+
+
+\subsection{Deconvoluzione del segnale IRF}

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  2 OCT 2026 22:33
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  4 OCT 2026 22:20
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1122,7 +1122,7 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                `inkscapeversion=<version>' manually but this is very
 (svg)                unlikely to work on input line 51.
 
-<TESI_SUPER_UFFICIALE-frn.pdf, id=27, 597.50829pt x 845.04709pt>
+<TESI_SUPER_UFFICIALE-frn.pdf, id=35, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
 Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 53.
@@ -1135,29 +1135,54 @@ Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 53.
 \openout7 = TESI_SUPER_UFFICIALE.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex) (./sezioni/03_sviluppo_del_modello.tex) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [2] (./build/TESI_SUPER_UFFICIALE.aux)
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex) (./sezioni/03_sviluppo_del_modello.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+
+ []
+
+) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [2] [3] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: 92587C1983906E292820DB415EBA5815;590.
+(rerunfilecheck)             Checksum: 1F03E0021AE372BE554E779D61B03B01;984.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42466 strings out of 476553
+ 42495 strings out of 476553
  125027,1977958 words of node,token memory allocated
- 593 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 61 glue_spec, 9 attribute_list, 2 write nodes
-   avail lists: 2:263,3:115,4:30,5:64,6:17,7:411,8:2,9:90,11:44
- 63348 multiletter control sequences out of 65536+600000
- 18 fonts using 1118495 bytes
+ 605 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 18 attribute, 61 glue_spec, 11 attribute_list, 2 write nodes
+   avail lists: 2:527,3:193,4:49,5:196,6:34,7:4360,8:22,9:224,10:13,11:660
+ 63373 multiletter control sequences out of 65536+600000
+ 33 fonts using 2259199 bytes
  105i,10n,115p,774b,828s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on TESI_SUPER_UFFICIALE.pdf (3 pages, 34568 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (4 pages, 82511 bytes).
 
-PDF statistics: 102 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 147 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 12 named destinations out of 1000 (max. 131072)
+ 72 words of extra memory for PDF output out of 10000 (max. 100000000)
 
