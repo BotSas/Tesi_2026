@@ -96,8 +96,17 @@ Link: (per ora è privata)
 - Iniziato (e circa finito) filtro median sul piano dei fasori (utilizzata funzione preesistente di phasorpy)
 
 
-DA SEPARARE (FORSE) MASK E FILTRO MEDIAN (ad ora phasors_from_region fa entrambe le cose e non so se mi piace))
+
+
+4/10
+
+- Selezione punti immagine -> piano fasori
+- creato file py con tutte le funzioni di calcolo
+- Impostata parte grafica con panel (abbozzo)
 
 
 
-TO DO assolutamente: trovare un modo sensato per organizzare le variabili (adesso metà sono ridefinite, l'altra metà sono chiamate 1, 2, 3, 4... un disastro)
+DOMANDE: 
+
+- Perché i fasori relativi all'embrione di zebrafish non stanno nemmeno lontanamente sul semicerchio? 
+  C'è qualche altro fluoroforo di cui non sono a conoscenza?
