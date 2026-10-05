@@ -1,16 +1,17 @@
 \section{Sviluppo del modello}\label{sec:sviluppo_del_modello} 
 
 
-la stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e l'analisi dei suddetti)
-e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
+La stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e l'analisi dei suddetti e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
 
-Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
+\noindent Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
 
 
 
 
 
 \subsection{Generazione dei segnali}
+
+\subsubsection{Rappresentazione di decadimenti sul piano dei fasori}
 
 % vedrò in seguito se spostare questa roba nella parte teorica
 
@@ -22,29 +23,100 @@ i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
     \label{eq:exp_decay}
 \end{equation}
 
-dove \tau indica il tempo di vita di fluorescenza.\\
+\noindent dove \tau indica il tempo di vita di fluorescenza.\\
 
-Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser
-periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa 
-probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà 
-dettata da \ref{eq:exp_decay}.\\
+\noindent Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa  probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà dettata da \ref{eq:exp_decay}.\\
 
-% Supponiamo ora di analizzare in tempo reale l'emissione di fluorescenza del campione per mezzo di un microscopio
-% a fluorescenza. I fotoni emessi dal campione possono essere raggruppati in \textit{pixel}: l'intensità di ogni
-% pixel avrà lo stesso andamento temporale di \ref{eq:exp_decay}.\\
+% Supponiamo ora di analizzare in tempo reale l'emissione di fluorescenza del campione per mezzo di un microscopio a fluorescenza. I fotoni emessi dal campione possono essere raggruppati in \textit{pixel}: l'intensità di ogni pixel avrà lo stesso andamento temporale di \ref{eq:exp_decay}.\\
 
-Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la 
-diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata
-dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale
-decrescente, con tempo caratteristico \tau pari al tempo di vita di fluorescenza associato al fluoroforo.\\
+Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale decrescente, con tempo caratteristico \textit{$\tau$} pari al tempo di vita di fluorescenza associato al fluoroforo.\\
 
-Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \tau
-verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit}).
+\noindent Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \textit{$\tau$} verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit}).\\
 
-% reference teoria iminuit
+% reference teoria iminuit, risultato fit?
+
+\noindent Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori:
+
+\begin{minted}[bgcolor = Beige]{python}
+
+def phasor_calc (n, harm_n = 1): 
+
+    fft_vals = np.fft.rfft(n)
+    fft_norm = fft_vals / fft_vals[0]
+    
+    G, S = np.real(fft_norm[harm_n]), -np.imag(fft_norm[harm_n])
+
+    return G, S
+
+\end{minted}
+
+
+\noindent Si noti l'utilizzo della \textit{rfft} di \textit{Numpy} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali.
+Quando si calcola la trasformata di Fourier standard su un campione di \textit{N} eventi, verranno generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della FT, la seconda metà di questa lista di numeri sarà identica alla prima ($\textit{Im[z]} = 0 \Rightarrow z* = z$). In questo modo è possibile risparmiare risorse computazionali.\\
+
+% inserire immagine di decadimento esponenziale con rumore a zero e di fianco punto corrispondente sul piano dei fasori
+
+
+\paragraph{Generazione del rumore}
+
+Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per la generazione di rumore gaussiano sul decadimento:
+
+% immagine placeholder da sistemare
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.98\linewidth]{immagini/sing_exp_decay_noisy.png}
+    \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal to noise ratio} = 10$}
+\end{figure}
+
+\noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.
+
+
+
+\subsubsection{Generazione di decadimenti a esponenziali multipli}
+
+In una situazione reale, è possibile trovarsi a studiare un campione in presenza di più fluorofori, di carattere sia intrinseco che estrinseco. È dunque utile essere in grado di valutare la frazione di intensità di fluorescenza prodotta dalle singole sostanze.\\
+
+% riferimento alla teoria per spiegare come i fasori vincono sul fit multi esponenziale
+
+Come spiegato nella sezione (), il decadimento prodotto da un unico punto del campione si traduce in un singolo punto sul piano dei fasori. Quando il decadimento è la somma di più segnali di fluorescenza, prodotti da più fluorofori con diversi tempi di vita caratteristici e in diverse proporzioni, il punto corrispondente sul piano dei fasori si troverà non più sul semicerchio universale, bensì all'interno dell'area da esso racchiusa.\\
+
+\noindent Il codice in questa sezione si è incentrato sulla produzione di segnali ottenuti come somma di due o tre decadimenti esponenziali a $\textit{\tau}$ e intensità noti, e sulla verifica del rapporto di intensità a partire dalla posizione del decadimento sul piano dei fasori.
+
+% immagini placeholder
+
+\begin{figure}[htbp]
+    \centering
+
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{immagini/double_exp_decay.png}
+        \caption{Modello a doppio decadimento esponenziale.}
+        \label{fig:double_decay}
+    \end{subfigure}
+    \hfill 
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{immagini/triple_exp_decay.png}
+        \caption{Modello a triplo decadimento esponenziale.}
+        \label{fig:triple_decay}
+    \end{subfigure}
+    
+    \caption{Confronto tra i modelli per i decadimenti di fluorescenza a doppio e triplo esponenziale. \textit{SNR}$=10$, e questo è il motivo per cui nemmeno i marker corrsipondenti ai singoli esponenziali si trovano esattamente sul semicerchio universale. Il \textit{target} è calcolato a partire dai valori noti dei due/tre decadimenti, attraverso una media pesata di \textit{S} e \textit{G}}
+    \label{fig:confronto_decadimenti}
+\end{figure}
+
+
+Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si ricava dal rapporto dei segmenti che collegano il fasore totale ai fasori teorici dei singoli esponenziali. Dato che il fasore sperimentale non cade esattamente sulla retta passante per i due fasori teorici, per il calcolo si utilizza la sua intersezione con la retta normale (ovvero la proiezione ortogonale del fasore totale sulla congiungente).\\
+% qui dovrei spiegare anche il triplo esponenziale ma mi sa che preferisco spiegarlo prima nella teoria e poi aggiungere quello che manca qui.
+
+\paragraph{Verifica del rapporto di concentrazione}
+% Da aggiungere anche il calcolo della lunghezza dei segmenti e il confronto con i valori reali.
 
 
 
 
 
 \subsection{Deconvoluzione del segnale IRF}
+
+

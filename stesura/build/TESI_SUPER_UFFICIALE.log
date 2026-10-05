@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  4 OCT 2026 22:20
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  5 OCT 2026 23:02
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1015,33 +1015,130 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen359
 \titlewidthlast=\dimen360
 \titlewidthfirst=\dimen361
-) (./build/TESI_SUPER_UFFICIALE.aux)
+) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvrb
+ (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count381
+\FV@InFile=\read4
+\FV@TabBox=\box134
+\c@FancyVerbLine=\count382
+\FV@StepNumber=\count383
+\FV@OutFile=\write6
+) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count384
+\output=\toks54
+\linenoprevgraf=\count385
+\linenumbersep=\dimen362
+\linenumberwidth=\dimen363
+\c@linenumber=\count386
+\c@pagewiselinenumber=\count387
+\c@LN@truepage=\count388
+\c@internallinenumber=\count389
+\c@internallinenumbers=\count390
+\quotelinenumbersep=\dimen364
+\bframerule=\dimen365
+\bframesep=\dimen366
+\bframebox=\box135
+\linenoamsmath@ams@eqpen=\count391
+LaTeX Info: Redefining \\ on input line 3180.
+)
+\c@FancyVerbWriteLine=\count392
+\c@FancyVerbBufferIndex=\count393
+\c@FancyVerbBufferLength=\count394
+\c@FancyVerbBufferLine=\count395
+\c@FV@oldbufferlength=\count396
+\c@FV@TrueTabGroupLevel=\count397
+\c@FV@TrueTabCounter=\count398
+\FV@TabBox@Group=\box136
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count399
+\c@FV@HighlightLinesStop=\count400
+\FV@LoopCount=\count401
+\FV@NCharsBox=\box137
+\FV@BreakIndent=\dimen367
+\FV@BreakIndentNChars=\count402
+\FV@BreakSymbolSepLeft=\dimen368
+\FV@BreakSymbolSepLeftNChars=\count403
+\FV@BreakSymbolSepRight=\dimen369
+\FV@BreakSymbolSepRightNChars=\count404
+\FV@BreakSymbolIndentLeft=\dimen370
+\FV@BreakSymbolIndentLeftNChars=\count405
+\FV@BreakSymbolIndentRight=\dimen371
+\FV@BreakSymbolIndentRightNChars=\count406
+\c@FancyVerbLineBreakLast=\count407
+\FV@LineBox=\box138
+\FV@LineIndentBox=\box139
+\c@FV@BreakBufferDepth=\count408
+\FV@LineWidth=\dimen372
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count409
+\xs_countb=\count410
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip64
+\fb@frw=\dimen373
+\fb@frh=\dimen374
+\FrameRule=\dimen375
+\FrameSep=\dimen376
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count411
+\float@exts=\toks55
+\float@box=\box140
+\@float@everytoks=\toks56
+\@floatcapt=\box141
+)
+\minted@appexistsfile=\read5
+\minted@bgbox=\box142
+\minted@code=\write7
+\c@minted@FancyVerbLineTemp=\count412
+\c@minted@pygmentizecounter=\count413
+\@float@every@listing=\toks57
+\c@listing=\count414
+)
+runsystem(mkdir -p build/_minted-TESI_SUPER_UFFICIALE)...executed.
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
+)
+runsystem(command -v pygmentize && touch TESI_SUPER_UFFICIALE.aex)...executed.
+runsystem(rm TESI_SUPER_UFFICIALE.aex)...executed.
+ (./build/TESI_SUPER_UFFICIALE.aux)
 \openout1 = TESI_SUPER_UFFICIALE.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1077,21 +1174,21 @@ LaTeX Font Info:    ... okay on input line 51.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count381
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 51.
+\c@lstlisting=\count415
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 53.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count382
-\scratchdimen=\dimen362
-\scratchbox=\box134
-\nofMPsegments=\count383
-\nofMParguments=\count384
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count385
-\MPscratchDim=\dimen363
-\MPnumerator=\count386
-\makeMPintoPDFobject=\count387
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count416
+\scratchdimen=\dimen377
+\scratchbox=\box143
+\nofMPsegments=\count417
+\nofMParguments=\count418
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count419
+\MPscratchDim=\dimen378
+\MPnumerator=\count420
+\makeMPintoPDFobject=\count421
+\everyMPtoPDFconversion=\toks59
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1100,19 +1197,20 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen364
-\caption@adjustwidth@linewidth=\dimen365
+\caption@adjustwidth@hsize=\dimen379
+\caption@adjustwidth@linewidth=\dimen380
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package hyperref Info: Link coloring ON on input line 51.
+Package hyperref Info: Link coloring ON on input line 53.
 (./build/TESI_SUPER_UFFICIALE.out) (./build/TESI_SUPER_UFFICIALE.out)
-\@outlinefile=\write6
+\@outlinefile=\write8
 
-\openout6 = TESI_SUPER_UFFICIALE.out
+\openout8 = TESI_SUPER_UFFICIALE.out
  ("|'inkscape' -V ")
 
 Package svg Warning: No version of Inkscape was detected by invoking
@@ -1120,69 +1218,115 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                so the Inkscape export will fail quite sure as the
 (svg)                command is probably unknown to your OS. You could set
 (svg)                `inkscapeversion=<version>' manually but this is very
-(svg)                unlikely to work on input line 51.
+(svg)                unlikely to work on input line 53.
 
-<TESI_SUPER_UFFICIALE-frn.pdf, id=35, 597.50829pt x 845.04709pt>
+<TESI_SUPER_UFFICIALE-frn.pdf, id=43, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
-Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 53.
+Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 55.
 (luatex.def)             Requested size: 597.50682pt x 845.04503pt.
 [1
 
 <build/TESI_SUPER_UFFICIALE-frn.pdf>] (./build/TESI_SUPER_UFFICIALE.toc)
-\tf@toc=\write7
+\tf@toc=\write9
 
-\openout7 = TESI_SUPER_UFFICIALE.toc
+\openout9 = TESI_SUPER_UFFICIALE.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex) (./sezioni/03_sviluppo_del_modello.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--40
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [2] [3] (./build/TESI_SUPER_UFFICIALE.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[2]
+\openout6 = TESI_SUPER_UFFICIALE.pyg
+ (./build/_minted-TESI_SUPER_UFFICIALE/default.pygstyle) (./build/_minted-TESI_SUPER_UFFICIALE/FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+<immagini/sing_exp_decay_noisy.png, id=114, 1001.6622pt x 366.4089pt>
+File: immagini/sing_exp_decay_noisy.png Graphic file (type png)
+<use immagini/sing_exp_decay_noisy.png>
+Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 68.
+(luatex.def)             Requested size: 443.9066pt x 162.37773pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[3<./immagini/sing_exp_decay_noisy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+<immagini/double_exp_decay.png, id=127, 570.933pt x 415.5525pt>
+File: immagini/double_exp_decay.png Graphic file (type png)
+<use immagini/double_exp_decay.png>
+Package luatex.def Info: immagini/double_exp_decay.png  used on input line 93.
+(luatex.def)             Requested size: 217.42265pt x 158.24765pt.
+<immagini/triple_exp_decay.png, id=128, 570.933pt x 415.5525pt>
+File: immagini/triple_exp_decay.png Graphic file (type png)
+<use immagini/triple_exp_decay.png>
+Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 100.
+(luatex.def)             Requested size: 217.42265pt x 158.24765pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [4<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: 1F03E0021AE372BE554E779D61B03B01;984.
+(rerunfilecheck)             Checksum: 21A34EC8BD30F63E82108FE92CA32E17;1661.
+runsystem(rm build//TESI_SUPER_UFFICIALE.pyg)...executed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42495 strings out of 476553
+ 45672 strings out of 476553
  125027,1977958 words of node,token memory allocated
- 605 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 18 attribute, 61 glue_spec, 11 attribute_list, 2 write nodes
-   avail lists: 2:527,3:193,4:49,5:196,6:34,7:4360,8:22,9:224,10:13,11:660
- 63373 multiletter control sequences out of 65536+600000
- 33 fonts using 2259199 bytes
- 105i,10n,115p,774b,828s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (4 pages, 82511 bytes).
+ 616 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 20 attribute, 62 glue_spec, 12 attribute_list, 2 write nodes
+   avail lists: 2:779,3:180,4:96,5:226,6:33,7:4496,8:22,9:218,10:14,11:678
+ 66467 multiletter control sequences out of 65536+600000
+ 47 fonts using 3813767 bytes
+ 105i,10n,115p,774b,856s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (5 pages, 282199 bytes).
 
-PDF statistics: 147 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 12 named destinations out of 1000 (max. 131072)
- 72 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 222 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 
