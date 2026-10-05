@@ -1,11 +1,36 @@
 import numpy as np
+import pandas as pd
+import tifffile as tiff
+import sys
+import plotly.express as px
+import plotly.graph_objects as go
 import random
-import scipy as sp
-from scipy.stats import norm, chi2
+import scipy.stats as stats
 import matplotlib.pyplot as plt
 from iminuit import Minuit, cost
-import sys
+import xarray as xr
 
+# stolen from phasor.py
+from phasorpy.plot import PhasorPlot  
+from phasorpy.datasets import fetch
+from phasorpy.filter import phasor_filter_median, phasor_threshold
+
+
+# personal stufF
 import lib.randgen
 import lib.my_stats
-import lib.funclib
+
+# program specific
+import lib.phasorpyplot as phplt
+import lib.phasorfunctions as phf
+import lib.phasorgraphs as phg
+
+# graphics
+import io
+import panel as pn
+import holoviews as hv
+import hvplot.pandas
+import hvplot.xarray
+from itertools import cycle
+import colorcet
+

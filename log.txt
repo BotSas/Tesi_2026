@@ -103,6 +103,13 @@ Link: (per ora è privata)
 - Selezione punti immagine -> piano fasori
 - creato file py con tutte le funzioni di calcolo
 - Impostata parte grafica con panel (abbozzo)
+- Iniziata tesi: sviluppo del modello (gen segnali esponenziali singoli)
+
+
+
+5/10
+
+
 
 
 

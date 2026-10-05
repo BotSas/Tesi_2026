@@ -25,7 +25,7 @@ import lib.phasorpyplot as phplt
 
 
 
-# BINNED NLL FUNCTION
+# __ BINNED NLL FUNCTION __________________________________________________________________________-
 
 def expon_cdf(x, A, τ):
     return A * τ * (1.0 - np.exp(-x / τ))   # I need cdf for the binned likelihood 
@@ -148,7 +148,9 @@ def triangle_area(p1, p2, p3):              # self explainatory
 
 
 
-# SIMULATION OF DATA + IRF DECONVOLUTION
+# __ SIMULATION OF DATA + IRF DECONVOLUTION _______________________________________
+
+
 
 def irf_generation(σ, μ, counts, T_laser, num_bins = 30):       # gaussian IRF
 
@@ -213,7 +215,9 @@ def phasor_deconv(G_meas, S_meas, G_irf, S_irf):
 
 
 
-# IMPORTED IMAGE + MEDIAN FILTER
+# __ IMPORTED IMAGE + MEDIAN FILTER _________________________________________________________________
+
+
 
 def extract_irf(calib_image, τ_fluor, T_laser): 
 

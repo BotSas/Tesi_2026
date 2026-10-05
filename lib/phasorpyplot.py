@@ -130,9 +130,9 @@ def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8)):     
             ax.errorbar(
                 G_val,
                 S_val,
-                xerr=xerr,
-                yerr=yerr,
-                fmt='none',
+                xerr = xerr,
+                yerr = yerr,
+                fmt = 'none',
                 **error_style
             )
 
