@@ -48,6 +48,10 @@
 \usepackage[outputdir=build]{minted}
 \usepackage[svgnames]{xcolor}
 
+% bibliografia
+\usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{bibliografia.bib}
+
 % FINE ROBA AGGIUNTA DA SAS
 
 \begin{document}
@@ -95,7 +99,8 @@
 \input{sezioni/05_conclusioni.tex}
 
 
-
+\printbibliography  % stampa bibliografia (duh)
+% come citare: \cite{chiave} (es. Come derivato in \cite{dirac1928}...).
 
 \end{document}
 

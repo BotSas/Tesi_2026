@@ -6,7 +6,7 @@ La stesura del codice si è divisa in due momenti fondamentali: la simulazione d
 \noindent Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsection{Generazione dei segnali}
@@ -23,7 +23,7 @@ i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
     \label{eq:exp_decay}
 \end{equation}
 
-\noindent dove \tau indica il tempo di vita di fluorescenza.\\
+\noindent dove $\tau$ indica il tempo di vita di fluorescenza.\\
 
 \noindent Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa  probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà dettata da \ref{eq:exp_decay}.\\
 
@@ -31,7 +31,7 @@ i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
 
 Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale decrescente, con tempo caratteristico \textit{$\tau$} pari al tempo di vita di fluorescenza associato al fluoroforo.\\
 
-\noindent Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \textit{$\tau$} verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit}).\\
+\noindent Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \textit{$\tau$} verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit} \cite{jamesMinuitSystemFunction1975}.\\
 
 % reference teoria iminuit, risultato fit?
 
@@ -51,7 +51,7 @@ def phasor_calc (n, harm_n = 1):
 \end{minted}
 
 
-\noindent Si noti l'utilizzo della \textit{rfft} di \textit{Numpy} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali.
+\noindent Si noti l'utilizzo della \textit{rfft} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali.
 Quando si calcola la trasformata di Fourier standard su un campione di \textit{N} eventi, verranno generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della FT, la seconda metà di questa lista di numeri sarà identica alla prima ($\textit{Im[z]} = 0 \Rightarrow z* = z$). In questo modo è possibile risparmiare risorse computazionali.\\
 
 % inserire immagine di decadimento esponenziale con rumore a zero e di fianco punto corrispondente sul piano dei fasori
@@ -71,6 +71,8 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 
 \noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 
 \subsubsection{Generazione di decadimenti a esponenziali multipli}
@@ -111,12 +113,37 @@ Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si r
 % qui dovrei spiegare anche il triplo esponenziale ma mi sa che preferisco spiegarlo prima nella teoria e poi aggiungere quello che manca qui.
 
 \paragraph{Verifica del rapporto di concentrazione}
-% Da aggiungere anche il calcolo della lunghezza dei segmenti e il confronto con i valori reali.
+
+Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:
+
+\begin{table}[h!]
+    \centering
+    \label{tab:rapporti_concentrazione}
+    \setlength{\tabcolsep}{8pt}
+    \begin{tabular}{lcc}
+        \hline
+        Modello & Rapporto reale & Rapporto ricavato \\
+        \hline
+        Doppio esponenziale & $0.1700:0.2848$  & $0.1819:0.2728$ \\
+        Triplo esponenziale & $0.3000:0.5000:0.2000$ & $0.3061:0.4967:0.1972$ \\
+        \hline
+    \end{tabular}
+    \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori, $\textit{SNR}=10$}
+\end{table}
+
+% si è scelto di non calcolare le incertezze relative ai rapporti perché non ha senso bla bla bla
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Deconvoluzione del segnale IRF}
+\subsection{Generazione e analisi del segnale IRF}
 
+\subsubsection{Introduzione teorica}
+
+Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. 
+Come già menzionato, l'emissione di fluorescenza è prodotta grazie a un laser a impulsi periodici che produce un'eccitazione negli atomi del campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\
+
+\noindent Il processo di separazione del segnale proveniente dalle due diverse fonti (campione e laser) è descritto da \textit{Ranjit et al.} \cite{ranjitFitfreeAnalysisFluorescence2018} e viene di seguito riportato.
 

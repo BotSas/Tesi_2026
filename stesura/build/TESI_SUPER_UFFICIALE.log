@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  5 OCT 2026 23:02
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  6 OCT 2026 21:17
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1109,36 +1109,276 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 runsystem(mkdir -p build/_minted-TESI_SUPER_UFFICIALE)...executed.
  (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
+) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count415
+ (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count416
+\c@listtotal=\count417
+\c@listcount=\count418
+\c@liststart=\count419
+\c@liststop=\count420
+\c@citecount=\count421
+\c@citetotal=\count422
+\c@multicitecount=\count423
+\c@multicitetotal=\count424
+\c@instcount=\count425
+\c@maxnames=\count426
+\c@minnames=\count427
+\c@maxitems=\count428
+\c@minitems=\count429
+\c@citecounter=\count430
+\c@maxcitecounter=\count431
+\c@savedcitecounter=\count432
+\c@uniquelist=\count433
+\c@uniquename=\count434
+\c@refsection=\count435
+\c@refsegment=\count436
+\c@maxextratitle=\count437
+\c@maxextratitleyear=\count438
+\c@maxextraname=\count439
+\c@maxextradate=\count440
+\c@maxextraalpha=\count441
+\c@abbrvpenalty=\count442
+\c@highnamepenalty=\count443
+\c@lownamepenalty=\count444
+\c@maxparens=\count445
+\c@parenlevel=\count446
+\blx@tempcnta=\count447
+\blx@tempcntb=\count448
+\blx@tempcntc=\count449
+\c@blx@maxsection=\count450
+\blx@maxsegment@0=\count451
+\blx@notetype=\count452
+\blx@parenlevel@text=\count453
+\blx@parenlevel@foot=\count454
+\blx@sectionciteorder@0=\count455
+\blx@sectionciteorderinternal@0=\count456
+\blx@entrysetcounter=\count457
+\blx@biblioinstance=\count458
+\labelnumberwidth=\skip65
+\labelalphawidth=\skip66
+\biblabelsep=\skip67
+\bibitemsep=\skip68
+\bibnamesep=\skip69
+\bibinitsep=\skip70
+\bibparsep=\skip71
+\bibhang=\skip72
+\blx@bcfin=\read6
+\blx@bcfout=\write8
+\blx@langwohyphens=\language91
+\c@mincomprange=\count459
+\c@maxcomprange=\count460
+\c@mincompwidth=\count461
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count462
+\c@savedafterword=\count463
+\c@annotator=\count464
+\c@savedannotator=\count465
+\c@author=\count466
+\c@savedauthor=\count467
+\c@bookauthor=\count468
+\c@savedbookauthor=\count469
+\c@commentator=\count470
+\c@savedcommentator=\count471
+\c@editor=\count472
+\c@savededitor=\count473
+\c@editora=\count474
+\c@savededitora=\count475
+\c@editorb=\count476
+\c@savededitorb=\count477
+\c@editorc=\count478
+\c@savededitorc=\count479
+\c@foreword=\count480
+\c@savedforeword=\count481
+\c@holder=\count482
+\c@savedholder=\count483
+\c@introduction=\count484
+\c@savedintroduction=\count485
+\c@namea=\count486
+\c@savednamea=\count487
+\c@nameb=\count488
+\c@savednameb=\count489
+\c@namec=\count490
+\c@savednamec=\count491
+\c@translator=\count492
+\c@savedtranslator=\count493
+\c@shortauthor=\count494
+\c@savedshortauthor=\count495
+\c@shorteditor=\count496
+\c@savedshorteditor=\count497
+\c@labelname=\count498
+\c@savedlabelname=\count499
+\c@institution=\count500
+\c@savedinstitution=\count501
+\c@lista=\count502
+\c@savedlista=\count503
+\c@listb=\count504
+\c@savedlistb=\count505
+\c@listc=\count506
+\c@savedlistc=\count507
+\c@listd=\count508
+\c@savedlistd=\count509
+\c@liste=\count510
+\c@savedliste=\count511
+\c@listf=\count512
+\c@savedlistf=\count513
+\c@location=\count514
+\c@savedlocation=\count515
+\c@organization=\count516
+\c@savedorganization=\count517
+\c@origlocation=\count518
+\c@savedoriglocation=\count519
+\c@origpublisher=\count520
+\c@savedorigpublisher=\count521
+\c@publisher=\count522
+\c@savedpublisher=\count523
+\c@language=\count524
+\c@savedlanguage=\count525
+\c@origlanguage=\count526
+\c@savedoriglanguage=\count527
+\c@pageref=\count528
+\c@savedpageref=\count529
+\shorthandwidth=\skip73
+\shortjournalwidth=\skip74
+\shortserieswidth=\skip75
+\shorttitlewidth=\skip76
+\shortauthorwidth=\skip77
+\shorteditorwidth=\skip78
+\locallabelnumberwidth=\skip79
+\locallabelalphawidth=\skip80
+\localshorthandwidth=\skip81
+\localshortjournalwidth=\skip82
+\localshortserieswidth=\skip83
+\localshorttitlewidth=\skip84
+\localshortauthorwidth=\skip85
+\localshorteditorwidth=\skip86
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count530
+\c@textcitetotal=\count531
+\c@textcitemaxnames=\count532
+\c@biburlbigbreakpenalty=\count533
+\c@biburlbreakpenalty=\count534
+\c@biburlnumpenalty=\count535
+\c@biburlucpenalty=\count536
+\c@biburllcpenalty=\count537
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count538
+)
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count539
+\c@bbx:relatedtotal=\count540
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count541
+\c@cbx@tempcntb=\count542
+\c@cbx@tempcntc=\count543
+\c@cbx@tempcntd=\count544
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-01-22 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
 runsystem(command -v pygmentize && touch TESI_SUPER_UFFICIALE.aex)...executed.
 runsystem(rm TESI_SUPER_UFFICIALE.aex)...executed.
- (./build/TESI_SUPER_UFFICIALE.aux)
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count545
+\@quotereset=\count546
+(./build/TESI_SUPER_UFFICIALE.aux)
 \openout1 = TESI_SUPER_UFFICIALE.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 57.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1174,20 +1414,20 @@ LaTeX Font Info:    ... okay on input line 53.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count415
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 53.
+\c@lstlisting=\count547
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 57.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count416
+\scratchcounter=\count548
 \scratchdimen=\dimen377
 \scratchbox=\box143
-\nofMPsegments=\count417
-\nofMParguments=\count418
+\nofMPsegments=\count549
+\nofMParguments=\count550
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count419
+\MPscratchCnt=\count551
 \MPscratchDim=\dimen378
-\MPnumerator=\count420
-\makeMPintoPDFobject=\count421
+\MPnumerator=\count552
+\makeMPintoPDFobject=\count553
 \everyMPtoPDFconversion=\toks59
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1206,11 +1446,11 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 57.
 (./build/TESI_SUPER_UFFICIALE.out) (./build/TESI_SUPER_UFFICIALE.out)
-\@outlinefile=\write8
+\@outlinefile=\write9
 
-\openout8 = TESI_SUPER_UFFICIALE.out
+\openout9 = TESI_SUPER_UFFICIALE.out
  ("|'inkscape' -V ")
 
 Package svg Warning: No version of Inkscape was detected by invoking
@@ -1218,19 +1458,35 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                so the Inkscape export will fail quite sure as the
 (svg)                command is probably unknown to your OS. You could set
 (svg)                `inkscapeversion=<version>' manually but this is very
-(svg)                unlikely to work on input line 53.
+(svg)                unlikely to work on input line 57.
 
-<TESI_SUPER_UFFICIALE-frn.pdf, id=43, 597.50829pt x 845.04709pt>
+Package biblatex Info: Trying to load language 'italian'...
+Package biblatex Info: ... file 'italian.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
+File: italian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+\openout8 = TESI_SUPER_UFFICIALE.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'TESI_SUPER_UFFICIALE.bbl' found.
+ (./build/TESI_SUPER_UFFICIALE.bbl)
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
+<TESI_SUPER_UFFICIALE-frn.pdf, id=47, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
-Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 55.
+Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 59.
 (luatex.def)             Requested size: 597.50682pt x 845.04503pt.
-[1
+ [1
 
 <build/TESI_SUPER_UFFICIALE-frn.pdf>] (./build/TESI_SUPER_UFFICIALE.toc)
-\tf@toc=\write9
+\tf@toc=\write10
 
-\openout9 = TESI_SUPER_UFFICIALE.toc
+\openout10 = TESI_SUPER_UFFICIALE.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex) (./sezioni/03_sviluppo_del_modello.tex
@@ -1273,60 +1529,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
-<immagini/sing_exp_decay_noisy.png, id=114, 1001.6622pt x 366.4089pt>
+<immagini/sing_exp_decay_noisy.png, id=121, 1001.6622pt x 366.4089pt>
 File: immagini/sing_exp_decay_noisy.png Graphic file (type png)
 <use immagini/sing_exp_decay_noisy.png>
 Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 68.
 (luatex.def)             Requested size: 443.9066pt x 162.37773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 [3<./immagini/sing_exp_decay_noisy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-<immagini/double_exp_decay.png, id=127, 570.933pt x 415.5525pt>
+<immagini/double_exp_decay.png, id=137, 570.933pt x 415.5525pt>
 File: immagini/double_exp_decay.png Graphic file (type png)
 <use immagini/double_exp_decay.png>
-Package luatex.def Info: immagini/double_exp_decay.png  used on input line 93.
+Package luatex.def Info: immagini/double_exp_decay.png  used on input line 95.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
-<immagini/triple_exp_decay.png, id=128, 570.933pt x 415.5525pt>
+<immagini/triple_exp_decay.png, id=138, 570.933pt x 415.5525pt>
 File: immagini/triple_exp_decay.png Graphic file (type png)
 <use immagini/triple_exp_decay.png>
-Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 100.
+Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 102.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
-) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [4<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>] (./build/TESI_SUPER_UFFICIALE.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
+
+ []
+
+[4<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [5] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: 21A34EC8BD30F63E82108FE92CA32E17;1661.
+(rerunfilecheck)             Checksum: 92AD23A47ADFB6816FE5BD2CCF80B447;1873.
 runsystem(rm build//TESI_SUPER_UFFICIALE.pyg)...executed.
+Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
+
+\openout1 = TESI_SUPER_UFFICIALE.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45672 strings out of 476553
- 125027,1977958 words of node,token memory allocated
- 616 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 20 attribute, 62 glue_spec, 12 attribute_list, 2 write nodes
-   avail lists: 2:779,3:180,4:96,5:226,6:33,7:4496,8:22,9:218,10:14,11:678
- 66467 multiletter control sequences out of 65536+600000
- 47 fonts using 3813767 bytes
- 105i,10n,115p,774b,856s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (5 pages, 282199 bytes).
+ 52945 strings out of 476553
+ 125161,2373549 words of node,token memory allocated
+ 705 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 24 attribute, 75 glue_spec, 14 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:1,2:815,3:269,4:106,5:286,6:43,7:6059,8:61,9:297,10:15,11:877
+ 73644 multiletter control sequences out of 65536+600000
+ 48 fonts using 3944399 bytes
+ 105i,10n,115p,1439b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (6 pages, 294349 bytes).
 
-PDF statistics: 222 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 131072)
- 88 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 255 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 131072)
+ 96 words of extra memory for PDF output out of 10000 (max. 100000000)
 

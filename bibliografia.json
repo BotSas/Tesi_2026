@@ -1,0 +1,2132 @@
+{
+  "config": {
+    "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+    "label": "BetterBibTeX JSON",
+    "preferences": {
+      "ascii": "",
+      "asciiBibLaTeX": false,
+      "asciiBibTeX": true,
+      "autoExport": "immediate",
+      "autoExportDelay": 5,
+      "autoExportIdleWait": 10,
+      "autoExportPathReplaceDiacritics": false,
+      "autoExportPathReplaceDirSep": "-",
+      "autoExportPathReplaceSpace": " ",
+      "automaticTags": true,
+      "auxImport": false,
+      "baseAttachmentPath": "",
+      "biblatexExtendedDateFormat": true,
+      "biblatexExtendedNameFormat": true,
+      "biblatexExtractEprint": true,
+      "biblatexUsePrefix": true,
+      "bibtexEditionOrdinal": false,
+      "bibtexParticleNoOp": false,
+      "bibtexURL": "off",
+      "cache": true,
+      "cacheDelete": false,
+      "cacheTouch": "fill",
+      "charmap": "",
+      "chinese": false,
+      "chineseSplitName": true,
+      "citeCommand": "cite",
+      "citekeyCaseInsensitive": true,
+      "citekeyFold": true,
+      "citekeyFormat": "auth.lower + shorttitle(3, 3) + year",
+      "citekeyUnsafeChars": "\\\"#%'(),={}~",
+      "csquotes": "",
+      "DOIandURL": "both",
+      "exportBibTeXStrings": "off",
+      "exportBraceProtection": true,
+      "exportCaseProtection": "",
+      "exportSort": "citekey",
+      "exportTitlecase": "",
+      "extraFieldAsNote": false,
+      "extraMergeCitekeys": false,
+      "extraMergeCSL": false,
+      "extraMergeTeX": false,
+      "fillKeyAfter": 1,
+      "git": "config",
+      "import": true,
+      "importBibTeXStrings": true,
+      "importCaseProtection": "as-needed",
+      "importCitationKey": true,
+      "importDetectURLs": true,
+      "importExtra": true,
+      "importJabRefAbbreviations": true,
+      "importJabRefStrings": true,
+      "importNoteToExtra": "",
+      "importPlaceEvent": "inproceedings,conference,presentation,talk",
+      "importSentenceCase": "on+guess",
+      "importSentenceCaseQuoted": true,
+      "importUnknownTexCommand": "ignore",
+      "itemObserverDelay": 5,
+      "jabrefFormat": 0,
+      "japanese": false,
+      "journalAbbreviation": "abbrev",
+      "keyScope": "library",
+      "language": "langid",
+      "mapMath": "",
+      "mapText": "",
+      "packages": "",
+      "parseParticles": true,
+      "patchDates": "dateadded=dateAdded, date-added=dateAdded, datemodified=dateModified, date-modified=dateModified",
+      "postscript": "",
+      "postscriptOverride": "",
+      "preferencesOverride": "",
+      "profileRuntime": "no",
+      "profileStartup": false,
+      "qualityReport": false,
+      "quickCopyEta": "",
+      "quickCopyMode": "latex",
+      "quickCopyOrgMode": "zotero",
+      "quickCopyPandocBrackets": false,
+      "quickCopySelectLink": "zotero",
+      "rawImports": false,
+      "rawLaTag": "#LaTeX",
+      "relativeFilePaths": false,
+      "remigrate": false,
+      "resetKeyOnChange": false,
+      "separatorList": "and",
+      "separatorNames": "and",
+      "skipFields": "",
+      "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
+      "strings": "",
+      "stringsOverride": "",
+      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/,/^bdsk-url-[0-9]+$/, keywords",
+      "warnBulkModify": 10,
+      "warnTitleCased": false
+    },
+    "options": {
+      "Items": true,
+      "Normalize": false,
+      "Preferences": true,
+      "YAML": false,
+      "biblatexAPA": false,
+      "biblatexChicago": false,
+      "exportFileData": false,
+      "exportNotes": true,
+      "keepUpdated": false,
+      "worker": true,
+      "exportDir": "/home/aras/Documents/Tesi_2026",
+      "exportPath": "/home/aras/Documents/Tesi_2026/bibliografia.json"
+    }
+  },
+  "version": {
+    "zotero": "10.0.5",
+    "bbt": "9.0.70"
+  },
+  "collections": {},
+  "items": [
+    {
+      "key": "FDYFKGN9",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Phasor identifier: A cloud-based analysis of phasor-FLIM data on Python notebooks",
+      "abstractNote": "This paper introduces an innovative approach utilizing Google Colaboratory for the versatile analysis of phasor ﬂuorescence lifetime imaging microscopy (FLIM) data collected from various samples (e.g., cuvette, cells, tissues) and in various input ﬁle formats. In fact, phasor-FLIM widespread adoption has been hampered by complex instrumentation and data analysis requirements. We mean to make advanced FLIM analysis more accessible to researchers through a cloud-based solution that 1) harnesses robust computational resources, 2) eliminates hardware limitations, and 3) supports both CPU and GPU processing. We envision a paradigm shift in FLIM data accessibility and potential, aligning with the evolving ﬁeld of artiﬁcial intelligence-driven FLIM analysis. This approach simpliﬁes FLIM data handling and opens doors for diverse applications, from studying cellular metabolism to investigating drug encapsulation, beneﬁting researchers across multiple domains. The comparative analysis of freely distributed FLIM tools highlights the unique advantages of this approach in terms of adaptability, scalability, and open-source nature.",
+      "date": "12/2023",
+      "DOI": "10.1016/j.bpr.2023.100135",
+      "citationKey": "bernardiPhasorIdentifierCloudbased2023",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S2667074723000368",
+      "accessDate": "2026-10-06T15:26:31Z",
+      "shortTitle": "Phasor identifier",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "3",
+      "pages": "100135",
+      "publicationTitle": "Biophysical Reports",
+      "ISSN": "26670747",
+      "issue": "4",
+      "journalAbbreviation": "Biophysical Reports",
+      "creators": [
+        {
+          "firstName": "Mario",
+          "lastName": "Bernardi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Francesco",
+          "lastName": "Cardarelli",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:26:31Z",
+      "dateModified": "2026-10-06T15:26:31Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/FDYFKGN9",
+      "itemID": 3,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:26:28Z",
+          "dateModified": "2026-10-06T15:26:31Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/8TJPCBVI",
+          "path": "/home/aras/Zotero/storage/8TJPCBVI/Bernardi and Cardarelli - 2023 - Phasor identifier A cloud-based analysis of phasor-FLIM data on Python notebooks.pdf",
+          "select": "zotero://select/library/items/8TJPCBVI"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Biophys. Rep.",
+      "itemKey": "FDYFKGN9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FDYFKGN9"
+    },
+    {
+      "key": "3X98XFRC",
+      "version": 0,
+      "itemType": "computerProgram",
+      "title": "phasorpy/phasorpy: v0.12",
+      "abstractNote": "PhasorPy is an open-source Python library for the analysis of luminescence lifetime and hyperspectral images using the phasor approach.\n\nThis is the third beta release of the PhasorPy library. It contains new functions, an About page, and other documentation improvements.\n\nThe new io.signal_from_brighteyes_mcs, io.signal_from_tdflim, and io.lifetime_from_tdflim functions read TCSPC or lifetime data from Brighteyes MCS and ISS TDFLIM files using the brighteyes-mcs-reader and lfdfiles libraries.\n\nThe new experimental.signal_from_dho function calculates emission spectra using the Displaced Harmonic Oscillator model.\n\nThe new spectral application (python -m phasorpy spectral) and plot.SpectralPlots class interactively plot emission spectra and corresponding spectral phasor coordinates for a set of spectral components and their mixture.\n\nConda-forge packages for osx-arm64 are now available.\n\nThis release supports Python 3.12 through 3.14.\n\nWhat's Changed\n\n\n\nBump version by @cgohlke in https://github.com/phasorpy/phasorpy/pull/351\n\nFix mislabeled fractional intensities in lifetime geometry tutorial by @cgohlke in https://github.com/phasorpy/phasorpy/pull/352\n\nBump tooling and update configs by @cgohlke in https://github.com/phasorpy/phasorpy/pull/353\n\nMention Spectral Phasors Analysis software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/354\n\nAdd signal_from_tdflim and lifetime_from_tdflim functions by @cgohlke in https://github.com/phasorpy/phasorpy/pull/355\n\nMention FLIMKit software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/356\n\nAdd spectral application, SpectralPlots class, and signal_from_dho function by @cgohlke in https://github.com/phasorpy/phasorpy/pull/358\n\nEnable type checking for tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/359\n\nMention PyFLI library by @cgohlke in https://github.com/phasorpy/phasorpy/pull/361\n\nAdd signal_from_brighteyes_mcs function by @mattia-donato in https://github.com/phasorpy/phasorpy/pull/340\n\nImprove signal_from_brighteyes_mcs docs and tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/363\n\nAdd About page and AI contribution policy by @cgohlke in https://github.com/phasorpy/phasorpy/pull/364\n\nRelease v0.12 by @cgohlke in https://github.com/phasorpy/phasorpy/pull/365\n\n\nNew Contributors\n\n\n\n@mattia-donato made their first contribution in https://github.com/phasorpy/phasorpy/pull/340\n\n\nFull Changelog: https://github.com/phasorpy/phasorpy/compare/v0.11...v0.12",
+      "date": "2026-07-20",
+      "DOI": "10.5281/ZENODO.13862586",
+      "citationKey": "christophgohlkePhasorpyPhasorpyV0122026",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.13862586",
+      "accessDate": "2026-10-06T16:22:19Z",
+      "shortTitle": "phasorpy/phasorpy",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "rights": "MIT License",
+      "versionNumber": "v0.12",
+      "company": "Zenodo",
+      "creators": [
+        {
+          "firstName": "",
+          "lastName": "Christoph Gohlke",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "",
+          "lastName": "Bruno Pannunzio",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "",
+          "lastName": "Bruno Schuty",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "",
+          "lastName": "Mattia Donato",
+          "creatorType": "programmer"
+        },
+        {
+          "firstName": "",
+          "lastName": "Rodrigo Blanco",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T16:22:19Z",
+      "dateModified": "2026-10-06T16:22:19Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/3X98XFRC",
+      "itemID": 37,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "BLN89LFR",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "3X98XFRC",
+          "note": "<div data-schema-version=\"9\"><p>Phasorpy l’ho usato per tutte le 10mila librerie che ho importato per calcolo fasoriale e SOPRATTUTTO filtro median.</p>\n<p>Ho usato anche un articolo con l’embrione di Zebrafish ma quello lo cito a parte</p>\n<p></p>\n<p></p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:24:33Z",
+          "dateModified": "2026-10-06T16:30:18Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/BLN89LFR"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "3X98XFRC",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3X98XFRC"
+    },
+    {
+      "key": "VYR3UUT7",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "FLUTE: a Python GUI for interactive phasor analysis of FLIM data",
+      "abstractNote": "This repository contains the Fluorescence lifetime imaging microscopy (FLIM) data relative to the following publication \"FLUTE: a Python GUI for interactive phasor analysis of FLIM data\" https://www.biorxiv.org/content/10.1101/2023.03.31.534529v1\n\n\nFluorescein_embyo.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the Embryo.tif\n\n\nEmbryo.tif  file contains the fluorescence intensity decay of a zebrafish embryo at 3 days post fertilisation.\n\n\nFluorescein_embyo.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the Embryo.tif stack\n\n\nEmbryo.tif  file contains the fluorescence intensity decay of a zebrafish embryo at 3 days post fertilisation.\n\n\nFluorescein_hMSC.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the hMSC-ZOOM, hMSC control, hMSC_rotenone stacks.\n\n\nhMSC-ZOOM.tif and hMSC control.tif stacks contain the fluorescence intensity decay of mesenchymal stromal cells in control condition\n\n\nhMSC_rotenone.tif stack contains the fluorescence intensity decay of mesenchymal stromal cells treated with rotenone\n\n\nAll files have been acquired with the following parameters:\n\n\n\n\t\ntemporal bin number = 56\n\t\nlaser repetition rates = 80 MHz\n\t\nbin width = 0.223ns",
+      "date": "2023-06-16",
+      "DOI": "10.5281/zenodo.8046636",
+      "citationKey": "daleFLUTEPythonGUI2023",
+      "url": "https://zenodo.org/records/8046636",
+      "accessDate": "2026-10-06T16:36:43Z",
+      "shortTitle": "FLUTE",
+      "libraryCatalog": "Zenodo",
+      "creators": [
+        {
+          "firstName": "Gottlieb",
+          "lastName": "Dale",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Asadipour",
+          "lastName": "Bahar",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ung Thi Phuong",
+          "lastName": "Lien",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stringari",
+          "lastName": "Chiara",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T16:36:43Z",
+      "dateModified": "2026-10-06T16:36:43Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/VYR3UUT7",
+      "itemID": 44,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://zenodo.org/records/8046636",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:36:49Z",
+          "dateModified": "2026-10-06T16:36:49Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/4NTNSPHY",
+          "path": "/home/aras/Zotero/storage/4NTNSPHY/8046636.html",
+          "select": "zotero://select/library/items/4NTNSPHY"
+        }
+      ],
+      "notes": [
+        {
+          "key": "K29CLDRC",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "VYR3UUT7",
+          "note": "Qui ho proprio inclulato la foto, quindi direi che cito loro e basta",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:37:02Z",
+          "dateModified": "2026-10-06T16:37:02Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/K29CLDRC"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "VYR3UUT7",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VYR3UUT7"
+    },
+    {
+      "key": "J22MQNZR",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The Phasor Approach to Fluorescence Lifetime Imaging Analysis",
+      "abstractNote": "Changing the data representation from the classical time delay histogram to the phasor representation provides a global view of the ﬂuorescence decay at each pixel of an image. In the phasor representation we can easily recognize the presence of different molecular species in a pixel or the occurrence of ﬂuorescence resonance energy transfer. The analysis of the ﬂuorescence lifetime imaging microscopy (FLIM) data in the phasor space is done observing clustering of pixels values in speciﬁc regions of the phasor plot rather than by ﬁtting the ﬂuorescence decay using exponentials. The analysis is instantaneous since is not based on calculations or nonlinear ﬁtting. The phasor approach has the potential to simplify the way data are analyzed in FLIM, paving the way for the analysis of large data sets and, in general, making the FLIM technique accessible to the nonexpert in spectroscopy and data analysis.",
+      "date": "01/2008",
+      "DOI": "10.1529/biophysj.107.120154",
+      "citationKey": "digmanPhasorApproachFluorescence2008",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S0006349508707112",
+      "accessDate": "2026-10-06T15:27:31Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "94",
+      "pages": "L14-L16",
+      "publicationTitle": "Biophysical Journal",
+      "ISSN": "00063495",
+      "issue": "2",
+      "journalAbbreviation": "Biophysical Journal",
+      "creators": [
+        {
+          "firstName": "Michelle A.",
+          "lastName": "Digman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Valeria R.",
+          "lastName": "Caiolfa",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Moreno",
+          "lastName": "Zamai",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Enrico",
+          "lastName": "Gratton",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:31Z",
+      "dateModified": "2026-10-06T15:27:32Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/J22MQNZR",
+      "itemID": 26,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:16Z",
+          "dateModified": "2026-10-06T15:27:32Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/PNW7EXLN",
+          "path": "/home/aras/Zotero/storage/PNW7EXLN/Digman et al. - 2008 - The Phasor Approach to Fluorescence Lifetime Imaging Analysis.pdf",
+          "select": "zotero://select/library/items/PNW7EXLN"
+        }
+      ],
+      "notes": [
+        {
+          "key": "6KV9G79X",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "J22MQNZR",
+          "note": "<div data-schema-version=\"9\"><p>probabilmente prenderò la parte teorica sul metodo dei fasori da qui. è citato come fonte primaria nel paper che mi ha passato la prof, da cui ho studiato come funziona convoluz-deconvoluz con IRF</p>\n<ul>\n<li>\n<strong>Perché citarlo:</strong> Digman non ha inventato la matematica dei fasori (quella si usa in elettrotecnica da un secolo), ma è il paper cardine che ha importato questa rappresentazione nell'imaging FLIM per separare le diverse specie fluorescenti senza usare i fit esponenziali complessi. Quando nel tuo script scrivi la funzione <code>phasor_calc</code> per estrarre le coordinate G e S dall'istogramma dei fotoni tramite <code>np.fft.rfft</code>, Digman è la fonte che garantisce che quei due numeri abbiano un preciso significato biofisico legato al semicerchio universale.\n</li>\n<li>\n<p><strong>Come citarlo:</strong> Lo metti nell'introduzione teorica per giustificare la scelta dell'intero approccio.</p>\n<blockquote>\n<p><em>\"Per aggirare le complessità computazionali dei fit multi-esponenziali, l'analisi dei decadimenti di fluorescenza è stata condotta nel dominio delle frequenze sfruttando l'approccio dei fasori, introdotto per le applicazioni FLIM da Digman et al. \\cite{digman2008}.\"</em></p>\n</blockquote>\n</li>\n</ul>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T17:07:36Z",
+          "dateModified": "2026-10-06T17:14:11Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/6KV9G79X"
+        }
+      ],
+      "autoJournalAbbreviation": "Biophys. J.",
+      "itemKey": "J22MQNZR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/J22MQNZR"
+    },
+    {
+      "key": "6ISRIWPB",
+      "version": 0,
+      "itemType": "webpage",
+      "title": "FLIM Phasor Workflow — napari-phasors",
+      "citationKey": "FLIMPhasorWorkflow",
+      "url": "https://napari-phasors.readthedocs.io/en/stable/guides/flim_workflow.html",
+      "accessDate": "2026-10-06T15:38:20Z",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:38:20Z",
+      "dateModified": "2026-10-06T15:38:20Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/6ISRIWPB",
+      "itemID": 31,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "FLIM Phasor Workflow — napari-phasors",
+          "url": "https://napari-phasors.readthedocs.io/en/stable/guides/flim_workflow.html",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:38:28Z",
+          "dateModified": "2026-10-06T15:38:28Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/MZF2GMJB",
+          "path": "/home/aras/Zotero/storage/MZF2GMJB/flim_workflow.html",
+          "select": "zotero://select/library/items/MZF2GMJB"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "6ISRIWPB",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6ISRIWPB"
+    },
+    {
+      "key": "9Z35P5Q6",
+      "version": 0,
+      "itemType": "encyclopediaArticle",
+      "title": "Fluorescence-lifetime imaging microscopy",
+      "abstractNote": "Fluorescence-lifetime imaging microscopy or FLIM is an imaging technique based on the differences in the exponential decay rate of the photon emission of a fluorophore from a sample. It can be used as an imaging technique in confocal microscopy, two-photon excitation microscopy, and multiphoton tomography.\nThe fluorescence lifetime (FLT) of the fluorophore, rather than its intensity, is used to create the image in FLIM. Fluorescence lifetime depends on the local micro-environment of the fluorophore, thus precluding any erroneous measurements in fluorescence intensity due to change in brightness of the light source, background light intensity or limited photo-bleaching. This technique also has the advantage of minimizing the effect of photon scattering in thick layers of sample. Being dependent on the micro-environment, lifetime measurements have been used as an indicator for pH, viscosity and chemical species concentration.",
+      "date": "2026-08-31T12:20:33Z",
+      "citationKey": "FluorescencelifetimeImagingMicroscopy2026",
+      "url": "https://en.wikipedia.org/w/index.php?title=Fluorescence-lifetime_imaging_microscopy&oldid=1372366878",
+      "accessDate": "2026-10-06T15:45:42Z",
+      "language": "en",
+      "libraryCatalog": "Wikipedia",
+      "rights": "Creative Commons Attribution-ShareAlike License",
+      "extra": "Page Version ID: 1372366878",
+      "encyclopediaTitle": "Wikipedia",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:45:42Z",
+      "dateModified": "2026-10-06T15:45:42Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/9Z35P5Q6",
+      "itemID": 35,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://en.wikipedia.org/w/index.php?title=Fluorescence-lifetime_imaging_microscopy&oldid=1372366878",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:45:47Z",
+          "dateModified": "2026-10-06T15:45:47Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/96BJHT52",
+          "path": "/home/aras/Zotero/storage/96BJHT52/index.html",
+          "select": "zotero://select/library/items/96BJHT52"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "9Z35P5Q6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9Z35P5Q6"
+    },
+    {
+      "key": "49LTUEI3",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Array programming with NumPy",
+      "abstractNote": "Abstract\n            \n              Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves\n              1\n              and in the first imaging of a black hole\n              2\n              . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.",
+      "date": "2020-09-17",
+      "DOI": "10.1038/s41586-020-2649-2",
+      "citationKey": "harrisArrayProgrammingNumPy2020",
+      "url": "https://www.nature.com/articles/s41586-020-2649-2",
+      "accessDate": "2026-10-06T16:25:30Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "585",
+      "pages": "357-362",
+      "publicationTitle": "Nature",
+      "ISSN": "0028-0836, 1476-4687",
+      "issue": "7825",
+      "journalAbbreviation": "Nature",
+      "creators": [
+        {
+          "firstName": "Charles R.",
+          "lastName": "Harris",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "K. Jarrod",
+          "lastName": "Millman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stéfan J.",
+          "lastName": "Van Der Walt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ralf",
+          "lastName": "Gommers",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pauli",
+          "lastName": "Virtanen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Cournapeau",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Wieser",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Julian",
+          "lastName": "Taylor",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sebastian",
+          "lastName": "Berg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nathaniel J.",
+          "lastName": "Smith",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert",
+          "lastName": "Kern",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matti",
+          "lastName": "Picus",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stephan",
+          "lastName": "Hoyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marten H.",
+          "lastName": "Van Kerkwijk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthew",
+          "lastName": "Brett",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Allan",
+          "lastName": "Haldane",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jaime Fernández",
+          "lastName": "Del Río",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mark",
+          "lastName": "Wiebe",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pearu",
+          "lastName": "Peterson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pierre",
+          "lastName": "Gérard-Marchant",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kevin",
+          "lastName": "Sheppard",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tyler",
+          "lastName": "Reddy",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Warren",
+          "lastName": "Weckesser",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hameer",
+          "lastName": "Abbasi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christoph",
+          "lastName": "Gohlke",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Travis E.",
+          "lastName": "Oliphant",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T16:25:30Z",
+      "dateModified": "2026-10-06T16:25:30Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/49LTUEI3",
+      "itemID": 39,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text",
+          "url": "https://www.nature.com/articles/s41586-020-2649-2.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:25:34Z",
+          "dateModified": "2026-10-06T16:25:34Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/F2M7DP9V",
+          "path": "/home/aras/Zotero/storage/F2M7DP9V/Harris et al. - 2020 - Array programming with NumPy.pdf",
+          "select": "zotero://select/library/items/F2M7DP9V"
+        }
+      ],
+      "notes": [
+        {
+          "key": "7Y7L5JWP",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "49LTUEI3",
+          "note": "<div data-schema-version=\"9\"><p><code>phasor_calc</code>, dove usi <code>np.fft.rfft</code></p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:26:51Z",
+          "dateModified": "2026-10-06T16:28:33Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/7Y7L5JWP"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "49LTUEI3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/49LTUEI3"
+    },
+    {
+      "key": "883YXXKP",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Comparison of phasor analysis and biexponential decay curve fitting of autofluorescence lifetime imaging data for machine learning prediction of cellular phenotypes",
+      "abstractNote": "Introduction:\n              Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates.\n            \n            \n              Methods:\n              Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope.\n            \n            \n              Results:\n              Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates.\n            \n            \n              Discussion:\n              Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.",
+      "date": "2023-6-29",
+      "DOI": "10.3389/fbinf.2023.1210157",
+      "citationKey": "huComparisonPhasorAnalysis2023",
+      "url": "https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full",
+      "accessDate": "2026-10-06T15:27:26Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "3",
+      "pages": "1210157",
+      "publicationTitle": "Frontiers in Bioinformatics",
+      "ISSN": "2673-7647",
+      "journalAbbreviation": "Front. Bioinform.",
+      "creators": [
+        {
+          "firstName": "Linghao",
+          "lastName": "Hu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Blanche",
+          "lastName": "Ter Hofstede",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dhavan",
+          "lastName": "Sharma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Feng",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alex J.",
+          "lastName": "Walsh",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:26Z",
+      "dateModified": "2026-10-06T15:27:26Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/883YXXKP",
+      "itemID": 22,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:15Z",
+          "dateModified": "2026-10-06T15:27:26Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/3W7I7FLM",
+          "path": "/home/aras/Zotero/storage/3W7I7FLM/Hu et al. - 2023 - Comparison of phasor analysis and biexponential decay curve fitting of autofluorescence lifetime ima.pdf",
+          "select": "zotero://select/library/items/3W7I7FLM"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Front. Bioinforma.",
+      "itemKey": "883YXXKP",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/883YXXKP"
+    },
+    {
+      "key": "VPCP8RLT",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Minuit - a system for function minimization and analysis of the parameter errors and correlations",
+      "date": "12/1975",
+      "DOI": "10.1016/0010-4655(75)90039-9",
+      "citationKey": "jamesMinuitSystemFunction1975",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/0010465575900399",
+      "accessDate": "2026-10-06T18:53:47Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "rights": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "volume": "10",
+      "pages": "343-367",
+      "publicationTitle": "Computer Physics Communications",
+      "ISSN": "00104655",
+      "issue": "6",
+      "journalAbbreviation": "Computer Physics Communications",
+      "creators": [
+        {
+          "firstName": "F.",
+          "lastName": "James",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "M.",
+          "lastName": "Roos",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T18:53:47Z",
+      "dateModified": "2026-10-06T18:53:47Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/VPCP8RLT",
+      "itemID": 50,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "Comput. Phys. Commun.",
+      "itemKey": "VPCP8RLT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VPCP8RLT"
+    },
+    {
+      "key": "FKZLH4RA",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Advancements in phasor-based FLIM: multi-component analysis and lifetime probes in biological imaging",
+      "abstractNote": "This review focuses on lifetime probes in phasor-based FLIM and multi-component analysis in complex environments. Using three probes (a, b, c) with distinct lifetimes, it visualizes clusters in the phasor plot, enabling imaging of specific regions.\n          , \n            Fluorescence lifetime imaging microscopy (FLIM) is a reliable method that achieves imaging by detecting fluorescence lifetimes within samples. Owing to its unique temporal characteristic, it can complement fluorescence intensity measurement. Technological and methodological advancements in FLIM have broadened its applications across various domains. The processing of fluorescence lifetime data is crucial for enhancing the speed and accuracy of imaging. Thus, various lifetime fitting algorithms have been developed to improve the imaging speed. The phasor analysis (PA) method is an approach for processing fluorescence lifetime data, capable of directly converting lifetime signals into visual graphics without fitting, which outperforms traditional approaches in speed. Furthermore, lifetime probes with distinct lifetimes are readily implemented for visualization and cluster analysis combined with PA, facilitating the prediction of specific biological states or functions. This review examines various lifetime probes employed in phasor-based FLIM and discusses their roles in the PA method. The methods for multi-component PA within complex biological environments were also described. Additionally, we focused on the advantages of the phasor vector rule and the unmixing of multi-component analysis based on PA. The integration of lifetime probes with phasor-based FLIM facilitates rapid and intuitive detection methods for analyzing complex biological environments.",
+      "date": "2025",
+      "DOI": "10.1039/D4TB01669F",
+      "citationKey": "liAdvancementsPhasorbasedFLIM2025",
+      "url": "https://pubs.rsc.org/tb/article/13/2/472-484/876547",
+      "accessDate": "2026-10-06T15:27:24Z",
+      "shortTitle": "Advancements in phasor-based FLIM",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "13",
+      "pages": "472-484",
+      "publicationTitle": "Journal of Materials Chemistry B",
+      "ISSN": "2050-750X, 2050-7518",
+      "issue": "2",
+      "journalAbbreviation": "J. Mater. Chem. B",
+      "creators": [
+        {
+          "firstName": "Dan",
+          "lastName": "Li",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xinyi",
+          "lastName": "Liu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fanli",
+          "lastName": "Dong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Wanwan",
+          "lastName": "Li",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:24Z",
+      "dateModified": "2026-10-06T15:27:24Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/FKZLH4RA",
+      "itemID": 21,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:15Z",
+          "dateModified": "2026-10-06T15:27:24Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/AK4QZIUI",
+          "path": "/home/aras/Zotero/storage/AK4QZIUI/Li et al. - 2025 - Advancements in phasor-based FLIM multi-component analysis and lifetime probes in biological imagin.pdf",
+          "select": "zotero://select/library/items/AK4QZIUI"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "J. Mater. Chem. B",
+      "itemKey": "FKZLH4RA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FKZLH4RA"
+    },
+    {
+      "key": "8GA4H8TZ",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "FLIM Analysis using the Phasor Plots",
+      "citationKey": "liaoFLIMAnalysisUsing",
+      "language": "en",
+      "libraryCatalog": "Zotero",
+      "creators": [
+        {
+          "firstName": "Shih-Chu",
+          "lastName": "Liao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yuansheng",
+          "lastName": "Sun",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ulas",
+          "lastName": "Coskun",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:30Z",
+      "dateModified": "2026-10-06T15:27:30Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/8GA4H8TZ",
+      "itemID": 25,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:16Z",
+          "dateModified": "2026-10-06T15:27:30Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/XMUTVYMD",
+          "path": "/home/aras/Zotero/storage/XMUTVYMD/Liao et al. - FLIM Analysis using the Phasor Plots.pdf",
+          "select": "zotero://select/library/items/XMUTVYMD"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "8GA4H8TZ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/8GA4H8TZ"
+    },
+    {
+      "key": "TM8LU2BA",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Phasor plots and the future of spectral and lifetime imaging",
+      "date": "07/2023",
+      "DOI": "10.1038/s41592-023-01906-y",
+      "citationKey": "malacridaPhasorPlotsFuture2023",
+      "url": "https://www.nature.com/articles/s41592-023-01906-y",
+      "accessDate": "2026-10-06T15:27:37Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "20",
+      "pages": "965-967",
+      "publicationTitle": "Nature Methods",
+      "ISSN": "1548-7091, 1548-7105",
+      "issue": "7",
+      "journalAbbreviation": "Nat Methods",
+      "creators": [
+        {
+          "firstName": "Leonel",
+          "lastName": "Malacrida",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:37Z",
+      "dateModified": "2026-10-06T15:27:37Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/TM8LU2BA",
+      "itemID": 29,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:21Z",
+          "dateModified": "2026-10-06T15:27:37Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/PSDWE44R",
+          "path": "/home/aras/Zotero/storage/PSDWE44R/Malacrida - 2023 - Phasor plots and the future of spectral and lifetime imaging.pdf",
+          "select": "zotero://select/library/items/PSDWE44R"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Nat. Methods",
+      "itemKey": "TM8LU2BA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TM8LU2BA"
+    },
+    {
+      "key": "B8ES4RXA",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "The Phasor Plot: A Universal Circle to Advance Fluorescence Lifetime Analysis and Interpretation",
+      "abstractNote": "The phasor approach to fluorescence lifetime imaging has become a common method to analyze complicated fluorescence signals from biological samples. The appeal of the phasor representation of complex fluorescence decays in biological systems is that a visual representation of the decay of entire cells or tissues can be used to easily interpret fundamental biological states related to metabolism and oxidative stress. Phenotyping based on autofluorescence provides new avenues for disease characterization and diagnostics. The phasor approach is a transformation of complex fluorescence decays that does not use fits to model decays and therefore has the same information content as the original data. The phasor plot is unique for a given system, is highly reproducible, and provides a robust method to evaluate the existence of molecular interactions such as Förster resonance energy transfer or the response of ion indicators. Recent advances permitquantification of multiple components from phasor plots in fluorescence lifetime imaging microscopy, which is not presently possible using data fitting methods, especially in biological systems.",
+      "date": "2021-05-06",
+      "DOI": "10.1146/annurev-biophys-062920-063631",
+      "citationKey": "malacridaPhasorPlotUniversal2021",
+      "url": "https://www.annualreviews.org/doi/10.1146/annurev-biophys-062920-063631",
+      "accessDate": "2026-10-06T15:26:35Z",
+      "shortTitle": "The Phasor Plot",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "50",
+      "pages": "575-593",
+      "publicationTitle": "Annual Review of Biophysics",
+      "ISSN": "1936-122X, 1936-1238",
+      "issue": "1",
+      "journalAbbreviation": "Annu. Rev. Biophys.",
+      "creators": [
+        {
+          "firstName": "Leonel",
+          "lastName": "Malacrida",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Suman",
+          "lastName": "Ranjit",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David M.",
+          "lastName": "Jameson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Enrico",
+          "lastName": "Gratton",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:26:35Z",
+      "dateModified": "2026-10-06T15:26:35Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/B8ES4RXA",
+      "itemID": 7,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:26:32Z",
+          "dateModified": "2026-10-06T15:26:35Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/DAI4QARZ",
+          "path": "/home/aras/Zotero/storage/DAI4QARZ/Malacrida et al. - 2021 - The Phasor Plot A Universal Circle to Advance Fluorescence Lifetime Analysis and Interpretation.pdf",
+          "select": "zotero://select/library/items/DAI4QARZ"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Annu. Rev. Biophys.",
+      "itemKey": "B8ES4RXA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/B8ES4RXA"
+    },
+    {
+      "key": "7DTH5PIG",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Improving fluorescence lifetime imaging microscopy phasor accuracy using convolutional neural networks",
+      "abstractNote": "Introduction:\n              Although a powerful biological imaging technique, fluorescence lifetime imaging microscopy (FLIM) faces challenges such as a slow acquisition rate, a low signal-to-noise ratio (SNR), and high cost and complexity. To address the fundamental problem of low SNR in FLIM images, we demonstrate how to use pre-trained convolutional neural networks (CNNs) to reduce noise in FLIM measurements.\n            \n            \n              Methods:\n              Our approach uses pre-learned models that have been previously validated on large datasets with different distributions than the training datasets, such as sample structures, noise distributions, and microscopy modalities in fluorescence microscopy, to eliminate the need to train a neural network from scratch or to acquire a large training dataset to denoise FLIM data. In addition, we are using the pre-trained networks in the inference stage, where the computation time is in milliseconds and accuracy is better than traditional denoising methods. To separate different fluorophores in lifetime images, the denoised images are then run through an unsupervised machine learning technique named “K-means clustering”.\n            \n            \n              Results and Discussion:\n              The results of the experiments carried out on in vivo mouse kidney tissue, Bovine pulmonary artery endothelial (BPAE) fixed cells that have been fluorescently labeled, and mouse kidney fixed samples that have been fluorescently labeled show that our demonstrated method can effectively remove noise from FLIM images and improve segmentation accuracy. Additionally, the performance of our method on out-of-distribution highly scattering in vivo plant samples shows that it can also improve SNR in challenging imaging conditions. Our proposed method provides a fast and accurate way to segment fluorescence lifetime images captured using any FLIM system. It is especially effective for separating fluorophores in noisy FLIM images, which is common in in vivo imaging where averaging is not applicable. Our approach significantly improves the identification of vital biologically relevant structures in biomedical imaging applications.",
+      "date": "2023-12-22",
+      "DOI": "10.3389/fbinf.2023.1335413",
+      "citationKey": "mannamImprovingFluorescenceLifetime2023",
+      "url": "https://www.frontiersin.org/articles/10.3389/fbinf.2023.1335413/full",
+      "accessDate": "2026-10-06T15:27:29Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "3",
+      "pages": "1335413",
+      "publicationTitle": "Frontiers in Bioinformatics",
+      "ISSN": "2673-7647",
+      "journalAbbreviation": "Front. Bioinform.",
+      "creators": [
+        {
+          "firstName": "Varun",
+          "lastName": "Mannam",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jacob",
+          "lastName": "P. Brandt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Cody J.",
+          "lastName": "Smith",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Xiaotong",
+          "lastName": "Yuan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Scott",
+          "lastName": "Howard",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:29Z",
+      "dateModified": "2026-10-06T15:27:29Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/7DTH5PIG",
+      "itemID": 24,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:16Z",
+          "dateModified": "2026-10-06T15:27:29Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/7VNB9AYY",
+          "path": "/home/aras/Zotero/storage/7VNB9AYY/Mannam et al. - 2023 - Improving fluorescence lifetime imaging microscopy phasor accuracy using convolutional neural networ.pdf",
+          "select": "zotero://select/library/items/7VNB9AYY"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Front. Bioinforma.",
+      "itemKey": "7DTH5PIG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7DTH5PIG"
+    },
+    {
+      "key": "LACY9F6M",
+      "version": 0,
+      "itemType": "computerProgram",
+      "title": "DBP008/spectral-phasors-analysis",
+      "abstractNote": "A Python application for spectral phasor analysis built with Panel 🎨 and HoloViews 📊. This tool allows you to explore spectral phasors through simulations (single/multi‑Gaussian) and analyze real experimental data via CSV spectra or TIFF hyperspectral stacks. 🧪",
+      "date": "2026-03-17T16:00:27Z",
+      "citationKey": "panzeriDBP008Spectralphasorsanalysis2026",
+      "url": "https://github.com/DBP008/spectral-phasors-analysis",
+      "accessDate": "2026-10-06T15:40:46Z",
+      "libraryCatalog": "GitHub",
+      "rights": "AGPL-3.0",
+      "extra": "original-date: 2026-02-17T14:19:14Z",
+      "programmingLanguage": "Python",
+      "creators": [
+        {
+          "firstName": "Davide",
+          "lastName": "Panzeri",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:40:46Z",
+      "dateModified": "2026-10-06T15:40:46Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/LACY9F6M",
+      "itemID": 33,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "JIA8DX6D",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "LACY9F6M",
+          "note": "Davide codice",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:41:01Z",
+          "dateModified": "2026-10-06T15:41:01Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/JIA8DX6D"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "LACY9F6M",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LACY9F6M"
+    },
+    {
+      "key": "JLCIEARG",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Fit-free analysis of fluorescence lifetime imaging data using the phasor approach",
+      "date": "9/2018",
+      "DOI": "10.1038/s41596-018-0026-5",
+      "citationKey": "ranjitFitfreeAnalysisFluorescence2018",
+      "url": "https://www.nature.com/articles/s41596-018-0026-5",
+      "accessDate": "2026-10-06T15:26:33Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "13",
+      "pages": "1979-2004",
+      "publicationTitle": "Nature Protocols",
+      "ISSN": "1754-2189, 1750-2799",
+      "issue": "9",
+      "journalAbbreviation": "Nat Protoc",
+      "creators": [
+        {
+          "firstName": "Suman",
+          "lastName": "Ranjit",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leonel",
+          "lastName": "Malacrida",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David M.",
+          "lastName": "Jameson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Enrico",
+          "lastName": "Gratton",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:26:33Z",
+      "dateModified": "2026-10-06T15:26:33Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/JLCIEARG",
+      "itemID": 6,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:26:31Z",
+          "dateModified": "2026-10-06T15:26:33Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/8JWA4PJT",
+          "path": "/home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf",
+          "select": "zotero://select/library/items/8JWA4PJT"
+        }
+      ],
+      "notes": [
+        {
+          "key": "HBYWQ3AT",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "JLCIEARG",
+          "note": "<div data-schema-version=\"9\"><p><strong>2. Ranjit et al. (2018) - Il protocollo di calibrazione (il tuo codice)</strong></p>\n<ul>\n<li>\n<strong>Perché citarlo:</strong> Questo paper descrive in modo rigoroso la procedura pratica per fare l'analisi \"fit-free\", in particolare il metodo di calibrazione dell'IRF usando un fluoroforo a vita nota. Guarda la tua funzione <code>extract_irf</code>: tu prendi l'immagine di calibrazione, calcoli le coordinate teoriche del fluoroforo standard (<code>G_true = 1 / (1 + ωτ**2)</code>) e le usi per ricavare all'indietro il fasore dell'IRF. Quello che hai scritto in codice Python è esattamente la trasposizione del protocollo sperimentale standardizzato da Ranjit.\n</li>\n<li>\n<p><strong>Come citarlo:</strong> Lo inserisci quando descrivi come hai gestito la correzione strumentale.</p>\n<blockquote>\n<p><em>\"Al fine di rimuovere le distorsioni strumentali dal segnale, le coordinate fasoriali dell'IRF sono state estratte analiticamente utilizzando un fluoroforo standard a vita nota ($\\tau$), applicando la procedura di calibrazione descritta da Ranjit et al. \\cite{ranjit2018}.\"</em></p>\n</blockquote>\n</li>\n</ul>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T17:11:17Z",
+          "dateModified": "2026-10-06T17:11:21Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/HBYWQ3AT"
+        }
+      ],
+      "autoJournalAbbreviation": "Nat. Protoc.",
+      "itemKey": "JLCIEARG",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/JLCIEARG"
+    },
+    {
+      "key": "VZEXJTJD",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Phasor theory of fluorescence lifetime imaging utilized on a maximum range of frequencies for prostate tissue analysis",
+      "abstractNote": "Fluorescence lifetime imaging (FLIm) can detect macroscopic tumor tissue in various organs by measuring tissue autofluorescence, making it a compelling tool for surgical guidance. However, the fluorescence lifetime characteristics of tissue autofluorescence are complex due to the unpredictable microenvironment of the biomolecules in tissue, which complicates data interpretation. Nevertheless, the phasor analysis method is computationally fast and easily interpretable, making it appealing for clinical applications of FLIm. While many implementations of the phasor analysis operate only at a single frequency or a few harmonic frequencies, the phasor theory applied to pulse sampling FLIm as presented in this study leverages the maximum amount of frequency information, thereby extending the set of features available for tissue characterization. The clinical effectiveness of utilizing the maximum range of frequencies in phasor theory applied to pulse-sampling FLIm is demonstrated by investigating tumor detection in ex vivo tissue from 12 patients with prostate cancer. By accounting for the zonal anatomy of the prostate, it is shown that the degree of separability between healthy and tumor tissue is a function of frequency, and hence, the ability to access arbitrary frequency content can improve tumor detection in clinical guidance.",
+      "date": "2025-11-01",
+      "DOI": "10.1364/BOE.575841",
+      "citationKey": "schoopPhasorTheoryFluorescence2025",
+      "url": "https://opg.optica.org/abstract.cfm?URI=boe-16-11-4885",
+      "accessDate": "2026-10-06T15:26:49Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "16",
+      "pages": "4885",
+      "publicationTitle": "Biomedical Optics Express",
+      "ISSN": "2156-7085, 2156-7085",
+      "issue": "11",
+      "journalAbbreviation": "Biomed. Opt. Express",
+      "creators": [
+        {
+          "firstName": "Ryan A. L.",
+          "lastName": "Schoop",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lotte M.",
+          "lastName": "De Roode",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alba",
+          "lastName": "Alfonso-García",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Farzad",
+          "lastName": "Fereidouni",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Lisanne L.",
+          "lastName": "De Boer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Laura",
+          "lastName": "Marcu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Theo J. M.",
+          "lastName": "Ruers",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:26:49Z",
+      "dateModified": "2026-10-06T15:26:49Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/VZEXJTJD",
+      "itemID": 9,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:26:46Z",
+          "dateModified": "2026-10-06T15:26:49Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/CXKNGJM4",
+          "path": "/home/aras/Zotero/storage/CXKNGJM4/Schoop et al. - 2025 - Phasor theory of fluorescence lifetime imaging utilized on a maximum range of frequencies for prosta.pdf",
+          "select": "zotero://select/library/items/CXKNGJM4"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Biomed. Opt. Express",
+      "itemKey": "VZEXJTJD",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/VZEXJTJD"
+    },
+    {
+      "key": "3CNVAKH2",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Real-time open-source FLIM analysis",
+      "abstractNote": "Fluorescence lifetime imaging microscopy (FLIM) provides valuable quantitative insights into fluorophores’ chemical microenvironment. Due to long computation times and the lack of accessible, open-source real-time analysis toolkits, traditional analysis of FLIM data, particularly with the widely used time-correlated single-photon counting (TCSPC) approach, typically occurs after acquisition. As a result, uncertainties about the quality of FLIM data persist even after collection, frequently necessitating the extension of imaging sessions. Unfortunately, prolonged sessions not only risk missing important biological events but also cause photobleaching and photodamage. We present the first open-source program designed for real-time FLIM analysis during specimen scanning to address these challenges. Our approach combines acquisition with real-time computational and visualization capabilities, allowing us to assess FLIM data quality on the fly. Our open-source real-time FLIM viewer, integrated as a Napari plugin, displays phasor analysis and rapid lifetime determination (RLD) results computed from real-time data transmitted by acquisition software such as the open-source Micro-Manager-based OpenScan package. Our method facilitates early identification of FLIM signatures and data quality assessment by providing preliminary analysis during acquisition. This not only speeds up the imaging process, but it is especially useful when imaging sensitive live biological samples.",
+      "date": "2023-11-30",
+      "DOI": "10.3389/fbinf.2023.1286983",
+      "citationKey": "tanRealtimeOpensourceFLIM2023",
+      "url": "https://www.frontiersin.org/articles/10.3389/fbinf.2023.1286983/full",
+      "accessDate": "2026-10-06T15:27:27Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "3",
+      "pages": "1286983",
+      "publicationTitle": "Frontiers in Bioinformatics",
+      "ISSN": "2673-7647",
+      "journalAbbreviation": "Front. Bioinform.",
+      "creators": [
+        {
+          "firstName": "Kevin K. D.",
+          "lastName": "Tan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mark A.",
+          "lastName": "Tsuchida",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jenu V.",
+          "lastName": "Chacko",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Niklas A.",
+          "lastName": "Gahm",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kevin W.",
+          "lastName": "Eliceiri",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:27Z",
+      "dateModified": "2026-10-06T15:27:27Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/3CNVAKH2",
+      "itemID": 23,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:15Z",
+          "dateModified": "2026-10-06T15:27:27Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/RIM22JFS",
+          "path": "/home/aras/Zotero/storage/RIM22JFS/Tan et al. - 2023 - Real-time open-source FLIM analysis.pdf",
+          "select": "zotero://select/library/items/RIM22JFS"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Front. Bioinforma.",
+      "itemKey": "3CNVAKH2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/3CNVAKH2"
+    },
+    {
+      "key": "RAD4N386",
+      "version": 0,
+      "itemType": "preprint",
+      "title": "GSLab: Open-Source Platform for Advanced Phasor Analysis in Fluorescence Microscopy",
+      "abstractNote": "Summary: GSLab addresses the need for effective image analysis tools in fluorescence microscopy by providing an open-source platform that enhances traditional phasor analysis with advanced features. Key capabilities include machine learning-based clustering, real-time monitoring, and quantitative unmixing of fluorescent species. Designed for both commercial and custom systems, GSLab provides researchers with comprehensive lifetime and spectral phasor image analysis tools to tackle complex biological problems.",
+      "date": "2025-02-15",
+      "DOI": "10.1101/2025.02.10.637545",
+      "citationKey": "vallmitjanaGSLabOpenSourcePlatform2025",
+      "url": "http://biorxiv.org/lookup/doi/10.1101/2025.02.10.637545",
+      "accessDate": "2026-10-06T15:27:23Z",
+      "shortTitle": "GSLab",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "repository": "Bioinformatics",
+      "creators": [
+        {
+          "firstName": "Alexander",
+          "lastName": "Vallmitjana",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Belen",
+          "lastName": "Torrado",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Amanda F",
+          "lastName": "Durkin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alexander",
+          "lastName": "Dvornikov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Navid",
+          "lastName": "Rajil",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Suman",
+          "lastName": "Ranjit",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mihaela",
+          "lastName": "Balu",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:23Z",
+      "dateModified": "2026-10-06T15:27:23Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/RAD4N386",
+      "itemID": 20,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:15Z",
+          "dateModified": "2026-10-06T15:27:23Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/W637DGA7",
+          "path": "/home/aras/Zotero/storage/W637DGA7/Vallmitjana et al. - 2025 - GSLab Open-Source Platform for Advanced Phasor Analysis in Fluorescence Microscopy.pdf",
+          "select": "zotero://select/library/items/W637DGA7"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "RAD4N386",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RAD4N386"
+    },
+    {
+      "key": "YHCU64W2",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+      "abstractNote": "Abstract\n            SciPy is an open-source scientific computing library for the Python programming language. Since its initial release in 2001, SciPy has become a de facto standard for leveraging scientific algorithms in Python, with over 600 unique code contributors, thousands of dependent packages, over 100,000 dependent repositories and millions of downloads per year. In this work, we provide an overview of the capabilities and development practices of SciPy 1.0 and highlight some recent technical developments.",
+      "date": "2020-03-02",
+      "DOI": "10.1038/s41592-019-0686-2",
+      "citationKey": "virtanenSciPy10Fundamental2020",
+      "url": "https://www.nature.com/articles/s41592-019-0686-2",
+      "accessDate": "2026-10-06T16:26:16Z",
+      "shortTitle": "SciPy 1.0",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "17",
+      "pages": "261-272",
+      "publicationTitle": "Nature Methods",
+      "ISSN": "1548-7091, 1548-7105",
+      "issue": "3",
+      "journalAbbreviation": "Nat Methods",
+      "creators": [
+        {
+          "firstName": "Pauli",
+          "lastName": "Virtanen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ralf",
+          "lastName": "Gommers",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Travis E.",
+          "lastName": "Oliphant",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matt",
+          "lastName": "Haberland",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tyler",
+          "lastName": "Reddy",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Cournapeau",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Evgeni",
+          "lastName": "Burovski",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Pearu",
+          "lastName": "Peterson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Warren",
+          "lastName": "Weckesser",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jonathan",
+          "lastName": "Bright",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stéfan J.",
+          "lastName": "Van Der Walt",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthew",
+          "lastName": "Brett",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joshua",
+          "lastName": "Wilson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "K. Jarrod",
+          "lastName": "Millman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nikolay",
+          "lastName": "Mayorov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrew R. J.",
+          "lastName": "Nelson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Jones",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert",
+          "lastName": "Kern",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Larson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "C J",
+          "lastName": "Carey",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "İlhan",
+          "lastName": "Polat",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yu",
+          "lastName": "Feng",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric W.",
+          "lastName": "Moore",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jake",
+          "lastName": "VanderPlas",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Denis",
+          "lastName": "Laxalde",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Josef",
+          "lastName": "Perktold",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert",
+          "lastName": "Cimrman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ian",
+          "lastName": "Henriksen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "E. A.",
+          "lastName": "Quintero",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Charles R.",
+          "lastName": "Harris",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anne M.",
+          "lastName": "Archibald",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Antônio H.",
+          "lastName": "Ribeiro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fabian",
+          "lastName": "Pedregosa",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paul",
+          "lastName": "Van Mulbregt",
+          "creatorType": "author"
+        },
+        {
+          "name": "SciPy 1.0 Contributors",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Aditya",
+          "lastName": "Vijaykumar",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alessandro Pietro",
+          "lastName": "Bardelli",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alex",
+          "lastName": "Rothberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Hilboll",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andreas",
+          "lastName": "Kloeckner",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anthony",
+          "lastName": "Scopatz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Antony",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ariel",
+          "lastName": "Rokem",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "C. Nathan",
+          "lastName": "Woods",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chad",
+          "lastName": "Fulton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Charles",
+          "lastName": "Masson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Christian",
+          "lastName": "Häggström",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Clark",
+          "lastName": "Fitzgerald",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David A.",
+          "lastName": "Nicholson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David R.",
+          "lastName": "Hagen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dmitrii V.",
+          "lastName": "Pasechnik",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Emanuele",
+          "lastName": "Olivetti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Martin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric",
+          "lastName": "Wieser",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Fabrice",
+          "lastName": "Silva",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Felix",
+          "lastName": "Lenders",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Florian",
+          "lastName": "Wilhelm",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "G.",
+          "lastName": "Young",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gavin A.",
+          "lastName": "Price",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gert-Ludwig",
+          "lastName": "Ingold",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gregory E.",
+          "lastName": "Allen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Gregory R.",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hervé",
+          "lastName": "Audren",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Irvin",
+          "lastName": "Probst",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jörg P.",
+          "lastName": "Dietrich",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jacob",
+          "lastName": "Silterra",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "James T",
+          "lastName": "Webber",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Janko",
+          "lastName": "Slavič",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joel",
+          "lastName": "Nothman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Johannes",
+          "lastName": "Buchner",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Johannes",
+          "lastName": "Kulick",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Johannes L.",
+          "lastName": "Schönberger",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "José Vinícius",
+          "lastName": "De Miranda Cardoso",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joscha",
+          "lastName": "Reimer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joseph",
+          "lastName": "Harrington",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Juan Luis Cano",
+          "lastName": "Rodríguez",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Juan",
+          "lastName": "Nunez-Iglesias",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Justin",
+          "lastName": "Kuczynski",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kevin",
+          "lastName": "Tritz",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Martin",
+          "lastName": "Thoma",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthew",
+          "lastName": "Newville",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Matthias",
+          "lastName": "Kümmerer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Maximilian",
+          "lastName": "Bolingbroke",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael",
+          "lastName": "Tartre",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Mikhail",
+          "lastName": "Pak",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nathaniel J.",
+          "lastName": "Smith",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nikolai",
+          "lastName": "Nowaczyk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nikolay",
+          "lastName": "Shebanov",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Oleksandr",
+          "lastName": "Pavlyk",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Per A.",
+          "lastName": "Brodtkorb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Perry",
+          "lastName": "Lee",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert T.",
+          "lastName": "McGibbon",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Roman",
+          "lastName": "Feldbauer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sam",
+          "lastName": "Lewis",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sam",
+          "lastName": "Tygier",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Scott",
+          "lastName": "Sievert",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sebastiano",
+          "lastName": "Vigna",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stefan",
+          "lastName": "Peterson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Surhud",
+          "lastName": "More",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tadeusz",
+          "lastName": "Pudlik",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Takuya",
+          "lastName": "Oshima",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas J.",
+          "lastName": "Pingel",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas P.",
+          "lastName": "Robitaille",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thomas",
+          "lastName": "Spura",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thouis R.",
+          "lastName": "Jones",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tim",
+          "lastName": "Cera",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tim",
+          "lastName": "Leslie",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tiziano",
+          "lastName": "Zito",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tom",
+          "lastName": "Krauss",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Utkarsh",
+          "lastName": "Upadhyay",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yaroslav O.",
+          "lastName": "Halchenko",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Yoshiki",
+          "lastName": "Vázquez-Baeza",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T16:26:16Z",
+      "dateModified": "2026-10-06T16:26:16Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/YHCU64W2",
+      "itemID": 41,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://www.nature.com/articles/s41592-019-0686-2.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T16:26:20Z",
+          "dateModified": "2026-10-06T16:26:20Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/L5VNMF9Q",
+          "path": "/home/aras/Zotero/storage/L5VNMF9Q/Virtanen et al. - 2020 - SciPy 1.0 fundamental algorithms for scientific computing in Python.pdf",
+          "select": "zotero://select/library/items/L5VNMF9Q"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Nat. Methods",
+      "itemKey": "YHCU64W2",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/YHCU64W2"
+    },
+    {
+      "key": "2PP9LH6U",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "FLIM Playground: An interactive, end-to-end graphical user interface for analyzing single cells with fluorescence lifetime imaging microscopy",
+      "abstractNote": "Fluorescence lifetime imaging microscopy (FLIM) is sensitive to molecular environments and enables highresolution mapping of cellular heterogeneity. Yet, the journey from raw photon decays to biological insight remains fragmented by multi-step data extraction and siloed analyses, creating burdens for experts and non-experts alike. This work presents FLIM Playground, the first interactive graphical platform that unifies single-cell FLIM workflows. Modularly designed to encompass data extraction (if desired) and data analysis, FLIM Playground can check field-of-view metadata, calibrate and extract fluorescence lifetime features per region of interest along with morphology and texture features across channels, merge multiple datasets, and provide real-time visual analytic modules. Lifetime extraction was validated against commercial software and published results, and both data extraction and analysis were demonstrated on a FLIM dataset of cancer cell lines. By adopting best practices and offering interactivity, FLIM Playground promotes reproducibility, allows for expansion to new imaging modalities, and accelerates hypothesis-driven discovery.",
+      "date": "08/2026",
+      "DOI": "10.1016/j.crmeth.2026.101484",
+      "citationKey": "zhaoFLIMPlaygroundInteractive2026",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S2667237526001840",
+      "accessDate": "2026-10-06T15:27:34Z",
+      "shortTitle": "FLIM Playground",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "6",
+      "pages": "101484",
+      "publicationTitle": "Cell Reports Methods",
+      "ISSN": "26672375",
+      "issue": "8",
+      "journalAbbreviation": "Cell Reports Methods",
+      "creators": [
+        {
+          "firstName": "Wenxuan",
+          "lastName": "Zhao",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Kayvan",
+          "lastName": "Samimi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Melissa C.",
+          "lastName": "Skala",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Rupsa",
+          "lastName": "Datta",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:27:34Z",
+      "dateModified": "2026-10-06T15:27:34Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/2PP9LH6U",
+      "itemID": 27,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-06T15:27:16Z",
+          "dateModified": "2026-10-06T15:27:34Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/SAGSSA5S",
+          "path": "/home/aras/Zotero/storage/SAGSSA5S/Zhao et al. - 2026 - FLIM Playground An interactive, end-to-end graphical user interface for analyzing single cells with.pdf",
+          "select": "zotero://select/library/items/SAGSSA5S"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Cell Rep. Methods",
+      "itemKey": "2PP9LH6U",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/2PP9LH6U"
+    },
+    {
+      "key": "ESLLJV7E",
+      "version": 0,
+      "itemType": "document",
+      "citationKey": "zotero-item-1",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-06T15:25:53Z",
+      "dateModified": "2026-10-06T15:25:53Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/ESLLJV7E",
+      "itemID": 1,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "ESLLJV7E",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ESLLJV7E"
+    }
+  ]
+}

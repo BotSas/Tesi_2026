@@ -116,7 +116,10 @@ Link: (per ora è privata)
 
 
 6/10
-
+- Sistemate cose poco importanti di grafica dell'app panel
+- Aggiunta sezione 4 (in file esterno) per la lettura di immagini, ampiamente incompleta
+- Setuppata bibliografia con zotero (elimino cartella fonti dalla repo)
+- TESI: iniziata generazione e analisi del segnale IRF
 
 
 
