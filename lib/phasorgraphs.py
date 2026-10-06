@@ -150,3 +150,23 @@ def create_phasor_plot(T_laser, points, lines=None):
             fontsize = {'labels': 12, 'legend': 11, 'title': 14}
         )
  
+
+
+ # Image flattener but for panel
+
+def image_flattener_pn(image):
+
+    ''' Plots a 2d image with the amount of photons per pixel in total time '''
+
+    flat_image = image.sum(dim="time")      
+
+    fig = Figure(figsize=(5, 5))
+    ax = fig.add_subplot(111)
+    
+    cax = ax.imshow(flat_image.values, cmap="magma")         
+    fig.colorbar(cax, ax=ax, label="total counts")
+    
+    ax.set_title("Flattened Image")
+    ax.axis('off')
+    
+    return fig

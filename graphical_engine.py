@@ -24,6 +24,7 @@ import lib.my_stats
 import lib.phasorpyplot as phplt
 import lib.phasorfunctions as phf
 import lib.phasorgraphs as phg
+from new_tabs import tab4_view_ext, tab4_card_ext
 
 # graphics
 import io
@@ -39,6 +40,7 @@ import colorcet
 pn.extension("mathjax", sizing_mode="stretch_width")
 hv.extension("bokeh")
 
+# This is the main file. It also contains code for tab 1 2 and 3 (single, double, triple exp). For image analysis see other file
 
 # ─── Global widgets ────────────────────────────────────────────────────────────
 
@@ -252,11 +254,12 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
 
 global_card = pn.Card(
     t_laser_input, bins_input, counts_input, harmonic_input,
-    title="Parametri Globali", collapsed=False,
+    title = "Parametri Globali", collapsed=False,
 )
 tab1_card = pn.Card(t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_snr, title="1) Single exponential", collapsed = True)
 tab2_card = pn.Card(t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_snr, title = "2) double exponential", collapsed = True)
 tab3_card = pn.Card(t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_snr, title = "3) Triple exponential", collapsed = True)
+tab4_card_ext 
 sidebar = pn.Column(global_card, tab1_card, tab2_card, tab3_card, margin = (10, 10))
 
 
@@ -272,6 +275,8 @@ main_tabs = pn.Tabs(
     ("1) Single exponential", tab1_view),
     ("2) Double exponential", tab2_view),
     ("3) Triple exponential", tab3_view),
+    ("4) Image analisys", tab4_view_ext),
+
 )
 main_area = pn.Column(header, main_tabs)
 
@@ -279,7 +284,7 @@ main_area = pn.Column(header, main_tabs)
 
 # ── SYNC SIDEBAR (left) AND TABS (top) ─────────────────────────────────────────
 
-_tab_cards = {0: tab1_card, 1: tab2_card, 2: tab3_card}
+_tab_cards = {0: tab1_card, 1: tab2_card, 2: tab3_card, 4: tab4_card_ext}
 _syncing = False
 
 def _sync_cards(event):
