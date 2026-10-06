@@ -125,13 +125,13 @@ def tab1_view(T_laser, n_bins, counts, harm, tau, mu, sig, add_noise, snr):
     G_theor, S_theor = phg.pure_phasor(tau, T_laser, harm)
     
     curve_irf = hv.Curve((time_bins, irf), "Time (ns)", "Counts (log)", label = "IRF").opts(color = "grey", line_dash = "dashed")
-    curve_signal = hv.Curve((time_bins, noisy_signal), "Time (ns)", "Counts", label = "Signal").opts(color = "blue", line_width = 3)
+    curve_signal = hv.Curve((time_bins, noisy_signal), "Time (ns)", "Counts", label = "Signal").opts(color = "forestgreen", line_width = 3)
     plot_decay = (curve_irf * curve_signal).opts(title = f"Single exp (τ = {tau:.2f} ns)", width = 650, height = 550, 
                                                 legend_position = 'top_right', logy = True, ylim = (1, None))
     
     points = [
-        {'G': G_theor, 'S': S_theor, 'label': f'Target ({tau:.2f} ns)', 'color': 'red', 'marker': 'o', 'markersize': 10, 'facecolor': 'none'},
-        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'darkorange', 'marker': 'o', 'markersize': 8},
+        {'G': G_theor, 'S': S_theor, 'label': f'Target ({tau:.2f} ns)', 'color': 'lightskyblue', 'marker': 'o', 'markersize': 13, 'facecolor': 'none'},
+        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'red', 'marker': 'x', 'markersize': 13, 'linewidth': 2.5 },
         {'G': G_meas, 'S': S_meas, 'label': 'Measured (Signal+IRF)', 'color': 'forestgreen', 'marker': 'o', 'markersize': 7},
         {'G': G_dec, 'S': S_dec, 'label': 'Final (Deconvolved)', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
     ]
@@ -177,10 +177,10 @@ def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_no
     points = [
         {'G': G1, 'S': S1, 'label': f'Exp1 ({tau1:.2f} ns)', 'color': 'orchid', 'marker': 'o', 'markersize': 8},
         {'G': G2, 'S': S2, 'label': f'Exp2 ({tau2:.2f} ns)', 'color': 'darkorchid', 'marker': 'o', 'markersize': 8},
-        {'G': G_tm, 'S': S_tm, 'label': 'Target Mix', 'color': 'red', 'marker': 'o', 'markersize': 11, 'facecolor': 'none'},
-        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'darkorange', 'marker': 'o', 'markersize': 8},
+        {'G': G_tm, 'S': S_tm, 'label': 'Target Mix', 'color': 'lightskyblue', 'marker': 'o', 'markersize': 13, 'facecolor': 'none'},
+        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'red', 'marker': 'x', 'markersize': 13, 'linewidth': 2.5},
         {'G': G_meas, 'S': S_meas, 'label': 'Measured (Mix+IRF)', 'color': 'forestgreen', 'marker': 'o', 'markersize': 7},
-        {'G': G_dec, 'S': S_dec, 'label': 'Final mix (Deconvolved)', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
+        {'G': G_dec, 'S': S_dec, 'label': 'Final', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
     ]
     lines = [
         {'G': [G1, G2], 'S': [S1, S2], 'color': 'gray', 'ls': '--'},
@@ -232,10 +232,10 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
         {'G': G1, 'S': S1, 'label': f'Exp1 ({tau1:.2f} ns)', 'color': 'orchid', 'marker': 'o', 'markersize': 8},
         {'G': G2, 'S': S2, 'label': f'Exp2 ({tau2:.2f} ns)', 'color': 'darkorchid', 'marker': 'o', 'markersize': 8},
         {'G': G3, 'S': S3, 'label': f'Exp3 ({tau3:.2f} ns)', 'color': 'orange', 'marker': 'o', 'markersize': 8},
-        {'G': G_tm, 'S': S_tm, 'label': 'Target Mix', 'color': 'red', 'marker': 'o', 'markersize': 11, 'facecolor': 'none'},
-        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'darkorange', 'marker': 'o', 'markersize': 8},
+        {'G': G_tm, 'S': S_tm, 'label': 'Target Mix', 'color': 'lightskyblue', 'marker': 'o', 'markersize': 13, 'facecolor': 'none'},
+        {'G': G_irf, 'S': S_irf, 'label': 'IRF', 'color': 'red', 'marker': 'x', 'markersize': 13, 'linewidth': 2.5},
         {'G': G_meas, 'S': S_meas, 'label': 'Measured', 'color': 'forestgreen', 'marker': 'o', 'markersize': 7},
-        {'G': G_dec, 'S': S_dec, 'label': 'Final mix (Deconvolved)', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
+        {'G': G_dec, 'S': S_dec, 'label': 'Final', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
     ]
     lines = [
         {'G': [G1, G2, G3, G1], 'S': [S1, S2, S3, S1], 'color': 'gray', 'ls': '--'},

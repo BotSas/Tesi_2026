@@ -109,6 +109,13 @@ Link: (per ora è privata)
 
 5/10
 
+- Riscritta parte grafica con panel/holoview/bokeh, solo parte relativa a rappresentazione di 
+  singola/doppia/tripla esponenziale
+- Tesi: Rappresentazione decadimenti su piano fasori e generazione rumore
+
+
+
+6/10
 
 
 
@@ -117,3 +124,9 @@ DOMANDE:
 
 - Perché i fasori relativi all'embrione di zebrafish non stanno nemmeno lontanamente sul semicerchio? 
   C'è qualche altro fluoroforo di cui non sono a conoscenza?
+
+- Rumore poissoniano/gaussiano...?
+
+- Posso rubare le immagini di Davide?
+
+- Posso mettere la repo pubblica su github così non devo mettere tutto su drive?

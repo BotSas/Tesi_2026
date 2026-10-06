@@ -129,13 +129,14 @@ def create_phasor_plot(T_laser, points, lines=None):
         
         color = pt_style.get('color', 'black')
         fill_color = color
-        line_width = 1
+        line_width = pt_style.get('linewidth', 1)
         
         # Empty circles (only used for 'target')
         if pt_style.get('facecolor') == 'none' or pt_style.get('mfc') == 'none':
             fill_color = 'white'
-            line_width = 2
-            
+
+            if 'linewidth' not in pt_style: line_width = 2
+                
         plot *= hv.Scatter([(G_val, S_val)], label=pt_style.get('label', '')).opts(
             color=color, fill_color=fill_color, marker=hv_marker, 
             size=size, line_color=color, line_width=line_width
