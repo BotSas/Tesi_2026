@@ -23,13 +23,13 @@ i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
     \label{eq:exp_decay}
 \end{equation}
 
-\noindent dove $\tau$ indica il tempo di vita di fluorescenza.\\
+dove $\tau$ indica il tempo di vita di fluorescenza.\\
 
 \noindent Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa  probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà dettata da \ref{eq:exp_decay}.\\
 
 % Supponiamo ora di analizzare in tempo reale l'emissione di fluorescenza del campione per mezzo di un microscopio a fluorescenza. I fotoni emessi dal campione possono essere raggruppati in \textit{pixel}: l'intensità di ogni pixel avrà lo stesso andamento temporale di \ref{eq:exp_decay}.\\
 
-Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale decrescente, con tempo caratteristico \textit{$\tau$} pari al tempo di vita di fluorescenza associato al fluoroforo.\\
+\noindent Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale decrescente, con tempo caratteristico \textit{$\tau$} pari al tempo di vita di fluorescenza associato al fluoroforo.\\
 
 \noindent Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \textit{$\tau$} verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit} \cite{jamesMinuitSystemFunction1975}.\\
 
@@ -37,7 +37,9 @@ Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento d
 
 \noindent Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori:
 
-\begin{minted}[bgcolor = Beige]{python}
+%anche LavenderBlush preme (OldLace, Ivory, Lavender)
+
+\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
 
 def phasor_calc (n, harm_n = 1): 
 
@@ -72,8 +74,7 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 \noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Generazione di decadimenti a esponenziali multipli}
 
@@ -81,13 +82,13 @@ In una situazione reale, è possibile trovarsi a studiare un campione in presenz
 
 % riferimento alla teoria per spiegare come i fasori vincono sul fit multi esponenziale
 
-Come spiegato nella sezione (), il decadimento prodotto da un unico punto del campione si traduce in un singolo punto sul piano dei fasori. Quando il decadimento è la somma di più segnali di fluorescenza, prodotti da più fluorofori con diversi tempi di vita caratteristici e in diverse proporzioni, il punto corrispondente sul piano dei fasori si troverà non più sul semicerchio universale, bensì all'interno dell'area da esso racchiusa.\\
+\noindent Come spiegato nella sezione (), il decadimento prodotto da un unico punto del campione si traduce in un singolo punto sul piano dei fasori. Quando il decadimento è la somma di più segnali di fluorescenza, prodotti da più fluorofori con diversi tempi di vita caratteristici e in diverse proporzioni, il punto corrispondente sul piano dei fasori si troverà non più sul semicerchio universale, bensì all'interno dell'area da esso racchiusa.\\
 
-\noindent Il codice in questa sezione si è incentrato sulla produzione di segnali ottenuti come somma di due o tre decadimenti esponenziali a $\textit{\tau}$ e intensità noti, e sulla verifica del rapporto di intensità a partire dalla posizione del decadimento sul piano dei fasori.
+\noindent Il codice in questa sezione si è incentrato sulla produzione di segnali ottenuti come somma di due o tre decadimenti esponenziali a $\textit{\tau}$ e intensità noti, e sulla verifica del rapporto di intensità a partire dalla posizione del decadimento sul piano dei fasori.\\
 
 % immagini placeholder
 
-\begin{figure}[htbp]
+\begin{figure}[h!]      % immagine non sta dove vorrei ma si sistema alla fine
     \centering
 
     \begin{subfigure}[b]{0.48\textwidth}
@@ -109,7 +110,7 @@ Come spiegato nella sezione (), il decadimento prodotto da un unico punto del ca
 \end{figure}
 
 
-Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si ricava dal rapporto dei segmenti che collegano il fasore totale ai fasori teorici dei singoli esponenziali. Dato che il fasore sperimentale non cade esattamente sulla retta passante per i due fasori teorici, per il calcolo si utilizza la sua intersezione con la retta normale (ovvero la proiezione ortogonale del fasore totale sulla congiungente).\\
+\noindent Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si ricava dal rapporto dei segmenti che collegano il fasore totale ai fasori teorici dei singoli esponenziali. Dato che il fasore sperimentale non cade esattamente sulla retta passante per i due fasori teorici, per il calcolo si utilizza la sua intersezione con la retta normale (ovvero la proiezione ortogonale del fasore totale sulla congiungente).\\
 % qui dovrei spiegare anche il triplo esponenziale ma mi sa che preferisco spiegarlo prima nella teoria e poi aggiungere quello che manca qui.
 
 \paragraph{Verifica del rapporto di concentrazione}
@@ -137,13 +138,4 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \subsection{Generazione e analisi del segnale IRF}
-
-\subsubsection{Introduzione teorica}
-
-Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. 
-Come già menzionato, l'emissione di fluorescenza è prodotta grazie a un laser a impulsi periodici che produce un'eccitazione negli atomi del campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\
-
-\noindent Il processo di separazione del segnale proveniente dalle due diverse fonti (campione e laser) è descritto da \textit{Ranjit et al.} \cite{ranjitFitfreeAnalysisFluorescence2018} e viene di seguito riportato.
-

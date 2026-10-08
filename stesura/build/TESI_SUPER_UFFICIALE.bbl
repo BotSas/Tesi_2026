@@ -19,6 +19,68 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
+           family={Gratton},
+           familyi={G\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2074ef601efa0362a6274084477d133}
+      \strng{fullhash}{33a799c76f4c657745b8963a10ea161b}
+      \strng{bibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-2189, 1750-2799}
+      \field{journaltitle}{Nature Protocols}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Nat Protoc}
+      \field{title}{Fit-Free Analysis of Fluorescence Lifetime Imaging Data Using the Phasor Approach}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1979\bibrangedash 2004}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1038/s41596-018-0026-5
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+    \endentry
     \entry{jamesMinuitSystemFunction1975}{article}{}
       \name{author}{2}{}{%
         {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
@@ -38,8 +100,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -207,8 +269,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
@@ -240,68 +302,6 @@
       \endverb
       \verb{url}
       \verb https://www.nature.com/articles/s41586-020-2649-2
-      \endverb
-    \endentry
-    \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
-      \name{author}{4}{}{%
-        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
-           family={Ranjit},
-           familyi={R\bibinitperiod},
-           given={Suman},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
-           family={Malacrida},
-           familyi={M\bibinitperiod},
-           given={Leonel},
-           giveni={L\bibinitperiod}}}%
-        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
-           family={Jameson},
-           familyi={J\bibinitperiod},
-           given={David\bibnamedelima M.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
-           family={Gratton},
-           familyi={G\bibinitperiod},
-           given={Enrico},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{d2074ef601efa0362a6274084477d133}
-      \strng{fullhash}{33a799c76f4c657745b8963a10ea161b}
-      \strng{bibnamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1754-2189, 1750-2799}
-      \field{journaltitle}{Nature Protocols}
-      \field{langid}{english}
-      \field{month}{9}
-      \field{number}{9}
-      \field{shortjournal}{Nat Protoc}
-      \field{title}{Fit-Free Analysis of Fluorescence Lifetime Imaging Data Using the Phasor Approach}
-      \field{urlday}{6}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{13}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1979\bibrangedash 2004}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1038/s41596-018-0026-5
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/s41596-018-0026-5
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/s41596-018-0026-5
       \endverb
     \endentry
   \enddatalist

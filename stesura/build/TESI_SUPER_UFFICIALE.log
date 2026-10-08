@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  6 OCT 2026 21:17
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  8 OCT 2026 02:20
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1015,6 +1015,8 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen359
 \titlewidthlast=\dimen360
 \titlewidthfirst=\dimen361
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
 ) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
@@ -1107,9 +1109,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@listing=\count414
 )
 runsystem(mkdir -p build/_minted-TESI_SUPER_UFFICIALE)...executed.
- (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
-) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
@@ -1355,30 +1355,30 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./build/TESI_SUPER_UFFICIALE.aux)
 \openout1 = TESI_SUPER_UFFICIALE.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1415,7 +1415,7 @@ LaTeX Font Info:    ... okay on input line 57.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count547
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 57.
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 61.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count548
@@ -1446,7 +1446,7 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package hyperref Info: Link coloring ON on input line 57.
+Package hyperref Info: Link coloring ON on input line 61.
 (./build/TESI_SUPER_UFFICIALE.out) (./build/TESI_SUPER_UFFICIALE.out)
 \@outlinefile=\write9
 
@@ -1458,7 +1458,7 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                so the Inkscape export will fail quite sure as the
 (svg)                command is probably unknown to your OS. You could set
 (svg)                `inkscapeversion=<version>' manually but this is very
-(svg)                unlikely to work on input line 57.
+(svg)                unlikely to work on input line 61.
 
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1474,12 +1474,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'TESI_SUPER_UFFICIALE.bbl' found.
  (./build/TESI_SUPER_UFFICIALE.bbl)
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 <TESI_SUPER_UFFICIALE-frn.pdf, id=47, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
-Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 59.
+Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 63.
 (luatex.def)             Requested size: 597.50682pt x 845.04503pt.
  [1
 
@@ -1489,12 +1489,37 @@ Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 59.
 \openout10 = TESI_SUPER_UFFICIALE.toc
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex) (./sezioni/03_sviluppo_del_modello.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_cenni_teorici.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+) (./sezioni/03_sviluppo_del_modello.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -1519,58 +1544,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[2]
+
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- (./build/_minted-TESI_SUPER_UFFICIALE/default.pygstyle) (./build/_minted-TESI_SUPER_UFFICIALE/FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex
+(./build/_minted-TESI_SUPER_UFFICIALE/manni.pygstyle) (./build/_minted-TESI_SUPER_UFFICIALE/FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+) [3]
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-<immagini/sing_exp_decay_noisy.png, id=121, 1001.6622pt x 366.4089pt>
+<immagini/sing_exp_decay_noisy.png, id=137, 1001.6622pt x 366.4089pt>
 File: immagini/sing_exp_decay_noisy.png Graphic file (type png)
 <use immagini/sing_exp_decay_noisy.png>
-Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 68.
+Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 70.
 (luatex.def)             Requested size: 443.9066pt x 162.37773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
-[3<./immagini/sing_exp_decay_noisy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<immagini/double_exp_decay.png, id=137, 570.933pt x 415.5525pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+<immagini/double_exp_decay.png, id=138, 570.933pt x 415.5525pt>
 File: immagini/double_exp_decay.png Graphic file (type png)
 <use immagini/double_exp_decay.png>
-Package luatex.def Info: immagini/double_exp_decay.png  used on input line 95.
+Package luatex.def Info: immagini/double_exp_decay.png  used on input line 96.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
-<immagini/triple_exp_decay.png, id=138, 570.933pt x 415.5525pt>
+<immagini/triple_exp_decay.png, id=139, 570.933pt x 415.5525pt>
 File: immagini/triple_exp_decay.png Graphic file (type png)
 <use immagini/triple_exp_decay.png>
-Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 102.
+Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 103.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
-
- []
-
-[4<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [5] (./build/TESI_SUPER_UFFICIALE.aux)
+[4<./immagini/sing_exp_decay_noisy.png>]) (./sezioni/04_test_su_immagini.tex) (./sezioni/05_conclusioni.tex) [5<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>] [6] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: 92AD23A47ADFB6816FE5BD2CCF80B447;1873.
+(rerunfilecheck)             Checksum: C0B1F33B9B0219F8EB92942732F670C1;1952.
 runsystem(rm build//TESI_SUPER_UFFICIALE.pyg)...executed.
 Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 
@@ -1578,19 +1606,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 52945 strings out of 476553
+ 52952 strings out of 476553
  125161,2373549 words of node,token memory allocated
- 705 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 24 attribute, 75 glue_spec, 14 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 1:1,2:815,3:269,4:106,5:286,6:43,7:6059,8:61,9:297,10:15,11:877
- 73644 multiletter control sequences out of 65536+600000
+ 717 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 28 attribute, 75 glue_spec, 16 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:1,2:898,3:226,4:100,5:267,6:46,7:6191,8:61,9:306,10:15,11:922
+ 73649 multiletter control sequences out of 65536+600000
  48 fonts using 3944399 bytes
- 105i,10n,115p,1439b,1304s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (6 pages, 294349 bytes).
+ 105i,10n,115p,1439b,1875s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (7 pages, 308417 bytes).
 
-PDF statistics: 255 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 131072)
+PDF statistics: 267 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 131072)
  96 words of extra memory for PDF output out of 10000 (max. 100000000)
 

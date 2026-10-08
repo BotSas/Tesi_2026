@@ -2,13 +2,13 @@
 \babel@toc {italian}{}\relax 
 \contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
 \contentsline {section}{\numberline {2}Cenni teorici}{2}{section.2}%
-\contentsline {section}{\numberline {3}Sviluppo del modello}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{2}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{2}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Generazione del rumore}{3}{equation.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Generazione di decadimenti a esponenziali multipli}{3}{subsubsection.3.1.2}%
-\contentsline {paragraph}{Verifica del rapporto di concentrazione}{4}{figure.caption.2}%
+\contentsline {subsection}{\numberline {2.1}Funzione di risposta dello strumento}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Sviluppo del modello}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{3}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{3}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Generazione del rumore}{4}{equation.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Generazione di decadimenti a esponenziali multipli}{4}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Verifica del rapporto di concentrazione}{5}{figure.caption.2}%
 \contentsline {subsection}{\numberline {3.2}Generazione e analisi del segnale IRF}{5}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Introduzione teorica}{5}{subsubsection.3.2.1}%
 \contentsline {section}{\numberline {4}Test su immagini}{5}{section.4}%
 \contentsline {section}{\numberline {5}Conclusioni}{5}{section.5}%
