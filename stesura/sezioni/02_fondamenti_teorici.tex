@@ -1,8 +1,13 @@
-\section{Cenni teorici}\label{sec:cenni_teorici} 
+\section{Fondamenti teorici}\label{sec:cenni_teorici} 
 
 % probabilmente questa parte la sposto nella teoria. Ho bisogno di scriverla ora perché devo ripassare cos'ho fatto e perché l'ho fatto
 
 % Ok l'ho spostata ma ora probabilmente è da sistemare
+
+\subsection{Analisi fasoriale}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection{Funzione di risposta dello strumento} 
 
@@ -17,7 +22,8 @@ L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici ch
 In aggiunta a questo, il segnale subisce una distorsione (di solito un allargamento) nel passaggio attraverso l'obiettivo, la quale deve essere adeguatamente quantificata \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
 \noindent Emerge dunque un vantaggio significativo dell'analisi fasoriale rispetto al processo appena illustrato: non è necessario conoscere la forma precisa della \textit{IRF}, è sufficiente effettuare una calibrazione utilizzando un fluoroforo a decadimento mono-esponenziale a $\textit{\tau}$ noto.\\
-Come menzionato in precedenza, infatti,    % RICORDARSI DI MENZIONARLO PRIMA PERÒ SENNÒ SEI UN CLOWN
+
+\noindent Come menzionato in precedenza, infatti,    % RICORDARSI DI MENZIONARLO PRIMA PERÒ SENNÒ SEI UN CLOWN
 la convoluzione nel dominio temporale si traduce come una moltiplicazione nello spazio di Fourier. La \textit{IRF} viene ridotta a un singolo punto sul piano dei fasori, che naturalmente non si troverà sul semicerchio universale in quanto non è un decadimento esponenziale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
 \noindent Unendo queste due informazioni, è possibile ricavare il segnale totale come:
@@ -27,7 +33,7 @@ la convoluzione nel dominio temporale si traduce come una moltiplicazione nello 
     \label{eq:convoluzione_fasori}
 \end{equation}
 
-\noindent da cui è banale ricavare il fasore relativo al decadimento con un'operazione inversa.\\
+da cui è banale ricavare il fasore relativo al decadimento con un'operazione inversa.\\
 
 % nella parte precedente della teoria devo spiegare bene come funziona l'additività delle fasi, ecc ecc
 

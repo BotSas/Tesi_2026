@@ -122,6 +122,12 @@ Link: (per ora è privata)
 - TESI: iniziata generazione e analisi del segnale IRF
 
 
+7/10-8/10
+- Teoria e implementazione IRF
+- Correzioni grafiche e di formattazione
+
+
+
 
 DOMANDE: 
 
@@ -130,6 +136,8 @@ DOMANDE:
 
 - Rumore poissoniano/gaussiano...?
 
-- Posso rubare le immagini di Davide?
-
 - Posso mettere la repo pubblica su github così non devo mettere tutto su drive?
+
+- Posso avere altre immagini?
+
+- La panel app la metto nella tesi?

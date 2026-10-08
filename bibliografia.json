@@ -112,11 +112,22 @@
     }
   },
   "version": {
-    "zotero": "10.0.5",
+    "zotero": "10.0.6",
     "bbt": "9.0.71"
   },
   "collections": {},
   "items": [
+    {
+      "itemType": "attachment",
+      "title": "Discrete Time Signal Processing Second Edition",
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-08T22:03:25Z",
+      "dateModified": "2026-10-08T22:03:25Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/N7PGQV23",
+      "path": "/home/aras/Zotero/storage/N7PGQV23/Discrete Time Signal Processing Second Edition.pdf",
+      "select": "zotero://select/library/items/N7PGQV23"
+    },
     {
       "key": "FDYFKGN9",
       "version": 0,
@@ -1080,6 +1091,42 @@
       "itemKey": "7DTH5PIG",
       "libraryID": 1,
       "select": "zotero://select/library/items/7DTH5PIG"
+    },
+    {
+      "key": "LQ9HZPVU",
+      "version": 0,
+      "itemType": "book",
+      "title": "Discrete-time signal processing",
+      "date": "2009",
+      "citationKey": "oppenheim_discrete_2009",
+      "publisher": "Pearson",
+      "place": "Upper Saddle River, NJ",
+      "ISBN": "978-0-13-198842-2",
+      "edition": "3rd",
+      "creators": [
+        {
+          "firstName": "Alan V.",
+          "lastName": "Oppenheim",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ronald W.",
+          "lastName": "Schafer",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-08T22:12:07Z",
+      "dateModified": "2026-10-08T22:12:07Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/LQ9HZPVU",
+      "itemID": 61,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "LQ9HZPVU",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LQ9HZPVU"
     },
     {
       "key": "LACY9F6M",

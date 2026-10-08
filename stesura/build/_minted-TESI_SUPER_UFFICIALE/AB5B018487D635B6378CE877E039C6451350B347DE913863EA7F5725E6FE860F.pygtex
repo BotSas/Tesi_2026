@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{k}{def} \PYG{n+nf}{simulation\PYGZus{}with\PYGZus{}IRF}\PYG{p}{(}\PYG{n}{exp1data1}\PYG{p}{,} \PYG{n}{irf}\PYG{p}{,} \PYG{n}{counts}\PYG{p}{,} \PYG{n}{noise\PYGZus{}flag}\PYG{p}{,} \PYG{n}{snr\PYGZus{}db}\PYG{p}{):}
+
+    \PYG{n}{n\PYGZus{}bins} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{irf}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Use circular convolution}
+    \PYG{n}{convol} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{irfft}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{rfft}\PYG{p}{(}\PYG{n}{expdata}\PYG{p}{)} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{rfft}\PYG{p}{(}\PYG{n}{irf}\PYG{p}{))}\PYG{o}{.}\PYG{n}{real}
+    \PYG{n}{convol} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{clip}\PYG{p}{(}\PYG{n}{convol}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{)}
+    \PYG{n}{convol} \PYG{o}{=} \PYG{p}{(}\PYG{n}{convol} \PYG{o}{/} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sum}\PYG{p}{(}\PYG{n}{convol}\PYG{p}{))} \PYG{o}{*} \PYG{n}{counts}    \PYG{c+c1}{\PYGZsh{} normalization}
+
+    \PYG{c+c1}{\PYGZsh{} NOISE}
+    \PYG{k}{if} \PYG{n}{noise\PYGZus{}flag}\PYG{p}{:} \PYG{n}{noisy\PYGZus{}signal} \PYG{o}{=} \PYG{n}{add\PYGZus{}noise}\PYG{p}{(}\PYG{n}{convol}\PYG{p}{,} \PYG{n}{snr\PYGZus{}db}\PYG{p}{)}
+    \PYG{k}{else}\PYG{p}{:} \PYG{n}{noisy\PYGZus{}signal} \PYG{o}{=} \PYG{n}{convol}
+
+    \PYG{k}{return} \PYG{n}{convol}\PYG{p}{,} \PYG{n}{noisy\PYGZus{}signal}
+
+\end{Verbatim}

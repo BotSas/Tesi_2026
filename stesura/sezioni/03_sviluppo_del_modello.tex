@@ -56,19 +56,21 @@ def phasor_calc (n, harm_n = 1):
 \noindent Si noti l'utilizzo della \textit{rfft} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali.
 Quando si calcola la trasformata di Fourier standard su un campione di \textit{N} eventi, verranno generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della FT, la seconda metà di questa lista di numeri sarà identica alla prima ($\textit{Im[z]} = 0 \Rightarrow z* = z$). In questo modo è possibile risparmiare risorse computazionali.\\
 
-% inserire immagine di decadimento esponenziale con rumore a zero e di fianco punto corrispondente sul piano dei fasori
+% inserire immagine di decadimento esponenziale con rumore a zero e di fianco punto corrispondente sul piano dei fasori; magari piccola di fianco
 
 
-\paragraph{Generazione del rumore}
+\paragraph{Generazione del rumore}      % AGGIUNGERE CODICE FUNZIONE MAKE_NOISE? BOOOOH (dovrei anche giustificare la scelta del rumore gaussiano vs poissoniano, che ancora non ho capito)
 
 Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per la generazione di rumore gaussiano sul decadimento:
 
 % immagine placeholder da sistemare
 
 \begin{figure}[h!]
+
     \centering
     \includegraphics[width=0.98\linewidth]{immagini/sing_exp_decay_noisy.png}
     \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal to noise ratio} = 10$}
+
 \end{figure}
 
 \noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.
@@ -78,6 +80,9 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 
 \subsubsection{Generazione di decadimenti a esponenziali multipli}
 
+% Magari inseriamolo anche del codice, no???
+% Forse, piuttosto che mettere il codice, ha più senso spiegare la funzione phasor_calc_mix senza metterla nella tesi. Si collega bene all spiegazione di come si fanno i conti sul piano dei fasori che prima o poi metterò nella parte teorica
+
 In una situazione reale, è possibile trovarsi a studiare un campione in presenza di più fluorofori, di carattere sia intrinseco che estrinseco. È dunque utile essere in grado di valutare la frazione di intensità di fluorescenza prodotta dalle singole sostanze.\\
 
 % riferimento alla teoria per spiegare come i fasori vincono sul fit multi esponenziale
@@ -86,26 +91,29 @@ In una situazione reale, è possibile trovarsi a studiare un campione in presenz
 
 \noindent Il codice in questa sezione si è incentrato sulla produzione di segnali ottenuti come somma di due o tre decadimenti esponenziali a $\textit{\tau}$ e intensità noti, e sulla verifica del rapporto di intensità a partire dalla posizione del decadimento sul piano dei fasori.\\
 
-% immagini placeholder
 
-\begin{figure}[h!]      % immagine non sta dove vorrei ma si sistema alla fine
+\begin{figure}[h!]    % immagini placeholder 
     \centering
 
     \begin{subfigure}[b]{0.48\textwidth}
+
         \centering
         \includegraphics[width=\textwidth]{immagini/double_exp_decay.png}
         \caption{Modello a doppio decadimento esponenziale.}
         \label{fig:double_decay}
+
     \end{subfigure}
     \hfill 
     \begin{subfigure}[b]{0.48\textwidth}
+
         \centering
         \includegraphics[width=\textwidth]{immagini/triple_exp_decay.png}
         \caption{Modello a triplo decadimento esponenziale.}
         \label{fig:triple_decay}
+
     \end{subfigure}
-    
-    \caption{Confronto tra i modelli per i decadimenti di fluorescenza a doppio e triplo esponenziale. \textit{SNR}$=10$, e questo è il motivo per cui nemmeno i marker corrsipondenti ai singoli esponenziali si trovano esattamente sul semicerchio universale. Il \textit{target} è calcolato a partire dai valori noti dei due/tre decadimenti, attraverso una media pesata di \textit{S} e \textit{G}}
+    \caption{Confronto tra i modelli per i decadimenti di fluorescenza a doppio e triplo esponenziale. \textit{SNR}$=10$, e questo è il motivo per cui nemmeno i marker corrsipondenti ai singoli esponenziali si trovano esattamente sul semicerchio universale. Il \textit{target} è calcolato a partire dai valori noti dei due/tre decadimenti, attraverso una media pesata di \textit{S} e \textit{G}. 
+    È stato scelto di non riportare le immagini relative ai decadimenti esponenziali in dominio temporale in quanto ritenuti poco significativi.}
     \label{fig:confronto_decadimenti}
 \end{figure}
 
@@ -118,18 +126,24 @@ In una situazione reale, è possibile trovarsi a studiare un campione in presenz
 Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:
 
 \begin{table}[h!]
+
     \centering
     \label{tab:rapporti_concentrazione}
     \setlength{\tabcolsep}{8pt}
+
     \begin{tabular}{lcc}
+
         \hline
         Modello & Rapporto reale & Rapporto ricavato \\
         \hline
         Doppio esponenziale & $0.1700:0.2848$  & $0.1819:0.2728$ \\
         Triplo esponenziale & $0.3000:0.5000:0.2000$ & $0.3061:0.4967:0.1972$ \\
         \hline
+
     \end{tabular}
+
     \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori, $\textit{SNR}=10$}
+
 \end{table}
 
 % si è scelto di non calcolare le incertezze relative ai rapporti perché non ha senso bla bla bla
@@ -138,4 +152,83 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Generazione e analisi del segnale IRF}
+\subsection{Generazione e analisi di IRF}
+
+Come già affrontato nella sezione teorica, dei dati FLIM reali sono una convoluzione di \textit{IRF} con il segnale di decadimento.\\
+\noindent È stato dunque necessario modellizzare una funzione di risposta strumentale, di forma gaussiana, per simulare dei dati di acquisizione reali.\\
+
+
+\subsubsection{Generazione del segnale}
+
+\noindent Si illustra, di seguito, il procedimento utilizzato per la generazione del segnale:\\
+
+
+\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+
+def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db): 
+
+    n_bins = len(irf)
+    
+    # Use circular convolution 
+    convol = np.fft.irfft(np.fft.rfft(expdata) * np.fft.rfft(irf)).real 
+    convol = np.clip(convol, 0, None)
+    convol = (convol / np.sum(convol)) * counts    # normalization
+    
+    # NOISE
+    if noise_flag: noisy_signal = add_noise(convol, snr_db) 
+    else: noisy_signal = convol
+    
+    return convol, noisy_signal
+
+\end{minted}
+
+
+\paragraph{Convoluzione circolare}
+\cite[Sez. 8.6.5]{oppenheim_discrete_2009}
+ % posso fare una reference alla riga di codice?
+È interessante osservare la modalità di convoluzione scelta alla riga 7 del codice: al posto di una convoluzione lineare, si è scelta una convoluzione circolare.
+
+% enorme gigantesco todo
+
+\paragraph{\textit{Clipping}}
+
+\paragraph{Rumore}  % niente di nuovo, might delete later
+
+
+
+\subsubsection{Risultati}   % immagini, finite tutte sotto
+
+
+\begin{figure}[h!]
+
+    \centering
+    \includegraphics[width=\textwidth]{immagini/irf_sing_exp_decay.png}
+    \label{fig:irf_sing_decay_exp}
+
+    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 10$}.
+
+
+\end{figure}
+
+\begin{figure}[h!]     
+    \centering
+
+    \begin{subfigure}[b]{0.48\textwidth}
+
+        \centering
+        \includegraphics[width=\textwidth]{immagini/irf_sing_exp_decay_phasors.png}
+        \label{fig:irf_sing_decay_ph}
+
+    \end{subfigure}
+    \hfill 
+    \begin{subfigure}[b]{0.48\textwidth}
+
+        \centering
+        \includegraphics[width=\textwidth]{immagini/irf_double_exp_decay_phasors.png}
+        \label{fig:irf_double_decay_ph}
+
+    \end{subfigure}
+    
+    \caption{Rappresentazione sul piano dei fasori del segnale di, rispettivamente, decadimento mono-esponenziale a sinistra, e a doppio esponenziale a destra, entrambi convoluti con \textit{IRF}}
+
+\end{figure}

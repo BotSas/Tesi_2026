@@ -304,6 +304,41 @@
       \verb https://www.nature.com/articles/s41586-020-2649-2
       \endverb
     \endentry
+    \entry{oppenheim_discrete_2009}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={Alan\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fd563e605c810572cece256b4271abd4}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{fullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{bibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0-13-198842-2}
+      \field{title}{Discrete-Time Signal Processing}
+      \field{year}{2009}
+      \field{dateera}{ce}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

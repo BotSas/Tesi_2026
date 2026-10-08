@@ -2369,6 +2369,7 @@
     <bcf:citekey order="3" intorder="1">ranjitFitfreeAnalysisFluorescence2018</bcf:citekey>
     <bcf:citekey order="4" intorder="1">jamesMinuitSystemFunction1975</bcf:citekey>
     <bcf:citekey order="5" intorder="1">harrisArrayProgrammingNumPy2020</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">oppenheim_discrete_2009</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
