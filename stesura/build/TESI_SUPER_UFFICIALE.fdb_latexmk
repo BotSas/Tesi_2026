@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber build/TESI_SUPER_UFFICIALE"] 0 "build/TESI_SUPER_UFFICIALE.bcf" "build/TESI_SUPER_UFFICIALE.bbl" "build/TESI_SUPER_UFFICIALE" 1791418818.16002 -1
+["biber build/TESI_SUPER_UFFICIALE"] 0 "build/TESI_SUPER_UFFICIALE.bcf" "build/TESI_SUPER_UFFICIALE.bbl" "build/TESI_SUPER_UFFICIALE" 1791419022.15523 -1
   "bibliografia.bib" 1791312873.60726 36589 d82544d05873cc72ef881e70a0478645 ""
-  "build/TESI_SUPER_UFFICIALE.bcf" 1791418817.91343 107543 89928d9272f4bfbf8dbf384f8f44ff07 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.bcf" 1791419021.87288 107543 89928d9272f4bfbf8dbf384f8f44ff07 "lualatex"
   (generated)
   "build/TESI_SUPER_UFFICIALE.bbl"
   "build/TESI_SUPER_UFFICIALE.blg"
   (rewritten before read)
-["lualatex"] 1791418815.71267 "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" "build/TESI_SUPER_UFFICIALE.pdf" "TESI_SUPER_UFFICIALE" 1791418818.16028 0
+["lualatex"] 1791419019.38944 "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" "build/TESI_SUPER_UFFICIALE.pdf" "TESI_SUPER_UFFICIALE" 1791419022.1555 0
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc" 1791227084.0851 81754 23a65669d934f8866349133cf134a695 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-bold.luc" 1791228139.60097 82058 5a56f04791722240dc3c5af064ae9257 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1790962026.64044 128281 c6f80f39b6b4f903e4339f6819ec2ecc ""
@@ -22,7 +22,7 @@
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1791229229.41477 128128 ca20734c6458fb2502cd84305b602bbe ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc" 1791305446.78487 120229 8ecdb2697a95d3f30800a439e275581e ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790959223.68113 406489 857bff30402168e402a5b5f6e69efe67 ""
-  "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" 1791418027.16582 3109 290d6cda831f0420a3ee7fd136a939fe ""
+  "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" 1791419016.50087 3187 539cc676b6b83ee6ec803fe7ebf07fdd ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -367,13 +367,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790957563.51629 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/tex/generic/config/language.dat" 1790957568.40263 5334 13a0c5fd86f5ef4d791286d0152084d1 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1790957727 12240957 c778e58e1f8e0b3467546f8fece02f0c ""
-  "TESI_SUPER_UFFICIALE.tex" 1791418027.16582 3109 290d6cda831f0420a3ee7fd136a939fe ""
+  "TESI_SUPER_UFFICIALE.tex" 1791419016.50087 3187 539cc676b6b83ee6ec803fe7ebf07fdd ""
   "build/TESI_SUPER_UFFICIALE-frn.pdf" 1790970926.99804 26974 4d8af71eb666a7c24e13368d0d998f8a ""
-  "build/TESI_SUPER_UFFICIALE.aux" 1791418817.90066 5563 089f52f3bb028883e7c94ff354c5cd99 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.aux" 1791419021.85788 5563 089f52f3bb028883e7c94ff354c5cd99 "lualatex"
   "build/TESI_SUPER_UFFICIALE.bbl" 1791418673.34909 13057 f0706cb2fc5f92d201690b8e95302bd2 "biber build/TESI_SUPER_UFFICIALE"
-  "build/TESI_SUPER_UFFICIALE.out" 1791418817.90743 1952 c0b1f33b9b0219f8eb92942732f670c1 "lualatex"
-  "build/TESI_SUPER_UFFICIALE.run.xml" 1791418817.91461 2495 2f4dfca32ffcb8e32a14fb5598daa080 "lualatex"
-  "build/TESI_SUPER_UFFICIALE.toc" 1791418817.91461 1117 941b2cbef41d391b8984d659cf133153 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.out" 1791419021.86688 1952 c0b1f33b9b0219f8eb92942732f670c1 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.run.xml" 1791419021.87388 2495 2f4dfca32ffcb8e32a14fb5598daa080 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.toc" 1791419021.87388 1117 941b2cbef41d391b8984d659cf133153 "lualatex"
   "build/_minted-TESI_SUPER_UFFICIALE/FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex" 1791417999.76177 809 37c612d2ff1ca6bf518ff8ba186e272e ""
   "build/_minted-TESI_SUPER_UFFICIALE/manni.pygstyle" 1791418205.41109 6606 e47ae91bb2c49f12a46b63bcc8272442 ""
   "immagini/double_exp_decay.png" 1791232504.74154 37395 04f4e3385ca1ba8d081375745b8f2432 ""
