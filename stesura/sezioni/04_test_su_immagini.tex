@@ -6,3 +6,47 @@
 % subsbusections: teoria relativa al filtro median e tresholding
 
 % metto qui la panel app? o non la inserisco proprio nella tesi?
+
+\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+
+def phasors_from_region(image, roi_mask, median_size, threshold_pct):
+
+    '''
+    Calculates G and S from  spatial region of interest.
+    Takes as input:
+    - image as a xr.DataArray
+    - roi_mask: 2D boolean array (x, y)
+    '''
+
+    G_img, S_img, fft0 = image_phasor_calc(image)
+    
+    # MEDIAN FILTER
+    fft0_med, G_med, S_med = phasor_filter_median( 
+        fft0.values, 
+        G_img.values, 
+        S_img.values,
+        size = median_size,
+        repeat = 2
+    )
+    ...
+    return df_roi_phasors   
+
+\end{minted}
+
+
+    % threshold_val = np.nanmax(fft0_med) * threshold_pct     # tresholding - every pixel below treshold is set to NaN
+    % fft0_thresh, G_thresh, S_thresh = phasor_threshold(
+    %     fft0_med,
+    %     G_med,
+    %     S_med,
+    %     mean_min = threshold_val
+    % )
+    
+    % valid_mask = roi_mask & ~np.isnan(G_thresh)     # only keeps pixel which are not NaN and inside ROI
+    
+    % df_roi_phasors = pd.DataFrame({
+    %     "G": G_thresh[valid_mask],
+    %     "S": S_thresh[valid_mask]
+    % })
+
+% Lascio commentato il resto della funzione percé non lo considero significativo ai fini della tesi, da rivedere 

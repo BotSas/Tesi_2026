@@ -7,9 +7,12 @@ La stesura del codice si è divisa in due momenti fondamentali: la simulazione d
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsection{Generazione dei segnali}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Rappresentazione di decadimenti sul piano dei fasori}
 
@@ -54,14 +57,13 @@ def phasor_calc (n, harm_n = 1):
 
 
 \noindent Si noti l'utilizzo della \textit{rfft} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali.
-Quando si calcola la trasformata di Fourier standard su un campione di \textit{N} eventi, verranno generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della FT, la seconda metà di questa lista di numeri sarà identica alla prima ($\textit{Im[z]} = 0 \Rightarrow z* = z$). In questo modo è possibile risparmiare risorse computazionali.\\
-
+Quando si calcola la trasformata di Fourier standard su un campione di \textit{N} eventi, verranno generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della FT, la seconda metà di questa lista di numeri sarà identica alla prima ($\textit{Im[z]} = 0 \Rightarrow z^* = z$). In questo modo è possibile risparmiare risorse computazionali.\\
 % inserire immagine di decadimento esponenziale con rumore a zero e di fianco punto corrispondente sul piano dei fasori; magari piccola di fianco
-
+%_______________________________________________________________________________________
 
 \paragraph{Generazione del rumore}      % AGGIUNGERE CODICE FUNZIONE MAKE_NOISE? BOOOOH (dovrei anche giustificare la scelta del rumore gaussiano vs poissoniano, che ancora non ho capito)
 
-Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per la generazione di rumore gaussiano sul decadimento:
+Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per la generazione di rumore gaussiano sul decadimento:       
 
 % immagine placeholder da sistemare
 
@@ -73,7 +75,7 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 
 \end{figure}
 
-\noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.
+\noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -149,8 +151,9 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 % si è scelto di non calcolare le incertezze relative ai rapporti perché non ha senso bla bla bla
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \subsection{Generazione e analisi di IRF}
 
@@ -158,7 +161,12 @@ Come già affrontato nella sezione teorica, dei dati FLIM reali sono una convolu
 \noindent È stato dunque necessario modellizzare una funzione di risposta strumentale, di forma gaussiana, per simulare dei dati di acquisizione reali.\\
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \subsubsection{Generazione del segnale}
+\label{sec:generazione_dei_segnali}
 
 \noindent Si illustra, di seguito, il procedimento utilizzato per la generazione del segnale:\\
 
@@ -180,23 +188,29 @@ def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db):
     
     return convol, noisy_signal
 
-\end{minted}
+\end{minted}    
+
+%DISCLAIMER forse ci ho preso troppo la mano con questa sezione, anche nella parte teorica. Posso eliminare qualcosa se serve
+% Ho già tagliato qualcosa
+
+\noindent La convoluzione descritta dall'equazione \ref{eq:convoluzione} è molto diversa dalla formula operativa utilizzata per il codice.\\
+
+\noindent Per prima cosa, è bene osservare l'utilizzo della \textit{Fast Fourier Transform} (e poi della riconversione attraverso l'anti-trasformata) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale \cite{harrisArrayProgrammingNumPy2020}. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier \cite[Sez. 9.1]{oppenheim_discrete_2009}.\\
+%Per array di grandi dimensioni, questo abbatte l'impiego di tempo di elaborazione e memoria 
+
+\noindent In secondo luogo, calcolare il prodotto delle \textit{FFT} dei due segnali equivale matematicamente a eseguire una convoluzione circolare, invece che lineare, nel dominio del tempo \cite[Sez. 8.6.5]{oppenheim_discrete_2009}.\\
+La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale di fluorescenza) su \textit{IRF$(t)$}: nella convoluzione circolare, dopo lo shift viene applicato l'operatore $\textit{mod} \; N$. Dunque, la coda di $I(t)$ che eccede la fine del periodo del laser (di lunghezza $N$) non viene scartata, ma rientra all'inizio della finestra temporale.\\
 
 
-\paragraph{Convoluzione circolare}
-Ho preso tutto da qui \cite[Sez. 8.6.5]{oppenheim_discrete_2009}
+
+\paragraph{Osservazioni aggiuntive}
+\begin{itemize}
+    \item \textit{Clipping}
+    \item Rumore
+\end{itemize}
 
 
-
-
-
-% enorme gigantesco todo
-
-\paragraph{\textit{Clipping}}
-
-\paragraph{Rumore}  % niente di nuovo, might delete later
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Risultati}   % immagini, finite tutte sotto
 

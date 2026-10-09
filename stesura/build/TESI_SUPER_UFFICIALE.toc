@@ -5,19 +5,18 @@
 \contentsline {subsection}{\numberline {2.1}Analisi fasoriale}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Funzione di risposta dello strumento}{2}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Convoluzione tra IRF e segnale di fluorescenza}{3}{subsubsection.2.2.1}%
+\contentsline {paragraph}{Osservazioni}{3}{equation.2.2}%
 \contentsline {section}{\numberline {3}Sviluppo del modello}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{3}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{3}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Generazione del rumore}{4}{equation.3.3}%
-\contentsline {subsubsection}{\numberline {3.1.2}Generazione di decadimenti a esponenziali multipli}{4}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{4}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{4}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Generazione del rumore}{5}{equation.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.2}Generazione di decadimenti a esponenziali multipli}{5}{subsubsection.3.1.2}%
 \contentsline {paragraph}{Verifica del rapporto di concentrazione}{6}{figure.caption.2}%
 \contentsline {subsection}{\numberline {3.2}Generazione e analisi di IRF}{6}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{6}{subsubsection.3.2.1}%
-\contentsline {paragraph}{Convoluzione circolare}{6}{subsubsection.3.2.1}%
-\contentsline {paragraph}{\textit {Clipping}}{6}{subsubsection.3.2.1}%
-\contentsline {paragraph}{Rumore}{6}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Osservazioni aggiuntive}{7}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Risultati}{7}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Test su immagini}{8}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Nuvola di dati (titolo placeholder)}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Filtro median sul piano dei fasori}{8}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Conclusioni}{8}{section.5}%
+\contentsline {section}{\numberline {4}Test su immagini}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Nuvola di dati (titolo placeholder)}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Filtro median sul piano dei fasori}{7}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Conclusioni}{9}{section.5}%

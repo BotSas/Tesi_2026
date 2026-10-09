@@ -403,7 +403,6 @@ OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/AB5B018487D635B6378CE877E039C6451350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-italic.luc
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT ./immagini/irf_sing_exp_decay.png
 INPUT ./immagini/irf_sing_exp_decay.png
 INPUT ./immagini/irf_sing_exp_decay_phasors.png
@@ -411,6 +410,9 @@ INPUT ./immagini/irf_sing_exp_decay_phasors.png
 INPUT ./immagini/irf_double_exp_decay_phasors.png
 INPUT ./immagini/irf_double_exp_decay_phasors.png
 INPUT ./sezioni/04_test_su_immagini.tex
+OUTPUT build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./sezioni/05_conclusioni.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.aux
