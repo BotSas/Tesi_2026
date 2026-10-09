@@ -417,6 +417,7 @@ INPUT ./build/TESI_SUPER_UFFICIALE.aux
 INPUT ./build/TESI_SUPER_UFFICIALE.out
 INPUT ./build/TESI_SUPER_UFFICIALE.run.xml
 OUTPUT build/TESI_SUPER_UFFICIALE.run.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb

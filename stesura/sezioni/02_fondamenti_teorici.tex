@@ -12,7 +12,7 @@
 \subsection{Funzione di risposta dello strumento} 
 
 Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. \\
-L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione negli atomi del campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\
+L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione nelle molecole del fluoroforo presente nel campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\
 
 % \noindent Il processo di separazione del segnale proveniente dalle due diverse fonti (campione e laser) è descritto da \textit{Ranjit et al.} \cite{ranjitFitfreeAnalysisFluorescence2018} e viene di seguito riportato.
 
@@ -23,7 +23,7 @@ In aggiunta a questo, il segnale subisce una distorsione (di solito un allargame
 
 \noindent Emerge dunque un vantaggio significativo dell'analisi fasoriale rispetto al processo appena illustrato: non è necessario conoscere la forma precisa della \textit{IRF}, è sufficiente effettuare una calibrazione utilizzando un fluoroforo a decadimento mono-esponenziale a $\textit{\tau}$ noto.\\
 
-\noindent Come menzionato in precedenza, infatti,    % RICORDARSI DI MENZIONARLO PRIMA PERÒ SENNÒ SEI UN CLOWN
+\noindent Come ripreso nella sezione successiva, infatti,    % RICORDARSI DI MENZIONARLO PRIMA PERÒ SENNÒ SEI UN CLOWN
 la convoluzione nel dominio temporale si traduce come una moltiplicazione nello spazio di Fourier. La \textit{IRF} viene ridotta a un singolo punto sul piano dei fasori, che naturalmente non si troverà sul semicerchio universale in quanto non è un decadimento esponenziale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
 \noindent Unendo queste due informazioni, è possibile ricavare il segnale totale come:
@@ -39,7 +39,23 @@ da cui è banale ricavare il fasore relativo al decadimento con un'operazione in
 
 % qui volendo posso parlare per 6 ore
 
+\subsubsection{Convoluzione tra IRF e segnale di fluorescenza}
+
+La convoluzione è una delle possibili operazioni di combinazione tra due funzioni. In particolare, viene qui proposta la definizione matematica di \textit{convoluzione discreta}, rilevante per questo studio:
+
+\begin{equation}
+    (f * g)[n] = \sum_{m=-\infty}^{+\infty} f[m] g[n-m]
+    \label{def_convoluzione}
+\end{equation}
+
+Le due funzioni \textit{f} e \textit{g} sono, nel nostro caso, il decadimento teorico di fluorescenza e la IRF rispettivamente.\\
+
+\noindent Il motivo per cui queste due funzioni si combinano tramite una convoluzione, è da ricondursi proprio alla forma allargata dell'IRF.\\
+Se questa fosse una distribuzione \textit{Dirac-$\delta$}, tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente.\\
+
+\noindent Si immagini di suddividere l'impulso del laser in tanti intervalli temporali $t_k$: all'istante $t_0$ l'intensità del laser sarà pari a $\textit{IRF}(t_k)$, mentre quella di fluorescenza seguirà la legge $I(t-t_k)$, dove l'argomento rappresenta il tempo trascorso dall'eccitazione \cite{mastersBookReviewPrinciples2008a}.
 
 
 
 
+% It is important to understand why the measured intensity decay is a convolution with the lamp function. The intensity decay law or impulse response function I(t) is what would be observed with δ-function excitation and a δ-function for the instrument response. Equations 4.2, 4.12, and 4.13 are examples of impulse-response functions. Unfortunately, it is not possible to directly measure the impulse response function. Most instrument response functions are 0.5 to 2 ns wide. However, we can imagine the excitation pulse to be a series of δ-functions with different amplitudes.  Each of these δ-functions excites an impulse response from the sample, with an intensity proportional to the height of the δ-function (Figure 4.10, top). The measured function N(tk) is the sum of all these exponential decays, starting with different amplitudes and different times.  Mathematically, the concept of convolution can be expressed as follows.16 Each δ-function excitation is assumed to excite an impulse response at time tk:  (4.14)  The amplitude of the impulse response function excited at time tk is proportional to the excitation intensity L(tk) occurring at the same time. The term (t – tk) appears because the impulse response is started at t = tk, and it is understood that there is no emission from I(tk) before excitation (t < tk). The measured decay N(tk) is the sum of the impulse responses created by all the individual δ-function excitation pulses occurring until tk:  (4.15)  For small values of ∆t this equation can be expressed as an integral:  (4.16)  This expression says that the experimentally measured intensity at time t is given by the sum of the intensities expected for all the δ-function excitation pulses that occur until time t. It is important to notice that new intensity decays are created in the sample as long as there is nonzero intensity in L(tk). This is why the intensity decay takes on the shape of the IRF. For convenience the dummy variable of integration is changed using t' = t – μ, so that the convolution integral is expressed as  (4.17)  The task is to determine the impulse response function I(μ) that best matches the experimental data. Since the data are digital (counts per channel), eq. 4.15 is perhaps the more convenient form. It is important to notice that time = 0 is not defined in a TCSPC experiment. There is no zero time because there is no single δ-function initiating the decay. For convenience the excitation pulse is positioned close to zero on the time axis so that one can consider the values of N(tk) relative to the decay time of the sample. The impulse response function recovered from the analysis does have a defined t = 0.  

@@ -1093,6 +1093,71 @@
       "select": "zotero://select/library/items/7DTH5PIG"
     },
     {
+      "key": "5LLWKEHR",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Book Review: Principles of Fluorescence Spectroscopy, Third Edition",
+      "abstractNote": "This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02",
+      "date": "2008-3-1",
+      "DOI": "10.1117/1.2904580",
+      "citationKey": "mastersBookReviewPrinciples2008a",
+      "url": "https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full",
+      "accessDate": "2026-10-09T11:32:20Z",
+      "shortTitle": "Book Review",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "13",
+      "publicationTitle": "Journal of Biomedical Optics",
+      "ISSN": "1083-3668, 1560-2281",
+      "issue": "02",
+      "journalAbbreviation": "J. Biomed. Opt.",
+      "creators": [
+        {
+          "firstName": "Barry R.",
+          "lastName": "Joseph R. Lakowicz",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-09T11:32:20Z",
+      "dateModified": "2026-10-09T11:33:38Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/5LLWKEHR",
+      "itemID": 65,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://nathan.instras.com/MyDocsDB/doc-800.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-09T11:32:19Z",
+          "dateModified": "2026-10-09T11:32:21Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/C97KXBBZ",
+          "path": "/home/aras/Zotero/storage/C97KXBBZ/Joseph R. Lakowicz - 2008 - Book Review Principles of Fluorescence Spectroscopy, Third Edition.pdf",
+          "select": "zotero://select/library/items/C97KXBBZ"
+        }
+      ],
+      "notes": [
+        {
+          "key": "KB89JA6I",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "5LLWKEHR",
+          "note": "capitolo 4, voglio capire la convoluzione",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-09T11:32:26Z",
+          "dateModified": "2026-10-09T11:32:26Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/KB89JA6I"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Biomed. Opt.",
+      "itemKey": "5LLWKEHR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/5LLWKEHR"
+    },
+    {
       "key": "LQ9HZPVU",
       "version": 0,
       "itemType": "book",

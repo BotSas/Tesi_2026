@@ -81,6 +81,54 @@
       \verb https://www.nature.com/articles/s41596-018-0026-5
       \endverb
     \endentry
+    \entry{mastersBookReviewPrinciples2008a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7e3f66e1ea483434321029e016c34b49}{%
+           family={Joseph\bibnamedelimb R.\bibnamedelimi Lakowicz},
+           familyi={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Barry\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{fullhash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{bibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorbibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authornamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorfullhash}{7e3f66e1ea483434321029e016c34b49}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02}
+      \field{day}{1}
+      \field{issn}{1083-3668, 1560-2281}
+      \field{journaltitle}{Journal of Biomedical Optics}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{02}
+      \field{shortjournal}{J. Biomed. Opt.}
+      \field{shorttitle}{Book {{Review}}}
+      \field{title}{Book {{Review}}: {{Principles}} of {{Fluorescence Spectroscopy}}, {{Third Edition}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1117/1.2904580
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/C97KXBBZ/Joseph R. Lakowicz - 2008 - Book Review Principles of Fluorescence Spectroscopy, Third Edition.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+      \verb{url}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+    \endentry
     \entry{jamesMinuitSystemFunction1975}{article}{}
       \name{author}{2}{}{%
         {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
@@ -100,8 +148,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -269,8 +317,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
@@ -329,8 +377,8 @@
       \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd}
