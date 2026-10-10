@@ -81,6 +81,7 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Generazione di decadimenti a esponenziali multipli}
+\label{sec:generazione_di_decadimenti_a_exp_multipli}
 
 % Magari inseriamolo anche del codice, no???
 % Forse, piuttosto che mettere il codice, ha più senso spiegare la funzione phasor_calc_mix senza metterla nella tesi. Si collega bene all spiegazione di come si fanno i conti sul piano dei fasori che prima o poi metterò nella parte teorica
@@ -173,7 +174,7 @@ Come già affrontato nella sezione teorica, dei dati FLIM reali sono una convolu
 
 \begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
 
-def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db): 
+def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db): 
 
     n_bins = len(irf)
     
@@ -190,8 +191,22 @@ def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db):
 
 \end{minted}    
 
-%DISCLAIMER forse ci ho preso troppo la mano con questa sezione, anche nella parte teorica. Posso eliminare qualcosa se serve
-% Ho già tagliato qualcosa
+\begin{figure}[h!]
+
+    \centering
+    \includegraphics[width=\textwidth]{immagini/irf_sing_exp_decay.png}
+    \label{fig:irf_sing_decay_exp}
+
+    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 10$. Si noti che il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}.
+
+
+\end{figure}
+
+% dai commentiamo qualcosa di questa immagine? 
+
+
+
+% DISCLAIMER forse ci ho preso troppo la mano con questa sezione, anche nella parte teorica. Posso eliminare qualcosa se serve
 
 \noindent La convoluzione descritta dall'equazione \ref{eq:convoluzione} è molto diversa dalla formula operativa utilizzata per il codice.\\
 
@@ -202,29 +217,43 @@ def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db):
 La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale di fluorescenza) su \textit{IRF$(t)$}: nella convoluzione circolare, dopo lo shift viene applicato l'operatore $\textit{mod} \; N$. Dunque, la coda di $I(t)$ che eccede la fine del periodo del laser (di lunghezza $N$) non viene scartata, ma rientra all'inizio della finestra temporale.\\
 
 
+%_____________________________________________________________________________
 
 \paragraph{Osservazioni aggiuntive}
 \begin{itemize}
-    \item \textit{Clipping}
-    \item Rumore
+    \item \textit{Clipping}: alla riga 8 del codice, \textit{np.clip} imposta a zero eventuali numeri negativi risultati da errori di troncamento nel calcolo della FFT \cite{harrisArrayProgrammingNumPy2020}. L'array rappresenta il numero di fotoni raccolti in ogni \textit{bin}, quindi un valore negativo non ha significato fisico.
+    \item Normalizzazione: la riga 9 del codice ri-normalizza l'array al numero totale di fotoni, che viene perso con la convoluzione. Questo è necessario per applicare il rumore nella parte successiva della funzione in modo accurato.\\
 \end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Risultati}   % immagini, finite tutte sotto
+\subsubsection{Deconvoluzione}
+
+Per la rappresentazione sul piano dei fasori, è necessario effettuare una deconvoluzione per separare nuovamente segnale di fluorescenza e IRF. Dal processo non si ottengono esattamente gli stessi fasori che si sarebbero potuti ottenere prima della convoluzione a causa dell'aggiunta del rumore.\\
+
+\noindent Come dichiarato all'inizio di questa trattazione, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale. Dunque le operazioni si sono svolte nel piano dei fasori, e il fasore risultante è stato salvato come un numero complesso: 
+
+\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+
+def phasor_deconv(G_meas, S_meas, G_irf, S_irf): 
+ 
+    z_meas = G_meas + 1j * S_meas       # imaginary unit i = 1j
+    z_irf = G_irf + 1j * S_irf
+    
+    z_deconvol = z_meas / z_irf
+    
+    G_deconvol, S_deconvol = np.real(z_deconvol), np.imag(z_deconvol)
+    
+    return G_deconvol, S_deconvol
+
+\end{minted}    
 
 
-\begin{figure}[h!]
 
-    \centering
-    \includegraphics[width=\textwidth]{immagini/irf_sing_exp_decay.png}
-    \label{fig:irf_sing_decay_exp}
+\paragraph{Decadimento a doppio esponenziale}
 
-    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 10$}.
-
-
-\end{figure}
+Anche in questo caso le operazioni sono state ripetute con un decadimento a doppio esponenziale. Il procedimento di generazione del segnale è stato eseguito come da sezione \ref{sec:generazione_di_decadimenti_a_exp_multipli}. I fasori relativi ai due decadimenti separati sono stati calcolati prima della convoluzione con IRF per essere rappresentati sul piano dei fasori e utilizzati per calcolare il rapporto tra fluorofori.\\
 
 \begin{figure}[h!]     
     \centering
@@ -248,3 +277,10 @@ La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale 
     \caption{Rappresentazione sul piano dei fasori del segnale di, rispettivamente, decadimento mono-esponenziale a sinistra, e a doppio esponenziale a destra, entrambi convoluti con \textit{IRF}}
 
 \end{figure}
+
+
+% \paragraph{Verifica del rapporto di concentrazione}
+
+% Per il caso a esponenziale doppio abbiamo calcolato yada yada
+
+
