@@ -12,19 +12,28 @@ import lib.phasorgraphs as phg
 
 
 # Widget
-file_input_tiff = pn.widgets.FileInput(accept = '.tif,.tiff', name='Upload TIFF')
+file_input_tiff = pn.widgets.FileInput(accept = '.tif,.tiff', name = 'Upload TIFF')
 
-tab4_card_ext = pn.Card(            # non riesco a farla vedereeeeeee
+tab4_card_ext = pn.Card(
     file_input_tiff,
-    title = "4) TIFF Image Stack",
-    collapsed=True
+    header=pn.pane.HTML(
+        (
+            '<div style="width: 100%; text-align: center; '
+            'font-size: 1.17em; font-weight: bold; line-height: 1.7; '
+            'margin: 0;">4) TIFF Image Stack</div>'
+        ),
+        styles={"width": "100%", "margin": "5px 0"},
+    ),
+    collapsed=True,
+    width_policy="max",
+    sizing_mode="stretch_width",
 )
 
 @pn.depends(file_input_tiff)
 def tab4_view_ext(file_bytes):
     # Message shown if no file is uploaded
     if file_bytes is None:
-        return pn.pane.Markdown("Upload a TIFF file from sidebar.", align="center")
+        return pn.pane.Markdown("Upload a TIFF file from sidebar.", align = "center")
 
     try:    # reading file
         with tifffile.TiffFile(io.BytesIO(file_bytes)) as tif:

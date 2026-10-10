@@ -259,8 +259,7 @@ global_card = pn.Card(
 tab1_card = pn.Card(t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_snr, title="1) Single exponential", collapsed = True)
 tab2_card = pn.Card(t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_snr, title = "2) double exponential", collapsed = True)
 tab3_card = pn.Card(t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_snr, title = "3) Triple exponential", collapsed = True)
-tab4_card_ext 
-sidebar = pn.Column(global_card, tab1_card, tab2_card, tab3_card, margin = (10, 10))
+sidebar = pn.Column(global_card, tab1_card, tab2_card, tab3_card, tab4_card_ext, margin = (10, 10))
 
 
 
@@ -284,7 +283,7 @@ main_area = pn.Column(header, main_tabs)
 
 # ── SYNC SIDEBAR (left) AND TABS (top) ─────────────────────────────────────────
 
-_tab_cards = {0: tab1_card, 1: tab2_card, 2: tab3_card, 4: tab4_card_ext}
+_tab_cards = {0: tab1_card, 1: tab2_card, 2: tab3_card, 3: tab4_card_ext}
 _syncing = False
 
 def _sync_cards(event):
@@ -311,7 +310,7 @@ def _sync_tab_from_card(card_idx, event):
 
 main_tabs.param.watch(_sync_cards, "active")
 for _card_idx, _card in _tab_cards.items():
-    _card.param.watch(lambda e, i=_card_idx: _sync_tab_from_card(i, e), "collapsed")
+    _card.param.watch(lambda e, i = _card_idx: _sync_tab_from_card(i, e), "collapsed")
 
 # ─── START ────────────────────────────────────────────────────────
 

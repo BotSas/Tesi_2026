@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  10 OCT 2026 13:51
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  10 OCT 2026 17:13
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1686,14 +1686,22 @@ Package luatex.def Info: immagini/irf_double_exp_decay_phasors.png  used on inpu
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (./sezioni/04_test_su_immagini.tex
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- [8] (./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex)) (./sezioni/05_conclusioni.tex)
+ [8] (./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex) [9<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>]) (./sezioni/05_conclusioni.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 3--105
 
  []
 
-[9<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>]
+
 Overfull \hbox (11.41237pt too wide) in paragraph at lines 109--109
 \TU/lmr/m/n/12 3668, 1560-2281. \TU/lmr/m/sc/12 doi\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 10 . 1117 / 1 . 2904580$[][]\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 https : / / www . spiedigitallibrary .
  []
@@ -1712,19 +1720,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53072 strings out of 476553
+ 53074 strings out of 476553
  125161,2373549 words of node,token memory allocated
  740 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 32 attribute, 76 glue_spec, 18 attribute_list, 2 write, 3 pdf_action nodes
-   avail lists: 1:1,2:1599,3:318,4:145,5:306,6:51,7:6348,8:187,9:411,10:15,11:969
- 73719 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:1599,3:334,4:145,5:315,6:51,7:6348,8:187,9:430,10:15,11:969
+ 73720 multiletter control sequences out of 65536+600000
  49 fonts using 4070487 bytes
  105i,10n,115p,1439b,1383s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (11 pages, 464283 bytes).
+Output written on TESI_SUPER_UFFICIALE.pdf (11 pages, 464802 bytes).
 
-PDF statistics: 359 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 131072)
+PDF statistics: 360 PDF objects out of 1000 (max. 8388607)
+ 270 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 131072)
  144 words of extra memory for PDF output out of 10000 (max. 100000000)
 
