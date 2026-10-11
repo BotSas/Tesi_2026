@@ -63,7 +63,7 @@ Quando si calcola la trasformata di Fourier standard su un campione di \textit{N
 
 \paragraph{Generazione del rumore}      % AGGIUNGERE CODICE FUNZIONE MAKE_NOISE? BOOOOH (dovrei anche giustificare la scelta del rumore gaussiano vs poissoniano, che ancora non ho capito)
 
-Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per la generazione di rumore gaussiano sul decadimento:       
+Per aggiungere realismo alla simulazione, è stata sviluppata una funzione che accetta in input un array contenente il numero di eventi per ogni bin, e aggiunge a ogni elemento un valore secondo una distribuzione di probabilità gaussiana. Il risultato è un decadimento esponenziale "sporcato" da rumore gaussiano:\\
 
 % immagine placeholder da sistemare
 
@@ -71,16 +71,17 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione per l
 
     \centering
     \includegraphics[width=0.98\linewidth]{immagini/sing_exp_decay_noisy.png}
-    \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal to noise ratio} = 10$}
+    \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal-to-noise ratio} = 10$}
+    \label{fig:sing_exp_and_phasor_noisy}
 
 \end{figure}
 
-\noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal to noise ratio} sarà sempre indicato nella didascalia.\\
+\noindent Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal-to-noise ratio} sarà sempre indicato nella didascalia.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Generazione di decadimenti a esponenziali multipli}
+\subsubsection{Decadimenti a esponenziali multipli}
 \label{sec:generazione_di_decadimenti_a_exp_multipli}
 
 % Magari inseriamolo anche del codice, no???
@@ -124,9 +125,11 @@ In una situazione reale, è possibile trovarsi a studiare un campione in presenz
 \noindent Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si ricava dal rapporto dei segmenti che collegano il fasore totale ai fasori teorici dei singoli esponenziali. Dato che il fasore sperimentale non cade esattamente sulla retta passante per i due fasori teorici, per il calcolo si utilizza la sua intersezione con la retta normale (ovvero la proiezione ortogonale del fasore totale sulla congiungente).\\
 % qui dovrei spiegare anche il triplo esponenziale ma mi sa che preferisco spiegarlo prima nella teoria e poi aggiungere quello che manca qui.
 
+%__________________________________________________________________________
+
 \paragraph{Verifica del rapporto di concentrazione}
 
-Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:
+Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:\\
 
 \begin{table}[h!]
 
@@ -149,6 +152,15 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 
 \end{table}
 
+\noindent Per la deconvoluzione a doppio esponenziale, le frazioni di intensità sono state misurate tramite proiezione vettoriale del fasore sperimentale sul segmento congiungente i due decadimenti puri.\\
+
+\noindent Per le miscele a triplo esponenziale, la frazione corrispondente a ciascun fluoroforo è stata ricavata calcolando l'area dei relativi sotto-triangoli nel piano dei fasori. Tali aree sono state computate analiticamente a partire dalle coordinate spaziali dei vertici mediante la formula dell'area di Gauss:\\
+
+\begin{equation}
+    A={\frac {1}{2}}\left|\sum _{i=1}^{n}(x_{i}y_{i+1}-x_{i+1}y_{i})\right|
+    \label{eq:shoelace_formula}
+\end{equation}
+
 % si è scelto di non calcolare le incertezze relative ai rapporti perché non ha senso bla bla bla
 
 
@@ -156,7 +168,7 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Generazione e analisi di IRF}
+\subsection{Generazione e analisi della IRF}
 
 Come già affrontato nella sezione teorica, dei dati FLIM reali sono una convoluzione di \textit{IRF} con il segnale di decadimento.\\
 \noindent È stato dunque necessario modellizzare una funzione di risposta strumentale, di forma gaussiana, per simulare dei dati di acquisizione reali.\\
@@ -210,7 +222,7 @@ def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db):
 
 \noindent La convoluzione descritta dall'equazione \ref{eq:convoluzione} è molto diversa dalla formula operativa utilizzata per il codice.\\
 
-\noindent Per prima cosa, è bene osservare l'utilizzo della \textit{Fast Fourier Transform} (e poi della riconversione attraverso l'anti-trasformata) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale \cite{harrisArrayProgrammingNumPy2020}. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier \cite[Sez. 9.1]{oppenheim_discrete_2009}.\\
+\noindent Per prima cosa, è bene osservare l'utilizzo della \textit{Fast Fourier Transform} (e poi della riconversione attraverso l'anti-trasformata) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale \cite{harrisArrayProgrammingNumPy2020}. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier, molto più efficente \cite[Sez. 9.1]{oppenheim_discrete_2009}.\\
 %Per array di grandi dimensioni, questo abbatte l'impiego di tempo di elaborazione e memoria 
 
 \noindent In secondo luogo, calcolare il prodotto delle \textit{FFT} dei due segnali equivale matematicamente a eseguire una convoluzione circolare, invece che lineare, nel dominio del tempo \cite[Sez. 8.6.5]{oppenheim_discrete_2009}.\\

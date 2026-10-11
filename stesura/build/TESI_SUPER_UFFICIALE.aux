@@ -39,10 +39,11 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{4}{subsubsection.3.1.1}\protected@file@percent }
 \newlabel{eq:exp_decay}{{3}{4}{Rappresentazione di decadimenti sul piano dei fasori}{equation.3.3}{}}
 \@writefile{toc}{\contentsline {paragraph}{Generazione del rumore}{5}{equation.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Un esempio di decadimento a singola esponenziale con $\textit  {signal to noise ratio} = 10$}}{5}{figure.caption.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Generazione di decadimenti a esponenziali multipli}{5}{subsubsection.3.1.2}\protected@file@percent }
-\newlabel{sec:generazione_di_decadimenti_a_exp_multipli}{{3.1.2}{5}{Generazione di decadimenti a esponenziali multipli}{subsubsection.3.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Un esempio di decadimento a singola esponenziale con $\textit  {signal-to-noise ratio} = 10$}}{5}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:sing_exp_and_phasor_noisy}{{1}{5}{Un esempio di decadimento a singola esponenziale con $\textit {signal-to-noise ratio} = 10$}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{5}{subsubsection.3.1.2}\protected@file@percent }
+\newlabel{sec:generazione_di_decadimenti_a_exp_multipli}{{3.1.2}{5}{Decadimenti a esponenziali multipli}{subsubsection.3.1.2}{}}
 \newlabel{fig:double_decay}{{2a}{6}{Modello a doppio decadimento esponenziale}{figure.caption.2}{}}
 \newlabel{sub@fig:double_decay}{{a}{6}{Modello a doppio decadimento esponenziale}{figure.caption.2}{}}
 \newlabel{fig:triple_decay}{{2b}{6}{Modello a triplo decadimento esponenziale}{figure.caption.2}{}}
@@ -50,42 +51,43 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Confronto tra i modelli per i decadimenti di fluorescenza a doppio e triplo esponenziale. \textit  {SNR}$=10$, e questo è il motivo per cui nemmeno i marker corrsipondenti ai singoli esponenziali si trovano esattamente sul semicerchio universale. Il \textit  {target} è calcolato a partire dai valori noti dei due/tre decadimenti, attraverso una media pesata di \textit  {S} e \textit  {G}. È stato scelto di non riportare le immagini relative ai decadimenti esponenziali in dominio temporale in quanto ritenuti poco significativi.}}{6}{figure.caption.2}\protected@file@percent }
 \newlabel{fig:confronto_decadimenti}{{2}{6}{Confronto tra i modelli per i decadimenti di fluorescenza a doppio e triplo esponenziale. \textit {SNR}$=10$, e questo è il motivo per cui nemmeno i marker corrsipondenti ai singoli esponenziali si trovano esattamente sul semicerchio universale. Il \textit {target} è calcolato a partire dai valori noti dei due/tre decadimenti, attraverso una media pesata di \textit {S} e \textit {G}. È stato scelto di non riportare le immagini relative ai decadimenti esponenziali in dominio temporale in quanto ritenuti poco significativi}{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {paragraph}{Verifica del rapporto di concentrazione}{6}{figure.caption.2}\protected@file@percent }
-\newlabel{tab:rapporti_concentrazione}{{\caption@xref {tab:rapporti_concentrazione}{ on input line 134}}{6}{Verifica del rapporto di concentrazione}{table.caption.3}{}}
+\newlabel{tab:rapporti_concentrazione}{{\caption@xref {tab:rapporti_concentrazione}{ on input line 137}}{6}{Verifica del rapporto di concentrazione}{table.caption.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori, $\textit  {SNR}=10$}}{6}{table.caption.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Generazione e analisi di IRF}{6}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{6}{subsubsection.3.2.1}\protected@file@percent }
-\newlabel{sec:generazione_dei_segnali}{{3.2.1}{6}{Generazione del segnale}{subsubsection.3.2.1}{}}
+\newlabel{eq:shoelace_formula}{{4}{6}{Verifica del rapporto di concentrazione}{equation.3.4}{}}
 \abx@aux@cite{0}{harrisArrayProgrammingNumPy2020}
 \abx@aux@segm{0}{0}{harrisArrayProgrammingNumPy2020}
 \abx@aux@cite{0}{oppenheim_discrete_2009}
 \abx@aux@segm{0}{0}{oppenheim_discrete_2009}
 \abx@aux@cite{0}{oppenheim_discrete_2009}
 \abx@aux@segm{0}{0}{oppenheim_discrete_2009}
-\newlabel{fig:irf_sing_decay_exp}{{\caption@xref {fig:irf_sing_decay_exp}{ on input line 198}}{7}{Generazione del segnale}{figure.caption.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Simulazione di decadimento a singola esponenziale, convoluta con la \textit  {IRF}. $\textit  {SNR} = 10$. Si noti che il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}}{7}{figure.caption.4}\protected@file@percent }
 \abx@aux@cite{0}{harrisArrayProgrammingNumPy2020}
 \abx@aux@segm{0}{0}{harrisArrayProgrammingNumPy2020}
-\@writefile{toc}{\contentsline {paragraph}{Osservazioni aggiuntive}{8}{figure.caption.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Generazione e analisi della IRF}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{7}{subsubsection.3.2.1}\protected@file@percent }
+\newlabel{sec:generazione_dei_segnali}{{3.2.1}{7}{Generazione del segnale}{subsubsection.3.2.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Osservazioni aggiuntive}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:irf_sing_decay_exp}{{\caption@xref {fig:irf_sing_decay_exp}{ on input line 210}}{8}{Generazione del segnale}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Simulazione di decadimento a singola esponenziale, convoluta con la \textit  {IRF}. $\textit  {SNR} = 10$. Si noti che il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}}{8}{figure.caption.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Deconvoluzione}{8}{subsubsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Decadimento a doppio esponenziale}{8}{subsubsection.3.2.2}\protected@file@percent }
-\newlabel{fig:irf_sing_decay_ph}{{\caption@xref {fig:irf_sing_decay_ph}{ on input line 265}}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Decadimento a doppio esponenziale}{9}{subsubsection.3.2.2}\protected@file@percent }
+\newlabel{fig:irf_sing_decay_ph}{{\caption@xref {fig:irf_sing_decay_ph}{ on input line 277}}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
 \newlabel{sub@fig:irf_sing_decay_ph}{{}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
-\newlabel{fig:irf_double_decay_ph}{{\caption@xref {fig:irf_double_decay_ph}{ on input line 273}}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
+\newlabel{fig:irf_double_decay_ph}{{\caption@xref {fig:irf_double_decay_ph}{ on input line 285}}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
 \newlabel{sub@fig:irf_double_decay_ph}{{}{9}{Decadimento a doppio esponenziale}{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Rappresentazione sul piano dei fasori del segnale di, rispettivamente, decadimento mono-esponenziale a sinistra, e a doppio esponenziale a destra, entrambi convoluti con \textit  {IRF}}}{9}{figure.caption.5}\protected@file@percent }
-\newlabel{tab:rapporti_concentrazione_IRF}{{\caption@xref {tab:rapporti_concentrazione_IRF}{ on input line 287}}{9}{Decadimento a doppio esponenziale}{table.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Test su immagini}{9}{section.4}\protected@file@percent }
-\newlabel{sec:test_su_immagini}{{4}{9}{Test su immagini}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Nuvola di dati (titolo placeholder)}{9}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Filtro median sul piano dei fasori}{9}{subsection.4.2}\protected@file@percent }
+\newlabel{tab:rapporti_concentrazione_IRF}{{\caption@xref {tab:rapporti_concentrazione_IRF}{ on input line 299}}{9}{Decadimento a doppio esponenziale}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Test su immagini}{10}{section.4}\protected@file@percent }
+\newlabel{sec:test_su_immagini}{{4}{10}{Test su immagini}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Nuvola di dati (titolo placeholder)}{10}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Filtro median sul piano dei fasori}{10}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusioni}{10}{section.5}\protected@file@percent }
+\newlabel{sec:conclusioni}{{5}{10}{Conclusioni}{section.5}{}}
 \gdef\minted@oldcachelist{,
   manni.pygstyle,
   FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex,
   7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex,
   6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex,
   D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusioni}{10}{section.5}\protected@file@percent }
-\newlabel{sec:conclusioni}{{5}{10}{Conclusioni}{section.5}{}}
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
 \abx@aux@read@bbl@mdfivesum{2E811A4DADC34F58EB3A16127375EB16}
 \abx@aux@defaultrefcontext{0}{ranjitFitfreeAnalysisFluorescence2018}{none/global//global/global}
@@ -93,4 +95,4 @@
 \abx@aux@defaultrefcontext{0}{jamesMinuitSystemFunction1975}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{harrisArrayProgrammingNumPy2020}{none/global//global/global}
 \abx@aux@defaultrefcontext{0}{oppenheim_discrete_2009}{none/global//global/global}
-\gdef \@abspage@last{11}
+\gdef \@abspage@last{12}

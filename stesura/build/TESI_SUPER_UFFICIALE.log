@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  10 OCT 2026 17:13
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  11 OCT 2026 15:46
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1490,32 +1490,37 @@ Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 64.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex) (./sezioni/02_fondamenti_teorici.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
@@ -1580,139 +1585,151 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--63
  []
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
 <immagini/sing_exp_decay_noisy.png, id=182, 1001.6622pt x 366.4089pt>
 File: immagini/sing_exp_decay_noisy.png Graphic file (type png)
 <use immagini/sing_exp_decay_noisy.png>
 Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 73.
 (luatex.def)             Requested size: 443.9066pt x 162.37773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 <immagini/double_exp_decay.png, id=183, 570.933pt x 415.5525pt>
 File: immagini/double_exp_decay.png Graphic file (type png)
 <use immagini/double_exp_decay.png>
-Package luatex.def Info: immagini/double_exp_decay.png  used on input line 104.
+Package luatex.def Info: immagini/double_exp_decay.png  used on input line 105.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
 <immagini/triple_exp_decay.png, id=184, 570.933pt x 415.5525pt>
 File: immagini/triple_exp_decay.png Graphic file (type png)
 <use immagini/triple_exp_decay.png>
-Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 113.
+Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 114.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 [5<./immagini/sing_exp_decay_noisy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+[6<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex) [6<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]
+(./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex)
 <immagini/irf_sing_exp_decay.png, id=204, 727.7589pt x 381.5856pt>
 File: immagini/irf_sing_exp_decay.png Graphic file (type png)
 <use immagini/irf_sing_exp_decay.png>
-Package luatex.def Info: immagini/irf_sing_exp_decay.png  used on input line 197.
+Package luatex.def Info: immagini/irf_sing_exp_decay.png  used on input line 209.
 (luatex.def)             Requested size: 452.9679pt x 237.5064pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[7<./immagini/irf_sing_exp_decay.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+(./build/_minted-TESI_SUPER_UFFICIALE/6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex) [8<./immagini/irf_sing_exp_decay.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-<immagini/irf_sing_exp_decay_phasors.png, id=220, 570.933pt x 415.5525pt>
+<immagini/irf_sing_exp_decay_phasors.png, id=226, 570.933pt x 415.5525pt>
 File: immagini/irf_sing_exp_decay_phasors.png Graphic file (type png)
 <use immagini/irf_sing_exp_decay_phasors.png>
-Package luatex.def Info: immagini/irf_sing_exp_decay_phasors.png  used on input line 264.
+Package luatex.def Info: immagini/irf_sing_exp_decay_phasors.png  used on input line 276.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
-<immagini/irf_double_exp_decay_phasors.png, id=221, 570.933pt x 415.5525pt>
+<immagini/irf_double_exp_decay_phasors.png, id=227, 570.933pt x 415.5525pt>
 File: immagini/irf_double_exp_decay_phasors.png Graphic file (type png)
 <use immagini/irf_double_exp_decay_phasors.png>
-Package luatex.def Info: immagini/irf_double_exp_decay_phasors.png  used on input line 272.
+Package luatex.def Info: immagini/irf_double_exp_decay_phasors.png  used on input line 284.
 (luatex.def)             Requested size: 217.42265pt x 158.24765pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./sezioni/04_test_su_immagini.tex
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- [8] (./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex) [9<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>]) (./sezioni/05_conclusioni.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--105
-
- []
-
-
+ [9<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>] (./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex)) (./sezioni/05_conclusioni.tex)
 Overfull \hbox (11.41237pt too wide) in paragraph at lines 109--109
 \TU/lmr/m/n/12 3668, 1560-2281. \TU/lmr/m/sc/12 doi\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 10 . 1117 / 1 . 2904580$[][]\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 https : / / www . spiedigitallibrary .
  []
 
-[10] (./build/TESI_SUPER_UFFICIALE.aux)
+[10] [11] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: 66BE6A0FA029BE9096D8440810A1C232;3212.
+(rerunfilecheck)             Checksum: 86854E833C8EEA114DC0F6C166D04F38;3146.
 runsystem(rm build//TESI_SUPER_UFFICIALE.pyg)...executed.
 Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 
@@ -1720,19 +1737,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53074 strings out of 476553
+ 53078 strings out of 476553
  125161,2373549 words of node,token memory allocated
- 740 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 32 attribute, 76 glue_spec, 18 attribute_list, 2 write, 3 pdf_action nodes
-   avail lists: 1:1,2:1599,3:334,4:145,5:315,6:51,7:6348,8:187,9:430,10:15,11:969
- 73720 multiletter control sequences out of 65536+600000
+ 752 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 36 attribute, 76 glue_spec, 20 attribute_list, 2 write, 3 pdf_action nodes
+   avail lists: 1:1,2:1709,3:295,4:174,5:375,6:51,7:6298,8:187,9:367,10:15,11:953
+ 73722 multiletter control sequences out of 65536+600000
  49 fonts using 4070487 bytes
- 105i,10n,115p,1439b,1383s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,10n,115p,1439b,1875s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (11 pages, 464802 bytes).
+Output written on TESI_SUPER_UFFICIALE.pdf (12 pages, 467705 bytes).
 
-PDF statistics: 360 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 43 named destinations out of 1000 (max. 131072)
+PDF statistics: 367 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 131072)
  144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

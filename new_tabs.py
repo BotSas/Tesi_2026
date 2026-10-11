@@ -24,9 +24,9 @@ tab4_card_ext = pn.Card(
         ),
         styles={"width": "100%", "margin": "5px 0"},
     ),
-    collapsed=True,
-    width_policy="max",
-    sizing_mode="stretch_width",
+    collapsed = True,
+    width_policy = "max",
+    sizing_mode = "stretch_width",
 )
 
 @pn.depends(file_input_tiff)

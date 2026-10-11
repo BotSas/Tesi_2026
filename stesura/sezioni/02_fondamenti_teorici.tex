@@ -1,15 +1,14 @@
 \section{Fondamenti teorici}\label{sec:cenni_teorici} 
 
-% probabilmente questa parte la sposto nella teoria. Ho bisogno di scriverla ora perché devo ripassare cos'ho fatto e perché l'ho fatto
-
-% Ok l'ho spostata ma ora probabilmente è da sistemare
-
 \subsection{Analisi fasoriale}
+
+
 
 
 % citare il teorema di convoluzione \cite[Sez. 2.9.6]{oppenheim_discrete_2009}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Funzione di risposta dello strumento} 
 
@@ -29,7 +28,7 @@ L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici ch
 \noindent Come ripreso nella sezione successiva, infatti,    % RICORDARSI DI MENZIONARLO PERÒ SENNÒ SEI UN CLOWN
 la convoluzione nel dominio temporale si traduce come una moltiplicazione nello spazio di Fourier. La \textit{IRF} viene ridotta a un singolo punto sul piano dei fasori, che naturalmente non si troverà sul semicerchio universale in quanto non è un decadimento esponenziale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
-\noindent Unendo queste due informazioni, è possibile ottenere il fasore del segnale totale come:
+\noindent Unendo queste due informazioni, è possibile ottenere il fasore del segnale totale come:\\
 
 \begin{equation}
     z_{segnale} = z_{decadimento} \cdot z_{IRF}
@@ -38,11 +37,12 @@ la convoluzione nel dominio temporale si traduce come una moltiplicazione nello 
 
 da cui è banale ricavare il fasore relativo al decadimento con un'operazione inversa.\\
 
-% nella parte precedente della teoria devo spiegare bene come funziona l'additività delle fasi, ecc ecc
-
-% qui volendo posso parlare per 6 ore
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% nella parte precedente della teoria devo spiegare bene come funziona l'additività delle fasi, ecc ecc
+% qui volendo posso parlare per 6 ore
 
 
 \subsubsection{Convoluzione tra IRF e segnale di fluorescenza}
@@ -51,7 +51,7 @@ da cui è banale ricavare il fasore relativo al decadimento con un'operazione in
 
 \noindent Se la IRF avesse la forma di una distribuzione \textit{Dirac-$\delta$}, tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}.\\
 
-\noindent i immagini di campionare l’impulso del laser in tanti istanti temporali successivi: all'istante $t_k$ l'intensità del laser sarà pari a $\textit{IRF}(t_k)$, mentre quella di fluorescenza seguirà la legge $I(t-t_k)$, dove l'argomento rappresenta il tempo trascorso dall'eccitazione.\\
+\noindent Si immagini di campionare l’impulso del laser in tanti istanti temporali successivi: all'istante $t_k$ l'intensità del laser sarà pari a $\textit{IRF}(t_k)$, mentre quella di fluorescenza seguirà la legge $I(t-t_k)$, dove l'argomento rappresenta il tempo trascorso dall'eccitazione.\\
 Moltiplicando le due funzioni si ottiene un contributo dato da $\textit{IRF}(t_k)I(t-t_k)$.\\
 
 \noindent Per ricavare l’intensità totale al tempo $t$, sarà quindi necessario sommare i contributi relativi a tutti gli istanti di eccitazione $t_k$, incluso quello coincidente con $t$ \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}:

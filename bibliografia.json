@@ -485,6 +485,163 @@
       "select": "zotero://select/library/items/9Z35P5Q6"
     },
     {
+      "key": "XUNYURNH",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Fluorescence lifetime imaging for the two-photon microscope: time-domain and frequency-domain methods",
+      "abstractNote": "Fluorescence lifetime images are obtained with the laser scanning microscope using two methods: the time-correlated single-photon counting method and the frequency-domain method. In the same microscope system, we implement both methods. We perform a comparison of the performance of the two approaches in terms of signal-to-noise ratio (SNR) and the speed of data acquisition. While in our practical implementation the time-correlated single-photon counting technique provides a better SNR for low-intensity images, the frequency-domain method is faster and provides less distortion for bright samples.",
+      "date": "2003-07",
+      "DOI": "10.1117/1.1586704",
+      "citationKey": "grattonFluorescenceLifetimeImaging2003",
+      "shortTitle": "Fluorescence lifetime imaging for the two-photon microscope",
+      "language": "eng",
+      "libraryCatalog": "PubMed",
+      "volume": "8",
+      "pages": "381-390",
+      "publicationTitle": "Journal of Biomedical Optics",
+      "ISSN": "1083-3668",
+      "issue": "3",
+      "journalAbbreviation": "J Biomed Opt",
+      "PMID": "12880343",
+      "creators": [
+        {
+          "firstName": "Enrico",
+          "lastName": "Gratton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sophie",
+          "lastName": "Breusegem",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jason",
+          "lastName": "Sutin",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Qiaoqiao",
+          "lastName": "Ruan",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Nicholas",
+          "lastName": "Barry",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Adenylate Kinase",
+          "type": 1
+        },
+        {
+          "tag": "Algorithms",
+          "type": 1
+        },
+        {
+          "tag": "Animals",
+          "type": 1
+        },
+        {
+          "tag": "Caenorhabditis elegans",
+          "type": 1
+        },
+        {
+          "tag": "Caenorhabditis elegans Proteins",
+          "type": 1
+        },
+        {
+          "tag": "Cell Line, Tumor",
+          "type": 1
+        },
+        {
+          "tag": "Cells, Cultured",
+          "type": 1
+        },
+        {
+          "tag": "Computer Simulation",
+          "type": 1
+        },
+        {
+          "tag": "Fluorescein",
+          "type": 1
+        },
+        {
+          "tag": "Fourier Analysis",
+          "type": 1
+        },
+        {
+          "tag": "Humans",
+          "type": 1
+        },
+        {
+          "tag": "Image Enhancement",
+          "type": 1
+        },
+        {
+          "tag": "Integrin beta Chains",
+          "type": 1
+        },
+        {
+          "tag": "Laryngeal Neoplasms",
+          "type": 1
+        },
+        {
+          "tag": "Microscopy, Confocal",
+          "type": 1
+        },
+        {
+          "tag": "Microscopy, Fluorescence, Multiphoton",
+          "type": 1
+        },
+        {
+          "tag": "Muscle, Skeletal",
+          "type": 1
+        },
+        {
+          "tag": "Recombinant Fusion Proteins",
+          "type": 1
+        },
+        {
+          "tag": "Reproducibility of Results",
+          "type": 1
+        },
+        {
+          "tag": "Sensitivity and Specificity",
+          "type": 1
+        },
+        {
+          "tag": "Time Factors",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-11T13:51:14Z",
+      "dateModified": "2026-10-11T13:51:14Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/XUNYURNH",
+      "itemID": 71,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "PBQF2D4R",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "XUNYURNH",
+          "note": "citato dal paper principale da cui voglio prendere la teoria sui fasori<br>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-11T13:51:44Z",
+          "dateModified": "2026-10-11T13:51:44Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/PBQF2D4R"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Biomed. Opt.",
+      "itemKey": "XUNYURNH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/XUNYURNH"
+    },
+    {
       "key": "49LTUEI3",
       "version": 0,
       "itemType": "journalArticle",
@@ -1398,6 +1555,112 @@
       "itemKey": "VZEXJTJD",
       "libraryID": 1,
       "select": "zotero://select/library/items/VZEXJTJD"
+    },
+    {
+      "key": "H2A4FQF8",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Imaging the Environment of Green Fluorescent Protein",
+      "abstractNote": "An emerging theme in cell biology is that cell surface receptors need to be considered as part of supramolecular complexes of proteins and lipids facilitating specific receptor conformations and distinct distributions, e.g., at the immunological synapse. Thus, a new goal is to develop bioimaging that not only locates proteins in live cells but can also probe their environment. Such a technique is demonstrated here using fluorescence lifetime imaging of green fluorescent protein (GFP). We first show, by time-correlated single-photon counting, that the fluorescence decay of GFP depends on the local refractive index. This is in agreement with the Strickler Berg formula, relating the Einstein A and B coefficients for absorption and spontaneous emission in molecules. We then quantitatively image, by wide-field time-gated fluorescence lifetime imaging, the refractive index of the environment of GFP. This novel approach paves the way for imaging the biophysical environment of specific GFP-tagged proteins in live cells.",
+      "date": "2002-12-01",
+      "DOI": "10.1016/S0006-3495(02)75359-9",
+      "citationKey": "suhlingImagingEnvironmentGreen2002",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0006349502753599",
+      "accessDate": "2026-10-11T14:21:22Z",
+      "libraryCatalog": "ScienceDirect",
+      "volume": "83",
+      "pages": "3589-3595",
+      "publicationTitle": "Biophysical Journal",
+      "ISSN": "0006-3495",
+      "issue": "6",
+      "journalAbbreviation": "Biophysical Journal",
+      "creators": [
+        {
+          "firstName": "Klaus",
+          "lastName": "Suhling",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jan",
+          "lastName": "Siegel",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "David",
+          "lastName": "Phillips",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paul M. W.",
+          "lastName": "French",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Sandrine",
+          "lastName": "Lévêque-Fort",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Stephen E. D.",
+          "lastName": "Webb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Daniel M.",
+          "lastName": "Davis",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-11T14:21:22Z",
+      "dateModified": "2026-10-11T14:21:22Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/H2A4FQF8",
+      "itemID": 80,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "ScienceDirect Full Text PDF",
+          "url": "https://pdf.sciencedirectassets.com/277708/1-s2.0-S0006349502X71124/1-s2.0-S0006349502753599/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCICfPHKbyPAxAzVVVNzbCmYAb4C9CuJx8g9lcqCUqD5BSAiEAszHI0TSUczVpptygTnAKAd0zpVe8JbU5ww7oZdvD5EAqswUIbxAFGgwwNTkwMDM1NDY4NjUiDOzdi9e87iKeEmJdpCqQBf7cVM2G%2BXrqOWVf0A4T52L0gdMkeS0%2F6hhgL9Ipe2PZCINCtSddjhMz59yAFjVMy1rVOWyb2fDaaJIpTVYEC3YoTKWKfSXDWJN2JUb2UAmgaRJ0pi8XFUkJB0nkTN6pbIVh19VSAIV%2Fd1x7jMrwunYXmUdHVb4hptnkCphfvGhXPjpX2Xb1D3zXl5IS3lsf9A58HTKfLLoHH8SK9GWO2NrgYtB1TNwwVJIcE3mrhd%2FQbZkX0ldwDa4UxIxRENB7vPqnOo05STcbEXPhOOXSp2raiTPy6BGH2kROG9yAvx6IJ93ZW663824RrL6GoMQ6B7ZxO2wrY6rGxBViB0ex7WnMBR448tu9lNA5mMw6LInnGkbDWBew2Xs7MGmsuTDLFDDErcetNHWJazKK72I5nfAzq5bVQWrDwVEykXS7%2B%2BCwSNRyAxyAvTGUjDDNPLLNnQkoa3QOp%2FaDc7wTJEOuGiVIShKaG8XIp5lUwGsgDerdQYzuj9DUS%2B71xtzbwgyKUJH%2Fm%2FBQbbZOqRnFYUdt88tHfYDty6i0VQgAFVcDrxh0bXFK5xyPL0kWQUOk51ee7oAQoutUv6CM7I58q3HI0vyvNgNeeActc0HB08NqjI8c5KPd64pN%2FwSa9sXijJmFg54Bvjp2E4ZtXprLE8YeS1KC%2FuHYyRm7JFgCGSf%2BwazLyCpedrsMGl6xBwqLMnXyV8e5ztrwiREpjUjY5q49VHcTq28ysCTI4nBnYLtkkLNimx1%2Br2vm9FbktaiyRwPLvYVuTRAqrUlUesyOHHTYfo2rfVT2aAl%2ByNDL06jSMPO9Bir6tedumhks2bwmIyurrFT1PZqa%2FRzQSKtKdQytinRm1cuAXEu4guxzasgaRPKJMOudrtYGOrEBba7mltLIkKOzMw6L7Fybjb5y%2B%2Bw9%2FrxP%2BB0mPPdTahsgTX7NGp%2Be4DefPeZk75I8euSwH7jJr%2FARxJ75BKyWuIGTaFHBPtFpxg%2BhQJvR7F%2FYN%2BC9hu7HRhNUJJvxz0C6Skn6%2BAPgVzqoQKKZuSBqSjeGY%2F3YcUUgNQGVF5qMe7l59k%2Fq30LSWmMCSvTU2y9nAUkdh%2FIbTvabZpkin6Yq6W56%2BraPrDFCjE8qdP8Vv2yW&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261011T142129Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYUHIJNKKD%2F20261011%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=153e7b90834a56aa0de971425ab84333f5ef9b8e295da4573b9ea17bb4ce3583&hash=cd058acf65046c5978fb94cdbb5ee8a6c920b53e31fd2fb0929362963d9600bc&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0006349502753599&tid=spdf-f4fe3f0b-1601-4b83-904d-77c12cb23cc0&sid=3156bf51267bd44a5b69f7166a256ac8dae3gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=13150f535d055751060a&rr=a48e82eee8383128&cc=it",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-11T14:21:30Z",
+          "dateModified": "2026-10-11T14:21:30Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/5J97FXQ5",
+          "path": "/home/aras/Zotero/storage/5J97FXQ5/Suhling et al. - 2002 - Imaging the Environment of Green Fluorescent Protein.pdf",
+          "select": "zotero://select/library/items/5J97FXQ5"
+        },
+        {
+          "itemType": "attachment",
+          "title": "ScienceDirect Snapshot",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0006349502753599",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-11T14:21:28Z",
+          "dateModified": "2026-10-11T14:21:28Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/C476MHX6",
+          "path": "/home/aras/Zotero/storage/C476MHX6/S0006349502753599.html",
+          "select": "zotero://select/library/items/C476MHX6"
+        }
+      ],
+      "notes": [
+        {
+          "key": "G39VEI76",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "H2A4FQF8",
+          "note": "Non serve leggerlo, cit molto semplice insieme al digiman quando dico che i fluorofori possono avere decadimenti diversi dal singolo esponenziale<br>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-11T14:21:58Z",
+          "dateModified": "2026-10-11T14:22:42Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/G39VEI76"
+        }
+      ],
+      "autoJournalAbbreviation": "Biophys. J.",
+      "itemKey": "H2A4FQF8",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/H2A4FQF8"
     },
     {
       "key": "3CNVAKH2",
