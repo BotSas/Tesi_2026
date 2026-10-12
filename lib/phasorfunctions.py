@@ -97,7 +97,7 @@ def projection_length(point, A, B):   # asarray converts points/lines (Pandas da
     """
 
     P = np.asarray(point, dtype = float)      # points that is to be projected  
-    A, B = np.asarray(line_start, dtype = float), np.asarray(line_end, dtype = float)   # extremes of the full segment (formed by tau of the 2 exponential decays)
+    A, B = np.asarray(A, dtype = float), np.asarray(B, dtype = float)   # extremes of the full segment (formed by tau of the 2 exponential decays)
 
     line_vector = B - A
     H_factor = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)  # valued 0 to 1 (how far from A on the segment H is), H is projected point

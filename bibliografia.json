@@ -186,6 +186,85 @@
       "select": "zotero://select/library/items/FDYFKGN9"
     },
     {
+      "key": "84S9F2LT",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "FLUTE: a Python GUI for interactive phasor analysis of FLIM data",
+      "abstractNote": "This repository contains the Fluorescence lifetime imaging microscopy (FLIM) data relative to the following publication \nGottlieb, D., Asadipour, B., Kostina, P., Ung, T., & Stringari, C. (2023). FLUTE: A Python GUI for interactive phasor analysis of FLIM data. Biological Imaging, 1-22. doi:10.1017/S2633903X23000211\nFluorescein_embyo.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the Embryo.tif stack\nEmbryo.tif  file contains the fluorescence intensity decay of a zebrafish embryo at 3 days post fertilisation. This file needs to be calibrated with Fluorescein_embyo.tif stack\nFluorescein_hMSC.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the hMSC-ZOOM, hMSC control, hMSC_rotenone stacks.\nhMSC-ZOOM.tif and hMSC control.tif stacks contain the fluorescence intensity decay of mesenchymal stromal cells in control condition. This files need to be calibrated with Fluorescein_hMSC.tif stack\nhMSC_rotenone.tif stack contains the fluorescence intensity decay of mesenchymal stromal cells treated with rotenone. This file needs to be calibrated with Fluorescein_hMSC.tif stack\nstarch SHG-IRF.tif stack contains the measurement of the SHG signal from starch, with a known lifetime of 0ns, used as calibration for ZF-1100_noEF.tif,  ZF-1100_607-70_filter.tif and ZF-1100_550-49 _filter.tif stacks\nZF-1100_noEF.tif contains the fluorescence intensity decay of the zebrafish embryo at 5 days post fertilization acquired without emission. This file needs to be calibrated with starch SHG-IRF.tif stack.\nZF-1100_607-70_filter.tif contains the fluorescence intensity decay of the zebrafish embryo at 5 days post fertilization acquired with an emission filter a 607/70 nm. This file needs to be calibrated with starch SHG-IRF.tif stack\nZF-1100_550-49 _filter.tif contains the fluorescence intensity decay of the zebrafish embryo at 5 days post fertilization acquired with an emission filter of 549/50 nm. This file needs to be calibrated with starch SHG-IRF.tif stack.\nAll files have been acquired with the following parameters:\n\ntemporal bin number = 56\nlaser repetition rates = 80 MHz\nbin width = 0.223ns",
+      "date": "2023-09-07",
+      "DOI": "10.5281/zenodo.8324901",
+      "citationKey": "chiaraFLUTEPythonGUI2023",
+      "url": "https://zenodo.org/records/8324901",
+      "accessDate": "2026-10-12T16:40:43Z",
+      "shortTitle": "FLUTE",
+      "libraryCatalog": "Zenodo",
+      "creators": [
+        {
+          "firstName": "Stringari",
+          "lastName": "Chiara",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dale",
+          "lastName": "Gottlieb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bahar",
+          "lastName": "Asadipour",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Polina",
+          "lastName": "Kostina",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thi Phuong Lien",
+          "lastName": "Ung",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-12T16:40:43Z",
+      "dateModified": "2026-10-12T16:40:43Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/84S9F2LT",
+      "itemID": 87,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://zenodo.org/records/8324901",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-12T16:40:54Z",
+          "dateModified": "2026-10-12T16:40:54Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/VW8HLWZZ",
+          "path": "/home/aras/Zotero/storage/VW8HLWZZ/8324901.html",
+          "select": "zotero://select/library/items/VW8HLWZZ"
+        }
+      ],
+      "notes": [
+        {
+          "key": "GQF5CC6Y",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "84S9F2LT",
+          "note": "immagine migliore inculata sempre agli stessi<br>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-12T16:40:59Z",
+          "dateModified": "2026-10-12T16:40:59Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/GQF5CC6Y"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "84S9F2LT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/84S9F2LT"
+    },
+    {
       "key": "3X98XFRC",
       "version": 0,
       "itemType": "computerProgram",
