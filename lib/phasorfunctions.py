@@ -308,39 +308,98 @@ def cloud_data(df_phasors):
 ##############################################################################################################
 
 
-def phasors_from_region(image, roi_mask, median_size , threshold_pct):    # ROI = region of interest
+#def phasors_from_region(image, roi_mask, median_size , threshold_pct):    # ROI = region of interest
 
-    '''
-    Calculates G and S from  spatial region of interest (can be whole image). Takes as input:
-    - image as a xr.DataArray
-    - roi_mask: 2D boolean array (x, y)
-    '''
+    # '''
+    # Calculates G and S from  spatial region of interest (can be whole image). Takes as input:
+    # - image as a xr.DataArray
+    # - roi_mask: 2D boolean array (x, y)
+    # '''
 
-    G_img, S_img, fft0 = image_phasor_calc(image)   # phasors relative to the whole image
+    # G_img, S_img, fft0 = image_phasor_calc(image)   # phasors relative to the whole image
     
-    fft0_med, G_med, S_med = phasor_filter_median(      # median filter on each point in phasor plane
-        fft0.values, 
-        G_img.values, 
+    # fft0_med, G_med, S_med = phasor_filter_median(      # median filter on each point in phasor plane
+    #     fft0.values, 
+    #     G_img.values, 
+    #     S_img.values,
+    #     size = median_size,
+    #     repeat = 2
+    # )
+    
+    # threshold_val = np.nanmax(fft0_med) * threshold_pct     # tresholding - every pixel below treshold is set to NaN
+    # fft0_thresh, G_thresh, S_thresh = phasor_threshold(
+    #     fft0_med,
+    #     G_med,
+    #     S_med,
+    #     mean_min = threshold_val
+    # )
+    
+    # valid_mask = roi_mask & ~np.isnan(G_thresh)     # only keeps pixel which are not NaN and inside ROI
+    
+    # df_roi_phasors = pd.DataFrame({
+    #     "G": G_thresh[valid_mask],
+    #     "S": S_thresh[valid_mask]
+    # })
+    
+    # return df_roi_phasors
+
+
+def phasors_from_region(image, roi_mask, median_size, threshold_pct):    # ROI = region of interest
+
+    '''Returns the median-filtered pixel-wise phasor cloud for a spatial ROI.'''
+
+    roi_mask = np.asarray(roi_mask, dtype=bool)
+    expected_shape = (image.sizes["x"], image.sizes["y"])
+    if roi_mask.shape != expected_shape:
+        raise ValueError(
+            f"roi_mask shape {roi_mask.shape} does not match image shape {expected_shape}."
+        )
+
+    if not isinstance(median_size, int) or median_size < 1:
+        raise ValueError("median_size must be a positive integer.")
+
+    G_img, S_img, fft0 = image_phasor_calc(image)  # img
+
+    # Filter the full image first, then select the ROI from the filtered arrays.
+    fft0_med_np, G_med_np, S_med_np = phasor_filter_median(    # img -> med
+        fft0.values,
+        G_img.values,
         S_img.values,
         size = median_size,
         repeat = 2
     )
-    
-    threshold_val = np.nanmax(fft0_med) * threshold_pct     # tresholding - every pixel below treshold is set to NaN
-    fft0_thresh, G_thresh, S_thresh = phasor_threshold(
-        fft0_med,
-        G_med,
-        S_med,
+
+    # phasorpy uses NumPy internally; restore xarray immediately at the boundary.
+    fft0_med = xr.DataArray(fft0_med_np, dims=fft0.dims, coords=fft0.coords)
+    G_med = xr.DataArray(G_med_np, dims=G_img.dims, coords=G_img.coords)
+    S_med = xr.DataArray(S_med_np, dims=S_img.dims, coords=S_img.coords)
+
+    roi_mask_xr = xr.DataArray(
+        roi_mask,
+        dims=fft0.dims,
+        coords=fft0.coords,
+    )
+    fft0_roi = fft0_med.where(roi_mask_xr)   # med -> roi
+    G_roi = G_med.where(roi_mask_xr)
+    S_roi = S_med.where(roi_mask_xr)
+
+    threshold_val = fft0_roi.max(skipna=True).item() * threshold_pct
+    fft0_thresh_np, G_thresh_np, S_thresh_np = phasor_threshold(
+        fft0_roi.values,
+        G_roi.values,
+        S_roi.values,
         mean_min = threshold_val
     )
-    
-    valid_mask = roi_mask & ~np.isnan(G_thresh)     # only keeps pixel which are not NaN and inside ROI
-    
-    df_roi_phasors = pd.DataFrame({
-        "G": G_thresh[valid_mask],
-        "S": S_thresh[valid_mask]
-    })
-    
-    return df_roi_phasors
-    
+    fft0_thresh = xr.DataArray(fft0_thresh_np, dims=fft0.dims, coords=fft0.coords)
+    G_thresh = xr.DataArray(G_thresh_np, dims=G_img.dims, coords=G_img.coords)
+    S_thresh = xr.DataArray(S_thresh_np, dims=S_img.dims, coords=S_img.coords)
 
+    valid_mask = roi_mask_xr & G_thresh.notnull() & S_thresh.notnull()
+    if not valid_mask.any().item():
+        raise ValueError("The ROI contains no valid pixels after filtering and thresholding.")
+
+    return pd.DataFrame({
+        "G": G_thresh.where(valid_mask, drop=True).values.ravel(),
+        "S": S_thresh.where(valid_mask, drop=True).values.ravel(),
+        "intensity": fft0_thresh.where(valid_mask, drop=True).values.ravel()
+    })
