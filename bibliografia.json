@@ -487,6 +487,57 @@
       "select": "zotero://select/library/items/J22MQNZR"
     },
     {
+      "key": "65QLP4BZ",
+      "version": 0,
+      "itemType": "blogPost",
+      "title": "Evaluation of measurement data — Supplement 1 to the “Guide to the expression of uncertainty in measurement” — Propagation of distributions using a Monte Carlo method",
+      "date": "2008",
+      "DOI": "10.59161/JCGM101-2008",
+      "citationKey": "EvaluationMeasurementData2008",
+      "url": "https://www.bipm.org/doi/10.59161/JCGM101-2008",
+      "accessDate": "2026-10-14T09:44:21Z",
+      "language": "en",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-14T09:44:21Z",
+      "dateModified": "2026-10-14T09:44:21Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/65QLP4BZ",
+      "itemID": 97,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://www.bipm.org/documents/20126/2071204/JCGM_101_2008_E.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T09:44:19Z",
+          "dateModified": "2026-10-14T09:44:22Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/QFIN3XFQ",
+          "path": "/home/aras/Zotero/storage/QFIN3XFQ/2008 - Evaluation of measurement data — Supplement 1 to the “Guide to the expression of uncertainty in meas.pdf",
+          "select": "zotero://select/library/items/QFIN3XFQ"
+        }
+      ],
+      "notes": [
+        {
+          "key": "QWDNDL75",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "65QLP4BZ",
+          "note": "<div data-schema-version=\"9\"><p>monte carlo </p>\n<p></p>\n<ol>\n<li>\n<strong>Capitoli 1-4 (La Giustificazione):</strong> La motivazione teorica che scriverai nella tesi. La tua funzione <code>projection_length</code> contenuta in <code>lib.phasorfunctions</code> calcola le proiezioni ortogonali usando prodotti scalari (<code>np.dot</code>) e norme euclidee (<code>np.linalg.norm</code>). Questa marcata non-linearità rende l'approccio classico con le derivate parziali inadeguato e prono a sottostime dell'errore, rendendo necessario il Monte Carlo.\n</li>\n<li>\n<strong>Capitoli 5-6 (Assegnazione delle PDF):</strong> È la fase di preparazione degli input. Nel codice, si traduce nell'estrarre la media e la deviazione standard dai tuoi dati sperimentali (<code>np.nanmean</code> e <code>np.nanstd</code>) per le coordinate $G$ e $S$ dei tre elementi (Rosso, Verde, Campione). Poiché assumiamo che l'errore sui conteggi si traduca in un'incertezza gaussiana sui fasori, creiamo le distribuzioni (PDF) usando la funzione <code>rng.normal(media, deviazione_standard, n_sim)</code> per generare 10.000 varianti casuali per ciascuna coordinata.\n</li>\n<li>\n<strong>Capitolo 7 (Propagazione numerica):</strong> È il ciclo <code>for</code>. Il GUM richiede di valutare il modello matematico per ogni set di input campionato. Ad ogni iterazione $i$, preleviamo l'i-esimo punto \"vibrato\" per il campione, il rosso e il verde, e li passiamo alla tua funzione <code>projection_length</code>. La funzione calcola le distanze geometriche restituendo <code>segmA</code> e <code>segmB</code>, che utilizziamo per ricavare e salvare le frazioni $f_1$ e $f_2$ in due grandi array dedicati.\n</li>\n<li>\n<strong>Capitolo 8 (Estrazione dell'Incertezza):</strong> L'analisi dell'output. Al termine del ciclo, gli array <code>f1_sims</code> e <code>f2_sims</code> contengono 10.000 possibili risultati. Il GUM stabilisce che l'incertezza standard finale da associare alla misurazione corrisponde alla deviazione standard della distribuzione dei risultati. Nel codice, otteniamo questo valore applicando semplicemente <code>np.std()</code> ai due array finali.<br>\n</li>\n</ol>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T09:44:42Z",
+          "dateModified": "2026-10-14T11:00:40Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/QWDNDL75"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "65QLP4BZ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/65QLP4BZ"
+    },
+    {
       "key": "6ISRIWPB",
       "version": 0,
       "itemType": "webpage",
@@ -719,6 +770,112 @@
       "itemKey": "XUNYURNH",
       "libraryID": 1,
       "select": "zotero://select/library/items/XUNYURNH"
+    },
+    {
+      "key": "Q3VQZZRZ",
+      "version": 0,
+      "itemType": "report",
+      "title": "Guide to the expression of uncertainty in measurement — Part 1: Introduction",
+      "date": "2023-01-01",
+      "DOI": "10.59161/JCGMGUM-1-2023",
+      "citationKey": "GuideExpressionUncertainty2023",
+      "url": "https://www.bipm.org/doi/10.59161/JCGMGUM-1-2023",
+      "accessDate": "2026-10-14T08:43:54Z",
+      "shortTitle": "Guide to the expression of uncertainty in measurement — Part 1",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-14T08:43:54Z",
+      "dateModified": "2026-10-14T08:43:54Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/Q3VQZZRZ",
+      "itemID": 91,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://www.bipm.org/documents/20126/2071204/JCGM_GUM-1.pdf/74e7aa56-2403-7037-f975-cd6b555b80e6",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T08:43:51Z",
+          "dateModified": "2026-10-14T08:43:54Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/RHRTGUZ4",
+          "path": "/home/aras/Zotero/storage/RHRTGUZ4/2023 - Guide to the expression of uncertainty in measurement — Part 1 Introduction.pdf",
+          "select": "zotero://select/library/items/RHRTGUZ4"
+        }
+      ],
+      "notes": [
+        {
+          "key": "DPUHSBFM",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "Q3VQZZRZ",
+          "note": "Perché ho usato monte carlo per propagazione incertezze<br>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T08:44:12Z",
+          "dateModified": "2026-10-14T08:44:12Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/DPUHSBFM"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "Q3VQZZRZ",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Q3VQZZRZ"
+    },
+    {
+      "key": "FKJHEPRE",
+      "version": 0,
+      "itemType": "report",
+      "title": "Guide to the expression of uncertainty in measurement — Part 1: Introduction",
+      "date": "2023-01-01",
+      "DOI": "10.59161/JCGMGUM-1-2023",
+      "citationKey": "GuideExpressionUncertainty2023a",
+      "url": "https://www.bipm.org/doi/10.59161/JCGMGUM-1-2023",
+      "accessDate": "2026-10-14T08:49:22Z",
+      "shortTitle": "Guide to the expression of uncertainty in measurement — Part 1",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-14T08:49:22Z",
+      "dateModified": "2026-10-14T08:49:22Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/FKJHEPRE",
+      "itemID": 94,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://indico.global/event/7252/contributions/67466/attachments/32550/60670/Uncertainties%202021-12-16%20JCGM%20GUM.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T08:49:19Z",
+          "dateModified": "2026-10-14T08:49:22Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/FGSB6YPB",
+          "path": "/home/aras/Zotero/storage/FGSB6YPB/2023 - Guide to the expression of uncertainty in measurement — Part 1 Introduction.pdf",
+          "select": "zotero://select/library/items/FGSB6YPB"
+        }
+      ],
+      "notes": [
+        {
+          "key": "XXB3ZNMD",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "FKJHEPRE",
+          "note": "sempre monte carlo",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-14T08:49:27Z",
+          "dateModified": "2026-10-14T08:49:27Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/XXB3ZNMD"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "FKJHEPRE",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/FKJHEPRE"
     },
     {
       "key": "49LTUEI3",
