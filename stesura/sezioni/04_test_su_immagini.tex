@@ -1,23 +1,46 @@
-\section{Test su immagini}\label{sec:test_su_immagini} 
-
-
+\section{Test su immagini}\label{sec:test_su_immagini}
 
 In questa sezione della trattazione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
 
-Si utilizza come esempio un file \textit{.tiff} estratto dalla libreria \textit{Zenodo} \cite{daleFLUTEPythonGUI2023}. L'immagine mostra un embrione di \textit{zebrafish} fecondato da circa 3 settimane
+\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023}.\\
+
+\noindent In entrambe le immagini, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
+Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\textit{\tau} = 4 ns$).\\
+La seconda invece è affiancata, oltre a un file di calibrazione con amido ($\textit{\tau} = 0 ns$), anche da due immagini catturate attraverso un filtro rosso ($\textit{\lambda}=507nm$) e uno verde ($\textit{\lambda}=550nm$).\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-\subsection{Nuvola di dati (titolo placeholder)}
+\subsection{Importazione dei dati e estrapolazione della IRF}
 
-\subsection{Filtro median sul piano dei fasori}
-% subsbusections: teoria relativa al filtro median e tresholding
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Analisi dei dati raccolti}
+
+% subsubsections: teoria relativa al filtro median e tresholding
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Scomposizione in decadimenti multipli}
+
 
 % metto qui la panel app? o non la inserisco proprio nella tesi?
 
 
 
-\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
 
 def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 

@@ -387,6 +387,73 @@
       \field{year}{2009}
       \field{dateera}{ce}
     \endentry
+    \entry{gottliebFLUTEPythonGUI2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4909f173c866fe407b72f77362b726c}{%
+           family={Gottlieb},
+           familyi={G\bibinitperiod},
+           given={Dale},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a4ccb3374d311da234c7354f7824f28a}{%
+           family={Asadipour},
+           familyi={A\bibinitperiod},
+           given={Bahar},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e59c2dc0962f7d93a9b493f7115e7883}{%
+           family={Kostina},
+           familyi={K\bibinitperiod},
+           given={Polina},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c00fd3ab999d3aa7d55db6a5b278a18c}{%
+           family={Ung},
+           familyi={U\bibinitperiod},
+           given={Thi\bibnamedelimb Phuong\bibnamedelima Lien},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=eec07f79f7b74d92db27d29273d01bc5}{%
+           family={Stringari},
+           familyi={S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{fullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \strng{bibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorbibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authornamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorfullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.}
+      \field{issn}{2633-903X}
+      \field{journaltitle}{Biological Imaging}
+      \field{langid}{english}
+      \field{shortjournal}{Biol. Imaging}
+      \field{shorttitle}{{{FLUTE}}}
+      \field{title}{{{FLUTE}}: {{A Python GUI}} for Interactive Phasor Analysis of {{FLIM}} Data}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e21}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S2633903X23000211
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/BHIWC8Q8/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
+      \endverb
+    \endentry
     \entry{daleFLUTEPythonGUI2023}{article}{}
       \name{author}{4}{}{%
         {{hash=66813cda64f5cb5b30358d3cd29a5659}{%

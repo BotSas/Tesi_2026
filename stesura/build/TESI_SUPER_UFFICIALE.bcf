@@ -2376,7 +2376,7 @@
     <bcf:citekey order="10" intorder="1">oppenheim_discrete_2009</bcf:citekey>
     <bcf:citekey order="11" intorder="1">oppenheim_discrete_2009</bcf:citekey>
     <bcf:citekey order="12" intorder="1">harrisArrayProgrammingNumPy2020</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">daleFLUTEPythonGUI2023</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">gottliebFLUTEPythonGUI2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
