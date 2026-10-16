@@ -274,7 +274,7 @@ main_tabs = pn.Tabs(
     ("1) Single exponential", tab1_view),
     ("2) Double exponential", tab2_view),
     ("3) Triple exponential", tab3_view),
-    ("4) Image analisys", tab4_view_ext),
+    ("4) Image analysis", tab4_view_ext),
 
 )
 main_area = pn.Column(header, main_tabs)

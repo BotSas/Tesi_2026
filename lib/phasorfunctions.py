@@ -248,10 +248,10 @@ def image_phasor_calc(image, harm = 1):
 
     fft_result = xr.DataArray(
         np.fft.rfft(image.values, axis=0),
-        dims = ("frequency", "x", "y"),
+        dims = ("frequency", "y", "x"),
         coords = {
-            "x": image.coords["x"],
             "y": image.coords["y"],
+            "x": image.coords["x"],
         },
     )
 

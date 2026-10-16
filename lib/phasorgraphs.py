@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 import random
 import scipy.stats as stats
 import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
 from iminuit import Minuit, cost
 import xarray as xr
 
