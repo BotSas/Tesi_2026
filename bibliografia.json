@@ -1075,6 +1075,75 @@
       "select": "zotero://select/library/items/49LTUEI3"
     },
     {
+      "key": "N47FNKLY",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "xarray: N-D labeled Arrays and Datasets in Python",
+      "abstractNote": "xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.",
+      "date": "2017-04-05T00:00:00+00:00",
+      "DOI": "10.5334/jors.148",
+      "citationKey": "hoyerXarrayNDLabeled2017",
+      "url": "https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148",
+      "accessDate": "2026-10-17T12:01:40Z",
+      "shortTitle": "xarray",
+      "language": "en",
+      "libraryCatalog": "openresearchsoftware.metajnl.com",
+      "volume": "5",
+      "publicationTitle": "Journal of Open Research Software",
+      "ISSN": "2049-9647",
+      "issue": "1",
+      "creators": [
+        {
+          "firstName": "Stephan",
+          "lastName": "Hoyer",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Joe",
+          "lastName": "Hamman",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-17T12:01:40Z",
+      "dateModified": "2026-10-17T12:01:40Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/N47FNKLY",
+      "itemID": 113,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://openresearchsoftware.metajnl.com/articles/148/files/submission/proof/148-1-1826-1-10-20170405.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-17T12:01:42Z",
+          "dateModified": "2026-10-17T12:01:42Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/9D3S9Q6Q",
+          "path": "/home/aras/Zotero/storage/9D3S9Q6Q/Hoyer and Hamman - 2017 - xarray N-D labeled Arrays and Datasets in Python.pdf",
+          "select": "zotero://select/library/items/9D3S9Q6Q"
+        }
+      ],
+      "notes": [
+        {
+          "key": "DH4UGWC7",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "N47FNKLY",
+          "note": "xarray",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-17T12:02:26Z",
+          "dateModified": "2026-10-17T12:02:26Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/DH4UGWC7"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Open Res. Softw.",
+      "itemKey": "N47FNKLY",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/N47FNKLY"
+    },
+    {
       "key": "883YXXKP",
       "version": 0,
       "itemType": "journalArticle",

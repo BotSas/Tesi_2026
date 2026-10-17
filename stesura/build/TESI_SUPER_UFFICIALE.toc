@@ -18,7 +18,9 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Deconvoluzione}{8}{subsubsection.3.2.2}%
 \contentsline {paragraph}{Decadimento a doppio esponenziale}{9}{subsubsection.3.2.2}%
 \contentsline {section}{\numberline {4}Test su immagini}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Importazione dei dati e estrapolazione della IRF}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Analisi dei dati raccolti}{10}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Scomposizione in decadimenti multipli}{10}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.1}Immagine 1 - Importazione dei dati e estrapolazione della IRF}{10}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Calibrazione dell'immagine}{10}{subsubsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.2}Immagine 1 - Analisi dei dati raccolti}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Immagine 2 - Scomposizione in decadimenti multipli}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Studio delle incertezze}{11}{subsubsection.4.3.1}%
 \contentsline {section}{\numberline {5}Conclusioni}{11}{section.5}%

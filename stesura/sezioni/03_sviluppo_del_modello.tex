@@ -234,7 +234,7 @@ La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale 
 \paragraph{Osservazioni aggiuntive}
 \begin{itemize}
     \item \textit{Clipping}: alla riga 8 del codice, \textit{np.clip} imposta a zero eventuali numeri negativi risultati da errori di troncamento nel calcolo della FFT \cite{harrisArrayProgrammingNumPy2020}. L'array rappresenta il numero di fotoni raccolti in ogni \textit{bin}, quindi un valore negativo non ha significato fisico.
-    \item Normalizzazione: la riga 9 del codice ri-normalizza l'array al numero totale di fotoni, che viene perso con la convoluzione. Questo è necessario per applicare il rumore nella parte successiva della funzione in modo accurato.\\
+    \item Normalizzazione: la riga 9 del codice ri-normalizza l'array al numero totale di fotoni, che viene perso con la convoluzione. Questo è necessario per applicare il rumore nella parte successiva della funzione in modo accurato (si ricorda che tale operazione viene controllata da un fattore di \textit{signal-to-noise ratio}, dunque è necessario conoscere il numero esatto di fotoni che fanno parte del segnale pulito).\\
 \end{itemize}
 
 

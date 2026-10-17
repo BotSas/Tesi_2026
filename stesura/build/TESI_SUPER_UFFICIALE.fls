@@ -413,6 +413,8 @@ INPUT ./immagini/irf_sing_exp_decay_phasors.png
 INPUT ./immagini/irf_double_exp_decay_phasors.png
 INPUT ./immagini/irf_double_exp_decay_phasors.png
 INPUT ./sezioni/04_test_su_immagini.tex
+INPUT ./immagini/flat_embryo3.png
+INPUT ./immagini/flat_embryo3.png
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/D648E4148FB9894EA0FFBE7C1A57FC531350B347DE913863EA7F5725E6FE860F.pygtex

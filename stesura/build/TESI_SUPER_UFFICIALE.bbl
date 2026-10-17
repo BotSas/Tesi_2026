@@ -454,61 +454,60 @@
       \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
       \endverb
     \endentry
-    \entry{daleFLUTEPythonGUI2023}{article}{}
-      \name{author}{4}{}{%
-        {{hash=66813cda64f5cb5b30358d3cd29a5659}{%
-           family={Dale},
-           familyi={D\bibinitperiod},
-           given={Gottlieb},
-           giveni={G\bibinitperiod}}}%
-        {{hash=a9c22000c32db23c1f8b1b23dec516b4}{%
-           family={Bahar},
-           familyi={B\bibinitperiod},
-           given={Asadipour},
-           giveni={A\bibinitperiod}}}%
-        {{hash=9f4c73b83a3926bd2bcd01c1edec7dfb}{%
-           family={Lien},
-           familyi={L\bibinitperiod},
-           given={Ung\bibnamedelimb Thi\bibnamedelima Phuong},
-           giveni={U\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=030eff498dd9b83ec5c92bffba74aba3}{%
-           family={Chiara},
-           familyi={C\bibinitperiod},
-           given={Stringari},
+    \entry{hoyerXarrayNDLabeled2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
            giveni={S\bibinitperiod}}}%
+        {{hash=f0b7a9acbfd82a66cfeb3e4871c7f8e5}{%
+           family={Hamman},
+           familyi={H\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{80a202f8c3c48fa4b8df8b7bf9cf4f14}
-      \strng{fullhash}{2ee3bb730174e14198b03aa90525a881}
-      \strng{bibnamehash}{80a202f8c3c48fa4b8df8b7bf9cf4f14}
-      \strng{authorbibnamehash}{80a202f8c3c48fa4b8df8b7bf9cf4f14}
-      \strng{authornamehash}{80a202f8c3c48fa4b8df8b7bf9cf4f14}
-      \strng{authorfullhash}{2ee3bb730174e14198b03aa90525a881}
+      \strng{namehash}{f05fde17715c233356bf18743764aeac}
+      \strng{fullhash}{f05fde17715c233356bf18743764aeac}
+      \strng{bibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{This repository contains the Fluorescence lifetime imaging microscopy (FLIM) data relative to the following publication "FLUTE: a Python GUI for interactive phasor analysis of FLIM data" https://www.biorxiv.org/content/10.1101/2023.03.31.534529v1 Fluorescein\_embyo.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the Embryo.tif Embryo.tif~ file contains the fluorescence intensity decay of a zebrafish embryo at 3 days post fertilisation. Fluorescein\_embyo.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the Embryo.tif stack Embryo.tif~ file contains the fluorescence intensity decay of a zebrafish embryo at 3 days post fertilisation. Fluorescein\_hMSC.tif stack contains the fluorescence intensity decay of fluorescein solution with a known lifetime of 4ns, used as calibration for the hMSC-ZOOM, hMSC control, hMSC\_rotenone stacks. hMSC-ZOOM.tif and hMSC control.tif stacks contain the fluorescence intensity decay of mesenchymal stromal cells in control condition hMSC\_rotenone.tif stack contains the fluorescence intensity decay of mesenchymal stromal cells treated with rotenone All files have been acquired with the following parameters: 	 temporal bin number = 56 	 laser repetition rates = 80 MHz 	 bin width = 0.223ns}
-      \field{day}{16}
-      \field{month}{6}
-      \field{shorttitle}{{{FLUTE}}}
-      \field{title}{{{FLUTE}}: A {{Python GUI}} for Interactive Phasor Analysis of {{FLIM}} Data}
-      \field{urlday}{6}
+      \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
+      \field{day}{5}
+      \field{hour}{0}
+      \field{issn}{2049-9647}
+      \field{journaltitle}{Journal of Open Research Software}
+      \field{langid}{english}
+      \field{minute}{0}
+      \field{month}{4}
+      \field{number}{1}
+      \field{second}{0}
+      \field{shorttitle}{Xarray}
+      \field{timezone}{Z}
+      \field{title}{Xarray: {{N-D}} Labeled {{Arrays}} and {{Datasets}} in {{Python}}}
+      \field{urlday}{17}
       \field{urlmonth}{10}
       \field{urlyear}{2026}
-      \field{year}{2023}
+      \field{volume}{5}
+      \field{year}{2017}
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{doi}
-      \verb 10.5281/zenodo.8046636
+      \verb 10.5334/jors.148
       \endverb
       \verb{file}
-      \verb /home/aras/Zotero/storage/4NTNSPHY/8046636.html
+      \verb /home/aras/Zotero/storage/9D3S9Q6Q/Hoyer and Hamman - 2017 - xarray N-D labeled Arrays and Datasets in Python.pdf
       \endverb
       \verb{urlraw}
-      \verb https://zenodo.org/records/8046636
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
       \endverb
       \verb{url}
-      \verb https://zenodo.org/records/8046636
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
       \endverb
     \endentry
   \enddatalist
