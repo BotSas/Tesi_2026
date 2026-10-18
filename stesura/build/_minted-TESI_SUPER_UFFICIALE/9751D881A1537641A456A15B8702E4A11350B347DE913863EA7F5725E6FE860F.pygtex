@@ -3,7 +3,7 @@
 \PYG{k}{def} \PYG{n+nf}{phasors\PYGZus{}from\PYGZus{}region}\PYG{p}{(}\PYG{n}{image}\PYG{p}{,} \PYG{n}{roi\PYGZus{}mask}\PYG{p}{,} \PYG{n}{median\PYGZus{}size}\PYG{p}{,} \PYG{n}{threshold\PYGZus{}pct}\PYG{p}{):}
 
 \PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
-\PYG{l+s+sd}{    Calculates G and S from  spatial region of interest.}
+\PYG{l+s+sd}{    Calculates G and S from spatial region of interest.}
 \PYG{l+s+sd}{    Takes as input:}
 \PYG{l+s+sd}{    \PYGZhy{} image as a xr.DataArray}
 \PYG{l+s+sd}{    \PYGZhy{} roi\PYGZus{}mask: 2D boolean array (x, y)}

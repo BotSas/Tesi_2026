@@ -255,6 +255,121 @@
       "select": "zotero://select/library/items/3X98XFRC"
     },
     {
+      "key": "H2W2PVI9",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Graphical representation and multicomponent analysis of single-frequency fluorescence lifetime imaging microscopy data",
+      "abstractNote": "Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.",
+      "date": "2004",
+      "DOI": "10.1111/j.1365-2818.2004.01265.x",
+      "citationKey": "claytonGraphicalRepresentationMulticomponent2004",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x",
+      "accessDate": "2026-10-18T12:03:45Z",
+      "language": "en",
+      "libraryCatalog": "Wiley Online Library",
+      "volume": "213",
+      "pages": "1-5",
+      "publicationTitle": "Journal of Microscopy",
+      "ISSN": "1365-2818",
+      "issue": "1",
+      "creators": [
+        {
+          "firstName": "A. H. A.",
+          "lastName": "Clayton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Q. S.",
+          "lastName": "Hanley",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "P. J.",
+          "lastName": "Verveer",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Epidermal growth factor receptor",
+          "type": 1
+        },
+        {
+          "tag": "fluorescence lifetime imaging microscopy (FLIM)",
+          "type": 1
+        },
+        {
+          "tag": "fluorescence resonance energy transfer (FRET)",
+          "type": 1
+        },
+        {
+          "tag": "green fluorescent protein (GFP)",
+          "type": 1
+        },
+        {
+          "tag": "phosphorylation",
+          "type": 1
+        },
+        {
+          "tag": "protein interactions",
+          "type": 1
+        },
+        {
+          "tag": "two-component analysis",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-18T12:03:45Z",
+      "dateModified": "2026-10-18T12:03:45Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/H2W2PVI9",
+      "itemID": 119,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1365-2818.2004.01265.x",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T12:03:46Z",
+          "dateModified": "2026-10-18T12:03:46Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/2PGBSEG2",
+          "path": "/home/aras/Zotero/storage/2PGBSEG2/Clayton et al. - 2004 - Graphical representation and multicomponent analysis of single-frequency fluorescence lifetime imagi.pdf",
+          "select": "zotero://select/library/items/2PGBSEG2"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T12:03:59Z",
+          "dateModified": "2026-10-18T12:03:59Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/6SYJHPDB",
+          "path": "/home/aras/Zotero/storage/6SYJHPDB/j.1365-2818.2004.01265.html",
+          "select": "zotero://select/library/items/6SYJHPDB"
+        }
+      ],
+      "notes": [
+        {
+          "key": "8Z9VHKTC",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "H2W2PVI9",
+          "note": "<div data-schema-version=\"9\"><p>Teoria sui fasori. Spiegata molto bene la questione di somma delle fasi. </p>\n<p>Devo prendere da qui anche la teoria per l’estrapolazione dei fasori di due fluorofori partendo da una nuvola sospettosamente lineare</p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T12:04:09Z",
+          "dateModified": "2026-10-18T14:50:48Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/8Z9VHKTC"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Microsc.",
+      "itemKey": "H2W2PVI9",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/H2W2PVI9"
+    },
+    {
       "key": "VYR3UUT7",
       "version": 0,
       "itemType": "journalArticle",

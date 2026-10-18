@@ -1,7 +1,7 @@
 \section{Sviluppo del modello}\label{sec:sviluppo_del_modello} 
 
 
-La stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e l'analisi dei suddetti e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
+La stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e la relativa analisi) e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
 
 \noindent Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
 
@@ -11,6 +11,7 @@ La stesura del codice si è divisa in due momenti fondamentali: la simulazione d
 
 
 \subsection{Generazione dei segnali}
+\label{sec:generazione_dei_segnali}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -169,6 +170,7 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
 
 
 \subsection{Generazione e analisi della IRF}
+\label{sec:generazione_analisi_IRF}
 
 Come già affrontato nella sezione teorica, dei dati FLIM reali sono una convoluzione di \textit{IRF} con il segnale di decadimento.\\
 \noindent È stato dunque necessario modellizzare una funzione di risposta strumentale, di forma gaussiana, per simulare dei dati di acquisizione reali.\\
@@ -241,6 +243,7 @@ La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Deconvoluzione}
+\label{sec:deconvoluzione}
 
 Per la rappresentazione sul piano dei fasori, è necessario effettuare una deconvoluzione per separare nuovamente segnale di fluorescenza e IRF. Dal processo non si ottengono esattamente gli stessi fasori che si sarebbero potuti ottenere prima della convoluzione a causa dell'aggiunta del rumore.\\
 

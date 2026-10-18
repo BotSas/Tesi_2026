@@ -81,6 +81,54 @@
       \verb https://www.nature.com/articles/s41596-018-0026-5
       \endverb
     \endentry
+    \entry{mastersBookReviewPrinciples2008a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7e3f66e1ea483434321029e016c34b49}{%
+           family={Joseph\bibnamedelimb R.\bibnamedelimi Lakowicz},
+           familyi={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Barry\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{fullhash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{bibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorbibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authornamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorfullhash}{7e3f66e1ea483434321029e016c34b49}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02}
+      \field{day}{1}
+      \field{issn}{1083-3668, 1560-2281}
+      \field{journaltitle}{Journal of Biomedical Optics}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{02}
+      \field{shortjournal}{J. Biomed. Opt.}
+      \field{shorttitle}{Book {{Review}}}
+      \field{title}{Book {{Review}}: {{Principles}} of {{Fluorescence Spectroscopy}}, {{Third Edition}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1117/1.2904580
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/C97KXBBZ/Joseph R. Lakowicz - 2008 - Book Review Principles of Fluorescence Spectroscopy, Third Edition.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+      \verb{url}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+    \endentry
     \entry{jamesMinuitSystemFunction1975}{article}{}
       \name{author}{2}{}{%
         {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
@@ -100,8 +148,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -269,8 +317,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
@@ -329,8 +377,8 @@
       \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd}
@@ -338,6 +386,129 @@
       \field{title}{Discrete-Time Signal Processing}
       \field{year}{2009}
       \field{dateera}{ce}
+    \endentry
+    \entry{gottliebFLUTEPythonGUI2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4909f173c866fe407b72f77362b726c}{%
+           family={Gottlieb},
+           familyi={G\bibinitperiod},
+           given={Dale},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a4ccb3374d311da234c7354f7824f28a}{%
+           family={Asadipour},
+           familyi={A\bibinitperiod},
+           given={Bahar},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e59c2dc0962f7d93a9b493f7115e7883}{%
+           family={Kostina},
+           familyi={K\bibinitperiod},
+           given={Polina},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c00fd3ab999d3aa7d55db6a5b278a18c}{%
+           family={Ung},
+           familyi={U\bibinitperiod},
+           given={Thi\bibnamedelimb Phuong\bibnamedelima Lien},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=eec07f79f7b74d92db27d29273d01bc5}{%
+           family={Stringari},
+           familyi={S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{fullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \strng{bibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorbibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authornamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorfullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.}
+      \field{issn}{2633-903X}
+      \field{journaltitle}{Biological Imaging}
+      \field{langid}{english}
+      \field{shortjournal}{Biol. Imaging}
+      \field{shorttitle}{{{FLUTE}}}
+      \field{title}{{{FLUTE}}: {{A Python GUI}} for Interactive Phasor Analysis of {{FLIM}} Data}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e21}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S2633903X23000211
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/BHIWC8Q8/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
+      \endverb
+    \endentry
+    \entry{hoyerXarrayNDLabeled2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f0b7a9acbfd82a66cfeb3e4871c7f8e5}{%
+           family={Hamman},
+           familyi={H\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f05fde17715c233356bf18743764aeac}
+      \strng{fullhash}{f05fde17715c233356bf18743764aeac}
+      \strng{bibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
+      \field{day}{5}
+      \field{hour}{0}
+      \field{issn}{2049-9647}
+      \field{journaltitle}{Journal of Open Research Software}
+      \field{langid}{english}
+      \field{minute}{0}
+      \field{month}{4}
+      \field{number}{1}
+      \field{second}{0}
+      \field{shorttitle}{Xarray}
+      \field{timezone}{Z}
+      \field{title}{Xarray: {{N-D}} Labeled {{Arrays}} and {{Datasets}} in {{Python}}}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5334/jors.148
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/9D3S9Q6Q/Hoyer and Hamman - 2017 - xarray N-D labeled Arrays and Datasets in Python.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
+      \endverb
+      \verb{url}
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

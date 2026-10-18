@@ -2,46 +2,75 @@
 
 In questa sezione della trattazione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
 
-\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023}.\\
+\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
 
-\noindent In entrambe le immagini, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
-Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\textit{\tau} = 4 ns$).\\
-La seconda invece è affiancata, oltre a un file di calibrazione con amido ($\textit{\tau} = 0 ns$), anche da due immagini catturate attraverso un filtro rosso ($\textit{\lambda}=507nm$) e uno verde ($\textit{\lambda}=550nm$).\\
+\noindent Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\tau = 4\,\mathrm{ns}$).\\
+La seconda invece è affiancata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 507\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$).\\
+
+\noindent Ogni immagine è salvata come file \textit{TIFF}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione,i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.\\
+
+
+\begin{figure}[h!]
+    \centering
+
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{immagini/flat_embryo3.png}
+        \caption{Immagine 1 "appiattita" sull'asse temporale.}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{immagini/flat_embryo5.png}
+        \caption{Immagine 2 "appiattita" sull'asse temporale.}
+    \end{subfigure}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\subsection{Immagine 1 - Isolamento e deconvoluzione della IRF}
 
-\subsection{Immagine 1 - Importazione dei dati e estrapolazione della IRF}
 
-\begin{wrapfigure}{l}{0.5\textwidth}
-    \centering
-    \begin{minipage}{0.5\textwidth}
-
-        \includegraphics[width=\linewidth]{immagini/flat_embryo3.png}
-    \end{minipage}
-    \caption{Una rappresentazione "appiattita" della prima immagine, dove è evidenziato il numero totale di fotoni emessi da ogni pixel.}
+\begin{wrapfigure}{r}{0.55\textwidth}
+    \includegraphics[width=0.55\textwidth]{immagini/embryo3_phasor_plane.png}
+    \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
+\label{fig:embryo5_ph_raw}
 \end{wrapfigure}
+ 
+Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluorescina, utilizzando una funzione apposita chiamata \texttt{extract\_irf}, che prende in input l'intero file \textit{tiff} di calibrazione e il tempo di vita del fluoroforo puro, e restituisce le coordinate del fasore dell'\textit{IRF}.\\
+
+% Questa parte ha un buco enorme che voglio riempire solo dopo aver fatto la parte teorica. Infatti la funzione "extract_irf" usa delle formule specifiche sul piano dei fasori.
+
+% \begin{equation}
+%     G_{\text{true}} = \frac{1}{1 + (\omega\tau)^2} \qquad \qquad S_{\text{true}} = \frac{\omega\tau}{1 + (\omega\tau)^2}
+% \end{equation}
+
+% queste sono le formule. Sono quelle per ottenere le coordinate sul piano dei fasori del decadimento di un fluoroforo puro
+
+% magari invece di fare così ha senso aggiungere una subsubsection  con la teoria legata a questa cosa
+
+\noindent A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).\\
 
 
-Ogni immagine è salvata come file \textit{TIFF}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione,i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.\\
 
-% \noindent Noto il numero di eventi per pixel, è possibile rappresentare l'intera immagine "appiattita" sul piano dei fasori, associando un fasore ad ogni pixel.\\
+% def extract_irf(calib_image, τ_fluor, T_laser): 
 
+%     ''' Given a calibration image with a known fluorescence lifetime, extracts the IRF phasor coordinates '''  
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     tot_calib = calib_image.sum(dim = ("x", "y"))
+%     G_ref, S_ref = phasor_calc(tot_calib) 
 
-
-\subsubsection{Calibrazione dell'immagine}
-
-Come anticipato, per la calibrazione della prima immagine 
-
-
-
-
-
+%     ω = 2 * np.pi / T_laser
+%     ωτ = ω * τ_fluor
+    
+%     G_true = 1 / (1 + ωτ ** 2)
+%     S_true = ωτ / (1 + ωτ ** 2)
+%     G_irf, S_irf = phasor_deconv(G_ref, S_ref, G_true, S_true)
+    
+%     return G_irf, S_irf
 
 
 
@@ -55,19 +84,16 @@ Come anticipato, per la calibrazione della prima immagine
 
 \subsection{Immagine 1 - Analisi dei dati raccolti}
 
-Filtro \textit{"median"} sul piano dei fasori
+Osservando la rappresentazione dei dati grezzi sul piano dei fasori, è possibile fare alcune valutazioni.\\
+Un primo successo è sicuramente la posizione della "nuvola", interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.\\
 
+\noindent Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi particolarmente significativa, sia per l'alta varianza sulla posizione (correlata a un'alta varianza nel rapporto di concentrazione dei fluorofori nei vari punti del campione), sia per l'incidenza di rumore.\\
 
+\noindent In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Immagine 2 - Scomposizione in decadimenti multipli}
-
-\subsubsection{Studio delle incertezze}
-
-
-% metto qui la panel app? o non la inserisco proprio nella tesi?
+\subsubsection{Filtro \textit{"median"} sul piano dei fasori}
 
 
 
@@ -76,7 +102,7 @@ Filtro \textit{"median"} sul piano dei fasori
 def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
     '''
-    Calculates G and S from  spatial region of interest.
+    Calculates G and S from spatial region of interest.
     Takes as input:
     - image as a xr.DataArray
     - roi_mask: 2D boolean array (x, y)
@@ -97,20 +123,24 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
 \end{minted}
 
+\paragraph{Osservazioni}
 
-    % threshold_val = np.nanmax(fft0_med) * threshold_pct     # tresholding - every pixel below treshold is set to NaN
-    % fft0_thresh, G_thresh, S_thresh = phasor_threshold(
-    %     fft0_med,
-    %     G_med,
-    %     S_med,
-    %     mean_min = threshold_val
-    % )
-    
-    % valid_mask = roi_mask & ~np.isnan(G_thresh)     # only keeps pixel which are not NaN and inside ROI
-    
-    % df_roi_phasors = pd.DataFrame({
-    %     "G": G_thresh[valid_mask],
-    %     "S": S_thresh[valid_mask]
-    % })
+% nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
 
-% Lascio commentato il resto della funzione percé non lo considero significativo ai fini della tesi, da rivedere 
+È interessante notare come la distribuzione della nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo suggerisce la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
+% però spiegalo lmaooo 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Immagine 2 - Scomposizione in decadimenti multipli}
+
+\subsubsection{Studio delle incertezze}
+
+
+% metto qui la panel app? o non la inserisco proprio nella tesi?
+
+
+
+
+
