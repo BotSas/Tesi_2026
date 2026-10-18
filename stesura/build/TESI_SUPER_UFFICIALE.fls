@@ -358,6 +358,7 @@ INPUT build/TESI_SUPER_UFFICIALE-frn.pdf
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.toc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -370,11 +371,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 OUTPUT build/TESI_SUPER_UFFICIALE.toc
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./sezioni/01_introduzione.tex
 INPUT ./sezioni/02_fondamenti_teorici.tex
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
@@ -419,7 +420,6 @@ INPUT ./immagini/flat_embryo5.png
 INPUT ./immagini/flat_embryo5.png
 INPUT ./immagini/embryo3_phasor_plane.png
 INPUT ./immagini/embryo3_phasor_plane.png
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/9751D881A1537641A456A15B8702E4A11350B347DE913863EA7F5725E6FE860F.pygtex

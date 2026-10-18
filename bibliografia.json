@@ -129,6 +129,227 @@
       "select": "zotero://select/library/items/N7PGQV23"
     },
     {
+      "key": "9RXMBDL3",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Fluorescence lifetime imaging microscopy: spatial resolution of biochemical processes in the cell",
+      "abstractNote": "Fluorescence lifetime imaging microscopy (FLIM) is a technique in which the mean fluorescence lifetime of a chromophore is measured at each spatially resolvable element of a microscope image. The nanosecond excited-state lifetime is independent of probe concentration or light path length but dependent upon excited-state reactions such as fluorescence resonance energy transfer (FRET). These properties of fluorescence lifetimes allow exploration of the molecular environment of labelled macromolecules in the interior of cells. Imaging of fluorescence lifetimes enables biochemical reactions to be followed at each microscopically resolvable location within the cell.",
+      "date": "1999-02",
+      "DOI": "10.1016/s0962-8924(98)01410-x",
+      "citationKey": "bastiaensFluorescenceLifetimeImaging1999",
+      "shortTitle": "Fluorescence lifetime imaging microscopy",
+      "language": "eng",
+      "libraryCatalog": "PubMed",
+      "volume": "9",
+      "pages": "48-52",
+      "publicationTitle": "Trends in Cell Biology",
+      "ISSN": "0962-8924",
+      "issue": "2",
+      "journalAbbreviation": "Trends Cell Biol",
+      "PMID": "10087617",
+      "creators": [
+        {
+          "firstName": "P. I.",
+          "lastName": "Bastiaens",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "A.",
+          "lastName": "Squire",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Animals",
+          "type": 1
+        },
+        {
+          "tag": "Image Processing, Computer-Assisted",
+          "type": 1
+        },
+        {
+          "tag": "Microscopy, Fluorescence",
+          "type": 1
+        },
+        {
+          "tag": "Phosphorylation",
+          "type": 1
+        },
+        {
+          "tag": "Proteins",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-18T22:09:25Z",
+      "dateModified": "2026-10-18T22:09:25Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/9RXMBDL3",
+      "itemID": 135,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "Trends Cell Biol.",
+      "itemKey": "9RXMBDL3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9RXMBDL3"
+    },
+    {
+      "key": "NXSEB5BS",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Fluorescence lifetime imaging microscopy: spatial resolution of biochemical processes in the cell",
+      "date": "1999-02-01",
+      "DOI": "10.1016/S0962-8924(98)01410-X",
+      "citationKey": "bastiaensFluorescenceLifetimeImaging1999a",
+      "url": "https://www.cell.com/trends/cell-biology/abstract/S0962-8924(98)01410-X",
+      "accessDate": "2026-10-18T22:09:44Z",
+      "shortTitle": "Fluorescence lifetime imaging microscopy",
+      "language": "English",
+      "libraryCatalog": "www.cell.com",
+      "volume": "9",
+      "publisher": "Elsevier",
+      "pages": "48-52",
+      "publicationTitle": "Trends in Cell Biology",
+      "ISSN": "0962-8924, 1879-3088",
+      "issue": "2",
+      "journalAbbreviation": "Trends in Cell Biology",
+      "PMID": "10087617",
+      "creators": [
+        {
+          "firstName": "Philippe I. H.",
+          "lastName": "Bastiaens",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anthony",
+          "lastName": "Squire",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Philippe I. H.",
+          "lastName": "Bastiaens",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anthony",
+          "lastName": "Squire",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Philippe I. H.",
+          "lastName": "Bastiaens",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Anthony",
+          "lastName": "Squire",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Biochemistry",
+          "type": 1
+        },
+        {
+          "tag": "Biotechnology",
+          "type": 1
+        },
+        {
+          "tag": "Cell biology",
+          "type": 1
+        },
+        {
+          "tag": "compartmentalization",
+          "type": 1
+        },
+        {
+          "tag": "epidermal growth factor",
+          "type": 1
+        },
+        {
+          "tag": "fluorophore",
+          "type": 1
+        },
+        {
+          "tag": "FRET",
+          "type": 1
+        },
+        {
+          "tag": "green-fluorescent protein",
+          "type": 1
+        },
+        {
+          "tag": "phosphorylation",
+          "type": 1
+        },
+        {
+          "tag": "photobleaching",
+          "type": 1
+        },
+        {
+          "tag": "protein kinase",
+          "type": 1
+        },
+        {
+          "tag": "protein-protein interaction",
+          "type": 1
+        },
+        {
+          "tag": "signal transduction",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-18T22:09:44Z",
+      "dateModified": "2026-10-18T22:09:44Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/NXSEB5BS",
+      "itemID": 136,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://www.cell.com/trends/cell-biology/pdf/S0962-8924(98)01410-X.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T22:09:44Z",
+          "dateModified": "2026-10-18T22:09:44Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/W59CUVEW",
+          "path": "/home/aras/Zotero/storage/W59CUVEW/Bastiaens et al. - 1999 - Fluorescence lifetime imaging microscopy spatial resolution of biochemical processes in the cell.pdf",
+          "select": "zotero://select/library/items/W59CUVEW"
+        },
+        {
+          "itemType": "attachment",
+          "title": "PubMed entry",
+          "url": "http://www.ncbi.nlm.nih.gov/pubmed/10087617",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T22:09:44Z",
+          "dateModified": "2026-10-18T22:09:44Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/S5JHKKD6",
+          "select": "zotero://select/library/items/S5JHKKD6"
+        }
+      ],
+      "notes": [
+        {
+          "key": "D2LY7YFC",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "NXSEB5BS",
+          "note": "Utile per introduzione su FLIM, è citato da claytonGraphicalRepresentationMulticomponent2004",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T22:10:27Z",
+          "dateModified": "2026-10-18T22:10:49Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/D2LY7YFC"
+        }
+      ],
+      "autoJournalAbbreviation": "Trends Cell Biol.",
+      "itemKey": "NXSEB5BS",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/NXSEB5BS"
+    },
+    {
       "key": "FDYFKGN9",
       "version": 0,
       "itemType": "journalArticle",
@@ -947,59 +1168,6 @@
       "select": "zotero://select/library/items/Q3VQZZRZ"
     },
     {
-      "key": "FKJHEPRE",
-      "version": 0,
-      "itemType": "report",
-      "title": "Guide to the expression of uncertainty in measurement — Part 1: Introduction",
-      "date": "2023-01-01",
-      "DOI": "10.59161/JCGMGUM-1-2023",
-      "citationKey": "GuideExpressionUncertainty2023a",
-      "url": "https://www.bipm.org/doi/10.59161/JCGMGUM-1-2023",
-      "accessDate": "2026-10-14T08:49:22Z",
-      "shortTitle": "Guide to the expression of uncertainty in measurement — Part 1",
-      "language": "en",
-      "libraryCatalog": "DOI.org (Crossref)",
-      "creators": [],
-      "tags": [],
-      "relations": {},
-      "dateAdded": "2026-10-14T08:49:22Z",
-      "dateModified": "2026-10-14T08:49:22Z",
-      "uri": "http://zotero.org/users/local/0gkItI9k/items/FKJHEPRE",
-      "itemID": 94,
-      "attachments": [
-        {
-          "itemType": "attachment",
-          "title": "PDF",
-          "url": "https://indico.global/event/7252/contributions/67466/attachments/32550/60670/Uncertainties%202021-12-16%20JCGM%20GUM.pdf",
-          "tags": [],
-          "relations": {},
-          "dateAdded": "2026-10-14T08:49:19Z",
-          "dateModified": "2026-10-14T08:49:22Z",
-          "uri": "http://zotero.org/users/local/0gkItI9k/items/FGSB6YPB",
-          "path": "/home/aras/Zotero/storage/FGSB6YPB/2023 - Guide to the expression of uncertainty in measurement — Part 1 Introduction.pdf",
-          "select": "zotero://select/library/items/FGSB6YPB"
-        }
-      ],
-      "notes": [
-        {
-          "key": "XXB3ZNMD",
-          "version": 0,
-          "itemType": "note",
-          "parentItem": "FKJHEPRE",
-          "note": "sempre monte carlo",
-          "tags": [],
-          "relations": {},
-          "dateAdded": "2026-10-14T08:49:27Z",
-          "dateModified": "2026-10-14T08:49:27Z",
-          "uri": "http://zotero.org/users/local/0gkItI9k/items/XXB3ZNMD"
-        }
-      ],
-      "autoJournalAbbreviation": "",
-      "itemKey": "FKJHEPRE",
-      "libraryID": 1,
-      "select": "zotero://select/library/items/FKJHEPRE"
-    },
-    {
       "key": "49LTUEI3",
       "version": 0,
       "itemType": "journalArticle",
@@ -1533,7 +1701,20 @@
           "select": "zotero://select/library/items/PSDWE44R"
         }
       ],
-      "notes": [],
+      "notes": [
+        {
+          "key": "7BI82JWB",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "TM8LU2BA",
+          "note": "<div data-schema-version=\"9\"><p>Questo può essere utile per le operazioni sul piano dei fasori. Non so quanto sia papabile da citare perché è letteralmente intitolato “le mie opinioni riguardo a”</p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-18T22:00:49Z",
+          "dateModified": "2026-10-18T22:01:33Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/7BI82JWB"
+        }
+      ],
       "autoJournalAbbreviation": "Nat. Methods",
       "itemKey": "TM8LU2BA",
       "libraryID": 1,
