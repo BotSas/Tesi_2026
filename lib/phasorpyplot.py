@@ -125,7 +125,7 @@ def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8)):     
                 if key in pt_style
             }
             error_style.setdefault('ecolor', pt_style.get('color', 'black'))
-            error_style.setdefault('capsize', 3)
+            error_style.setdefault('capsize', 0)
 
             ax.errorbar(
                 G_val,
