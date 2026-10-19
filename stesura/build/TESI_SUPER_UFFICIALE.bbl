@@ -149,6 +149,74 @@
       \endverb
       \keyw{Biochemistry,Biotechnology,Cell biology,compartmentalization,epidermal growth factor,fluorophore,FRET,green-fluorescent protein,phosphorylation,photobleaching,protein kinase,protein-protein interaction,signal transduction}
     \endentry
+    \entry{huComparisonPhasorAnalysis2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c444d48bdb3f281cc67e4e8560cffa23}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Linghao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=475e90e4eec5022363cd9f947f47bc9f}{%
+           family={Ter\bibnamedelima Hofstede},
+           familyi={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Blanche},
+           giveni={B\bibinitperiod}}}%
+        {{hash=474abf2f2aad9e37e5476b2e65e7f923}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dhavan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bb86c6a67d0b873b7f2ef7defe046268}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=85b5511e9b72a4388c615fc0209b62f3}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Alex\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{fullhash}{dbdeb4d292e0ba399640215c52751846}
+      \strng{bibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorbibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authornamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorfullhash}{dbdeb4d292e0ba399640215c52751846}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction: Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates. Methods: Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope. Results: Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88\%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates. Discussion: Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.}
+      \field{day}{29}
+      \field{issn}{2673-7647}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{Front. Bioinform.}
+      \field{title}{Comparison of Phasor Analysis and Biexponential Decay Curve Fitting of Autofluorescence Lifetime Imaging Data for Machine Learning Prediction of Cellular Phenotypes}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1210157}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fbinf.2023.1210157
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/3W7I7FLM/Hu et al. - 2023 - Comparison of phasor analysis and biexponential decay curve fitting of autofluorescence lifetime ima.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+    \endentry
     \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
       \name{author}{4}{}{%
         {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
@@ -178,8 +246,8 @@
       \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
       \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
       \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1754-2189, 1750-2799}

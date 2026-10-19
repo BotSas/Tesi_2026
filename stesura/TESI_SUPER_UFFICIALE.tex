@@ -1,10 +1,13 @@
-% Benvenuti nel template per le relazioni di Sperimentazioni di Fisica 1 del corso triennale in Astronomia dell'Università di Padova.
+% Benvenuti nel template per le relazioni di Sperimentazioni di Fisica 1 del corso triennale in Astronomia dell'Università di Padova.t
 % Per compilarlo, cliccate su Menu, selezionate come compilatore "pdfLaTeX", TeX Live Version 2020 (o uno degli altri, whatever works), e come documento principale "Relazione.tex"
 
 %%% Preambolo del documento %%%
 % Non toccate questa roba, a meno che non siate abbastanza sgamati da sapere quello che state facendo, tipo vi piacciono di più certi pacchetti rispetto ad altri, o magari ve ne manca qualcuno.
-\documentclass[a4paper, 12pt]{article} %titlepage
-\usepackage[margin=1in]{geometry}
+\documentclass[a4paper, 12pt, twoside]{article}
+\usepackage[top=2.5cm, bottom=2.5cm, inner=2.5cm, outer=2.5cm]{geometry}
+% da sostituire in caso di stampa fronte-retro
+%\usepackage[top=2.5cm, bottom=2.5cm, inner=4cm, outer=4cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc} % codifica UTF-8
 \usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{listings}
@@ -38,7 +41,8 @@
 \usepackage{tabularx}
 
 % ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte
-\usepackage{geometry}
+\usepackage{setspace}
+\onehalfspacing
 \usepackage{changepage}
 \usepackage{colortbl}
 \usepackage{titlesec}
@@ -78,15 +82,18 @@
 \NCorrelatore{Correlatore}{}
 \Correlatore{Dott. Davide Panzeri}
 
-
 \end{frontespizio}
 
 
 \IfFileExists{\jobname-frn.pdf}{}{%
 \immediate\write18{lualatex -interaction=nonstopmode -output-directory=build \jobname-frn.tex}}
 
-
-
+% --- INIZIO PAGINA BIANCA ---
+\newpage
+\thispagestyle{empty} % Rimuove il numero di pagina
+\mbox{}               % Inserisce un box vuoto invisibile
+\newpage
+% --- FINE PAGINA BIANCA ---
 
 %%% Indice %%%
 \vspace*{\fill}

@@ -830,6 +830,44 @@
       "select": "zotero://select/library/items/6ISRIWPB"
     },
     {
+      "key": "L926NRHH",
+      "version": 0,
+      "itemType": "webpage",
+      "title": "Fluorescence lifetime imaging of free and protein-bound NADH.",
+      "DOI": "10.1073/pnas.89.4.1271",
+      "citationKey": "FluorescenceLifetimeImaging",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.89.4.1271",
+      "accessDate": "2026-10-19T13:13:44Z",
+      "language": "en",
+      "extra": "DOI: 10.1073/pnas.89.4.1271",
+      "creators": [],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-19T13:13:44Z",
+      "dateModified": "2026-10-19T13:13:44Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/L926NRHH",
+      "itemID": 142,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.89.4.1271",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-19T13:13:51Z",
+          "dateModified": "2026-10-19T13:13:51Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/3NUK2BTK",
+          "path": "/home/aras/Zotero/storage/3NUK2BTK/pnas.89.4.html",
+          "select": "zotero://select/library/items/3NUK2BTK"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "L926NRHH",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/L926NRHH"
+    },
+    {
       "key": "9Z35P5Q6",
       "version": 0,
       "itemType": "encyclopediaArticle",

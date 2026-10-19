@@ -1,27 +1,27 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
-\contentsline {section}{\numberline {2}Fondamenti teorici}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}\textit {FLIM} e analisi fasoriale}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Funzione di risposta dello strumento}{2}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Convoluzione tra IRF e segnale di fluorescenza}{3}{subsubsection.2.2.1}%
-\contentsline {paragraph}{Osservazioni}{4}{equation.2.2}%
-\contentsline {section}{\numberline {3}Sviluppo del modello}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{4}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{4}{subsubsection.3.1.1}%
-\contentsline {paragraph}{Generazione del rumore}{5}{equation.3.3}%
-\contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{6}{subsubsection.3.1.2}%
-\contentsline {paragraph}{Verifica del rapporto di concentrazione}{6}{figure.caption.2}%
-\contentsline {subsection}{\numberline {3.2}Generazione e analisi della IRF}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{7}{subsubsection.3.2.1}%
-\contentsline {paragraph}{Osservazioni aggiuntive}{8}{figure.caption.4}%
-\contentsline {subsubsection}{\numberline {3.2.2}Deconvoluzione}{9}{subsubsection.3.2.2}%
-\contentsline {paragraph}{Decadimento a doppio esponenziale}{9}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Test su immagini}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Immagine 1 - Isolamento e deconvoluzione della IRF}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Immagine 1 - Analisi dei dati raccolti}{11}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Filtro \textit {"median"} sul piano dei fasori}{12}{subsubsection.4.2.1}%
-\contentsline {paragraph}{Osservazioni}{12}{subsubsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.3}Immagine 2 - Scomposizione in decadimenti multipli}{12}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Studio delle incertezze}{12}{subsubsection.4.3.1}%
-\contentsline {section}{\numberline {5}Conclusioni}{12}{section.5}%
+\contentsline {section}{\numberline {1}Introduzione}{4}{section.1}%
+\contentsline {section}{\numberline {2}Fondamenti teorici}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}\textit {FLIM} e analisi fasoriale}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Funzione di risposta dello strumento}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Convoluzione tra IRF e segnale di fluorescenza}{6}{subsubsection.2.2.1}%
+\contentsline {paragraph}{Osservazioni}{6}{equation.2.2}%
+\contentsline {section}{\numberline {3}Sviluppo del modello}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{7}{subsubsection.3.1.1}%
+\contentsline {paragraph}{Generazione del rumore}{8}{equation.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{9}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Verifica del rapporto di concentrazione}{9}{figure.caption.2}%
+\contentsline {subsection}{\numberline {3.2}Generazione e analisi della IRF}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{10}{subsubsection.3.2.1}%
+\contentsline {paragraph}{Osservazioni aggiuntive}{12}{figure.caption.4}%
+\contentsline {subsubsection}{\numberline {3.2.2}Deconvoluzione}{12}{subsubsection.3.2.2}%
+\contentsline {paragraph}{Decadimento a doppio esponenziale}{13}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Test su immagini}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Immagine 1 - Isolamento e deconvoluzione della IRF}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Immagine 1 - Analisi dei dati raccolti}{15}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Filtro \textit {"median"} sul piano dei fasori}{15}{subsubsection.4.2.1}%
+\contentsline {paragraph}{Osservazioni}{16}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Immagine 2 - Scomposizione in decadimenti multipli}{16}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Studio delle incertezze}{16}{subsubsection.4.3.1}%
+\contentsline {section}{\numberline {5}Conclusioni}{16}{section.5}%
