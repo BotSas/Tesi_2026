@@ -123,23 +123,60 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
 \end{minted}
 
-\paragraph{Osservazioni}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Selezione della regione di interesse}
+
+\noindent Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
+
+\noindent Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
+La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
+
+\noindent Da un punto di vista computazionale, la maschera è stata implementata come una matrice bi-dimensionale, con le stesse dimensioni spaziali dell'immagine del campione. L'area della maschera sovrapponibile alla regione di interesse viene riempita da valori ''1'', mentre i restanti elementi vengono occupati da ''0''.
+
+% to be continued. Qui devo parlare dell'ordine con cui si è scelto di applicare filtro median e ROI selection. Se nulla cambia, il processo è:
+% immagine -> nuvola su piano fasori con filtro median -> il fasore della nuvola viene salvato solo se il punto dell'immagine a cui corrisponde si trova in un'area della maschera contrassegnata da un valore non nullo
+
+\paragraph{Norme per una selezione proficua} 
+
+La selezione della regione di interesse (ROI) è uno strumento la cui utilità dipende fortemente dalla scelta del centro e dell'ampiezza dell'area che si decide di studiare. Vengono di seguito elencati alcuni accorgimenti necessari a una buona selezione:
+
+\begin{itemize}
+    \item È consigliato scegliere una regione del campione che riporti un'intensità di emissione sufficiente; infatti, \textit{pixel} contenenti pochi fotoni saranno più soggetti a errori strumentali o legati al rumore statistico.
+    \item È essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
+\end{itemize}
+
+\subsubsection{Osservazioni finali sull'immagine 1}
 
 % nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
 
 È interessante notare come la distribuzione della nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo suggerisce la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
 % però spiegalo lmaooo 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Immagine 2 - Scomposizione in decadimenti multipli}
 
-\subsubsection{Studio delle incertezze}
+La seconda riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\
+
+\noindent Nonostante il campione non sia stato dichiaratamente trattato a due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
+La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
+
+
+\subsubsection{Estrazione della IRF dal file di calibrazione}
+% collegarsi con shg (armoniche di seconda generazione) per il file con amido
+
+
+\subsubsection{Confronto tra il rapporto di fluorofori in due regioni distinte}
+
+\subsubsection{Calcolo delle incertezze con simulazione Monte Carlo}
+
+
+
 
 
 % metto qui la panel app? o non la inserisco proprio nella tesi?
-
 
 
 

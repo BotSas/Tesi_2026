@@ -19,68 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
-      \name{author}{4}{}{%
-        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
-           family={Ranjit},
-           familyi={R\bibinitperiod},
-           given={Suman},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
-           family={Malacrida},
-           familyi={M\bibinitperiod},
-           given={Leonel},
-           giveni={L\bibinitperiod}}}%
-        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
-           family={Jameson},
-           familyi={J\bibinitperiod},
-           given={David\bibnamedelima M.},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
-           family={Gratton},
-           familyi={G\bibinitperiod},
-           given={Enrico},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{d2074ef601efa0362a6274084477d133}
-      \strng{fullhash}{33a799c76f4c657745b8963a10ea161b}
-      \strng{bibnamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
-      \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1754-2189, 1750-2799}
-      \field{journaltitle}{Nature Protocols}
-      \field{langid}{english}
-      \field{month}{9}
-      \field{number}{9}
-      \field{shortjournal}{Nat Protoc}
-      \field{title}{Fit-Free Analysis of Fluorescence Lifetime Imaging Data Using the Phasor Approach}
-      \field{urlday}{6}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{13}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1979\bibrangedash 2004}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1038/s41596-018-0026-5
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/s41596-018-0026-5
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/s41596-018-0026-5
-      \endverb
-    \endentry
     \entry{mastersBookReviewPrinciples2008a}{article}{}
       \name{author}{1}{}{%
         {{hash=7e3f66e1ea483434321029e016c34b49}{%
@@ -95,8 +33,8 @@
       \strng{authorbibnamehash}{7e3f66e1ea483434321029e016c34b49}
       \strng{authornamehash}{7e3f66e1ea483434321029e016c34b49}
       \strng{authorfullhash}{7e3f66e1ea483434321029e016c34b49}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02}
@@ -129,6 +67,218 @@
       \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
       \endverb
     \endentry
+    \entry{bastiaensFluorescenceLifetimeImaging1999a}{article}{}
+      \name{author}{6}{}{%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{fullhash}{f83fe4f4e013c5855a3018bf92ba394d}
+      \strng{bibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authorbibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authornamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authorfullhash}{f83fe4f4e013c5855a3018bf92ba394d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{eprinttype}{pubmed}
+      \field{issn}{0962-8924, 1879-3088}
+      \field{journaltitle}{Trends in Cell Biology}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Trends in Cell Biology}
+      \field{shorttitle}{Fluorescence Lifetime Imaging Microscopy}
+      \field{title}{Fluorescence Lifetime Imaging Microscopy: Spatial Resolution of Biochemical Processes in the Cell}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{48\bibrangedash 52}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/S0962-8924(98)01410-X
+      \endverb
+      \verb{eprint}
+      \verb 10087617
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/W59CUVEW/Bastiaens et al. - 1999 - Fluorescence lifetime imaging microscopy spatial resolution of biochemical processes in the cell.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cell.com/trends/cell-biology/abstract/S0962-8924(98)01410-X
+      \endverb
+      \verb{url}
+      \verb https://www.cell.com/trends/cell-biology/abstract/S0962-8924(98)01410-X
+      \endverb
+      \keyw{Biochemistry,Biotechnology,Cell biology,compartmentalization,epidermal growth factor,fluorophore,FRET,green-fluorescent protein,phosphorylation,photobleaching,protein kinase,protein-protein interaction,signal transduction}
+    \endentry
+    \entry{huComparisonPhasorAnalysis2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c444d48bdb3f281cc67e4e8560cffa23}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Linghao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=475e90e4eec5022363cd9f947f47bc9f}{%
+           family={Ter\bibnamedelima Hofstede},
+           familyi={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Blanche},
+           giveni={B\bibinitperiod}}}%
+        {{hash=474abf2f2aad9e37e5476b2e65e7f923}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dhavan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bb86c6a67d0b873b7f2ef7defe046268}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=85b5511e9b72a4388c615fc0209b62f3}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Alex\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{fullhash}{dbdeb4d292e0ba399640215c52751846}
+      \strng{bibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorbibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authornamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorfullhash}{dbdeb4d292e0ba399640215c52751846}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction: Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates. Methods: Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope. Results: Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88\%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates. Discussion: Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.}
+      \field{day}{29}
+      \field{issn}{2673-7647}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{Front. Bioinform.}
+      \field{title}{Comparison of Phasor Analysis and Biexponential Decay Curve Fitting of Autofluorescence Lifetime Imaging Data for Machine Learning Prediction of Cellular Phenotypes}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1210157}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fbinf.2023.1210157
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/3W7I7FLM/Hu et al. - 2023 - Comparison of phasor analysis and biexponential decay curve fitting of autofluorescence lifetime ima.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+    \endentry
+    \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
+           family={Gratton},
+           familyi={G\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2074ef601efa0362a6274084477d133}
+      \strng{fullhash}{33a799c76f4c657745b8963a10ea161b}
+      \strng{bibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-2189, 1750-2799}
+      \field{journaltitle}{Nature Protocols}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Nat Protoc}
+      \field{title}{Fit-Free Analysis of Fluorescence Lifetime Imaging Data Using the Phasor Approach}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1979\bibrangedash 2004}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1038/s41596-018-0026-5
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+    \endentry
     \entry{jamesMinuitSystemFunction1975}{article}{}
       \name{author}{2}{}{%
         {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
@@ -148,8 +298,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -317,8 +467,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}

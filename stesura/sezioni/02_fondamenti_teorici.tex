@@ -73,14 +73,18 @@ Moltiplicando le due funzioni si ottiene un contributo dato da $\textit{IRF}(t_k
     \label{eq:convoluzione}
 \end{equation}
 
-\noindent La formula ottenuta si riconduce esattamente alla definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.
+\noindent La formula ottenuta si riconduce esattamente alla definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.\\
 
 %____________________________________________________________________________________
 
 \paragraph{Osservazioni}
-\begin{enumerate}
-
+\begin{itemize}
     \item È giusto osservare che nell'implementazione nel codice dell'algoritmo di convoluzione non viene utilizzata la definizione appena ricavata, bensì una definizione operativa che fa uso della trasformata di Fourier. Per ulteriori approfondimenti si fa riferimento alla sezione \ref{sec:generazione_dei_segnali} (generazione dei segnali).
     \item Dato che l'acquisizione sperimentale avviene raggruppando i fotoni rilevati in \textit{bin} di larghezza pre-determinata $\Delta t$, sarebbe necessario pesare ogni contributo \textit{k-esimo} per questo valore. Nella definizione operativa questo termine viene inglobato dalla normalizzazione.\\
+\end{itemize}
 
-\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Generazione di seconda armonica (SHG)}
