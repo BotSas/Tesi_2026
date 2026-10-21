@@ -40,27 +40,63 @@
 \usepackage{siunitx}
 \usepackage{tabularx}
 
-% ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte
+% ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte ------------------
+\usepackage{svg}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{changepage}
 \usepackage{colortbl}
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{10ex plus 3ex minus 2ex}{4.3ex plus .22ex}
-\titlespacing*{\subsection}{0pt}{5.4ex plus .3ex minus .2ex}{2.8ex plus .2ex}
+%  \titlespacing{comando}{spazio_sinistro}{spazio_sopra}{spazio_sotto}
+\titlespacing*{\section}{0pt}{14ex plus 3ex minus 2ex}{4.3ex plus .22ex}
+\titlespacing*{\subsection}{0pt}{8.4ex plus .8ex minus .4ex}{3ex plus .2ex}
 \usepackage[italian]{babel}
+% MINTED (codice)
 \usepackage[svgnames]{xcolor}
 \usepackage[outputdir=build]{minted}
-
 \usemintedstyle{vs}
+
+% Modifica i titoli delle sezioni (\section)
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries} % Stile del titolo (es. grande e in grassetto)
+  {\thesection}                 % Numero della sezione
+  {1em}                         % Spazio tra il numero e il titolo
+  {}                            % Codice prima del titolo
+
+% Fa lo stesso per le sottosezioni (\subsection)
+\titleformat{\subsection}
+  {\normalfont\Large\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+% e sotto
+\titleformat{\subsubsection}
+  {\normalfont\large\bfseries}
+  {\thesubsubsection}
+  {1em}
+  {}
+
 
 
 % bibliografia
 \usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
 \addbibresource{bibliografia.bib}
 \AtEveryBibitem{\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}
+\setlength{\bibitemsep}{1em}
 
-% FINE ROBA AGGIUNTA DA SAS
+
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Mette il numero all'esterno (destra nelle dispari, sinistra nelle pari)
+%\fancyfoot[RO,LE]{\thepage} 
+\fancyfoot[C]{-- \thepage\ --} % centrato coi trattini
+
+% FINE ROBA AGGIUNTA DA SAS -------------------------------------------------------------------------------------
 
 
 \begin{document}

@@ -338,6 +338,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT ./build/TESI_SUPER_UFFICIALE.aux
 OUTPUT build/TESI_SUPER_UFFICIALE.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
@@ -425,6 +426,14 @@ INPUT ./immagini/embryo3_phasor_plane.png
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/9751D881A1537641A456A15B8702E4A11350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./immagini/embryo5_IRF.pdf
+INPUT ./immagini/embryo5_IRF.pdf
+INPUT ./immagini/ROI1_and_ROI2.pdf
+INPUT ./immagini/ROI1_and_ROI2.pdf
+INPUT ./immagini/ROI1.pdf
+INPUT ./immagini/ROI1.pdf
+INPUT ./immagini/ROI2.pdf
+INPUT ./immagini/ROI2.pdf
 INPUT ./sezioni/05_conclusioni.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.aux

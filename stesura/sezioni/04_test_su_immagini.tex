@@ -26,13 +26,15 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
     \end{subfigure}
 \end{figure}
 
+\noindent Di seguito sono riportate le informazioni fornite dai proprietari delle immagini, riguardanti le modalità di acquisizione e i parametri impostati:\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Immagine 1 - Isolamento e deconvoluzione della IRF}
+\subsection{Immagine 1 - elaborazione dei dati}
 
+\subsubsection{Isolamento e deconvoluzione della IRF}
 
 \begin{wrapfigure}{r}{0.55\textwidth}
     \includegraphics[width=0.55\textwidth]{immagini/embryo3_phasor_plane.png}
@@ -78,11 +80,10 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\subsection{Immagine 1 - Analisi dei dati raccolti}
+\paragraph{Rappresentazione dei fasori grezzi e deconvoluti}
 
 Osservando la rappresentazione dei dati grezzi sul piano dei fasori, è possibile fare alcune valutazioni.\\
 Un primo successo è sicuramente la posizione della "nuvola", interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.\\
@@ -91,7 +92,7 @@ Un primo successo è sicuramente la posizione della "nuvola", interamente all'in
 
 \noindent In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.\\
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Filtro \textit{"median"} sul piano dei fasori}
 
@@ -132,7 +133,7 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 \noindent Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
 La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
 
-\noindent Da un punto di vista computazionale, la maschera è stata implementata come una matrice bi-dimensionale, con le stesse dimensioni spaziali dell'immagine del campione. L'area della maschera sovrapponibile alla regione di interesse viene riempita da valori ''1'', mentre i restanti elementi vengono occupati da ''0''.
+\noindent Da un punto di vista computazionale, la maschera è stata implementata come una matrice bi-dimensionale, con le stesse dimensioni spaziali dell'immagine del campione. L'area della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.
 
 % to be continued. Qui devo parlare dell'ordine con cui si è scelto di applicare filtro median e ROI selection. Se nulla cambia, il processo è:
 % immagine -> nuvola su piano fasori con filtro median -> il fasore della nuvola viene salvato solo se il punto dell'immagine a cui corrisponde si trova in un'area della maschera contrassegnata da un valore non nullo
@@ -150,7 +151,7 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 % nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
 
-È interessante notare come la distribuzione della nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo suggerisce la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
+È interessante notare come la nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo suggerisce la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
 % però spiegalo lmaooo 
 
 
@@ -158,17 +159,66 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 \subsection{Immagine 2 - Scomposizione in decadimenti multipli}
 
-La seconda riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\
+La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\
 
-\noindent Nonostante il campione non sia stato dichiaratamente trattato a due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
+\noindent Nonostante il campione non sia stato dichiaratamente trattato con due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
 La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
 
 
-\subsubsection{Estrazione della IRF dal file di calibrazione}
-% collegarsi con shg (armoniche di seconda generazione) per il file con amido
 
+\subsubsection{Estrazione della IRF e generazione di seconda armonica}
+
+Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF che si è utilizzato per quello della prima immagine.\\
+Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
+L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenda con tempo di vita $\tau=0\;ns$.\\
+
+    
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{immagini/embryo5_IRF.pdf} 
+    \label{fig:embryo5_IRF}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Confronto tra il rapporto di fluorofori in due regioni distinte}
+
+
+La possibilità di 
+
+% Queste sono le uniche immagini non placeholder di tutta la tesi
+\begin{figure}[htbp]
+    \centering
+    
+    % Prima riga: Immagine totale
+    \begin{minipage}{\textwidth}
+        \centering
+        \includegraphics[width=0.49\linewidth]{immagini/ROI1_and_ROI2.pdf} 
+        \label{fig:total}
+    \end{minipage}
+    
+    % Regola questo valore per avvicinare o allontanare le righe
+    \vspace{-3cm} 
+    
+    % Seconda riga: Immagini affiancate
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{immagini/ROI1.pdf}
+        \label{fig:red}
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{immagini/ROI2.pdf}
+        \label{fig:green}
+    \end{minipage}
+    \vspace{-3cm} 
+    \caption{Nella prima immagine in alto sono evidenziate le due ROI scelte per l'analisi, il quadrato ciano rappresenta la prima area, mentre quella verde la seconda. Nelle immagini sottostani vengono mostrate rispettivamente la prima e la seconda area sovrapposte alle immagini con filtro rosso e verde. Si noti la scelta di regioni con adeguato numero di eventi di decadimento.}
+    \label{fig:tutte_immagini}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \subsubsection{Calcolo delle incertezze con simulazione Monte Carlo}
 
@@ -177,7 +227,4 @@ La presenza di acquisizioni con filtri di emissioni colorati, corredate all'imma
 
 
 % metto qui la panel app? o non la inserisco proprio nella tesi?
-
-
-
 

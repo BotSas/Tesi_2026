@@ -407,6 +407,50 @@
       "select": "zotero://select/library/items/FDYFKGN9"
     },
     {
+      "key": "RA4HY46L",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Second-harmonic imaging microscopy for visualizing biomolecular arrays in cells, tissues and organisms",
+      "date": "11/2003",
+      "DOI": "10.1038/nbt894",
+      "citationKey": "campagnolaSecondharmonicImagingMicroscopy2003",
+      "url": "https://www.nature.com/articles/nbt894",
+      "accessDate": "2026-10-21T14:01:23Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "rights": "http://www.springer.com/tdm",
+      "volume": "21",
+      "pages": "1356-1360",
+      "publicationTitle": "Nature Biotechnology",
+      "ISSN": "1087-0156, 1546-1696",
+      "issue": "11",
+      "journalAbbreviation": "Nat Biotechnol",
+      "creators": [
+        {
+          "firstName": "Paul J",
+          "lastName": "Campagnola",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leslie M",
+          "lastName": "Loew",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-21T14:01:23Z",
+      "dateModified": "2026-10-21T14:01:23Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/RA4HY46L",
+      "itemID": 150,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "Nat. Biotechnol.",
+      "itemKey": "RA4HY46L",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/RA4HY46L"
+    },
+    {
       "key": "3X98XFRC",
       "version": 0,
       "itemType": "computerProgram",
@@ -1394,6 +1438,76 @@
       "itemKey": "49LTUEI3",
       "libraryID": 1,
       "select": "zotero://select/library/items/49LTUEI3"
+    },
+    {
+      "key": "6C94KLS3",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Nonlinear optical microscopic examination of structure in polycrystalline ZnSe",
+      "date": "11/1974",
+      "DOI": "10.1016/0030-4018(74)90024-8",
+      "citationKey": "hellwarthNonlinearOpticalMicroscopic1974",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/0030401874900248",
+      "accessDate": "2026-10-21T15:06:42Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "rights": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "volume": "12",
+      "pages": "318-322",
+      "publicationTitle": "Optics Communications",
+      "ISSN": "00304018",
+      "issue": "3",
+      "journalAbbreviation": "Optics Communications",
+      "creators": [
+        {
+          "firstName": "Robert",
+          "lastName": "Hellwarth",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paul",
+          "lastName": "Christensen",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-21T15:06:42Z",
+      "dateModified": "2026-10-21T15:06:42Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/6C94KLS3",
+      "itemID": 152,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://pdf.sciencedirectassets.com/271557/1-s2.0-S0030401800X02088/1-s2.0-0030401874900248/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDJcfHdu13jgvG1Fj%2FnqvFNs9bJTVZeoqtr1OOuqwA1xgIgc8qxAHlVoHLcHnEY0GeoICNYjpbL9z2yc9ZZyhAgbwIqswUIXxAFGgwwNTkwMDM1NDY4NjUiDD2LSoTRSDv60h%2BqbSqQBQzrqHG0D2LT01XzudPX0XAwq9zC7fkBc5Y2W70Fc3228NfDgP1m%2BBII1yRPxh%2BL9XSENdL2cN8g2dwZ47ZJ6H7fCpIEPR%2FhTwSn5Su2dM4pU6gUoXO9A3TwMtli4jMdRPD4j9B5%2FdyiVbrJGhP9Z4tQ7a4Jy%2BY4%2FH04av0lGmIm%2BCbol9QBLr5Ee1ipFrJNE6Fqf4KA8eWVlP55dGshD1BQ3Mb8xiVYSPhcwWIzqUn0EK96gDfJgOCX0hgJsP0WBq3LJokLLbHMpyEifabNcxldKPzwaaJlI6%2Fju8UC64giwSskv9Md4MMF%2BGF5XZYv7f%2BZYQJhfH2Tj4iYxG2JgY0nb%2FuC9nYQy%2FnK7lN3DgnnYrT3DBug%2FKA6LT%2Blh7WGptgqQTbeVZeafHInGIW%2B4Rqtf3bDpqzdauZzsWAWuL%2BcGmaFAxZWoWXx07XtdKyeeqIJAYVKJbZ1uloQBxaiY1moFbAAVXHtY7ARwOwwwmMMLWJDgHFk3SauKbLc%2Bk0n7XDRFXztDZ%2B4nvaJozDSJY3qsUSdL5cKbeyhGCRx7iQs9Sq5K6FJws3qA0Mf4mY99bEthsT%2BuG%2FNhbwhoRAyUumf8F%2FL%2BRaZvS4Ubxihyq5oqbnejQCeIboaOFwdriCFxJSCnTgdHwT5dM3KHod%2F5tGzBwoD05Dg94t8dUb4lWRvgC3JSpv3goigyNgQkQLJcW2m8Ps1Tk0UvgAKSZ2cZde5jsw29n2PdfauoD2lh1FWgnoIcP89l3FbtOxQYMIHFB4i%2B2PDvgOlkHofxCnRm9KDga8u4jCc6Q1grfo7hUxZPeJuG7t9ENiG3t4MA0D%2FbK%2FzY3iBKE4IDNlqXgIiJL%2BmJtGyVzaDgtxUFfS%2BtomiMNOE49YGOrEBW4mzQKrl7ly5w7seDKPqgw%2BcyaVw0pEd8YAh3aRBg3dmT1RoDUScZjJdwUN2HsPkl06wEDgyooK2QO7IVez2DZNQePUrWanO9oJnRHYDNJOVPR%2Fn%2FaX%2FQdDDic3qvlziYMgU7rcnuW8CApQTLU6J4D%2F8l1AHTxCaAP2UXjAu4w%2FTRUaOjy2ZUii8P4L1O4zrmqPfxq7XqcBaWAjOWjiSsiqcLnSJW0bkwy2kG%2FYE3aB7&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261021T150635Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQNK5PX57%2F20261021%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c53128cbe503c3640cb30c0f9589f0ff26f834282ac197f805415b237f6d5118&hash=464a8cfce07c41d51ab8b86bd658dec7f2f4008fd8613d25ef8c9c1f06bfddab&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=0030401874900248&tid=spdf-2e3befea-1052-4282-9187-cb78e3330640&sid=453a64b388e5a24a1b88f345f75895807b53gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=13150f5300515d02005d&rr=a4e12ac2df2af1c2&cc=it",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-21T15:06:39Z",
+          "dateModified": "2026-10-21T15:06:42Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/6R42B2X7",
+          "path": "/home/aras/Zotero/storage/6R42B2X7/Hellwarth and Christensen - 1974 - Nonlinear optical microscopic examination of structure in polycrystalline ZnSe.pdf",
+          "select": "zotero://select/library/items/6R42B2X7"
+        }
+      ],
+      "notes": [
+        {
+          "key": "TN49FAYV",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "6C94KLS3",
+          "note": "cito appena appena quando parlo di generazione di seconda armonica",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-21T15:07:05Z",
+          "dateModified": "2026-10-21T15:07:05Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/TN49FAYV"
+        }
+      ],
+      "autoJournalAbbreviation": "Opt. Commun.",
+      "itemKey": "6C94KLS3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/6C94KLS3"
     },
     {
       "key": "N47FNKLY",

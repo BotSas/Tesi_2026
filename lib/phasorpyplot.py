@@ -81,7 +81,7 @@ def plot_decay(xe, n):                  # plots exponential data alone
 
 
 
-def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8)):     # Plots every single phasor plot imaginable
+def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8), titolo = None):     # Plots every single phasor plot imaginable
 
     """    
     - points: dict list for markers [{'G': 0.5, 'S': 0.4, 'label': 'IRF', 'color': 'darkorange', 'marker': 'o'}]
@@ -91,7 +91,7 @@ def universal_phasor_plot(T_laser, points, lines = None, figsize = (8, 8)):     
     fig, ax = plt.subplots(figsize = figsize)
 
     ω_laser = 1000.0 / T_laser
-    plot = PhasorPlot(frequency = ω_laser, ax = ax)
+    plot = PhasorPlot(frequency = ω_laser, ax = ax, title = titolo)
     
     #LINES 
     if lines:
