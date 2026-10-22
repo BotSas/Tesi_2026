@@ -144,14 +144,21 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Selezione della regione di interesse}
+\subsubsection{Selezione della regione di interesse} 
 
-\noindent Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
+%citazione alla teoria needed
+
+\noindent Come anticipato nella sezione teorica, si dimostra l'esistenza di una corrispondenza biunivoca tra i punti dell'immagine nel dominio temporale e quelli sul piano dei fasori. È dunque utlile implementare nel codice uno strumento che permetta di verificare questa corrispondenza, evidenziando i fasori corrispondenti a una certa sezione dell'immagine, e viceversa.\\
+
+% schifo
+% \noindent Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
+
+\noindent Operativamente, questo strumento è stato realizzato mediante una maschera, ovvero una matrice bi-dimensionale con le stesse dimensioni \texttt{x} e \texttt{y} dell'immagine di riferimento.\\
+La sezione di area quadrata della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.\\
 
 \noindent Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
-La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
+% La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
 
-\noindent Da un punto di vista computazionale, la maschera è stata implementata come una matrice bi-dimensionale, con le stesse dimensioni spaziali dell'immagine del campione. L'area della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.
 
 % to be continued. Qui devo parlare dell'ordine con cui si è scelto di applicare filtro median e ROI selection. Se nulla cambia, il processo è:
 % immagine -> nuvola su piano fasori con filtro median -> il fasore della nuvola viene salvato solo se il punto dell'immagine a cui corrisponde si trova in un'area della maschera contrassegnata da un valore non nullo
@@ -162,7 +169,7 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 \begin{itemize}
     \item È consigliato scegliere una regione del campione che riporti un'intensità di emissione sufficiente; infatti, \textit{pixel} contenenti pochi fotoni saranno più soggetti a errori strumentali o legati al rumore statistico.
-    \item È essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
+    \item Infine, è essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
 \end{itemize}
 
 
@@ -177,7 +184,7 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Immagine 2 - Scomposizione in decadimenti multipli}
+\subsection{Immagine 2 - Decadimenti multi-esponenziali}
 
 La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\
 
@@ -190,7 +197,8 @@ La presenza di acquisizioni con filtri di emissioni colorati, corredate all'imma
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF che si è utilizzato per quello della prima immagine.\\
 Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
-L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenda con tempo di vita $\tau=0\;ns$.\\
+
+\noindent L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenda con tempo di vita $\tau=0\;ns$.\\
 
     
 \begin{figure}[h!]
@@ -205,7 +213,7 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
 \subsubsection{Confronto tra il rapporto di fluorofori in regioni distinte}
 
 La forma allungata della nuvola di dati deconvoluta può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentazione diverso nelle varie regioni del campione.\\
-Tuttavia, l'embrione non è un ambiente otticamente pulito, e contiene certamente al suo interno svariate molecole che producono autofluorescenza endogena, anche se magari in minor quantità rispetto alle due principali che causano la forma allungata \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
+Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
 % tuttavia, abbiamo le prese dati rossa e verde, quindi possiamo fare la proiezione sulla retta!!
