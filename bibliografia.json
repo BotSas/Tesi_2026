@@ -1040,6 +1040,111 @@
       "select": "zotero://select/library/items/RGSYVE46"
     },
     {
+      "key": "7CEYAAH3",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "FLUTE: A Python GUI for interactive phasor analysis of FLIM data",
+      "abstractNote": "Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.",
+      "date": "2023/01",
+      "DOI": "10.1017/S2633903X23000211",
+      "citationKey": "gottliebFLUTEPythonGUI2023a",
+      "url": "https://www.cambridge.org/core/journals/biological-imaging/article/flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data/862F290EC14187741BDA6B58E9868FA2",
+      "accessDate": "2026-10-22T00:26:36Z",
+      "shortTitle": "FLUTE",
+      "language": "en",
+      "libraryCatalog": "Cambridge University Press",
+      "volume": "3",
+      "pages": "e21",
+      "publicationTitle": "Biological Imaging",
+      "ISSN": "2633-903X",
+      "creators": [
+        {
+          "firstName": "Dale",
+          "lastName": "Gottlieb",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bahar",
+          "lastName": "Asadipour",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Polina",
+          "lastName": "Kostina",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Thi Phuong Lien",
+          "lastName": "Ung",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chiara",
+          "lastName": "Stringari",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Data visualization",
+          "type": 1
+        },
+        {
+          "tag": "FLIM",
+          "type": 1
+        },
+        {
+          "tag": "fluorescence lifetime microscopy",
+          "type": 1
+        },
+        {
+          "tag": "phasor analysis",
+          "type": 1
+        },
+        {
+          "tag": "Python",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-22T00:26:36Z",
+      "dateModified": "2026-10-22T00:26:36Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/7CEYAAH3",
+      "itemID": 155,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/862F290EC14187741BDA6B58E9868FA2/S2633903X23000211a.pdf/div-class-title-flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data-div.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-22T00:26:37Z",
+          "dateModified": "2026-10-22T00:26:37Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/ZC8MQV4C",
+          "path": "/home/aras/Zotero/storage/ZC8MQV4C/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf",
+          "select": "zotero://select/library/items/ZC8MQV4C"
+        }
+      ],
+      "notes": [
+        {
+          "key": "QFDZKKPS",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "7CEYAAH3",
+          "note": "Questo è lo studio associato alle foto inculate<br>MOLTO UTILE ANCHE PER LA TEORIA sull'analisi fasoriale",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-22T00:26:57Z",
+          "dateModified": "2026-10-22T00:27:44Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/QFDZKKPS"
+        }
+      ],
+      "autoJournalAbbreviation": "Biol. Imaging",
+      "itemKey": "7CEYAAH3",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/7CEYAAH3"
+    },
+    {
       "key": "XUNYURNH",
       "version": 0,
       "itemType": "journalArticle",

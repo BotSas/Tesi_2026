@@ -421,8 +421,8 @@ INPUT ./immagini/flat_embryo3.png
 INPUT ./immagini/flat_embryo3.png
 INPUT ./immagini/flat_embryo5.png
 INPUT ./immagini/flat_embryo5.png
-INPUT ./immagini/embryo3_phasor_plane.png
-INPUT ./immagini/embryo3_phasor_plane.png
+INPUT ./immagini/embryo3_IRF.pdf
+INPUT ./immagini/embryo3_IRF.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/9751D881A1537641A456A15B8702E4A11350B347DE913863EA7F5725E6FE860F.pygtex

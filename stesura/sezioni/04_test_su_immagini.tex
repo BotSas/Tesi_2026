@@ -26,7 +26,21 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
     \end{subfigure}
 \end{figure}
 
-\noindent Di seguito sono riportate le informazioni fornite dai proprietari delle immagini, riguardanti le modalità di acquisizione e i parametri impostati:\\
+\noindent Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati: \\
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \midrule
+        Numero totale di bin temporali & 56 \\
+        Frequenza del laser & 80 MHz \\
+        Ampiezza dei bin temporali & 0.223 ns \\
+        \bottomrule
+    \end{tabular}
+    \vspace{0.2cm}
+\end{table}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,11 +50,11 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
 
 \subsubsection{Isolamento e deconvoluzione della IRF}
 
-\begin{wrapfigure}{r}{0.55\textwidth}
-    \includegraphics[width=0.55\textwidth]{immagini/embryo3_phasor_plane.png}
-    \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
-\label{fig:embryo5_ph_raw}
-\end{wrapfigure}
+% \begin{wrapfigure}{r}{0.55\textwidth}
+%     \includegraphics[width=0.55\textwidth]{immagini/embryo3_IRF.pdf}
+%     \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
+% \label{fig:embryo3_IRF}
+% \end{wrapfigure}
  
 Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluorescina, utilizzando una funzione apposita chiamata \texttt{extract\_irf}, che prende in input l'intero file \textit{tiff} di calibrazione e il tempo di vita del fluoroforo puro, e restituisce le coordinate del fasore dell'\textit{IRF}.\\
 
@@ -56,8 +70,12 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 
 \noindent A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).\\
 
-
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{immagini/embryo3_IRF.pdf}
+    \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
+\label{fig:embryo3_IRF}
+\end{figure}
 % def extract_irf(calib_image, τ_fluor, T_laser): 
 
 %     ''' Given a calibration image with a known fluorescence lifetime, extracts the IRF phasor coordinates '''  
@@ -147,12 +165,14 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
     \item È essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
 \end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{Osservazioni finali sull'immagine 1}
 
 % nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
 
-È interessante notare come la nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo suggerisce la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
-% però spiegalo lmaooo 
+È interessante notare come la nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo conferma la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,7 +185,7 @@ La seconda immagine riporta materiale sufficiente per portare a termine un'anali
 La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Estrazione della IRF e generazione di seconda armonica}
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF che si è utilizzato per quello della prima immagine.\\
@@ -175,17 +195,22 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
     
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.9\linewidth]{immagini/embryo5_IRF.pdf} 
+    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.pdf} 
     \label{fig:embryo5_IRF}
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Confronto tra il rapporto di fluorofori in due regioni distinte}
+\subsubsection{Confronto tra il rapporto di fluorofori in regioni distinte}
 
+La forma allungata della nuvola di dati deconvoluta può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentazione diverso nelle varie regioni del campione.\\
+Tuttavia, l'embrione non è un ambiente otticamente pulito, e contiene certamente al suo interno svariate molecole che producono autofluorescenza endogena, anche se magari in minor quantità rispetto alle due principali che causano la forma allungata \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
+Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
-La possibilità di 
+% tuttavia, abbiamo le prese dati rossa e verde, quindi possiamo fare la proiezione sulla retta!!
+
+% parlare anche dell'shg per il verde
 
 % Queste sono le uniche immagini non placeholder di tutta la tesi
 \begin{figure}[htbp]

@@ -709,6 +709,63 @@
       \verb https://www.nature.com/articles/nbt894
       \endverb
     \endentry
+    \entry{claytonGraphicalRepresentationMulticomponent2004}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3ecca62fc8380b7d010b5e37edc3f4bc}{%
+           family={Clayton},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi H.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=21dd8cd8d3eb7406e96b6ed78f068be2}{%
+           family={Hanley},
+           familyi={H\bibinitperiod},
+           given={Q.\bibnamedelimi S.},
+           giveni={Q\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b355bfcbc65e81eb1a05b21407d4dfdc}{%
+           family={Verveer},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{fullhash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{bibnamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}
+      \field{issn}{1365-2818}
+      \field{journaltitle}{Journal of Microscopy}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Graphical Representation and Multicomponent Analysis of Single-Frequency Fluorescence Lifetime Imaging Microscopy Data}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{213}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/2PGBSEG2/Clayton et al. - 2004 - Graphical representation and multicomponent analysis of single-frequency fluorescence lifetime imagi.pdf;/home/aras/Zotero/storage/6SYJHPDB/j.1365-2818.2004.01265.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \keyw{Epidermal growth factor receptor,fluorescence lifetime imaging microscopy (FLIM),fluorescence resonance energy transfer (FRET),green fluorescent protein (GFP),phosphorylation,protein interactions,two-component analysis}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

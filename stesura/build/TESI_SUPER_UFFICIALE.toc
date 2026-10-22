@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {3.1}Generazione dei segnali}{7}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{7}{subsubsection.3.1.1}%
 \contentsline {paragraph}{Generazione del rumore}{8}{equation.3.3}%
-\contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{9}{subsubsection.3.1.2}%
-\contentsline {paragraph}{Verifica del rapporto di concentrazione}{9}{figure.caption.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{8}{subsubsection.3.1.2}%
+\contentsline {paragraph}{Verifica del rapporto di concentrazione}{10}{figure.caption.2}%
 \contentsline {subsection}{\numberline {3.2}Generazione e analisi della IRF}{10}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{10}{subsubsection.3.2.1}%
 \contentsline {paragraph}{Osservazioni aggiuntive}{12}{figure.caption.4}%
@@ -20,13 +20,13 @@
 \contentsline {section}{\numberline {4}Test su immagini}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{15}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{15}{subsubsection.4.1.1}%
-\contentsline {paragraph}{Rappresentazione dei fasori grezzi e deconvoluti}{15}{figure.caption.8}%
+\contentsline {paragraph}{Rappresentazione dei fasori grezzi e deconvoluti}{15}{figure.caption.9}%
 \contentsline {subsubsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{16}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Selezione della regione di interesse}{16}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3}Selezione della regione di interesse}{17}{subsubsection.4.1.3}%
 \contentsline {paragraph}{Norme per una selezione proficua}{17}{subsubsection.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.1.4}Osservazioni finali sull'immagine 1}{17}{subsubsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.2}Immagine 2 - Scomposizione in decadimenti multipli}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Immagine 2 - Scomposizione in decadimenti multipli}{18}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{18}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in due regioni distinte}{18}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Calcolo delle incertezze con simulazione Monte Carlo}{18}{subsubsection.4.2.3}%
-\contentsline {section}{\numberline {5}Conclusioni}{18}{section.5}%
+\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{18}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Calcolo delle incertezze con simulazione Monte Carlo}{19}{subsubsection.4.2.3}%
+\contentsline {section}{\numberline {5}Conclusioni}{19}{section.5}%
