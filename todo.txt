@@ -1,0 +1,16 @@
+TODO A BREVE:
+
+- spiegazione SHG per l'immagine 2
+- spiegazione di come sono state calcolate le incertezze nell'immagine 2
+- calcolo e risultato rapporti di concentrazione immagine 2
+- metodo monte carlo per il calcolo delle incertezze
+- teoria fasori (dopo settimane di procrastinazione)
+- sistemare panel + selez bidirezionale
+
+
+OBIETTIVI CHE DEVO ANCORA ELABORARE:
+
+- introduzione
+- conclusione
+- obiettivi
+- inserire immagini

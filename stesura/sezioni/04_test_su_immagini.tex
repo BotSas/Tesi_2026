@@ -48,15 +48,23 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
 
 \subsection{Immagine 1 - elaborazione dei dati}
 
+Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata un'introduzione teorica/computazionale, seguita da un paragrafo contenente le immagini ottenute e le relative osservazioni.\\
+
+
 \subsubsection{Isolamento e deconvoluzione della IRF}
 
-% \begin{wrapfigure}{r}{0.55\textwidth}
-%     \includegraphics[width=0.55\textwidth]{immagini/embryo3_IRF.pdf}
-%     \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
-% \label{fig:embryo3_IRF}
-% \end{wrapfigure}
- 
-Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluorescina, utilizzando una funzione apposita chiamata \texttt{extract\_irf}, che prende in input l'intero file \textit{tiff} di calibrazione e il tempo di vita del fluoroforo puro, e restituisce le coordinate del fasore dell'\textit{IRF}.\\
+\paragraph{Teoria}
+
+Il primo passaggio dell'analisi consiste nell'ottenimento del fasore relativo alla IRF mediante il file di calibrazione, e nella successiva deconvoluzione di quest'ultimo con l'immagine principale.\\
+
+\noindent Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023}.\\
+Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023}.\\
+
+% questa roba non serve qui ma ne parlo per la seconda immagine
+
+% B (1.74 ns), or Rose Bengal (0.52 ns). The choice of the fluorophore for calibration is mainly determined by the excitation wavelength used in the experiments, and the range of lifetime that needs to be measured. To perform the most accurate calibration, the reference lifetime should be chosen in the same range of the sample lifetime that are going to be measured; for example, to measure accurately the lifetime shorter than 1 ns, a calibration reference with SHG signal (0 ns) is preferable
+
+
 
 % Questa parte ha un buco enorme che voglio riempire solo dopo aver fatto la parte teorica. Infatti la funzione "extract_irf" usa delle formule specifiche sul piano dei fasori.
 
@@ -66,7 +74,11 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 
 % queste sono le formule. Sono quelle per ottenere le coordinate sul piano dei fasori del decadimento di un fluoroforo puro
 
-% magari invece di fare così ha senso aggiungere una subsubsection  con la teoria legata a questa cosa
+
+
+\paragraph{Pratica}
+
+Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluorescina, utilizzando una funzione apposita chiamata \texttt{extract\_irf}, che prende in input l'intero file \textit{tiff} di calibrazione e il tempo di vita del fluoroforo puro, e restituisce le coordinate del fasore dell'\textit{IRF}.\\
 
 \noindent A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).\\
 
@@ -94,14 +106,9 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 
 
 
+%____________________________________________________________
 
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\paragraph{Rappresentazione dei fasori grezzi e deconvoluti}
+\paragraph{Osservazioni}
 
 Osservando la rappresentazione dei dati grezzi sul piano dei fasori, è possibile fare alcune valutazioni.\\
 Un primo successo è sicuramente la posizione della "nuvola", interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.\\
@@ -110,11 +117,14 @@ Un primo successo è sicuramente la posizione della "nuvola", interamente all'in
 
 \noindent In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.\\
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Filtro \textit{"median"} sul piano dei fasori}
 
+\paragraph{teoria}
 
+\paragraph{pratica}
 
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
 
@@ -141,6 +151,8 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
     return df_roi_phasors   
 
 \end{minted}
+
+% mettere grafico filtro median embryo3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -186,16 +198,24 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 \subsection{Immagine 2 - Decadimenti multi-esponenziali}
 
-La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\
+La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\ % schifo
 
 \noindent Nonostante il campione non sia stato dichiaratamente trattato con due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
 La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
 
+\noindent Verrà mostrato in una sezione successiva che la rappresentazione dei decadimenti di ogni pixel sul piano dei fasori presenta una forma allungata, indizio  che i decadimenti possano essere trattati come bi-esponenziali.\\
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{Estrazione della IRF e generazione di seconda armonica}
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.\\
+
+
+\paragraph{Teoria - SHG}
+
+Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023}.\\
 
 \noindent Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
 L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenza con tempo di vita $\tau=0\,$ns.\\
