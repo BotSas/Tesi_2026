@@ -1281,12 +1281,13 @@
       "select": "zotero://select/library/items/Q3VQZZRZ"
     },
     {
-      "key": "LRG2CZIV",
+      "key": "5C2IDR3C",
       "version": 0,
       "itemType": "book",
       "title": "Multivariate data analysis",
       "date": "2019",
-      "citationKey": "hairMultivariateDataAnalysis2019",
+      "citationKey": "hairMultivariateDataAnalysis2019a",
+      "language": "en",
       "libraryCatalog": "Library of Congress ISBN",
       "callNumber": "QA278 .M85 2019",
       "publisher": "Cengage",
@@ -1308,29 +1309,29 @@
         }
       ],
       "relations": {},
-      "dateAdded": "2026-10-22T22:19:22Z",
-      "dateModified": "2026-10-22T22:19:22Z",
-      "uri": "http://zotero.org/users/local/0gkItI9k/items/LRG2CZIV",
-      "itemID": 160,
-      "attachments": [],
-      "notes": [
+      "dateAdded": "2026-10-23T16:58:14Z",
+      "dateModified": "2026-10-23T16:58:14Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/5C2IDR3C",
+      "itemID": 169,
+      "attachments": [
         {
-          "key": "6B2Q4JNC",
-          "version": 0,
-          "itemType": "note",
-          "parentItem": "LRG2CZIV",
-          "note": "<div data-schema-version=\"9\"><p>Revision of: Multivariate data analysis / Joseph F. Hair, Jr. ... [et al.]. c2006. 7th ed</p>\n<p></p>\n<p>forse posso citarlo per la roba della matrice di covarianza. NON ANCORA LETTO</p>\n</div>",
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://eli.johogo.com/Class/CCU/SEM/_Multivariate%20Data%20Analysis_Hair.pdf",
           "tags": [],
           "relations": {},
-          "dateAdded": "2026-10-22T22:19:22Z",
-          "dateModified": "2026-10-22T22:19:48Z",
-          "uri": "http://zotero.org/users/local/0gkItI9k/items/6B2Q4JNC"
+          "dateAdded": "2026-10-23T16:58:11Z",
+          "dateModified": "2026-10-23T16:58:15Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/KDNHGW8W",
+          "path": "/home/aras/Zotero/storage/KDNHGW8W/Hair - 2019 - Multivariate data analysis.pdf",
+          "select": "zotero://select/library/items/KDNHGW8W"
         }
       ],
+      "notes": [],
       "autoJournalAbbreviation": "",
-      "itemKey": "LRG2CZIV",
+      "itemKey": "5C2IDR3C",
       "libraryID": 1,
-      "select": "zotero://select/library/items/LRG2CZIV"
+      "select": "zotero://select/library/items/5C2IDR3C"
     },
     {
       "key": "49LTUEI3",
@@ -2576,6 +2577,85 @@
       "select": "zotero://select/library/items/3CNVAKH2"
     },
     {
+      "key": "A7MKWRBR",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Linear Combination Properties of the Phasor Space in Fluorescence Imaging",
+      "abstractNote": "The phasor approach to fluorescence lifetime imaging, and more recently hyperspectral fluorescence imaging, has increased the use of these techniques, and improved the ease and intuitiveness of the data analysis. The fit-free nature of the phasor plots increases the speed of the analysis and reduces the dimensionality, optimization of data handling and storage. The reciprocity principle between the real and imaginary space—where the phasor and the pixel that the phasor originated from are linked and can be converted from one another—has helped the expansion of this method. The phasor coordinates calculated from a pixel, where multiple fluorescent species are present, depends on the phasor positions of those components. The relative positions are governed by the linear combination properties of the phasor space. According to this principle, the phasor position of a pixel with multiple components lies inside the polygon whose vertices are occupied by the phasor positions of these individual components and the distance between the image phasor to any of the vertices is inversely proportional to the fractional intensity contribution of that component to the total fluorescence from that image pixel. The higher the fractional intensity contribution of a vertex, the closer is the resultant phasor. The linear additivity in the phasor space can be exploited to obtain the fractional intensity contribution from multiple species and quantify their contribution. This review details the various mathematical models that can be used to obtain two/three/four components from phasor space with known phasor signatures and then how to obtain both the fractional intensities and phasor positions without any prior knowledge of either, assuming they are mono-exponential in nature. We note that other than for blind components, there are no restrictions on the type of the decay or their phasor positions for linear combinations to be valid—and they are applicable to complicated fluorescence lifetime decays from components with intensity decays described by multi-exponentials.",
+      "date": "2022-01-27",
+      "DOI": "10.3390/s22030999",
+      "citationKey": "torradoLinearCombinationProperties2022",
+      "url": "https://www.mdpi.com/1424-8220/22/3/999",
+      "accessDate": "2026-10-23T17:29:45Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "22",
+      "pages": "999",
+      "publicationTitle": "Sensors",
+      "ISSN": "1424-8220",
+      "issue": "3",
+      "journalAbbreviation": "Sensors",
+      "creators": [
+        {
+          "firstName": "Belén",
+          "lastName": "Torrado",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Leonel",
+          "lastName": "Malacrida",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Suman",
+          "lastName": "Ranjit",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-23T17:29:45Z",
+      "dateModified": "2026-10-23T17:29:45Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/A7MKWRBR",
+      "itemID": 197,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text",
+          "url": "https://www.mdpi.com/1424-8220/22/3/999/pdf?version=1643532176",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-23T17:29:47Z",
+          "dateModified": "2026-10-23T17:29:47Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/I7SLYBHX",
+          "path": "/home/aras/Zotero/storage/I7SLYBHX/Torrado et al. - 2022 - Linear Combination Properties of the Phasor Space in Fluorescence Imaging.pdf",
+          "select": "zotero://select/library/items/I7SLYBHX"
+        }
+      ],
+      "notes": [
+        {
+          "key": "UXGT2I8A",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "A7MKWRBR",
+          "note": "<div data-schema-version=\"9\"><p>Perfetto per introduzione teorica sui fasori</p>\n</div>",
+          "tags": [
+            {
+              "tag": "teoria_fasori"
+            }
+          ],
+          "relations": {},
+          "dateAdded": "2026-10-23T17:30:43Z",
+          "dateModified": "2026-10-23T17:31:05Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/UXGT2I8A"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "A7MKWRBR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/A7MKWRBR"
+    },
+    {
       "key": "RAD4N386",
       "version": 0,
       "itemType": "preprint",
@@ -3259,6 +3339,74 @@
       "itemKey": "YHCU64W2",
       "libraryID": 1,
       "select": "zotero://select/library/items/YHCU64W2"
+    },
+    {
+      "key": "GZ8SZMG6",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Resolution of the fluorescence lifetimes in a heterogeneous system by phase and modulation measurements",
+      "date": "04/1981",
+      "DOI": "10.1021/j150608a006",
+      "citationKey": "weberResolutionFluorescenceLifetimes1981",
+      "url": "https://pubs.acs.org/doi/abs/10.1021/j150608a006",
+      "accessDate": "2026-10-23T17:32:01Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "85",
+      "pages": "949-953",
+      "publicationTitle": "The Journal of Physical Chemistry",
+      "ISSN": "0022-3654, 1541-5740",
+      "issue": "8",
+      "journalAbbreviation": "J. Phys. Chem.",
+      "creators": [
+        {
+          "firstName": "Gregorio",
+          "lastName": "Weber",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "teoria_fasori"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-23T17:32:01Z",
+      "dateModified": "2026-10-23T17:32:06Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/GZ8SZMG6",
+      "itemID": 201,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "PDF",
+          "url": "https://pubs.acs.org/jpchax/article-pdf/85/8/949/11120650/j150608a006.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-23T17:31:59Z",
+          "dateModified": "2026-10-23T17:32:02Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/P5NJ3854",
+          "path": "/home/aras/Zotero/storage/P5NJ3854/Weber - 1981 - Resolution of the fluorescence lifetimes in a heterogeneous system by phase and modulation measureme.pdf",
+          "select": "zotero://select/library/items/P5NJ3854"
+        }
+      ],
+      "notes": [
+        {
+          "key": "YHKVX3N7",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "GZ8SZMG6",
+          "note": "ok questo potrebbe essere la sacra bibbia per la teoria dei fasori",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-23T17:32:28Z",
+          "dateModified": "2026-10-23T17:32:28Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/YHKVX3N7"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Phys. Chem.",
+      "itemKey": "GZ8SZMG6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/GZ8SZMG6"
     },
     {
       "key": "2PP9LH6U",

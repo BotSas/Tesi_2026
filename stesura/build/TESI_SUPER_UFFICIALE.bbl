@@ -594,73 +594,6 @@
       \field{year}{2009}
       \field{dateera}{ce}
     \endentry
-    \entry{gottliebFLUTEPythonGUI2023}{article}{}
-      \name{author}{5}{}{%
-        {{hash=c4909f173c866fe407b72f77362b726c}{%
-           family={Gottlieb},
-           familyi={G\bibinitperiod},
-           given={Dale},
-           giveni={D\bibinitperiod}}}%
-        {{hash=a4ccb3374d311da234c7354f7824f28a}{%
-           family={Asadipour},
-           familyi={A\bibinitperiod},
-           given={Bahar},
-           giveni={B\bibinitperiod}}}%
-        {{hash=e59c2dc0962f7d93a9b493f7115e7883}{%
-           family={Kostina},
-           familyi={K\bibinitperiod},
-           given={Polina},
-           giveni={P\bibinitperiod}}}%
-        {{hash=c00fd3ab999d3aa7d55db6a5b278a18c}{%
-           family={Ung},
-           familyi={U\bibinitperiod},
-           given={Thi\bibnamedelimb Phuong\bibnamedelima Lien},
-           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=eec07f79f7b74d92db27d29273d01bc5}{%
-           family={Stringari},
-           familyi={S\bibinitperiod},
-           given={Chiara},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{79d1a653924d9cf728478de270b9245a}
-      \strng{fullhash}{e68688e7d509df5e3978d60fabc6f25f}
-      \strng{bibnamehash}{79d1a653924d9cf728478de270b9245a}
-      \strng{authorbibnamehash}{79d1a653924d9cf728478de270b9245a}
-      \strng{authornamehash}{79d1a653924d9cf728478de270b9245a}
-      \strng{authorfullhash}{e68688e7d509df5e3978d60fabc6f25f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Abstract Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.}
-      \field{issn}{2633-903X}
-      \field{journaltitle}{Biological Imaging}
-      \field{langid}{english}
-      \field{shortjournal}{Biol. Imaging}
-      \field{shorttitle}{{{FLUTE}}}
-      \field{title}{{{FLUTE}}: {{A Python GUI}} for Interactive Phasor Analysis of {{FLIM}} Data}
-      \field{urlday}{15}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{3}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{e21}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1017/S2633903X23000211
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/BHIWC8Q8/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
-      \endverb
-      \verb{url}
-      \verb https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article
-      \endverb
-    \endentry
     \entry{hoyerXarrayNDLabeled2017}{article}{}
       \name{author}{2}{}{%
         {{hash=4a22828b76006f42d747b699d2ef5167}{%
@@ -766,7 +699,67 @@
       \verb https://www.nature.com/articles/nbt894
       \endverb
     \endentry
+    \entry{torradoLinearCombinationProperties2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a29628a61ff67e6b082c7dc27eeba8df}{%
+           family={Torrado},
+           familyi={T\bibinitperiod},
+           given={Belén},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{fullhash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{bibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authorbibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authornamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authorfullhash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phasor approach to fluorescence lifetime imaging, and more recently hyperspectral fluorescence imaging, has increased the use of these techniques, and improved the ease and intuitiveness of the data analysis. The fit-free nature of the phasor plots increases the speed of the analysis and reduces the dimensionality, optimization of data handling and storage. The reciprocity principle between the real and imaginary space—where the phasor and the pixel that the phasor originated from are linked and can be converted from one another—has helped the expansion of this method. The phasor coordinates calculated from a pixel, where multiple fluorescent species are present, depends on the phasor positions of those components. The relative positions are governed by the linear combination properties of the phasor space. According to this principle, the phasor position of a pixel with multiple components lies inside the polygon whose vertices are occupied by the phasor positions of these individual components and the distance between the image phasor to any of the vertices is inversely proportional to the fractional intensity contribution of that component to the total fluorescence from that image pixel. The higher the fractional intensity contribution of a vertex, the closer is the resultant phasor. The linear additivity in the phasor space can be exploited to obtain the fractional intensity contribution from multiple species and quantify their contribution. This review details the various mathematical models that can be used to obtain two/three/four components from phasor space with known phasor signatures and then how to obtain both the fractional intensities and phasor positions without any prior knowledge of either, assuming they are mono-exponential in nature. We note that other than for blind components, there are no restrictions on the type of the decay or their phasor positions for linear combinations to be valid—and they are applicable to complicated fluorescence lifetime decays from components with intensity decays described by multi-exponentials.}
+      \field{day}{27}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{3}
+      \field{shortjournal}{Sensors}
+      \field{title}{Linear {{Combination Properties}} of the {{Phasor Space}} in {{Fluorescence Imaging}}}
+      \field{urlday}{23}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{999}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22030999
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/I7SLYBHX/Torrado et al. - 2022 - Linear Combination Properties of the Phasor Space in Fluorescence Imaging.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/3/999
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/3/999
+      \endverb
+    \endentry
   \enddatalist
+  \missing{gottliebFLUTEPythonGUI2023}
 \endrefsection
 \endinput
 

@@ -227,6 +227,11 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
     \label{fig:embryo5_IRF}
 \end{figure}
 
+%\paragraph{pratica} - immagine + magari un commentino sul significato della forma allungata
+
+% nell'immagine dire che è già stato applicato il median filter
+
+% sono indecisa se mettere qui o nella sezione successiva l'immagine con giallo verde e rosso
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -236,12 +241,15 @@ La forma allungata della nuvola di dati deconvoluta può essere ricondotta al ca
 Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
+\noindent Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione. Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
+
+
 % tuttavia, abbiamo le prese dati rossa e verde, quindi possiamo fare la proiezione sulla retta!!
 
 % parlare anche dell'shg per il verde
 
 % Queste sono le uniche immagini non placeholder di tutta la tesi
-\begin{figure}[htbp]
+\begin{figure}[h!]
     \centering
     
     % Prima riga: Immagine totale
@@ -270,12 +278,40 @@ Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due 
     \label{fig:tutte_immagini}
 \end{figure}
 
+\noindent 
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection{Studio delle incertezze}
 
-\subsubsection{Calcolo delle incertezze con simulazione Monte Carlo}
+Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.\\
+
+
+
+\paragraph{Teoria / procedimento}
+
+% spostare nella teoria
+
+Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale $\tau$), si dimostra che \cite{torradoLinearCombinationProperties2022}:
+
+\begin{equation}
+    G = \sum_{k} f_k G_k, \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
+    \label{eq:phasor_additivity}
+\end{equation}
+
+
+\noindent Dalle equazioni \ref{eq:phasor_additivity}, è possibile
+
+\noindent Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
+
+
+
+
+%\subsubsection{Calcolo delle incertezze con simulazione Monte Carlo}
 
 
 
