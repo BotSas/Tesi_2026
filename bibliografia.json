@@ -954,92 +954,6 @@
       "select": "zotero://select/library/items/9Z35P5Q6"
     },
     {
-      "key": "RGSYVE46",
-      "version": 0,
-      "itemType": "journalArticle",
-      "title": "FLUTE: A Python GUI for interactive phasor analysis of FLIM data",
-      "abstractNote": "Abstract\n            Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.",
-      "date": "2023",
-      "DOI": "10.1017/S2633903X23000211",
-      "citationKey": "gottliebFLUTEPythonGUI2023",
-      "url": "https://www.cambridge.org/core/product/identifier/S2633903X23000211/type/journal_article",
-      "accessDate": "2026-10-15T19:58:35Z",
-      "shortTitle": "FLUTE",
-      "language": "en",
-      "libraryCatalog": "DOI.org (Crossref)",
-      "rights": "http://creativecommons.org/licenses/by/4.0",
-      "volume": "3",
-      "pages": "e21",
-      "publicationTitle": "Biological Imaging",
-      "ISSN": "2633-903X",
-      "journalAbbreviation": "Biol. Imaging",
-      "creators": [
-        {
-          "firstName": "Dale",
-          "lastName": "Gottlieb",
-          "creatorType": "author"
-        },
-        {
-          "firstName": "Bahar",
-          "lastName": "Asadipour",
-          "creatorType": "author"
-        },
-        {
-          "firstName": "Polina",
-          "lastName": "Kostina",
-          "creatorType": "author"
-        },
-        {
-          "firstName": "Thi Phuong Lien",
-          "lastName": "Ung",
-          "creatorType": "author"
-        },
-        {
-          "firstName": "Chiara",
-          "lastName": "Stringari",
-          "creatorType": "author"
-        }
-      ],
-      "tags": [],
-      "relations": {},
-      "dateAdded": "2026-10-15T19:58:35Z",
-      "dateModified": "2026-10-15T19:58:35Z",
-      "uri": "http://zotero.org/users/local/0gkItI9k/items/RGSYVE46",
-      "itemID": 110,
-      "attachments": [
-        {
-          "itemType": "attachment",
-          "title": "Full Text",
-          "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/862F290EC14187741BDA6B58E9868FA2/S2633903X23000211a.pdf/div-class-title-flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data-div.pdf",
-          "tags": [],
-          "relations": {},
-          "dateAdded": "2026-10-15T19:58:36Z",
-          "dateModified": "2026-10-15T19:58:36Z",
-          "uri": "http://zotero.org/users/local/0gkItI9k/items/BHIWC8Q8",
-          "path": "/home/aras/Zotero/storage/BHIWC8Q8/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf",
-          "select": "zotero://select/library/items/BHIWC8Q8"
-        }
-      ],
-      "notes": [
-        {
-          "key": "6TKWBL2R",
-          "version": 0,
-          "itemType": "note",
-          "parentItem": "RGSYVE46",
-          "note": "<div data-schema-version=\"9\"><p>Inculazione immagine 2</p>\n</div>",
-          "tags": [],
-          "relations": {},
-          "dateAdded": "2026-10-15T19:58:55Z",
-          "dateModified": "2026-10-15T21:45:22Z",
-          "uri": "http://zotero.org/users/local/0gkItI9k/items/6TKWBL2R"
-        }
-      ],
-      "autoJournalAbbreviation": "Biol. Imaging",
-      "itemKey": "RGSYVE46",
-      "libraryID": 1,
-      "select": "zotero://select/library/items/RGSYVE46"
-    },
-    {
       "key": "7CEYAAH3",
       "version": 0,
       "itemType": "journalArticle",
@@ -1126,6 +1040,18 @@
         }
       ],
       "notes": [
+        {
+          "key": "6TKWBL2R",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "7CEYAAH3",
+          "note": "<div data-schema-version=\"9\"><p>Inculazione immagine 2</p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-15T19:58:55Z",
+          "dateModified": "2026-10-23T11:24:39Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/6TKWBL2R"
+        },
         {
           "key": "QFDZKKPS",
           "version": 0,
