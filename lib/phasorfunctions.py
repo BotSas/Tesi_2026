@@ -90,22 +90,31 @@ def phasor_calc_mix(G_array, S_array, fractions):
 
 
 
-def projection_length(point, A, B):   # asarray converts points/lines (Pandas dataframes) to a numpy array
+def extract_fractions(P, A, B):
+
+    '''
+    Projects one or two points on straight line through A and B. Returns fraction of A and B components
+    '''
+    A = np.asarray(A, dtype=float).ravel()  # points that is to be projected
+    B = np.asarray(B, dtype=float).ravel()
+    P = np.asarray(P, dtype=float)
     
-    """
-    Projects a point onto a line segment and returns the segment lengths.
-    """
-
-    P = np.asarray(point, dtype = float)      # points that is to be projected  
-    A, B = np.asarray(A, dtype = float), np.asarray(B, dtype = float)   # extremes of the full segment (formed by tau of the 2 exponential decays)
-
+    # Se P è passato come tupla (G_array, S_array), la forma è (2, N).
+    # La trasponiamo a (N, 2) per far combaciare le dimensioni nel broadcasting.
+    if P.ndim == 2 and P.shape[0] == 2:
+        P = P.T
+        
     line_vector = B - A
-    H_factor = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)  # valued 0 to 1 (how far from A on the segment H is), H is projected point
-    H = A + H_factor * line_vector
+    
+    # returns fraction of B. Works on points and also 2D pixel matrixes
+    H_factor = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)
+    
+    f_B = H_factor
+    f_A = 1.0 - H_factor
+    
+    return f_A, f_B
 
-    segmA, segmB = np.linalg.norm(H - A), np.linalg.norm(B - H)       # segments lengths
-
-    return segmA, segmB
+    
 
 
 

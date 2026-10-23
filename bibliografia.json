@@ -1355,6 +1355,58 @@
       "select": "zotero://select/library/items/Q3VQZZRZ"
     },
     {
+      "key": "LRG2CZIV",
+      "version": 0,
+      "itemType": "book",
+      "title": "Multivariate data analysis",
+      "date": "2019",
+      "citationKey": "hairMultivariateDataAnalysis2019",
+      "libraryCatalog": "Library of Congress ISBN",
+      "callNumber": "QA278 .M85 2019",
+      "publisher": "Cengage",
+      "place": "Andover, Hampshire",
+      "ISBN": "978-1-4737-5654-0",
+      "edition": "Eighth edition",
+      "numPages": "813",
+      "creators": [
+        {
+          "firstName": "Joseph F.",
+          "lastName": "Hair",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Multivariate analysis",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-22T22:19:22Z",
+      "dateModified": "2026-10-22T22:19:22Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/LRG2CZIV",
+      "itemID": 160,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "6B2Q4JNC",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "LRG2CZIV",
+          "note": "<div data-schema-version=\"9\"><p>Revision of: Multivariate data analysis / Joseph F. Hair, Jr. ... [et al.]. c2006. 7th ed</p>\n<p></p>\n<p>forse posso citarlo per la roba della matrice di covarianza. NON ANCORA LETTO</p>\n</div>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-22T22:19:22Z",
+          "dateModified": "2026-10-22T22:19:48Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/6B2Q4JNC"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "LRG2CZIV",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/LRG2CZIV"
+    },
+    {
       "key": "49LTUEI3",
       "version": 0,
       "itemType": "journalArticle",
