@@ -85,13 +85,13 @@ def _roi_mask(nx, ny, x_center, y_center, width):
 def _phasor_plot(df, mean, std, irf_g, irf_s):
     cloud = hv.Points(
         (df["G"].to_numpy(), df["S"].to_numpy()), kdims=["G", "S"], label="ROI cloud"
-    ).opts(color="purple", size=4, alpha=0.35)
+    ).opts(color="purple", size=3, alpha=0.35)
     mean_point = hv.Points(
         [(mean[0], mean[1])], kdims=["G", "S"], label="ROI mean"
-    ).opts(color="red", size=10, marker="star")
+    ).opts(color="red", size=8, marker="star")
     irf_point = hv.Points(
         [(irf_g, irf_s)], kdims=["G", "S"], label="IRF"
-    ).opts(color="black", size=8, marker="x")
+    ).opts(color="red", size=14, marker="x", line_width=3)
 
     theta = np.linspace(0, np.pi, 300)
     circle = hv.Curve(
@@ -100,8 +100,8 @@ def _phasor_plot(df, mean, std, irf_g, irf_s):
     return (circle * cloud * mean_point * irf_point).opts(
         title=f"ROI phasors (N={len(df)}, mean +/- std: "
         f"({mean[0]:.3f} +/- {std[0]:.3f}, {mean[1]:.3f} +/- {std[1]:.3f})",
-        width=600,
-        height=500,
+        width=520,
+        height=440,
         xlim=(-0.1, 1.1),
         ylim=(-0.1, 0.7),
         xlabel="g",
@@ -131,7 +131,10 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         image_stack = _read_stack(file_bytes)
         nx, ny = image_stack.sizes["x"], image_stack.sizes["y"]
         flat_image = image_stack.sum(dim="time").values
-        
+
+        image_width = 600
+        image_height = max(300, round(image_width * ny / nx))
+
         image = hv.Image(
             (np.arange(nx), np.arange(ny), flat_image.T),
             kdims=["x", "y"],
@@ -139,8 +142,9 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         ).opts(
             cmap="magma",
             colorbar=True,
-            width=600,
-            height=600,
+            width=image_width,
+            height=image_height,
+            aspect="equal",
             tools=["tap", "hover"],
             active_tools=["tap"],
             xlabel="x",
@@ -202,10 +206,14 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         _ = roi_phasors(nx / 2, ny / 2)
 
         return pn.Column(
-            hv.DynamicMap(image_with_roi, streams=[tap]),
             pn.Row(
-                hv.DynamicMap(roi_decay, streams=[tap]),
-                hv.DynamicMap(roi_phasors, streams=[tap]),
+                hv.DynamicMap(image_with_roi, streams=[tap]),
+                pn.Column(
+                    hv.DynamicMap(roi_phasors, streams=[tap]),
+                    hv.DynamicMap(roi_decay, streams=[tap]),
+                    sizing_mode="stretch_width",
+                ),
+                sizing_mode="stretch_width",
             ),
             sizing_mode="stretch_width",
         )
