@@ -324,4 +324,11 @@ template = pn.template.MaterialTemplate(
 template.servable()
 
 if __name__ == "__main__":
-    pn.serve(template, show = True, port = 5900)
+    MAX_SIZE = 1000 * 1024 * 1024  # 1 GB
+    pn.serve(
+        template, 
+        show=True, 
+        port=5900, 
+        websocket_max_message_size=MAX_SIZE,
+         tornado_kwargs={"max_buffer_size": MAX_SIZE}
+    )

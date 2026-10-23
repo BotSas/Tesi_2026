@@ -303,16 +303,28 @@ def filter_image_phasors(image, threshold_pct=0.05):
 ##############################################################################################################
 
 
+def cloud_statistics(G, S): 
 
-def cloud_data(df_phasors):
+    '''
+    mean, average, covarance matrix and diagonalisation of (G, S) cloud
+    '''
+    values = np.column_stack((np.asarray(G, dtype = float), np.asarray(S, dtype = float)))
+    values = values[np.all(np.isfinite(values), axis = 1)]
 
-    """
-    Calculates average point and standard deviation of a cloud of data
-    """
+    if len(values) < 2:  # error prevention
+        raise ValueError("Not enough events")
 
-    return df_phasors.mean(), df_phasors.std()    # dataset of G and S combined
+    # NUMPY COVARIANCE------------------------------------------------------
+    mean = np.mean(values, axis = 0) 
+    covariance = np.cov(values, rowvar = False, ddof = 1)
+    std = np.sqrt(np.diag(covariance))
 
+    # DIAGONALISATION ------------------------------------------------------
+    eigenvalues, eigenvectors = np.linalg.eigh(covariance)     # IMPORTANT: go look how numpy does diagonalisation
+    eigenvalues = eigenvalues[::-1]
+    eigenvectors = eigenvectors[:, ::-1]
 
+    return mean, covariance, std, eigenvalues, eigenvectors, len(values)
 
 ##############################################################################################################
 
