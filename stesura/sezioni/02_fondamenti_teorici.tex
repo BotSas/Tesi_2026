@@ -25,10 +25,12 @@ L'implementazione pratica degli esperimenti di FLIM consiste tipicamente nell'es
 La probabilità che una molecola di fluoroforo si trovi allo stato eccitato al tempo $t$ segue un'andamento esponenziale decrescente, dunque il segnale di fluorescenza totale di una regione del campione contenente più molecole di un singolo fluoroforo avrà forma:
 
  \begin{equation*}
-    I(t) = I_0\,e^{-t/\tau}
+    I(t) = ,e^{-t/\tau}
 \end{equation*}
 
 % mmmm qui c'è qualche conclusione da trarre, in più f per cosa cazzo sta
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsubsection{Interpolazione multi-esponenziale dei decadimenti}
@@ -64,10 +66,10 @@ Tenendo conto della normalizzazione dei rapporti di intensità definita nell'equ
 
 Dunque, se si conosce il numero di fluorofori presenti nel campione, è possibile ricavare il loro rapporto di concentrazione mediante un \textit{fit} multi-esponenziale \cite{mastersBookReviewPrinciples2008a}.\\
 
-Il processo di interpolazione diventa tuttavia progressivamente più complicato (e computazionalmente costoso) all'aumentare del numero di fluorofori nel campione; inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel segnale di intensità, che deve essere deconvoluto per ottenere il segnale di fluorescenza puro (come trattato estensivamente nella sezione succ)\cite{huComparisonPhasorAnalysis2023}.\\
+Il processo di interpolazione diventa tuttavia progressivamente più computazionalmente costoso e sensibile al rumore statistico all'aumentare del numero di fluorofori nel campione (e dunque dei parametri liberi).\\
+Inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel segnale di intensità, che deve essere deconvoluto per ottenere il segnale di fluorescenza puro (come trattato estensivamente nella sezione succ)\cite{huComparisonPhasorAnalysis2023}.\\
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 
 \subsubsection{Trasformazione fasoriale}
 
@@ -82,7 +84,36 @@ Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei f
 
 dove $\omega= 2 \pi f$, $f$ frequenza del laser \cite{digmanPhasorApproachFluorescence2008}.\\
 
-È possibile dimostrare che a un segnale periodico di fluorescenza a singolo fluoroforo (dunque mondo-esponenziale decrescente) è sempre associato un fasore sul semicerchio unitario  a $S$ positiva, e la sua posizione su di esso è determinato dal valore di $\tau$ (tempi di vita minori sulla destra).\\
+
+
+In un esperimento reale, il campione studiato viene suddiviso in pixel, e per ognuno viene raccolto il segnale di fluorescenza; in seguito viene assegnata una coppia di coordinate $(S, G)$ ad ogni decadimento.\\
+
+
+%________________________________________________ 
+
+\paragraph{Il semicerchio universale}
+
+È possibile dimostrare che ad un decadimento mono-esponenziale corrispondono fasori su un semicerchio di raggio unitario a $S$ positivo, con valori di $\tau$ minimi in $(1, 0)$ e massimi in $(0, 0)$.\\
+
+Per prima cosa, si ricavano analiticamente il primi due termini di Fourier del segnale:
+
+\begin{equation*}
+    D = \int_0^\infty e^{-t/\tau} dt = \left[ -\tau e^{-t/\tau} \right]_0^\infty = 0 - (-\tau) = \tau
+\end{equation*}
+
+Il denominatore così calcolato funge da normalizzazione delle coordinate polari. Fisicamente, rappresenta l'area totale sottesa al grafico del segnale, ovvero l'intensità totale.\\
+
+Ora si ricava il numeratore:
+
+\begin{equation*}
+    N = \int_0^\infty e^{-t/\tau} e^{-i\omega t} dt
+\end{equation*}
+
+
+
+\paragraph{Principio di reciprocità}
+
+Una delle proprietà che rendono utile l'analisi fasoriale è il principio di reciprocità, 
 
 
 
@@ -110,7 +141,6 @@ Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale
 
 \begin{itemize}
 
-    \item S e G piano complesso sui cui rappresento il secondo coefficiente della SdF, diviso per il primo coefficiente come normalizzazione
     \item Implementazione della teoria su in immagine divisa in pixel spaziali e bin temporali (eq \ref{eq:fourier_S_G})
     \item Fooorse riprendo/sistemo parte di teoria della rappr di decadimenti sul piano dei fasori
     \item paragrafo: cosa succede quando ho più fluorofori nello stesso punto, con intensità che diventa la somma (\ref{eq:phasor_additivity})

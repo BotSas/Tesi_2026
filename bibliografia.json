@@ -2320,6 +2320,93 @@
       "select": "zotero://select/library/items/JLCIEARG"
     },
     {
+      "key": "ZV25WA7L",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Polar Plot Representation for Frequency-Domain Analysis of Fluorescence Lifetimes",
+      "abstractNote": "We present applications of polar plots for analyzing fluorescence lifetime data acquired in the frequency domain. This graphical, analytical method is especially useful for rapid FLIM measurements. The usual method for sorting out and determining the underlying lifetime components from a complex fluorescence signal is to carry out the measurement at multiple frequencies. When it is not possible to measure at more than one frequency, such as rapid lifetime imaging, specific features of the polar plot analysis yield valuable information, and provide a diagnostic visualization of the participating fluorescent species underlying a complex lifetime distributions. Data are presented where this polar plot presentation is useful to derive valuable, unique information about the underlying component distributions. We also discuss artifacts of photolysis and how this method can also be applied to samples where each fluorescence species shows a continuous distribution of lifetimes. Polar plots of frequency-domain data are commonly used for analysis of dielectric relaxation experiments (Cole–Cole plots), which have proved to be exceptionally useful in that field for decades. We compare this analytical tool that is well developed and extensively used in dielectric relaxation and chemical kinetics to fluorescence measurements.",
+      "date": "2005-09-01",
+      "DOI": "10.1007/s10895-005-2990-8",
+      "citationKey": "redfordPolarPlotRepresentation2005",
+      "url": "https://doi.org/10.1007/s10895-005-2990-8",
+      "accessDate": "2026-10-25T20:55:04Z",
+      "language": "en",
+      "libraryCatalog": "Springer Link",
+      "volume": "15",
+      "pages": "805-815",
+      "publicationTitle": "Journal of Fluorescence",
+      "ISSN": "1573-4994",
+      "issue": "5",
+      "journalAbbreviation": "J Fluoresc",
+      "creators": [
+        {
+          "firstName": "Glen I.",
+          "lastName": "Redford",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Robert M.",
+          "lastName": "Clegg",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "FLIM",
+          "type": 1
+        },
+        {
+          "tag": "Fluorescence lifetimes",
+          "type": 1
+        },
+        {
+          "tag": "frequency-domain",
+          "type": 1
+        },
+        {
+          "tag": "polar plot",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-25T20:55:04Z",
+      "dateModified": "2026-10-25T20:55:04Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/ZV25WA7L",
+      "itemID": 212,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://link.springer.com/content/pdf/10.1007%2Fs10895-005-2990-8.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-25T20:55:06Z",
+          "dateModified": "2026-10-25T20:55:06Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/7U2Y79HQ",
+          "path": "/home/aras/Zotero/storage/7U2Y79HQ/Redford and Clegg - 2005 - Polar Plot Representation for Frequency-Domain Analysis of Fluorescence Lifetimes.pdf",
+          "select": "zotero://select/library/items/7U2Y79HQ"
+        }
+      ],
+      "notes": [
+        {
+          "key": "RQYTAPKL",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "ZV25WA7L",
+          "note": "teoria fasori<br>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-25T20:55:14Z",
+          "dateModified": "2026-10-25T20:55:14Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/RQYTAPKL"
+        }
+      ],
+      "autoJournalAbbreviation": "J. Fluoresc.",
+      "itemKey": "ZV25WA7L",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/ZV25WA7L"
+    },
+    {
       "key": "VZEXJTJD",
       "version": 0,
       "itemType": "journalArticle",
