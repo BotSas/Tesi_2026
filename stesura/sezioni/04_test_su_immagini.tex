@@ -2,12 +2,12 @@
 
 In questa sezione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
 
-\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023a}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
+Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023a}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
 
-\noindent Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\tau = 4\,\mathrm{ns}$).\\
+Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\tau = 4\,\mathrm{ns}$).\\
 La seconda invece è affiancata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 507\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$).\\
 
-\noindent Ogni immagine è salvata come file \textit{TIFF}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione,i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.\\
+Ogni immagine è salvata come file \textit{TIFF}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione,i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.\\
 
 
 \begin{figure}[h!]
@@ -26,7 +26,7 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
     \end{subfigure}
 \end{figure}
 
-\noindent Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati: \\
+Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati: \\
 
 \begin{table}[h]
     \centering
@@ -56,7 +56,7 @@ Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata
 
 Il primo passaggio dell'analisi consiste nell'ottenimento del fasore relativo alla IRF mediante il file di calibrazione, e nella successiva deconvoluzione di quest'ultimo con l'immagine principale.\\
 
-\noindent Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023a}.\\
+Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023a}.\\
 Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023a}.\\
 
 % questa roba non serve qui ma ne parlo per la seconda immagine
@@ -79,7 +79,7 @@ Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve av
 
 Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluorescina, utilizzando una funzione apposita chiamata \texttt{extract\_irf}, che prende in input l'intero file \textit{tiff} di calibrazione e il tempo di vita del fluoroforo puro, e restituisce le coordinate del fasore dell'\textit{IRF}.\\
 
-\noindent A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).\\
+A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).\\
 
 \begin{figure}[h!]
     \centering
@@ -112,9 +112,9 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 Osservando la rappresentazione dei dati grezzi sul piano dei fasori, è possibile fare alcune valutazioni.\\
 Un primo successo è sicuramente la posizione della "nuvola", interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.\\
 
-\noindent Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi particolarmente significativa, sia per l'alta varianza sulla posizione (correlata a un'alta varianza nel rapporto di concentrazione dei fluorofori nei vari punti del campione), sia per l'incidenza di rumore.\\
+Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi particolarmente significativa, sia per l'alta varianza sulla posizione (correlata a un'alta varianza nel rapporto di concentrazione dei fluorofori nei vari punti del campione), sia per l'incidenza di rumore.\\
 
-\noindent In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.\\
+In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -159,15 +159,15 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
 %citazione alla teoria needed
 
-\noindent Come anticipato nella sezione teorica, si dimostra l'esistenza di una corrispondenza biunivoca tra i punti dell'immagine nel dominio temporale e quelli sul piano dei fasori. È dunque utlile implementare nel codice uno strumento che permetta di verificare questa corrispondenza, evidenziando i fasori corrispondenti a una certa sezione dell'immagine, e viceversa.\\
+Come anticipato nella sezione teorica, si dimostra l'esistenza di una corrispondenza biunivoca tra i punti dell'immagine nel dominio temporale e quelli sul piano dei fasori. È dunque utlile implementare nel codice uno strumento che permetta di verificare questa corrispondenza, evidenziando i fasori corrispondenti a una certa sezione dell'immagine, e viceversa.\\
 
 % schifo
-% \noindent Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
+% Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
 
-\noindent Operativamente, questo strumento è stato realizzato mediante una maschera, ovvero una matrice bi-dimensionale con le stesse dimensioni \texttt{x} e \texttt{y} dell'immagine di riferimento.\\
+Operativamente, questo strumento è stato realizzato mediante una maschera, ovvero una matrice bi-dimensionale con le stesse dimensioni \texttt{x} e \texttt{y} dell'immagine di riferimento.\\
 La sezione di area quadrata della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.\\
 
-\noindent Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
+Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
 % La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
 
 
@@ -199,10 +199,10 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\ % schifo
 
-\noindent Nonostante il campione non sia stato dichiaratamente trattato con due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
+Nonostante il campione non sia stato dichiaratamente trattato con due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
 La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
 
-\noindent Verrà mostrato in una sezione successiva che la rappresentazione dei decadimenti di ogni pixel sul piano dei fasori presenta una forma allungata, indizio  che i decadimenti possano essere trattati come bi-esponenziali.\\
+Verrà mostrato in una sezione successiva che la rappresentazione dei decadimenti di ogni pixel sul piano dei fasori presenta una forma allungata, indizio  che i decadimenti possano essere trattati come bi-esponenziali.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,7 +214,7 @@ Il file di calibrazione con amido, associato alla seconda immagine, è stato sot
 \paragraph{Teoria - SHG}
 Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.\\
 
-\noindent Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
+Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
 L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenza con tempo di vita $\tau=0\,$ns.\\
 
     
@@ -222,6 +222,8 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
     \centering
     \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.pdf} 
     \label{fig:embryo5_IRF}
+    \vspace{-7cm}
+    \caption{Rappresentazione sul piano dei fasori delle "nuvolae di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median.}
 \end{figure}
 
 %\paragraph{pratica} - immagine + magari un commentino sul significato della forma allungata
@@ -238,7 +240,7 @@ La forma allungata della nuvola di dati deconvoluta può essere ricondotta al ca
 Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
-\noindent Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione. Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
+Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione. Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
 
 
 % tuttavia, abbiamo le prese dati rossa e verde, quindi possiamo fare la proiezione sulla retta!!
@@ -275,7 +277,7 @@ Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due 
     \label{fig:tutte_immagini}
 \end{figure}
 
-\noindent 
+
 
 
 
@@ -293,9 +295,9 @@ Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze util
 
 
 
-\noindent Dalle equazioni \ref{eq:phasor_additivity}, è possibile
+Dalle equazioni \ref{eq:phasor_additivity}, è possibile
 
-\noindent Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
+Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
 
 
 
