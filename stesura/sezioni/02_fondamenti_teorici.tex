@@ -13,11 +13,96 @@ Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in lab
 \noindent Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere indipendente da quest'ultima (inoltre, è indipendente dal cammino ottico) \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente il problema.\\
 Questo è l'ambito di studio della \textit{FLIM} (miscroscopia a tempo di vita di fluorescenza).\\
 
-
 \noindent Un altro beneficio fondamentale è la possibilità di monitorare processi biologici che avvengono allo stato eccitato, ad esempio il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}; o l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotidee}) e FAD (\textit{flavin adenin dinucleotide}), due enzimi e fluorofori intrinseci fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.\\
 
 
-\cite{claytonGraphicalRepresentationMulticomponent2004}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Cenni matematici al piano dei fasori}
+
+% descrivere il decadimento dato da un singolo esponenziale
+
+
+Quando in un campione sono presenti più fluorofori, si può immaginare che il decadimento totale di fluorescenza sia una combinazione lineare di esponenziali decrescenti:
+
+\begin{equation}
+    I(t)=\sum_{j}\alpha_j\,e^{-t/\tau_j}+C \quad \quad \sum_{j} \alpha_j = 1
+    \label{eq:exponential_intensity}
+\end{equation}
+
+dove $\alpha_j$ indica la frazione del singolo fluoroforo sul totale, e $\tau_j$ il suo tempo di vita; $C$ è un parametro relativo al rumore di fondo \cite{huComparisonPhasorAnalysis2023}.\\
+
+\noindent Integrando l'intensità totale del segnale nel tempo (se si ignora il rumore per semplicità), si ottiene:
+
+\begin{equation*}
+    A = \int_{0}^{\infty}I(t)\,dt=\int_{0}^{\infty}\left(\sum_{j}\alpha_j\,e^{-t/\tau_j}\right)dt
+\end{equation*}
+
+\noindent Se la concentrazione di fluorofori è indipendente dal tempo (come per ogni caso presente in questa trattazione), si può portare $\alpha_j$ fuori dall'integrale
+
+\begin{equation*}
+    A = \sum_{j} \alpha_j \left(\int_{0}^{\infty} e^{-t/\tau_j}\right) dt = \sum_{j} \alpha_j \left[ -\tau_j e^{-t/\tau_j} \right]_0^\infty = \sum_{j} \alpha_j \tau_j
+\end{equation*}
+
+
+\noindent Tenendo conto della normalizzazione dei rapporti di intensità definita nell'equazione \ref{eq:exponential_intensity}, si ottiene:
+
+\begin{equation}
+    \tau_m = \sum_{j}\alpha_j\,\tau_j
+    \label{eq:tau_medio}
+\end{equation}
+
+In conclusione, se si conosce il numero di fluorofori presenti nel campione, è possibile ricavare il loro rapporto di concentrazione mediante un \textit{fit} multi-esponenziale \cite{mastersBookReviewPrinciples2008a}.\\
+
+\noindent Il processo di interpolazione diventa tuttavia progressivamente più complicato (e computazionalmente costoso) all'aumentare del numero di fluorofori nel campione; inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel segnale di intensità, che deve essere deconvoluto per ottenere il segnale di fluorescenza puro (come trattato estensivamente nella sezione succ)\cite{huComparisonPhasorAnalysis2023}.\\
+
+\noindent Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei fasori.\\
+
+
+% $$A = \int_0^\infty I_{sig}(t) dt = \int_0^\infty \left( \sum_j \alpha_j e^{-t/\tau_j} \right) dt$$
+
+
+%__________________________________
+% \begin{equation}
+%     G_{i,j}(\omega)=\frac{\sum_{t=1}^{N_{bins}}I_{i,j}*\cos(\omega t)}{\sum_{t=1}^{N_{bins}}I_{i,j}} 
+%     \qquad \qquad
+%     S_{i,j}(\omega)=\frac{\sum_{t=1}^{N_{bins}}I_{i,j}*\sin(\omega t)}{\sum_{t=1}^{N_{bins}}I_{i,j}}
+%     \label{eq:fourier_S_G}
+% \end{equation}
+%___________________________________
+
+
+dove $\omega= 2 \pi f$, $f$ frequenza del laser \cite{digmanPhasorApproachFluorescence2008}.\\
+%______________________________________________________________
+\noindent Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale $\tau$), si dimostra che \cite{torradoLinearCombinationProperties2022}:
+
+\begin{equation}
+    G = \sum_{k} f_k G_k, \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
+    \label{eq:phasor_additivity}
+\end{equation}
+
+
+\begin{itemize}
+
+    \item S e G piano complesso sui cui rappresento il secondo coefficiente della SdF, diviso per il primo coefficiente come normalizzazione
+    \item Implementazione della teoria su in immagine divisa in pixel spaziali e bin temporali (eq \ref{eq:fourier_S_G})
+    \item Fooorse riprendo/sistemo parte di teoria della rappr di decadimenti sul piano dei fasori
+    \item paragrafo: cosa succede quando ho più fluorofori nello stesso punto, con intensità che diventa la somma (\ref{eq:phasor_additivity})
+    \item angolo di fase e modulazione (da \cite{mastersBookReviewPrinciples2008a} pag 99)
+\end{itemize}
+
+
+\begin{equation}
+    G_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\cos(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt} 
+    \qquad \qquad
+    S_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\sin(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt}
+    \label{eq:fourier_S_G_integral}
+\end{equation}
+
+%\cite{digmanPhasorApproachFluorescence2008} per la somma di S e G
+
+%\cite{claytonGraphicalRepresentationMulticomponent2004}
 
 % citare il teorema di convoluzione \cite[Sez. 2.9.6]{oppenheim_discrete_2009}
 

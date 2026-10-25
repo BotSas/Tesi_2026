@@ -2,7 +2,7 @@
 
 In questa sezione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
 
-\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
+\noindent Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023a}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.\\
 
 \noindent Accompagna la prima immagine un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\tau = 4\,\mathrm{ns}$).\\
 La seconda invece è affiancata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 507\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$).\\
@@ -32,11 +32,10 @@ La seconda invece è affiancata, oltre che da un file di calibrazione con amido 
     \centering
     \begin{tabular}{lc}
         \toprule
-        \midrule
         Numero totale di bin temporali & 56 \\
         Frequenza del laser & 80 MHz \\
         Ampiezza dei bin temporali & 0.223 ns \\
-        \bottomrule
+        \toprule
     \end{tabular}
     \vspace{0.2cm}
 \end{table}
@@ -57,8 +56,8 @@ Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata
 
 Il primo passaggio dell'analisi consiste nell'ottenimento del fasore relativo alla IRF mediante il file di calibrazione, e nella successiva deconvoluzione di quest'ultimo con l'immagine principale.\\
 
-\noindent Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023}.\\
-Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023}.\\
+\noindent Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023a}.\\
+Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023a}.\\
 
 % questa roba non serve qui ma ne parlo per la seconda immagine
 
@@ -212,10 +211,8 @@ La presenza di acquisizioni con filtri di emissioni colorati, corredate all'imma
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.\\
 
-
 \paragraph{Teoria - SHG}
-
-Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023}.\\
+Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.\\
 
 \noindent Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
 L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenza con tempo di vita $\tau=0\,$ns.\\
@@ -294,14 +291,6 @@ Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze util
 
 \paragraph{Teoria / procedimento}
 
-% spostare nella teoria
-
-Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale $\tau$), si dimostra che \cite{torradoLinearCombinationProperties2022}:
-
-\begin{equation}
-    G = \sum_{k} f_k G_k, \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
-    \label{eq:phasor_additivity}
-\end{equation}
 
 
 \noindent Dalle equazioni \ref{eq:phasor_additivity}, è possibile

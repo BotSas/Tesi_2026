@@ -1,17 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'build/TESI_SUPER_UFFICIALE.blg'
-[170] biber:340> INFO - === Fri Oct 23, 2026, 19:49:08
-[200] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
-[365] Biber.pm:979> INFO - Found 12 citekeys in bib section 0
-[393] Biber.pm:4419> INFO - Processing section 0
-[415] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[430] bibtex.pm:1713> INFO - LaTeX decoding ...
-[555] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[895] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[896] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[896] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
-[896] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[923] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
-[939] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
-[939] Biber.pm:131> WARN - I didn't find a database entry for 'gottliebFLUTEPythonGUI2023' (section 0)
-[939] Biber.pm:133> INFO - WARNINGS: 1
+[54] biber:340> INFO - === Sun Oct 25, 2026, 02:09:00
+[66] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
+[157] Biber.pm:979> INFO - Found 13 citekeys in bib section 0
+[170] Biber.pm:4419> INFO - Processing section 0
+[181] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[186] bibtex.pm:1713> INFO - LaTeX decoding ...
+[234] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[410] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[410] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[410] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[410] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[419] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
+[425] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
