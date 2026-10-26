@@ -76,40 +76,105 @@ Inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel seg
 Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei fasori, una tecnica che identifica ogni decadimento di fluorescenza mediante un singolo punto nel piano dei fasori, identificato dalle coordinate $S$ e $G$, definite dai primi due termini della trasformata di Fourier del segnale di fluorescenza: 
 
 \begin{equation}
-    G_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\cos(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt} 
+    G(\omega)=\frac{\int_{0}^{T}I(t)\,\cos(\omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
     \qquad \qquad
-    S_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\sin(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt}
+    S(\omega)=\frac{\int_{0}^{T}I(t)\,\sin(\omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
     \label{eq:fourier_S_G_integral}
 \end{equation}
 
-dove $\omega= 2 \pi f$, $f$ frequenza del laser \cite{digmanPhasorApproachFluorescence2008}.\\
+% \begin{equation}
+%     G_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\cos(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt} 
+%     \qquad \qquad
+%     S_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\sin(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt}
+%     \label{eq:fourier_S_G_integral}
+% \end{equation}
+
+dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}.\\
+
+È bene osservare che:
+\begin{itemize}
+    \item Il denominatore di $S$ e $G$ ffunge da normalizzazione e rappresenta fisicamente l'area totale sottesa al grafico del segnale nel dominio del tempo, ovvero l'intensità totale della fluorescenza (il numero totale di fotoni raccolti)
+    \item Il numeratore rappresenta invece la prima armonica della Trasformata di Fourier, scomposta analiticamente nella sua parte reale e immaginaria mediante l'identità di Eulero: $e^{-i\omega t} = \cos(\omega t) - i \sin(\omega t)$
+\end{itemize}
 
 
 
 In un esperimento reale, il campione studiato viene suddiviso in pixel, e per ognuno viene raccolto il segnale di fluorescenza; in seguito viene assegnata una coppia di coordinate $(S, G)$ ad ogni decadimento.\\
 
 
-%________________________________________________ 
+%__________________________________________________ 
 
 \paragraph{Il semicerchio universale}
 
 È possibile dimostrare che ad un decadimento mono-esponenziale corrispondono fasori su un semicerchio di raggio unitario a $S$ positivo, con valori di $\tau$ minimi in $(1, 0)$ e massimi in $(0, 0)$.\\
 
-Per prima cosa, si ricavano analiticamente il primi due termini di Fourier del segnale:
+Per prima cosa, si ricava la soluzione analitica dei primi due coefficienti di Fourier di un segnale di fluorescenza mono-esponenziale:
+
+\[
+\begin{cases} 
+    \displaystyle D = \int_0^\infty e^{-t/\tau} \;dt = \left[ -\tau e^{-t/\tau} \right]_0^\infty = 0 - (-\tau) = \tau \\[15pt]
+
+    \displaystyle N = \int_0^\infty e^{-t/\tau} e^{-i\omega t}\; dt = \int_0^\infty e^{-\left(\frac{1}{\tau} + i\omega\right)t} \;dt = \frac{1}{\frac{1}{\tau} + i\omega}
+\end{cases}
+\]
+
+Come da definizione (\ref{eq:fourier_S_G_integral}), si ricava ora il fasore normalizzato:
 
 \begin{equation*}
-    D = \int_0^\infty e^{-t/\tau} dt = \left[ -\tau e^{-t/\tau} \right]_0^\infty = 0 - (-\tau) = \tau
+    z = \frac{N}{D} = \frac{1}{\frac{1}{\tau}+i\omega}\cdot\frac{1}{\tau} = \frac{1}{1+i\omega\tau}
 \end{equation*}
 
-Il denominatore così calcolato funge da normalizzazione delle coordinate polari. Fisicamente, rappresenta l'area totale sottesa al grafico del segnale, ovvero l'intensità totale.\\
+Razionalizzando e suddividendo la componente reale e immaginaria, è possibile dividere nuovamente $S$ e $G$:
 
-Ora si ricava il numeratore:
+\begin{equation}
+    G = \frac{1}{1 + (\omega\tau)^2}\;\; , \qquad S = \frac{\omega\tau}{1 + (\omega\tau)^2}
+    \label{eq:S_G_freq_domain}
+\end{equation}
+\vspace{5pt}
+
+È possibile verificare che queste due equazioni definiscono una curva al variare di $\tau$ nel piano $G/S$, che corrisponde esattamente a un semicerchio unitario centrato in $(0.5, 0)$ e a valori positivi di $S$ \cite{mastersBookReviewPrinciples2008a}.\\
+
+% per farlo, è sufficiente fare S^2 + G^2 con le formule appena ricavate, e verificare che il risulato sia G. S^2 + G^2 = G definisce esattamente una circonferenza con le caratteristiche desiderate.
+
+% non lo spiego perché non ho voglia di dilungarmi
+
+Questa definizione delle coordinate fasoriali si rivela utile per la rappresentazione sul piano dei fasori di decadimenti esponenziali teorici, ovvero "puliti" (in assenza di rumore) e con $\tau$ noto a priori.\\
+
+% da richiamare quando spiego la generazione di esponenziali singoli doppi tripli (l'ho usato per calcolare il target)
+
+%____________________________________
+
+\paragraph{Definizione mediante coordinate polari}
+
+Un altro modo per identificare i punti sul piano dei fasori, alternativo alle coordinate cartesiane $(S, G)$, è mediante le coordinate polari $(M, \phi)$:
 
 \begin{equation*}
-    N = \int_0^\infty e^{-t/\tau} e^{-i\omega t} dt
+    G = M \cos \phi \qquad S = M \sin \phi
 \end{equation*}
 
+Questa definizione non è stata utilizzata per implementare alcun calcolo all'interno del codice di questa trattazione, ma è utile per comprendere intuitivamente la relazione tra i punti sul piano dei fasori \cite{malacridaPhasorPlotUniversal2021}.\\
 
+\begin{itemize}
+    \item \textbf{Rotazione}: ovvero uno sfasamento dell'angolo polare. Corrisponde a eventi che agiscono "anticipando" o "ritardando" il segnale
+    \item \textbf{Scalatura}: correzione dell'intensità. Rappresenta smorzamenti del segnale, o dispersioni su una scala temporale maggiore
+\end{itemize}  % da controllare che sta roba abbia senso
+
+L'esempio più consono a questa trattazione è la deconvoluzione della IRF (\textit{instrument response function}) dal segnale totale. Per il teorema della convoluzione, sul piano dei fasori una deconvoluzione diventa una semplice divisione tra fasori:
+
+\begin{equation*}
+    z_{decadimento} = z_{misurato} / z_{IRF}
+\end{equation*}
+
+Questa operazione può essere suddivisa in:
+\begin{equation*}
+    m_{decadimento} = m_{segnale} / m_{IRF}\;\;, \qquad \phi_{decadimento} = \phi_{segnale} - \phi_{IRF}
+\end{equation*}
+
+Per una trattazione più approfondita sulla deconvoluzione della IRF, si rimanda alla sezione \ref{sec:funzione_di_risposta_dello_strumento}.\\
+
+% DA SISTEMARE LA PARTE DELLA IRF!!! Forse ha senso spostare metà di questo paragrafo nella parte di IRF
+
+%_______________________________________________________
 
 \paragraph{Principio di reciprocità}
 
@@ -140,11 +205,9 @@ Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale
 
 
 \begin{itemize}
-
     \item Implementazione della teoria su in immagine divisa in pixel spaziali e bin temporali (eq \ref{eq:fourier_S_G})
     \item Fooorse riprendo/sistemo parte di teoria della rappr di decadimenti sul piano dei fasori
     \item paragrafo: cosa succede quando ho più fluorofori nello stesso punto, con intensità che diventa la somma (\ref{eq:phasor_additivity})
-    \item angolo di fase e modulazione (da \cite{mastersBookReviewPrinciples2008a} pag 99)
 \end{itemize}
 
 
@@ -159,7 +222,8 @@ Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Funzione di risposta dello strumento} 
+\subsection{Funzione di risposta dello strumento}
+\label{sec:funzione_di_risposta_dello_strumento}
 
 Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. \\
 L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione nelle molecole del fluoroforo presente nel campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\ % controllare l'ultima frase, potrebbe esserci un errore
