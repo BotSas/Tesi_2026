@@ -1,5 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{k}{def} \PYG{n+nf}{phasors\PYGZus{}from\PYGZus{}region}\PYG{p}{(}\PYG{n}{image}\PYG{p}{,} \PYG{n}{roi\PYGZus{}mask}\PYG{p}{,} \PYG{n}{median\PYGZus{}size}\PYG{p}{,} \PYG{n}{threshold\PYGZus{}pct}\PYG{p}{):}
 
 \PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}

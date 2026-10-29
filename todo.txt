@@ -4,9 +4,9 @@ TODO A BREVE:
 - spiegazione di come sono state calcolate le incertezze nell'immagine 2
 - calcolo e risultato rapporti di concentrazione immagine 2
 - metodo monte carlo per il calcolo delle incertezze
-- teoria fasori (dopo settimane di procrastinazione)
 - sistemare panel + selez bidirezionale
-
+- rivedere inizio parte teorica IRF perché potrebbero esserci ripetizioni
+- forse aggiungere spiegazione shoelace formula
 
 OBIETTIVI CHE DEVO ANCORA ELABORARE:
 

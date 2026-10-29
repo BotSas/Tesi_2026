@@ -25,7 +25,7 @@ L'implementazione pratica degli esperimenti di FLIM consiste tipicamente nell'es
 La probabilità che una molecola di fluoroforo si trovi allo stato eccitato al tempo $t$ segue un'andamento esponenziale decrescente, dunque il segnale di fluorescenza totale di una regione del campione contenente più molecole di un singolo fluoroforo avrà forma:
 
  \begin{equation*}
-    I(t) = ,e^{-t/\tau}
+    I(t) =A\, e^{-t/\tau}
 \end{equation*}
 
 % mmmm qui c'è qualche conclusione da trarre, in più f per cosa cazzo sta
@@ -69,6 +69,9 @@ Dunque, se si conosce il numero di fluorofori presenti nel campione, è possibil
 Il processo di interpolazione diventa tuttavia progressivamente più computazionalmente costoso e sensibile al rumore statistico all'aumentare del numero di fluorofori nel campione (e dunque dei parametri liberi).\\
 Inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel segnale di intensità, che deve essere deconvoluto per ottenere il segnale di fluorescenza puro (come trattato estensivamente nella sezione succ)\cite{huComparisonPhasorAnalysis2023}.\\
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsubsection{Trasformazione fasoriale}
@@ -159,7 +162,7 @@ Questa definizione non è stata utilizzata per implementare alcun calcolo all'in
     \item \textbf{Scalatura}: correzione dell'intensità. Rappresenta smorzamenti del segnale, o dispersioni su una scala temporale maggiore
 \end{itemize}  % da controllare che sta roba abbia senso
 
-L'esempio più consono a questa trattazione è la deconvoluzione della IRF (\textit{instrument response function}) dal segnale totale. Per il teorema della convoluzione, sul piano dei fasori una deconvoluzione diventa una semplice divisione tra fasori:
+L'esempio più consono a questa trattazione è la deconvoluzione della IRF (\textit{instrument response function}) dal segnale totale. Per il teorema della convoluzione, sul piano dei fasori una deconvoluzione diventa una semplice divisione tra fasori \cite[Sez. 2.9.6]{oppenheim_discrete_2009}:
 
 \begin{equation*}
     z_{decadimento} = z_{misurato} / z_{IRF}
@@ -176,9 +179,9 @@ Per una trattazione più approfondita sulla deconvoluzione della IRF, si rimanda
 
 %_______________________________________________________
 
-\paragraph{Principio di reciprocità}
+% \paragraph{Principio di reciprocità}
 
-Una delle proprietà che rendono utile l'analisi fasoriale è il principio di reciprocità, 
+% Una delle proprietà che rendono utile l'analisi fasoriale è il principio di reciprocità, 
 
 
 
@@ -196,19 +199,36 @@ Una delle proprietà che rendono utile l'analisi fasoriale è il principio di re
 
 
 %______________________________________________________________
-Se in un campione sono presenti più fluorofori (o classi di fluorofori a uguale $\tau$), si dimostra che \cite{torradoLinearCombinationProperties2022}:
+
+\paragraph{Rappresentazione di decadimenti multi-esponenziali}
+
+Si consideri un campione dove coesistono più specie fluorofore, dunque con segnale di fluorescenza descritto da un decadimento multi-esponenziale, ovvero una combinazione lineare di esponenziali puri (come mostrato nella \ref{eq:exponential_intensity}).\\
+Per linearità della trasformata di Fourier, anche il fasore corrispondente al decadimento in un pixel avrà coordinate date da una combinazione lineare dei segnali degli esponenziali puri \cite{torradoLinearCombinationProperties2022}:
 
 \begin{equation}
-    G = \sum_{k} f_k G_k, \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
+    G = \sum_{k} f_k G_k\;\; , \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
     \label{eq:phasor_additivity}
 \end{equation}
 
+% Dove $f_k$ è il contributo frazionario all'intensità, e $(G_k, S_k)$ le coordinate fasoriali, relativi al fluoroforo $k$-esimo.\\ 
 
-\begin{itemize}
-    \item Implementazione della teoria su in immagine divisa in pixel spaziali e bin temporali (eq \ref{eq:fourier_S_G})
-    \item Fooorse riprendo/sistemo parte di teoria della rappr di decadimenti sul piano dei fasori
-    \item paragrafo: cosa succede quando ho più fluorofori nello stesso punto, con intensità che diventa la somma (\ref{eq:phasor_additivity})
-\end{itemize}
+dove $(G_k, S_k)$ sono le coordinate fasoriali della specie fluorofora $k$-esima.\\
+
+Occorre notare che $(G_k, S_k)$ sono normalizzate utilizzando l'intensità totale emessa (numero totale di fotoni).\\ 
+Per questo motivo, le coordinate totali $(G, S)$ si ottengono come una media pesata dei fasori relativi ai decadimenti puri, dove i pesi sono rappresentati dalle frazioni relative di intensità associate a ciascuna specie fluorofora \cite{torradoLinearCombinationProperties2022}.\\
+
+Nelle miscele a due componenti, i fasori misti si posizioneranno sempre sul segmento con estremi i fasori dei decadimenti puri; il rapporto di concentrazione sarà proporzionale alla distanza dagli estremi \cite{torradoLinearCombinationProperties2022}.\\
+
+Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del triangolo con vertici i fasori dei decadimenti puri. La concentrazione di una specie fluorofora sarà data dall'area del sotto-triangolo che ha come vertici il fasore misto e i fasori relativi alle altre due specie fluorofore \cite{torradoLinearCombinationProperties2022}.\\
+
+% qua devo mettere delle immagini perché non si capisce... magari posso disegnarle?
+
+
+%_____________________________________________________________-
+% \begin{itemize}
+%     % \item Implementazione della teoria su in immagine divisa in pixel spaziali e bin temporali (eq \ref{eq:fourier_S_G})
+%     \item Fooorse riprendo/sistemo parte di teoria della rappr di decadimenti sul piano dei fasori
+% \end{itemize}
 
 
 
