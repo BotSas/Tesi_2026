@@ -635,6 +635,116 @@
       "select": "zotero://select/library/items/H2W2PVI9"
     },
     {
+      "key": "4EJQ458P",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Hyperspectral phasor analysis enables multiplexed 5D in vivo imaging",
+      "abstractNote": "Hyper-Spectral Phasors allow unmixing of multiple signals even under conditions with low signal-to-noise ratios, and they enable highly multiplexed 5D imaging of live zebrafish embryos labeled with conventional fluorophores.",
+      "date": "2017-02",
+      "DOI": "10.1038/nmeth.4134",
+      "citationKey": "cutraleHyperspectralPhasorAnalysis2017",
+      "url": "https://www.nature.com/articles/nmeth.4134",
+      "accessDate": "2026-10-29T12:39:56Z",
+      "language": "en",
+      "libraryCatalog": "www.nature.com",
+      "rights": "2017 Springer Nature America, Inc.",
+      "volume": "14",
+      "publisher": "Nature Publishing Group",
+      "pages": "149-152",
+      "publicationTitle": "Nature Methods",
+      "ISSN": "1548-7105",
+      "issue": "2",
+      "journalAbbreviation": "Nat Methods",
+      "creators": [
+        {
+          "firstName": "Francesco",
+          "lastName": "Cutrale",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Vikas",
+          "lastName": "Trivedi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Le A.",
+          "lastName": "Trinh",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Chi-Li",
+          "lastName": "Chiu",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "John M.",
+          "lastName": "Choi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marcela S.",
+          "lastName": "Artiga",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Scott E.",
+          "lastName": "Fraser",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Developmental biology",
+          "type": 1
+        },
+        {
+          "tag": "Fluorescence imaging",
+          "type": 1
+        },
+        {
+          "tag": "Image processing",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-29T12:39:56Z",
+      "dateModified": "2026-10-29T12:39:56Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/4EJQ458P",
+      "itemID": 219,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text PDF",
+          "url": "https://www.nature.com/articles/nmeth.4134.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-29T12:39:58Z",
+          "dateModified": "2026-10-29T12:39:58Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/BVTNPKMM",
+          "path": "/home/aras/Zotero/storage/BVTNPKMM/Cutrale et al. - 2017 - Hyperspectral phasor analysis enables multiplexed 5D in vivo imaging.pdf",
+          "select": "zotero://select/library/items/BVTNPKMM"
+        }
+      ],
+      "notes": [
+        {
+          "key": "TFU7Q9CH",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "4EJQ458P",
+          "note": "studio incertezze",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-29T12:40:05Z",
+          "dateModified": "2026-10-29T12:40:40Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/TFU7Q9CH"
+        }
+      ],
+      "autoJournalAbbreviation": "Nat. Methods",
+      "itemKey": "4EJQ458P",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4EJQ458P"
+    },
+    {
       "key": "VYR3UUT7",
       "version": 0,
       "itemType": "journalArticle",
@@ -1332,6 +1442,65 @@
       "itemKey": "5C2IDR3C",
       "libraryID": 1,
       "select": "zotero://select/library/items/5C2IDR3C"
+    },
+    {
+      "key": "V5GRPBRR",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Denoising multiplexed microscopy images in n-dimensional spectral space",
+      "abstractNote": "Hyperspectral fluorescence microscopy images of biological specimens frequently contain multiple observations of a sparse set of spectral features spread in space with varying intensity. Here, we introduce a spectral vector denoising algorithm that filters out noise without sacrificing spatial information by leveraging redundant observations of spectral signatures. The algorithm applies an n-dimensional Chebyshev or Fourier transform to cluster pixels based on spectral similarity independent of pixel intensity or location, and a denoising convolution filter is then applied in this spectral space. The denoised image may then undergo spectral decomposition analysis with enhanced accuracy. Tests utilizing both simulated and empirical microscopy data indicate that denoising in 3 to 5-dimensional (3D to 5D) spectral spaces decreases unmixing error by up to 70% without degrading spatial resolution.",
+      "date": "2022-08-01",
+      "DOI": "10.1364/BOE.463979",
+      "citationKey": "harmanDenoisingMultiplexedMicroscopy2022",
+      "url": "https://opg.optica.org/abstract.cfm?URI=boe-13-8-4298",
+      "accessDate": "2026-10-29T12:44:15Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "13",
+      "pages": "4298",
+      "publicationTitle": "Biomedical Optics Express",
+      "ISSN": "2156-7085, 2156-7085",
+      "issue": "8",
+      "journalAbbreviation": "Biomed. Opt. Express",
+      "creators": [
+        {
+          "firstName": "Rebecca C.",
+          "lastName": "Harman",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Ryan T.",
+          "lastName": "Lang",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eric M.",
+          "lastName": "Kercher",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paige",
+          "lastName": "Leven",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Bryan Q.",
+          "lastName": "Spring",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-29T12:44:16Z",
+      "dateModified": "2026-10-29T12:44:16Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/V5GRPBRR",
+      "itemID": 224,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "Biomed. Opt. Express",
+      "itemKey": "V5GRPBRR",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/V5GRPBRR"
     },
     {
       "key": "49LTUEI3",
@@ -2486,6 +2655,121 @@
       "itemKey": "VZEXJTJD",
       "libraryID": 1,
       "select": "zotero://select/library/items/VZEXJTJD"
+    },
+    {
+      "key": "HFDW65WK",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "pawFLIM: reducing bias and uncertainty to enable lower photon count in FLIM experiments",
+      "abstractNote": "Abstract\n            Förster resonant energy transfer measured by fluorescence lifetime imaging microscopy (FRET-FLIM) is the method of choice for monitoring the spatio-temporal dynamics of protein interactions in living cells. To obtain an accurate estimate of the molecular fraction of interacting proteins requires a large number of photons, which usually precludes the observation of a fast process, particularly with time correlated single photon counting (TCSPC) based FLIM. In this work, we propose a novel method named pawFLIM (phasor analysis via wavelets) that allows the denoising of FLIM datasets by adaptively and selectively adjusting the desired compromise between spatial and molecular resolution. The method operates by applying a weighted translational-invariant Haar-wavelet transform denoising algorithm to phasor images. This results in significantly less bias and mean square error than other existing methods. We also present a new lifetime estimator (named normal lifetime) with a smaller mean squared error and overall bias as compared to frequency domain phase and modulation lifetimes. Overall, we present an approach that will enable the observation of the dynamics of biological processes at the molecular level with better temporal and spatial resolution.",
+      "date": "2017-06-01",
+      "DOI": "10.1088/2050-6120/aa72ab",
+      "citationKey": "silberbergPawFLIMReducingBias2017",
+      "url": "https://iopscience.iop.org/article/10.1088/2050-6120/aa72ab",
+      "accessDate": "2026-10-29T12:44:15Z",
+      "shortTitle": "pawFLIM",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "5",
+      "pages": "024016",
+      "publicationTitle": "Methods and Applications in Fluorescence",
+      "ISSN": "2050-6120",
+      "issue": "2",
+      "journalAbbreviation": "Methods Appl. Fluoresc.",
+      "creators": [
+        {
+          "firstName": "Mauro",
+          "lastName": "Silberberg",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Hernán E",
+          "lastName": "Grecco",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-29T12:44:16Z",
+      "dateModified": "2026-10-29T12:44:16Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/HFDW65WK",
+      "itemID": 222,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "Methods Appl. Fluoresc.",
+      "itemKey": "HFDW65WK",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/HFDW65WK"
+    },
+    {
+      "key": "K5EP8WXC",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Denoising of fluorescence lifetime imaging data via principal component analysis",
+      "date": "2025-11-17",
+      "DOI": "10.1038/s41598-025-24022-7",
+      "citationKey": "soltaniDenoisingFluorescenceLifetime2025",
+      "url": "https://www.nature.com/articles/s41598-025-24022-7",
+      "accessDate": "2026-10-29T12:44:15Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "15",
+      "pages": "40258",
+      "publicationTitle": "Scientific Reports",
+      "ISSN": "2045-2322",
+      "issue": "1",
+      "journalAbbreviation": "Sci Rep",
+      "creators": [
+        {
+          "firstName": "Soheil",
+          "lastName": "Soltani",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jack G.",
+          "lastName": "Paulson",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Emma J.",
+          "lastName": "Fong",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Shannon M.",
+          "lastName": "Mumenthaler",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Andrea M.",
+          "lastName": "Armani",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-10-29T12:44:16Z",
+      "dateModified": "2026-10-29T12:44:16Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/K5EP8WXC",
+      "itemID": 223,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text",
+          "url": "https://www.nature.com/articles/s41598-025-24022-7.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-29T12:44:33Z",
+          "dateModified": "2026-10-29T12:44:33Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/E3NYWC64",
+          "path": "/home/aras/Zotero/storage/E3NYWC64/Soltani et al. - 2025 - Denoising of fluorescence lifetime imaging data via principal component analysis.pdf",
+          "select": "zotero://select/library/items/E3NYWC64"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Sci. Rep.",
+      "itemKey": "K5EP8WXC",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/K5EP8WXC"
     },
     {
       "key": "H2A4FQF8",

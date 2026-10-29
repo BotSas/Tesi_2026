@@ -258,8 +258,7 @@ In aggiunta a questo, il segnale subisce una distorsione (di solito un allargame
 
 Emerge dunque un vantaggio significativo dell'analisi fasoriale rispetto al processo appena illustrato: non è necessario conoscere la forma precisa della \textit{IRF}, è sufficiente effettuare una calibrazione utilizzando un fluoroforo a decadimento mono-esponenziale a $\textit{\tau}$ noto.\\
 
-Come ripreso nella sezione successiva, infatti,    % RICORDARSI DI MENZIONARLO PERÒ SENNÒ SEI UN CLOWN
-la convoluzione nel dominio temporale si traduce come una moltiplicazione nello spazio di Fourier. La \textit{IRF} viene ridotta a un singolo punto sul piano dei fasori, che naturalmente non si troverà sul semicerchio universale in quanto non è un decadimento esponenziale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
+Come introdotto nella sezione \ref{sec:trasformazione_fasoriale}, la convoluzione nel dominio temporale si traduce come una moltiplicazione nello spazio di Fourier (teorema della convoluzione). La \textit{IRF} viene ridotta a un singolo punto sul piano dei fasori, che naturalmente non si troverà sul semicerchio universale in quanto non è un decadimento esponenziale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
 Unendo queste due informazioni, è possibile ottenere il fasore del segnale totale come:
 
@@ -268,14 +267,13 @@ Unendo queste due informazioni, è possibile ottenere il fasore del segnale tota
     \label{eq:convoluzione_fasori}
 \end{equation}
 
-da cui è banale ricavare il fasore relativo al decadimento con un'operazione inversa.\\
+da cui si trova facilmente il fasore relativo al decadimento di fluorescenza mediante operazione inversa.\\ 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % nella parte precedente della teoria devo spiegare bene come funziona l'additività delle fasi, ecc ecc
-% qui volendo posso parlare per 6 ore
-
 
 \subsubsection{Convoluzione tra IRF e segnale di fluorescenza}
 

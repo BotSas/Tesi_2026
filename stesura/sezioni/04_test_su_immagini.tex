@@ -121,32 +121,60 @@ In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare
 
 \subsubsection{Filtro \textit{"median"} sul piano dei fasori}
 
-\paragraph{teoria}
+Per ridurre la dispersione spaziale dei fasori, è stato utilizzato un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, una funzione di \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}.\\
 
-\paragraph{pratica}
+Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel, la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.\\   % grazie Davide
+I pixel vuoti vengono ignorati per il calcolo della mediana 
+
+La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, vengono ignorati i pixel vuoti nel calcolo della mediana. Tuttavia vengono preservati come \texttt{NaN} ("not a number", ovvero \texttt{0}) i pixel che erano precedentemente stati considerati vuoti. In questo modo, nonvengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti.\\
+
+
 
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
 def phasors_from_region(image, roi_mask, median_size, threshold_pct):
 
-    '''
-    Calculates G and S from spatial region of interest.
-    Takes as input:
-    - image as a xr.DataArray
-    - roi_mask: 2D boolean array (x, y)
+    ''' 
+    Returns the median-filtered pixel-wise phasor cloud for a spatial ROI 
     '''
 
-    G_img, S_img, fft0 = image_phasor_calc(image)
-    
+    roi_mask = np.asarray(roi_mask, dtype = bool)
+    ...
+    G_img, S_img, fft0 = image_phasor_calc(image)  # img
+
     # MEDIAN FILTER
-    fft0_med, G_med, S_med = phasor_filter_median( 
-        fft0.values, 
-        G_img.values, 
+    fft0_med_np, G_med_np, S_med_np = phasor_filter_median(    # img -> med
+        fft0.values,
+        G_img.values,
         S_img.values,
         size = median_size,
         repeat = 2
     )
     ...
-    return df_roi_phasors   
+    # ROI MASK
+    roi_mask_xr = xr.DataArray(
+        roi_mask,
+        dims = fft0.dims,
+        coords = fft0.coords,
+    )
+    fft0_roi = fft0_med.where(roi_mask_xr)   # med -> roi
+    G_roi = G_med.where(roi_mask_xr)
+    S_roi = S_med.where(roi_mask_xr)
+
+    # THRESHOLD
+    threshold_val = fft0_roi.max(skipna = True).item() * threshold_pct
+    fft0_thresh_np, G_thresh_np, S_thresh_np = phasor_threshold(
+        fft0_roi.values,
+        G_roi.values,
+        S_roi.values,
+        mean_min = threshold_val 
+    )
+    ...
+
+    return pd.DataFrame({
+        "G": G_thresh.where(valid_mask, drop=True).values.ravel(),
+        "S": S_thresh.where(valid_mask, drop=True).values.ravel(),
+        "intensity": fft0_thresh.where(valid_mask, drop=True).values.ravel()
+    })
 
 \end{minted}
 

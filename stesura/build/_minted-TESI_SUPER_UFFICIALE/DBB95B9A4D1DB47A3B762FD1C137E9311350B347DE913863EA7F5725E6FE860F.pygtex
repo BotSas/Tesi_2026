@@ -1,0 +1,47 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{phasors\PYGZus{}from\PYGZus{}region}\PYG{p}{(}\PYG{n}{image}\PYG{p}{,} \PYG{n}{roi\PYGZus{}mask}\PYG{p}{,} \PYG{n}{median\PYGZus{}size}\PYG{p}{,} \PYG{n}{threshold\PYGZus{}pct}\PYG{p}{):}
+
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Returns the median\PYGZhy{}filtered pixel\PYGZhy{}wise phasor cloud for a spatial ROI}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+
+    \PYG{n}{roi\PYGZus{}mask} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{asarray}\PYG{p}{(}\PYG{n}{roi\PYGZus{}mask}\PYG{p}{,} \PYG{n}{dtype} \PYG{o}{=} \PYG{n+nb}{bool}\PYG{p}{)}
+    \PYG{o}{...}
+    \PYG{n}{G\PYGZus{}img}\PYG{p}{,} \PYG{n}{S\PYGZus{}img}\PYG{p}{,} \PYG{n}{fft0} \PYG{o}{=} \PYG{n}{image\PYGZus{}phasor\PYGZus{}calc}\PYG{p}{(}\PYG{n}{image}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} img}
+
+    \PYG{c+c1}{\PYGZsh{} MEDIAN FILTER}
+    \PYG{n}{fft0\PYGZus{}med\PYGZus{}np}\PYG{p}{,} \PYG{n}{G\PYGZus{}med\PYGZus{}np}\PYG{p}{,} \PYG{n}{S\PYGZus{}med\PYGZus{}np} \PYG{o}{=} \PYG{n}{phasor\PYGZus{}filter\PYGZus{}median}\PYG{p}{(}    \PYG{c+c1}{\PYGZsh{} img \PYGZhy{}\PYGZgt{} med}
+        \PYG{n}{fft0}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{G\PYGZus{}img}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{S\PYGZus{}img}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{size} \PYG{o}{=} \PYG{n}{median\PYGZus{}size}\PYG{p}{,}
+        \PYG{n}{repeat} \PYG{o}{=} \PYG{l+m+mi}{2}
+    \PYG{p}{)}
+    \PYG{o}{...}
+    \PYG{c+c1}{\PYGZsh{} ROI MASK}
+    \PYG{n}{roi\PYGZus{}mask\PYGZus{}xr} \PYG{o}{=} \PYG{n}{xr}\PYG{o}{.}\PYG{n}{DataArray}\PYG{p}{(}
+        \PYG{n}{roi\PYGZus{}mask}\PYG{p}{,}
+        \PYG{n}{dims} \PYG{o}{=} \PYG{n}{fft0}\PYG{o}{.}\PYG{n}{dims}\PYG{p}{,}
+        \PYG{n}{coords} \PYG{o}{=} \PYG{n}{fft0}\PYG{o}{.}\PYG{n}{coords}\PYG{p}{,}
+    \PYG{p}{)}
+    \PYG{n}{fft0\PYGZus{}roi} \PYG{o}{=} \PYG{n}{fft0\PYGZus{}med}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{roi\PYGZus{}mask\PYGZus{}xr}\PYG{p}{)}   \PYG{c+c1}{\PYGZsh{} med \PYGZhy{}\PYGZgt{} roi}
+    \PYG{n}{G\PYGZus{}roi} \PYG{o}{=} \PYG{n}{G\PYGZus{}med}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{roi\PYGZus{}mask\PYGZus{}xr}\PYG{p}{)}
+    \PYG{n}{S\PYGZus{}roi} \PYG{o}{=} \PYG{n}{S\PYGZus{}med}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{roi\PYGZus{}mask\PYGZus{}xr}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} THRESHOLD}
+    \PYG{n}{threshold\PYGZus{}val} \PYG{o}{=} \PYG{n}{fft0\PYGZus{}roi}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{n}{skipna} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{item}\PYG{p}{()} \PYG{o}{*} \PYG{n}{threshold\PYGZus{}pct}
+    \PYG{n}{fft0\PYGZus{}thresh\PYGZus{}np}\PYG{p}{,} \PYG{n}{G\PYGZus{}thresh\PYGZus{}np}\PYG{p}{,} \PYG{n}{S\PYGZus{}thresh\PYGZus{}np} \PYG{o}{=} \PYG{n}{phasor\PYGZus{}threshold}\PYG{p}{(}
+        \PYG{n}{fft0\PYGZus{}roi}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{G\PYGZus{}roi}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{S\PYGZus{}roi}\PYG{o}{.}\PYG{n}{values}\PYG{p}{,}
+        \PYG{n}{mean\PYGZus{}min} \PYG{o}{=} \PYG{n}{threshold\PYGZus{}val}
+    \PYG{p}{)}
+    \PYG{o}{...}
+
+    \PYG{k}{return} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}
+        \PYG{l+s+s2}{\PYGZdq{}G\PYGZdq{}}\PYG{p}{:} \PYG{n}{G\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
+        \PYG{l+s+s2}{\PYGZdq{}S\PYGZdq{}}\PYG{p}{:} \PYG{n}{S\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
+        \PYG{l+s+s2}{\PYGZdq{}intensity\PYGZdq{}}\PYG{p}{:} \PYG{n}{fft0\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{()}
+    \PYG{p}{\PYGZcb{})}
+
+\end{Verbatim}

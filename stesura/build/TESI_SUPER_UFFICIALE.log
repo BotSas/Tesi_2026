@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  29 OCT 2026 02:10
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  30 OCT 2026 00:01
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1623,37 +1623,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
+LaTeX Warning: Reference `sec:trasformazione_fasoriale' on page 9 undefined on input line 261.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
@@ -1906,100 +1909,114 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+[20<./immagini/embryo3_IRF.pdf>]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/D3EF1813E5731FADBE6DB87F614144911350B347DE913863EA7F5725E6FE860F.pygtex) [20<./immagini/embryo3_IRF.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
-
+ (./build/_minted-TESI_SUPER_UFFICIALE/DBB95B9A4D1DB47A3B762FD1C137E9311350B347DE913863EA7F5725E6FE860F.pygtex)
+Underfull \vbox (badness 3260) detected at line 179
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
- [22]
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
-<immagini/embryo5_IRF.pdf, id=441, 614.295pt x 794.97pt>
-File: immagini/embryo5_IRF.pdf Graphic file (type pdf)
-<use immagini/embryo5_IRF.pdf>
-Package luatex.def Info: immagini/embryo5_IRF.pdf  used on input line 222.
-(luatex.def)             Requested size: 341.43307pt x 441.85648pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
-
- []
-
-[23<./immagini/embryo5_IRF.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-<immagini/ROI1_and_ROI2.pdf, id=521, 614.295pt x 794.97pt>
+
+Underfull \vbox (badness 4569) has occurred while \output is active []
+
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+<immagini/embryo5_IRF.pdf, id=448, 614.295pt x 794.97pt>
+File: immagini/embryo5_IRF.pdf Graphic file (type pdf)
+<use immagini/embryo5_IRF.pdf>
+Package luatex.def Info: immagini/embryo5_IRF.pdf  used on input line 250.
+(luatex.def)             Requested size: 341.43307pt x 441.85648pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--269
+
+ []
+
+[24<./immagini/embryo5_IRF.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+<immagini/ROI1_and_ROI2.pdf, id=529, 614.295pt x 794.97pt>
 File: immagini/ROI1_and_ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI1_and_ROI2.pdf>
-Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 256.
+Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 284.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI1.pdf, id=522, 614.295pt x 794.97pt>
+<immagini/ROI1.pdf, id=530, 614.295pt x 794.97pt>
 File: immagini/ROI1.pdf Graphic file (type pdf)
 <use immagini/ROI1.pdf>
-Package luatex.def Info: immagini/ROI1.pdf  used on input line 266.
+Package luatex.def Info: immagini/ROI1.pdf  used on input line 294.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI2.pdf, id=523, 614.295pt x 794.97pt>
+<immagini/ROI2.pdf, id=531, 614.295pt x 794.97pt>
 File: immagini/ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI2.pdf>
-Package luatex.def Info: immagini/ROI2.pdf  used on input line 271.
+Package luatex.def Info: immagini/ROI2.pdf  used on input line 299.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--290
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
@@ -2008,11 +2025,14 @@ Overfull \hbox (13.79941pt too wide) in paragraph at lines 157--157
 \TU/lmtt/m/n/12 13 / issue - 02 / 029901 / Book - Review - Principles - of - Fluorescence - Spectroscopy -
  []
 
-[24] [25<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>] [26] [27] (./build/TESI_SUPER_UFFICIALE.aux)
+[26] [27] [28] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2026,19 +2046,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53526 strings out of 476553
+ 53538 strings out of 476553
  125161,2848258 words of node,token memory allocated
- 997 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 94 attribute, 77 glue_spec, 49 attribute_list, 2 write, 14 pdf_action nodes
-   avail lists: 2:1496,3:459,4:212,5:316,6:87,7:6163,8:187,9:507,10:16,11:926,12:2
- 74092 multiletter control sequences out of 65536+600000
+ 1009 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 96 attribute, 77 glue_spec, 50 attribute_list, 2 write, 15 pdf_action nodes
+   avail lists: 2:2943,3:498,4:258,5:363,6:86,7:6410,8:187,9:527,10:16,11:927,12:2
+ 74102 multiletter control sequences out of 65536+600000
  53 fonts using 4597239 bytes
- 105i,12n,115p,2213b,1888s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,115p,2599b,1885s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (27 pages, 8464672 bytes).
+Output written on TESI_SUPER_UFFICIALE.pdf (28 pages, 8469189 bytes).
 
-PDF statistics: 763 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 87 named destinations out of 1000 (max. 131072)
+PDF statistics: 772 PDF objects out of 1000 (max. 8388607)
+ 565 compressed objects within 6 object streams
+ 89 named destinations out of 1000 (max. 131072)
  224 words of extra memory for PDF output out of 10000 (max. 100000000)
 
