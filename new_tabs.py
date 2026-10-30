@@ -110,6 +110,19 @@ def _roi_mask(nx, ny, x_center, y_center, width):
     return mask, (x0, x1, y0, y1)
 
 
+def _embryo_valid_mask(image_stack, median_size, threshold_pct):
+    g_image, s_image, fft0 = phf.image_phasor_calc(image_stack)
+    fft0_med, _, _ = phf.phasor_filter_median(
+        fft0.values,
+        g_image.values,
+        s_image.values,
+        size=int(median_size),
+        repeat=2,
+    )
+    threshold = np.nanmax(fft0_med) * float(threshold_pct)
+    return fft0_med >= threshold
+
+
 def _phasor_plot(df, mean, std, irf_g, irf_s, image_df):
 
     image_cloud = hv.Points(
@@ -165,10 +178,14 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         image_stack = _read_stack(file_bytes)
         nx, ny = image_stack.sizes["x"], image_stack.sizes["y"]
         flat_image = image_stack.sum(dim="time").values
-        image_mask = np.ones((nx, ny), dtype=bool)
+        embryo_valid_mask = _embryo_valid_mask(
+            image_stack,
+            median_size,
+            threshold_pct,
+        )
         image_df = phf.phasors_from_region(
             image_stack,
-            roi_mask=image_mask,
+            roi_mask=embryo_valid_mask,
             median_size=int(median_size),
             threshold_pct=float(threshold_pct),
         )
@@ -233,7 +250,8 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         def roi_phasors(x, y):
             x_val = nx / 2 if x is None else x
             y_val = ny / 2 if y is None else y
-            mask, _ = _roi_mask(nx, ny, x_val, y_val, roi_width)
+            roi_mask, _ = _roi_mask(nx, ny, x_val, y_val, roi_width)
+            mask = roi_mask & embryo_valid_mask
             df = phf.phasors_from_region(
                 image_stack,
                 roi_mask=mask,
