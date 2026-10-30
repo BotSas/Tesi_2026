@@ -145,12 +145,15 @@ Come anticipato nella sezione teorica, si dimostra l'esistenza di una corrispond
 Operativamente, questo strumento è stato realizzato mediante una maschera, ovvero una matrice bi-dimensionale con le stesse dimensioni \texttt{x} e \texttt{y} dell'immagine di riferimento.\\
 La sezione di area quadrata della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.\\
 
-Sebbene esista una corrispondenza biunivoca tra dominio temporale e piano dei fasori, si è scelto di non limitare mai la selezione a un singolo punto. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione.\\
+Si è scelto di non limitare mai la selezione a un singolo punto, ma di permettere sempre la selezione di una regione di area non nulla, di cui viene considerata la media. In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione, oltre a ridurre l'errore dovuto al rumore.\\
 % La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
 
 
 % to be continued. Qui devo parlare dell'ordine con cui si è scelto di applicare filtro median e ROI selection. Se nulla cambia, il processo è:
 % immagine -> nuvola su piano fasori con filtro median -> il fasore della nuvola viene salvato solo se il punto dell'immagine a cui corrisponde si trova in un'area della maschera contrassegnata da un valore non nullo
+
+%__________________________________________________________________________
+
 
 \paragraph{Norme per una selezione proficua} 
 
@@ -164,7 +167,7 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsubsection{Funzione che fa tutte cose}
+\subsubsection{\textit{Thresholding} e implementazione}
 
 Nel codice, filtro median, selezione della regione di interesse e \textit{thresholding} vengono implementati nella stessa funzione, in questo ordine.\\
 
@@ -172,9 +175,19 @@ Nel codice, filtro median, selezione della regione di interesse e \textit{thresh
 
 La selezione della regione di interesse avviene dopo il filtro median: il filtro, per come è definito, introduce imprecisioni sui bordi dell'immagine, in quanto è costretto a lavorare con più pixel vuoti in queste regioni. "Rimpicciolire" l'area dell'immagine sfavorisce la proporzione tra pixel di bordo e pixel interni.\\
 
-Il \textit{thresholding} avviene come ultima cosa: texttt{phasorpy.filter.phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, infatti, agise estraendo dagli array $G$ ed $S$ i valori corrispondenti a pixel con un numero di fotoni inferiore a una soglia pre-definita. 
+Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel con numero di fotoni insufficiente, avviene per ultimo, e include tre passaggi fondamentali:
 
-FALSO, DA SISTEMARE
+\begin{itemize}
+    \item Per prima cosa, viene calcolato il valore di soglia, ovvero il numero di fotoni minimo perché un pixel venga utilizzato per il calcolo dei fasori, invece che sostituito da \texttt{NaN}. Ciò avviene moltiplicando la percentuale di soglia al numero totale di fotoni dell'immagine.
+    Il parametro \texttt{skipna} permette di ignorare i pixel completamente vuoti, riducendo i tempi di elaborazione.
+    
+    \item Successivamente viene utilizzata la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati filtrati via nel passaggio precedente.
+    
+    \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas} \cite{The_pandas_development_team_pandas-dev_pandas_Pandas}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
+    Il comando \texttt{.ravel} invece trasforma le matrici bi-dimensionali in un array sequenziale, facendo perdere definitivamente il collegamento tra matrici delle coordinate fasoriali e posizione spaziale dei pixel.\\
+\end{itemize}
+
+% spiegare perché l'ultimo punto è importante per l'ordine in cui si svolgono le cose
 
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
 def phasors_from_region(image, roi_mask, median_size, threshold_pct):

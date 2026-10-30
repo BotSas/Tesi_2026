@@ -848,6 +848,33 @@
       \verb https://zenodo.org/doi/10.5281/zenodo.13862586
       \endverb
     \endentry
+    \entry{The_pandas_development_team_pandas-dev_pandas_Pandas}{software}{}
+      \name{author}{1}{}{%
+        {{hash=a70a34e027eec45fe025cb823facb0d8}{%
+           family={{The pandas development team}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{fullhash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{bibnamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authorbibnamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authornamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authorfullhash}{a70a34e027eec45fe025cb823facb0d8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{pandas-dev/pandas: Pandas}}
+      \verb{doi}
+      \verb 10.5281/zenodo.3509134
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/pandas-dev/pandas
+      \endverb
+      \verb{url}
+      \verb https://github.com/pandas-dev/pandas
+      \endverb
+    \endentry
     \entry{campagnolaSecondharmonicImagingMicroscopy2003}{article}{}
       \name{author}{2}{}{%
         {{hash=0e8b5340b2f6a611335b045cb5ca0e92}{%

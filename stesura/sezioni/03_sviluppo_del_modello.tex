@@ -224,8 +224,6 @@ def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db):
 
 
 
-% DISCLAIMER forse ci ho preso troppo la mano con questa sezione, anche nella parte teorica. Posso eliminare qualcosa se serve
-
 La convoluzione descritta dall'equazione \ref{eq:convoluzione} è molto diversa dalla formula operativa utilizzata per il codice.\\
 
 Per prima cosa, è bene osservare l'utilizzo della \textit{Fast Fourier Transform} (e poi della riconversione attraverso l'anti-trasformata) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale \cite{harrisArrayProgrammingNumPy2020}. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier, molto più efficente \cite[Sez. 9.1]{oppenheim_discrete_2009}.\\

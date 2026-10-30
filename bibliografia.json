@@ -2948,6 +2948,80 @@
       "select": "zotero://select/library/items/3CNVAKH2"
     },
     {
+      "key": "PNVDLXE6",
+      "version": 0,
+      "itemType": "computerProgram",
+      "title": "pandas-dev/pandas: Pandas",
+      "abstractNote": "Pandas is a powerful data structures for data analysis, time series, and statistics.",
+      "date": "2026-10-22",
+      "DOI": "10.5281/ZENODO.3509134",
+      "citationKey": "thepandasdevelopmentteamPandasdevPandasPandas2026",
+      "url": "https://zenodo.org/doi/10.5281/zenodo.3509134",
+      "accessDate": "2026-10-30T14:37:51Z",
+      "shortTitle": "pandas-dev/pandas",
+      "libraryCatalog": "DOI.org (Datacite)",
+      "rights": "BSD 3-Clause \"New\" or \"Revised\" License",
+      "versionNumber": "v3.1.0",
+      "company": "Zenodo",
+      "creators": [
+        {
+          "firstName": "",
+          "lastName": "The pandas development team",
+          "creatorType": "programmer"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "alignment",
+          "type": 1
+        },
+        {
+          "tag": "data analysis",
+          "type": 1
+        },
+        {
+          "tag": "data science",
+          "type": 1
+        },
+        {
+          "tag": "flexible",
+          "type": 1
+        },
+        {
+          "tag": "pandas",
+          "type": 1
+        },
+        {
+          "tag": "python",
+          "type": 1
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-10-30T14:37:51Z",
+      "dateModified": "2026-10-30T14:37:51Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/PNVDLXE6",
+      "itemID": 226,
+      "attachments": [],
+      "notes": [
+        {
+          "key": "JPTANT2A",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "PNVDLXE6",
+          "note": "<h2>Other</h2>\nIf you use this software, please cite it as below.",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-10-30T14:37:51Z",
+          "dateModified": "2026-10-30T14:37:51Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/JPTANT2A"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "PNVDLXE6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/PNVDLXE6"
+    },
+    {
       "key": "A7MKWRBR",
       "version": 0,
       "itemType": "journalArticle",
