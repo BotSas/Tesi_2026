@@ -253,10 +253,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 \end{itemize}  % sistemare l'italiano? boh
 
 
-
-
-
-%______________________________________________________-
+% inserire immagine piano fasori ROI immagine 1
 
 
 
@@ -269,6 +266,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 È interessante notare come la nuvola di punti sul piano dei fasori sia distribuita in modo isotropo. Questo conferma la presenza di un elevato numero di processi di fluorescenza, piuttosto che di una prevalenza di soli due fluorofori. Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.\\
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Immagine 2 - Decadimenti multi-esponenziali}
@@ -316,28 +314,27 @@ La forma allungata della nuvola di dati deconvoluta può essere ricondotta al ca
 Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
-Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione. Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
+Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.\\
 
+% inserire immagine rosso verde giallo
+% caption: Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle acquisizioni totale, e con filtri rosso e verde. Filtro median già applicato. Per le acquisizioni rossa e verde, sono state calcolate media e deviazione standard, quest'ultima indicata sul grafico mediante barre d'errore.
 
-% tuttavia, abbiamo le prese dati rossa e verde, quindi possiamo fare la proiezione sulla retta!!
 
 % parlare anche dell'shg per il verde
 
-% Queste sono le uniche immagini non placeholder di tutta la tesi
-\begin{figure}[h!]
+Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
+
+\begin{figure}[h!] % immagini non placeholder
     \centering
     
-    % Prima riga: Immagine totale
     \begin{minipage}{\textwidth}
         \centering
         \includegraphics[width=0.49\linewidth]{immagini/ROI1_and_ROI2.pdf} 
         \label{fig:total}
     \end{minipage}
     
-    % Regola questo valore per avvicinare o allontanare le righe
     \vspace{-3cm} 
     
-    % Seconda riga: Immagini affiancate
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/ROI1.pdf}
@@ -354,6 +351,36 @@ Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano
 \end{figure}
 
 
+Per prima cosa, vengono isolate le due regioni scelte mediante una maschera quadrata di lato $=8$ \textit{pixel}. L'ampiezza è stata ridotta rispetto all'immagine 1 per meglio adattarsi alle dimensioni delle strutture visibili soprattutto nell'acquisizione con filtro verde.\\
+I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul piano dei fasori mediante la funzione \texttt{phasors\_from\_region}, analizzata in precedenza \ref{sec:thresholding_e_implementazione}.
+
+% inserire immagine fasori ROI + nuvole rossa verde gialla sullo sfondo
+% nella caption: repeat = 2, incertezze trattate in seguito, viene mostrata la posizione in relazione alle nuvole totali (sullo sfondo chiare).
+
+In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore "verde" e "rossa", nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.
+
+
+\begin{table}[h!]
+
+    \centering
+    \label{tab:rapporti_concentrazione_ROI}
+    \setlength{\tabcolsep}{8pt}
+
+    \begin{tabular}{lcc}
+
+        \hline
+         & ROI 1 (190, 219) & ROI 2 (168, 287) \\
+        \hline
+        \textbf{Rosso} & $0.943120 \pm 0.038484$  & $0.551258 \pm 0.117170$ \\
+        \textbf{Verde} & $0.056880 \pm 0.038484$ & $0.448742 \pm 0.117170$ \\
+        \hline
+
+    \end{tabular}
+
+\end{table}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -363,18 +390,16 @@ Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze util
 
 
 
-\paragraph{Teoria / procedimento}
-
-
+\paragraph{Errore statistico sui fasori}
 
 Dalle equazioni \ref{eq:phasor_additivity}, è possibile
 
 Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
-
-%\subsubsection{Calcolo delle incertezze con simulazione Monte Carlo}
+\paragraph{Propagazione delle incertezze con simulazione Monte Carlo}
 
 
 
