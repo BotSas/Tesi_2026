@@ -64,7 +64,13 @@ Quando si calcola la trasformata di Fourier standard su un campione di \textit{N
 
 
 
-\paragraph{Generazione del rumore}      % AGGIUNGERE CODICE FUNZIONE MAKE_NOISE? BOOOOH (dovrei anche giustificare la scelta del rumore gaussiano vs poissoniano, che ancora non ho capito)
+\paragraph{Generazione del rumore}      % AGGIUNGERE CODICE FUNZIONE MAKE_NOISE? BOOOOH (dovrei anche giustificare la scelta del rumore gaussiano vs poissoniano)
+
+% in pratica, il rumore gaussiano è tendenzialmente rumore elettronico, dato dalla strumentazione, mentre il rumore dato dalla presenza di pochi fotoni è detto "shot noise" ed è un rumore poissoniano.
+
+% noi qui generiamo solo gaussiano perché: 
+%1. è solo un esempio che serve a sviluppare le funzioni giuste,
+%2. poissoniana -> normale per abbastanza fotoni (e qui considero abbastanza fotoni perchè è un esempio)
 
 Per aggiungere realismo alla simulazione, è stata sviluppata una funzione che accetta in input un array contenente il numero di eventi per ogni bin, e aggiunge a ogni elemento un valore secondo una distribuzione di probabilità gaussiana. Il risultato è un decadimento esponenziale "sporcato" da rumore gaussiano:\\
 

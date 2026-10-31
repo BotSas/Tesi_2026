@@ -1,14 +1,15 @@
 # Fdb version 4
-["biber build/TESI_SUPER_UFFICIALE"] 0 "build/TESI_SUPER_UFFICIALE.bcf" "build/TESI_SUPER_UFFICIALE.bbl" "build/TESI_SUPER_UFFICIALE" 1793372071.49038 -1
+["biber build/TESI_SUPER_UFFICIALE"] 1793403628.22504 "build/TESI_SUPER_UFFICIALE.bcf" "build/TESI_SUPER_UFFICIALE.bbl" "build/TESI_SUPER_UFFICIALE" 1793405708.79933 0
   "bibliografia.bib" 1793371259.02649 63575 a2556ee0109a73fed9cd34fc713689a0 ""
-  "build/TESI_SUPER_UFFICIALE.bcf" 1793372070.74347 110485 6f9dde3de908654ad38fdafe59404322 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.bcf" 1793405708.39107 110766 54240cf11abc5b81ee1f9cb648e43df2 "lualatex"
   (generated)
   "build/TESI_SUPER_UFFICIALE.bbl"
   "build/TESI_SUPER_UFFICIALE.blg"
   (rewritten before read)
-["lualatex"] 1793372060.23118 "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" "build/TESI_SUPER_UFFICIALE.pdf" "TESI_SUPER_UFFICIALE" 1793372071.49106 0
+["lualatex"] 1793405702.8368 "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" "build/TESI_SUPER_UFFICIALE.pdf" "TESI_SUPER_UFFICIALE" 1793405708.80011 0
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-italic.luc" 1791228139.63497 82945 b07ec8c404d1ae3fa7f70a0eccf38684 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc" 1791227084.0851 81754 23a65669d934f8866349133cf134a695 ""
+  "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc" 1792339927.27597 81422 6362f184dd28c4821d90b7214ec9f0e2 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-bold.luc" 1791228139.60097 82058 5a56f04791722240dc3c5af064ae9257 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc" 1791496635.42738 136473 5b9cae8284919413f715c1372f2710a1 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1790962026.64044 128281 c6f80f39b6b4f903e4339f6819ec2ecc ""
@@ -24,7 +25,7 @@
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1791229229.41477 128128 ca20734c6458fb2502cd84305b602bbe ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc" 1791305446.78487 120229 8ecdb2697a95d3f30800a439e275581e ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790959223.68113 406489 857bff30402168e402a5b5f6e69efe67 ""
-  "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" 1792941069.09974 4764 38d3c820166d01aa999e7ef5f26f17bf ""
+  "/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex" 1793391306.39153 4792 9efa50879a4e529d98bb1aaa6712c3df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -48,6 +49,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1248133631 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -377,13 +379,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790957563.51629 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/tex/generic/config/language.dat" 1790957568.40263 5334 13a0c5fd86f5ef4d791286d0152084d1 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1790957727 12240957 c778e58e1f8e0b3467546f8fece02f0c ""
-  "TESI_SUPER_UFFICIALE.tex" 1792941069.09974 4764 38d3c820166d01aa999e7ef5f26f17bf ""
+  "TESI_SUPER_UFFICIALE.tex" 1793391306.39153 4792 9efa50879a4e529d98bb1aaa6712c3df ""
   "build/TESI_SUPER_UFFICIALE-frn.pdf" 1792359245.61199 26978 fcadc215cdc8f48eb43938a3e0199eaa ""
-  "build/TESI_SUPER_UFFICIALE.aux" 1793372070.70147 20459 06d71c28bc1aeaac1f8809cd03a41f7f "lualatex"
-  "build/TESI_SUPER_UFFICIALE.bbl" 1793371335.36203 51226 0ea81e0eae09149d1c8e8a0d4b0c7fad "biber build/TESI_SUPER_UFFICIALE"
-  "build/TESI_SUPER_UFFICIALE.out" 1793372070.72847 6195 a617df6eabd34897417fdae425088e9a "lualatex"
-  "build/TESI_SUPER_UFFICIALE.run.xml" 1793372070.74623 2495 2f4dfca32ffcb8e32a14fb5598daa080 "lualatex"
-  "build/TESI_SUPER_UFFICIALE.toc" 1793372070.74623 3893 4aba6846a4cd15056e1730c1383f6a1c "lualatex"
+  "build/TESI_SUPER_UFFICIALE.aux" 1793405708.36884 20796 1de78e9092b6d8d18fa00e5edbbcf05b "lualatex"
+  "build/TESI_SUPER_UFFICIALE.bbl" 1793403629.1402 51226 a767624b61e7e56c39cef1d1f38f8313 "biber build/TESI_SUPER_UFFICIALE"
+  "build/TESI_SUPER_UFFICIALE.out" 1793405708.38307 6195 a617df6eabd34897417fdae425088e9a "lualatex"
+  "build/TESI_SUPER_UFFICIALE.run.xml" 1793405708.39351 2495 2f4dfca32ffcb8e32a14fb5598daa080 "lualatex"
+  "build/TESI_SUPER_UFFICIALE.toc" 1793405708.39351 3881 5ba9eb30f84df4ab1703cceb1c48a522 "lualatex"
   "build/_minted-TESI_SUPER_UFFICIALE/6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex" 1791632324.06898 1000 d8ac3beb44a131f3e62bd29c13f0496d ""
   "build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex" 1791630524.37796 1473 f32283e5b4a42ef52efd73b3776bf74e ""
   "build/_minted-TESI_SUPER_UFFICIALE/DBB95B9A4D1DB47A3B762FD1C137E9311350B347DE913863EA7F5725E6FE860F.pygtex" 1793317209.40644 4006 4d8f9c012b0947fbfbb121206962e8dd ""
@@ -404,8 +406,8 @@
   "immagini/triple_exp_decay.png" 1791232525.5033 51985 1487664e904b97062afbde4c8e0b3404 ""
   "sezioni/01_introduzione.tex" 1791145235.02027 247 668a9379f4ce90db42f225b2eaab7107 ""
   "sezioni/02_fondamenti_teorici.tex" 1793309913.42336 19735 bf4b90b4333dc7c52cd4c9f494524d38 ""
-  "sezioni/03_sviluppo_del_modello.tex" 1793368675.95052 17034 8a572b1259159197983a7cd3dcf51e6a ""
-  "sezioni/04_test_su_immagini.tex" 1793372068.72446 23496 505fb51b0a71c83387407804d9d7e351 ""
+  "sezioni/03_sviluppo_del_modello.tex" 1793397158.77458 17432 ed8f795fd6daf797114552c49bd86f10 ""
+  "sezioni/04_test_su_immagini.tex" 1793405702.58173 24198 9a8087753534388a7200cd9d639966d9 ""
   "sezioni/05_conclusioni.tex" 1791729483.45708 45 246e285898a2e41e31deaf0131a230d9 ""
   (generated)
   "build/TESI_SUPER_UFFICIALE-frn.tex"

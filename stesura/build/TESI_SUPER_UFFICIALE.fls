@@ -426,6 +426,7 @@ INPUT ./immagini/embryo3_IRF.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/DBB95B9A4D1DB47A3B762FD1C137E9311350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/ROI1_and_ROI2.pdf
@@ -449,4 +450,5 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

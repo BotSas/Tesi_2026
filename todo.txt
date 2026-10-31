@@ -7,6 +7,7 @@ TODO A BREVE:
 - sistemare panel + selez bidirezionale
 - rivedere inizio parte teorica IRF perché potrebbero esserci ripetizioni
 - forse aggiungere spiegazione shoelace formula
+- caccia agli % per riscrivere le cose scritte di merda 
 
 OBIETTIVI CHE DEVO ANCORA ELABORARE:
 
