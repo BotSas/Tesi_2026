@@ -57,7 +57,7 @@ Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata
 Il primo passaggio dell'analisi consiste nell'ottenimento del fasore relativo alla IRF mediante il file di calibrazione, e nella successiva deconvoluzione di quest'ultimo con l'immagine principale.\\
 
 Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023a}.\\
-Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023a}.\\
+Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve avere un tempo di vita vicino o inferiore a quello dei fluorofori nel campione che si intende studiare \cite{gottliebFLUTEPythonGUI2023a}.\\
 
 % questa roba non serve qui ma ne parlo per la seconda immagine
 
@@ -269,14 +269,16 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Immagine 2 - Decadimenti multi-esponenziali}
+\subsection{Immagine 2 - Decadimenti multi-esponenziali} 
+
+% citare freq di eccitazione 1100 nm, utile per introdurre il fatto che il filtro verde di fatto seleziona le emissioni di SHG invece che fluorescenze
 
 La seconda immagine riporta materiale sufficiente per portare a termine un'analisi più approfondita.\\ % schifo
 
 Nonostante il campione non sia stato dichiaratamente trattato con due fluorofori distinti, la nuvola totale di forma allungata sul piano dei fasori è un primo indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
 La presenza di acquisizioni con filtri di emissioni colorati, corredate all'immagine principale, permette di isolare due popolazioni diverse di molecole emettenti autofluorescenza in due lunghezze d'onda diverse.\\
 
-Verrà mostrato in una sezione successiva che la rappresentazione dei decadimenti di ogni pixel sul piano dei fasori presenta una forma allungata, indizio  che i decadimenti possano essere trattati come bi-esponenziali.\\
+Verrà mostrato in una sezione successiva che la rappresentazione dei decadimenti di ogni pixel sul piano dei fasori presenta una forma allungata, indizio che i decadimenti possano essere trattati come bi-esponenziali.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -357,6 +359,23 @@ I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul pian
 % inserire immagine fasori ROI + nuvole rossa verde gialla sullo sfondo
 % nella caption: repeat = 2, incertezze trattate in seguito, viene mostrata la posizione in relazione alle nuvole totali (sullo sfondo chiare).
 
+\paragraph{Osservazioni}
+
+Nella figura \ref{fig:fasori_rosso_verde_giallo} è possibile osservare che i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
+Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\lambda_{ecc}= 1100\;\text{nm}$) sia esattamente il doppio della lunghezza d'onda filtrata ($\lambda_{verde}= 550\;\text{nm}$).\\
+
+Inoltre, questo spiegherebbe l'utilizzo di amido per la calibrazione.\\
+%schifo, elaborare
+
+La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro delle nuvola dei fasori.\\
+Al contrario, è probabile che l'acquisizione con filtro rosso catturi un singolo processo di fluorescenza, o più fenomeni a tempo di vita simile. Ciò si evince dalla forma isotropa della distribuzione di fasori.\\
+
+Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:studio_delle_incertezze}).\\ % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
+
+%___________________________________________________________________
+
+\paragraph{Risultati}
+
 In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore "verde" e "rossa", nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.
 
 
@@ -392,7 +411,10 @@ Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze util
 
 \paragraph{Errore statistico sui fasori}
 
-Dalle equazioni \ref{eq:phasor_additivity}, è possibile
+%Dalle equazioni \ref{eq:phasor_additivity}, è possibile
+% chissà che cazzo stavo iniziando a dire qui
+
+
 
 Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
 
