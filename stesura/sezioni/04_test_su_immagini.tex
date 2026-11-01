@@ -181,6 +181,7 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
 
 
 \subsubsection{\textit{Thresholding} e implementazione}
+\label{sec:thresholding_e_implementazione}
 
 Nel codice, filtro median, selezione della regione di interesse e \textit{thresholding} vengono implementati nella stessa funzione, in questo ordine.\\
 
@@ -311,6 +312,7 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Confronto tra il rapporto di fluorofori in regioni distinte}
+\label{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}
 
 La forma allungata della nuvola di dati deconvoluta può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentazione diverso nelle varie regioni del campione.\\
 Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
@@ -341,13 +343,16 @@ Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \
         \centering
         \includegraphics[width=\linewidth]{immagini/ROI1.pdf}
         \label{fig:red}
+        \vspace{-4cm}
+        \caption*{ROI 1, coordinate: $(G, S)=(190, 219)$}
     \end{minipage}\hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/ROI2.pdf}
         \label{fig:green}
+        \vspace{-4cm}
+        \caption*{ROI 2, coordinate: $(G, S)=(232, 271)$}
     \end{minipage}
-    \vspace{-3cm} 
     \caption{Nella prima immagine in alto sono evidenziate le due ROI scelte per l'analisi, il quadrato ciano rappresenta la prima area, mentre quella verde la seconda. Nelle immagini sottostani vengono mostrate rispettivamente la prima e la seconda area sovrapposte alle immagini con filtro rosso e verde. Si noti la scelta di regioni con adeguato numero di eventi di decadimento.}
     \label{fig:tutte_immagini}
 \end{figure}
@@ -364,8 +369,9 @@ I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul pian
 Nella figura \ref{fig:fasori_rosso_verde_giallo} è possibile osservare che i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
 Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\lambda_{ecc}= 1100\;\text{nm}$) sia esattamente il doppio della lunghezza d'onda filtrata ($\lambda_{verde}= 550\;\text{nm}$).\\
 
-Inoltre, questo spiegherebbe l'utilizzo di amido per la calibrazione.\\
-%schifo, elaborare
+% Inoltre, questo spiegherebbe l'utilizzo di amido per la calibrazione.\\
+% %schifo, elaborare
+% già scritto prima non serve ripetere
 
 La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro delle nuvola dei fasori.\\
 Al contrario, è probabile che l'acquisizione con filtro rosso catturi un singolo processo di fluorescenza, o più fenomeni a tempo di vita simile. Ciò si evince dalla forma isotropa della distribuzione di fasori.\\
@@ -376,7 +382,7 @@ Nonostante questa differenza, è stata considerata media e deviazione standard d
 
 \paragraph{Risultati}
 
-In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore "verde" e "rossa", nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.
+In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore "verde" e "rossa", nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.\\
 
 
 \begin{table}[h!]
@@ -414,9 +420,84 @@ Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze util
 %Dalle equazioni \ref{eq:phasor_additivity}, è possibile
 % chissà che cazzo stavo iniziando a dire qui
 
+Come menzionato nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}, i fasori corrispondenti alle acquisizioni con filtro verde sono stati considerati come conseguenza del decadimento di una sola specie fluorofora, nonostante siano probabilmente il risultato di una combinazione di \textit{SHG} e decadimento di fluorescenza.\\
+
+È dunque opportuno  utilizzare la deviazione standard al posto dell'errore standard della media, in quanto quest'ultimo presuppone che tutti gli $N$ pixel della nuvola siano acquisizioni indipendenti della stessa misura. In realtà, esse non sono indipendenti, a causa dell'applicazione del filtro median che rende spazialmente correlati i pixel adiacenti, e sondano almeno due processi radiativi.\\
+
+La presenza di due specie fluorofore che emettono nel verde porta i fasori associati a distribuirsi sulla corda che collega i fasori dei due processi separati, assumendo una forma allungata/ellittica.\\
+Si è dunque reso necessario il calcolo della matrice di covarianza, per studiare al meglio la distribuzione dei fasori ma soprattutto per propagare le incertezze correttamente.\\
+%\cite{hairMultivariateDataAnalysis2019a}
+
+Per fare ciò è stato fatto uso di una funzione che calcola media, deviazione standard e covarianza della nuvola di fasori; inoltre essa diagonalizza la matrice di covarianza e ne restituisce autovettori e autovalori.\\ % clunky
 
 
-Osservando la forma ellittica soprattutto dei fasori ottenuti con il filtro verde, appare evidente che non sia possibile trascurare la correlazione tra variabili G ed S.\\
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
+def cloud_statistics(G, S): 
+
+    '''
+    Mean, average, covarance matrix and diagonalisation of ph. cloud
+    '''
+    values = np.column_stack((np.asarray(G, dtype = float), 
+                            np.asarray(S, dtype = float)))
+    values = values[np.all(np.isfinite(values), axis = 1)]
+
+    if len(values) < 2:  # error prevention
+        raise ValueError("Not enough events")
+
+    # NUMPY COVARIANCE
+    mean = np.mean(values, axis = 0) 
+    covariance = np.cov(values, rowvar = False, ddof = 1)
+    std = np.sqrt(np.diag(covariance))
+
+    # DIAGONALISATION 
+    eigenvalues, eigenvectors = np.linalg.eigh(covariance)  
+    eigenvalues = eigenvalues[::-1]
+    eigenvectors = eigenvectors[:, ::-1]
+
+    return mean, covariance, std, eigenvalues, eigenvectors, len(values)
+\end{minted}
+
+Vengono di seguito spiegati i vari 
+
+
+\begin{align*}
+    \Sigma_{\text{red}} &= 10^{-4} \begin{bmatrix} 
+        3.053 & -0.255 \\ 
+        -0.255 & 1.295 
+    \end{bmatrix} &
+    \Sigma_{\text{green}} &= 10^{-3} \begin{bmatrix} 
+        4.326 & -3.811 \\ 
+        -3.811 & 3.872 
+    \end{bmatrix} \\[0.8em]
+    \Sigma_{\text{ROI 1}} &= 10^{-5} \begin{bmatrix} 
+        8.513 & -5.902 \\ 
+        -5.902 & 6.812 
+    \end{bmatrix} &
+    \Sigma_{\text{ROI 2}} &= 10^{-4} \begin{bmatrix} 
+        5.537 & -5.727 \\ 
+        -5.727 & 10.525 
+    \end{bmatrix}
+\end{align*}
+
+
+\begin{table}[htbp]
+    \centering
+    \setlength{\tabcolsep}{5pt} 
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{l c c c c}
+        \toprule
+        \textbf{Dataset} & \textbf{Media $(G, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
+        \midrule
+        \textbf{Red} & $(0.6324,\; 0.4572)$ & $0.0176$ & $0.0112$ & $171.90^\circ$ \\
+        \textbf{Green} & $(0.9533,\; 0.0617)$ & $0.0890$ & $0.0168$ & $136.70^\circ$ \\
+        \textbf{ROI 1} & $(0.6523,\; 0.4361)$ & $0.0117$ & $0.0041$ & $139.10^\circ$ \\
+        \textbf{ROI 2} & $(0.7716,\; 0.2758)$ & $0.0378$ & $0.0134$ & $123.23^\circ$ \\
+        \bottomrule
+    \end{tabular}
+
+    \label{tab:pca_summary}
+\end{table}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5

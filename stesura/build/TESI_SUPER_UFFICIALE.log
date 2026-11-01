@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  31 OCT 2026 14:06
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  1 NOV 2026 23:53
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1959,80 +1959,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--163
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
 (./build/_minted-TESI_SUPER_UFFICIALE/DBB95B9A4D1DB47A3B762FD1C137E9311350B347DE913863EA7F5725E6FE860F.pygtex) [22]
-Underfull \vbox (badness 10000) detected at line 235
+Underfull \vbox (badness 10000) detected at line 236
  []
 
 
-Underfull \vbox (badness 10000) detected at line 235
+Underfull \vbox (badness 10000) detected at line 236
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
 <immagini/embryo5_IRF.pdf, id=468, 614.295pt x 794.97pt>
 File: immagini/embryo5_IRF.pdf Graphic file (type pdf)
 <use immagini/embryo5_IRF.pdf>
-Package luatex.def Info: immagini/embryo5_IRF.pdf  used on input line 299.
+Package luatex.def Info: immagini/embryo5_IRF.pdf  used on input line 300.
 (luatex.def)             Requested size: 341.43307pt x 441.85648pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--318
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
 
  []
 
@@ -2040,84 +2040,104 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--318
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 <immagini/ROI1_and_ROI2.pdf, id=477, 614.295pt x 794.97pt>
 File: immagini/ROI1_and_ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI1_and_ROI2.pdf>
-Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 334.
+Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 336.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
 <immagini/ROI1.pdf, id=478, 614.295pt x 794.97pt>
 File: immagini/ROI1.pdf Graphic file (type pdf)
 <use immagini/ROI1.pdf>
-Package luatex.def Info: immagini/ROI1.pdf  used on input line 342.
+Package luatex.def Info: immagini/ROI1.pdf  used on input line 344.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
 <immagini/ROI2.pdf, id=479, 614.295pt x 794.97pt>
 File: immagini/ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI2.pdf>
-Package luatex.def Info: immagini/ROI2.pdf  used on input line 347.
+Package luatex.def Info: immagini/ROI2.pdf  used on input line 351.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `sec:thresholding_e_implementazione' on page 26 undefined on input line 357.
+LaTeX Warning: Reference `fig:fasori_rosso_verde_giallo' on page 26 undefined on input line 369.
 
 
-LaTeX Warning: Reference `fig:fasori_rosso_verde_giallo' on page 26 undefined on input line 364.
-
-
-Overfull \hbox (1.82281pt too wide) in paragraph at lines 364--366
+Overfull \hbox (1.82281pt too wide) in paragraph at lines 369--371
 \TU/lmr/m/n/12 Quest’ipotesi è av-va-lo-ra-ta dal fat-to che la lun-ghez-za d’on-da di ec-ci-ta-zio-ne ($\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = 1100 []$\TU/lmr/m/n/12 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--366
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 
  []
 
 [26<./immagini/embryo5_IRF.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--372
+Underfull \vbox (badness 5862) has occurred while \output is active []
 
- []
+ [27<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
 
-[27<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
-
-LaTeX Warning: Reference `sec:studio_delle_incertezze' on page 28 undefined on input line 373.
+LaTeX Warning: Reference `sec:studio_delle_incertezze' on page 28 undefined on input line 379.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
-) (./sezioni/05_conclusioni.tex)
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--430
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
+
+ []
+
+
+\openout6 = TESI_SUPER_UFFICIALE.pyg
+(./build/_minted-TESI_SUPER_UFFICIALE/A8B3433E032D8639B5C060ADF0F6528C1350B347DE913863EA7F5725E6FE860F.pygtex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]) (./sezioni/05_conclusioni.tex)
 Overfull \hbox (13.79941pt too wide) in paragraph at lines 158--158
 \TU/lmtt/m/n/12 13 / issue - 02 / 029901 / Book - Review - Principles - of - Fluorescence - Spectroscopy -
  []
 
-[28] [29] [30] (./build/TESI_SUPER_UFFICIALE.aux)
+[30] [31] [32] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2138,19 +2158,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53556 strings out of 476553
+ 53580 strings out of 476553
  125161,2848258 words of node,token memory allocated
- 1021 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 98 attribute, 77 glue_spec, 51 attribute_list, 2 write, 16 pdf_action nodes
-   avail lists: 2:3759,3:492,4:264,5:375,6:90,7:6477,8:187,9:845,10:16,11:1021,12:2
- 74115 multiletter control sequences out of 65536+600000
+ 987 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 97 attribute, 77 glue_spec, 50 attribute_list, 2 write, 16 pdf_action nodes
+   avail lists: 2:3767,3:469,4:264,5:375,6:90,7:6480,8:187,9:846,10:16,11:1021,12:2
+ 74128 multiletter control sequences out of 65536+600000
  54 fonts using 4723327 bytes
- 105i,12n,115p,2599b,1898s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,14n,115p,2599b,1891s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (30 pages, 8486881 bytes).
+Output written on TESI_SUPER_UFFICIALE.pdf (32 pages, 8496738 bytes).
 
-PDF statistics: 804 PDF objects out of 1000 (max. 8388607)
- 594 compressed objects within 6 object streams
- 94 named destinations out of 1000 (max. 131072)
+PDF statistics: 819 PDF objects out of 1000 (max. 8388607)
+ 606 compressed objects within 7 object streams
+ 97 named destinations out of 1000 (max. 131072)
  232 words of extra memory for PDF output out of 10000 (max. 100000000)
 

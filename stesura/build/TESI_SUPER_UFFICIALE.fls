@@ -435,6 +435,9 @@ INPUT ./immagini/ROI1.pdf
 INPUT ./immagini/ROI1.pdf
 INPUT ./immagini/ROI2.pdf
 INPUT ./immagini/ROI2.pdf
+OUTPUT build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/A8B3433E032D8639B5C060ADF0F6528C1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./sezioni/05_conclusioni.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.aux

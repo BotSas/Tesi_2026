@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{cloud\PYGZus{}statistics}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,} \PYG{n}{S}\PYG{p}{):}
+
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Mean, average, covarance matrix and diagonalisation of ph. cloud}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{n}{values} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{column\PYGZus{}stack}\PYG{p}{((}\PYG{n}{np}\PYG{o}{.}\PYG{n}{asarray}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,} \PYG{n}{dtype} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{),}
+                            \PYG{n}{np}\PYG{o}{.}\PYG{n}{asarray}\PYG{p}{(}\PYG{n}{S}\PYG{p}{,} \PYG{n}{dtype} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{)))}
+    \PYG{n}{values} \PYG{o}{=} \PYG{n}{values}\PYG{p}{[}\PYG{n}{np}\PYG{o}{.}\PYG{n}{all}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{isfinite}\PYG{p}{(}\PYG{n}{values}\PYG{p}{),} \PYG{n}{axis} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{)]}
+
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{values}\PYG{p}{)} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{2}\PYG{p}{:}  \PYG{c+c1}{\PYGZsh{} error prevention}
+        \PYG{k}{raise} \PYG{n+ne}{ValueError}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Not enough events\PYGZdq{}}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} NUMPY COVARIANCE}
+    \PYG{n}{mean} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{values}\PYG{p}{,} \PYG{n}{axis} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{covariance} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cov}\PYG{p}{(}\PYG{n}{values}\PYG{p}{,} \PYG{n}{rowvar} \PYG{o}{=} \PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{ddof} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{)}
+    \PYG{n}{std} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{diag}\PYG{p}{(}\PYG{n}{covariance}\PYG{p}{))}
+
+    \PYG{c+c1}{\PYGZsh{} DIAGONALISATION}
+    \PYG{n}{eigenvalues}\PYG{p}{,} \PYG{n}{eigenvectors} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linalg}\PYG{o}{.}\PYG{n}{eigh}\PYG{p}{(}\PYG{n}{covariance}\PYG{p}{)}
+    \PYG{n}{eigenvalues} \PYG{o}{=} \PYG{n}{eigenvalues}\PYG{p}{[::}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{n}{eigenvectors} \PYG{o}{=} \PYG{n}{eigenvectors}\PYG{p}{[:,} \PYG{p}{::}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+    \PYG{k}{return} \PYG{n}{mean}\PYG{p}{,} \PYG{n}{covariance}\PYG{p}{,} \PYG{n}{std}\PYG{p}{,} \PYG{n}{eigenvalues}\PYG{p}{,} \PYG{n}{eigenvectors}\PYG{p}{,} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{values}\PYG{p}{)}
+\end{Verbatim}
