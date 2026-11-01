@@ -457,7 +457,9 @@ def cloud_statistics(G, S):
     return mean, covariance, std, eigenvalues, eigenvectors, len(values)
 \end{minted}
 
-Vengono di seguito spiegati i vari 
+ Le prime righe di codice si limitano a trasformare i \textit{dataframe} di $G$ ed $S$ in array, unirli in un'unica matrice a due colonne, ed eliminare i fasori con una o due coordinate \texttt{NaN}.\\
+ Dopo aver calcolato media, matrice di covarianza e deviazione standard, viene effettuata la diagonalizzazione mediante la funzione \texttt{numpy.linalg.eigh} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020}.\\
+
 
 
 \begin{align*}
