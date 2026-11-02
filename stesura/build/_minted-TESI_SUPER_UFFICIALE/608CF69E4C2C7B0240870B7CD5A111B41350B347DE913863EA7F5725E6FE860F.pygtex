@@ -39,9 +39,9 @@
     \PYG{o}{...}
 
     \PYG{k}{return} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}
-        \PYG{l+s+s2}{\PYGZdq{}G\PYGZdq{}}\PYG{p}{:} \PYG{n}{G\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
-        \PYG{l+s+s2}{\PYGZdq{}S\PYGZdq{}}\PYG{p}{:} \PYG{n}{S\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
-        \PYG{l+s+s2}{\PYGZdq{}intensity\PYGZdq{}}\PYG{p}{:} \PYG{n}{fft0\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{()}
+        \PYG{l+s+s2}{\PYGZdq{}G\PYGZdq{}}\PYG{p}{:} \PYG{n}{G\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
+        \PYG{l+s+s2}{\PYGZdq{}S\PYGZdq{}}\PYG{p}{:} \PYG{n}{S\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{(),}
+        \PYG{l+s+s2}{\PYGZdq{}intensity\PYGZdq{}}\PYG{p}{:} \PYG{n}{fft0\PYGZus{}thresh}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{valid\PYGZus{}mask}\PYG{p}{,} \PYG{n}{drop} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{values}\PYG{o}{.}\PYG{n}{ravel}\PYG{p}{()}
     \PYG{p}{\PYGZcb{})}
 
 \end{Verbatim}

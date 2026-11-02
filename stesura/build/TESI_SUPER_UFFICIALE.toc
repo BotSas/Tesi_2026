@@ -17,14 +17,14 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Rappresentazione di decadimenti sul piano dei fasori}{11}{subsubsection.3.1.1}%
 \contentsline {paragraph}{Generazione del rumore}{12}{equation.3.8}%
 \contentsline {subsubsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{13}{subsubsection.3.1.2}%
-\contentsline {paragraph}{Verifica del rapporto di concentrazione}{14}{figure.caption.2}%
+\contentsline {paragraph}{Verifica del rapporto di concentrazione}{13}{figure.caption.2}%
 \contentsline {subsection}{\numberline {3.2}Generazione e analisi della IRF}{14}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Generazione del segnale}{14}{subsubsection.3.2.1}%
 \contentsline {paragraph}{Osservazioni aggiuntive}{16}{figure.caption.4}%
 \contentsline {subsubsection}{\numberline {3.2.2}Deconvoluzione}{16}{subsubsection.3.2.2}%
 \contentsline {paragraph}{Decadimento a doppio esponenziale}{17}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Test su immagini}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{19}{subsection.4.1}%
+\contentsline {section}{\numberline {4}Test su immagini}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{18}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{19}{subsubsection.4.1.1}%
 \contentsline {paragraph}{Teoria}{19}{subsubsection.4.1.1}%
 \contentsline {paragraph}{Pratica}{19}{subsubsection.4.1.1}%
@@ -34,11 +34,11 @@
 \contentsline {paragraph}{Criteri di selezione}{22}{subsubsection.4.1.3}%
 \contentsline {subsubsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{22}{subsubsection.4.1.4}%
 \contentsline {subsubsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{24}{subsubsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{25}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{24}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{25}{subsubsection.4.2.1}%
 \contentsline {paragraph}{Teoria - SHG}{25}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{26}{subsubsection.4.2.2}%
-\contentsline {paragraph}{Osservazioni}{27}{figure.caption.11}%
+\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{25}{subsubsection.4.2.2}%
+\contentsline {paragraph}{Osservazioni}{26}{figure.caption.11}%
 \contentsline {paragraph}{Risultati}{28}{figure.caption.11}%
 \contentsline {subsubsection}{\numberline {4.2.3}Studio delle incertezze}{28}{subsubsection.4.2.3}%
 \contentsline {paragraph}{Errore statistico sui fasori}{28}{subsubsection.4.2.3}%

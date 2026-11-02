@@ -1064,6 +1064,68 @@
       "select": "zotero://select/library/items/9Z35P5Q6"
     },
     {
+      "key": "KVBNJLQN",
+      "version": 0,
+      "itemType": "blogPost",
+      "title": "Covariance Matrix Explained With Pictures",
+      "abstractNote": "The Kalman Filter covariance matrix is easy to understand if you represent it as an ellipse. Click here if you want to learn more!",
+      "date": "2022-09-11T20:41:50+00:00",
+      "citationKey": "franklinCovarianceMatrixExplained2022",
+      "url": "https://thekalmanfilter.com/covariance-matrix-explained/",
+      "accessDate": "2026-11-02T00:45:28Z",
+      "language": "en-US",
+      "blogTitle": "The Kalman Filter",
+      "creators": [
+        {
+          "firstName": "William",
+          "lastName": "Franklin",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "covarianza"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-11-02T00:45:28Z",
+      "dateModified": "2026-11-02T00:45:45Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/KVBNJLQN",
+      "itemID": 230,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://thekalmanfilter.com/covariance-matrix-explained/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-02T00:45:33Z",
+          "dateModified": "2026-11-02T00:45:33Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/QETEH2C9",
+          "path": "/home/aras/Zotero/storage/QETEH2C9/covariance-matrix-explained.html",
+          "select": "zotero://select/library/items/QETEH2C9"
+        }
+      ],
+      "notes": [
+        {
+          "key": "7JDRMLDM",
+          "version": 0,
+          "itemType": "note",
+          "parentItem": "KVBNJLQN",
+          "note": "non si dice e non si cita",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-02T00:45:41Z",
+          "dateModified": "2026-11-02T00:45:41Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/7JDRMLDM"
+        }
+      ],
+      "autoJournalAbbreviation": "",
+      "itemKey": "KVBNJLQN",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KVBNJLQN"
+    },
+    {
       "key": "7CEYAAH3",
       "version": 0,
       "itemType": "journalArticle",

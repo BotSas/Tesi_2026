@@ -228,9 +228,9 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
     ...
 
     return pd.DataFrame({
-        "G": G_thresh.where(valid_mask, drop=True).values.ravel(),
-        "S": S_thresh.where(valid_mask, drop=True).values.ravel(),
-        "intensity": fft0_thresh.where(valid_mask, drop=True).values.ravel()
+        "G": G_thresh.where(valid_mask, drop = True).values.ravel(),
+        "S": S_thresh.where(valid_mask, drop = True).values.ravel(),
+        "intensity": fft0_thresh.where(valid_mask, drop = True).values.ravel()
     })
 
 \end{minted}
@@ -286,7 +286,7 @@ Verrà mostrato in una sezione successiva che la rappresentazione dei decadiment
 
 \subsubsection{Estrazione della IRF e generazione di seconda armonica}
 
-Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.\\
+Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.
 
 \paragraph{Teoria - SHG}
 Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.\\
@@ -318,7 +318,7 @@ La forma allungata della nuvola di dati deconvoluta può essere ricondotta al ca
 Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 
-Tuttavia, se si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.\\
+Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.\\
 
 % inserire immagine rosso verde giallo
 % caption: Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle acquisizioni totale, e con filtri rosso e verde. Filtro median già applicato. Per le acquisizioni rossa e verde, sono state calcolate media e deviazione standard, quest'ultima indicata sul grafico mediante barre d'errore.
@@ -411,8 +411,7 @@ In seguito, è stato calcolato il rapporto di concentrazione delle due specie fl
 
 \subsubsection{Studio delle incertezze}
 
-Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.\\
-
+Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.
 
 
 \paragraph{Errore statistico sui fasori}
@@ -457,10 +456,12 @@ def cloud_statistics(G, S):
     return mean, covariance, std, eigenvalues, eigenvectors, len(values)
 \end{minted}
 
+\vspace*{0.2cm}
+
  Le prime righe di codice si limitano a trasformare i \textit{dataframe} di $G$ ed $S$ in array, unirli in un'unica matrice a due colonne, ed eliminare i fasori con una o due coordinate \texttt{NaN}.\\
  Dopo aver calcolato media, matrice di covarianza e deviazione standard, viene effettuata la diagonalizzazione mediante la funzione \texttt{numpy.linalg.eigh} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020}.\\
 
-
+Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvole: rossa, verde, e le due regioni scelte.\\
 
 \begin{align*}
     \Sigma_{\text{red}} &= 10^{-4} \begin{bmatrix} 
@@ -496,17 +497,26 @@ def cloud_statistics(G, S):
         \textbf{ROI 2} & $(0.7716,\; 0.2758)$ & $0.0378$ & $0.0134$ & $123.23^\circ$ \\
         \bottomrule
     \end{tabular}
+    \caption{Media, e risultati della diagonalizzazione della matrice di covarianza per le varie nuvole di fasori.}
 
     \label{tab:pca_summary}
 \end{table}
 
+Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$, $\lambda_1$, e $\lambda_1$ autovalori della matrice di covarianza, dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
+Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.3$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.\\
+
+L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matrice di covarianza, indica l'inclinazione degli assi dell'ellissi rispetto a $(G, S)$.\\
+È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), a confermare l'assenza di segnale di \textit{SHG} in quest'ultima.\\
+% posso trarre altre conclusioni da qui???
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-\paragraph{Propagazione delle incertezze con simulazione Monte Carlo}
 
 
+%_________________________________________________________________________
+
+\paragraph{Propagazione delle incertezze con simulazione Monte Carlo} %considero rendere questa e la precedente sotto-sezioni invece di paragrafi
+
+Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.\\
 
 
 
