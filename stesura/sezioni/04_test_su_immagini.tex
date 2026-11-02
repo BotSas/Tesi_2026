@@ -234,9 +234,7 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):
     })
 
 \end{minted}
-
-
-% forse ha senso riscrivere questa cosa come un itemize, in cui spiego esattamente cosa viene preso in input e cosa esce come output
+\\
 
 La selezione della regione di interesse avviene dopo il filtro median: il filtro, per definizione, introduce imprecisioni sui bordi dell'immagine, in quanto è costretto a lavorare con più pixel vuoti in queste regioni. "Rimpicciolire" l'area dell'immagine sfavorisce la proporzione tra pixel di bordo e pixel interni.\\
 
@@ -255,7 +253,6 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 
 
 % inserire immagine piano fasori ROI immagine 1
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -409,24 +406,18 @@ In seguito, è stato calcolato il rapporto di concentrazione delle due specie fl
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Studio delle incertezze}
+\subsubsection{Errore statistico sui fasori}
 
-Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.
-
-
-\paragraph{Errore statistico sui fasori}
+Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.\\
 
 %Dalle equazioni \ref{eq:phasor_additivity}, è possibile
 % chissà che cazzo stavo iniziando a dire qui
 
 Come menzionato nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}, i fasori corrispondenti alle acquisizioni con filtro verde sono stati considerati come conseguenza del decadimento di una sola specie fluorofora, nonostante siano probabilmente il risultato di una combinazione di \textit{SHG} e decadimento di fluorescenza.\\
-
 È dunque opportuno  utilizzare la deviazione standard al posto dell'errore standard della media, in quanto quest'ultimo presuppone che tutti gli $N$ pixel della nuvola siano acquisizioni indipendenti della stessa misura. In realtà, esse non sono indipendenti, a causa dell'applicazione del filtro median che rende spazialmente correlati i pixel adiacenti, e sondano almeno due processi radiativi.\\
 
 La presenza di due specie fluorofore che emettono nel verde porta i fasori associati a distribuirsi sulla corda che collega i fasori dei due processi separati, assumendo una forma allungata/ellittica.\\
-Si è dunque reso necessario il calcolo della matrice di covarianza, per studiare al meglio la distribuzione dei fasori ma soprattutto per propagare le incertezze correttamente.\\
-%\cite{hairMultivariateDataAnalysis2019a}
-
+Si è dunque reso necessario il calcolo della matrice di covarianza, per studiare al meglio la distribuzione dei fasori ma soprattutto per propagare le incertezze correttamente.\\ %\cite{hairMultivariateDataAnalysis2019a}
 Per fare ciò è stato fatto uso di una funzione che calcola media, deviazione standard e covarianza della nuvola di fasori; inoltre essa diagonalizza la matrice di covarianza e ne restituisce autovettori e autovalori.\\ % clunky
 
 
@@ -478,12 +469,10 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
     \end{bmatrix} &
     \Sigma_{\text{ROI 2}} &= 10^{-4} \begin{bmatrix} 
         5.537 & -5.727 \\ 
-        -5.727 & 10.525 
+        -5.727 & 10.525
     \end{bmatrix}
 \end{align*}
-
-
-\begin{table}[htbp]
+\begin{table}[h!]
     \centering
     \setlength{\tabcolsep}{5pt} 
     \renewcommand{\arraystretch}{1.3}
@@ -502,8 +491,8 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
     \label{tab:pca_summary}
 \end{table}
 
-Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$, $\lambda_1$, e $\lambda_1$ autovalori della matrice di covarianza, dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
-Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.3$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.\\
+Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$ ($\lambda_1$ e $\lambda_2$ autovalori della matrice di covarianza), dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
+Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.\\
 
 L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matrice di covarianza, indica l'inclinazione degli assi dell'ellissi rispetto a $(G, S)$.\\
 È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), a confermare l'assenza di segnale di \textit{SHG} in quest'ultima.\\
@@ -514,7 +503,9 @@ L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matr
 
 %_________________________________________________________________________
 
-\paragraph{Propagazione delle incertezze con simulazione Monte Carlo} %considero rendere questa e la precedente sotto-sezioni invece di paragrafi
+
+
+\subsubsection{Propagazione delle incertezze}
 
 Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.\\
 

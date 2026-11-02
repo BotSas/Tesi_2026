@@ -217,68 +217,105 @@
       \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
       \endverb
     \endentry
-    \entry{digmanPhasorApproachFluorescence2008}{article}{}
+    \entry{malacridaPhasorPlotUniversal2021}{article}{}
       \name{author}{4}{}{%
-        {{hash=b94918de7edc56efea4e1c5b6afe4bd3}{%
-           family={Digman},
-           familyi={D\bibinitperiod},
-           given={Michelle\bibnamedelima A.},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=d44b52ab779b67e7c444bca4adf564ca}{%
-           family={Caiolfa},
-           familyi={C\bibinitperiod},
-           given={Valeria\bibnamedelima R.},
-           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=c808f8643cbd893da0ce98022f6290f2}{%
-           family={Zamai},
-           familyi={Z\bibinitperiod},
-           given={Moreno},
-           giveni={M\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=aed32bc9542b0814aa555a05c11274ac}{%
            family={Gratton},
            familyi={G\bibinitperiod},
            given={Enrico},
            giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{01f4ef073b5c4562a978d4dcd6a524a1}
-      \strng{fullhash}{d2197cc91af04db360aa9c6c9b1c5b73}
-      \strng{bibnamehash}{01f4ef073b5c4562a978d4dcd6a524a1}
-      \strng{authorbibnamehash}{01f4ef073b5c4562a978d4dcd6a524a1}
-      \strng{authornamehash}{01f4ef073b5c4562a978d4dcd6a524a1}
-      \strng{authorfullhash}{d2197cc91af04db360aa9c6c9b1c5b73}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \strng{namehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{fullhash}{e3bf956de6fe7f1a5e766a9067702340}
+      \strng{bibnamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authorbibnamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authornamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authorfullhash}{e3bf956de6fe7f1a5e766a9067702340}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Changing the data representation from the classical time delay histogram to the phasor representation provides a global view of the fluorescence decay at each pixel of an image. In the phasor representation we can easily recognize the presence of different molecular species in a pixel or the occurrence of fluorescence resonance energy transfer. The analysis of the fluorescence lifetime imaging microscopy (FLIM) data in the phasor space is done observing clustering of pixels values in specific regions of the phasor plot rather than by fitting the fluorescence decay using exponentials. The analysis is instantaneous since is not based on calculations or nonlinear fitting. The phasor approach has the potential to simplify the way data are analyzed in FLIM, paving the way for the analysis of large data sets and, in general, making the FLIM technique accessible to the nonexpert in spectroscopy and data analysis.}
-      \field{issn}{00063495}
-      \field{journaltitle}{Biophysical Journal}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The phasor approach to fluorescence lifetime imaging has become a common method to analyze complicated fluorescence signals from biological samples. The appeal of the phasor representation of complex fluorescence decays in biological systems is that a visual representation of the decay of entire cells or tissues can be used to easily interpret fundamental biological states related to metabolism and oxidative stress. Phenotyping based on autofluorescence provides new avenues for disease characterization and diagnostics. The phasor approach is a transformation of complex fluorescence decays that does not use fits to model decays and therefore has the same information content as the original data. The phasor plot is unique for a given system, is highly reproducible, and provides a robust method to evaluate the existence of molecular interactions such as Förster resonance energy transfer or the response of ion indicators. Recent advances permitquantification of multiple components from phasor plots in fluorescence lifetime imaging microscopy, which is not presently possible using data fitting methods, especially in biological systems.}
+      \field{day}{6}
+      \field{issn}{1936-122X, 1936-1238}
+      \field{journaltitle}{Annual Review of Biophysics}
       \field{langid}{english}
-      \field{month}{1}
-      \field{number}{2}
-      \field{shortjournal}{Biophysical Journal}
-      \field{title}{The {{Phasor Approach}} to {{Fluorescence Lifetime Imaging Analysis}}}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Biophys.}
+      \field{shorttitle}{The {{Phasor Plot}}}
+      \field{title}{The {{Phasor Plot}}: {{A Universal Circle}} to {{Advance Fluorescence Lifetime Analysis}} and {{Interpretation}}}
       \field{urlday}{6}
       \field{urlmonth}{10}
       \field{urlyear}{2026}
-      \field{volume}{94}
-      \field{year}{2008}
+      \field{volume}{50}
+      \field{year}{2021}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{L14\bibrangedash L16}
-      \range{pages}{-1}
+      \field{pages}{575\bibrangedash 593}
+      \range{pages}{19}
       \verb{doi}
-      \verb 10.1529/biophysj.107.120154
+      \verb 10.1146/annurev-biophys-062920-063631
       \endverb
       \verb{file}
-      \verb /home/aras/Zotero/storage/PNW7EXLN/Digman et al. - 2008 - The Phasor Approach to Fluorescence Lifetime Imaging Analysis.pdf
+      \verb /home/aras/Zotero/storage/DAI4QARZ/Malacrida et al. - 2021 - The Phasor Plot A Universal Circle to Advance Fluorescence Lifetime Analysis and Interpretation.pdf
       \endverb
       \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0006349508707112
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-biophys-062920-063631
       \endverb
       \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S0006349508707112
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-biophys-062920-063631
       \endverb
+    \endentry
+    \entry{oppenheim_discrete_2009}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={Alan\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fd563e605c810572cece256b4271abd4}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{fullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{bibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0-13-198842-2}
+      \field{title}{Discrete-Time Signal Processing}
+      \field{year}{2009}
+      \field{dateera}{ce}
     \endentry
     \entry{torradoLinearCombinationProperties2022}{article}{}
       \name{author}{3}{}{%
@@ -420,8 +457,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -589,8 +626,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
@@ -623,41 +660,6 @@
       \verb{url}
       \verb https://www.nature.com/articles/s41586-020-2649-2
       \endverb
-    \endentry
-    \entry{oppenheim_discrete_2009}{book}{}
-      \name{author}{2}{}{%
-        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
-           family={Oppenheim},
-           familyi={O\bibinitperiod},
-           given={Alan\bibnamedelima V.},
-           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=fd563e605c810572cece256b4271abd4}{%
-           family={Schafer},
-           familyi={S\bibinitperiod},
-           given={Ronald\bibnamedelima W.},
-           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Upper Saddle River, NJ}%
-      }
-      \list{publisher}{1}{%
-        {Pearson}%
-      }
-      \strng{namehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \strng{fullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \strng{bibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{isbn}{978-0-13-198842-2}
-      \field{title}{Discrete-Time Signal Processing}
-      \field{year}{2009}
-      \field{dateera}{ce}
     \endentry
     \entry{gottliebFLUTEPythonGUI2023a}{article}{}
       \name{author}{5}{}{%
@@ -746,8 +748,8 @@
       \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
@@ -783,6 +785,96 @@
       \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
       \endverb
     \endentry
+    \entry{christophgohlkePhasorpyPhasorpyV0122026}{software}{}
+      \name{author}{5}{}{%
+        {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
+           family={Gohlke},
+           familyi={G\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=088d03344e42c46be5b946e302619e5a}{%
+           family={Pannunzio},
+           familyi={P\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2a064a82b0291b63232b082912056855}{%
+           family={Schuty},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=34409f885bb35ab3bdee0af6e5fedace}{%
+           family={Donato},
+           familyi={D\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=836fdf78d50e74a268e917543c797c48}{%
+           family={Blanco},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{fullhash}{ba3ab7d0a0900e1ccac651347849c96d}
+      \strng{bibnamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authorbibnamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authornamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authorfullhash}{ba3ab7d0a0900e1ccac651347849c96d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{PhasorPy is an open-source Python library for the analysis of luminescence lifetime and hyperspectral images using the phasor approach. This is the third beta release of the PhasorPy library. It contains new functions, an About page, and other documentation improvements. The new io.signal\_from\_brighteyes\_mcs, io.signal\_from\_tdflim, and io.lifetime\_from\_tdflim functions read TCSPC or lifetime data from Brighteyes MCS and ISS TDFLIM files using the brighteyes-mcs-reader and lfdfiles libraries. The new experimental.signal\_from\_dho function calculates emission spectra using the Displaced Harmonic Oscillator model. The new spectral application (python -m phasorpy spectral) and plot.SpectralPlots class interactively plot emission spectra and corresponding spectral phasor coordinates for a set of spectral components and their mixture. Conda-forge packages for osx-arm64 are now available. This release supports Python 3.12 through 3.14. What's Changed Bump version by @cgohlke in https://github.com/phasorpy/phasorpy/pull/351 Fix mislabeled fractional intensities in lifetime geometry tutorial by @cgohlke in https://github.com/phasorpy/phasorpy/pull/352 Bump tooling and update configs by @cgohlke in https://github.com/phasorpy/phasorpy/pull/353 Mention Spectral Phasors Analysis software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/354 Add signal\_from\_tdflim and lifetime\_from\_tdflim functions by @cgohlke in https://github.com/phasorpy/phasorpy/pull/355 Mention FLIMKit software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/356 Add spectral application, SpectralPlots class, and signal\_from\_dho function by @cgohlke in https://github.com/phasorpy/phasorpy/pull/358 Enable type checking for tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/359 Mention PyFLI library by @cgohlke in https://github.com/phasorpy/phasorpy/pull/361 Add signal\_from\_brighteyes\_mcs function by @mattia-donato in https://github.com/phasorpy/phasorpy/pull/340 Improve signal\_from\_brighteyes\_mcs docs and tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/363 Add About page and AI contribution policy by @cgohlke in https://github.com/phasorpy/phasorpy/pull/364 Release v0.12 by @cgohlke in https://github.com/phasorpy/phasorpy/pull/365 New Contributors @mattia-donato made their first contribution in https://github.com/phasorpy/phasorpy/pull/340 Full Changelog: https://github.com/phasorpy/phasorpy/compare/v0.11...v0.12}
+      \field{day}{20}
+      \field{month}{7}
+      \field{shorttitle}{Phasorpy/Phasorpy}
+      \field{title}{Phasorpy/Phasorpy: V0.12}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{v0.12}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.13862586
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/doi/10.5281/zenodo.13862586
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/doi/10.5281/zenodo.13862586
+      \endverb
+    \endentry
+    \entry{The_pandas_development_team_pandas-dev_pandas_Pandas}{software}{}
+      \name{author}{1}{}{%
+        {{hash=a70a34e027eec45fe025cb823facb0d8}{%
+           family={{The pandas development team}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{fullhash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{bibnamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authorbibnamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authornamehash}{a70a34e027eec45fe025cb823facb0d8}
+      \strng{authorfullhash}{a70a34e027eec45fe025cb823facb0d8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{pandas-dev/pandas: Pandas}}
+      \verb{doi}
+      \verb 10.5281/zenodo.3509134
+      \endverb
+      \verb{urlraw}
+      \verb https://github.com/pandas-dev/pandas
+      \endverb
+      \verb{url}
+      \verb https://github.com/pandas-dev/pandas
+      \endverb
+    \endentry
     \entry{campagnolaSecondharmonicImagingMicroscopy2003}{article}{}
       \name{author}{2}{}{%
         {{hash=0e8b5340b2f6a611335b045cb5ca0e92}{%
@@ -802,8 +894,8 @@
       \strng{authorbibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
       \strng{authornamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
       \strng{authorfullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1087-0156, 1546-1696}
@@ -856,8 +948,8 @@
       \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}

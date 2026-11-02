@@ -244,7 +244,6 @@ Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del tri
 
 \subsection{Funzione di risposta dello strumento}
 \label{sec:funzione_di_risposta_dello_strumento}
-
 Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. \\
 L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione nelle molecole del fluoroforo presente nel campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\ % controllare l'ultima frase, potrebbe esserci un errore
 
@@ -291,17 +290,13 @@ Per ricavare l’intensità totale al tempo $t$, sarà quindi necessario sommare
     \label{eq:convoluzione}
 \end{equation}
 
-La formula ottenuta si riconduce esattamente alla definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.\\
-
-%_______________________________________________________________________
-
+La formula ottenuta si riconduce esattamente alla definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.
 \paragraph{Osservazioni}
 \begin{itemize}
     \item È giusto osservare che nell'implementazione nel codice dell'algoritmo di convoluzione non viene utilizzata la definizione appena ricavata, bensì una definizione operativa che fa uso della trasformata di Fourier. Per ulteriori approfondimenti si fa riferimento alla sezione \ref{sec:generazione_dei_segnali} (generazione dei segnali).
-    \item Dato che l'acquisizione sperimentale avviene raggruppando i fotoni rilevati in \textit{bin} di larghezza pre-determinata $\Delta t$, sarebbe necessario pesare ogni contributo \textit{k-esimo} per questo valore. Nella definizione operativa questo termine viene inglobato dalla normalizzazione.\\
+    \item Dato che l'acquisizione sperimentale avviene raggruppando i fotoni rilevati in \textit{bin} di larghezza pre-determinata $\Delta t$, sarebbe necessario pesare ogni contributo \textit{k-esimo} per questo valore. Nella definizione operativa questo termine viene inglobato dalla normalizzazione.
 \end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-

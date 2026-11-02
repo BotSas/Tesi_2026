@@ -1,6 +1,5 @@
 TODO A BREVE:
 
-- spiegazione di come sono state calcolate le incertezze nell'immagine 2
 - metodo monte carlo per il calcolo delle incertezze
 - forse aggiungere spiegazione shoelace formula
 - scrivere qualcosa sul fatto che i pixel della selezione rossa/verde sono considerati validi solo se parte anche dell'emissione totale
@@ -15,5 +14,5 @@ OBIETTIVI CHE DEVO ANCORA ELABORARE:
 - introduzione
 - conclusione
 - panel???
-- obiettivi
+- obiettivi????
 - inserire immagini
