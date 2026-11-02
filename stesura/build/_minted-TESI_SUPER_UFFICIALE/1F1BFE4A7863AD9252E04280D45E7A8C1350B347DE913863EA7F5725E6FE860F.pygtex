@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} ERROR PROPAGATION \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{n\PYGZus{}sim}\PYG{p}{):} \PYG{c+c1}{\PYGZsh{} P = ROI phasor, A = red, B = green}
+    \PYG{n}{f1\PYGZus{}ROI1\PYGZus{}sims}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{f2\PYGZus{}ROI1\PYGZus{}sims}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{phf}\PYG{o}{.}\PYG{n}{extract\PYGZus{}fractions}\PYG{p}{(}
+        \PYG{n}{P} \PYG{o}{=} \PYG{n}{p1\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{A} \PYG{o}{=} \PYG{n}{red\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{B} \PYG{o}{=} \PYG{n}{green\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+    \PYG{p}{)}
+    \PYG{n}{f1\PYGZus{}ROI2\PYGZus{}sims}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{f2\PYGZus{}ROI2\PYGZus{}sims}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{=} \PYG{n}{phf}\PYG{o}{.}\PYG{n}{extract\PYGZus{}fractions}\PYG{p}{(}
+        \PYG{n}{P} \PYG{o}{=} \PYG{n}{p2\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{A} \PYG{o}{=} \PYG{n}{red\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{],} \PYG{n}{B} \PYG{o}{=} \PYG{n}{green\PYGZus{}sim}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+    \PYG{p}{)}
+\end{Verbatim}

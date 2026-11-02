@@ -405,8 +405,12 @@ INPUT ./immagini/triple_exp_decay.png
 INPUT ./immagini/triple_exp_decay.png
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
-INPUT ./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/311D747E223205166D9159423FC0119F1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-italic.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc
+OUTPUT build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./immagini/irf_sing_exp_decay.png
 INPUT ./immagini/irf_sing_exp_decay.png
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
@@ -426,7 +430,6 @@ INPUT ./immagini/embryo3_IRF.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/608CF69E4C2C7B0240870B7CD5A111B41350B347DE913863EA7F5725E6FE860F.pygtex
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/ROI1_and_ROI2.pdf
@@ -438,6 +441,9 @@ INPUT ./immagini/ROI2.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/A8B3433E032D8639B5C060ADF0F6528C1350B347DE913863EA7F5725E6FE860F.pygtex
+OUTPUT build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/TESI_SUPER_UFFICIALE.pyg
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./sezioni/05_conclusioni.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.aux

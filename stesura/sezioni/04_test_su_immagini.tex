@@ -447,12 +447,12 @@ def cloud_statistics(G, S):
     return mean, covariance, std, eigenvalues, eigenvectors, len(values)
 \end{minted}
 
-\vspace*{0.2cm}
+\vspace*{0.5cm}
 
  Le prime righe di codice si limitano a trasformare i \textit{dataframe} di $G$ ed $S$ in array, unirli in un'unica matrice a due colonne, ed eliminare i fasori con una o due coordinate \texttt{NaN}.\\
  Dopo aver calcolato media, matrice di covarianza e deviazione standard, viene effettuata la diagonalizzazione mediante la funzione \texttt{numpy.linalg.eigh} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020}.\\
 
-Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvole: rossa, verde, e le due regioni scelte.\\
+Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvole: rossa, verde, e le due regioni scelte.
 
 \begin{align*}
     \Sigma_{\text{red}} &= 10^{-4} \begin{bmatrix} 
@@ -490,6 +490,7 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
 
     \label{tab:pca_summary}
 \end{table}
+\\
 
 Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$ ($\lambda_1$ e $\lambda_2$ autovalori della matrice di covarianza), dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
 Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.\\
@@ -509,7 +510,23 @@ L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matr
 
 Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.\\
 
+Invece di utilizzare la formula standard alle derivate parziali per la propagazione dell'errore, si è scelto di utilizzare una simulazione Monte Carlo.\\
+A questo proposito, sono stati generati $10000$ fasori "simulati" per ognuna delle quattro nuvole di partenza (rossa, verde, e le due zone di interesse), a partire dalla matrice di covarianza di ognuna, ricavata in precedenza con \texttt{cloud\_statistics}.\\
+Per la generazione, è stata utilizzato \texttt{numpy.random.default\_rng}, generatore di numeri pseudo-casuali di \textit{Numpy}, e in particolare il suo oggett \texttt{multivariate\_normal}, che permette ai dati generati di seguire una distribuzione normale multivariata.\\
 
-
+Successivamente è stato impostato un ciclo \texttt{for} che prende le componenti $i$-esime dei quattro \textit{array} contenenti i fasori simulati e calcola le frazioni di concentrazione associate per ogni iterazione.\\
+La frazione è stata estratta con lo stesso procedimento utilizzato per i valori medi nella sezione \ref{sec:generazione_di_decadimenti_a_exp_multipli}.\\
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
+# ERROR PROPAGATION -----------------------------------------
+for i in range(n_sim): # P = ROI phasor, A = red, B = green
+    f1_ROI1_sims[i], f2_ROI1_sims[i] = phf.extract_fractions(
+        P = p1_sim[i], A = red_sim[i], B = green_sim[i]
+    )
+    f1_ROI2_sims[i], f2_ROI2_sims[i] = phf.extract_fractions(
+        P = p2_sim[i], A = red_sim[i], B = green_sim[i]
+    )
+\end{minted}
+\\
+È stata infine estratta la deviazione standard dai quattro \textit{array} ottenuti (\texttt{f1\_ROI1\_sims}, \texttt{f2\_ROI1\_sims}, \texttt{f1\_ROI2\_sims} e \texttt{f2\_ROI2\_sims}); quest'ultima è stata associata come incertezza statistica ai risultati calcolati nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}.\\
 % metto qui la panel app? o non la inserisco proprio nella tesi?
 

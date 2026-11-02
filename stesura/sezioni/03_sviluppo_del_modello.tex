@@ -1,4 +1,5 @@
-\section{Sviluppo del modello}\label{sec:sviluppo_del_modello} 
+\section{Sviluppo del modello}
+\label{sec:sviluppo_del_modello} 
 
 
 La stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e la relativa analisi) e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
@@ -138,6 +139,33 @@ Per un decadimento a doppio esponenziale, il rapporto tra le concentrazioni si r
 
 \paragraph{Verifica del rapporto di concentrazione}
 \label{sec:verifica_del_rapporto_di_concentrazione}
+
+Il calcolo del rapporto di concentrazione per campioni contenenti due fluorofori è stato implementato mediante la formula \texttt{extract\_fractions}:
+
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
+def extract_fractions(P, A, B):
+    '''
+    Projects one or two points on straight line through A and B. Returns fraction of A and B components
+    '''
+    ...
+    line_vector = B - A
+    f_B = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)
+    
+    f_A = 1.0 - f_B
+    
+    return f_A, f_B
+\end{minted}
+\\
+La funzione implementa il calcolo del vettore tra i punti $A$ e $B$: ${v}_{AB} = [G_B - G_A, \; S_B - S_A]$.
+Successivamente viene svolto il calcolo:
+
+\begin{equation*}
+    f_B = \frac{\vec{v}_{AP}\cdot\vec{v}_{AB}}{\lvert\vec{v}_{AB}\rvert^2} = \frac{\lvert\vec{v}_{AP}\rvert\cos\theta\cdot\lvert\vec{v}_{AB}\rvert}{\lvert\vec{v}_{AB}\rvert^2} = \frac{\lvert\vec{v}_{AH}\rvert}{\lvert\vec{v}_{AB}\rvert}
+\end{equation*}
+per ricavare direttamente la frazione di fluoroforo corrispondente al fasore $B$.\\
+Il vettore $\vec{v}_{AH}$ corrisponde al segmento che collega il fasore $A$ al punto proiettato sulla corda, $H$.\\
+% considera l'idea di espandere sul concetto
+
 
 Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:\\
 

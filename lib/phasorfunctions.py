@@ -95,9 +95,9 @@ def extract_fractions(P, A, B):
     '''
     Projects one or two points on straight line through A and B. Returns fraction of A and B components
     '''
-    A = np.asarray(A, dtype=float).ravel()  # points that is to be projected
-    B = np.asarray(B, dtype=float).ravel()
-    P = np.asarray(P, dtype=float)
+    A = np.asarray(A, dtype = float).ravel()  # points that is to be projected
+    B = np.asarray(B, dtype = float).ravel()
+    P = np.asarray(P, dtype = float)
     
     # Se P è passato come tupla (G_array, S_array), la forma è (2, N).
     # La trasponiamo a (N, 2) per far combaciare le dimensioni nel broadcasting.
@@ -107,10 +107,8 @@ def extract_fractions(P, A, B):
     line_vector = B - A
     
     # returns fraction of B. Works on points and also 2D pixel matrixes
-    H_factor = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)
-    
-    f_B = H_factor
-    f_A = 1.0 - H_factor
+    f_B = np.dot(P - A, line_vector) / np.dot(line_vector, line_vector)
+    f_A = 1.0 - f_B
     
     return f_A, f_B
 

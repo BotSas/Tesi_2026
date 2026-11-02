@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{extract\PYGZus{}fractions}\PYG{p}{(}\PYG{n}{P}\PYG{p}{,} \PYG{n}{A}\PYG{p}{,} \PYG{n}{B}\PYG{p}{):}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    Projects one or two points on straight line through A and B. Returns fraction of A and B components}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{o}{...}
+    \PYG{n}{line\PYGZus{}vector} \PYG{o}{=} \PYG{n}{B} \PYG{o}{\PYGZhy{}} \PYG{n}{A}
+    \PYG{n}{f\PYGZus{}B} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{dot}\PYG{p}{(}\PYG{n}{P} \PYG{o}{\PYGZhy{}} \PYG{n}{A}\PYG{p}{,} \PYG{n}{line\PYGZus{}vector}\PYG{p}{)} \PYG{o}{/} \PYG{n}{np}\PYG{o}{.}\PYG{n}{dot}\PYG{p}{(}\PYG{n}{line\PYGZus{}vector}\PYG{p}{,} \PYG{n}{line\PYGZus{}vector}\PYG{p}{)}
+
+    \PYG{n}{f\PYGZus{}A} \PYG{o}{=} \PYG{l+m+mf}{1.0} \PYG{o}{\PYGZhy{}} \PYG{n}{f\PYGZus{}B}
+
+    \PYG{k}{return} \PYG{n}{f\PYGZus{}A}\PYG{p}{,} \PYG{n}{f\PYGZus{}B}
+\end{Verbatim}
