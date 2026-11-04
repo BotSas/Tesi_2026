@@ -150,7 +150,7 @@ Una media dei decadimenti, invece, mescolerebbe pixel affiancati portando infine
 
 %citazione alla teoria needed
 
-Come anticipato nella sezione teorica, si dimostra l'esistenza di una corrispondenza biunivoca tra i punti dell'immagine nel dominio temporale e quelli sul piano dei fasori. È dunque utlile implementare nel codice uno strumento che permetta di verificare questa corrispondenza, evidenziando i fasori corrispondenti a una certa sezione dell'immagine, e viceversa.\\
+È possibile dimostrare che esiste una corrispondenza biunivoca tra i punti dell'immagine nel dominio temporale e quelli sul piano dei fasori. È dunque utlile implementare nel codice uno strumento che permetta di verificare questa relazione, evidenziando i fasori corrispondenti a una certa sezione dell'immagine.\\
 
 % schifo
 % Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
@@ -159,11 +159,15 @@ Operativamente, questo strumento è stato realizzato mediante una maschera, ovve
 La sezione di area quadrata della maschera sovrapponibile alla regione di interesse viene riempita da valori \texttt{1}, mentre i restanti elementi vengono occupati da \texttt{0}.\\
 
 Si è scelto di non limitare mai la selezione a un singolo punto, ma di permettere sempre la selezione di una regione di area non nulla, di cui vengono considerate media e deviazione standard (quest'ultima, di ordine di grandezza $1/\sqrt{N}$, a causa dello \textit{shot-noise}). In questo modo, si evita di ottenere risultati fuorvianti nel caso di selezione di regioni a bassa intensità di emissione, oltre a ridurre l'errore dovuto al rumore \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
-% La selezione avviene dunque attraverso una ''maschera'': selezionare il centro della regione scelta porterà alla selezione di un'area quadrata di lato pre-determinato.\\
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{immagini/embryo3_ROI.png}
+%    \vspace{-7cm}
+    \caption{Rappresentazione sul piano dei fasori della regione di interesse quadrata nell'immagine 1, con centro di coordinate $(x, y)=(81, 216)$ e lato 20 pixel. Sono rappresentati media e deviazione standard.}
+    \label{fig:embryo3_ROI}
+\end{figure}
 
-% to be continued. Qui devo parlare dell'ordine con cui si è scelto di applicare filtro median e ROI selection. Se nulla cambia, il processo è:
-% immagine -> nuvola su piano fasori con filtro median -> il fasore della nuvola viene salvato solo se il punto dell'immagine a cui corrisponde si trova in un'area della maschera contrassegnata da un valore non nullo
 
 %__________________________________________________________________________
 
@@ -294,18 +298,13 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
     
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.pdf} 
+    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.png} 
     \label{fig:embryo5_IRF}
-    \vspace{-7cm}
-    \caption{Rappresentazione sul piano dei fasori delle "nuvolae di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median.}
+%    \vspace{-7cm}
+    \caption{Rappresentazione sul piano dei fasori delle "nuvole" di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median ($\textit{repeat}=2$).}
 \end{figure}
 
 %\paragraph{pratica} - immagine + magari un commentino sul significato della forma allungata
-
-% nell'immagine dire che è già stato applicato il median filter
-
-% sono indecisa se mettere qui o nella sezione successiva l'immagine con giallo verde e rosso
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Confronto tra il rapporto di fluorofori in regioni distinte}
@@ -317,11 +316,14 @@ Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due 
 
 Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.\\
 
-% inserire immagine rosso verde giallo
-% caption: Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle acquisizioni totale, e con filtri rosso e verde. Filtro median già applicato. Per le acquisizioni rossa e verde, sono state calcolate media e deviazione standard, quest'ultima indicata sul grafico mediante barre d'errore.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF_redgreen.png}
+%    \vspace{-7cm}
+    \caption{Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle acquisizioni totale, e con filtri rosso e verde. Filtro median applicato due volte. Per le acquisizioni rossa e verde, sono state calcolate media e deviazione standard, quest'ultima indicata sul grafico mediante barre d'errore.}
+    \label{fig:embryo5_IRF_redgreen}
+\end{figure}
 
-
-% parlare anche dell'shg per il verde
 
 Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.\\
 
@@ -356,14 +358,26 @@ Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \
 
 
 Per prima cosa, vengono isolate le due regioni scelte mediante una maschera quadrata di lato $=8$ \textit{pixel}. L'ampiezza è stata ridotta rispetto all'immagine 1 per meglio adattarsi alle dimensioni delle strutture visibili soprattutto nell'acquisizione con filtro verde.\\
-I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul piano dei fasori mediante la funzione \texttt{phasors\_from\_region}, analizzata in precedenza \ref{sec:thresholding_e_implementazione}.
+I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul piano dei fasori mediante la funzione \texttt{phasors\_from\_region}, analizzata in precedenza (\ref{sec:thresholding_e_implementazione}
+).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{immagini/embryo5_ROI1_ROI2_phasors.png}
+%    \vspace{-7cm}
+    \caption{Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle due regioni di interesse scelte, con le relative medie e deviazioni standard. Viene mostrata la posizione in relazione alle nuvole totali.}
+    \label{fig:embryo5_ROI1_ROI2_phasors}
+\end{figure}
+
 
 % inserire immagine fasori ROI + nuvole rossa verde gialla sullo sfondo
 % nella caption: repeat = 2, incertezze trattate in seguito, viene mostrata la posizione in relazione alle nuvole totali (sullo sfondo chiare).
 
+
+
 \paragraph{Osservazioni}
 
-Nella figura \ref{fig:fasori_rosso_verde_giallo} è possibile osservare che i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
+Nella figura \ref{fig:embryo5_IRF_redgreen} è possibile osservare che i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
 Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\lambda_{ecc}= 1100\;\text{nm}$) sia esattamente il doppio della lunghezza d'onda filtrata ($\lambda_{verde}= 550\;\text{nm}$).\\
 
 % Inoltre, questo spiegherebbe l'utilizzo di amido per la calibrazione.\\
@@ -373,7 +387,9 @@ Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\
 La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro delle nuvola dei fasori.\\
 Al contrario, è probabile che l'acquisizione con filtro rosso catturi un singolo processo di fluorescenza, o più fenomeni a tempo di vita simile. Ciò si evince dalla forma isotropa della distribuzione di fasori.\\
 
-Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:studio_delle_incertezze}).\\ % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
+Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:errore_statistico_sui_fasori}).\\ % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
+
+
 
 %___________________________________________________________________
 
@@ -403,12 +419,12 @@ In seguito, è stato calcolato il rapporto di concentrazione delle due specie fl
 
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsubsection{Errore statistico sui fasori}
+\label{sec:errore_statistico_sui_fasori}
 
-Vengono qui discusse le tecniche di calcolo e propagazione delle incertezze utilizzate nel calcolo del rapporto di concentrazione tra fluorofori.\\
+Vengono qui discusse le tecniche di calcolo delle incertezze associate alla misurazione del rapporto di concentrazione tra fluorofori.\\
 
 %Dalle equazioni \ref{eq:phasor_additivity}, è possibile
 % chissà che cazzo stavo iniziando a dire qui
@@ -507,6 +523,7 @@ L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matr
 
 
 \subsubsection{Propagazione delle incertezze}
+
 
 Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.\\
 

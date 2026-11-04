@@ -1,6 +1,4 @@
 TODO A BREVE:
-
-- forse aggiungere spiegazione shoelace formula -> meglio l'implementazione
 - scrivere qualcosa sul fatto che i pixel della selezione rossa/verde sono considerati validi solo se parte anche dell'emissione totale
 
 - sistemare panel + selez bidirezionale

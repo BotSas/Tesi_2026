@@ -245,10 +245,9 @@ Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del tri
 \subsection{Funzione di risposta dello strumento}
 \label{sec:funzione_di_risposta_dello_strumento}
 Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. \\
-L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione nelle molecole del fluoroforo presente nel campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore; tuttavia questo non è in grado di distinguere tra i fotoni emessi dal campione e quelli dal laser.\\ % controllare l'ultima frase, potrebbe esserci un errore
+L'emissione di fluorescenza è ottenuta grazie a un laser a impulsi periodici che produce un'eccitazione nelle molecole del fluoroforo presente nel campione. I fotoni emessi dallo stesso vengono catturati dalla scheda di acquisizione di un fotorivelatore, che li trasforma in un segnale.\\
 
-% Il processo di separazione del segnale proveniente dalle due diverse fonti (campione e laser) è descritto da \textit{Ranjit et al.} \cite{ranjitFitfreeAnalysisFluorescence2018} e viene di seguito riportato.
-
+Strumentazione presente in laboratori diversi produce segnali di decadimento anche molto diversi tra loro, a causa di differenze nella forma dell'impulso del laser.\\
 Nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore introduce spesso un errore temporale, che in molti casi, può raggiungere ordini di grandezza paragonabili a quello dei tempi di vita di fluorescenza, su cui è incentrato lo studio. Si rivela dunque necessario separare i due segnali tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
 
 Il processo di acquisizione dell'\textit{IRF} presenta numerose criticità: in prima istanza, l'impossibilità di utilizzare una soluzione di scattering nel processo \textit{FLIM} a causa dei filtri ottici che bloccano i segnali con lunghezza d'onda pari a quella incidente.

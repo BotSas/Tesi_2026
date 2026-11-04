@@ -31,15 +31,15 @@
 \contentsline {paragraph}{Osservazioni}{20}{figure.caption.9}%
 \contentsline {subsubsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{20}{subsubsection.4.1.2}%
 \contentsline {subsubsection}{\numberline {4.1.3}Selezione della regione di interesse}{21}{subsubsection.4.1.3}%
-\contentsline {paragraph}{Criteri di selezione}{22}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{22}{subsubsection.4.1.4}%
+\contentsline {paragraph}{Criteri di selezione}{22}{figure.caption.10}%
+\contentsline {subsubsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{23}{subsubsection.4.1.4}%
 \contentsline {subsubsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{25}{subsubsection.4.1.5}%
 \contentsline {subsection}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{25}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{25}{subsubsection.4.2.1}%
-\contentsline {paragraph}{Teoria - SHG}{25}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{26}{subsubsection.4.2.2}%
-\contentsline {paragraph}{Osservazioni}{27}{figure.caption.11}%
-\contentsline {paragraph}{Risultati}{28}{figure.caption.11}%
-\contentsline {subsubsection}{\numberline {4.2.3}Errore statistico sui fasori}{28}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Propagazione delle incertezze}{30}{subsubsection.4.2.4}%
-\contentsline {section}{\numberline {5}Conclusioni}{32}{section.5}%
+\contentsline {subsubsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{26}{subsubsection.4.2.1}%
+\contentsline {paragraph}{Teoria - SHG}{26}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{27}{subsubsection.4.2.2}%
+\contentsline {paragraph}{Osservazioni}{28}{figure.caption.14}%
+\contentsline {paragraph}{Risultati}{29}{figure.caption.14}%
+\contentsline {subsubsection}{\numberline {4.2.3}Errore statistico sui fasori}{30}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Propagazione delle incertezze}{32}{subsubsection.4.2.4}%
+\contentsline {section}{\numberline {5}Conclusioni}{33}{section.5}%
