@@ -1,8 +1,8 @@
 # Fdb version 4
-["lualatex"] 1793804430.56621 "/home/aras/Documents/Tesi_2026/Riassunto/Riassunto.tex" "build/Riassunto.pdf" "Riassunto" 1793804432.86967 0
+["lualatex"] 1793837515.70427 "/home/aras/Documents/Tesi_2026/Riassunto/Riassunto.tex" "build/Riassunto.pdf" "Riassunto" 1793837518.02761 0
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1790959566.05174 127652 a5bcc9609cb60f4b11aae93e79c7a0c6 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790959223.68113 406489 857bff30402168e402a5b5f6e69efe67 ""
-  "/home/aras/Documents/Tesi_2026/Riassunto/Riassunto.tex" 1793804430.18947 2929 e8258785f979146830032e8a369637b5 ""
+  "/home/aras/Documents/Tesi_2026/Riassunto/Riassunto.tex" 1793837515.18979 5183 d07353d5e2e586fd46dd3b7fc1d3e5f5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -144,7 +144,11 @@
   "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1693603203 13565 c514d92e6ff6be7b2f35d8e0eb56185c ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm" 1254269338 12088 d750ac78274fa7c9f73ba09914c04f8a ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm" 1254269338 12048 c1068d0f4772be9b0ec447692e1d6d82 ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm" 1254269338 12064 a35db870f0b76c338d749c56dc030ef5 ""
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm" 1254269338 17144 271aaf9ebb339934b04110dc5211fba4 ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmri7.tfm" 1254269338 17168 78a37e395d0470967cfda94332b0716a ""
+  "/usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm" 1254269338 17152 c8240fef851c4991afefdae37a539ee1 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmri12.pfb" 1255129361 109265 32320cb6133d4d76bf83e27b5eb4009b ""
@@ -152,9 +156,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790957563.51629 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/tex/generic/config/language.dat" 1790957568.40263 5334 13a0c5fd86f5ef4d791286d0152084d1 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1790957727 12240957 c778e58e1f8e0b3467546f8fece02f0c ""
-  "Riassunto.tex" 1793804430.18947 2929 e8258785f979146830032e8a369637b5 ""
-  "build/Riassunto.aux" 1793804432.71052 264 f6a3b74d2e39763b7c06ad4022899d74 "lualatex"
-  "build/Riassunto.out" 1793804432.51451 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "Riassunto.tex" 1793837515.18979 5183 d07353d5e2e586fd46dd3b7fc1d3e5f5 ""
+  "build/Riassunto.aux" 1793837517.85646 264 a233cbe66bfff0e2bc522fa43995ec87 "lualatex"
+  "build/Riassunto.out" 1793837517.64648 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "build/Riassunto.aux"
   "build/Riassunto.log"

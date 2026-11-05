@@ -136,6 +136,7 @@ OUTPUT build/Riassunto.pdf
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -156,7 +157,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri8.tfm
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri7.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./build/Riassunto.aux
 INPUT ./build/Riassunto.out

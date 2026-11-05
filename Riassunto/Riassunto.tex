@@ -9,7 +9,7 @@
 \usepackage{titlesec}
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
 
-\setstretch{1.25}
+\setstretch{1.15}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5em}
 
@@ -44,7 +44,7 @@
 
 \section*{Introduzione e cenni teorici}
 
-Lo studio dei tempi di vita di fluorescenza ($\sim10^{-9}\,$s) in laboratorio avviene mediante l’eccitazione da parte di un laser periodico del campione e la raccolta dei conseguenti decadimenti. Al contrario dell'intensità di emissione, i tempi di vita non dipendono dalla concentrazione di fluoroforo, spesso difficile da stimare.
+Lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l’eccitazione da parte di un laser periodico del campione e la raccolta dei conseguenti decadimenti. Al contrario dell'intensità di emissione, i tempi di vita non dipendono dalla concentrazione di fluoroforo, spesso difficile da stimare.
 
 L'analisi dei dati raccolti mediante \textit{FLIM} avviene tradizionalmente mediante interpolazione dei decadimenti di fluorescenza. Un approccio più moderno è invece quello dell'analisi fasoriare: il segnale viene trasposto sulla sua base di Fourier, e le prime due componenti vengono utilizzate per rappresentarlo sul piano dei fasori, di coordinate $(G, S)$ definite da:
 
@@ -56,7 +56,7 @@ L'analisi dei dati raccolti mediante \textit{FLIM} avviene tradizionalmente medi
 
 È possibile dimostrare che a un decadimenti mono-esponenziali puri corrispondono fasori su un semicerchio di raggio unitario a $S$ positivo, con valori di \textit{\tau} minimi in $(1, 0)$ e massimi in $(0, 0)$. Se in un campione coesistono più specie fuorofore, dunque con segnale di fluorescenza descritto da un decadimento multi-esponenziale, il fasore corrsipondente avrà coordinate date da una combinazione lineare dei segnali degli esponenziali puri, e si troverà nell'area racchiusa dal semicerchio universale.\\
 
-
+% Prima di essere analizzato, è necessario effettuare una deconvoluzione tra il segnale del decadimento di fluorescenza e quello degli impulsi laser
 
 
 
@@ -64,6 +64,16 @@ L'analisi dei dati raccolti mediante \textit{FLIM} avviene tradizionalmente medi
 
 
 \section*{Sviluppo e analisi delle simulazioni}
+
+In primo luogo è stato simulato un segnale di fluorescenza mono-esponenziale ($I(t)=I_0\,e^{-t/\tau}$), con $\tau=4\,\text{ns}$, $I_0=10000$, ed è stato rappresentato sul grafico intensità-tempo e sul piano dei fasori, dopo avervi aggiunto del rumore gaussiano ($\textit{SNR}=10$).\\
+Il procedimento è stato ripetuto per decadimenti a doppia e tripla esponenziale; in entrambi i casi sul piano dei fasori è stata rappresentata la posizione relativa del segnale totale e dei decadimenti associati ai fluorofori "puri".\\
+Nel caso a doppia esponenziale, il fasore totale cade sempre sulla corda che collega i fasori "puri", ed è possibile ricavare il rapporto di intensità tra le due specie tramite una proporzione con il rapporto tra le lunghezze dei due sotto-segmenti che si vengono a creare.\\
+Nel caso a tripla esponenziale, il segnale totale appare incluso nell'area di un triangolo che ha come vertici i tre decadimenti puri. L'intensità relativa di una delle tre specie è proporzionale all'area del sotto-triangolo data dai fasori associati alle altre due specie pure, e dal fasore del segnale totale.\\
+
+Successivamente, è stato simulato il segnale della IRF (\textit{Instrument Response Function}), 
+
+Lo studio dell’IRF (\textit{Instrument Response Function}) è una parte fondamentale dell’analisi fasoriale: nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore introduce spesso un errore temporale di dimensioni paragonabili ai tempi di vita di fluorescenza che vengono studiati. Il segnale della \textit{IRF} deve quindi essere deconvoluto dal segnale totale, per ottenere il decadimento di fluorescenza pulito.\\
+Per il teorema della convoluzione, questa deconvoluzione può avvenire sul piano complesso mediante una semplice divisione: $z_{segnale} = z_{decadimento} \cdot z_{IRF}$. Dal punto di vista operativo, è stato aggiunto al decadimento mono-bi-tri-esponenziale una IRF modellizzata da una gaussiana, per mezzo di una convoluzione. Il segnale totale è stato trasposto sul piano dei fasori, dove la IRF è stata deconvoluta tramite procedimento semplificato.\\
 
 
 \section*{Analisi di campioni reali}
