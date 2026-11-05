@@ -1,4 +1,4 @@
-\section{Test su immagini}\label{sec:test_su_immagini}
+\chapter{Test su immagini}\label{sec:test_su_immagini}
 
 In questa sezione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
 
@@ -45,12 +45,12 @@ Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Immagine 1 - elaborazione dei dati}
+\section{Immagine 1 - elaborazione dei dati}
 
 Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata un'introduzione teorica/computazionale, seguita da un paragrafo contenente le immagini ottenute e le relative osservazioni.\\
 
 
-\subsubsection{Isolamento e deconvoluzione della IRF}
+\subsection{Isolamento e deconvoluzione della IRF}
 
 \paragraph{Teoria}
 
@@ -119,7 +119,7 @@ In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Filtro \textit{"median"} sul piano dei fasori}
+\subsection{Filtro \textit{"median"} sul piano dei fasori}
 
 Raccolte dati con un numero ridotto di fotoni per acquisizione sono più soggette a una tipologia di errore statistico detto "\textit{shot noise}", un rumore Poissoniano dovuto alla natura discreta dei fotoni.\\
 Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi.\\
@@ -146,7 +146,7 @@ Una media dei decadimenti, invece, mescolerebbe pixel affiancati portando infine
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Selezione della regione di interesse} 
+\subsection{Selezione della regione di interesse}
 
 %citazione alla teoria needed
 
@@ -181,10 +181,11 @@ La selezione della regione di interesse (ROI) è uno strumento la cui utilità d
     \item Infine, è essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
 \end{itemize}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsubsection{\textit{Thresholding} e implementazione}
+\subsection{\textit{Thresholding} e implementazione}
 \label{sec:thresholding_e_implementazione}
 
 Nel codice, filtro median, selezione della regione di interesse e \textit{thresholding} vengono implementati nella stessa funzione, in questo ordine.\\
@@ -261,7 +262,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Osservazioni finali sull'immagine 1}
+\subsection{Osservazioni finali sull'immagine 1}
 
 % nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
 
@@ -271,7 +272,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Immagine 2 - Decadimenti multi-esponenziali} 
+\section{Immagine 2 - Decadimenti multi-esponenziali}
 
 % citare freq di eccitazione 1100 nm, utile per introdurre il fatto che il filtro verde di fatto seleziona le emissioni di SHG invece che fluorescenze
 
@@ -285,7 +286,7 @@ Verrà mostrato in una sezione successiva che la rappresentazione dei decadiment
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Estrazione della IRF e generazione di seconda armonica}
+\subsection{Estrazione della IRF e generazione di seconda armonica}
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.
 
@@ -307,7 +308,7 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
 %\paragraph{pratica} - immagine + magari un commentino sul significato della forma allungata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Confronto tra il rapporto di fluorofori in regioni distinte}
+\subsection{Confronto tra il rapporto di fluorofori in regioni distinte}
 \label{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}
 
 La forma allungata della nuvola di dati deconvoluta può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentazione diverso nelle varie regioni del campione.\\
@@ -387,7 +388,7 @@ Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\
 La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro delle nuvola dei fasori.\\
 Al contrario, è probabile che l'acquisizione con filtro rosso catturi un singolo processo di fluorescenza, o più fenomeni a tempo di vita simile. Ciò si evince dalla forma isotropa della distribuzione di fasori.\\
 
-Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:errore_statistico_sui_fasori}).\\ % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
+Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:errore_statistico_sui_fasori}). % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
 
 
 
@@ -421,7 +422,7 @@ In seguito, è stato calcolato il rapporto di concentrazione delle due specie fl
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Errore statistico sui fasori}
+\subsection{Errore statistico sui fasori}
 \label{sec:errore_statistico_sui_fasori}
 
 Vengono qui discusse le tecniche di calcolo delle incertezze associate alla misurazione del rapporto di concentrazione tra fluorofori.\\
@@ -522,7 +523,7 @@ L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matr
 
 
 
-\subsubsection{Propagazione delle incertezze}
+\subsection{Propagazione delle incertezze}
 
 
 Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.\\
@@ -546,4 +547,3 @@ for i in range(n_sim): # P = ROI phasor, A = red, B = green
 \\
 È stata infine estratta la deviazione standard dai quattro \textit{array} ottenuti (\texttt{f1\_ROI1\_sims}, \texttt{f2\_ROI1\_sims}, \texttt{f1\_ROI2\_sims} e \texttt{f2\_ROI2\_sims}); quest'ultima è stata associata come incertezza statistica ai risultati calcolati nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}.\\
 % metto qui la panel app? o non la inserisco proprio nella tesi?
-

@@ -3,8 +3,8 @@
 
 %%% Preambolo del documento %%%
 % Non toccate questa roba, a meno che non siate abbastanza sgamati da sapere quello che state facendo, tipo vi piacciono di più certi pacchetti rispetto ad altri, o magari ve ne manca qualcuno.
-\documentclass[a4paper, 12pt, twoside]{article}
-\usepackage[top=2.5cm, bottom=2.5cm, inner=2.5cm, outer=2.5cm]{geometry}
+\documentclass[a4paper, 12pt, twoside]{report}
+\usepackage[top=3cm, bottom=3cm, inner=2.5cm, outer=2.5cm]{geometry}
 % da sostituire in caso di stampa fronte-retro
 %\usepackage[top=2.5cm, bottom=2.5cm, inner=4cm, outer=4cm, right=2.5cm]{geometry}
 \usepackage[utf8]{inputenc} % codifica UTF-8
@@ -43,17 +43,17 @@
 % ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte ------------------
 \usepackage{svg}
 \usepackage{setspace}
-\onehalfspacing
+\setstretch{1.15}
 \usepackage{changepage}
 \usepackage{colortbl}
 \usepackage{titlesec}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{-0.2\baselineskip}
-%  \titlespacing{comando}{spazio_sinistro}{spazio_sopra}{spazio_sotto}
-\titlespacing*{\section}{0pt}{11ex plus 2ex minus 1ex}{4ex plus .2ex}
-\titlespacing*{\subsection}{0pt}{6.5ex plus 1ex minus .5ex}{3.3ex plus .2ex}
-\titlespacing*{\subsubsection}{0pt}{4ex plus .5ex minus .25ex}{2.5ex plus .1ex}
-\titlespacing*{\paragraph}{0pt}{3.4ex plus .8ex minus 0ex}{+1.5 em}
+%\setlength{\parskip}{-0.1\baselineskip}
+% %  \titlespacing{comando}{spazio_sinistro}{spazio_sopra}{spazio_sotto}
+% \titlespacing*{\section}{0pt}{11ex plus 2ex minus 1ex}{4ex plus .2ex}
+% \titlespacing*{\subsection}{0pt}{6.5ex plus 1ex minus .5ex}{3.3ex plus .2ex}
+% \titlespacing*{\subsubsection}{0pt}{4ex plus .5ex minus .25ex}{2.5ex plus .1ex}
+% \titlespacing*{\paragraph}{0pt}{3.4ex plus .8ex minus 0ex}{+1.5 em}
 
 
 
@@ -64,25 +64,25 @@
 \usemintedstyle{vs}
 \setminted{breaklines=true}
 
-% Modifica i titoli delle sezioni (\section)
-\titleformat{\section}
-  {\normalfont\fontsize{24pt}{27pt}\selectfont\bfseries} % Stile del titolo (es. grande e in grassetto)
-  {\thesection}                 % Numero della sezione
-  {1em}                         % Spazio tra il numero e il titolo
-  {}                            % Codice prima del titolo
+% % Modifica i titoli delle sezioni (\section)
+% \titleformat{\section}
+%   {\normalfont\fontsize{24pt}{27pt}\selectfont\bfseries} % Stile del titolo (es. grande e in grassetto)
+%   {\thesection}                 % Numero della sezione
+%   {1em}                         % Spazio tra il numero e il titolo
+%   {}                            % Codice prima del titolo
 
-% Fa lo stesso per le sottosezioni (\subsection)
-\titleformat{\subsection}
-  {\normalfont\fontsize{20pt}{23pt}\selectfont\bfseries}
-  {\thesubsection}
-  {1em}
-  {}
-% e sotto
-\titleformat{\subsubsection}
-  {\normalfont\fontsize{15pt}{18pt}\selectfont\bfseries}
-  {\thesubsubsection}
-  {1em}
-  {}
+% % Fa lo stesso per le sottosezioni (\subsection)
+% \titleformat{\subsection}
+%   {\normalfont\fontsize{20pt}{23pt}\selectfont\bfseries}
+%   {\thesubsection}
+%   {1em}
+%   {}
+% % e sotto
+% \titleformat{\subsubsection}
+%   {\normalfont\fontsize{15pt}{18pt}\selectfont\bfseries}
+%   {\thesubsubsection}
+%   {1em}
+%   {}
 
 
 
@@ -132,12 +132,6 @@
 \IfFileExists{\jobname-frn.pdf}{}{%
 \immediate\write18{lualatex -interaction=nonstopmode -output-directory=build \jobname-frn.tex}}
 
-% --- INIZIO PAGINA BIANCA ---
-\newpage
-\thispagestyle{empty} % Rimuove il numero di pagina
-\mbox{}               % Inserisce un box vuoto invisibile
-\newpage
-% --- FINE PAGINA BIANCA ---
 
 %%% Indice %%%
 \vspace*{\fill}

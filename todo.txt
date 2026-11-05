@@ -4,7 +4,8 @@ TODO A BREVE:
 - sistemare panel + selez bidirezionale
 - rivedere inizio parte teorica IRF perché potrebbero esserci ripetizioni
 - caccia agli % per riscrivere le cose scritte di merda 
-
+- aggiungere l'estrapolazione dei due fluorofori nella teoria o rimozione dei riferimenti a esso nella sez 4
+- inserire e correggere numeri (threshold, snr,...)
 
 OBIETTIVI CHE DEVO ANCORA ELABORARE:
 

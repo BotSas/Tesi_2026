@@ -58,7 +58,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-tounicode.l
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-case.lua
 INPUT /usr/share/texlive/texmf-dist/tex/luatex/luaotfload/luaotfload-bcp47.lua
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.lua
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc
