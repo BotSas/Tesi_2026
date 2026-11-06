@@ -2,13 +2,12 @@
 
 \section{\textit{FLIM} e analisi fasoriale}
 
-Con il termine "tempo di vita di fluorescenza" si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($10^{-9}$s).\\
-Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti.\\
+Con il termine "tempo di vita di fluorescenza" si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
+Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti.
 
 La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nella stima della concentrazione di fluoroforo nelle regioni di tessuto biologico \cite[Sez. 22]{mastersBookReviewPrinciples2008a}. Queste infatti dipendono da fattori complessi come determinate affinità tra fluoroforo e sostanze presenti nel campione, e non esiste una stretta correlazione tra l'intensità di fluorescenza e la concentrazione del fluoroforo \cite[Sez. 22]{mastersBookReviewPrinciples2008a}.\\
-
 Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere indipendente da quest'ultima (inoltre, è indipendente dal cammino ottico) \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente il problema.\\
-Questo è l'ambito di studio della \textit{FLIM} (miscroscopia a tempo di vita di fluorescenza).\\
+Questo è l'ambito di studio della \textit{FLIM} (miscroscopia a tempo di vita di fluorescenza).
 
 Un altro beneficio fondamentale è la possibilità di monitorare processi biologici che avvengono allo stato eccitato, ad esempio il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}; o l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotidee}) e FAD (\textit{flavin adenin dinucleotide}), due enzimi e fluorofori intrinseci fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.\\
 
@@ -107,9 +106,9 @@ In un esperimento reale, il campione studiato viene suddiviso in pixel, e per og
 
 %__________________________________________________ 
 
-\paragraph{Il semicerchio universale}
+\subsection{Il semicerchio universale}
 
-È possibile dimostrare che ad un decadimento mono-esponenziale corrispondono fasori su un semicerchio di raggio unitario a $S$ positivo, con valori di $\tau$ minimi in $(1, 0)$ e massimi in $(0, 0)$.\\
+È possibile dimostrare che ad un decadimento a esponenziale singola corrispondono fasori su un semicerchio di raggio unitario e a valori di $S$ positivi, con valori di $\tau$ minimi in $(1, 0)$ e massimi in $(0, 0)$.
 
 Per prima cosa, si ricava la soluzione analitica dei primi due coefficienti di Fourier di un segnale di fluorescenza mono-esponenziale:
 
@@ -147,7 +146,7 @@ Questa definizione delle coordinate fasoriali si rivela utile per la rappresenta
 
 %____________________________________
 
-\paragraph{Definizione mediante coordinate polari}
+\subsection{Definizione mediante coordinate polari}
 
 Un altro modo per identificare i punti sul piano dei fasori, alternativo alle coordinate cartesiane $(S, G)$, è mediante le coordinate polari $(M, \phi)$:
 
@@ -200,7 +199,7 @@ Per una trattazione più approfondita sulla deconvoluzione della IRF, si rimanda
 
 %______________________________________________________________
 
-\paragraph{Rappresentazione di decadimenti multi-esponenziali}
+\subsection{Rappresentazione di decadimenti multi-esponenziali}
 
 Si consideri un campione dove coesistono più specie fluorofore, dunque con segnale di fluorescenza descritto da un decadimento multi-esponenziale, ovvero una combinazione lineare di esponenziali puri (come mostrato nella \ref{eq:exponential_intensity}).\\
 Per linearità della trasformata di Fourier, anche il fasore corrispondente al decadimento in un pixel avrà coordinate date da una combinazione lineare dei segnali degli esponenziali puri \cite{torradoLinearCombinationProperties2022}:
@@ -212,14 +211,23 @@ Per linearità della trasformata di Fourier, anche il fasore corrispondente al d
 
 % Dove $f_k$ è il contributo frazionario all'intensità, e $(G_k, S_k)$ le coordinate fasoriali, relativi al fluoroforo $k$-esimo.\\ 
 
-dove $(G_k, S_k)$ sono le coordinate fasoriali della specie fluorofora $k$-esima.\\
+dove $(G_k, S_k)$ sono le coordinate fasoriali della specie fluorofora $k$-esima.
 
 Occorre notare che $(G_k, S_k)$ sono normalizzate utilizzando l'intensità totale emessa (numero totale di fotoni).\\ 
-Per questo motivo, le coordinate totali $(G, S)$ si ottengono come una media pesata dei fasori relativi ai decadimenti puri, dove i pesi sono rappresentati dalle frazioni relative di intensità associate a ciascuna specie fluorofora \cite{torradoLinearCombinationProperties2022}.\\
+Per questo motivo, le coordinate totali $(G, S)$ si ottengono come una media pesata dei fasori relativi ai decadimenti puri, dove i pesi sono rappresentati dalle frazioni relative di intensità associate a ciascuna specie fluorofora \cite{torradoLinearCombinationProperties2022}.
 
-Nelle miscele a due componenti, i fasori misti si posizioneranno sempre sul segmento con estremi i fasori dei decadimenti puri; il rapporto di concentrazione sarà proporzionale alla distanza dagli estremi \cite{torradoLinearCombinationProperties2022}.\\
+% Per i decadimenti a doppia esponenziale è stata con-
+% fermata visivamente la posizione del fasore sul segmento congiungente le due componenti pure;
+% le rispettive frazioni di intensità risultano inversamente proporzionali alle distanze dai vertici
+% (fA : fB = P B : P A).
+% Analogamente, per i decadimenti tri-esponenziali il fasore P cade all’interno del triangolo di
+% vertici A, B e C (associati alle tre specie pure), e la frazione di intensità di ciascuna componente
+% risulta proporzionale all’area del sotto-triangolo opposto al rispettivo vertice.
 
-Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del triangolo con vertici i fasori dei decadimenti puri. La concentrazione di una specie fluorofora sarà data dall'area del sotto-triangolo che ha come vertici il fasore misto e i fasori relativi alle altre due specie fluorofore \cite{torradoLinearCombinationProperties2022}.\\
+Nelle miscele a due componenti, i fasori misti si posizioneranno sempre sul segmento con estremi i fasori dei decadimenti puri; il rapporto di concentrazione sarà proporzionale alla distanza dagli estremi \cite{torradoLinearCombinationProperties2022}.
+
+
+Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del triangolo con vertici i fasori dei decadimenti puri. La concentrazione di una specie fluorofora sarà data dall'area del sotto-triangolo che ha come vertici il fasore misto e i fasori relativi alle altre due specie fluorofore \cite{torradoLinearCombinationProperties2022}.
 
 % qua devo mettere delle immagini perché non si capisce... magari posso disegnarle?
 
