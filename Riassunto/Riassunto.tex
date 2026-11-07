@@ -10,7 +10,7 @@
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
 
 \setstretch{1.15}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{15pt}
 \setlength{\parskip}{0.5em}
 
 
@@ -23,43 +23,71 @@
 
 \begin{document}
 
+% \begin{center}
+%     {\scshape Università degli Studi di Milano-Bicocca} \\
+%     {\small Dipartimento di Fisica ``G. Occhialini'' -- Corso di Laurea in Fisica} \\[0.4cm]
 
-\section*{Sintesi dell'elaborato}
 
 
-La microscopia a tempi di vita di fluorescenza (FLIM, Fluorescence Lifetime Imaging Microscopy), è una tecnica spettroscopica che fornisce informazioni sulle specie fluorofore presenti in un campione in modo indipendente dalla loro concentrazione.
+\textit{\small{Dipartimento di Fisica ``G. Occhialini'' - Corso di Laurea triennale in Fisica}}\\
+\vspace{-10pt}
+% \small{Organización y/o Universidad}}
+\begin{center}
+\normalsize{Riassunto dell'elaborato:}\\
+\medskip
+\Large{``Metodo dei fasori applicato all'analisi dei tempi di vita di fluorescenza''}
+\vspace{0.4cm}
+\normalsize
 
-L'analisi dei dati FLIM si basa tradizionalmente su procedure di fitting multi-esponenziale del decadimento esponenziale per ciascun pixel dell'immagine, e risulta computazionalmente costosa e sensibile al rumore. Un approccio più moderno è invece quello dell'analisi fasoriale: il decadimento temporale di ciascun pixel viene proiettato in un punto dello spazio complesso $z(\omega) = G(\omega) + i\,S(\omega)$ attraverso una trasformata di Fourier calcolata alla frequenza angolare di modulazione del sistema ($\omega =2\pi/T_{laser}$), e normalizzata dal numero totale di fotoni raccolti nel pixel.
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll@{}}
+    \textbf{Candidata:} Sara Di Lernia & \textbf{Relatrice:} Prof.ssa Laura Sironi \\
+    \textbf{Matricola:} 898437 & \textbf{Correlatore:} Dott. Davide Panzeri \\
+    \textbf{Recapito telefonico:} +39 345 830 7326 & \textbf{Appello di Laurea:} Novembre 2026 \\
+\end{tabular*}
+
+\vspace{0.2cm}
+\hrule
+\vspace{0.4cm}
+
+
+\normalsize
+
+\end{center}
+
+\vspace{-5pt}
+
+\noindent L'obiettivo principale di questo studio è quello di approfondire il \textit{metodo dei fasori} per l'analisi dei dati FLIM, prima mediante la generazione e l'analisi di decadimenti di fluorescenza simulati, poi tramite lo studio di acquisizioni reali. Infine viene presentata un'interfaccia grafica interattiva basata sul codice implementato.
+
+La microscopia a tempi di vita di fluorescenza (FLIM, Fluorescence Lifetime Imaging Microscopy), è una tecnica di imaging spettroscopica che permette di mappare di tempi di vita delle specie fluorescenti presenti in un campione biologico. Le immagini ottenute, quindi, non dipendono dall'intensità della fluorescenza ma dal tempo medio in cui una molecola resta nello stato eccitato prima di tornare allo stato fondamentale. Questo decadimento spontaneo avviene secondo una legge esponenziale $I(t)=I_0\,e^{-t/\tau}$, dove $\tau$ rappresenta il tempo di vita di fluorescenza.
+Il tempo di vita di fluorescenza è sensibile alle variazioni ambientali, come pH e stato ossidativo, dunque la FLIM può essere utilizzata per monitorare processi biologici che avvengono allo stato eccitato, come  il trasferimento di energia per risonanza (FRET), o l'evoluzione della concentrazione relativa di NADH e FAD, due coenzimi coinvolti nel metabolismo cellulare.\\
+L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (Time-Correlated Single Photon Counting): il campione viene scansionato pixel per pixel da un laser a impulsi periodici e molto brevi ($\sim 10^{-12}\,s$, $f\sim 20-80\,\text{MHz}$), mentre un rivelatore registra i fotoni di fluorescenza emessi.
+Ripetendo la misura per migliaia di impulsi, per ogni pixel viene accumulato un istogramma dei ritardi, che ricostruisce la curva di decadimento di fluorescenza.
+
+L'analisi FLIM tradizionale si basa sull'interpolazione esponenziale o multi-esponenziale del decadimento di fluorescenza raccolto da ciascun pixel dell'immagine, risultando computazionalmente costosa e spesso imprecisa a causa del numero di parametri liberi.\\
+Un approccio più moderno è invece quello dell'analisi dei fasori: ogni decadimento viene trasposto in un punto del piano complesso $z(\omega) = G(\omega) + i\,S(\omega)$ mediante la trasformata di Fourier del segnale di fluorescenza calcolata alla frequenza angolare di modulazione ($\omega =2\pi/T_{laser}$), e normalizzata sull'intensità totale emessa nel pixel:
 \[
 G(\omega) = \frac{\int_0^{T} I(t) \cos(\omega t)\,dt}{\int_0^{T} I(t)\,dt}, \qquad 
 S(\omega) = \frac{\int_0^{T} I(t) \sin(\omega t)\,dt}{\int_0^{T} I(t)\,dt}
 \]
+In questo spazio, i punti associati ai decadimenti mono-esponenziali puri e senza rumore cadono su una curva di riferimento detta ``semicerchio universale'', mentre quelli multi-esponenziali (emissione di specie fluorofore con tempi di vita diversi) si trovano nell'area compresa tra questa curva e l'asse reale. Grazie alla linearità della trasformata di Fourier, i fasori obbediscono alla regola della somma vettoriale pesata sull'intensità frazionaria dei singoli fluorofori.\\
+Nei dati FLIM reali, i decadimenti di fluorescenza sono convoluti temporalmente con la funzione di risposta dello strumento (IRF, \textit{Instrument Response Function}), fortemente sensibile alla strumentazione utilizzata. Nell'analisi dei fasori, è possibile sfruttare il teorema della convoluzione per isolare il segnale di fluorescenza dalla IRF mediante una semplice divisione complessa sul piano dei fasori: $z_{\text{decadimento}} = z_{\text{segnale}}/z_{\text{IRF}}$.\\
+La deconvoluzione della IRF tramite l'approccio appena presentato è stata studiata sia su dati simulati che reali.
 
-In questo spazio, punti associati ai decadimenti mono-esponenziali ($I(t) = I_0 e^{-t/\tau}$) cadono sul \textit{semicerchio universale} (centrato in $(G, S)=(0.5, 0)$ e a valori nel primo quadrante), mentre i multi-esponenziali (emissione di specie fluorofore con tempi di vita diversi) si trovano nell'area compresa tra questa curva di riferimento e l'asse reale. In quest'ultimo caso, grazie alla linearità della trasformata di Fourier, i fasori obbediscono alla regola della somma vettoriale pesata sull'intensità frazionaria dei singoli fluorofori.
+In una prima fase sono state generate delle simulazioni tramite linguaggio Python (sfruttando principalmente le librerie \textit{Phasorpy}, \textit{Numpy}, \textit{Mathplotlib}), volto al collaudo delle funzioni di analisi delle curve di decadimento.
+In primo luogo sono stati simulati decadimenti mono-esponenziali e multi-esponenziali (a due e tre componenti) al variare di $\tau_k$, $f_k$ (tempi di vita e intensità frazionarie di ogni componente), in seguito rappresentati sul piano dei fasori. Per i decadimenti multi-esponenziali è stata verificata la posizione del fasore rispettivamente sul segmento congiungente le due componenti (esponenziale doppia) e all'interno del triangolo di vertici associati alle tre specie pure (esponenziale tripla).
 
-Nei dati FLIM reali, i decadimenti di fluorescenza sono convoluti temporalmente con la funzione di risposta dello strumento (IRF, \textit{Instrument Response Function}), fortemente sensibile alla strumentazione utilizzata. Nell'analisi fasoriale, è possibile sfruttare il teorema della convoluzione per isolare il segnale di fluorescenza dalla IRF mediante una semplice divisione complessa sul piano dei fasori: $z_{\text{decadimento}} = z_{\text{segnale}}/z_{\text{IRF}}$.
+Nella sezione principale della trattazione, gli algoritmi di analisi sviluppati sono stati applicati a immagini FLIM reali, estratte dall'archivio opern-source Zenodo (progetto FLUTE).\\
+In entrambe le immagini, il fasore della IRF è stato estratto grazie a immagini di calibrazione con fluorofori a $\tau$ noto, come la fluorescina.\\
+Per quanto riguarda il primo campione biologico analizzato, sono stati rappresentati i fasori associati ai singoli pixel, dopo aver applicato un filtro median \texttt{3}$\times$\texttt{3} alla matrice delle coordinate $(G, S)$, per ridurre la dispersione dei fasori causata dal rumore. È inoltre stata applicata una soglia di esclusione dei pixel con conteggi di fotoni troppo bassi, e una procedura di selezione di regioni di interesse, che agisce come una maschera quadrata che può essere spostata sull'immagine per mappare sul piano dei fasori i soli pixel selezionati.\\
+La seconda immagine invece era corredata da due acquisizioni ottenute filtrando rispettivamente l'emissione nel rosso ($\lambda = 607\, \text{nm}$) e nel verde ($\lambda = 550\, \text{nm}$) di due specie fluorofore differenti. Questo ha permesso  di ottenere dei riferimenti per effettuare la scomposizione delle frazioni di intensità sul piano dei fasori.\\
 
-Nella prima fase operativa è stato sviluppato un modello in linguaggio Python per la generazione e l'analisi di segnali di fluorescenza simulati, volto al collaudo delle funzioni di analisi prima dell'applicazione a raccolte di dati reali.\\
-In primo luogo sono stati simulati decadimenti prima mono-esponenziali, poi multi esponenziali (a due e tre componenti), al variare di $\tau_k$, $f_k$ (rispettivamente i tempi di vita e le intensità frazionarie di ogni componente) e del rapporto segnale-rumore. Dopodiché i segnali sono stati rappresentati sul piano dei fasori. Per i decadimenti a doppia esponenziale è stata confermata visivamente la posizione del fasore sul segmento congiungente le due componenti pure; le rispettive frazioni di intensità risultano inversamente proporzionali alle distanze dai vertici ($f_A : f_B = \overline{PB} : \overline{PA}$).\\
-Analogamente, per i decadimenti tri-esponenziali il fasore $P$ cade all'interno del triangolo di vertici $A$, $B$ e $C$ (associati alle tre specie pure), e la frazione di intensità di ciascuna componente risulta proporzionale all'area del sotto-triangolo opposto al rispettivo vertice.
-
-Successivamente è stata modellizzata una IRF gaussiana a $\mu$ e $\sigma$ variabili, ed è stata aggiunta a segnali mono-esponenziali e bi-esponenziali mediante una convoluzione nel dominio temporale. Segnale totale e deconvoluto, IRF e componenti pure deconvolute sono stati rappresentati sul piano dei fasori, confermando il funzionamento dell'algoritmo di deconvoluzione implementato sul piano dei fasori.
-
-Nella sezione principale della trattazione, gli argoritmi di analisi sviluppati in precedenza sono stati applicati a immagini FLIM reali, ovvero dataset contenuti in file \textit{tiff} di dimensioni \texttt{x}, \texttt{y} e \texttt{time}, in cui per ogni singolo pixel è contenuto il segnale del corrsipondente decadimento di fluorescenza.
-
-Il primo campione biologico analizzato è un embrione di Zebrafish a 3 giorni dalla fecondazione, di cui viene studiata la fluorescenza endogena.\\
-Il fasore della IRF è stato estratto grazie a un'immagine di calibrazione con fluoresceina, $\tau = 4\,\text{ns}$, corredata all'immagine del campione.
-Dopo la deconvoluzione dalla IRF, sono stati rappresentati i fasori associati ai singoli pixel, dopo aver applicato un filtro median \texttt{3}$\times$\texttt{3} alla matrice delle coordinate $(G, S)$, per ridurre la dispersione dei fasori causata dal rumore. È inoltre stata applicata una soglia di esclusione dei pixel con conteggi di fotoni troppo bassi, e una procedura di selezione di regioni di interesse (ROI, Region Of Interest). Quest'ultima agisce come una maschera quadrata di lato e posizione variabile che può essere spostata sull'immagine per mappare sul piano dei fasori i soli pixel selezionati.
-
-La seconda immagine analizzata riguarda un ulteriore embrione di Zebrafish, questa volta a 5 giorni dalla fecondazione; in questo caso, oltre all'acquisizione di fluorescenza totale, sono state fornite anche due acquisizioni ottenute filtrando rispettivamente l'emissione nel rosso ($\lambda = 607\, \text{nm}$) e nel verde ($\lambda = 550\, \text{nm}$).\\
-La calibrazione della IRF è stata effettuata sfruttando un segnale di generazione di seconda armonica (\textit{Second Harmonic Generation}, SHG), un processo istantaneo che vede la conversione di due fotoni infrarossi incidenti in un fotone visibile; successivamente tutti e 3 i dataset (totale, rosso e verde) sono stati rappresentati sul piano dei fasori.
-
-Selezionate due ROI distinte sull'immagine, è stato determinato e messo a confronto il rapporto tra i contributi dei fluorofori rosso e verde in ciascuna regione, valutando la posizione del fasore medio di ogni ROI rispetto ai centroidi dei cluster rosso e verde. 
+Selezionate due ROI distinte sull'immagine, è stato determinato e messo a confronto il rapporto di intensità dei fluorofori rosso e verde in ciascuna regione, valutando la posizione del fasore medio di ogni ROI rispetto quelli dei cluster rosso e verde. 
 Infine, è stato effettuato uno studio delle incertezze valutando la matrice di covarianza di ciascun cluster e propagando l'errore alle frazioni di intensità tramite simulazione Monte Carlo. 
-I risultati ottenuti mostrano, nella prima regione, una predominanza della componente rossa con frazioni pari a $f_{\text{rosso}} = 0.94 \pm 0.04$ e $f_{\text{verde}} = 0.06 \pm 0.04$, mentre nella seconda si osserva una presenza bilanciata di entrambe le componenti ($f_{\text{rosso}} = 0.55 \pm 0.12$ e $f_{\text{verde}} = 0.45 \pm 0.12$).\\
+I risultati ottenuti mostrano, nella prima regione, una predominanza della componente rossa ($f_{\text{rosso}} = 0.94 \pm 0.04$ e $f_{\text{verde}} = 0.06 \pm 0.04$), mentre nella seconda si osserva una presenza bilanciata di entrambe le componenti ($f_{\text{rosso}} = 0.55 \pm 0.12$ e $f_{\text{verde}} = 0.45 \pm 0.12$).
 
-In conclusione, da questa trattazione emerge come l'analisi fasoriale rappresenti una valida alternativa al \textit{fitting} non lineare, riducendo i costi computazionali legati all'interpolazione e semplificando la correzione della IRF tramite deconvoluzione algebrica nel piano complesso, senza necessità di conoscerne il profilo temporale esatto. . 
-A corredo del lavoro, è stata inoltre sviluppata un'interfaccia grafica interattiva basata sulla libreria \textit{Panel}, allo scopo di agevolare la visualizzazione sia delle fasi di generazione dei segnali, sia della corrispondenza spaziale tra le distribuzioni sul piano dei fasori e i pixel di un'immagine.
+In conclusione, da questa trattazione emerge come l'analisi dei fasori rappresenti una valida alternativa al \textit{fitting} non lineare, riducendo i costi computazionali legati all'interpolazione e semplificando il processo di deconvoluzione della IRF.\\
+L'interfaccia grafica (sviluppata mediante la libreria \textit{Panel}) ha lo scopo di agevolare la visualizzazione sia delle fasi di generazione dei segnali, sia della corrispondenza spaziale tra le distribuzioni sul piano dei fasori e i pixel di un'immagine FLIM, agevolando l'introduzione all'analisi dei fasori ai non addetti al settore.\\
+
 
 \end{document}
-

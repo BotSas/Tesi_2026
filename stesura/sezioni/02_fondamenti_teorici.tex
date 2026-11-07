@@ -1,24 +1,21 @@
 \chapter{Fondamenti teorici}\label{sec:cenni_teorici}
 
-\section{\textit{FLIM} e analisi fasoriale}
+\section{Decadimento di fluorescenza e \textit{FLIM}}
+
+% da inserire un po' di cose sulla fluorescena, spegare le tecniche di acquisizione flum con TCSPC
+
+% setup piu comunque utilizza una scheda time-correlated single photon counting su un microscopio confocale o a due fotoni. Un laser pulsato, con impulsi di picosecondi a una freq di 20à-80 MHZ rccita il campione in un punto , e il fascio scansiona l'immagine pixel per pixel. Per ogni pixel un rivelatore sensibile e con risposte molto rapide, registra i fotoni di fluorescenza emessi dopo ogni impuslo. L'elettronica TCSCP misura il tempo che passa tra l'impulso laser e l'arrivo del fotone in genere un solo fotone per ciclo. Ripetendo la misura per migliaia di impulsi, ogni pixel accumula un istogramma dei ritardi, cioé la curva di decadimento della fluorescenza. Servono di solito centinaia o migliaia di fotoni per pixel, quindi le acquisizioni durano da secondi a decine di secondi.
 
 Con il termine "tempo di vita di fluorescenza" si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
 Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti.
 
 La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nella stima della concentrazione di fluoroforo nelle regioni di tessuto biologico \cite[Sez. 22]{mastersBookReviewPrinciples2008a}. Queste infatti dipendono da fattori complessi come determinate affinità tra fluoroforo e sostanze presenti nel campione, e non esiste una stretta correlazione tra l'intensità di fluorescenza e la concentrazione del fluoroforo \cite[Sez. 22]{mastersBookReviewPrinciples2008a}.\\
 Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere indipendente da quest'ultima (inoltre, è indipendente dal cammino ottico) \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente il problema.\\
-Questo è l'ambito di studio della \textit{FLIM} (miscroscopia a tempo di vita di fluorescenza).
+Questo è l'ambito di studio della FLIM (miscroscopia a tempo di vita di fluorescenza).
 
-Un altro beneficio fondamentale è la possibilità di monitorare processi biologici che avvengono allo stato eccitato, ad esempio il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}; o l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotidee}) e FAD (\textit{flavin adenin dinucleotide}), due enzimi e fluorofori intrinseci fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.\\
+Un altro beneficio fondamentale della FLIM è la possibilità di monitorare processi biologici che avvengono allo stato eccitato, ad esempio il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}; o l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotidee}) e FAD (\textit{flavin adenin dinucleotide}), due enzimi e fluorofori intrinseci fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.\\
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-\section{Cenni matematici di analisi fasoriale}
-\label{sec:cenni_matematici_di_analisi_fasoriale}
-
-L'implementazione pratica degli esperimenti di FLIM consiste tipicamente nell'esposizione del campione a un laser a brevi impulsi periodici, e nella successiva rilevazione del segnale di fluorescenza mediante un fotorivelatore \cite{mastersBookReviewPrinciples2008a}.
+L'implementazione pratica degli esperimenti di FLIM consiste tipicamente nell'esposizione del campione a un laser a brevi impulsi periodici, e nella successiva rilevazione del segnale di fluorescenza mediante un fotorivelatore \cite{mastersBookReviewPrinciples2008a}.  % da aggiungere qui la spiegazione dell'apparato
 
 La probabilità che una molecola di fluoroforo si trovi allo stato eccitato al tempo $t$ segue un'andamento esponenziale decrescente, dunque il segnale di fluorescenza totale di una regione del campione contenente più molecole di un singolo fluoroforo avrà forma:
 
@@ -26,10 +23,7 @@ La probabilità che una molecola di fluoroforo si trovi allo stato eccitato al t
     I(t) =A\, e^{-t/\tau}
 \end{equation*}
 
-% mmmm qui c'è qualche conclusione da trarre, in più f per cosa cazzo sta
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% mmmm qui c'è qualche conclusione da trarre,
 
 \subsection{Interpolazione multi-esponenziale dei decadimenti}
 
@@ -73,8 +67,8 @@ Inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel seg
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Trasformazione fasoriale}
-\label{sec:trasformazione_fasoriale}
+\section{Introduzione al metodo dei fasori}
+\label{sec:trasformazione_dei_fasori}
 
 Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei fasori, una tecnica che identifica ogni decadimento di fluorescenza mediante un singolo punto nel piano dei fasori, identificato dalle coordinate $S$ e $G$, definite dai primi due termini della trasformata di Fourier del segnale di fluorescenza: 
 
@@ -84,13 +78,6 @@ Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei f
     S(\omega)=\frac{\int_{0}^{T}I(t)\,\sin(\omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
     \label{eq:fourier_S_G_integral}
 \end{equation}
-
-% \begin{equation}
-%     G_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\cos(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt} 
-%     \qquad \qquad
-%     S_{i,j}(\omega)=\frac{\int_{0}^{T}I_{i,j}\,\sin(\omega t)\,dt}{\int_{0}^{T}I_{i,j}\,dt}
-%     \label{eq:fourier_S_G_integral}
-% \end{equation}
 
 dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}.\\
 È bene osservare che:
@@ -180,7 +167,7 @@ Per una trattazione più approfondita sulla deconvoluzione della IRF, si rimanda
 
 % \paragraph{Principio di reciprocità}
 
-% Una delle proprietà che rendono utile l'analisi fasoriale è il principio di reciprocità, 
+% Una delle proprietà che rendono utile l'analisi dei fasori è il principio di reciprocità, 
 
 
 
@@ -249,7 +236,7 @@ Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del tri
 
 \section{Funzione di risposta dello strumento}
 \label{sec:funzione_di_risposta_dello_strumento}
-Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi fasoriale. \\
+Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi dei fasori. \\
 L'emissione di fluorescenza è indotta da un laser a impulsi periodici eccita le molecole di fluoroforo presenti nel campione. I fotoni emessi da quest'ultimo vengono rilevati da un fotorivelatore e registrati da una scheda di acquisizione, che li converte in un segnale elettrico.\\
 trumentazioni appartenenti a laboratori diversi possono produrre profili di decadimento anche molto differenti tra loro, a causa delle variazioni nella forma dell'impulso del laser e nella risposta dei componenti elettronici.\\
 Nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore introduce un'incertezza  temporale, che in molti casi, può raggiungere ordini di grandezza paragonabili a quelli dei tempi di vita di fluorescenza su cui è incentrato lo studio. Si rivela dunque necessario separare il decadimento reale dalla risposta strumentale (\textit{IRF}, \textit{Instrument Response Function}) tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
@@ -257,8 +244,8 @@ Nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore i
 Tuttavia, il processo di acquisizione dell'\textit{IRF} presenta numerose criticità. In primo luogo, l'impossibilità di utilizzare una soluzione di scattering nel processo \textit{FLIM}, poiché i filtri ottici bloccano i fotoni aventi lunghezza d’onda pari a quella di eccitazione.\\
 In aggiunta a ciò, il segnale subisce una distorsione temporale (solitamente un allargamento) nel passaggio attraverso l'obiettivo, la quale deve essere adeguatamente quantificata \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
-Emerge dunque un vantaggio significativo dell'analisi fasoriale rispetto all'approccio appena illustrato: non è necessario conoscere il profilo esatto dell'IRF, ma è sufficiente effettuare una calibrazione utilizzando un fluoroforo di riferimento caratterizzato da un decadimento mono-esponenziale con tempo di vita ($\tau$) noto.\\
-Come introdotto nella sezione \ref{sec:trasformazione_fasoriale}, l'operazione di convoluzione nel dominio temporale si traduce come un semplice prodotto nello spazio di Fourier. Di conseguenza, la IRF viene rappresentata da un singolo punto sul piano dei fasori, il quale, non seguendo una legge di decadimento esponenziale, non giacerà sul semicerchio universale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
+Emerge dunque un vantaggio significativo dell'analisi dei fasori rispetto all'approccio appena illustrato: non è necessario conoscere il profilo esatto dell'IRF, ma è sufficiente effettuare una calibrazione utilizzando un fluoroforo di riferimento caratterizzato da un decadimento mono-esponenziale con tempo di vita ($\tau$) noto.\\
+Come introdotto nella sezione \ref{sec:trasformazione_dei fasori}, l'operazione di convoluzione nel dominio temporale si traduce come un semplice prodotto nello spazio di Fourier. Di conseguenza, la IRF viene rappresentata da un singolo punto sul piano dei fasori, il quale, non seguendo una legge di decadimento esponenziale, non giacerà sul semicerchio universale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 
 Unendo queste informazioni, il fasore del segnale misurato $z_{\text{segnale}}$ può essere espresso come il prodotto complesso tra il fasore del decadimento reale e quello della risposta strumentale, da cui si ricava immediatamente il segnale di pura fluorescenza per inversione:
 
