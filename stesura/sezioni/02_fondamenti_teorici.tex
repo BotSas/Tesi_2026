@@ -1,66 +1,52 @@
 \chapter{Fondamenti teorici}\label{sec:cenni_teorici}
 
-\section{Decadimento di fluorescenza e \textit{FLIM}}
-
-% da inserire un po' di cose sulla fluorescena, spegare le tecniche di acquisizione flum con TCSPC
-
-% setup piu comunque utilizza una scheda time-correlated single photon counting su un microscopio confocale o a due fotoni. Un laser pulsato, con impulsi di picosecondi a una freq di 20à-80 MHZ rccita il campione in un punto , e il fascio scansiona l'immagine pixel per pixel. Per ogni pixel un rivelatore sensibile e con risposte molto rapide, registra i fotoni di fluorescenza emessi dopo ogni impuslo. L'elettronica TCSCP misura il tempo che passa tra l'impulso laser e l'arrivo del fotone in genere un solo fotone per ciclo. Ripetendo la misura per migliaia di impulsi, ogni pixel accumula un istogramma dei ritardi, cioé la curva di decadimento della fluorescenza. Servono di solito centinaia o migliaia di fotoni per pixel, quindi le acquisizioni durano da secondi a decine di secondi.
+\section{Decadimento di fluorescenza e \textit{FLIM}} %OK
 
 Con il termine "tempo di vita di fluorescenza" si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
-Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti.
-
-La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nella stima della concentrazione di fluoroforo nelle regioni di tessuto biologico \cite[Sez. 22]{mastersBookReviewPrinciples2008a}. Queste infatti dipendono da fattori complessi come determinate affinità tra fluoroforo e sostanze presenti nel campione, e non esiste una stretta correlazione tra l'intensità di fluorescenza e la concentrazione del fluoroforo \cite[Sez. 22]{mastersBookReviewPrinciples2008a}.\\
-Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere indipendente da quest'ultima (inoltre, è indipendente dal cammino ottico) \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente il problema.\\
-Questo è l'ambito di studio della FLIM (miscroscopia a tempo di vita di fluorescenza).
-
-Un altro beneficio fondamentale della FLIM è la possibilità di monitorare processi biologici che avvengono allo stato eccitato, ad esempio il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}; o l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotidee}) e FAD (\textit{flavin adenin dinucleotide}), due enzimi e fluorofori intrinseci fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.\\
-
-L'implementazione pratica degli esperimenti di FLIM consiste tipicamente nell'esposizione del campione a un laser a brevi impulsi periodici, e nella successiva rilevazione del segnale di fluorescenza mediante un fotorivelatore \cite{mastersBookReviewPrinciples2008a}.  % da aggiungere qui la spiegazione dell'apparato
-
-La probabilità che una molecola di fluoroforo si trovi allo stato eccitato al tempo $t$ segue un'andamento esponenziale decrescente, dunque il segnale di fluorescenza totale di una regione del campione contenente più molecole di un singolo fluoroforo avrà forma:
-
- \begin{equation*}
-    I(t) =A\, e^{-t/\tau}
-\end{equation*}
-
-% mmmm qui c'è qualche conclusione da trarre,
-
-\subsection{Interpolazione multi-esponenziale dei decadimenti}
-
-Quando in un campione sono presenti più fluorofori, si può immaginare che il segnale di fluorescenza totale sia una combinazione lineare di esponenziali decrescenti:
-
+La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma dal tempo $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale. Questo decadimento spontaneo è descritto da un andamento esponenziale decrescente:
 \begin{equation}
-    I(t)=\sum_{j}\alpha_j\,e^{-t/\tau_j}+C \quad \quad \sum_{j} \alpha_j = 1
-    \label{eq:exponential_intensity}
+    I(t) =I_0 \, e^{-t/\tau}
+    \label{eq:decadimento}
 \end{equation}
 
-dove $\alpha_j$ indica la frazione del singolo fluoroforo sul totale, e $\tau_j$ il suo tempo di vita; $C$ è un parametro relativo al rumore di fondo \cite{huComparisonPhasorAnalysis2023}.
+La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nello stimare la concentrazione del fluoroforo all'interno dei tessuti biologici. L'intensità misurata, infatti, non dipende solo dalla concentazione, ma risente di fattori complessi quali interazioni specifiche con altre molecole presenti nel campione, le fluttuazioni della sorgente di eccitazione e i fenomeni di \textit{photobleaching} \cite[Sez. 22]{mastersBookReviewPrinciples2008a}.\\ %controllare
+Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere intrinsecamente indipendente sia dalla concentrazione di fluoroforo che dalla lunghezza del cammino ottico \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente queste limitazioni.
+Al contempo, esso risulta fortemente sensibile alle variazioni di parametri ambientali come il pH, la concentrazione ionica, e lo stato ossidativo. Di conseguenza, un ulteriore beneficio della FLIM è la possibilità di monitorare processi biochimici che avvengono allo stato eccitato, quali il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}, oppure l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotide}) e FAD (\textit{flavin adenin dinucleotide}), due coenzimi (e fluorofori endogeni) fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.
 
-Integrando l'intensità totale del segnale nel tempo (se si ignora il rumore per semplicità), si ottiene:
+Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti. L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (Time-Correlated Single Photon Counting): il campione viene scansionato pixel per pixel sfruttando un laser pulsato a impulsi periodici e molto brevi (frequenza $f \sim 20-80\, \text{MHz}$, durata $\sim 10^{-12} \,\text{s}$), mentre un rivelatore registra i fotoni di fluorescenza emessi e il loro tempo di ritardo rispetto all'impulso di eccitazione \cite{mastersBookReviewPrinciples2008a}. %vedo se citare FLUTE o altro
+Ogni iterazione raccoglie tipicamente un singolo fotone; ripetendo la misurazione per migliaia di impulsi, per ogni pixel viene accumulato un istogramma dei ritardi, che ricostruisce la curva di decadimento di fluorescenza descritta in \ref{eq:decadimento}.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% $f_k = \frac{\alpha_k \tau_k}{\sum_j \alpha_j \tau_j}$
+% strumentopolo misterioso (peso dei fasori in funzione di fraz molare e tdv di ogni fluoroforo)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+\subsection{Interpolazione multi-esponenziale dei decadimenti} %OK
+
+Quando all'interno di un campione coesistono più fluorofori, il segnale complessivo relativo al decadimento di fluorescenza può essere modellizzato come una combinazione lineare di decadimenti singoli:
+\begin{equation}
+    I(t)=\sum_{j}\alpha_j\,e^{-t/\tau_j}+C \qquad \text{con} \quad \sum_{j} \alpha_j = 1
+    \label{eq:exponential_intensity}
+\end{equation}
+dove $\alpha_j$ indica la frazione di molecole della specie $j$-esima sul totale, e $\tau_j$ il suo tempo di vita; $C$ è un parametro costante associato al rumore di fondo \cite{huComparisonPhasorAnalysis2023}.\\
+Integrando il segnale nel tempo (trascurando la costante $C$ per semplicità algebrica), e assumendo che le concentrazioni $\alpha_j$ dei fluorofori restino invariate durante l'acquisizione:
 \begin{equation*}
-    A = \int_{0}^{\infty}I(t)\,dt=\int_{0}^{\infty}\left(\sum_{j}\alpha_j\,e^{-t/\tau_j}\right)dt
+    \int_{0}^{\infty} I(t)\,dt = \sum_{j} \alpha_j \int_{0}^{\infty} e^{-t/\tau_j}\,dt = \sum_{j} \alpha_j \left[ -\tau_j e^{-t/\tau_j} \right]_0^\infty = \sum_{j} \alpha_j \tau_j
 \end{equation*}
-
-Se la concentrazione di fluorofori è indipendente dal tempo (come per ogni caso presente in questa trattazione), si può portare $\alpha_j$ fuori dall'integrale:
-
-\begin{equation*}
-    A = \sum_{j} \alpha_j \left(\int_{0}^{\infty} e^{-t/\tau_j}\right) dt = \sum_{j} \alpha_j \left[ -\tau_j e^{-t/\tau_j} \right]_0^\infty = \sum_{j} \alpha_j \tau_j
-\end{equation*}
-
-
 Tenendo conto della normalizzazione dei rapporti di intensità definita nell'equazione \ref{eq:exponential_intensity}, si conclude: 
-
 \begin{equation}
     \tau_m = \sum_{j}\alpha_j\,\tau_j
     \label{eq:tau_medio}
 \end{equation}
 
-Dunque, se si conosce il numero di fluorofori presenti nel campione, è possibile ricavare il loro rapporto di concentrazione mediante un \textit{fit} multi-esponenziale \cite{mastersBookReviewPrinciples2008a}.\\
+\noindent Pertanto, qualora sia noto a priori il numero di fluorofori presenti nel campione, è possibile risalire ai valori di $\alpha_j$ e $\tau_j$ si ognuno, mediante un \textit{fit} multi-esponenziale \cite{mastersBookReviewPrinciples2008a}.
 
-Il processo di interpolazione diventa tuttavia progressivamente più computazionalmente costoso e sensibile al rumore statistico all'aumentare del numero di fluorofori nel campione (e dunque dei parametri liberi).
-
-Inoltre bisogna considerare lo svantaggio dovuto alla presenza della IRF nel segnale di intensità, che deve essere deconvoluto per ottenere il segnale di fluorescenza puro (come trattato estensivamente nella sezione succ)\cite{huComparisonPhasorAnalysis2023}.\\
+Tuttavia, l'approccio basato sul \textit{fitting} nel dominio del tempo presenta notevoli limitazioni: l'interpolazione stessa diventa computazionalmente onerosa su immagini ad alta risoluzione (dunque con un gran numero di pixel), e risulta sempre più sensibile al rumore statistico all'aumentare del numero di specie fluorofore nel campione (e dunque parametri liberi nel modello). A ciò si aggiunge la presenza della funzione di risposta strumentale (IRF, \textit{Instrument Response Function}), che introduce una distorsione temporale al segnale di intensità, rendendo necessaria una deconvoluzione per estrarre correttamente i tempi di vita nel dominio temporale (come discusso nella sezione~\ref{sec:funzione_di_risposta_dello_strumento}) \cite{huComparisonPhasorAnalysis2023}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,15 +65,12 @@ Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei f
     \label{eq:fourier_S_G_integral}
 \end{equation}
 
-dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}.\\
+\noindent dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}.\\
 È bene osservare che:
-
 \begin{itemize}
     \item Il denominatore di $S$ e $G$ funge da normalizzazione e rappresenta fisicamente l'area totale sottesa al grafico del segnale nel dominio del tempo, ovvero l'intensità totale della fluorescenza (il numero totale di fotoni raccolti)
     \item Il numeratore rappresenta invece la prima armonica della Trasformata di Fourier, scomposta analiticamente nella sua parte reale e immaginaria mediante l'identità di Eulero: $e^{-i\omega t} = \cos(\omega t) - i \sin(\omega t)$
 \end{itemize}
-
-
 In un esperimento reale, il campione studiato viene suddiviso in pixel, e per ognuno viene raccolto il segnale di fluorescenza; in seguito viene assegnata una coppia di coordinate $(S, G)$ ad ogni decadimento.
 
 

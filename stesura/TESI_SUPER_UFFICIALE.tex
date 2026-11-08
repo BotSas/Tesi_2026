@@ -47,8 +47,9 @@
 \usepackage{changepage}
 \usepackage{colortbl}
 \usepackage{titlesec}
-\setlength{\parindent}{0pt}
-%\setlength{\parskip}{-0.1\baselineskip}
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{1\baselineskip}
+\setlength{\parskip}{0.7em}
 % %  \titlespacing{comando}{spazio_sinistro}{spazio_sopra}{spazio_sotto}
 % \titlespacing*{\section}{0pt}{11ex plus 2ex minus 1ex}{4ex plus .2ex}
 % \titlespacing*{\subsection}{0pt}{6.5ex plus 1ex minus .5ex}{3.3ex plus .2ex}
@@ -104,7 +105,7 @@
 %\fancyfoot[RO,LE]{\thepage} 
 \fancyfoot[C]{-- \thepage\ --} % centrato coi trattini
 
-% FINE ROBA AGGIUNTA DA SAS -------------------------------------------------------------------
+% FINE ROBA AGGIUNTA DA SAS ----------------------------------------------------
 
 
 \begin{document}
@@ -135,7 +136,8 @@
 
 %%% Indice %%%
 \vspace*{\fill}
-\tableofcontents
+{\setlength{\parskip}{0pt}
+\tableofcontents}
 \vspace*{\fill}
 \newpage
 
