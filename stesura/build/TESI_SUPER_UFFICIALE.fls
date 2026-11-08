@@ -312,6 +312,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
@@ -381,6 +382,16 @@ INPUT ./sezioni/02_fondamenti_teorici.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT ./immagini/2_comp_example.pdf
+INPUT ./immagini/2_comp_example.pdf
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
+INPUT ./immagini/3_comp_example.pdf
+INPUT ./immagini/3_comp_example.pdf
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc
 INPUT ./sezioni/03_sviluppo_del_modello.tex
@@ -393,14 +404,8 @@ INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt1
 INPUT ./immagini/sing_exp_decay_noisy.png
 INPUT ./immagini/sing_exp_decay_noisy.png
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
 INPUT ./immagini/double_exp_decay.png
 INPUT ./immagini/double_exp_decay.png
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
 INPUT ./immagini/triple_exp_decay.png
 INPUT ./immagini/triple_exp_decay.png
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
@@ -459,6 +464,7 @@ OUTPUT build/TESI_SUPER_UFFICIALE.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb

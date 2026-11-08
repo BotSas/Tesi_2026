@@ -948,8 +948,8 @@
       \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}

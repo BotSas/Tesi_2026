@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  8 NOV 2026 15:26
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  9 NOV 2026 00:54
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1026,6 +1026,14 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen359
 \titlewidthlast=\dimen360
 \titlewidthfirst=\dimen361
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen362
+\enit@toks=\toks56
+\enit@inbox=\box134
+\enit@count@id=\count382
+\enitdp@description=\count383
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2023/11/15 v3.01 Predefined colors according to SVG 1.1 (UK)
 ) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
@@ -1034,157 +1042,157 @@ Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
 Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvrb
  (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count382
+\FV@CodeLineNo=\count384
 \FV@InFile=\read4
-\FV@TabBox=\box134
-\c@FancyVerbLine=\count383
-\FV@StepNumber=\count384
+\FV@TabBox=\box135
+\c@FancyVerbLine=\count385
+\FV@StepNumber=\count386
 \FV@OutFile=\write6
 ) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 ) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-\linenopenalty=\count385
-\output=\toks56
-\linenoprevgraf=\count386
-\linenumbersep=\dimen362
-\linenumberwidth=\dimen363
-\c@linenumber=\count387
-\c@pagewiselinenumber=\count388
-\c@LN@truepage=\count389
-\c@internallinenumber=\count390
-\c@internallinenumbers=\count391
-\quotelinenumbersep=\dimen364
-\bframerule=\dimen365
-\bframesep=\dimen366
-\bframebox=\box135
-\linenoamsmath@ams@eqpen=\count392
+\linenopenalty=\count387
+\output=\toks57
+\linenoprevgraf=\count388
+\linenumbersep=\dimen363
+\linenumberwidth=\dimen364
+\c@linenumber=\count389
+\c@pagewiselinenumber=\count390
+\c@LN@truepage=\count391
+\c@internallinenumber=\count392
+\c@internallinenumbers=\count393
+\quotelinenumbersep=\dimen365
+\bframerule=\dimen366
+\bframesep=\dimen367
+\bframebox=\box136
+\linenoamsmath@ams@eqpen=\count394
 LaTeX Info: Redefining \\ on input line 3180.
 )
-\c@FancyVerbWriteLine=\count393
-\c@FancyVerbBufferIndex=\count394
-\c@FancyVerbBufferLength=\count395
-\c@FancyVerbBufferLine=\count396
-\c@FV@oldbufferlength=\count397
-\c@FV@TrueTabGroupLevel=\count398
-\c@FV@TrueTabCounter=\count399
-\FV@TabBox@Group=\box136
-\FV@TmpLength=\skip63
-\c@FV@HighlightLinesStart=\count400
-\c@FV@HighlightLinesStop=\count401
-\FV@LoopCount=\count402
-\FV@NCharsBox=\box137
-\FV@BreakIndent=\dimen367
-\FV@BreakIndentNChars=\count403
-\FV@BreakSymbolSepLeft=\dimen368
-\FV@BreakSymbolSepLeftNChars=\count404
-\FV@BreakSymbolSepRight=\dimen369
-\FV@BreakSymbolSepRightNChars=\count405
-\FV@BreakSymbolIndentLeft=\dimen370
-\FV@BreakSymbolIndentLeftNChars=\count406
-\FV@BreakSymbolIndentRight=\dimen371
-\FV@BreakSymbolIndentRightNChars=\count407
-\c@FancyVerbLineBreakLast=\count408
-\FV@LineBox=\box138
-\FV@LineIndentBox=\box139
-\c@FV@BreakBufferDepth=\count409
-\FV@LineWidth=\dimen372
+\c@FancyVerbWriteLine=\count395
+\c@FancyVerbBufferIndex=\count396
+\c@FancyVerbBufferLength=\count397
+\c@FancyVerbBufferLine=\count398
+\c@FV@oldbufferlength=\count399
+\c@FV@TrueTabGroupLevel=\count400
+\c@FV@TrueTabCounter=\count401
+\FV@TabBox@Group=\box137
+\FV@TmpLength=\skip64
+\c@FV@HighlightLinesStart=\count402
+\c@FV@HighlightLinesStop=\count403
+\FV@LoopCount=\count404
+\FV@NCharsBox=\box138
+\FV@BreakIndent=\dimen368
+\FV@BreakIndentNChars=\count405
+\FV@BreakSymbolSepLeft=\dimen369
+\FV@BreakSymbolSepLeftNChars=\count406
+\FV@BreakSymbolSepRight=\dimen370
+\FV@BreakSymbolSepRightNChars=\count407
+\FV@BreakSymbolIndentLeft=\dimen371
+\FV@BreakSymbolIndentLeftNChars=\count408
+\FV@BreakSymbolIndentRight=\dimen372
+\FV@BreakSymbolIndentRightNChars=\count409
+\c@FancyVerbLineBreakLast=\count410
+\FV@LineBox=\box139
+\FV@LineIndentBox=\box140
+\c@FV@BreakBufferDepth=\count411
+\FV@LineWidth=\dimen373
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count410
-\xs_countb=\count411
+\xs_counta=\count412
+\xs_countb=\count413
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip64
-\fb@frw=\dimen373
-\fb@frh=\dimen374
-\FrameRule=\dimen375
-\FrameSep=\dimen376
+\OuterFrameSep=\skip65
+\fb@frw=\dimen374
+\fb@frh=\dimen375
+\FrameRule=\dimen376
+\FrameSep=\dimen377
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count412
-\float@exts=\toks57
-\float@box=\box140
-\@float@everytoks=\toks58
-\@floatcapt=\box141
+\c@float@type=\count414
+\float@exts=\toks58
+\float@box=\box141
+\@float@everytoks=\toks59
+\@floatcapt=\box142
 )
 \minted@appexistsfile=\read5
-\minted@bgbox=\box142
+\minted@bgbox=\box143
 \minted@code=\write7
-\c@minted@FancyVerbLineTemp=\count413
-\c@minted@pygmentizecounter=\count414
-\@float@every@listing=\toks59
-\c@listing=\count415
+\c@minted@FancyVerbLineTemp=\count415
+\c@minted@pygmentizecounter=\count416
+\@float@every@listing=\toks60
+\c@listing=\count417
 )
 runsystem(mkdir -p build/_minted-TESI_SUPER_UFFICIALE)...executed.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count416
+\lrq@indent=\count418
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count417
-\c@listtotal=\count418
-\c@listcount=\count419
-\c@liststart=\count420
-\c@liststop=\count421
-\c@citecount=\count422
-\c@citetotal=\count423
-\c@multicitecount=\count424
-\c@multicitetotal=\count425
-\c@instcount=\count426
-\c@maxnames=\count427
-\c@minnames=\count428
-\c@maxitems=\count429
-\c@minitems=\count430
-\c@citecounter=\count431
-\c@maxcitecounter=\count432
-\c@savedcitecounter=\count433
-\c@uniquelist=\count434
-\c@uniquename=\count435
-\c@refsection=\count436
-\c@refsegment=\count437
-\c@maxextratitle=\count438
-\c@maxextratitleyear=\count439
-\c@maxextraname=\count440
-\c@maxextradate=\count441
-\c@maxextraalpha=\count442
-\c@abbrvpenalty=\count443
-\c@highnamepenalty=\count444
-\c@lownamepenalty=\count445
-\c@maxparens=\count446
-\c@parenlevel=\count447
-\blx@tempcnta=\count448
-\blx@tempcntb=\count449
-\blx@tempcntc=\count450
-\c@blx@maxsection=\count451
-\blx@maxsegment@0=\count452
-\blx@notetype=\count453
-\blx@parenlevel@text=\count454
-\blx@parenlevel@foot=\count455
-\blx@sectionciteorder@0=\count456
-\blx@sectionciteorderinternal@0=\count457
-\blx@entrysetcounter=\count458
-\blx@biblioinstance=\count459
-\labelnumberwidth=\skip65
-\labelalphawidth=\skip66
-\biblabelsep=\skip67
-\bibitemsep=\skip68
-\bibnamesep=\skip69
-\bibinitsep=\skip70
-\bibparsep=\skip71
-\bibhang=\skip72
+\c@tabx@nest=\count419
+\c@listtotal=\count420
+\c@listcount=\count421
+\c@liststart=\count422
+\c@liststop=\count423
+\c@citecount=\count424
+\c@citetotal=\count425
+\c@multicitecount=\count426
+\c@multicitetotal=\count427
+\c@instcount=\count428
+\c@maxnames=\count429
+\c@minnames=\count430
+\c@maxitems=\count431
+\c@minitems=\count432
+\c@citecounter=\count433
+\c@maxcitecounter=\count434
+\c@savedcitecounter=\count435
+\c@uniquelist=\count436
+\c@uniquename=\count437
+\c@refsection=\count438
+\c@refsegment=\count439
+\c@maxextratitle=\count440
+\c@maxextratitleyear=\count441
+\c@maxextraname=\count442
+\c@maxextradate=\count443
+\c@maxextraalpha=\count444
+\c@abbrvpenalty=\count445
+\c@highnamepenalty=\count446
+\c@lownamepenalty=\count447
+\c@maxparens=\count448
+\c@parenlevel=\count449
+\blx@tempcnta=\count450
+\blx@tempcntb=\count451
+\blx@tempcntc=\count452
+\c@blx@maxsection=\count453
+\blx@maxsegment@0=\count454
+\blx@notetype=\count455
+\blx@parenlevel@text=\count456
+\blx@parenlevel@foot=\count457
+\blx@sectionciteorder@0=\count458
+\blx@sectionciteorderinternal@0=\count459
+\blx@entrysetcounter=\count460
+\blx@biblioinstance=\count461
+\labelnumberwidth=\skip66
+\labelalphawidth=\skip67
+\biblabelsep=\skip68
+\bibitemsep=\skip69
+\bibnamesep=\skip70
+\bibinitsep=\skip71
+\bibparsep=\skip72
+\bibhang=\skip73
 \blx@bcfin=\read6
 \blx@bcfout=\write8
 \blx@langwohyphens=\language91
-\c@mincomprange=\count460
-\c@maxcomprange=\count461
-\c@mincompwidth=\count462
+\c@mincomprange=\count462
+\c@maxcomprange=\count463
+\c@mincompwidth=\count464
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -1194,88 +1202,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count463
-\c@savedafterword=\count464
-\c@annotator=\count465
-\c@savedannotator=\count466
-\c@author=\count467
-\c@savedauthor=\count468
-\c@bookauthor=\count469
-\c@savedbookauthor=\count470
-\c@commentator=\count471
-\c@savedcommentator=\count472
-\c@editor=\count473
-\c@savededitor=\count474
-\c@editora=\count475
-\c@savededitora=\count476
-\c@editorb=\count477
-\c@savededitorb=\count478
-\c@editorc=\count479
-\c@savededitorc=\count480
-\c@foreword=\count481
-\c@savedforeword=\count482
-\c@holder=\count483
-\c@savedholder=\count484
-\c@introduction=\count485
-\c@savedintroduction=\count486
-\c@namea=\count487
-\c@savednamea=\count488
-\c@nameb=\count489
-\c@savednameb=\count490
-\c@namec=\count491
-\c@savednamec=\count492
-\c@translator=\count493
-\c@savedtranslator=\count494
-\c@shortauthor=\count495
-\c@savedshortauthor=\count496
-\c@shorteditor=\count497
-\c@savedshorteditor=\count498
-\c@labelname=\count499
-\c@savedlabelname=\count500
-\c@institution=\count501
-\c@savedinstitution=\count502
-\c@lista=\count503
-\c@savedlista=\count504
-\c@listb=\count505
-\c@savedlistb=\count506
-\c@listc=\count507
-\c@savedlistc=\count508
-\c@listd=\count509
-\c@savedlistd=\count510
-\c@liste=\count511
-\c@savedliste=\count512
-\c@listf=\count513
-\c@savedlistf=\count514
-\c@location=\count515
-\c@savedlocation=\count516
-\c@organization=\count517
-\c@savedorganization=\count518
-\c@origlocation=\count519
-\c@savedoriglocation=\count520
-\c@origpublisher=\count521
-\c@savedorigpublisher=\count522
-\c@publisher=\count523
-\c@savedpublisher=\count524
-\c@language=\count525
-\c@savedlanguage=\count526
-\c@origlanguage=\count527
-\c@savedoriglanguage=\count528
-\c@pageref=\count529
-\c@savedpageref=\count530
-\shorthandwidth=\skip73
-\shortjournalwidth=\skip74
-\shortserieswidth=\skip75
-\shorttitlewidth=\skip76
-\shortauthorwidth=\skip77
-\shorteditorwidth=\skip78
-\locallabelnumberwidth=\skip79
-\locallabelalphawidth=\skip80
-\localshorthandwidth=\skip81
-\localshortjournalwidth=\skip82
-\localshortserieswidth=\skip83
-\localshorttitlewidth=\skip84
-\localshortauthorwidth=\skip85
-\localshorteditorwidth=\skip86
+\c@afterword=\count465
+\c@savedafterword=\count466
+\c@annotator=\count467
+\c@savedannotator=\count468
+\c@author=\count469
+\c@savedauthor=\count470
+\c@bookauthor=\count471
+\c@savedbookauthor=\count472
+\c@commentator=\count473
+\c@savedcommentator=\count474
+\c@editor=\count475
+\c@savededitor=\count476
+\c@editora=\count477
+\c@savededitora=\count478
+\c@editorb=\count479
+\c@savededitorb=\count480
+\c@editorc=\count481
+\c@savededitorc=\count482
+\c@foreword=\count483
+\c@savedforeword=\count484
+\c@holder=\count485
+\c@savedholder=\count486
+\c@introduction=\count487
+\c@savedintroduction=\count488
+\c@namea=\count489
+\c@savednamea=\count490
+\c@nameb=\count491
+\c@savednameb=\count492
+\c@namec=\count493
+\c@savednamec=\count494
+\c@translator=\count495
+\c@savedtranslator=\count496
+\c@shortauthor=\count497
+\c@savedshortauthor=\count498
+\c@shorteditor=\count499
+\c@savedshorteditor=\count500
+\c@labelname=\count501
+\c@savedlabelname=\count502
+\c@institution=\count503
+\c@savedinstitution=\count504
+\c@lista=\count505
+\c@savedlista=\count506
+\c@listb=\count507
+\c@savedlistb=\count508
+\c@listc=\count509
+\c@savedlistc=\count510
+\c@listd=\count511
+\c@savedlistd=\count512
+\c@liste=\count513
+\c@savedliste=\count514
+\c@listf=\count515
+\c@savedlistf=\count516
+\c@location=\count517
+\c@savedlocation=\count518
+\c@organization=\count519
+\c@savedorganization=\count520
+\c@origlocation=\count521
+\c@savedoriglocation=\count522
+\c@origpublisher=\count523
+\c@savedorigpublisher=\count524
+\c@publisher=\count525
+\c@savedpublisher=\count526
+\c@language=\count527
+\c@savedlanguage=\count528
+\c@origlanguage=\count529
+\c@savedoriglanguage=\count530
+\c@pageref=\count531
+\c@savedpageref=\count532
+\shorthandwidth=\skip74
+\shortjournalwidth=\skip75
+\shortserieswidth=\skip76
+\shorttitlewidth=\skip77
+\shortauthorwidth=\skip78
+\shorteditorwidth=\skip79
+\locallabelnumberwidth=\skip80
+\locallabelalphawidth=\skip81
+\localshorthandwidth=\skip82
+\localshortjournalwidth=\skip83
+\localshortserieswidth=\skip84
+\localshorttitlewidth=\skip85
+\localshortauthorwidth=\skip86
+\localshorteditorwidth=\skip87
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
@@ -1288,19 +1296,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count531
-\c@textcitetotal=\count532
-\c@textcitemaxnames=\count533
-\c@biburlbigbreakpenalty=\count534
-\c@biburlbreakpenalty=\count535
-\c@biburlnumpenalty=\count536
-\c@biburlucpenalty=\count537
-\c@biburllcpenalty=\count538
+\c@textcitecount=\count533
+\c@textcitetotal=\count534
+\c@textcitemaxnames=\count535
+\c@biburlbigbreakpenalty=\count536
+\c@biburlbreakpenalty=\count537
+\c@biburlnumpenalty=\count538
+\c@biburlucpenalty=\count539
+\c@biburllcpenalty=\count540
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count539
+\c@smartand=\count541
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
@@ -1314,17 +1322,17 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count540
-\c@bbx:relatedtotal=\count541
+\c@bbx:relatedcount=\count542
+\c@bbx:relatedtotal=\count543
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count542
-\c@cbx@tempcntb=\count543
-\c@cbx@tempcntc=\count544
-\c@cbx@tempcntd=\count545
+\c@cbx@tempcnta=\count544
+\c@cbx@tempcntb=\count545
+\c@cbx@tempcntc=\count546
+\c@cbx@tempcntd=\count547
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1355,15 +1363,15 @@ Package: xparse 2023-10-10 L3 Experimental document command parser
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip87
-\f@nch@O@elh=\skip88
-\f@nch@O@erh=\skip89
-\f@nch@O@olh=\skip90
-\f@nch@O@orh=\skip91
-\f@nch@O@elf=\skip92
-\f@nch@O@erf=\skip93
-\f@nch@O@olf=\skip94
-\f@nch@O@orf=\skip95
+\f@nch@headwidth=\skip88
+\f@nch@O@elh=\skip89
+\f@nch@O@erh=\skip90
+\f@nch@O@olh=\skip91
+\f@nch@O@orh=\skip92
+\f@nch@O@elf=\skip93
+\f@nch@O@erf=\skip94
+\f@nch@O@olf=\skip95
+\f@nch@O@orf=\skip96
 )
 runsystem(command -v pygmentize && touch TESI_SUPER_UFFICIALE.aex)...executed.
 runsystem(rm TESI_SUPER_UFFICIALE.aex)...executed.
@@ -1372,8 +1380,8 @@ runsystem(rm TESI_SUPER_UFFICIALE.aex)...executed.
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count546
-\@quotereset=\count547
+\@quotelevel=\count548
+\@quotereset=\count549
 (./build/TESI_SUPER_UFFICIALE.aux
 
 LaTeX Warning: Label `sec:generazione_dei_segnali' multiply defined.
@@ -1381,30 +1389,30 @@ LaTeX Warning: Label `sec:generazione_dei_segnali' multiply defined.
 )
 \openout1 = TESI_SUPER_UFFICIALE.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 111.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 114.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
-LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1440,21 +1448,21 @@ LaTeX Font Info:    ... okay on input line 111.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count548
-Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 111.
+\c@lstlisting=\count550
+Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 114.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count549
-\scratchdimen=\dimen377
-\scratchbox=\box143
-\nofMPsegments=\count550
-\nofMParguments=\count551
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count552
-\MPscratchDim=\dimen378
-\MPnumerator=\count553
-\makeMPintoPDFobject=\count554
-\everyMPtoPDFconversion=\toks61
+\scratchcounter=\count551
+\scratchdimen=\dimen378
+\scratchbox=\box144
+\nofMPsegments=\count552
+\nofMParguments=\count553
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count554
+\MPscratchDim=\dimen379
+\MPnumerator=\count555
+\makeMPintoPDFobject=\count556
+\everyMPtoPDFconversion=\toks62
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1463,8 +1471,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen379
-\caption@adjustwidth@linewidth=\dimen380
+\caption@adjustwidth@hsize=\dimen380
+\caption@adjustwidth@linewidth=\dimen381
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -1472,7 +1480,7 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
-Package hyperref Info: Link coloring ON on input line 111.
+Package hyperref Info: Link coloring ON on input line 114.
 (./build/TESI_SUPER_UFFICIALE.out) (./build/TESI_SUPER_UFFICIALE.out)
 \@outlinefile=\write9
 
@@ -1484,7 +1492,7 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                so the Inkscape export will fail quite sure as the
 (svg)                command is probably unknown to your OS. You could set
 (svg)                `inkscapeversion=<version>' manually but this is very
-(svg)                unlikely to work on input line 111.
+(svg)                unlikely to work on input line 114.
 
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1500,12 +1508,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'TESI_SUPER_UFFICIALE.bbl' found.
  (./build/TESI_SUPER_UFFICIALE.bbl)
-Package biblatex Info: Reference section=0 on input line 111.
-Package biblatex Info: Reference segment=0 on input line 111.
+Package biblatex Info: Reference section=0 on input line 114.
+Package biblatex Info: Reference segment=0 on input line 114.
 <TESI_SUPER_UFFICIALE-frn.pdf, id=127, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
-Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 113.
+Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 116.
 (luatex.def)             Requested size: 597.50682pt x 845.04503pt.
  [1
 
@@ -1526,15 +1534,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5
 
-] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+] [6]
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
 [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<immagini/2_comp_example.pdf, id=292, 570.74794pt x 400.2558pt>
+File: immagini/2_comp_example.pdf Graphic file (type pdf)
+<use immagini/2_comp_example.pdf>
+Package luatex.def Info: immagini/2_comp_example.pdf  used on input line 155.
+(luatex.def)             Requested size: 223.07211pt x 156.43504pt.
+<immagini/3_comp_example.pdf, id=293, 570.74794pt x 400.2558pt>
+File: immagini/3_comp_example.pdf Graphic file (type pdf)
+<use immagini/3_comp_example.pdf>
+Package luatex.def Info: immagini/3_comp_example.pdf  used on input line 161.
+(luatex.def)             Requested size: 223.07211pt x 156.43504pt.
+ [10<./immagini/2_comp_example.pdf><./immagini/3_comp_example.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
- [10]) (./sezioni/03_sviluppo_del_modello.tex [11]
+ []
+
+[11]) (./sezioni/03_sviluppo_del_modello.tex [12]
 Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -1547,7 +1576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 
-LaTeX Warning: Reference `sec:cenni_matematici_di_analisi_fasoriale' on page 12 undefined on input line 21.
+LaTeX Warning: Reference `sec:cenni_matematici_di_analisi_fasoriale' on page 13 undefined on input line 21.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
@@ -1564,7 +1593,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[12
+[13
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 36--37
@@ -1586,7 +1615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<immagini/sing_exp_decay_noisy.png, id=321, 1001.6622pt x 366.4089pt>
+<immagini/sing_exp_decay_noisy.png, id=427, 1001.6622pt x 366.4089pt>
 File: immagini/sing_exp_decay_noisy.png Graphic file (type png)
 <use immagini/sing_exp_decay_noisy.png>
 Package luatex.def Info: immagini/sing_exp_decay_noisy.png  used on input line 78.
@@ -1604,7 +1633,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
@@ -1614,12 +1643,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-<immagini/double_exp_decay.png, id=334, 570.933pt x 415.5525pt>
+<immagini/double_exp_decay.png, id=439, 570.933pt x 415.5525pt>
 File: immagini/double_exp_decay.png Graphic file (type png)
 <use immagini/double_exp_decay.png>
 Package luatex.def Info: immagini/double_exp_decay.png  used on input line 124.
 (luatex.def)             Requested size: 218.51521pt x 159.04659pt.
-<immagini/triple_exp_decay.png, id=335, 570.933pt x 415.5525pt>
+<immagini/triple_exp_decay.png, id=440, 570.933pt x 415.5525pt>
 File: immagini/triple_exp_decay.png Graphic file (type png)
 <use immagini/triple_exp_decay.png>
 Package luatex.def Info: immagini/triple_exp_decay.png  used on input line 133.
@@ -1635,7 +1664,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
 Underfull \vbox (badness 5077) has occurred while \output is active []
 
- [14<./immagini/sing_exp_decay_noisy.png>]
+ [15<./immagini/sing_exp_decay_noisy.png>]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/311D747E223205166D9159423FC0119F1350B347DE913863EA7F5725E6FE860F.pygtex)
 Underfull \hbox (badness 10000) in paragraph at lines 173--177
@@ -1647,7 +1676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[15<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]
+[16<./immagini/double_exp_decay.png><./immagini/triple_exp_decay.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
@@ -1669,8 +1698,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex) [16]
-<immagini/irf_sing_exp_decay.png, id=362, 727.7589pt x 381.5856pt>
+(./build/_minted-TESI_SUPER_UFFICIALE/7CBEFA9F71CADFF82E274618DE2A87161350B347DE913863EA7F5725E6FE860F.pygtex) [17]
+<immagini/irf_sing_exp_decay.png, id=466, 727.7589pt x 381.5856pt>
 File: immagini/irf_sing_exp_decay.png Graphic file (type png)
 <use immagini/irf_sing_exp_decay.png>
 Package luatex.def Info: immagini/irf_sing_exp_decay.png  used on input line 259.
@@ -1685,7 +1714,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--276
 
  []
 
-[17<./immagini/irf_sing_exp_decay.png>]
+[18<./immagini/irf_sing_exp_decay.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
@@ -1702,17 +1731,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex) [18]
+(./build/_minted-TESI_SUPER_UFFICIALE/6305429B5C58FB41CA56AF3DF27FED801350B347DE913863EA7F5725E6FE860F.pygtex) [19]
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-<immagini/irf_sing_exp_decay_phasors.png, id=382, 570.933pt x 415.5525pt>
+<immagini/irf_sing_exp_decay_phasors.png, id=486, 570.933pt x 415.5525pt>
 File: immagini/irf_sing_exp_decay_phasors.png Graphic file (type png)
 <use immagini/irf_sing_exp_decay_phasors.png>
 Package luatex.def Info: immagini/irf_sing_exp_decay_phasors.png  used on input line 326.
 (luatex.def)             Requested size: 218.51521pt x 159.04659pt.
-<immagini/irf_double_exp_decay_phasors.png, id=383, 570.933pt x 400.3758pt>
+<immagini/irf_double_exp_decay_phasors.png, id=487, 570.933pt x 400.3758pt>
 File: immagini/irf_double_exp_decay_phasors.png Graphic file (type png)
 <use immagini/irf_double_exp_decay_phasors.png>
 Package luatex.def Info: immagini/irf_double_exp_decay_phasors.png  used on input line 334.
@@ -1722,7 +1751,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-) (./sezioni/04_test_su_immagini.tex [19<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>]
+) (./sezioni/04_test_su_immagini.tex [20<./immagini/irf_sing_exp_decay_phasors.png><./immagini/irf_double_exp_decay_phasors.png>]
 Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1744,12 +1773,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-<immagini/flat_embryo3.png, id=395, 380.1402pt x 302.0886pt>
+<immagini/flat_embryo3.png, id=499, 380.1402pt x 302.0886pt>
 File: immagini/flat_embryo3.png Graphic file (type png)
 <use immagini/flat_embryo3.png>
 Package luatex.def Info: immagini/flat_embryo3.png  used on input line 18.
 (luatex.def)             Requested size: 218.51521pt x 173.65349pt.
-<immagini/flat_embryo5.png, id=396, 386.6445pt x 302.0886pt>
+<immagini/flat_embryo5.png, id=500, 386.6445pt x 302.0886pt>
 File: immagini/flat_embryo5.png Graphic file (type png)
 <use immagini/flat_embryo5.png>
 Package luatex.def Info: immagini/flat_embryo5.png  used on input line 24.
@@ -1770,7 +1799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20
+ [21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
@@ -1792,8 +1821,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[21<./immagini/flat_embryo3.png><./immagini/flat_embryo5.png>]
-<immagini/embryo3_IRF.pdf, id=417, 570.74794pt x 400.2558pt>
+[22<./immagini/flat_embryo3.png><./immagini/flat_embryo5.png>]
+<immagini/embryo3_IRF.pdf, id=522, 570.74794pt x 400.2558pt>
 File: immagini/embryo3_IRF.pdf Graphic file (type pdf)
 <use immagini/embryo3_IRF.pdf>
 Package luatex.def Info: immagini/embryo3_IRF.pdf  used on input line 86.
@@ -1821,7 +1850,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22<./immagini/embryo3_IRF.pdf>]
+ [23<./immagini/embryo3_IRF.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
@@ -1854,7 +1883,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [24]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
@@ -1869,7 +1898,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<immagini/embryo3_ROI.png, id=481, 570.933pt x 400.3758pt>
+<immagini/embryo3_ROI.png, id=586, 570.933pt x 400.3758pt>
 File: immagini/embryo3_ROI.png Graphic file (type png)
 <use immagini/embryo3_ROI.png>
 Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 165.
@@ -1877,7 +1906,7 @@ Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 165.
 
 Underfull \vbox (badness 2065) has occurred while \output is active []
 
- [24<./immagini/embryo3_ROI.png>]
+ [25<./immagini/embryo3_ROI.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
@@ -1889,7 +1918,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/608CF69E4C2C7B0240870B7CD5A111B41350B347DE913863EA7F5725E6FE860F.pygtex) [25]
+(./build/_minted-TESI_SUPER_UFFICIALE/608CF69E4C2C7B0240870B7CD5A111B41350B347DE913863EA7F5725E6FE860F.pygtex) [26]
 Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
@@ -1902,7 +1931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
+ [27]
 Underfull \hbox (badness 10000) in paragraph at lines 254--257
 
  []
@@ -1922,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--283
 
  []
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
@@ -1937,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
-<immagini/embryo5_IRF.png, id=508, 570.933pt x 400.3758pt>
+<immagini/embryo5_IRF.png, id=612, 570.933pt x 400.3758pt>
 File: immagini/embryo5_IRF.png Graphic file (type png)
 <use immagini/embryo5_IRF.png>
 Package luatex.def Info: immagini/embryo5_IRF.png  used on input line 302.
@@ -1955,8 +1984,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-[28]
-<immagini/embryo5_IRF_redgreen.png, id=517, 570.933pt x 400.3758pt>
+[29]
+<immagini/embryo5_IRF_redgreen.png, id=621, 570.933pt x 400.3758pt>
 File: immagini/embryo5_IRF_redgreen.png Graphic file (type png)
 <use immagini/embryo5_IRF_redgreen.png>
 Package luatex.def Info: immagini/embryo5_IRF_redgreen.png  used on input line 322.
@@ -1966,23 +1995,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-[29<./immagini/embryo5_IRF.png><./immagini/embryo5_IRF_redgreen.png>]
-<immagini/ROI1_and_ROI2.pdf, id=526, 614.295pt x 794.97pt>
+[30<./immagini/embryo5_IRF.png><./immagini/embryo5_IRF_redgreen.png>]
+<immagini/ROI1_and_ROI2.pdf, id=630, 614.295pt x 794.97pt>
 File: immagini/ROI1_and_ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI1_and_ROI2.pdf>
 Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 336.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI1.pdf, id=527, 614.295pt x 794.97pt>
+<immagini/ROI1.pdf, id=631, 614.295pt x 794.97pt>
 File: immagini/ROI1.pdf Graphic file (type pdf)
 <use immagini/ROI1.pdf>
 Package luatex.def Info: immagini/ROI1.pdf  used on input line 344.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI2.pdf, id=528, 614.295pt x 794.97pt>
+<immagini/ROI2.pdf, id=632, 614.295pt x 794.97pt>
 File: immagini/ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI2.pdf>
 Package luatex.def Info: immagini/ROI2.pdf  used on input line 351.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/embryo5_ROI1_ROI2_phasors.png, id=530, 570.933pt x 400.3758pt>
+<immagini/embryo5_ROI1_ROI2_phasors.png, id=634, 570.933pt x 400.3758pt>
 File: immagini/embryo5_ROI1_ROI2_phasors.png Graphic file (type png)
 <use immagini/embryo5_ROI1_ROI2_phasors.png>
 Package luatex.def Info: immagini/embryo5_ROI1_ROI2_phasors.png  used on input line 367.
@@ -2001,7 +2030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--383
 
  []
 
-[30<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
+[31<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
@@ -2011,7 +2040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 
  []
 
-[31<./immagini/embryo5_ROI1_ROI2_phasors.png>]
+[32<./immagini/embryo5_ROI1_ROI2_phasors.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
@@ -2028,7 +2057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--439
 
 
 \openout6 = TESI_SUPER_UFFICIALE.pyg
-(./build/_minted-TESI_SUPER_UFFICIALE/A8B3433E032D8639B5C060ADF0F6528C1350B347DE913863EA7F5725E6FE860F.pygtex) [32]
+(./build/_minted-TESI_SUPER_UFFICIALE/A8B3433E032D8639B5C060ADF0F6528C1350B347DE913863EA7F5725E6FE860F.pygtex) [33]
 Underfull \hbox (badness 10000) in paragraph at lines 469--471
 
  []
@@ -2048,7 +2077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
-[33]
+[34]
 Missing character: There is no ° (U+00B0) in font cmr12!
 Missing character: There is no ° (U+00B0) in font cmr12!
 
@@ -2072,23 +2101,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 531--534
 Overfull \vbox (0.35284pt too high) detected at line 546
  []
 
-[34]) (./sezioni/05_conclusioni.tex
+[35]) (./sezioni/05_conclusioni.tex
 Underfull \hbox (badness 10000) in paragraph at lines 546--1
 
  []
 
-[35]
+[36]
 Capitolo 5.
-) [36
+) [37
 
 ]
-Overfull \hbox (13.79941pt too wide) in paragraph at lines 156--156
+Overfull \hbox (13.79941pt too wide) in paragraph at lines 159--159
 \TU/lmtt/m/n/12 13 / issue - 02 / 029901 / Book - Review - Principles - of - Fluorescence - Spectroscopy -
  []
 
-[37
+[38
 
-] [38] (./build/TESI_SUPER_UFFICIALE.aux)
+] [39] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2109,19 +2138,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53676 strings out of 476553
+ 54024 strings out of 476553
  125161,2848258 words of node,token memory allocated
- 993 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 99 attribute, 77 glue_spec, 51 attribute_list, 2 write, 16 pdf_action nodes
-   avail lists: 2:3740,3:506,4:244,5:386,6:86,7:7150,8:187,9:818,10:18,11:1111,12:2
- 74183 multiletter control sequences out of 65536+600000
+ 987 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 97 attribute, 77 glue_spec, 50 attribute_list, 2 write, 16 pdf_action nodes
+   avail lists: 2:3734,3:506,4:244,5:386,6:86,7:7083,8:187,9:818,10:21,11:1080,12:2
+ 74518 multiletter control sequences out of 65536+600000
  54 fonts using 4723327 bytes
  105i,15n,115p,2599b,1880s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (38 pages, 7726191 bytes).
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (39 pages, 7765380 bytes).
 
-PDF statistics: 817 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 113 named destinations out of 1000 (max. 131072)
+PDF statistics: 924 PDF objects out of 1000 (max. 8388607)
+ 652 compressed objects within 7 object streams
+ 115 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 
