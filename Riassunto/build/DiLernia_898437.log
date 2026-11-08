@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  7 NOV 2026 18:00
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  8 NOV 2026 01:22
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/Riassunto/DiLernia_898437.tex
@@ -645,7 +645,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2] (./build/DiLernia_898437.aux)
+ [2] [3] [4] (./build/DiLernia_898437.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -655,19 +655,19 @@ Package rerunfilecheck Info: File `DiLernia_898437.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17576 strings out of 476553
+ 17578 strings out of 476553
  156290,1977958 words of node,token memory allocated
- 626 words of node memory still in use:
-   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 3 glyph, 18 attribute, 57 glue_spec, 11 attribute_list, 1 write nodes
-   avail lists: 1:2,2:416,3:139,4:53,5:615,6:30,7:14040,8:73,9:370,10:18,11:2143
+ 643 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 8 glue, 4 kern, 1 penalty, 1 margin_kern, 4 glyph, 20 attribute, 57 glue_spec, 12 attribute_list, 1 write nodes
+   avail lists: 1:2,2:415,3:139,4:55,5:621,6:30,7:14207,8:74,9:370,10:17,11:2179
  39267 multiletter control sequences out of 65536+600000
  39 fonts using 2439271 bytes
  73i,6n,76p,1052b,815s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on DiLernia_898437.pdf (2 pages, 172650 bytes).
+Output written on DiLernia_898437.pdf (4 pages, 184364 bytes).
 
-PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 131072)
+PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
