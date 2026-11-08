@@ -59,13 +59,13 @@ Tuttavia, l'approccio basato sul \textit{fitting} nel dominio del tempo presenta
 Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei fasori, una tecnica che identifica ogni decadimento di fluorescenza mediante un singolo punto nel piano dei fasori, identificato dalle coordinate $S$ e $G$, definite dai primi due termini della trasformata di Fourier del segnale di fluorescenza: 
 
 \begin{equation}
-    G(\omega)=\frac{\int_{0}^{T}I(t)\,\cos(\omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
+    G(\omega)=\frac{\int_{0}^{T}I(t)\,\cos(n \omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
     \qquad \qquad
-    S(\omega)=\frac{\int_{0}^{T}I(t)\,\sin(\omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
+    S(\omega)=\frac{\int_{0}^{T}I(t)\,\sin(n \omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
     \label{eq:fourier_S_G_integral}
 \end{equation}
 
-\noindent dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}.\\
+\noindent dove $\omega = 2 \pi f$, $f$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}, mentre $n$ indica il numero di armonica. In questo studio verrà studiata solo la rappresentazione con $n=1$, ovvero la prima armonica.\\ % la seconda armonica permette di...
 È bene osservare che:
 \begin{itemize}
     \item Il denominatore di $S$ e $G$ funge da normalizzazione e rappresenta fisicamente l'area totale sottesa al grafico del segnale nel dominio del tempo, ovvero l'intensità totale della fluorescenza (il numero totale di fotoni raccolti)
@@ -78,7 +78,12 @@ In un esperimento reale, il campione studiato viene suddiviso in pixel, e per og
 
 \subsection{Il semicerchio universale}
 
-È possibile dimostrare che ad un decadimento a esponenziale singola corrispondono fasori su un semicerchio di raggio unitario e a valori di $S$ positivi, con valori di $\tau$ minimi in $(1, 0)$ e massimi in $(0, 0)$.
+È possibile dimostrare analiticamente che a tutti i decadimenti mono-esponenziali puri (\ref{eq:decadimento}) corrispondono fasori che giacciono su una semicirconferenza di diametro unitario nel semipiano $S \ge 0$, nota come ``semicerchio universale'', sulla quale i tempi di vita $\tau$ variano da $\tau = 0$ nel punto $(1, 0)$ fino a $\tau = T_{laser}$ nell'origine $(0, 0)$.\\
+A tale scopo si ricavano 
+
+È possibile dimostrare analiticamente che a tutti i decadimenti mono-esponenziali puri (\ref{eq:decadimento}) corrispondono fasori che giacciono su una semicirconferenza di diametro unitario (raggio $0.5$) nel semipiano $S > 0$, nota come ``semicerchio universale'', sulla quale i tempi di vita $\tau$ variano da $\tau = 0$ nel punto $(1, 0)$ fino all'origine $(0, 0)$ per $\tau \gg T_{\text{laser}}$ (idealmente $\tau \to \infty$, condizione in cui il decadimento periodico si appiattisce perdendo modulazione).
+
+Per prima cosa, si ricava la soluzione analitica dei primi due coefficienti di Fourier di un segnale di fluorescenza mono-esponenziale:
 
 Per prima cosa, si ricava la soluzione analitica dei primi due coefficienti di Fourier di un segnale di fluorescenza mono-esponenziale:
 
@@ -117,6 +122,7 @@ Questa definizione delle coordinate fasoriali si rivela utile per la rappresenta
 %____________________________________
 
 \subsection{Definizione mediante coordinate polari}
+\label{sec:definizione_mediante_coordinate_polari}
 
 Un altro modo per identificare i punti sul piano dei fasori, alternativo alle coordinate cartesiane $(S, G)$, è mediante le coordinate polari $(M, \phi)$:
 
@@ -217,21 +223,18 @@ Nelle miscele a tre componenti, il fasore misto sarà compreso nell'area del tri
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Funzione di risposta dello strumento}
+\section{Funzione di risposta dello strumento}  
 \label{sec:funzione_di_risposta_dello_strumento}
 Lo studio dell'\textit{IRF} (\textit{Instrument Response Function}) è una parte fondamentale dell'analisi dei fasori. \\
 L'emissione di fluorescenza è indotta da un laser a impulsi periodici eccita le molecole di fluoroforo presenti nel campione. I fotoni emessi da quest'ultimo vengono rilevati da un fotorivelatore e registrati da una scheda di acquisizione, che li converte in un segnale elettrico.\\
 trumentazioni appartenenti a laboratori diversi possono produrre profili di decadimento anche molto differenti tra loro, a causa delle variazioni nella forma dell'impulso del laser e nella risposta dei componenti elettronici.\\
-Nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore introduce un'incertezza  temporale, che in molti casi, può raggiungere ordini di grandezza paragonabili a quelli dei tempi di vita di fluorescenza su cui è incentrato lo studio. Si rivela dunque necessario separare il decadimento reale dalla risposta strumentale (\textit{IRF}, \textit{Instrument Response Function}) tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
+Nonostante gli impulsi del laser siano molto brevi, la risposta del rivelatore introduce un'incertezza  temporale, che in molti casi, può raggiungere ordini di grandezza paragonabili a quelli dei tempi di vita di fluorescenza su cui è incentrato lo studio. Si rivela dunque necessario separare il decadimento reale dalla risposta strumentale (\textit{IRF}, \textit{Instrument Response Function}) tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.
 
-Tuttavia, il processo di acquisizione dell'\textit{IRF} presenta numerose criticità. In primo luogo, l'impossibilità di utilizzare una soluzione di scattering nel processo \textit{FLIM}, poiché i filtri ottici bloccano i fotoni aventi lunghezza d’onda pari a quella di eccitazione.\\
-In aggiunta a ciò, il segnale subisce una distorsione temporale (solitamente un allargamento) nel passaggio attraverso l'obiettivo, la quale deve essere adeguatamente quantificata \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
-
+Tuttavia, il processo di acquisizione dell'\textit{IRF} presenta alcune problematiche. In primo luogo, l'impossibilità di utilizzare una soluzione di scattering nel processo \textit{FLIM}, poiché i filtri ottici bloccano i fotoni aventi lunghezza d’onda pari a quella di eccitazione.\\
+In aggiunta a ciò, il segnale subisce una distorsione temporale (solitamente un allargamento) nel passaggio attraverso l'obiettivo, la quale deve essere adeguatamente quantificata \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
 Emerge dunque un vantaggio significativo dell'analisi dei fasori rispetto all'approccio appena illustrato: non è necessario conoscere il profilo esatto dell'IRF, ma è sufficiente effettuare una calibrazione utilizzando un fluoroforo di riferimento caratterizzato da un decadimento mono-esponenziale con tempo di vita ($\tau$) noto.\\
-Come introdotto nella sezione \ref{sec:trasformazione_dei fasori}, l'operazione di convoluzione nel dominio temporale si traduce come un semplice prodotto nello spazio di Fourier. Di conseguenza, la IRF viene rappresentata da un singolo punto sul piano dei fasori, il quale, non seguendo una legge di decadimento esponenziale, non giacerà sul semicerchio universale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
-
+Come introdotto nella sezione \ref{sec:definizione_mediante_coordinate_polari}, l'operazione di convoluzione nel dominio temporale si traduce come un semplice prodotto nello spazio di Fourier. Di conseguenza, la IRF viene rappresentata da un singolo punto sul piano dei fasori, il quale, non seguendo una legge di decadimento esponenziale, non giacerà sul semicerchio universale \cite{ranjitFitfreeAnalysisFluorescence2018}. \\
 Unendo queste informazioni, il fasore del segnale misurato $z_{\text{segnale}}$ può essere espresso come il prodotto complesso tra il fasore del decadimento reale e quello della risposta strumentale, da cui si ricava immediatamente il segnale di pura fluorescenza per inversione:
-
 \begin{equation}
     z_{\text{segnale}} = z_{\text{decadimento}} \cdot z_{\text{IRF}} \quad \implies \quad z_{\text{decadimento}} = \frac{z_{\text{segnale}}}{z_{\text{IRF}}}
     \label{eq:convoluzione_fasori}
@@ -246,21 +249,17 @@ Unendo queste informazioni, il fasore del segnale misurato $z_{\text{segnale}}$ 
 \subsection{Convoluzione tra IRF e segnale di fluorescenza}
 
 È intereressante spiegare la ragione per cui le due funzioni (IRF e intensità di fluorescenza) si combinino come convoluzione invece che somma o moltiplicazione.\\
-
-Se la IRF avesse la forma di una distribuzione \textit{Dirac-$\delta$}, tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}.\\
+Se la IRF avesse la forma di una distribuzione \textit{Dirac-$\delta$}, tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}.
 
 Si immagini di campionare l’impulso del laser in tanti istanti temporali successivi: all'istante $t_k$ l'intensità del laser sarà pari a $\textit{IRF}(t_k)$, mentre quella di fluorescenza seguirà la legge $I(t-t_k)$, dove l'argomento rappresenta il tempo trascorso dall'eccitazione.\\
 Moltiplicando le due funzioni si ottiene un contributo dato da $\textit{IRF}(t_k)I(t-t_k)$.\\
-
 Per ricavare l’intensità totale al tempo $t$, sarà quindi necessario sommare i contributi relativi a tutti gli istanti di eccitazione $t_k$, incluso quello coincidente con $t$ \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}:
-
 \begin{equation}
     I_{tot}(t) = \sum_{t_k \le t} \, \textit{IRF}(t_k) \, I(t - t_k)
     \label{eq:convoluzione}
 \end{equation}
-
 La formula ottenuta si riconduce esattamente alla definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.
-\paragraph{Osservazioni}
+\subsubsection{Osservazioni}
 \begin{itemize}
     \item È giusto osservare che nell'implementazione nel codice dell'algoritmo di convoluzione non viene utilizzata la definizione appena ricavata, bensì una definizione operativa che fa uso della trasformata di Fourier. Per ulteriori approfondimenti si fa riferimento alla sezione \ref{sec:generazione_dei_segnali} (generazione dei segnali).
     \item Dato che l'acquisizione sperimentale avviene raggruppando i fotoni rilevati in \textit{bin} di larghezza pre-determinata $\Delta t$, sarebbe necessario pesare ogni contributo \textit{k-esimo} per questo valore. Nella definizione operativa questo termine viene inglobato dalla normalizzazione.
