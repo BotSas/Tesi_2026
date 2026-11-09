@@ -27,18 +27,18 @@
 \contentsline {subsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{23}{subsection.4.1.1}%
 \contentsline {paragraph}{Teoria}{23}{subsection.4.1.1}%
 \contentsline {paragraph}{Pratica}{23}{subsection.4.1.1}%
-\contentsline {paragraph}{Osservazioni}{24}{figure.caption.13}%
+\contentsline {paragraph}{Osservazioni}{24}{figure.caption.12}%
 \contentsline {subsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{25}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Selezione della regione di interesse}{26}{subsection.4.1.3}%
-\contentsline {paragraph}{Criteri di selezione}{27}{figure.caption.14}%
+\contentsline {paragraph}{Criteri di selezione}{27}{figure.caption.13}%
 \contentsline {subsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{27}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{29}{subsection.4.1.5}%
 \contentsline {section}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{29}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{30}{subsection.4.2.1}%
 \contentsline {paragraph}{Teoria - SHG}{30}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{30}{subsection.4.2.2}%
-\contentsline {paragraph}{Osservazioni}{32}{figure.caption.18}%
-\contentsline {paragraph}{Risultati}{33}{figure.caption.18}%
+\contentsline {paragraph}{Osservazioni}{32}{figure.caption.17}%
+\contentsline {paragraph}{Risultati}{33}{figure.caption.17}%
 \contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{34}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{36}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Conclusioni}{38}{chapter.5}%

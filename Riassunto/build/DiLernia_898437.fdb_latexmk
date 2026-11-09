@@ -1,8 +1,8 @@
 # Fdb version 4
-["lualatex"] 1794150861.77616 "/home/aras/Documents/Tesi_2026/Riassunto/DiLernia_898437.tex" "build/DiLernia_898437.pdf" "DiLernia_898437" 1794150864.71881 0
+["lualatex"] 1794223239.15062 "/home/aras/Documents/Tesi_2026/Riassunto/DiLernia_898437.tex" "build/DiLernia_898437.pdf" "DiLernia_898437" 1794223241.87357 0
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1790959223.89112 127309 677951b359b90ddbfa3eb54f696122f6 ""
   "/home/aras/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1790959223.68113 406489 857bff30402168e402a5b5f6e69efe67 ""
-  "/home/aras/Documents/Tesi_2026/Riassunto/DiLernia_898437.tex" 1794150861.40336 17124 084dedcfa24480a6c490e21519782932 ""
+  "/home/aras/Documents/Tesi_2026/Riassunto/DiLernia_898437.tex" 1794223238.60244 17124 9b6060ecd89597ba1b96a2cbde6197e2 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
@@ -168,9 +168,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790957563.51629 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/tex/generic/config/language.dat" 1790957568.40263 5334 13a0c5fd86f5ef4d791286d0152084d1 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1790957727 12240957 c778e58e1f8e0b3467546f8fece02f0c ""
-  "DiLernia_898437.tex" 1794150861.40336 17124 084dedcfa24480a6c490e21519782932 ""
-  "build/DiLernia_898437.aux" 1794150864.51943 264 8fcc49d2b054ad937b37309d9d47f92a "lualatex"
-  "build/DiLernia_898437.out" 1794150864.05642 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "DiLernia_898437.tex" 1794223238.60244 17124 9b6060ecd89597ba1b96a2cbde6197e2 ""
+  "build/DiLernia_898437.aux" 1794223241.67632 264 8fcc49d2b054ad937b37309d9d47f92a "lualatex"
+  "build/DiLernia_898437.out" 1794223241.27135 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "build/DiLernia_898437.aux"
   "build/DiLernia_898437.log"

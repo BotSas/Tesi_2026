@@ -28,17 +28,17 @@ Ogni immagine è salvata come file \textit{TIFF}, e riporta il numero di fotoni 
 
 Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati: \\
 
-\begin{table}[h]
+\begin{center}
     \centering
     \begin{tabular}{lc}
         \toprule
         Numero totale di bin temporali & 56 \\
         Frequenza del laser & 80 MHz \\
         Ampiezza dei bin temporali & 0.223 ns \\
-        \toprule
+        \bottomrule
     \end{tabular}
     \vspace{0.2cm}
-\end{table}
+\end{center}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -251,7 +251,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
     
     \item In seguito si utilizza la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati filtrati via nel passaggio precedente.
     
-    \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas} \cite{The_pandas_development_team_pandas-dev_pandas_Pandas}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
+    \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas} \cite{thepandasdevelopmentteamPandasdevPandasPandas2026}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
     Il comando \texttt{.ravel} invece trasforma le matrici bi-dimensionali in un array sequenziale, facendo perdere definitivamente il collegamento tra matrici delle coordinate fasoriali e posizione spaziale dei pixel.\\
     Quest'ultimo passaggio è il motivo per il quale l'eliminazione dei valori sotto soglia deve essere eseguita come ultima operazione.\\
 \end{itemize}  % sistemare l'italiano? boh

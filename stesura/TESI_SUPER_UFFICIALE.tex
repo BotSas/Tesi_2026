@@ -1,4 +1,4 @@
-% Benvenuti nel template per le relazioni di Sperimentazioni di Fisica 1 del corso triennale in Astronomia dell'Università di Padova.t
+% Tesi di Laurea Triennale in Fisica dell'Università degli Studi di Milano-Bicocca.
 % Per compilarlo, cliccate su Menu, selezionate come compilatore "pdfLaTeX", TeX Live Version 2020 (o uno degli altri, whatever works), e come documento principale "Relazione.tex"
 
 %%% Preambolo del documento %%%
@@ -36,12 +36,10 @@
 \usepackage{wrapfig}
 \pgfplotsset{compat=1.16}
 \usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
-\usepackage{svg}
 \usepackage{siunitx}
 \usepackage{tabularx}
 
 % ROBA AGGIUNTA DA SAS - se si rompe tutto eliminare questa parte ------------------
-\usepackage{svg}
 \usepackage{setspace}
 \setstretch{1.15}
 \usepackage{changepage}
@@ -91,6 +89,7 @@
 
 
 % bibliografia
+\usepackage{csquotes}
 \usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
 \addbibresource{bibliografia.bib}
 \AtEveryBibitem{\clearfield{urlyear}\clearfield{urlmonth}\clearfield{urlday}}

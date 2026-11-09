@@ -1,0 +1,8 @@
+# ERROR PROPAGATION -----------------------------------------
+for i in range(n_sim): # P = ROI phasor, A = red, B = green
+    f1_ROI1_sims[i], f2_ROI1_sims[i] = phf.extract_fractions(
+        P = p1_sim[i], A = red_sim[i], B = green_sim[i]
+    )
+    f1_ROI2_sims[i], f2_ROI2_sims[i] = phf.extract_fractions(
+        P = p2_sim[i], A = red_sim[i], B = green_sim[i]
+    )
