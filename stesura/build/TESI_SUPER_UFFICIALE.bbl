@@ -438,55 +438,6 @@
       \verb https://www.nature.com/articles/s41596-018-0026-5
       \endverb
     \endentry
-    \entry{jamesMinuitSystemFunction1975}{article}{}
-      \name{author}{2}{}{%
-        {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
-           family={James},
-           familyi={J\bibinitperiod},
-           given={F.},
-           giveni={F\bibinitperiod}}}%
-        {{hash=28c5c86b1466da9ee3f666c8fa5a88f8}{%
-           family={Roos},
-           familyi={R\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{f89ddc4197de0ff1e52e970514beb377}
-      \strng{fullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \strng{bibnamehash}{f89ddc4197de0ff1e52e970514beb377}
-      \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
-      \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
-      \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{00104655}
-      \field{journaltitle}{Computer Physics Communications}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{6}
-      \field{shortjournal}{Computer Physics Communications}
-      \field{title}{Minuit - a System for Function Minimization and Analysis of the Parameter Errors and Correlations}
-      \field{urlday}{6}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{10}
-      \field{year}{1975}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{343\bibrangedash 367}
-      \range{pages}{25}
-      \verb{doi}
-      \verb 10.1016/0010-4655(75)90039-9
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
-      \endverb
-    \endentry
     \entry{harrisArrayProgrammingNumPy2020}{article}{}
       \name{author}{26}{}{%
         {{hash=db2b4761cc46be347b418e68660c9554}{%
@@ -661,6 +612,55 @@
       \verb https://www.nature.com/articles/s41586-020-2649-2
       \endverb
     \endentry
+    \entry{jamesMinuitSystemFunction1975}{article}{}
+      \name{author}{2}{}{%
+        {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=28c5c86b1466da9ee3f666c8fa5a88f8}{%
+           family={Roos},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{fullhash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{bibnamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00104655}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{Computer Physics Communications}
+      \field{title}{Minuit - a System for Function Minimization and Analysis of the Parameter Errors and Correlations}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{10}
+      \field{year}{1975}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{343\bibrangedash 367}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0010-4655(75)90039-9
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
+      \endverb
+    \endentry
     \entry{gottliebFLUTEPythonGUI2023a}{article}{}
       \name{author}{5}{}{%
         {{hash=c4909f173c866fe407b72f77362b726c}{%
@@ -748,8 +748,8 @@
       \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
@@ -894,8 +894,8 @@
       \strng{authorbibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
       \strng{authornamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
       \strng{authorfullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1087-0156, 1546-1696}
@@ -948,8 +948,8 @@
       \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}

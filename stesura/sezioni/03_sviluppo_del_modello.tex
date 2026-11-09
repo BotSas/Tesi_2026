@@ -1,39 +1,40 @@
-\chapter{Sviluppo del modello}
+\chapter{Sviluppo del modello} %OK
 \label{sec:sviluppo_del_modello} 
 
-
-La stesura del codice si è divisa in due momenti fondamentali: la simulazione di segnali (e la relativa analisi) e lo studio di immagini reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
-
-Sono state utilizzate le stesse funzioni per lo studio delle due tipologie di segnale.\\
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+La stesura del codice è articolata in due fasi fondamentali: la simulazione di segnali di decadimento (e la relativa analisi) e lo studio di dataset sperimentali reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
+Questo primo capitolo si concentra sulla prima fase: la generazione di segnali e la validazione degli algoritmi di analisi, impiegati nello studio delle  immagini in un secondo momento.
 
 
 \section{Generazione dei segnali}
 \label{sec:generazione_dei_segnali}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Rappresentazione di decadimenti sul piano dei fasori}
 
-Come presentato nella sezione \ref{sec:cenni_matematici_di_analisi_fasoriale}, i decadienti di fluorescenza seguono un andamento esponenziale decrescente;
+Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale (\ref{eq:decadimento}), i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo.\\
+La correttezza dell'algoritmo di generazione è stata verificata stimando il parametro $\tau$ attraverso un fit con il metodo della \textit{Binned Negative Log Likelihood} (facendo uso della libreria \textit{iMinuit} \cite{jamesMinuitSystemFunction1975}).
 
-\begin{equation}
-    I(t) = I_0 e^{-\frac{t}{\tau}}
-    \label{eq:exp_decay}
-\end{equation}
+\begin{figure}[h!]
 
-dove $\tau$ indica il tempo di vita di fluorescenza.\\
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/exp.pdf}
+    \label{fig:irf_sing_decay_exp}
+    \caption{Decadimento di fluorescenza a esponenziale singola simulato. Parametri noti a priori: $\tau=4\,\text{ns}$, \textit{counts}$=I_0=10000$.}
+    %NB: per aspect ratio quadrato ax.set_aspect('equal')
+\end{figure}
+\begin{table}[htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{ccccc}
+        \toprule
+        \textbf{$I_0$} & \textbf{$\tau$ (\si{\nano\second})} & $\chi^2 / \text{dof}$ & \textbf{$\tilde{\chi}^2$} & \textit{p}-value \\
+        \midrule
+        $(2.57 \pm 0.04) \times 10^3$ & $4.09 \pm 0.06$ & $256.46 / 253$ & $1.01$ & $0.43$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Risultati del fit esponenziale relativo all'immagine \ref {fig:exp.pdf} e relative statistiche. Parametri iniziali di generazione dell'esponenziale: $N=I_0=10000$ (numero totale eventi), $\tau=4\; \text{ns}.$}
 
-Si è dunque cercato di simulare un esperimento di fluorescenza così come avverrebbe in laboratorio: un fascio laser periodico colpisce il campione causando un'eccitazione elettronica; al tempo \textit{t} un atomo ha una certa  probabilità di trovarsi ancora allo stato eccitato. La dipendenza temporale di questa probabilità sarà dettata da \ref{eq:exp_decay}.\\
-
-% Supponiamo ora di analizzare in tempo reale l'emissione di fluorescenza del campione per mezzo di un microscopio a fluorescenza. I fotoni emessi dal campione possono essere raggruppati in \textit{pixel}: l'intensità di ogni pixel avrà lo stesso andamento temporale di \ref{eq:exp_decay}.\\
-
-Per ogni pulsazione del laser, si può misurare a quale \textit{t} dal momento dell'impulso avviene la diseccitazione (emissione di fluorescenza), e campionare i risultati ottenuti in \textit{t} di larghezza fissata dalla scheda di acquisizione. Dopo un numero sufficiente di eventi, si sarà ottenuta una distribuzione esponenziale decrescente, con tempo caratteristico \textit{$\tau$} pari al tempo di vita di fluorescenza associato al fluoroforo.\\
-
-Il fenomeno è stato simulato con una semplice generazione di distribuzione esponenziale, e il valore di \textit{$\tau$} verificato mediante il metodo della \textit{Binned Log Likelihood} (è stata utilizzata la libreria \textit{iMinuit} \cite{jamesMinuitSystemFunction1975}).\\
+\end{table}
 
 Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori:
 
@@ -73,27 +74,37 @@ Per aggiungere realismo alla simulazione, è stata sviluppata una funzione che a
 % immagine placeholder da sistemare
 
 \begin{figure}[h!]
-
     \centering
-    \includegraphics[width=0.98\linewidth]{immagini/sing_exp_decay_noisy.png}
-    \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal-to-noise ratio} = 10$}
-    \label{fig:sing_exp_and_phasor_noisy}
-
+    \begin{minipage}{0.98\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{immagini/noise_none_example.pdf}
+        \caption{Un esempio di decadimento a singola esponenziale senza rumore.}
+        
+        \vspace{0.4cm}
+        
+        \includegraphics[width=\linewidth]{immagini/noise_10_example.pdf}
+        \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal-to-noise ratio} = 10$.}
+        
+        \vspace{0.4cm}
+        
+        \includegraphics[width=\linewidth]{immagini/noise_20_example.pdf}
+        \caption{Un esempio di decadimento a singola esponenziale con $\textit{signal-to-noise ratio} = 20$.}
+    \end{minipage}
 \end{figure}
 
-\begin{table}[htbp]
-    \centering
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabular}{ccccc}
-        \toprule
-        \textbf{$I_0$} & \textbf{$\tau$ (\si{\nano\second})} & $\chi^2 / \text{dof}$ & \textbf{$\tilde{\chi}^2$} & \textit{p}-value \\
-        \midrule
-        $(2.57 \pm 0.04) \times 10^3$ & $4.09 \pm 0.06$ & $256.46 / 253$ & $1.01$ & $0.43$ \\
-        \bottomrule
-    \end{tabular}
-    \caption{Risultati del fit esponenziale relativo all'immagine \ref {fig:sing_exp_and_phasor_noisy} e relative statistiche. Parametri iniziali di generazione dell'esponenziale: $N=I_0=10000$ (numero totale eventi), $\tau=4\; \text{ns}.$}
+% \begin{table}[htbp]
+%     \centering
+%     \renewcommand{\arraystretch}{1.3}
+%     \begin{tabular}{ccccc}
+%         \toprule
+%         \textbf{$I_0$} & \textbf{$\tau$ (\si{\nano\second})} & $\chi^2 / \text{dof}$ & \textbf{$\tilde{\chi}^2$} & \textit{p}-value \\
+%         \midrule
+%         $(2.57 \pm 0.04) \times 10^3$ & $4.09 \pm 0.06$ & $256.46 / 253$ & $1.01$ & $0.43$ \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{Risultati del fit esponenziale relativo all'immagine \ref {fig:sing_exp_and_phasor_noisy} e relative statistiche. Parametri iniziali di generazione dell'esponenziale: $N=I_0=10000$ (numero totale eventi), $\tau=4\; \text{ns}.$}
 
-\end{table}
+% \end{table}
 
 Da questo punto in poi, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) conterrà del rumore gaussiano calcolato con la stesssa funzione. Il valore di \textit{signal-to-noise ratio} sarà sempre indicato nella didascalia.\\
 
