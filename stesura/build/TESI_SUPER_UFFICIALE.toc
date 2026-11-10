@@ -8,37 +8,38 @@
 \contentsline {subsection}{\numberline {2.2.1}Il semicerchio universale}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Definizione mediante coordinate polari}{8}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Rappresentazione di decadimenti multi-esponenziali}{9}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Funzione di risposta dello strumento}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Funzione di risposta strumentale}{10}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Convoluzione tra IRF e segnale di fluorescenza}{11}{subsection.2.3.1}%
 \contentsline {paragraph}{Osservazioni sull'implementazione}{11}{equation.2.3.8}%
 \contentsline {chapter}{\numberline {3}Sviluppo del modello}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Generazione dei segnali}{13}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Decadimenti singoli e rappresentazione sul piano dei fasori}{13}{subsection.3.1.1}%
 \contentsline {subsubsection}{Generazione del rumore}{14}{table.caption.4}%
+\contentsline {subsubsection}{Osservazioni}{16}{figure.caption.5}%
 \contentsline {subsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{16}{subsection.3.1.2}%
-\contentsline {paragraph}{Verifica del rapporto di concentrazione}{16}{figure.caption.8}%
+\contentsline {subsubsection}{Verifica delle frazioni di intensità}{17}{equation.3.1.1}%
 \contentsline {section}{\numberline {3.2}Generazione e analisi della IRF}{18}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Generazione del segnale}{18}{subsection.3.2.1}%
-\contentsline {paragraph}{Osservazioni aggiuntive}{19}{figure.caption.10}%
+\contentsline {subsubsection}{Osservazioni aggiuntive}{20}{figure.caption.8}%
 \contentsline {subsection}{\numberline {3.2.2}Deconvoluzione}{20}{subsection.3.2.2}%
-\contentsline {paragraph}{Decadimento a doppio esponenziale}{20}{subsection.3.2.2}%
+\contentsline {subsubsection}{Decadimento a doppio esponenziale}{21}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Test su immagini}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{23}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{23}{subsection.4.1.1}%
-\contentsline {paragraph}{Teoria}{23}{subsection.4.1.1}%
-\contentsline {paragraph}{Pratica}{23}{subsection.4.1.1}%
-\contentsline {paragraph}{Osservazioni}{24}{figure.caption.14}%
-\contentsline {subsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{25}{subsection.4.1.2}%
+\contentsline {subsubsection}{Teoria}{23}{subsection.4.1.1}%
+\contentsline {subsubsection}{Pratica}{23}{subsection.4.1.1}%
+\contentsline {subsubsection}{Osservazioni}{23}{figure.caption.12}%
+\contentsline {subsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{24}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Selezione della regione di interesse}{26}{subsection.4.1.3}%
-\contentsline {paragraph}{Criteri di selezione}{27}{figure.caption.15}%
+\contentsline {paragraph}{Criteri di selezione}{26}{figure.caption.14}%
 \contentsline {subsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{27}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{29}{subsection.4.1.5}%
 \contentsline {section}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{30}{subsection.4.2.1}%
-\contentsline {paragraph}{Teoria - SHG}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{29}{subsection.4.2.1}%
+\contentsline {paragraph}{Teoria - SHG}{29}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{30}{subsection.4.2.2}%
-\contentsline {paragraph}{Osservazioni}{32}{figure.caption.19}%
-\contentsline {paragraph}{Risultati}{33}{figure.caption.19}%
-\contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{34}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{36}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Conclusioni}{38}{chapter.5}%
+\contentsline {paragraph}{Osservazioni}{31}{figure.caption.18}%
+\contentsline {paragraph}{Risultati}{32}{figure.caption.18}%
+\contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{33}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{35}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Conclusioni}{37}{chapter.5}%

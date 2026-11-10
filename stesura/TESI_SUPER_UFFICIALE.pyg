@@ -1,8 +1,10 @@
-# ERROR PROPAGATION -----------------------------------------
-for i in range(n_sim): # P = ROI phasor, A = red, B = green
-    f1_ROI1_sims[i], f2_ROI1_sims[i] = phf.extract_fractions(
-        P = p1_sim[i], A = red_sim[i], B = green_sim[i]
-    )
-    f1_ROI2_sims[i], f2_ROI2_sims[i] = phf.extract_fractions(
-        P = p2_sim[i], A = red_sim[i], B = green_sim[i]
-    )
+
+def phasor_calc (n, harm_n = 1):
+
+    fft_vals = np.fft.rfft(n)
+    fft_norm = fft_vals / fft_vals[0]
+
+    G, S = np.real(fft_norm[harm_n]), -np.imag(fft_norm[harm_n])
+
+    return G, S
+

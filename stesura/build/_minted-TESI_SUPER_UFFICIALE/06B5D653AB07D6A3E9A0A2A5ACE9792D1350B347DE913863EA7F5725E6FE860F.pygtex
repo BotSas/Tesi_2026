@@ -1,5 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{k}{def} \PYG{n+nf}{simulation\PYGZus{}with\PYGZus{}IRF}\PYG{p}{(}\PYG{n}{expdata}\PYG{p}{,} \PYG{n}{irf}\PYG{p}{,} \PYG{n}{counts}\PYG{p}{,} \PYG{n}{noise\PYGZus{}flag}\PYG{p}{,} \PYG{n}{snr\PYGZus{}db}\PYG{p}{):}
 
     \PYG{n}{n\PYGZus{}bins} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{irf}\PYG{p}{)}

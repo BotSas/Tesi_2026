@@ -1,6 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k}{def} \PYG{n+nf}{cloud\PYGZus{}statistics}\PYG{p}{(}\PYG{n}{G}\PYG{p}{,} \PYG{n}{S}\PYG{p}{):}
-
 \PYG{+w}{    }\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
 \PYG{l+s+sd}{    Mean, average, covarance matrix and diagonalisation of ph. cloud}
 \PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}

@@ -1,5 +1,4 @@
 \begin{Verbatim}[commandchars=\\\{\}]
-
 \PYG{k}{def} \PYG{n+nf}{phasor\PYGZus{}deconv}\PYG{p}{(}\PYG{n}{G\PYGZus{}meas}\PYG{p}{,} \PYG{n}{S\PYGZus{}meas}\PYG{p}{,} \PYG{n}{G\PYGZus{}irf}\PYG{p}{,} \PYG{n}{S\PYGZus{}irf}\PYG{p}{):}
 
     \PYG{n}{z\PYGZus{}meas} \PYG{o}{=} \PYG{n}{G\PYGZus{}meas} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{n}{j} \PYG{o}{*} \PYG{n}{S\PYGZus{}meas}       \PYG{c+c1}{\PYGZsh{} imaginary unit i = 1j}
@@ -10,5 +9,4 @@
     \PYG{n}{G\PYGZus{}deconvol}\PYG{p}{,} \PYG{n}{S\PYGZus{}deconvol} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{real}\PYG{p}{(}\PYG{n}{z\PYGZus{}deconvol}\PYG{p}{),} \PYG{n}{np}\PYG{o}{.}\PYG{n}{imag}\PYG{p}{(}\PYG{n}{z\PYGZus{}deconvol}\PYG{p}{)}
 
     \PYG{k}{return} \PYG{n}{G\PYGZus{}deconvol}\PYG{p}{,} \PYG{n}{S\PYGZus{}deconvol}
-
 \end{Verbatim}
