@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  10 NOV 2026 01:51
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  10 NOV 2026 13:13
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1633,40 +1633,40 @@ Capitolo 4.
 <immagini/flat_embryo3.png, id=1037, 380.1402pt x 302.0886pt>
 File: immagini/flat_embryo3.png Graphic file (type png)
 <use immagini/flat_embryo3.png>
-Package luatex.def Info: immagini/flat_embryo3.png  used on input line 14.
+Package luatex.def Info: immagini/flat_embryo3.png  used on input line 15.
 (luatex.def)             Requested size: 218.51521pt x 173.65349pt.
 <immagini/flat_embryo5.png, id=1038, 386.6445pt x 302.0886pt>
 File: immagini/flat_embryo5.png Graphic file (type png)
 <use immagini/flat_embryo5.png>
-Package luatex.def Info: immagini/flat_embryo5.png  used on input line 20.
+Package luatex.def Info: immagini/flat_embryo5.png  used on input line 22.
 (luatex.def)             Requested size: 218.51521pt x 170.72646pt.
 [22
 
 <./immagini/flat_embryo3.png><./immagini/flat_embryo5.png>]
-<immagini/embryo3_IRF.pdf, id=1052, 570.74794pt x 400.2558pt>
+<immagini/embryo3_IRF.pdf, id=1053, 570.74794pt x 400.2558pt>
 File: immagini/embryo3_IRF.pdf Graphic file (type pdf)
 <use immagini/embryo3_IRF.pdf>
-Package luatex.def Info: immagini/embryo3_IRF.pdf  used on input line 76.
+Package luatex.def Info: immagini/embryo3_IRF.pdf  used on input line 78.
 (luatex.def)             Requested size: 341.43307pt x 239.44687pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23]
-Overfull \hbox (8.62871pt too wide) in paragraph at lines 114--117
+Overfull \hbox (8.62871pt too wide) in paragraph at lines 116--119
 \TU/lmr/m/n/12 sta-to ap-pli-ca-to al-l’im-ma-gi-ne un fil-tro me-dian, me-dian-te \TU/lmtt/m/n/12 phasorpy.phasor_filter_median\TU/lmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 [24<./immagini/embryo3_IRF.pdf>]
-<immagini/embryo3_ROI.png, id=1113, 570.933pt x 400.3758pt>
+<immagini/embryo3_ROI.png, id=1114, 570.933pt x 400.3758pt>
 File: immagini/embryo3_ROI.png Graphic file (type png)
 <use immagini/embryo3_ROI.png>
-Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 123.
+Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 124.
 (luatex.def)             Requested size: 341.43307pt x 239.44533pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1674,17 +1674,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [25<./immagini/embryo3_ROI.png>]
 File: immagini/embryo3_ROI.png Graphic file (type png)
 <use immagini/embryo3_ROI.png>
-Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 157.
+Package luatex.def Info: immagini/embryo3_ROI.png  used on input line 158.
 (luatex.def)             Requested size: 341.43307pt x 239.44533pt.
  [26]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/608CF69E4C2C7B0240870B7CD5A111B41350B347DE913863EA7F5725E6FE860F.pygtex) [27]
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 [28] [29]
-<immagini/embryo5_IRF.png, id=1150, 570.933pt x 400.3758pt>
+<immagini/embryo5_IRF.png, id=1151, 570.933pt x 400.3758pt>
 File: immagini/embryo5_IRF.png Graphic file (type png)
 <use immagini/embryo5_IRF.png>
 Package luatex.def Info: immagini/embryo5_IRF.png  used on input line 293.
@@ -1699,23 +1699,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-<immagini/embryo5_IRF_redgreen.png, id=1152, 570.933pt x 400.3758pt>
+<immagini/embryo5_IRF_redgreen.png, id=1153, 570.933pt x 400.3758pt>
 File: immagini/embryo5_IRF_redgreen.png Graphic file (type png)
 <use immagini/embryo5_IRF_redgreen.png>
 Package luatex.def Info: immagini/embryo5_IRF_redgreen.png  used on input line 313.
 (luatex.def)             Requested size: 341.43307pt x 239.44533pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [30<./immagini/embryo5_IRF.png>]
-<immagini/ROI1_and_ROI2.pdf, id=1162, 614.295pt x 794.97pt>
+<immagini/ROI1_and_ROI2.pdf, id=1163, 614.295pt x 794.97pt>
 File: immagini/ROI1_and_ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI1_and_ROI2.pdf>
 Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 327.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI1.pdf, id=1163, 614.295pt x 794.97pt>
+<immagini/ROI1.pdf, id=1164, 614.295pt x 794.97pt>
 File: immagini/ROI1.pdf Graphic file (type pdf)
 <use immagini/ROI1.pdf>
 Package luatex.def Info: immagini/ROI1.pdf  used on input line 335.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI2.pdf, id=1164, 614.295pt x 794.97pt>
+<immagini/ROI2.pdf, id=1165, 614.295pt x 794.97pt>
 File: immagini/ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI2.pdf>
 Package luatex.def Info: immagini/ROI2.pdf  used on input line 342.
@@ -1724,7 +1727,7 @@ Package luatex.def Info: immagini/ROI2.pdf  used on input line 342.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/embryo5_ROI1_ROI2_phasors.png, id=1166, 570.933pt x 400.3758pt>
+<immagini/embryo5_ROI1_ROI2_phasors.png, id=1167, 570.933pt x 400.3758pt>
 File: immagini/embryo5_ROI1_ROI2_phasors.png Graphic file (type png)
 <use immagini/embryo5_ROI1_ROI2_phasors.png>
 Package luatex.def Info: immagini/embryo5_ROI1_ROI2_phasors.png  used on input line 356.
@@ -1737,21 +1740,33 @@ Overfull \hbox (1.82281pt too wide) in paragraph at lines 370--372
 \TU/lmr/m/n/12 Quest’ipotesi è av-va-lo-ra-ta dal fat-to che la lun-ghez-za d’on-da di ec-ci-ta-zio-ne ($\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = 1100 []$\TU/lmr/m/n/12 )
  []
 
-[31<./immagini/embryo5_IRF_redgreen.png>] [32<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
-\openout6 = TESI_SUPER_UFFICIALE.pyg
- [33<./immagini/embryo5_ROI1_ROI2_phasors.png>] (./build/_minted-TESI_SUPER_UFFICIALE/B1EA407ACD9F64C2CBC236E54961B9191350B347DE913863EA7F5725E6FE860F.pygtex)
+[31<./immagini/embryo5_IRF_redgreen.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [32<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
+\openout6 = TESI_SUPER_UFFICIALE.pyg
+ [33<./immagini/embryo5_ROI1_ROI2_phasors.png>] (./build/_minted-TESI_SUPER_UFFICIALE/B1EA407ACD9F64C2CBC236E54961B9191350B347DE913863EA7F5725E6FE860F.pygtex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \hbox (21.87888pt too wide) in paragraph at lines 492--494
 \TU/lmr/m/n/12 Si può os-ser-va-re dal-la ta-bel-la [][]4.1[][] che l’el-lit-ti-ci-tà del-le spe-cie a emis-sio-ne ver-de ($\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0890\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0168 \OMS/cmsy/m/n/12 
  []
 
+
+Underfull \vbox (badness 2961) has occurred while \output is active []
+
+ [34]
 Missing character: There is no ° (U+00B0) in font cmr12!
 Missing character: There is no ° (U+00B0) in font cmr12!
-[35]
+
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- (./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex)) (./sezioni/05_conclusioni.tex [36]
+(./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex) [35]) (./sezioni/05_conclusioni.tex [36]
 Capitolo 5.
 ) [37
 
@@ -1780,19 +1795,19 @@ Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53800 strings out of 476553
+ 53802 strings out of 476553
  125081,2373549 words of node,token memory allocated
  993 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 97 attribute, 77 glue_spec, 50 attribute_list, 2 write, 17 pdf_action nodes
-   avail lists: 2:3678,3:538,4:244,5:382,6:85,7:8109,8:187,9:890,10:21,11:1285,12:2
- 74303 multiletter control sequences out of 65536+600000
+   avail lists: 2:3678,3:538,4:244,5:396,6:84,7:8109,8:187,9:890,10:21,11:1285,12:2
+ 74305 multiletter control sequences out of 65536+600000
  54 fonts using 4723327 bytes
  105i,15n,115p,2599b,1935s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (39 pages, 7803254 bytes).
+Output written on TESI_SUPER_UFFICIALE.pdf (39 pages, 7803908 bytes).
 
-PDF statistics: 1459 PDF objects out of 1728 (max. 8388607)
- 1010 compressed objects within 11 object streams
+PDF statistics: 1460 PDF objects out of 1728 (max. 8388607)
+ 1011 compressed objects within 11 object streams
  115 named destinations out of 1000 (max. 131072)
  256 words of extra memory for PDF output out of 10000 (max. 100000000)
 

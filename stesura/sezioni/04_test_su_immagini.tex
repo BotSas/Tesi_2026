@@ -1,27 +1,31 @@
-\chapter{Test su immagini}\label{sec:test_su_immagini}
+\chapter{Test su immagini}
+\label{sec:test_su_immagini}
 
-In questa sezione si tratterà di come le funzioni di analisi/deconvoluzione presentate in precedenza possono essere utilizzate per lo studio di immagini FLIM reali.\\
-Per lo scopo sono state studiate due immagini, entrambe tratte da un articolo pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023a}; in entrambe, è possibile vedere un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.
+In questa sezione viene trattata l'applicazione del codice di analisi presentato in precedenza a \textit{dataset} FLIM sperimentali reali.\\
+Per lo scopo sono state studiate due immagini estratte da un articolo del progetto FLUTE pubblicato sulla piattaforma \textit{Zenodo} \cite{gottliebFLUTEPythonGUI2023a}; in entrambe, il campione oggetto di studio è un embrione di \textit{zebrafish} rispettivamente a tre e cinque giorni dalla fecondazione.
 
 Il primo \textit{dataset} contiene, oltre all'immagine del campione, un file di calibrazione con fluoroforo a tempo di vita noto (fluorescina, $\tau = 4\,\mathrm{ns}$).\\
-La seconda immagine invece è corredata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 507\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$), che catturano i decadimenti di fluorescenza di specie fluorofore diverse.\\
-Ogni immagine è esportata come file \textit{tiff}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione, i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.\\
+La seconda immagine invece è corredata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 607\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$), che catturano i decadimenti di fluorescenza di specie fluorofore diverse.\\
+Ogni immagine è esportata come file \textit{tiff}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione, i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle le dimensioni \texttt{time}, \texttt{x} e \texttt{y}.
 \begin{figure}[h!]
     \centering
 
     \begin{subfigure}[b]{0.48\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/flat_embryo3.png}
-        \caption{Immagine 1 "appiattita" sull'asse temporale.}
+        \caption{Immagine 1 - embrione di Zebrafish a circa 3 giorni dalla fecondazione.}
+        \label{fig:zebra3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.48\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/flat_embryo5.png}
-        \caption{Immagine 2 "appiattita" sull'asse temporale.}
+        \caption{Immagine 2 - embrione di Zebrafish a circa 5 giorni dalla fecondazione.}
     \end{subfigure}
+    \caption{Rappresentazione ``appiattita'' dei due campioni, dove il colore di ogni pixel dipende dall'emissione totale, indipendentemente dalla forma del decadimento.}
 \end{figure}
-Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati:
+
+\noindent Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte dati (campioni e file di calibrazione):
 \begin{center}
     \centering
     \begin{tabular}{lc}
@@ -41,11 +45,9 @@ Di seguito sono riportati i parametri di acquisizione comuni a tutte le raccolte
 
 \section{Immagine 1 - elaborazione dei dati}
 
-Struttura della sotto-sezione: per ogni passaggio dell'analisi, viene presentata un'introduzione teorica/computazionale, seguita da un paragrafo contenente le immagini ottenute e le relative osservazioni.
+Per presentare gli algoritmi di estrazione dei decadimenti e di analisi preliminare è stato utilizzato il primo \textit{dataset} \ref{fig:zebra3}.
 
 \subsection{Isolamento e deconvoluzione della IRF}
-
-\subsubsection{Teoria}
 
 Il primo passaggio dell'analisi consiste nell'ottenimento del fasore relativo alla IRF mediante il file di calibrazione, e nella successiva deconvoluzione di quest'ultimo con l'immagine principale.
 Gli autori dello studio da cui sono state tratte le immagini, sottolineano che la calibrazione è avvenuta con gli stessi parametri (frequenza del laser, numero e ampiezza dei bin temporali) utilizzati durante l'acquisizione dell'immagine \cite{gottliebFLUTEPythonGUI2023a}.\\
@@ -115,8 +117,7 @@ Raccolte dati con un numero ridotto di fotoni per acquisizione sono più soggett
 Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi. Per ridurre la dispersione spaziale dei fasori, è stato applicato all'immagine un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, funzione importata da \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}. Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel, la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.
   % grazie Davide
 
-La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, I pixel vuoti vengono ignorati per il calcolo della mediana per evitare di "affievolire" artificiosamente il segnale sui bordi dell'immagine o di una struttura del campione. Tuttavia vengono preservati come \texttt{NaN} ("not a number", ovvero \texttt{0}) i pixel che erano precedentemente stati considerati vuoti. In questo modo, non vengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti \cite{christophgohlkePhasorpyPhasorpyV0122026}.\\
-
+La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, I pixel vuoti vengono ignorati per il calcolo della mediana per evitare di "affievolire" artificiosamente il segnale sui bordi dell'immagine o di una struttura del campione. Tuttavia vengono preservati come \texttt{NaN} (\textit{Not a Number}, ovvero pixel privi di conteggi validi) i pixel che erano precedentemente stati considerati vuoti. In questo modo, non vengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti \cite{christophgohlkePhasorpyPhasorpyV0122026}.\\
 
 \begin{figure}[h!]
     \centering
@@ -237,7 +238,7 @@ La selezione della regione di interesse avviene dopo il filtro median: il filtro
 Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel con numero di fotoni insufficiente, avviene per ultimo, e include tre passaggi fondamentali:
 
 \begin{itemize}
-    \item Per prima cosa, viene calcolato il valore di soglia, ovvero il numero di fotoni minimo perché un pixel venga utilizzato per il calcolo dei fasori, invece che sostituito da \texttt{NaN}. Ciò avviene moltiplicando la percentuale di soglia al numero totale di fotoni dell'immagine.
+    \item Per prima cosa, viene calcolato il valore di soglia, ovvero il numero di fotoni minimo perché un pixel venga utilizzato per il calcolo dei fasori, invece che sostituito da \texttt{NaN}. Ciò avviene moltiplicando la percentuale di soglia al conteggio massimo tra i pixel della ROI.
     Il parametro \texttt{skipna} permette di ignorare i pixel completamente vuoti, riducendo i tempi di elaborazione.
     
     \item In seguito si utilizza la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati filtrati via nel passaggio precedente.
@@ -281,7 +282,6 @@ Verrà mostrato in una sezione successiva che la rappresentazione dei decadiment
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.
 
-\paragraph{Teoria - SHG}
 Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.
 
 Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
@@ -335,14 +335,14 @@ Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \
         \includegraphics[width=\linewidth]{immagini/ROI1.pdf}
         \label{fig:red}
         \vspace{-4cm}
-        \caption*{ROI 1, coordinate: $(G, S)=(190, 219)$}
+        \caption*{ROI 1, coordinate: $(x, y)=(190, 219)$}
     \end{minipage}\hfill
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/ROI2.pdf}
         \label{fig:green}
         \vspace{-4cm}
-        \caption*{ROI 2, coordinate: $(G, S)=(232, 271)$}
+        \caption*{ROI 2, coordinate: $(x, y)=(232, 271)$}
     \end{minipage}
     \caption{Nella prima immagine in alto sono evidenziate le due ROI scelte per l'analisi, il quadrato ciano rappresenta la prima area, mentre quella verde la seconda. Nelle immagini sottostani vengono mostrate rispettivamente la prima e la seconda area sovrapposte alle immagini con filtro rosso e verde. Si noti la scelta di regioni con adeguato numero di eventi di decadimento.}
     \label{fig:tutte_immagini}
@@ -396,10 +396,10 @@ In seguito, è stato calcolato il rapporto di concentrazione delle due specie fl
     \begin{tabular}{lcc}
 
         \hline
-         & ROI 1 (190, 219) & ROI 2 (168, 287) \\
+         & ROI 1 (190, 219) & ROI 2 (232, 271) \\
         \hline
-        \textbf{Rosso} & $0.943120 \pm 0.038484$  & $0.551258 \pm 0.117170$ \\
-        \textbf{Verde} & $0.056880 \pm 0.038484$ & $0.448742 \pm 0.117170$ \\
+        \textbf{Rosso} & $0.943 \pm 0.038$  & $0.551 \pm 0.117$ \\
+        \textbf{Verde} & $0.057 \pm 0.038$ & $0.449 \pm 0.117$ \\
         \hline
 
     \end{tabular}
