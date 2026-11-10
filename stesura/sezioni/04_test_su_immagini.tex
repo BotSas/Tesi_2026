@@ -75,7 +75,7 @@ Il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione co
 A questo punto diventa possibile la deconvoluzione della \textit{IRF} dall'immagine principale: si considera segnale dei singoli pixel, e ad ognuno di essi si associano le coordinate fasoriali; infine si estrae il segnale di decadimento puro effettuando una deconvoluzione sul piano dei fasori, come da sezione \ref{sec:deconvoluzione} (deconvoluzione).
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{immagini/embryo3_IRF.pdf}
+    \includegraphics[width=0.75\textwidth]{immagini/phasor_comparison.pdf}
     \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
 \label{fig:embryo3_IRF}
 \end{figure}
@@ -121,10 +121,10 @@ La funzione è definita \textit{NaN-aware}: per un pixel con intensità non null
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{immagini/embryo3_ROI.png}
+    \includegraphics[width=0.75\linewidth]{immagini/phasor_comparison_median.pdf}
 %    \vspace{-7cm}
     \caption{Rappresentazione sul piano dei fasori della regione di interesse quadrata nell'immagine 1, con centro di coordinate $(x, y)=(81, 216)$ e lato 20 pixel. Sono rappresentati media e deviazione standard.}
-    \label{fig:embryo3_ROI}
+    \label{fig:phasor_comparison_median}
 \end{figure}
 
 
@@ -155,7 +155,7 @@ Si è scelto di non limitare mai la selezione a un singolo punto, ma di permette
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{immagini/embryo3_ROI.png}
+    \includegraphics[width=0.75\linewidth]{immagini/ROI_phasor_embryo3.pdf}
 %    \vspace{-7cm}
     \caption{Rappresentazione sul piano dei fasori della regione di interesse quadrata nell'immagine 1, con centro di coordinate $(x, y)=(81, 216)$ e lato 20 pixel. Sono rappresentati media e deviazione standard.}
     \label{fig:embryo3_ROI}
@@ -168,7 +168,6 @@ Si è scelto di non limitare mai la selezione a un singolo punto, ma di permette
 \paragraph{Criteri di selezione} 
 
 La selezione della regione di interesse (ROI) è uno strumento la cui utilità dipende fortemente dalla scelta del centro e dell'ampiezza dell'area che si decide di studiare. Vengono di seguito elencati alcuni accorgimenti necessari per una buona selezione:
-
 \begin{itemize}
     \item È consigliato scegliere una regione del campione che riporti un'intensità di emissione sufficiente; infatti, \textit{pixel} contenenti pochi fotoni saranno più soggetti a errori strumentali o legati al rumore statistico.
     \item Infine, è essenziale non selezionare aree sovrapposte a due o più sezioni del campione. \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti al medesimo microambiente o alla stessa struttura biologica.
@@ -290,10 +289,10 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
     
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.png} 
+    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.pdf} 
     \label{fig:embryo5_IRF}
 %    \vspace{-7cm}
-    \caption{Rappresentazione sul piano dei fasori delle "nuvole" di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median ($\textit{repeat}=2$).}
+    \caption{Rappresentazione sul piano dei fasori dei cluster di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median ($\textit{repeat}=2$).}
 \end{figure}
 
 %\paragraph{pratica} - immagine + magari un commentino sul significato della forma allungata
@@ -310,7 +309,7 @@ Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF_redgreen.png}
+    \includegraphics[width=0.75\linewidth]{immagini/red_green_yellow.pdf}
 %    \vspace{-7cm}
     \caption{Rappresentazione sul piano dei fasori delle nuvole di decadimenti relativi alle acquisizioni totale, e con filtri rosso e verde. Filtro median applicato due volte. Per le acquisizioni rossa e verde, sono state calcolate media e deviazione standard, quest'ultima indicata sul grafico mediante barre d'errore.}
     \label{fig:embryo5_IRF_redgreen}
@@ -477,10 +476,10 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
         \toprule
         \textbf{Dataset} & \textbf{Media $(G, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
         \midrule
-        \textbf{Red} & $(0.6324,\; 0.4572)$ & $0.0176$ & $0.0112$ & $171.90^\circ$ \\
-        \textbf{Green} & $(0.9533,\; 0.0617)$ & $0.0890$ & $0.0168$ & $136.70^\circ$ \\
-        \textbf{ROI 1} & $(0.6523,\; 0.4361)$ & $0.0117$ & $0.0041$ & $139.10^\circ$ \\
-        \textbf{ROI 2} & $(0.7716,\; 0.2758)$ & $0.0378$ & $0.0134$ & $123.23^\circ$ \\
+        \textbf{Red} & $(0.632,\; 0.457)$ & $0.018$ & $0.011$ & $171.9^\circ$ \\
+        \textbf{Green} & $(0.953,\; 0.062)$ & $0.089$ & $0.017$ & $136.7^\circ$ \\
+        \textbf{ROI 1} & $(0.652,\; 0.436)$ & $0.012$ & $0.004$ & $139.1^\circ$ \\
+        \textbf{ROI 2} & $(0.772,\; 0.276)$ & $0.038$ & $0.013$ & $123.2^\circ$ \\
         \bottomrule
     \end{tabular}
     \caption{Media, e risultati della diagonalizzazione della matrice di covarianza per le varie nuvole di fasori.}
@@ -488,17 +487,22 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
     \label{tab:pca_summary}
 \end{table}
 
+    % \begin{tabular}{l c c c c}
+    %     \toprule
+    %     \textbf{Dataset} & \textbf{Media $(G, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
+    %     \midrule
+    %     \textbf{Red} & $(0.6324,\; 0.4572)$ & $0.0176$ & $0.0112$ & $171.90^\circ$ \\
+    %     \textbf{Green} & $(0.9533,\; 0.0617)$ & $0.0890$ & $0.0168$ & $136.70^\circ$ \\
+    %     \textbf{ROI 1} & $(0.6523,\; 0.4361)$ & $0.0117$ & $0.0041$ & $139.10^\circ$ \\
+    %     \textbf{ROI 2} & $(0.7716,\; 0.2758)$ & $0.0378$ & $0.0134$ & $123.23^\circ$ \\
+    %     \bottomrule
+    % \end{tabular}
 
 Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$ ($\lambda_1$ e $\lambda_2$ autovalori della matrice di covarianza), dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
 Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.
 
-L'angolo $\theta = \arctan(v_S / v_G)$, con $v_S $e $v_G$ autovettori della matrice di covarianza, indica l'inclinazione degli assi dell'ellissi rispetto a $(G, S)$.\\
-È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), a confermare l'assenza di segnale di \textit{SHG} in quest'ultima.
-% posso trarre altre conclusioni da qui???
-
-
-
-
+L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse maggiore dell'ellisse; può essere utilizzato per calcolare l'inclinazione di questa rispetto alle coordinate $(G, S)$: $\theta = \arctan(v_S / v_G)$, dove $v_S$ e $v_G$ sono le proiezioni di $v_1$ sulle coordinate cartesiane.\\
+È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale segnale di \textit{SHG}.
 %_________________________________________________________________________
 
 

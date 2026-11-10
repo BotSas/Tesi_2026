@@ -107,8 +107,11 @@
 
 % Mette il numero all'esterno (destra nelle dispari, sinistra nelle pari)
 %\fancyfoot[RO,LE]{\thepage} 
-\fancyfoot[C]{-- \thepage\ --} % centrato coi trattini
-
+\fancyfoot[C]{-- \thepage\ --} 
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{-- \thepage\ --}
+}
 % FINE ROBA AGGIUNTA DA SAS ----------------------------------------------------
 
 
