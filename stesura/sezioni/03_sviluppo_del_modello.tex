@@ -116,11 +116,11 @@ In un contesto sperimentale reale, è frequente analizzare campioni biologici ch
 Come illustrato nella sezione \ref{sec:trasformazione_dei_fasori}, un segnale generato dalla sovrapposizione di più fluorofori con tempi di vita distinti si posiziona all'interno dell'area racchiusa dal semicerchio universale e dall'asse reale.
 
 Il codice in questa sezione si incentra sulla generazione di segnali ottenuti come combinazione di due o tre decadimenti esponenziali con tempi di vita $\tau_k$ e frazioni di intensità $f_k$ noti a priori, e sulla verifica visiva dell'accuratezza dell'estrazione geometrica delle $f_k$ a partire dalle coordinate sul piano dei fasori.\\
-D un punto di vista operativo, il numero di eventi associato a ciascuna specie è stato suddiviso come $N_k = f_k \cdot N$ ($N$ numero di eventi totali); dopodiché gli istogrammi con i conteggi sono stati generati individualmente e sommati alla fine per ottenere il segnale di intensità totale. Infine è stato aggiunto il rumore gaussiano.
+Da un punto di vista operativo, il numero di eventi associato a ciascuna specie è stato suddiviso come $N_k = f_k \cdot N$ ($N$ numero di eventi totali); dopodiché gli istogrammi con i conteggi sono stati generati individualmente e sommati alla fine per ottenere il segnale di intensità totale. Infine è stato aggiunto il rumore gaussiano.
 \begin{figure}[h!]    % immagini placeholder 
     \centering
 
-    \begin{subfigure}[b]{0.48\textwidth}   % non placeholder
+    \begin{subfigure}[b]{0.7\textwidth}   % non placeholder
 
         \centering
         \includegraphics[width=\textwidth]{immagini/double_exponential_phasor.pdf}
@@ -129,7 +129,7 @@ D un punto di vista operativo, il numero di eventi associato a ciascuna specie �
 
     \end{subfigure}
     \hfill 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.7\textwidth}
 
         \centering
         \includegraphics[width=\textwidth]{immagini/three_exponential_phasor.pdf}
@@ -143,19 +143,14 @@ D un punto di vista operativo, il numero di eventi associato a ciascuna specie �
 \end{figure}
 
 I valori delle intensità frazionarie sono stati ricavati tramite le regole geometriche descritte nella sezione \ref{sec:rappresentazione_di_decadimenti_multi_esponenziali}.\\
-Per un decadimento a doppia esponenziale, il rapporto tra le concentrazioni si ricava dal rapporto dei segmenti che collegano il fasore totale ai fasori teorici dei singoli esponenziali. Dato che il fasore sperimentale non cade esattamente sulla retta passante per i due fasori teorici, per il calcolo si utilizza la sua intersezione con la retta normale (ovvero la proiezione ortogonale del fasore totale sulla congiungente).\\
-Per le miscele a tre componenti, la frazione corrispondente a ciascun fluoroforo è stata ottenuta calcolando l'area del sotto-triangolo corrispondente nel piano dei fasori. Ogni area è stata ricavata analiticamente mediante la formula dell'area di Gauss (o \textit{shoelace formula}):
-\begin{equation}
-    \mathcal{A} = \frac{1}{2}\left|\,\sum_{i=1}^{n}\,(G_{i}\,S_{i+1}-G_{i+1}\,S_{i})\,\right|
-    \label{eq:shoelace_formula}
-\end{equation}
-dove il numero di vertici è $n=3$, e $(G_i, S_i)$ sono le coordinate dei decadimenti puri (vertici) sul piano dei fasori.
 
-%__________________________________________________________________________
-
-\subsubsection{Verifica delle frazioni di intensità}
+%____________________________________________________________--
+\subsubsection{Decadimento a doppio esponenziale}
 \label{sec:verifica_del_rapporto_di_concentrazione}
-Il calcolo delle frazioni di intensità per le miscele simulate di due fluorofori è stato implementato mediante la formula \texttt{extract\_fractions}:
+
+Per le miscele simulate a due componenti, le frazioni di intensità dei due fluorofori vengono calcolate utilizzando la formula \ref{eq:intens_frazionaria_B}. Il fasore relativo al decadimento totale simulato non giace esattamente sulla congiungente dei due fasori di riferimento a causa del rumore, di conseguenza il calcolo viene svolto considerando la sua proiezione ortogonale sulla congiungente.
+
+Dal punto di vista operativo, le operazioni necessarie sono state implementate mediante la funzione \texttt{extract\_fractions}:
 
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def extract_fractions(P, A, B):
@@ -170,19 +165,28 @@ def extract_fractions(P, A, B):
     
     return f_A, f_B
 \end{minted}
-\\
-La funzione implementa il calcolo del vettore tra i punti $A$ e $B$: ${v}_{AB} = [G_B - G_A, \; S_B - S_A]$.
-Successivamente viene svolto il calcolo:
+La funzione proietta ortogonalmente il fasore misurato $P$ in un punto $H$ sul segmento che congiunge i due riferimenti puri $A$ e $B$ ($\vec{AB} = [G_B - G_A,\, S_B - S_A]$); successivamente utilizza la formula~\ref{eq:intens_frazionaria_B} per ricavare l'intensità frazionaria $f_B$:
 \begin{equation*}
-    f_B = \frac{\vec{v}_{AP}\cdot\vec{v}_{AB}}{\lvert\vec{v}_{AB}\rvert^2} = \frac{\lvert\vec{v}_{AP}\rvert\cos\theta\cdot\lvert\vec{v}_{AB}\rvert}{\lvert\vec{v}_{AB}\rvert^2} = \frac{\lvert\vec{v}_{AH}\rvert}{\lvert\vec{v}_{AB}\rvert}
+    \overline{AH} = \overline{AP}\cos\theta = \frac{\vec{AP}\cdot\vec{AB}}{\overline{AB}} \quad \implies \quad f_B = \frac{\overline{AH}}{\overline{AB}} = \frac{\vec{AP}\cdot\vec{AB}}{\overline{AB}^2}
+    % \label{eq:intens_frazionaria_B}
 \end{equation*}
-per ricavare direttamente la frazione di fluoroforo corrispondente al fasore $B$.\\
-Il vettore $\vec{v}_{AH}$ corrisponde al segmento che collega il fasore $A$ al punto proiettato sulla corda, $H$.
-% considera l'idea di espandere sul concetto
+da cui si ricava per complementarietà $f_A = 1 - f_B$.
 
+%________________________________________________________________________________
 
-Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di concentrazione tra i fluorofori nello stesso campione, confrontato con il valore teorico:
+\subsubsection{Decadimento a triplo esponenziale}
+Per le miscele a tre componenti, la frazione corrispondente a ciascun fluoroforo è stata ottenuta determinando l'area del sotto-triangolo individuato dal fasore misto $P$ e dai tre verici puri $A$, $B$, $C$. Ogni area è stata ricavata analiticamente mediante la formula dell'area di Gauss (o \textit{shoelace formula}):
+\begin{equation}
+    \mathcal{A} = \frac{1}{2}\left|\,\sum_{i=1}^{n}\,(G_{i}\,S_{i+1}-G_{i+1}\,S_{i})\,\right|
+    \label{eq:shoelace_formula}
+\end{equation}
+dove il numero di vertici è $n=3$, e $(G_i, S_i)$ sono le coordinate dei decadimenti puri (vertici) sul piano dei fasori.\\
+Infine viene effettuata una divisione tra l'area di ciascun sotto-triangolo e l'area del triangolo totale $ABC$ (ad esempio: $f_A=\mathcal{A}_{PBC}/\mathcal{A}_{ABC}$).
 
+%__________________________________________________________________________
+
+\subsubsection{Risultati}
+I segnali simulati a doppio e triplo esponenziale mostrati nelle immagini \ref{fig:double_decay}, \ref{fig:triple_decay} sono stati rappresentati sul piano dei fasori, estraendo le coordinate del fasore misto $P$ e quelle degli esponenziali singoli associati alle specie pure. Sfruttando gli algoritmi presentati, sono state stimate le intensità frazionarie e confrontate con i valori teorici decisi a priori per la generazione dei segnali.
 \begin{table}[h!]
 
     \centering
@@ -194,21 +198,18 @@ Si mostra di seguito il valore esatto ottenuto dal calcolo del rapporto di conce
         \hline
         Modello & Rapporto teorico & Rapporto ricavato \\
         \hline
-        Doppio esponenziale & $0.600:0.400$  & $0.589:0.411$ \\
+        Doppio esponenziale & $0.600:0.400$  & $0.606:0.394$ \\
         Triplo esponenziale & $0.300:0.500:0.200$ & $0.306:0.497:0.197$ \\
         \hline
 
     \end{tabular}
 
-    \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori, $\textit{SNR}=10$}
+    \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori, $\textit{SNR}=20\,\text{dB}$}
+    \label{tab:rapporti_23_exp}
 
 \end{table}
 
-
-
-% si è scelto di non calcolare le incertezze relative ai rapporti perché non ha senso bla bla bla
-% non ne ho parlato perché non mi sembra importante
-% già sono 100000 pagine questa tesi
+I risultati riportati nella tabella~\ref{tab:rapporti_23_exp} mostrano un ottimo accordo tra le intensità frazionarie di partenza e quelle ricostruite geometricamente. Gli scarti ottenuti ($\sim 1.02\%$) sono da attribuire al rumore aggiunto al segnale simulato.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -244,7 +245,6 @@ def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db):
     else: noisy_signal = convol
     
     return convol, noisy_signal
-
 \end{minted}    
 
 \begin{figure}[h!]
@@ -252,8 +252,7 @@ def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db):
     \centering
     \includegraphics[width=\textwidth]{immagini/IRF_single.pdf}
     \label{fig:irf_sing_decay_exp}
-
-    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 10$. Il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}.
+    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 20$, $N=10000$. Il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}.
 \end{figure}
 Dall'immagine è possibile osservare come la convoluzione con la IRF sposti il picco del decadimento in avanti (in $t\approx\mu$), e renda visibile il rumore gaussiano come fluttuazione.% perché diventa magra?
 
@@ -300,7 +299,7 @@ Anche in questo caso le operazioni sono state ripetute con un decadimento a dopp
 \begin{figure}[h!]     
     \centering
 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.7\textwidth}
 
         \centering
         \includegraphics[width=\textwidth]{immagini/IRF_single_ph.pdf}
@@ -308,7 +307,7 @@ Anche in questo caso le operazioni sono state ripetute con un decadimento a dopp
 
     \end{subfigure}
     \hfill 
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.7\textwidth}
 
         \centering
         \includegraphics[width=\textwidth]{immagini/IRF_three_ph.pdf}
@@ -322,9 +321,7 @@ Anche in questo caso le operazioni sono state ripetute con un decadimento a dopp
 
 Osservando le rappresentazioni sul piano dei fasori, è possibile convermare visivamente la formula \ref{eq:convoluzione_fasori}, ovvero la trasformazione della deconvoluzione in una divisione sul piano dei fasori: l'angolo $\phi_{\text{IRF}}$, calcolato rispetto all'origine, appare simile a $\phi_{\text{segnale}}-\phi_{\text{decadimento}}$.
 
-Si riporta di seguito il confronto tra i rapporti di concentrazioni iniziali e quelli ricavati dal piano dei fasori (solo per il decadimento a doppio esponenziale).\\
-
-
+Si riporta di seguito il confronto tra i rapporti di concentrazioni iniziali e quelli ricavati dal piano dei fasori (solo per il decadimento a doppio esponenziale).
 \begin{table}[h!]
 
     \centering

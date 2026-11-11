@@ -2,7 +2,7 @@
 
 \section{Decadimento di fluorescenza e \textit{FLIM}} %OK
 
-Con il termine "tempo di vita di fluorescenza" si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
+Con il termine ``tempo di vita di fluorescenza'' si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
 La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma dal tempo $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale. Questo decadimento spontaneo è descritto da un andamento esponenziale decrescente:
 \begin{equation}
     I(t) =I_0 \, e^{-t/\tau}
@@ -116,7 +116,8 @@ dove $m = \sqrt{G^2 + S^2}$ assume il nome di \textit{fattore di modulazione}, e
 Sebbene non sia stata utilizzata all'interno del codice di questa trattazione, la rappresentazione polare offre un'interpretazione geometrica utile per comprendere intuitivamente le trasformazioni subite dai punti sul piano dei fasori \cite{malacridaPhasorPlotUniversal2021}:
 \begin{itemize}
     \item Rotazione: una variazione dell'angolo polare ($\Delta \phi$) corrisponde a un anticipo o un ritardo fisso del segnale
-    ovvero uno sfasamento dell'angolo polare.ne ($\Delta m$) riflette la dispersione temporale del segnale; uno smorzamento di $m$ indica un allargamento del profilo temporale.
+    ovvero uno sfasamento dell'angolo polare.
+    \item Scalatura: ad uno smorzamento di $m$ corrisponde un allargamento del profilo temporale.
 \end{itemize}
 L'esempio più consono a questo studio riguarda la deconvoluzione della IRF (\textit{Instrument Response Function}, ovvero la funzione di risposta strumentale) dal segnale totale. Come conseguenza del teorema della convoluzione, infatti, l'operazione appena descritta si trasforma in una divisione nel piano complesso \cite[Sez. 2.9.6]{oppenheim_discrete_2009}; in coordinate polari, ciò equivale esattamente a una scalatura dei moduli e a una rotazione attorno all'origine:
 \begin{equation*}
@@ -143,24 +144,28 @@ Poiché nella definizione dei fasori (\ref{eq:fourier_S_G_integral}) le coordina
 %     f_k = \frac{\alpha_k \tau_k}{\sum_j \alpha_j \tau_j} = \frac{\alpha_k \tau_k}{\tau_m}
 % \end{equation*}
 Questa proprietà di additività lineare permette di risolvere geometricamente la composizione delle miscele direttamente sul piano dei fasori \cite{torradoLinearCombinationProperties2022}:
-\begin{itemize}
-    \item \textbf{Miscele a due componenti}: il fasore misto $P$ si posiziona sempre lungo il segmento congiungente i fasori delle due specie pure $A$ e $B$. L'intensità frazionaria di ciascuna componente risulta inversamente proporzionale alla distanza dal rispettivo vertice ($f_A:f_B=\overline{PB}:\overline{PA}$).
-    \item \textbf{Miscele a tre componenti}: il fasore misto $P$ cade all'interno del triangolo di vertici $A$, $B$, $C$ (fasori associati alle tre specie pure). La frazione di intensità relativa di una data specie risulta proporzionale all'area del sotto-triangolo opposto al vertice.
-\end{itemize}
+\paragraph{Miscele a due componenti}: il fasore misto $P$ si posiziona sempre lungo il segmento congiungente i fasori delle due specie pure $A$ e $B$. L'intensità frazionaria di ciascuna componente risulta inversamente proporzionale alla distanza dal rispettivo vertice:
+\begin{equation}
+    f_A:f_B=\overline{PB}:\overline{PA}\;\; \Rightarrow\;\; f_B=\frac{\overline{AP}}{\overline{AB}}
+    \label{eq:intens_frazionaria_B}
+\end{equation}
+$f_A$ può essere ricavata per complementarità ($f_A=1-f_B$).
+
+\paragraph{Miscele a tre componenti}: il fasore misto $P$ cade all'interno del triangolo di vertici $A$, $B$, $C$ (fasori associati alle tre specie pure). La frazione di intensità relativa di una data specie risulta proporzionale all'area del sotto-triangolo opposto al vertice.
 
 \begin{figure}[h!]
     \centering
 
-    \begin{subfigure}[b]{0.49\linewidth}
+    \begin{subfigure}[t]{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/2_comp_example.pdf}
         \caption{Rappresentazione sul piano dei fasori di un decadimento bi-esponenziale senza aggiunta di rumore, con $f_A = 0.6$, $\tau_A=0.4\,\text{ns}$ e $f_B = 0.4$, $\tau_B=4\,\text{ns}$.}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.49\linewidth}
+    \begin{subfigure}[t]{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/3_comp_example.pdf}
-        \caption{Rappresentazione sul piano dei fasori di un decadimento tri-esponenziale senza aggiunta di rumore, con $f_A = 0.3$, $\tau_A=0.5\,\text{ns}$, $f_B = 0.5$, $\tau_B=2.5\,\text{ns}$ e $f_C= 0.2$, $\tau_B=6\,\text{ns}$.}
+        \caption{Rappresentazione sul piano dei fasori di un decadimento tri-esponenziale senza aggiunta di rumore, con $f_A = 0.3$, $\tau_A=0.5\,\text{ns}$, $f_B = 0.5$, $\tau_B=2.5\,\text{ns}$ e $f_C= 0.2$, $\tau_C=6\,\text{ns}$.}
     \end{subfigure}
 \end{figure}
 

@@ -13,5 +13,4 @@
     \PYG{k}{else}\PYG{p}{:} \PYG{n}{noisy\PYGZus{}signal} \PYG{o}{=} \PYG{n}{convol}
 
     \PYG{k}{return} \PYG{n}{convol}\PYG{p}{,} \PYG{n}{noisy\PYGZus{}signal}
-
 \end{Verbatim}

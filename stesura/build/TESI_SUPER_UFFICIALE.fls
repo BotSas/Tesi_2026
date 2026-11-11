@@ -380,10 +380,15 @@ INPUT ./sezioni/02_fondamenti_teorici.tex
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT ./immagini/2_comp_example.pdf
 INPUT ./immagini/2_comp_example.pdf
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-bold.luc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
 INPUT ./immagini/3_comp_example.pdf
@@ -393,7 +398,7 @@ INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-
 INPUT ./sezioni/03_sviluppo_del_modello.tex
 INPUT ./immagini/exp.pdf
 INPUT ./immagini/exp.pdf
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-italic.luc
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/manni.pygstyle
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
@@ -418,7 +423,7 @@ INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono8-regular.luc
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
-INPUT ./build/_minted-TESI_SUPER_UFFICIALE/06B5D653AB07D6A3E9A0A2A5ACE9792D1350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/A5DDA16E74215912B89DE87A4DE2A5551350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./immagini/IRF_single.pdf
 INPUT ./immagini/IRF_single.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
@@ -444,6 +449,7 @@ INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/C3313C0CE1E8A4938407FE47E90C05FD1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/embryo5_IRF.pdf
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc
 INPUT ./immagini/red_green_yellow.pdf
 INPUT ./immagini/red_green_yellow.pdf
 INPUT ./immagini/ROI1_and_ROI2.pdf
@@ -457,6 +463,8 @@ INPUT ./immagini/resadeiconti.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/7746343DB43773F6612BB508C2CFEC831350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex
@@ -469,12 +477,13 @@ OUTPUT build/TESI_SUPER_UFFICIALE.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb

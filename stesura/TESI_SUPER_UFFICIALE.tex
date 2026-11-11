@@ -48,6 +48,7 @@
 \usepackage{enumitem}
 \setlist[itemize]{topsep=1pt, itemsep=1pt}
 \setlist[enumerate]{topsep=1pt, itemsep=1pt}
+\titlespacing*{\subsubsection}{0pt}{8pt}{0pt}
 %\setlength{\parindent}{0pt}
 %\setlength{\parskip}{1\baselineskip}
 \setlength{\parskip}{0.7em}
@@ -58,8 +59,18 @@
 % \titlespacing*{\paragraph}{0pt}{3.4ex plus .8ex minus 0ex}{+1.5 em}
 
 
-\usepackage{subcaption}
 \usepackage{caption}
+\usepackage{subcaption}
+
+\DeclareCaptionFont{mysize}{\fontsize{9pt}{11pt}\selectfont}
+
+\captionsetup{
+    font=mysize
+}
+
+\captionsetup[subfigure]{
+    font=mysize
+}
 
 \usepackage[italian]{babel}
 % MINTED (codice)
@@ -158,6 +169,7 @@
 \input{sezioni/05_conclusioni.tex}
 
 
+\nocite{*}
 \printbibliography  % stampa bibliografia (duh)
 % come citare: \cite{chiave} (es. Come derivato in \cite{dirac1928}...).
 \end{document}

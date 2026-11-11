@@ -438,6 +438,180 @@
       \verb https://www.nature.com/articles/s41596-018-0026-5
       \endverb
     \endentry
+    \entry{harrisArrayProgrammingNumPy2020}{article}{}
+      \name{author}{26}{}{%
+        {{hash=db2b4761cc46be347b418e68660c9554}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b053969d2c6a9ec8689980fb6463cd56}{%
+           family={Millman},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi Jarrod},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=84397453ac4d8b4fb5057997640d09e7}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Walt},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Stéfan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
+           family={Gommers},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=18703a2bb6a62484483c193a212da2f8}{%
+           family={Virtanen},
+           familyi={V\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4321feefe3d5715c6fe12639d2a1f7f1}{%
+           family={Wieser},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e8d1b0c2bff88b6bf54e2e934e2853f6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=265437a4424f0b845118651d7d04ab93}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4d23819637a961e0e598e1c82a8f10d}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Nathaniel\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9ad1d38817acd2f00cb7f324ec7d37ea}{%
+           family={Kern},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8ae844f84614690134ff5d8252fdc430}{%
+           family={Picus},
+           familyi={P\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=14b8762d4cd92a5843cebfd04cd7983c}{%
+           family={Van\bibnamedelima Kerkwijk},
+           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Marten\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=626cc151613864abeb653c0d8172d98c}{%
+           family={Brett},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a989405517bbf67ae7b16be1d03c0081}{%
+           family={Haldane},
+           familyi={H\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3232d0d1d44a4add19543b61df177acb}{%
+           family={Del\bibnamedelima Río},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Jaime\bibnamedelima Fernández},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=76256cb9e4c31e0a4744b1b49a6199f4}{%
+           family={Wiebe},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aac4486f60accb8b7db22ef300423e11}{%
+           family={Gérard-Marchant},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=22fcbc93c38819e962968aad3e3cba7f}{%
+           family={Sheppard},
+           familyi={S\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           familyi={W\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c588b2e35e75bba896fc5677afb52fa9}{%
+           family={Abbasi},
+           familyi={A\bibinitperiod},
+           given={Hameer},
+           giveni={H\bibinitperiod}}}%
+        {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
+           family={Gohlke},
+           familyi={G\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{fullhash}{5c6d59dd7aace093923bfee7f6c640e6}
+      \strng{bibnamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
+      \field{day}{17}
+      \field{issn}{0028-0836, 1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{7825}
+      \field{shortjournal}{Nature}
+      \field{title}{Array Programming with {{NumPy}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{585}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{357\bibrangedash 362}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-020-2649-2
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/F2M7DP9V/Harris et al. - 2020 - Array programming with NumPy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \endverb
+    \endentry
     \entry{jamesMinuitSystemFunction1975}{article}{}
       \name{author}{2}{}{%
         {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
@@ -648,8 +822,8 @@
       \strng{authorbibnamehash}{1058cd345d2944841aa1f6ef472ad346}
       \strng{authornamehash}{1058cd345d2944841aa1f6ef472ad346}
       \strng{authorfullhash}{ba3ab7d0a0900e1ccac651347849c96d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{PhasorPy is an open-source Python library for the analysis of luminescence lifetime and hyperspectral images using the phasor approach. This is the third beta release of the PhasorPy library. It contains new functions, an About page, and other documentation improvements. The new io.signal\_from\_brighteyes\_mcs, io.signal\_from\_tdflim, and io.lifetime\_from\_tdflim functions read TCSPC or lifetime data from Brighteyes MCS and ISS TDFLIM files using the brighteyes-mcs-reader and lfdfiles libraries. The new experimental.signal\_from\_dho function calculates emission spectra using the Displaced Harmonic Oscillator model. The new spectral application (python -m phasorpy spectral) and plot.SpectralPlots class interactively plot emission spectra and corresponding spectral phasor coordinates for a set of spectral components and their mixture. Conda-forge packages for osx-arm64 are now available. This release supports Python 3.12 through 3.14. What's Changed Bump version by @cgohlke in https://github.com/phasorpy/phasorpy/pull/351 Fix mislabeled fractional intensities in lifetime geometry tutorial by @cgohlke in https://github.com/phasorpy/phasorpy/pull/352 Bump tooling and update configs by @cgohlke in https://github.com/phasorpy/phasorpy/pull/353 Mention Spectral Phasors Analysis software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/354 Add signal\_from\_tdflim and lifetime\_from\_tdflim functions by @cgohlke in https://github.com/phasorpy/phasorpy/pull/355 Mention FLIMKit software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/356 Add spectral application, SpectralPlots class, and signal\_from\_dho function by @cgohlke in https://github.com/phasorpy/phasorpy/pull/358 Enable type checking for tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/359 Mention PyFLI library by @cgohlke in https://github.com/phasorpy/phasorpy/pull/361 Add signal\_from\_brighteyes\_mcs function by @mattia-donato in https://github.com/phasorpy/phasorpy/pull/340 Improve signal\_from\_brighteyes\_mcs docs and tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/363 Add About page and AI contribution policy by @cgohlke in https://github.com/phasorpy/phasorpy/pull/364 Release v0.12 by @cgohlke in https://github.com/phasorpy/phasorpy/pull/365 New Contributors @mattia-donato made their first contribution in https://github.com/phasorpy/phasorpy/pull/340 Full Changelog: https://github.com/phasorpy/phasorpy/compare/v0.11...v0.12}
@@ -674,54 +848,51 @@
       \verb https://zenodo.org/doi/10.5281/zenodo.13862586
       \endverb
     \endentry
-    \entry{campagnolaSecondharmonicImagingMicroscopy2003}{article}{}
-      \name{author}{2}{}{%
-        {{hash=0e8b5340b2f6a611335b045cb5ca0e92}{%
-           family={Campagnola},
-           familyi={C\bibinitperiod},
-           given={Paul\bibnamedelima J},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=1b69dbbe3f9ac90095047b9b464b86ee}{%
-           family={Loew},
-           familyi={L\bibinitperiod},
-           given={Leslie\bibnamedelima M},
-           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+    \entry{thepandasdevelopmentteamPandasdevPandasPandas2026}{software}{}
+      \name{author}{1}{}{%
+        {{hash=9a1f9219d00cef023c61c6fd71576d04}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           prefix={pandas\bibnamedelima development},
+           prefixi={p\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
       }
-      \strng{namehash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \strng{fullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \strng{bibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \strng{authorbibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \strng{authornamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
-      \strng{authorfullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \list{organization}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{fullhash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{bibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authorbibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authornamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authorfullhash}{9a1f9219d00cef023c61c6fd71576d04}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1087-0156, 1546-1696}
-      \field{journaltitle}{Nature Biotechnology}
-      \field{langid}{english}
-      \field{month}{11}
-      \field{number}{11}
-      \field{shortjournal}{Nat Biotechnol}
-      \field{title}{Second-Harmonic Imaging Microscopy for Visualizing Biomolecular Arrays in Cells, Tissues and Organisms}
-      \field{urlday}{21}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Pandas is a powerful data structures for data analysis, time series, and statistics.}
+      \field{day}{22}
+      \field{month}{10}
+      \field{shorttitle}{Pandas-Dev/Pandas}
+      \field{title}{Pandas-Dev/Pandas: {{Pandas}}}
+      \field{urlday}{30}
       \field{urlmonth}{10}
       \field{urlyear}{2026}
-      \field{volume}{21}
-      \field{year}{2003}
+      \field{version}{v3.1.0}
+      \field{year}{2026}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{1356\bibrangedash 1360}
-      \range{pages}{5}
       \verb{doi}
-      \verb 10.1038/nbt894
+      \verb 10.5281/ZENODO.3509134
       \endverb
       \verb{urlraw}
-      \verb https://www.nature.com/articles/nbt894
+      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
       \endverb
       \verb{url}
-      \verb https://www.nature.com/articles/nbt894
+      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
       \endverb
+      \keyw{alignment,data analysis,data science,flexible,pandas,python}
     \endentry
     \entry{claytonGraphicalRepresentationMulticomponent2004}{article}{}
       \name{author}{3}{}{%
@@ -780,182 +951,56 @@
       \endverb
       \keyw{Epidermal growth factor receptor,fluorescence lifetime imaging microscopy (FLIM),fluorescence resonance energy transfer (FRET),green fluorescent protein (GFP),phosphorylation,protein interactions,two-component analysis}
     \endentry
-    \entry{harrisArrayProgrammingNumPy2020}{article}{}
-      \name{author}{26}{}{%
-        {{hash=db2b4761cc46be347b418e68660c9554}{%
-           family={Harris},
-           familyi={H\bibinitperiod},
-           given={Charles\bibnamedelima R.},
-           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=b053969d2c6a9ec8689980fb6463cd56}{%
-           family={Millman},
-           familyi={M\bibinitperiod},
-           given={K.\bibnamedelimi Jarrod},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=84397453ac4d8b4fb5057997640d09e7}{%
-           family={Van\bibnamedelimb Der\bibnamedelima Walt},
-           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
-           given={Stéfan\bibnamedelima J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
-           family={Gommers},
-           familyi={G\bibinitperiod},
-           given={Ralf},
-           giveni={R\bibinitperiod}}}%
-        {{hash=18703a2bb6a62484483c193a212da2f8}{%
-           family={Virtanen},
-           familyi={V\bibinitperiod},
-           given={Pauli},
-           giveni={P\bibinitperiod}}}%
-        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
-           family={Cournapeau},
+    \entry{campagnolaSecondharmonicImagingMicroscopy2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0e8b5340b2f6a611335b045cb5ca0e92}{%
+           family={Campagnola},
            familyi={C\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4321feefe3d5715c6fe12639d2a1f7f1}{%
-           family={Wieser},
-           familyi={W\bibinitperiod},
-           given={Eric},
-           giveni={E\bibinitperiod}}}%
-        {{hash=e8d1b0c2bff88b6bf54e2e934e2853f6}{%
-           family={Taylor},
-           familyi={T\bibinitperiod},
-           given={Julian},
-           giveni={J\bibinitperiod}}}%
-        {{hash=265437a4424f0b845118651d7d04ab93}{%
-           family={Berg},
-           familyi={B\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e4d23819637a961e0e598e1c82a8f10d}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Nathaniel\bibnamedelima J.},
-           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=9ad1d38817acd2f00cb7f324ec7d37ea}{%
-           family={Kern},
-           familyi={K\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=8ae844f84614690134ff5d8252fdc430}{%
-           family={Picus},
-           familyi={P\bibinitperiod},
-           given={Matti},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4a22828b76006f42d747b699d2ef5167}{%
-           family={Hoyer},
-           familyi={H\bibinitperiod},
-           given={Stephan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=14b8762d4cd92a5843cebfd04cd7983c}{%
-           family={Van\bibnamedelima Kerkwijk},
-           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
-           given={Marten\bibnamedelima H.},
-           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=626cc151613864abeb653c0d8172d98c}{%
-           family={Brett},
-           familyi={B\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a989405517bbf67ae7b16be1d03c0081}{%
-           family={Haldane},
-           familyi={H\bibinitperiod},
-           given={Allan},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3232d0d1d44a4add19543b61df177acb}{%
-           family={Del\bibnamedelima Río},
-           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={Jaime\bibnamedelima Fernández},
-           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=76256cb9e4c31e0a4744b1b49a6199f4}{%
-           family={Wiebe},
-           familyi={W\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
-           family={Peterson},
-           familyi={P\bibinitperiod},
-           given={Pearu},
-           giveni={P\bibinitperiod}}}%
-        {{hash=aac4486f60accb8b7db22ef300423e11}{%
-           family={Gérard-Marchant},
-           familyi={G\bibinithyphendelim M\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod}}}%
-        {{hash=22fcbc93c38819e962968aad3e3cba7f}{%
-           family={Sheppard},
-           familyi={S\bibinitperiod},
-           given={Kevin},
-           giveni={K\bibinitperiod}}}%
-        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
-           family={Reddy},
-           familyi={R\bibinitperiod},
-           given={Tyler},
-           giveni={T\bibinitperiod}}}%
-        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
-           family={Weckesser},
-           familyi={W\bibinitperiod},
-           given={Warren},
-           giveni={W\bibinitperiod}}}%
-        {{hash=c588b2e35e75bba896fc5677afb52fa9}{%
-           family={Abbasi},
-           familyi={A\bibinitperiod},
-           given={Hameer},
-           giveni={H\bibinitperiod}}}%
-        {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
-           family={Gohlke},
-           familyi={G\bibinitperiod},
-           given={Christoph},
-           giveni={C\bibinitperiod}}}%
-        {{hash=d500f4849030f34359cdb3e1513acf83}{%
-           family={Oliphant},
-           familyi={O\bibinitperiod},
-           given={Travis\bibnamedelima E.},
-           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+           given={Paul\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1b69dbbe3f9ac90095047b9b464b86ee}{%
+           family={Loew},
+           familyi={L\bibinitperiod},
+           given={Leslie\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{754b3dec5e203c19b9a5798bbb902222}
-      \strng{fullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \strng{bibnamehash}{754b3dec5e203c19b9a5798bbb902222}
-      \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
-      \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
-      \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \strng{namehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{fullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{bibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authorbibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authornamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authorfullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
-      \field{day}{17}
-      \field{issn}{0028-0836, 1476-4687}
-      \field{journaltitle}{Nature}
+      \field{issn}{1087-0156, 1546-1696}
+      \field{journaltitle}{Nature Biotechnology}
       \field{langid}{english}
-      \field{month}{9}
-      \field{number}{7825}
-      \field{shortjournal}{Nature}
-      \field{title}{Array Programming with {{NumPy}}}
-      \field{urlday}{6}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Nat Biotechnol}
+      \field{title}{Second-Harmonic Imaging Microscopy for Visualizing Biomolecular Arrays in Cells, Tissues and Organisms}
+      \field{urlday}{21}
       \field{urlmonth}{10}
       \field{urlyear}{2026}
-      \field{volume}{585}
-      \field{year}{2020}
+      \field{volume}{21}
+      \field{year}{2003}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \field{pages}{357\bibrangedash 362}
-      \range{pages}{6}
+      \field{pages}{1356\bibrangedash 1360}
+      \range{pages}{5}
       \verb{doi}
-      \verb 10.1038/s41586-020-2649-2
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/F2M7DP9V/Harris et al. - 2020 - Array programming with NumPy.pdf
+      \verb 10.1038/nbt894
       \endverb
       \verb{urlraw}
-      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \verb https://www.nature.com/articles/nbt894
       \endverb
       \verb{url}
-      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \verb https://www.nature.com/articles/nbt894
       \endverb
     \endentry
   \enddatalist
-  \missing{The_pandas_development_team_pandas-dev_pandas_Pandas}
 \endrefsection
 \endinput
 
