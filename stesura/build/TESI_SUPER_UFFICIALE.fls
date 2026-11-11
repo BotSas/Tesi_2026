@@ -373,10 +373,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT build/TESI_SUPER_UFFICIALE.toc
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./sezioni/01_introduzione.tex
-INPUT ./sezioni/02_fondamenti_teorici.tex
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc
+INPUT ./sezioni/02_fondamenti_teorici.tex
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc
 INPUT ./immagini/2_comp_example.pdf
 INPUT ./immagini/2_comp_example.pdf
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
@@ -390,7 +391,6 @@ INPUT ./immagini/3_comp_example.pdf
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc
 INPUT ./sezioni/03_sviluppo_del_modello.tex
-INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc
 INPUT ./immagini/exp.pdf
 INPUT ./immagini/exp.pdf
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc

@@ -2008,6 +2008,83 @@
       "select": "zotero://select/library/items/VPCP8RLT"
     },
     {
+      "key": "Y3QVXITT",
+      "version": 0,
+      "itemType": "journalArticle",
+      "title": "Encoding and decoding spatio-temporal information for super-resolution microscopy",
+      "abstractNote": "Abstract\n            The challenge of increasing the spatial resolution of an optical microscope beyond the diffraction limit can be reduced to a spectroscopy task by proper manipulation of the molecular states. The nanoscale spatial distribution of the molecules inside the detection volume of a scanning microscope can be encoded within the fluorescence dynamics and decoded by resolving the signal into its dynamics components. Here we present a robust and general method to decode this information using phasor analysis. As an example of the application of this method, we optically generate spatially controlled gradients in the fluorescence lifetime by stimulated emission. Spatial resolution can be increased indefinitely by increasing the number of resolved dynamics components up to a maximum determined by the amount of noise. We demonstrate that the proposed method provides nanoscale imaging of subcellular structures, opening new routes in super-resolution microscopy based on the encoding/decoding of spatial information through manipulation of molecular dynamics.",
+      "date": "2015-04-02",
+      "DOI": "10.1038/ncomms7701",
+      "citationKey": "lanzanoEncodingDecodingSpatiotemporal2015",
+      "url": "https://www.nature.com/articles/ncomms7701",
+      "accessDate": "2026-11-11T12:29:14Z",
+      "language": "en",
+      "libraryCatalog": "DOI.org (Crossref)",
+      "volume": "6",
+      "pages": "6701",
+      "publicationTitle": "Nature Communications",
+      "ISSN": "2041-1723",
+      "issue": "1",
+      "journalAbbreviation": "Nat Commun",
+      "creators": [
+        {
+          "firstName": "Luca",
+          "lastName": "Lanzanò",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Iván",
+          "lastName": "Coto Hernández",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Marco",
+          "lastName": "Castello",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Enrico",
+          "lastName": "Gratton",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Alberto",
+          "lastName": "Diaspro",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Giuseppe",
+          "lastName": "Vicidomini",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-11-11T12:29:14Z",
+      "dateModified": "2026-11-11T12:29:14Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/Y3QVXITT",
+      "itemID": 233,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Full Text",
+          "url": "https://www.nature.com/articles/ncomms7701.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-11-11T12:29:17Z",
+          "dateModified": "2026-11-11T12:29:17Z",
+          "uri": "http://zotero.org/users/local/0gkItI9k/items/KUYAP2FL",
+          "path": "/home/aras/Zotero/storage/KUYAP2FL/Lanzanò et al. - 2015 - Encoding and decoding spatio-temporal information for super-resolution microscopy.pdf",
+          "select": "zotero://select/library/items/KUYAP2FL"
+        }
+      ],
+      "notes": [],
+      "autoJournalAbbreviation": "Nat. Commun.",
+      "itemKey": "Y3QVXITT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/Y3QVXITT"
+    },
+    {
       "key": "FKZLH4RA",
       "version": 0,
       "itemType": "journalArticle",

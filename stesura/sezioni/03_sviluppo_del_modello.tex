@@ -67,9 +67,9 @@ Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di
 %_______________________________________________________________________________________
 
 \subsubsection{Generazione del rumore}    % OK  
-Per aggiungere realismo alla simulazione, è stata sviluppata una funzione che accetta in input l'array contenente il numero di conteggi per ogni \textit{bin}, e somma a ciascun elemento una fluttuazione estratta da una distribuzione di probabilità gaussiana a media nulla, scalata in base al rapporto segnale-rumore (SNR, \textit{Signal-Noise Ratio}) scelto, espresso in decibel. 
+Per simulare le condizioni sperimentali, è stata sviluppata una funzione che accetta in input l'array contenente il numero di conteggi per ogni \textit{bin}, e somma a ciascun elemento una fluttuazione estratta da una distribuzione di probabilità gaussiana a media nulla, scalata in base al rapporto segnale-rumore (SNR, \textit{Signal-Noise Ratio}) scelto, espresso in decibel. 
 
-Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot noise}) segua una statistica poissoniana (già presente nella generazione dell'istogramma), l'aggiunta di un rumore gaussiano additivo consente sia di modellizzare il rumore elettronico della strumentazione di acquisizione, sia di approssimare il regime ad alto numero di conteggi, in cui la distribuzione di Poisson converge a una normale.Il risultato è un decadimento esponenziale ``sporcato'' da rumore gaussiano:
+Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot noise}) segua una statistica poissoniana (già presente nella generazione dell'istogramma), l'aggiunta di un rumore gaussiano additivo consente sia di modellizzare il rumore elettronico della strumentazione di acquisizione, sia di approssimare il regime ad alto numero di conteggi, in cui la distribuzione di Poisson converge a una normale.Il risultato è un decadimento esponenziale affetto da rumore gaussiano:
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}{\linewidth}
