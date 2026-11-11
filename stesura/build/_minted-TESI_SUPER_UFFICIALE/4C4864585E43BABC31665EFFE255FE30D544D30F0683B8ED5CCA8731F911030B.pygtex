@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{x}{\PYGZbs{}begin\PYGZob{}minted\PYGZcb{}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \PYGZbs{}small]\PYGZob{}python\PYGZcb{}}
+\PYG{x}{def phasors\PYGZus{}from\PYGZus{}region(image, roi\PYGZus{}mask, median\PYGZus{}size, threshold\PYGZus{}pct):}
+\PYG{x}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}Returns the median\PYGZhy{}filtered pixel\PYGZhy{}wise phasor cloud for a spatial ROI.\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{x}{    ...}
+\PYG{x}{    G\PYGZus{}img, S\PYGZus{}img, fft0 = image\PYGZus{}phasor\PYGZus{}calc(image)}
+
+\PYG{x}{    \PYGZsh{} 1. MEDIAN FILTER (on the full 2D image)}
+\PYG{x}{    fft0\PYGZus{}med\PYGZus{}np, G\PYGZus{}med\PYGZus{}np, S\PYGZus{}med\PYGZus{}np = phasor\PYGZus{}filter\PYGZus{}median(}
+\PYG{x}{        fft0.values, G\PYGZus{}img.values, S\PYGZus{}img.values, size = median\PYGZus{}size, repeat = 2}
+\PYG{x}{    )}
+\PYG{x}{    ...}
+\PYG{x}{    \PYGZsh{} 2. ROI MASKING}
+\PYG{x}{    fft0\PYGZus{}roi = fft0\PYGZus{}med.where(roi\PYGZus{}mask\PYGZus{}xr)}
+\PYG{x}{    G\PYGZus{}roi, S\PYGZus{}roi = G\PYGZus{}med.where(roi\PYGZus{}mask\PYGZus{}xr), S\PYGZus{}med.where(roi\PYGZus{}mask\PYGZus{}xr)}
+
+\PYG{x}{    \PYGZsh{} 3. INTENSITY THRESHOLDING}
+\PYG{x}{    threshold\PYGZus{}val = fft0\PYGZus{}roi.max(skipna = True).item() * threshold\PYGZus{}pct}
+\PYG{x}{    fft0\PYGZus{}thresh\PYGZus{}np, G\PYGZus{}thresh\PYGZus{}np, S\PYGZus{}thresh\PYGZus{}np = phasor\PYGZus{}threshold(}
+\PYG{x}{        fft0\PYGZus{}roi.values, G\PYGZus{}roi.values, S\PYGZus{}roi.values, mean\PYGZus{}min = threshold\PYGZus{}val}
+\PYG{x}{    )}
+\PYG{x}{    ...}
+\PYG{x}{    valid\PYGZus{}mask = roi\PYGZus{}mask\PYGZus{}xr \PYGZam{} G\PYGZus{}thresh.notnull() \PYGZam{} S\PYGZus{}thresh.notnull()}
+
+\PYG{x}{    return pd.DataFrame(\PYGZob{}}
+\PYG{x}{        \PYGZdq{}G\PYGZdq{}: G\PYGZus{}thresh.where(valid\PYGZus{}mask, drop = True).values.ravel(),}
+\PYG{x}{        \PYGZdq{}S\PYGZdq{}: S\PYGZus{}thresh.where(valid\PYGZus{}mask, drop = True).values.ravel(),}
+\PYG{x}{        \PYGZdq{}intensity\PYGZdq{}: fft0\PYGZus{}thresh.where(valid\PYGZus{}mask, drop = True).values.ravel()}
+\PYG{x}{    \PYGZcb{})}
+\end{Verbatim}

@@ -397,7 +397,9 @@ INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/manni.pygstyle
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
-INPUT ./build/_minted-TESI_SUPER_UFFICIALE/FA290371B031306A2F5FE77490AEDB181350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/38BFCCBBCD1CCC3B2E3C88095777272E1350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmonolt10-bold.luc
 INPUT ./immagini/noise_none_example.pdf
 INPUT ./immagini/noise_none_example.pdf
@@ -439,7 +441,7 @@ INPUT ./immagini/ROI_phasor_embryo3.pdf
 INPUT ./immagini/ROI_phasor_embryo3.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
-INPUT ./build/_minted-TESI_SUPER_UFFICIALE/608CF69E4C2C7B0240870B7CD5A111B41350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/C3313C0CE1E8A4938407FE47E90C05FD1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/embryo5_IRF.pdf
 INPUT ./immagini/red_green_yellow.pdf
@@ -450,11 +452,11 @@ INPUT ./immagini/ROI1.pdf
 INPUT ./immagini/ROI1.pdf
 INPUT ./immagini/ROI2.pdf
 INPUT ./immagini/ROI2.pdf
-INPUT ./immagini/embryo5_ROI1_ROI2_phasors.png
-INPUT ./immagini/embryo5_ROI1_ROI2_phasors.png
+INPUT ./immagini/resadeiconti.pdf
+INPUT ./immagini/resadeiconti.pdf
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
-INPUT ./build/_minted-TESI_SUPER_UFFICIALE/B1EA407ACD9F64C2CBC236E54961B9191350B347DE913863EA7F5725E6FE860F.pygtex
+INPUT ./build/_minted-TESI_SUPER_UFFICIALE/7746343DB43773F6612BB508C2CFEC831350B347DE913863EA7F5725E6FE860F.pygtex
 OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex

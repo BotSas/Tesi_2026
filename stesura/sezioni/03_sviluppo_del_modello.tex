@@ -8,7 +8,6 @@ Questo primo capitolo si concentra sulla prima fase: la generazione di segnali e
 \section{Generazione dei segnali} %OK
 \label{sec:generazione_dei_segnali}
 
-
 \subsection{Decadimenti singoli e rappresentazione sul piano dei fasori} %OK
 
 Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale, i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata\\
@@ -52,9 +51,7 @@ La correttezza dell'algoritmo di generazione è stata verificata stimando il par
 Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori:
 
 %anche LavenderBlush preme (OldLace, Ivory, Lavender)
-
-\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
-
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def phasor_calc (n, harm_n = 1): 
 
     fft_vals = np.fft.rfft(n)
@@ -63,7 +60,6 @@ def phasor_calc (n, harm_n = 1):
     G, S = np.real(fft_norm[harm_n]), -np.imag(fft_norm[harm_n])
 
     return G, S
-
 \end{minted}
 Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali; quando si calcola la Trasformata di Fourier discreta su un campione di \textit{N} eventi, vengono generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della Trasformata, la seconda metà di questa lista di numeri risulta ridondante in quanto complesso coniugato della prima metà ($\textit{Im}\left[z\right] = 0 \Rightarrow z^* = z$). L'uso di \texttt{rfft} calcola unicamente le frequenze non negative, dimezzando il costo computazionale.In questo modo è possibile risparmiare risorse computazionali.
 
@@ -161,7 +157,7 @@ dove il numero di vertici è $n=3$, e $(G_i, S_i)$ sono le coordinate dei decadi
 \label{sec:verifica_del_rapporto_di_concentrazione}
 Il calcolo delle frazioni di intensità per le miscele simulate di due fluorofori è stato implementato mediante la formula \texttt{extract\_fractions}:
 
-\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni]{python}
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def extract_fractions(P, A, B):
     '''
     Projects one or two points on straight line through A and B. Returns fraction of A and B components
@@ -233,7 +229,7 @@ dove $\mu$ rappresenta il ritardo (shift sull'asse temporale), mentre $\sigma$ l
 \label{sec:generazione_del_segnale}
 
 Si illustra, di seguito, il procedimento utilizzato per la generazione del segnale convoluto con la IRF:
-\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db): 
 
     n_bins = len(irf)
@@ -284,7 +280,7 @@ Per la rappresentazione sul piano dei fasori, è necessario effettuare una decon
 
 Come dichiarato all'inizio di questa trattazione, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale. Dunque le operazioni si sono svolte nel piano dei fasori, e il fasore risultante è stato salvato come un numero complesso: 
 
-\begin{minted}[bgcolor=Beige, linenos, frame=leftline, style=manni]{python}
+\begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def phasor_deconv(G_meas, S_meas, G_irf, S_irf): 
  
     z_meas = G_meas + 1j * S_meas       # imaginary unit i = 1j

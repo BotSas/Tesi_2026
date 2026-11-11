@@ -2398,12 +2398,15 @@
     <bcf:citekey order="32" intorder="1">christophgohlkePhasorpyPhasorpyV0122026</bcf:citekey>
     <bcf:citekey order="33" intorder="1">ranjitFitfreeAnalysisFluorescence2018</bcf:citekey>
     <bcf:citekey order="34" intorder="1">ranjitFitfreeAnalysisFluorescence2018</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">christophgohlkePhasorpyPhasorpyV0122026</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">thepandasdevelopmentteamPandasdevPandasPandas2026</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">gottliebFLUTEPythonGUI2023a</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">campagnolaSecondharmonicImagingMicroscopy2003</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">ranjitFitfreeAnalysisFluorescence2018</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">christophgohlkePhasorpyPhasorpyV0122026</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">thepandasdevelopmentteamPandasdevPandasPandas2026</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">claytonGraphicalRepresentationMulticomponent2004</bcf:citekey>
     <bcf:citekey order="39" intorder="1">claytonGraphicalRepresentationMulticomponent2004</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">harrisArrayProgrammingNumPy2020</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">gottliebFLUTEPythonGUI2023a</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">campagnolaSecondharmonicImagingMicroscopy2003</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">claytonGraphicalRepresentationMulticomponent2004</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">harrisArrayProgrammingNumPy2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
