@@ -55,14 +55,14 @@ def phasor_calc (n, harm_n = 1):   # given a histogram n (xe), calculates the ph
 
 
 
-def add_noise(counts, snr_db):  # Adds GAUSSIAN NOISE (why not Poisson? Need to check)
+def add_noise(counts, noise_std):
+    """Add electronic Gaussian noise with an absolute, intensity-independent sigma."""
 
-    rng = np.random.default_rng()   
-    snr_linear = 10 ** (snr_db / 10)  # convert SNR from dB to linear scale 
+    if noise_std < 0:
+        raise ValueError("noise_std must be non-negative.")
 
-    sig_power = np.mean(counts ** 2, axis = 0) 
-    noise_std = np.sqrt(sig_power / snr_linear)
-    noise = rng.standard_normal(counts.shape) * noise_std
+    rng = np.random.default_rng()
+    noise = rng.standard_normal(np.shape(counts)) * noise_std
     
     return np.clip(counts + noise, 0, None)
 
@@ -176,19 +176,32 @@ def irf_generation(σ, μ, counts, T_laser, num_bins = 30):       # gaussian IRF
 
 
 
-def simulation_with_IRF(exp1data1, irf, counts, noise_flag, snr_db): 
-
-    n_bins = len(irf)
-    
+def simulation_with_IRF(signal, irf, noise_flag=False, noise_std=0):
     # Use a circular convolution so the signal stays consistent with the laser period.
-    convol = np.fft.ifft(np.fft.fft(exp1data1) * np.fft.fft(irf)).real      # Here I'm using the phasor method instead of 
-                                                                            # np.convolve (slow + doesn't handle periodicity)
+    irf_kernel = np.asarray(irf, dtype=float)
+    irf_kernel_sum = np.sum(irf_kernel)
+    if irf_kernel_sum <= 0:
+        raise ValueError("IRF must contain a positive total signal.")
+    irf_kernel = irf_kernel / irf_kernel_sum
+
+    convol = np.fft.ifft(
+        np.fft.fft(signal) * np.fft.fft(irf_kernel)
+    ).real
 
     convol = np.clip(convol, 0, None)
-    convol = (convol / np.sum(convol)) * counts  # Normalization
-    
-    #NOISEEEEE
-    if noise_flag: noisy_signal = add_noise(convol, snr_db) 
+    signal_sum = np.sum(signal)
+    convolution_sum = np.sum(convol)
+    if signal_sum < 0:
+        raise ValueError("Signal cannot contain a negative total count.")
+    if signal_sum == 0:
+        convol = np.zeros_like(convol)
+        return convol, convol.copy()
+    if convolution_sum <= 0:
+        raise ValueError("Signal must have a positive total count.")
+    convol = convol / convolution_sum * signal_sum
+
+    if noise_flag:
+        noisy_signal = add_noise(convol, noise_std)
     else: noisy_signal = convol
     
     return convol, noisy_signal

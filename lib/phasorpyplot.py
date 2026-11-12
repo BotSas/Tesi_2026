@@ -53,8 +53,6 @@ def data_and_phasor_plot(xe, n, G, S, T_laser, exp1data):
 
     #ax2.legend(loc = 'upper right', fontsize = 11, frameon = True, shadow = True)
 
-    # ax1.set_yscale('log')         #  looks terrible for some reason
-
     plt.tight_layout()
     plt.show()
 
@@ -70,8 +68,6 @@ def plot_decay(xe, n):                  # plots exponential data alone
     ax.step(t, n, where = 'mid', color = 'purple', linewidth = 1.5)
     ax.set(xlabel = 't (ns)', ylabel = 'counts')
     ax.grid(alpha = 0.3)
-    plt.yscale('log')
-
     plt.tight_layout()
     plt.show()
 
@@ -192,11 +188,9 @@ def pixel_plot(image, pixel):
     plt.figure(figsize = (17, 5))
     plt.step(time, decay, where = "mid", color = "plum", linewidth = 1.5)
 
-    plt.yscale('log')   # I am using log scale on y because it's what every single paper I found did the same
-
     # 12.5 ns / 4096 bins = 0.00305 ns per bin
     plt.xlabel("time (ns)")
-    plt.ylabel("counts (Log)")
+    plt.ylabel("counts")
     plt.grid(True, which = "major", linestyle = "-", alpha = 0.5)
 
     plt.show()

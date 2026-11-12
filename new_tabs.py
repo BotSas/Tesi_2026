@@ -129,13 +129,13 @@ def _phasor_plot(df, mean, std, irf_g, irf_s, image_df):
         (image_df["G"].to_numpy(), image_df["S"].to_numpy()),
         kdims=["G", "S"],
         label="All image phasors",
-    ).opts(color="gray", size=2, alpha=0.05)
+    ).opts(color="#dadada", size=2, alpha=0.05)
     cloud = hv.Points(
         (df["G"].to_numpy(), df["S"].to_numpy()), kdims=["G", "S"], label="ROI cloud"
-    ).opts(color="purple", size=2, alpha=0.35)
+    ).opts(color="orchid", size=1, alpha=0.2)
     mean_point = hv.Points(
         [(mean[0], mean[1])], kdims=["G", "S"], label="ROI mean"
-    ).opts(color="red", size=8, marker="star")
+    ).opts(color="purple", size=3, marker="o")
     irf_point = hv.Points(
         [(irf_g, irf_s)], kdims=["G", "S"], label="IRF"
     ).opts(color="red", size=14, marker="x", line_width=3)
@@ -145,10 +145,10 @@ def _phasor_plot(df, mean, std, irf_g, irf_s, image_df):
         (0.5 + 0.5 * np.cos(theta), 0.5 * np.sin(theta)), kdims=["G"], vdims=["S"]
     ).opts(color="gray", line_width=1.5)
     return (circle * image_cloud * cloud * mean_point * irf_point).opts(
-        title=f"ROI phasors (N={len(df)}, mean +/- std: "
-        f"({mean[0]:.3f} +/- {std[0]:.3f}, {mean[1]:.3f} +/- {std[1]:.3f})",
-        width=520,
-        height=440,
+        title=f"ROI phasors (mean ± std): "
+        f"({mean[0]:.3f} ± {std[0]:.3f}, {mean[1]:.3f} ± {std[1]:.3f})",
+        width=420,
+        height=420,
         xlim=(-0.1, 1.1),
         ylim=(-0.1, 0.7),
         xlabel="g",
@@ -240,8 +240,8 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
             )
             return hv.Curve((time_ns, decay.values), "time (ns)", "counts").opts(
                 title=f"ROI decay: x={x0}:{x1}, y={y0}:{y1}",
-                width=600,
-                height=300,
+                width=image_size,
+                height=image_size,
                 line_width=2,
                 color="purple",
                 tools=["hover"],

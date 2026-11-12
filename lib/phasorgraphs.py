@@ -41,12 +41,32 @@ import colorcet
 
 
 
-def generate_decay(time_bins, tau):
+def generate_decay(time_bins, tau, n_events=10000, rng=None):
+    """Generate an exponentially distributed, binned photon-count decay."""
 
-    '''Generates a single exp decay, normalized to the area'''
+    if tau <= 0:
+        raise ValueError("tau must be positive.")
+    if n_events < 0:
+        raise ValueError("n_events must be non-negative.")
 
-    decay = np.exp(-time_bins / tau)
-    return decay / np.sum(decay)
+    time_bins = np.asarray(time_bins, dtype=float)
+    if time_bins.ndim != 1 or len(time_bins) < 2:
+        raise ValueError("time_bins must contain at least two bin positions.")
+
+    rng = np.random.default_rng() if rng is None else rng
+    period = time_bins[-1]
+    truncated_mass = -np.expm1(-period / tau)
+    random_values = rng.random(int(n_events))
+    event_times = -tau * np.log1p(-random_values * truncated_mass)
+
+    bin_width = np.diff(time_bins)
+    if not np.allclose(bin_width, bin_width[0]):
+        raise ValueError("time_bins must be uniformly spaced.")
+    edges = np.concatenate(
+        ([max(0.0, time_bins[0] - bin_width[0] / 2)], time_bins[:-1] + bin_width / 2,
+         [time_bins[-1] + bin_width[-1] / 2])
+    )
+    return np.histogram(event_times, bins=edges)[0].astype(float)
 
 
 
@@ -145,8 +165,8 @@ def create_phasor_plot(T_laser, points, lines=None):
         
     return plot.opts(
             title = title, xlim = (-0.05, 1.05), ylim = (-0.05, 0.75),
-            xlabel = "G, real", ylabel = "S, imaginary", 
-            width = 650, height = 550, show_grid = False, data_aspect = 1,
+            xlabel = "G, real", ylabel = "S, imaginary",
+            width = 550, height = 550, show_grid = False, data_aspect = 1,
             legend_position = 'bottom', show_frame = True,
             fontsize = {'labels': 12, 'legend': 11, 'title': 14}
         )
