@@ -69,7 +69,7 @@ Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di
 \subsubsection{Generazione del rumore}    % OK  
 Per simulare le condizioni sperimentali, è stata sviluppata una funzione che accetta in input l'array contenente il numero di conteggi per ogni \textit{bin}, e somma a ciascun elemento una fluttuazione estratta da una distribuzione di probabilità gaussiana a media nulla, scalata in base al rapporto segnale-rumore (SNR, \textit{Signal-Noise Ratio}) scelto, espresso in decibel. 
 
-Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot noise}) segua una statistica poissoniana (già presente nella generazione dell'istogramma), l'aggiunta di un rumore gaussiano additivo consente sia di modellizzare il rumore elettronico della strumentazione di acquisizione, sia di approssimare il regime ad alto numero di conteggi, in cui la distribuzione di Poisson converge a una normale.Il risultato è un decadimento esponenziale affetto da rumore gaussiano:
+Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot noise}) segua una statistica poissoniana (già presente nella generazione dell'istogramma), l'aggiunta di un rumore gaussiano additivo consente sia di modellizzare il rumore elettronico della strumentazione di acquisizione, sia di approssimare il regime ad alto numero di conteggi, in cui la distribuzione di Poisson converge a una normale. Il risultato è un decadimento esponenziale affetto da rumore gaussiano:
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}{\linewidth}
@@ -190,7 +190,6 @@ I segnali simulati a doppio e triplo esponenziale mostrati nelle immagini \ref{f
 \begin{table}[h!]
 
     \centering
-    \label{tab:rapporti_concentrazione}
     \setlength{\tabcolsep}{8pt}
 
     \begin{tabular}{lcc}
@@ -209,7 +208,7 @@ I segnali simulati a doppio e triplo esponenziale mostrati nelle immagini \ref{f
 
 \end{table}
 
-I risultati riportati nella tabella~\ref{tab:rapporti_23_exp} mostrano un ottimo accordo tra le intensità frazionarie di partenza e quelle ricostruite geometricamente. Gli scarti ottenuti ($\sim 1.02\%$) sono da attribuire al rumore aggiunto al segnale simulato.\\
+I risultati riportati nella tabella~\ref{tab:rapporti_23_exp} mostrano un ottimo accordo tra le intensità frazionarie di partenza e quelle ricostruite geometricamente. Gli scarti ottenuti ($\sim 1.3\%$) sono da attribuire al rumore aggiunto al segnale simulato.\\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,24 +218,22 @@ I risultati riportati nella tabella~\ref{tab:rapporti_23_exp} mostrano un ottimo
 \section{Generazione e analisi della IRF}
 \label{sec:generazione_analisi_IRF}
 
-Come già affrontato nella sezione \ref{sec:funzione_di_risposta_dello_strumento}, dei dati FLIM reali sono una convoluzione di \textit{IRF} con il segnale di decadimento.\\
-È stato dunque necessario modellizzare una funzione di risposta strumentale, di forma gaussiana, per simulare dei dati di acquisizione reali. Operativamente, viene impiegata la stessa griglia di \textit{bin} temporali utilizzata per i decadimenti, sulla quale viene generato un profilo gaussiano:
+Come già affrontato nella sezione \ref{sec:funzione_di_risposta_dello_strumento}, un segnale FLIM reale è dato dalla convoluzione temporale tra la funzione di risposta strumentale e il segnale di decadimento vero e proprio.\\
+Per simulare dati di acquisizione realistici è stato dunque necessario modellizzare una IRF di forma gausiana. Operativamente, viene impiegata la stessa griglia di \textit{bin} temporali utilizzata per i decadimenti, sulla quale viene generato un profilo gaussiano:
 \begin{equation*}
     \text{IRF}(t) \propto \exp\left(-\frac{(t - \mu)^2}{2\sigma^2}\right)
 \end{equation*}
 dove $\mu$ rappresenta il ritardo (shift sull'asse temporale), mentre $\sigma$ la larghezza dell'impulso.
 
-\subsection{Generazione del segnale}
-\label{sec:generazione_del_segnale}
+\subsection{Convoluzione con la IRF}
+\label{sec:convoluzione_con_la_IRF}
 
-Si illustra, di seguito, il procedimento utilizzato per la generazione del segnale convoluto con la IRF:
+Si illustra, di seguito, il procedimento utilizzato per la generazione di un segnale mono-esponenziale convoluto con la IRF:
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db): 
 
-    n_bins = len(irf)
-    
     # Use circular convolution 
-    convol = np.fft.irfft(np.fft.rfft(expdata) * np.fft.rfft(irf)).real 
+    convol = np.fft.irfft(np.fft.rfft(expdata) * np.fft.rfft(irf))
     convol = np.clip(convol, 0, None)
     convol = (convol / np.sum(convol)) * counts    # normalization
     
@@ -247,19 +244,18 @@ def simulation_with_IRF(expdata, irf, counts, noise_flag, snr_db):
     return convol, noisy_signal
 \end{minted}    
 
-\begin{figure}[h!]
-
+\begin{figure}[h!] 
     \centering
     \includegraphics[width=\textwidth]{immagini/IRF_single.pdf}
+    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. Parametri di generazione: $\tau=4$, $\mu=0.3\,\text{ns}$, $\sigma=0.1\,\text{ns}$, $\textit{SNR} = 20\,\textit{dB}$ e $N=10000$. Il rumore è stato applicato al segnale convoluto invece che al decadimento esponenziale.}
     \label{fig:irf_sing_decay_exp}
-    \caption{Simulazione di decadimento a singola esponenziale, convoluta con la \textit{IRF}. $\textit{SNR} = 20$, $N=10000$. Il rumore è stato applicato al segnale convoluto, e non al decadimento esponenziale, per simulare il numore elettronico della scheda di acquisizione}.
 \end{figure}
-Dall'immagine è possibile osservare come la convoluzione con la IRF sposti il picco del decadimento in avanti (in $t\approx\mu$), e renda visibile il rumore gaussiano come fluttuazione.% perché diventa magra?
+Dall'immagine è possibile osservare come la convoluzione con la IRF trasli il picco del decadimento in avanti (in $t\approx\mu$) e renda la traccia del segnale più ``sottile''. Nei punti in cui la IRF è nulla, infatti, la convoluzione agisce matematicamente come una media mobile, riducendo il rumore del decadimento.
 
-La convoluzione descritta dall'equazione \ref{eq:convoluzione} è molto diversa dalla formula operativa utilizzata per il codice.\\
-Per prima cosa, è bene osservare l'utilizzo della \textit{Fast Fourier Transform} (e poi della riconversione attraverso l'anti-trasformata) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier, molto più efficente~\cite[Sez. 9.1]{oppenheim_discrete_2009}.\\
+La formulazione operativa impiegata nel codice è sensibilmente diversa dalla definizione \ref{eq:convoluzione} presentata nella sezione teorica.
+In primo luogo, si è scelto di sfruttare la \textit{Fast Fourier Transform} (\texttt{np.fft.rfft} e la relativa anti-trasformata \texttt{np.fft.irfft}) al posto di funzioni come \textit{np.convolve} di \textit{Numpy}, che propone la formula standard per la convoluzione discreta calcolata nel dominio temporale. Infatti, quest'ultima ha una complessità computazionale di $\mathcal{O}(N^2)$, rispetto a $\mathcal{O}(N \log(N))$ del calcolo nello spazio di Fourier, molto più efficiente~\cite[Sez. 9.1]{oppenheim_discrete_2009}.\\
 In secondo luogo, calcolare il prodotto delle \textit{FFT} dei due segnali equivale matematicamente a eseguire una convoluzione circolare, invece che lineare, nel dominio del tempo~\cite[Sez. 8.6.5]{oppenheim_discrete_2009}.\\
-La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale di fluorescenza) su \textit{IRF$(t)$}: nella convoluzione circolare, dopo lo shift viene applicato l'operatore $\textit{mod} \; N$. Dunque, la coda di $I(t)$ che eccede la fine del periodo del laser (di lunghezza $N$) non viene scartata, ma rientra all'inizio della finestra temporale.
+La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale di fluorescenza) su \textit{IRF$(t)$}: nella convoluzione circolare, dopo lo shift viene applicato l'operatore $\textit{mod} \; N$. Dunque, la coda di $I(t)$ che eccede la fine del periodo del laser (di lunghezza $N$) non viene scartata, ma rientra all'inizio della finestra temporale, riproducendo la natura periodica degli impulsi di eccitazione.
 
 %_____________________________________________________________________________
 
@@ -274,11 +270,9 @@ La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale 
 
 \subsection{Deconvoluzione}
 \label{sec:deconvoluzione}
+Per rappresentare correttamente il decadimento sul piano dei fasori, è necessario effettuare un'operazione di deconvoluzione che separi il segnale di fluorescenza dal contributo della IRF. A causa della presenza del rumore aggiunto in fase di simulazione, i fasori deconvoluti non coincideranno esattamente con quelli teorici calcolati prima della convoluzione.
 
-Per la rappresentazione sul piano dei fasori, è necessario effettuare una deconvoluzione per separare nuovamente segnale di fluorescenza e IRF. Dal processo non si ottengono esattamente gli stessi fasori che si sarebbero potuti ottenere prima della convoluzione a causa dell'aggiunta del rumore.
-
-Come dichiarato all'inizio di questa trattazione, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale. Dunque le operazioni si sono svolte nel piano dei fasori, e il fasore risultante è stato salvato come un numero complesso: 
-
+Come discusso nella sezione teorica, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale: la deconvoluzione si ricuce dunque a una divisione tra numeri complessi nel piano dei fasori:
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def phasor_deconv(G_meas, S_meas, G_irf, S_irf): 
  
@@ -290,54 +284,48 @@ def phasor_deconv(G_meas, S_meas, G_irf, S_irf):
     G_deconvol, S_deconvol = np.real(z_deconvol), np.imag(z_deconvol)
     
     return G_deconvol, S_deconvol
-\end{minted}    
+\end{minted}   
 
-%__________________________________________________________
-
-\subsubsection{Decadimento a doppio esponenziale}
-Anche in questo caso le operazioni sono state ripetute con un decadimento a doppio esponenziale. Il procedimento di generazione del segnale è stato eseguito come da sezione \ref{sec:generazione_di_decadimenti_a_exp_multipli}. I fasori relativi ai due decadimenti separati sono stati calcolati prima della convoluzione con IRF per essere rappresentati sul piano dei fasori e utilizzati per calcolare il rapporto tra fluorofori.
-\begin{figure}[h!]     
+\begin{figure}[h!]
     \centering
-
-    \begin{subfigure}[b]{0.7\textwidth}
-
-        \centering
-        \includegraphics[width=\textwidth]{immagini/IRF_single_ph.pdf}
-        \label{fig:irf_sing_decay_ph}
-
-    \end{subfigure}
-    \hfill 
-    \begin{subfigure}[b]{0.7\textwidth}
-
-        \centering
-        \includegraphics[width=\textwidth]{immagini/IRF_three_ph.pdf}
-        \label{fig:irf_double_decay_ph}
-
-    \end{subfigure}
-    
-    \caption{Rappresentazione sul piano dei fasori del segnale di, rispettivamente, decadimento mono-esponenziale a sinistra, e a doppio esponenziale a destra, entrambi convoluti con \textit{IRF}}
-
+    \includegraphics[width=0.7\textwidth]{immagini/IRF_single_ph.pdf}
+    \caption{Rappresentazione sul piano dei fasori di un segnale a esponenziale singolo convoluto con IRF. Sono rappresentati i fasori della IRF e del decadimento puro. SNR$ = 20\,\text{dB}$.}
+    \label{fig:irf_sing_decay_ph}
 \end{figure}
 
-Osservando le rappresentazioni sul piano dei fasori, è possibile convermare visivamente la formula \ref{eq:convoluzione_fasori}, ovvero la trasformazione della deconvoluzione in una divisione sul piano dei fasori: l'angolo $\phi_{\text{IRF}}$, calcolato rispetto all'origine, appare simile a $\phi_{\text{segnale}}-\phi_{\text{decadimento}}$.
+Osservando la rappresentazione sul piano dei fasori (\ref{fig:irf_sing_decay_ph}), è possibile confermare visivamente la validità \ref{eq:convoluzione_fasori}: in coordinate polari, la divisione per $z_{\text{IRF}}$ sottrae alla fase del segnale misurato un angolo $\phi_\text{IRF}$, introdotto dal ritardo strumentale, e ne modifica il modulo ($m_{\text{segnale}}=m_{\text{IRF}} \cdot m_{\text{decadimento}}$).
 
-Si riporta di seguito il confronto tra i rapporti di concentrazioni iniziali e quelli ricavati dal piano dei fasori (solo per il decadimento a doppio esponenziale).
-\begin{table}[h!]
 
+%%%%%%%5%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Decadimento a doppio esponenziale}
+
+La stessa procedura di convoluzione e successiva deconvoluzione è stata applicata anche a un segnale a doppio esponenziale generato, per verificare visivamente se l'algoritmo di \textit{unmixing} presentato in precedenza sia in grado di risalire correttamente alle intensità frazionarie anche in presenza della funzione di risposta strumentale.
+
+Il procedimento di generazione del segnale è stato eseguito come descritto nella sezione~\ref{sec:generazione_di_decadimenti_a_exp_multipli}; dopodiché sono state eseguite la convoluzione con la IRF e l'aggiunta del rumore tramite la funzione~\texttt{simulation\_with\_IRF}, descritta nella sezione~\ref{sec:convoluzione_con_la_IRF}.
+Calcolati i fasori del segnale misurato della miscela e della IRF, è stata eseguita la deconvoluzione tramite la funzione \texttt{phasor\_deconv} (presentata nella sezione \ref{sec:deconvoluzione}), ottenendo il fasore corrispondente al segnale di decadimento (figura~\ref{fig:irf_double_decay_ph}).
+
+\begin{figure}[h!]
     \centering
-    \label{tab:rapporti_concentrazione_IRF}
-    \setlength{\tabcolsep}{8pt}
-    \begin{tabular}{lcc}
+    \includegraphics[width=0.7\textwidth]{immagini/IRF_three_ph.pdf}
+    \caption{Rappresentazione di un segnale a esponenziale doppio convoluto con IRF. Sono rappresentati i fasori della IRF e i decadimenti puri. SNR$ = 20\,\text{dB}$.}
+    \label{fig:irf_double_decay_ph}
+\end{figure}
 
+Si riporta nella tabella~\ref{tab:rapporti_concentrazione_IRF} il confronto del rapporto tra le intensità frazionarie impostate nelle simulazioni e quello ricavato dal piano dei fasori dopo la deconvoluzione.
+\begin{table}[h!]
+    \centering
+    \setlength{\tabcolsep}{8pt}
+    \begin{tabular}{cc}
         \midrule
          Rapporto reale & Rapporto ricavato \\
         \midrule
-        $0.70:0.30$  & $0.72:0.28$ \\
+        $0.700:0.300$  & $0.672:0.328$ \\
         \midrule
-
     \end{tabular}
-    % \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori per un segnale convoluto con IRF. $\textit{SNR}=10$}
-
+    \caption{Confronto tra il rapporto reale e il rapporto ricavato dal piano dei fasori per un segnale convoluto con IRF. $\textit{SNR}=20\,\text{dB}$.}
+    \label{tab:rapporti_concentrazione_IRF}
 \end{table}
 
-% magari mettere un commento alla fine
+\noindent L'ottimo accordo tra il rapporto ricavato e il valore reale (con uno scarto del $\approx 6.7\%$) conferma il funzionamento del procedimento di \textit{unmixing} anche in presenza di segnali convoluti con IRF.
