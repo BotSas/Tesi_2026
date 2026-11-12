@@ -55,13 +55,16 @@ def phasor_calc (n, harm_n = 1):   # given a histogram n (xe), calculates the ph
 
 
 
-def add_noise(counts, noise_std):
-    """Add electronic Gaussian noise with an absolute, intensity-independent sigma."""
+def add_noise(counts, snr_db):
+    """Add Gaussian noise at the requested signal-to-noise ratio."""
 
-    if noise_std < 0:
-        raise ValueError("noise_std must be non-negative.")
+    if snr_db < 0:
+        raise ValueError("snr_db must be non-negative.")
 
     rng = np.random.default_rng()
+    snr_linear = 10 ** (snr_db / 10)
+    signal_power = np.mean(np.asarray(counts) ** 2)
+    noise_std = np.sqrt(signal_power / snr_linear)
     noise = rng.standard_normal(np.shape(counts)) * noise_std
     
     return np.clip(counts + noise, 0, None)
@@ -176,7 +179,7 @@ def irf_generation(σ, μ, counts, T_laser, num_bins = 30):       # gaussian IRF
 
 
 
-def simulation_with_IRF(signal, irf, noise_flag=False, noise_std=0):
+def simulation_with_IRF(signal, irf, noise_flag=False, snr_db=0):
     # Use a circular convolution so the signal stays consistent with the laser period.
     irf_kernel = np.asarray(irf, dtype=float)
     irf_kernel_sum = np.sum(irf_kernel)
@@ -201,7 +204,7 @@ def simulation_with_IRF(signal, irf, noise_flag=False, noise_std=0):
     convol = convol / convolution_sum * signal_sum
 
     if noise_flag:
-        noisy_signal = add_noise(convol, noise_std)
+        noisy_signal = add_noise(convol, snr_db)
     else: noisy_signal = convol
     
     return convol, noisy_signal
@@ -430,8 +433,15 @@ def phasors_from_region(image, roi_mask, median_size, threshold_pct):    # ROI =
     if not valid_mask.any().item():
         raise ValueError("The ROI contains no valid pixels after filtering and thresholding.")
 
+    valid_mask_np = valid_mask.values
+    y_coords = G_thresh.coords["y"].values
+    x_coords = G_thresh.coords["x"].values
+    x_grid, y_grid = np.meshgrid(x_coords, y_coords)
+
     return pd.DataFrame({
-        "G": G_thresh.where(valid_mask, drop=True).values.ravel(),
-        "S": S_thresh.where(valid_mask, drop=True).values.ravel(),
-        "intensity": fft0_thresh.where(valid_mask, drop=True).values.ravel()
+        "G": G_thresh.values[valid_mask_np],
+        "S": S_thresh.values[valid_mask_np],
+        "intensity": fft0_thresh.values[valid_mask_np],
+        "x": x_grid[valid_mask_np],
+        "y": y_grid[valid_mask_np],
     })

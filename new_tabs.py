@@ -147,8 +147,10 @@ def _phasor_plot(df, mean, std, irf_g, irf_s, image_df):
     return (circle * image_cloud * cloud * mean_point * irf_point).opts(
         title=f"ROI phasors (mean ± std): "
         f"({mean[0]:.3f} ± {std[0]:.3f}, {mean[1]:.3f} ± {std[1]:.3f})",
-        width=420,
-        height=420,
+        width=550,
+        height=550,
+        frame_width=550,
+        frame_height=550,
         xlim=(-0.1, 1.1),
         ylim=(-0.1, 0.7),
         xlabel="g",
@@ -197,7 +199,7 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         )
         image_df_deconvolved = image_df.assign(G=image_g_dec, S=image_s_dec)
 
-        image_size = 420
+        image_size = 550
 
         image = hv.Image(
             (np.arange(nx), np.arange(ny), flat_image.T),
@@ -208,12 +210,14 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
             colorbar=True,
             frame_width=image_size,
             frame_height=image_size,
+            width=image_size,
+            height=image_size,
             aspect="equal",
             tools=["tap", "hover"],
             active_tools=["tap"],
             xlabel="x",
             ylabel="y",
-            title="Flattened image - click to select ROI",
+            title="Click to select ROI",
         )
         tap = hv.streams.Tap(source=image, x=float(nx / 2), y=float(ny / 2))
 
@@ -238,10 +242,12 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
             time_ns = np.linspace(
                 0.0, 12.5, image_stack.sizes["time"], endpoint=False
             )
+            decay_max = float(decay.max().item())
             return hv.Curve((time_ns, decay.values), "time (ns)", "counts").opts(
                 title=f"ROI decay: x={x0}:{x1}, y={y0}:{y1}",
-                width=image_size,
-                height=image_size,
+                width=int(image_size),
+                height=180 * 2,
+                ylim=(0, max(1.0, decay_max * 1.05)),
                 line_width=2,
                 color="purple",
                 tools=["hover"],
@@ -277,12 +283,16 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
 
         return pn.Column(
             pn.Row(
-                hv.DynamicMap(image_with_roi, streams=[tap]),
                 pn.Column(
-                    hv.DynamicMap(roi_phasors, streams=[tap]),
-                    hv.DynamicMap(roi_decay, streams=[tap]),
+                    hv.DynamicMap(image_with_roi, streams=[tap]),
+                    # hv.DynamicMap(roi_decay, streams=[tap]),
+                    width=image_size + 80,
                 ),
+                hv.DynamicMap(roi_phasors, streams=[tap]),
+                width=2 * image_size + 80,
+                sizing_mode="fixed",
             ),
+            sizing_mode="fixed",
         )
     except Exception as exc:
         return pn.pane.Alert(

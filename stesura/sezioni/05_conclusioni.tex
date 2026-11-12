@@ -1,1 +1,36 @@
+\chapter{Interfaccia grafica interattiva}
+
+Allo scopo di rendere immediato l'utilizzo degli algoritmi descritti nei capitoli precedenti, l'intera pipeline di simulazione e analisi è stata integrata in una WebApp interattiva, sviluppata in \textit{Python} e in particolare tramite le librerie \textit{Panel}, \textit{Holoviews} e \textit{Bokeh}.\\
+L'interfaccia permette di esplorare in tempo reale gli effetti legati alle modifiche di parametri fisici e strumentali sui segnali di decadimento e sul piano dei fasori.
+È possibile navigare nell'applicazione attraverso una barra laterale, che permette di inserire i parametri globali per la generazione di un segnale ($T_{\text{laser}}$, numero di eventi e di \textit{bin} temporali) e di selezionare la scheda desiderata.
+
+Le schede $1-3$ (immagine~\ref{fig:panel1}) sono dedicate alla generazione di decadimenti a singola, doppia o tripla esponenziale rispettivamente. Alcuni \textit{slider} presenti sulla barra laterale permettono di impostare i parametri di generazione, ovvero tempi di vita $\tau_k$ e frazioni relative di intensità $f_k$ (automaticamente normalizzate a somma $1$). È inoltre possibile modificare i parametri relativi alla IRF ($\mu$ e $\tau$) e aggiungere rumore gaussiano ai decadimenti, regolando il rapporto segnale-rumore.\\
+Il vantaggio fondamentale di questa sezione della WebApp, rispetto al codice statico, è quello di mostrare gli effetti delle modifiche sul piano dei fasori in tempo reale, rendendo la comprensione molto più immediata.
+
+
+\begin{figure}[h!] 
+    \centering
+    \includegraphics[width=\textwidth]{immagini/panel1.png}
+    \caption{Scheda 3 dell'interfaccia grafica \textit{Panel}, relativa alla simulazione di decadimenti tri-esponenziali. A sinistra si vedono gli slider per la selezione dei parametri; al centro e a destra si trovano rispettivamente il decadimento nel dominio temporale e sul piano dei fasori.}
+    \label{fig:panel1}
+\end{figure}
+
+La scheda $4$ (immagine~\ref{fig:panel2}) è invece riservata all'analisi di acquisizioni FLIM sperimentali. tramite la barra laterale, è possibile caricare file \textit{TIFF} di dimensioni (\texttt{time}, \texttt{x}, \texttt{y}) e inserire le coordinate $(G, S)$ della IRF, che devono essere note a priori per permettere la deconvoluzione; in alternativa, sono disponibili due dataset di esempio preimpostati (i due campioni analizzati in questa trattazione) già corredati dei rispettivi parametri strumentali. Inoltre, è possibile calibrare la soglia di intensità, la dimensione del filtro mediano e della maschera per la selezione spaziale.\\
+La mappa di intensità è interattiva: selezionando una regione sull'immagine, i fasori associati ai pixel corrispondenti vengono evidenziati sul piano dei fasori.
+
+\begin{figure}[h!] 
+    \centering
+    \includegraphics[width=\textwidth]{immagini/panel2.png}
+    \caption{Scheda 4 dell'interfaccia grafica \textit{Panel}, dedicata all'analisi di dati FLIM sperimentali. Al centro è visibile la mappa di intensità del campione, a destra la distribuzione dei pixel sul piano dei fasori.}
+    \label{fig:panel2}
+\end{figure}
+
+
+
+%% CONVIVENZA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 \chapter{Conclusioni}\label{sec:conclusioni}
+
+
+
+

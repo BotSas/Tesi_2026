@@ -166,7 +166,8 @@ def create_phasor_plot(T_laser, points, lines=None):
     return plot.opts(
             title = title, xlim = (-0.05, 1.05), ylim = (-0.05, 0.75),
             xlabel = "G, real", ylabel = "S, imaginary",
-            width = 550, height = 550, show_grid = False, data_aspect = 1,
+            width = 550, height = 550, frame_width = 550, frame_height = 550,
+            show_grid = False, data_aspect = 1,
             legend_position = 'bottom', show_frame = True,
             fontsize = {'labels': 12, 'legend': 11, 'title': 14}
         )

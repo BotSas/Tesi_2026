@@ -469,6 +469,10 @@ OUTPUT build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/TESI_SUPER_UFFICIALE.pyg
 INPUT ./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex
 INPUT ./sezioni/05_conclusioni.tex
+INPUT ./immagini/panel1.png
+INPUT ./immagini/panel1.png
+INPUT ./immagini/panel2.png
+INPUT ./immagini/panel2.png
 INPUT /home/aras/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./build/TESI_SUPER_UFFICIALE.aux
 INPUT ./build/TESI_SUPER_UFFICIALE.out

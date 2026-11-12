@@ -56,8 +56,8 @@ t1_tau = pn.widgets.FloatSlider(name="τ (ns)", start = 0.1, end=10.0, value = 2
 t1_irf_mu = pn.widgets.FloatSlider(name = "IRF μ (ns)", start = 0.0, end = 1, value= 0, step = 0.1)
 t1_irf_sig = pn.widgets.FloatSlider(name = "IRF σ (ns)", start = 0.01, end = 0.5, value = 0.1, step = 0.01)
 t1_add_noise = pn.widgets.Toggle(name = "Add gaussian noise", button_type = "default", value = False)
-t1_noise_std = pn.widgets.FloatInput(name="Electronic noise σ (counts)", value=10, step=1, start=0, disabled=True)
-t1_add_noise.param.watch(lambda e: setattr(t1_noise_std, 'disabled', not e.new), "value")
+t1_snr = pn.widgets.FloatSlider(name="SNR (dB)", start=0, end=40, value=20, step=1, disabled=True)
+t1_add_noise.param.watch(lambda e: setattr(t1_snr, 'disabled', not e.new), "value")
 
 
 # ─── Tab 2: Double exponential ────────────────────────────────────────────────
@@ -69,9 +69,9 @@ t2_f2 = pn.widgets.FloatSlider(name = "τ2 intensity fraction (Auto)", start=0.0
 t2_irf_mu = pn.widgets.FloatSlider(name = "IRF μ (ns)", start = 0.0, end = 1, value= 0, step = 0.1)
 t2_irf_sig = pn.widgets.FloatSlider(name = "IRF σ (ns)", start = 0.01, end = 0.5, value = 0.1, step = 0.01)
 t2_add_noise = pn.widgets.Toggle(name = "Add gaussian noise", button_type = "default", value = False)
-t2_noise_std = pn.widgets.FloatInput(name="Electronic noise σ (counts)", value=10, step=1, start=0, disabled=True)
+t2_snr = pn.widgets.FloatSlider(name="SNR (dB)", start=0, end=40, value=20, step=1, disabled=True)
 t2_f1.param.watch(lambda e: setattr(t2_f2, 'value', 1.0 - t2_f1.value), "value")
-t2_add_noise.param.watch(lambda e: setattr(t2_noise_std, 'disabled', not e.new), "value")
+t2_add_noise.param.watch(lambda e: setattr(t2_snr, 'disabled', not e.new), "value")
 
 
 # ─── Tab 3: Triple exponential ────────────────────────────────────────────────
@@ -85,7 +85,7 @@ t3_f3 = pn.widgets.FloatSlider(name="τ3 intensity fraction(Auto)", start=0.0, e
 t3_irf_mu = pn.widgets.FloatSlider(name = "IRF μ (ns)", start = 0.0, end = 1, value= 0, step = 0.1)
 t3_irf_sig = pn.widgets.FloatSlider(name = "IRF σ (ns)", start = 0.01, end = 0.5, value = 0.1, step = 0.01)
 t3_add_noise = pn.widgets.Toggle(name="Add gaussian noise", button_type="default", value = False)
-t3_noise_std = pn.widgets.FloatInput(name="Electronic noise σ (counts)", value=10, step=1, start=0, disabled=True)
+t3_snr = pn.widgets.FloatSlider(name="SNR (dB)", start=0, end=40, value=20, step=1, disabled=True)
 
 _updating_t3 = False
 def _clamp_t3_fractions(changed, event):
@@ -101,7 +101,7 @@ def _clamp_t3_fractions(changed, event):
 
 t3_f1.param.watch(lambda e: _clamp_t3_fractions("f1", e), "value")
 t3_f2.param.watch(lambda e: _clamp_t3_fractions("f2", e), "value")
-t3_add_noise.param.watch(lambda e: setattr(t3_noise_std, 'disabled', not e.new), "value")
+t3_add_noise.param.watch(lambda e: setattr(t3_snr, 'disabled', not e.new), "value")
 
 
 
@@ -111,15 +111,15 @@ t3_add_noise.param.watch(lambda e: setattr(t3_noise_std, 'disabled', not e.new),
 
 @pn.depends(
     t_laser_input, bins_input, counts_input, harmonic_input, 
-    t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_noise_std
+    t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_snr
 )
 
 
-def tab1_view(T_laser, n_bins, counts, harm, tau, mu, sig, add_noise, noise_std):
+def tab1_view(T_laser, n_bins, counts, harm, tau, mu, sig, add_noise, snr):
 
     time_bins, irf = phf.irf_generation(sig, mu, counts, T_laser, n_bins)
     pure_decay = phg.generate_decay(time_bins, tau, counts)
-    convol, noisy_signal = phf.simulation_with_IRF(pure_decay, irf, add_noise, noise_std)
+    convol, noisy_signal = phf.simulation_with_IRF(pure_decay, irf, add_noise, snr)
     
     G_meas, S_meas = phf.phasor_calc(noisy_signal, harm)
     G_irf, S_irf = phf.phasor_calc(irf, harm)
@@ -133,6 +133,8 @@ def tab1_view(T_laser, n_bins, counts, harm, tau, mu, sig, add_noise, noise_std)
         title=f"Single exp (τ = {tau:.2f} ns)",
         width=550,
         height=550,
+        frame_width=550,
+        frame_height=550,
         ylim=(0, max(1.0, 1.1 * signal_max)),
         legend_position='top_right',
     )
@@ -143,19 +145,19 @@ def tab1_view(T_laser, n_bins, counts, harm, tau, mu, sig, add_noise, noise_std)
         {'G': G_meas, 'S': S_meas, 'label': 'Measured (Signal+IRF)', 'color': 'forestgreen', 'marker': 'o', 'markersize': 7},
         {'G': G_dec, 'S': S_dec, 'label': 'Final (Deconvolved)', 'color': 'steelblue', 'marker': '*', 'markersize': 12},
     ]
-    lines = [{'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'}]
+    #lines = [{'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'}]
     
-    plot_phasor = phg.create_phasor_plot(T_laser, points, lines)
+    plot_phasor = phg.create_phasor_plot(T_laser, points)
     return pn.Row(plot_decay, plot_phasor)
 
 
 
 @pn.depends(
     t_laser_input, bins_input, counts_input, harmonic_input,
-    t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_noise_std
+    t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_snr
 )
 
-def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_noise, noise_std):
+def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_noise, snr):
 
     time_bins, irf = phf.irf_generation(sig, mu, counts, T_laser, n_bins)
     
@@ -165,7 +167,7 @@ def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_no
     
     c1, _ = phf.simulation_with_IRF(decay1, irf)
     c2, _ = phf.simulation_with_IRF(decay2, irf)
-    convol, noisy_signal = phf.simulation_with_IRF(mixed_decay, irf, add_noise, noise_std)
+    convol, noisy_signal = phf.simulation_with_IRF(mixed_decay, irf, add_noise, snr)
     
     G1, S1 = phg.pure_phasor(tau1, T_laser, harm)
     G2, S2 = phg.pure_phasor(tau2, T_laser, harm)
@@ -185,6 +187,8 @@ def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_no
         title=f"Double exp (f1 = {f1:.2f}, f2 = {f2:.2f})",
         width=550,
         height=550,
+        frame_width=550,
+        frame_height=550,
         ylim=(0, max(1.0, 1.1 * signal_max)),
         legend_position='top_right',
     )
@@ -199,7 +203,7 @@ def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_no
     ]
     lines = [
         {'G': [G1, G2], 'S': [S1, S2], 'color': 'gray', 'ls': '--'},
-        {'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'}
+        # {'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'}
     ]
     
     plot_phasor = phg.create_phasor_plot(T_laser, points, lines)
@@ -210,9 +214,9 @@ def tab2_view(T_laser, n_bins, counts, harm, tau1, tau2, f1, f2, mu, sig, add_no
 
 @pn.depends(
     t_laser_input, bins_input, counts_input, harmonic_input,
-    t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_noise_std
+    t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_snr
 )
-def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, sig, add_noise, noise_std):
+def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, sig, add_noise, snr):
 
     time_bins, irf = phf.irf_generation(sig, mu, counts, T_laser, n_bins)
     
@@ -224,7 +228,7 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
     c1, _ = phf.simulation_with_IRF(decay1, irf)
     c2, _ = phf.simulation_with_IRF(decay2, irf)
     c3, _ = phf.simulation_with_IRF(decay3, irf)
-    convol, noisy_signal = phf.simulation_with_IRF(mixed_decay, irf, add_noise, noise_std)
+    convol, noisy_signal = phf.simulation_with_IRF(mixed_decay, irf, add_noise, snr)
     
     G1, S1 = phg.pure_phasor(tau1, T_laser, harm)
     G2, S2 = phg.pure_phasor(tau2, T_laser, harm)
@@ -249,6 +253,8 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
         title=f"Triple exp (f1 = {f1:.2f}, f2 = {f2:.2f}, f3 = {f3:.2f})",
         width=550,
         height=550,
+        frame_width=550,
+        frame_height=550,
         ylim=(0, max(1.0, 1.1 * signal_max)),
         legend_position='top_right',
     )
@@ -265,7 +271,7 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
     ]
     lines = [
         {'G': [G1, G2, G3, G1], 'S': [S1, S2, S3, S1], 'color': 'gray', 'ls': '--'},
-        {'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'} 
+        # {'G': [G_irf, G_meas], 'S': [S_irf, S_meas], 'color': 'gray', 'ls': ':'} 
     ]
     
     plot_phasor = phg.create_phasor_plot(T_laser, points, lines)
@@ -278,11 +284,11 @@ def tab3_view(T_laser, n_bins, counts, harm, tau1, tau2, tau3, f1, f2, f3, mu, s
 
 global_card = pn.Card(
     t_laser_input, bins_input, counts_input, harmonic_input,
-    title = "Parametri Globali", collapsed=False,
+    title = "Global parameters", collapsed=False,
 )
-tab1_card = pn.Card(t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_noise_std, title="1) Single exponential", collapsed = True)
-tab2_card = pn.Card(t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_noise_std, title = "2) double exponential", collapsed = True)
-tab3_card = pn.Card(t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_noise_std, title = "3) Triple exponential", collapsed = True)
+tab1_card = pn.Card(t1_tau, t1_irf_mu, t1_irf_sig, t1_add_noise, t1_snr, title="1) Single exponential", collapsed = True)
+tab2_card = pn.Card(t2_tau1, t2_tau2, t2_f1, t2_f2, t2_irf_mu, t2_irf_sig, t2_add_noise, t2_snr, title = "2) double exponential", collapsed = True)
+tab3_card = pn.Card(t3_tau1, t3_tau2, t3_tau3, t3_f1, t3_f2, t3_f3, t3_irf_mu, t3_irf_sig, t3_add_noise, t3_snr, title = "3) Triple exponential", collapsed = True)
 sidebar = pn.Column(global_card, tab1_card, tab2_card, tab3_card, tab4_card_ext, margin = (10, 10))
 
 

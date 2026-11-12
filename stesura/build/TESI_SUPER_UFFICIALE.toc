@@ -42,4 +42,5 @@
 \contentsline {subsubsection}{Risultati numerici}{37}{figure.caption.19}%
 \contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{38}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{40}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Conclusioni}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Interfaccia grafica interattiva}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{43}{chapter.6}%
