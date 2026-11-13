@@ -102,7 +102,7 @@ La funzione è definita \textit{NaN-aware}: per un pixel con intensità non null
     \centering
     \includegraphics[width=0.75\linewidth]{immagini/phasor_comparison_median.pdf}
 %    \vspace{-7cm}
-    \caption{Rappresentazione sul piano dei fasori della regione di interesse quadrata nell'immagine 1, con centro di coordinate $(x, y)=(81, 216)$ e lato 20 pixel. Sono rappresentati media e deviazione standard.}
+    \caption{Rappresentazione sul piano dei fasori dei cluster di fasori relativi al segnale grezzo e deconvoluto. È stato applicato filtro \textit{median} \texttt{3}$\times$\texttt{3}, \texttt{repeat} $=2$.}
     \label{fig:phasor_comparison_median}
 \end{figure}
 
@@ -259,7 +259,6 @@ Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico
 Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.
 
 Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{immagini/red_green_yellow.pdf}
@@ -269,7 +268,6 @@ Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due
 \end{figure}
 
 Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \textit{masking} presentato con l'immagine 1) ad alta emissione di fotoni rispettivamente nel rosso e nel verde.
-
 \begin{figure}[h!] % immagini non placeholder
     \centering
     
@@ -298,7 +296,6 @@ Sono state scelte, come caso di studio, due aree (selezionate con il metodo di \
     \caption{Nella prima immagine in alto sono evidenziate le due ROI scelte per l'analisi, il quadrato ciano rappresenta la prima area, mentre quella verde la seconda. Nelle immagini sottostanti vengono mostrate rispettivamente la prima e la seconda area sovrapposte alle immagini con filtro rosso e verde. Si noti la scelta di regioni con adeguato numero di eventi di decadimento.}
     \label{fig:tutte_immagini}
 \end{figure}
-
 Per prima cosa, vengono isolate le due regioni scelte mediante una maschera quadrata di lato $=8$ \textit{pixel}. L'ampiezza è stata ridotta rispetto all'immagine 1 per meglio adattarsi alle dimensioni delle strutture visibili soprattutto nell'acquisizione con filtro verde.\\
 I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul piano dei fasori mediante la funzione \texttt{phasors\_from\_region}, analizzata in precedenza (\ref{sec:thresholding_e_implementazione}).
 \begin{figure}[h!]

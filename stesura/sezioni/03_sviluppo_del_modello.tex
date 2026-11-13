@@ -1,4 +1,4 @@
-\chapter{Sviluppo del modello} %OK
+\chapter{Simulazione di segnali} %OK
 \label{sec:sviluppo_del_modello} 
 
 La stesura del codice è articolata in due fasi fondamentali: la simulazione di segnali di decadimento (e la relativa analisi) e lo studio di dataset sperimentali reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
@@ -10,7 +10,7 @@ Questo primo capitolo si concentra sulla prima fase: la generazione di segnali e
 
 \subsection{Decadimenti singoli e rappresentazione sul piano dei fasori} %OK
 
-Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale, i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata\\
+Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale, i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata.\\
 La correttezza dell'algoritmo di generazione è stata verificata stimando il parametro $\tau$ attraverso un fit con il metodo della \textit{Binned Negative Log Likelihood} (facendo uso della libreria \textit{iMinuit}~\cite{jamesMinuitSystemFunction1975}).
 
 \begin{figure}[h!]
@@ -99,9 +99,11 @@ Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot nois
 
 \subsubsection{Osservazioni}
 Osservando le immagini \ref{fig:noise_examples}, risulta evidente come una diminuzione del rapporto segnale-rumore comporti uno spostamento sistematico del fasore relativo al decadimento verso l'interno del semicerchio, in particolare verso l'origine.\\
-Al diminuire del \textit{signal-noise ratio} le fluttuazioni gaussiane diventano più ampie, dunque il numero di \textit{bin} che finisce per contenere un conteggio negativo aumenta. Questi \textit{bin}, tuttavia, vengono azzerati tramite \textit{clipping}, in quanto privi di senso fisico. L'effetto finale è dunque quello di un fondo piatto positivo, non correlato con la frequenza di modulazione del laser; il fasore puro corrispondente a questo fondo cade dunque nell'origine. Il fondo agisce dunque come una specie aggiuntiva, spostando il segnale verso l'origine.
+Al diminuire del \textit{signal-noise ratio} le fluttuazioni gaussiane diventano più ampie, dunque il numero di \textit{bin} che finisce per contenere un conteggio negativo aumenta. Questi \textit{bin}, tuttavia, vengono azzerati tramite \textit{clipping}, in quanto privi di senso fisico. L'effetto finale è quindi quello di un fondo piatto positivo, non correlato con la frequenza di modulazione del laser; il fasore puro corrispondente a questo fondo cade dunque nell'origine. Di conseguenza, il fondo agisce come una specie aggiuntiva, spostando il segnale verso l'origine.
 
-Da questo punto in avanti della trattazione, qualsiasi segnale simulato (dunque non estratto da un'immagine reale) includerà un contributo di rumore gaussiano generato con la stessa procedura. Il valore di \textit{SNR} sarà specificato nella didascalia.\\
+Da questo punto in avanti della trattazione, qualsiasi segnale simulato (non estratto da un'immagine reale) includerà un contributo di rumore gaussiano generato con la stessa procedura. Il valore di \textit{SNR} sarà specificato nella didascalia.\\
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

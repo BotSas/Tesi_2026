@@ -1,0 +1,1006 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{mastersBookReviewPrinciples2008a}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7e3f66e1ea483434321029e016c34b49}{%
+           family={Joseph\bibnamedelimb R.\bibnamedelimi Lakowicz},
+           familyi={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Barry\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{fullhash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{bibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorbibnamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authornamehash}{7e3f66e1ea483434321029e016c34b49}
+      \strng{authorfullhash}{7e3f66e1ea483434321029e016c34b49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02}
+      \field{day}{1}
+      \field{issn}{1083-3668, 1560-2281}
+      \field{journaltitle}{Journal of Biomedical Optics}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{02}
+      \field{shortjournal}{J. Biomed. Opt.}
+      \field{shorttitle}{Book {{Review}}}
+      \field{title}{Book {{Review}}: {{Principles}} of {{Fluorescence Spectroscopy}}, {{Third Edition}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1117/1.2904580
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/C97KXBBZ/Joseph R. Lakowicz - 2008 - Book Review Principles of Fluorescence Spectroscopy, Third Edition.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+      \verb{url}
+      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
+      \endverb
+    \endentry
+    \entry{bastiaensFluorescenceLifetimeImaging1999a}{article}{}
+      \name{author}{6}{}{%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=34705e4e20e09c3666ed1a173e076505}{%
+           family={Bastiaens},
+           familyi={B\bibinitperiod},
+           given={Philippe\bibnamedelimb I.\bibnamedelimi H.},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=7db46d20ec03bc89acc6cac5a4bfe289}{%
+           family={Squire},
+           familyi={S\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{fullhash}{f83fe4f4e013c5855a3018bf92ba394d}
+      \strng{bibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authorbibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authornamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
+      \strng{authorfullhash}{f83fe4f4e013c5855a3018bf92ba394d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{eprinttype}{pubmed}
+      \field{issn}{0962-8924, 1879-3088}
+      \field{journaltitle}{Trends in Cell Biology}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Trends in Cell Biology}
+      \field{shorttitle}{Fluorescence Lifetime Imaging Microscopy}
+      \field{title}{Fluorescence Lifetime Imaging Microscopy: Spatial Resolution of Biochemical Processes in the Cell}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{48\bibrangedash 52}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/S0962-8924(98)01410-X
+      \endverb
+      \verb{eprint}
+      \verb 10087617
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/W59CUVEW/Bastiaens et al. - 1999 - Fluorescence lifetime imaging microscopy spatial resolution of biochemical processes in the cell.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cell.com/trends/cell-biology/abstract/S0962-8924(98)01410-X
+      \endverb
+      \verb{url}
+      \verb https://www.cell.com/trends/cell-biology/abstract/S0962-8924(98)01410-X
+      \endverb
+      \keyw{Biochemistry,Biotechnology,Cell biology,compartmentalization,epidermal growth factor,fluorophore,FRET,green-fluorescent protein,phosphorylation,photobleaching,protein kinase,protein-protein interaction,signal transduction}
+    \endentry
+    \entry{huComparisonPhasorAnalysis2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c444d48bdb3f281cc67e4e8560cffa23}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Linghao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=475e90e4eec5022363cd9f947f47bc9f}{%
+           family={Ter\bibnamedelima Hofstede},
+           familyi={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Blanche},
+           giveni={B\bibinitperiod}}}%
+        {{hash=474abf2f2aad9e37e5476b2e65e7f923}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dhavan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bb86c6a67d0b873b7f2ef7defe046268}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=85b5511e9b72a4388c615fc0209b62f3}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Alex\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{fullhash}{dbdeb4d292e0ba399640215c52751846}
+      \strng{bibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorbibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authornamehash}{8eba3ef001fff43c7f7d681e006bb24b}
+      \strng{authorfullhash}{dbdeb4d292e0ba399640215c52751846}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Introduction: Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates. Methods: Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope. Results: Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88\%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates. Discussion: Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.}
+      \field{day}{29}
+      \field{issn}{2673-7647}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shortjournal}{Front. Bioinform.}
+      \field{title}{Comparison of Phasor Analysis and Biexponential Decay Curve Fitting of Autofluorescence Lifetime Imaging Data for Machine Learning Prediction of Cellular Phenotypes}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1210157}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3389/fbinf.2023.1210157
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/3W7I7FLM/Hu et al. - 2023 - Comparison of phasor analysis and biexponential decay curve fitting of autofluorescence lifetime ima.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fbinf.2023.1210157/full
+      \endverb
+    \endentry
+    \entry{malacridaPhasorPlotUniversal2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
+           family={Gratton},
+           familyi={G\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{fullhash}{e3bf956de6fe7f1a5e766a9067702340}
+      \strng{bibnamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authorbibnamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authornamehash}{4b5545b7304209a78edaa1dc67a1e6e9}
+      \strng{authorfullhash}{e3bf956de6fe7f1a5e766a9067702340}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The phasor approach to fluorescence lifetime imaging has become a common method to analyze complicated fluorescence signals from biological samples. The appeal of the phasor representation of complex fluorescence decays in biological systems is that a visual representation of the decay of entire cells or tissues can be used to easily interpret fundamental biological states related to metabolism and oxidative stress. Phenotyping based on autofluorescence provides new avenues for disease characterization and diagnostics. The phasor approach is a transformation of complex fluorescence decays that does not use fits to model decays and therefore has the same information content as the original data. The phasor plot is unique for a given system, is highly reproducible, and provides a robust method to evaluate the existence of molecular interactions such as Förster resonance energy transfer or the response of ion indicators. Recent advances permitquantification of multiple components from phasor plots in fluorescence lifetime imaging microscopy, which is not presently possible using data fitting methods, especially in biological systems.}
+      \field{day}{6}
+      \field{issn}{1936-122X, 1936-1238}
+      \field{journaltitle}{Annual Review of Biophysics}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Biophys.}
+      \field{shorttitle}{The {{Phasor Plot}}}
+      \field{title}{The {{Phasor Plot}}: {{A Universal Circle}} to {{Advance Fluorescence Lifetime Analysis}} and {{Interpretation}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{50}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{575\bibrangedash 593}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1146/annurev-biophys-062920-063631
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/DAI4QARZ/Malacrida et al. - 2021 - The Phasor Plot A Universal Circle to Advance Fluorescence Lifetime Analysis and Interpretation.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-biophys-062920-063631
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-biophys-062920-063631
+      \endverb
+    \endentry
+    \entry{oppenheim_discrete_2009}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3d2d1d8687de3baa625d3d62a7e0e464}{%
+           family={Oppenheim},
+           familyi={O\bibinitperiod},
+           given={Alan\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=fd563e605c810572cece256b4271abd4}{%
+           family={Schafer},
+           familyi={S\bibinitperiod},
+           given={Ronald\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{fullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{bibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0-13-198842-2}
+      \field{title}{Discrete-Time Signal Processing}
+      \field{year}{2009}
+      \field{dateera}{ce}
+    \endentry
+    \entry{torradoLinearCombinationProperties2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a29628a61ff67e6b082c7dc27eeba8df}{%
+           family={Torrado},
+           familyi={T\bibinitperiod},
+           given={Belén},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{fullhash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{bibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authorbibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authornamehash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \strng{authorfullhash}{e39fee53d5eef107b9af19db4c3dcb66}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The phasor approach to fluorescence lifetime imaging, and more recently hyperspectral fluorescence imaging, has increased the use of these techniques, and improved the ease and intuitiveness of the data analysis. The fit-free nature of the phasor plots increases the speed of the analysis and reduces the dimensionality, optimization of data handling and storage. The reciprocity principle between the real and imaginary space—where the phasor and the pixel that the phasor originated from are linked and can be converted from one another—has helped the expansion of this method. The phasor coordinates calculated from a pixel, where multiple fluorescent species are present, depends on the phasor positions of those components. The relative positions are governed by the linear combination properties of the phasor space. According to this principle, the phasor position of a pixel with multiple components lies inside the polygon whose vertices are occupied by the phasor positions of these individual components and the distance between the image phasor to any of the vertices is inversely proportional to the fractional intensity contribution of that component to the total fluorescence from that image pixel. The higher the fractional intensity contribution of a vertex, the closer is the resultant phasor. The linear additivity in the phasor space can be exploited to obtain the fractional intensity contribution from multiple species and quantify their contribution. This review details the various mathematical models that can be used to obtain two/three/four components from phasor space with known phasor signatures and then how to obtain both the fractional intensities and phasor positions without any prior knowledge of either, assuming they are mono-exponential in nature. We note that other than for blind components, there are no restrictions on the type of the decay or their phasor positions for linear combinations to be valid—and they are applicable to complicated fluorescence lifetime decays from components with intensity decays described by multi-exponentials.}
+      \field{day}{27}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{3}
+      \field{shortjournal}{Sensors}
+      \field{title}{Linear {{Combination Properties}} of the {{Phasor Space}} in {{Fluorescence Imaging}}}
+      \field{urlday}{23}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{999}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22030999
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/I7SLYBHX/Torrado et al. - 2022 - Linear Combination Properties of the Phasor Space in Fluorescence Imaging.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/22/3/999
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/22/3/999
+      \endverb
+    \endentry
+    \entry{ranjitFitfreeAnalysisFluorescence2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=09a2dad81fc0414aeebd9a0b78f569fd}{%
+           family={Ranjit},
+           familyi={R\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab9ef43221bf78c8ace984785bd92ab9}{%
+           family={Malacrida},
+           familyi={M\bibinitperiod},
+           given={Leonel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b5cc6dab26a7138e39e93e34f8500aa6}{%
+           family={Jameson},
+           familyi={J\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
+           family={Gratton},
+           familyi={G\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2074ef601efa0362a6274084477d133}
+      \strng{fullhash}{33a799c76f4c657745b8963a10ea161b}
+      \strng{bibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
+      \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-2189, 1750-2799}
+      \field{journaltitle}{Nature Protocols}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Nat Protoc}
+      \field{title}{Fit-Free Analysis of Fluorescence Lifetime Imaging Data Using the Phasor Approach}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1979\bibrangedash 2004}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1038/s41596-018-0026-5
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/8JWA4PJT/Ranjit et al. - 2018 - Fit-free analysis of fluorescence lifetime imaging data using the phasor approach.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41596-018-0026-5
+      \endverb
+    \endentry
+    \entry{harrisArrayProgrammingNumPy2020}{article}{}
+      \name{author}{26}{}{%
+        {{hash=db2b4761cc46be347b418e68660c9554}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Charles\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b053969d2c6a9ec8689980fb6463cd56}{%
+           family={Millman},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi Jarrod},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=84397453ac4d8b4fb5057997640d09e7}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Walt},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Stéfan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=646fbfe08374cc41c2f9bd971d8c4725}{%
+           family={Gommers},
+           familyi={G\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=18703a2bb6a62484483c193a212da2f8}{%
+           family={Virtanen},
+           familyi={V\bibinitperiod},
+           given={Pauli},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4321feefe3d5715c6fe12639d2a1f7f1}{%
+           family={Wieser},
+           familyi={W\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e8d1b0c2bff88b6bf54e2e934e2853f6}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=265437a4424f0b845118651d7d04ab93}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e4d23819637a961e0e598e1c82a8f10d}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Nathaniel\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9ad1d38817acd2f00cb7f324ec7d37ea}{%
+           family={Kern},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8ae844f84614690134ff5d8252fdc430}{%
+           family={Picus},
+           familyi={P\bibinitperiod},
+           given={Matti},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=14b8762d4cd92a5843cebfd04cd7983c}{%
+           family={Van\bibnamedelima Kerkwijk},
+           familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Marten\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=626cc151613864abeb653c0d8172d98c}{%
+           family={Brett},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a989405517bbf67ae7b16be1d03c0081}{%
+           family={Haldane},
+           familyi={H\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3232d0d1d44a4add19543b61df177acb}{%
+           family={Del\bibnamedelima Río},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Jaime\bibnamedelima Fernández},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=76256cb9e4c31e0a4744b1b49a6199f4}{%
+           family={Wiebe},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aac4486f60accb8b7db22ef300423e11}{%
+           family={Gérard-Marchant},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=22fcbc93c38819e962968aad3e3cba7f}{%
+           family={Sheppard},
+           familyi={S\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=fbb0c40f5d70be8ce47ce9daafdf5749}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4c7e4c94b846fa41e2fc0a88e0dc656d}{%
+           family={Weckesser},
+           familyi={W\bibinitperiod},
+           given={Warren},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c588b2e35e75bba896fc5677afb52fa9}{%
+           family={Abbasi},
+           familyi={A\bibinitperiod},
+           given={Hameer},
+           giveni={H\bibinitperiod}}}%
+        {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
+           family={Gohlke},
+           familyi={G\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{fullhash}{5c6d59dd7aace093923bfee7f6c640e6}
+      \strng{bibnamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
+      \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
+      \field{day}{17}
+      \field{issn}{0028-0836, 1476-4687}
+      \field{journaltitle}{Nature}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{7825}
+      \field{shortjournal}{Nature}
+      \field{title}{Array Programming with {{NumPy}}}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{585}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{357\bibrangedash 362}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/s41586-020-2649-2
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/F2M7DP9V/Harris et al. - 2020 - Array programming with NumPy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41586-020-2649-2
+      \endverb
+    \endentry
+    \entry{jamesMinuitSystemFunction1975}{article}{}
+      \name{author}{2}{}{%
+        {{hash=21a3c1e9c8e6249ee7adeeb307400123}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=28c5c86b1466da9ee3f666c8fa5a88f8}{%
+           family={Roos},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{fullhash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{bibnamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
+      \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00104655}
+      \field{journaltitle}{Computer Physics Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{Computer Physics Communications}
+      \field{title}{Minuit - a System for Function Minimization and Analysis of the Parameter Errors and Correlations}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{10}
+      \field{year}{1975}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{343\bibrangedash 367}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0010-4655(75)90039-9
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
+      \endverb
+    \endentry
+    \entry{gottliebFLUTEPythonGUI2023a}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c4909f173c866fe407b72f77362b726c}{%
+           family={Gottlieb},
+           familyi={G\bibinitperiod},
+           given={Dale},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a4ccb3374d311da234c7354f7824f28a}{%
+           family={Asadipour},
+           familyi={A\bibinitperiod},
+           given={Bahar},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e59c2dc0962f7d93a9b493f7115e7883}{%
+           family={Kostina},
+           familyi={K\bibinitperiod},
+           given={Polina},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c00fd3ab999d3aa7d55db6a5b278a18c}{%
+           family={Ung},
+           familyi={U\bibinitperiod},
+           given={Thi\bibnamedelimb Phuong\bibnamedelima Lien},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=eec07f79f7b74d92db27d29273d01bc5}{%
+           family={Stringari},
+           familyi={S\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{fullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \strng{bibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorbibnamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authornamehash}{79d1a653924d9cf728478de270b9245a}
+      \strng{authorfullhash}{e68688e7d509df5e3978d60fabc6f25f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.}
+      \field{issn}{2633-903X}
+      \field{journaltitle}{Biological Imaging}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{{{FLUTE}}}
+      \field{title}{{{FLUTE}}: {{A Python GUI}} for Interactive Phasor Analysis of {{FLIM}} Data}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{3}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e21}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S2633903X23000211
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/ZC8MQV4C/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/biological-imaging/article/flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data/862F290EC14187741BDA6B58E9868FA2
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/biological-imaging/article/flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data/862F290EC14187741BDA6B58E9868FA2
+      \endverb
+      \keyw{Data visualization,FLIM,fluorescence lifetime microscopy,phasor analysis,Python}
+    \endentry
+    \entry{hoyerXarrayNDLabeled2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4a22828b76006f42d747b699d2ef5167}{%
+           family={Hoyer},
+           familyi={H\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f0b7a9acbfd82a66cfeb3e4871c7f8e5}{%
+           family={Hamman},
+           familyi={H\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f05fde17715c233356bf18743764aeac}
+      \strng{fullhash}{f05fde17715c233356bf18743764aeac}
+      \strng{bibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
+      \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
+      \field{day}{5}
+      \field{hour}{0}
+      \field{issn}{2049-9647}
+      \field{journaltitle}{Journal of Open Research Software}
+      \field{langid}{english}
+      \field{minute}{0}
+      \field{month}{4}
+      \field{number}{1}
+      \field{second}{0}
+      \field{shorttitle}{Xarray}
+      \field{timezone}{Z}
+      \field{title}{Xarray: {{N-D}} Labeled {{Arrays}} and {{Datasets}} in {{Python}}}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5334/jors.148
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/9D3S9Q6Q/Hoyer and Hamman - 2017 - xarray N-D labeled Arrays and Datasets in Python.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
+      \endverb
+      \verb{url}
+      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
+      \endverb
+    \endentry
+    \entry{christophgohlkePhasorpyPhasorpyV0122026}{software}{}
+      \name{author}{5}{}{%
+        {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
+           family={Gohlke},
+           familyi={G\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=088d03344e42c46be5b946e302619e5a}{%
+           family={Pannunzio},
+           familyi={P\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2a064a82b0291b63232b082912056855}{%
+           family={Schuty},
+           familyi={S\bibinitperiod},
+           given={Bruno},
+           giveni={B\bibinitperiod}}}%
+        {{hash=34409f885bb35ab3bdee0af6e5fedace}{%
+           family={Donato},
+           familyi={D\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=836fdf78d50e74a268e917543c797c48}{%
+           family={Blanco},
+           familyi={B\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{fullhash}{ba3ab7d0a0900e1ccac651347849c96d}
+      \strng{bibnamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authorbibnamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authornamehash}{1058cd345d2944841aa1f6ef472ad346}
+      \strng{authorfullhash}{ba3ab7d0a0900e1ccac651347849c96d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{PhasorPy is an open-source Python library for the analysis of luminescence lifetime and hyperspectral images using the phasor approach. This is the third beta release of the PhasorPy library. It contains new functions, an About page, and other documentation improvements. The new io.signal\_from\_brighteyes\_mcs, io.signal\_from\_tdflim, and io.lifetime\_from\_tdflim functions read TCSPC or lifetime data from Brighteyes MCS and ISS TDFLIM files using the brighteyes-mcs-reader and lfdfiles libraries. The new experimental.signal\_from\_dho function calculates emission spectra using the Displaced Harmonic Oscillator model. The new spectral application (python -m phasorpy spectral) and plot.SpectralPlots class interactively plot emission spectra and corresponding spectral phasor coordinates for a set of spectral components and their mixture. Conda-forge packages for osx-arm64 are now available. This release supports Python 3.12 through 3.14. What's Changed Bump version by @cgohlke in https://github.com/phasorpy/phasorpy/pull/351 Fix mislabeled fractional intensities in lifetime geometry tutorial by @cgohlke in https://github.com/phasorpy/phasorpy/pull/352 Bump tooling and update configs by @cgohlke in https://github.com/phasorpy/phasorpy/pull/353 Mention Spectral Phasors Analysis software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/354 Add signal\_from\_tdflim and lifetime\_from\_tdflim functions by @cgohlke in https://github.com/phasorpy/phasorpy/pull/355 Mention FLIMKit software by @cgohlke in https://github.com/phasorpy/phasorpy/pull/356 Add spectral application, SpectralPlots class, and signal\_from\_dho function by @cgohlke in https://github.com/phasorpy/phasorpy/pull/358 Enable type checking for tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/359 Mention PyFLI library by @cgohlke in https://github.com/phasorpy/phasorpy/pull/361 Add signal\_from\_brighteyes\_mcs function by @mattia-donato in https://github.com/phasorpy/phasorpy/pull/340 Improve signal\_from\_brighteyes\_mcs docs and tests by @cgohlke in https://github.com/phasorpy/phasorpy/pull/363 Add About page and AI contribution policy by @cgohlke in https://github.com/phasorpy/phasorpy/pull/364 Release v0.12 by @cgohlke in https://github.com/phasorpy/phasorpy/pull/365 New Contributors @mattia-donato made their first contribution in https://github.com/phasorpy/phasorpy/pull/340 Full Changelog: https://github.com/phasorpy/phasorpy/compare/v0.11...v0.12}
+      \field{day}{20}
+      \field{month}{7}
+      \field{shorttitle}{Phasorpy/Phasorpy}
+      \field{title}{Phasorpy/Phasorpy: V0.12}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{v0.12}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.13862586
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/doi/10.5281/zenodo.13862586
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/doi/10.5281/zenodo.13862586
+      \endverb
+    \endentry
+    \entry{thepandasdevelopmentteamPandasdevPandasPandas2026}{software}{}
+      \name{author}{1}{}{%
+        {{hash=9a1f9219d00cef023c61c6fd71576d04}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={The},
+           giveni={T\bibinitperiod},
+           prefix={pandas\bibnamedelima development},
+           prefixi={p\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{fullhash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{bibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authorbibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authornamehash}{9a1f9219d00cef023c61c6fd71576d04}
+      \strng{authorfullhash}{9a1f9219d00cef023c61c6fd71576d04}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Pandas is a powerful data structures for data analysis, time series, and statistics.}
+      \field{day}{22}
+      \field{month}{10}
+      \field{shorttitle}{Pandas-Dev/Pandas}
+      \field{title}{Pandas-Dev/Pandas: {{Pandas}}}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{version}{v3.1.0}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.3509134
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
+      \endverb
+      \keyw{alignment,data analysis,data science,flexible,pandas,python}
+    \endentry
+    \entry{claytonGraphicalRepresentationMulticomponent2004}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3ecca62fc8380b7d010b5e37edc3f4bc}{%
+           family={Clayton},
+           familyi={C\bibinitperiod},
+           given={A.\bibnamedelimi H.\bibnamedelimi A.},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=21dd8cd8d3eb7406e96b6ed78f068be2}{%
+           family={Hanley},
+           familyi={H\bibinitperiod},
+           given={Q.\bibnamedelimi S.},
+           giveni={Q\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b355bfcbc65e81eb1a05b21407d4dfdc}{%
+           family={Verveer},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{fullhash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{bibnamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
+      \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}
+      \field{issn}{1365-2818}
+      \field{journaltitle}{Journal of Microscopy}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Graphical Representation and Multicomponent Analysis of Single-Frequency Fluorescence Lifetime Imaging Microscopy Data}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{213}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/2PGBSEG2/Clayton et al. - 2004 - Graphical representation and multicomponent analysis of single-frequency fluorescence lifetime imagi.pdf;/home/aras/Zotero/storage/6SYJHPDB/j.1365-2818.2004.01265.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2818.2004.01265.x
+      \endverb
+      \keyw{Epidermal growth factor receptor,fluorescence lifetime imaging microscopy (FLIM),fluorescence resonance energy transfer (FRET),green fluorescent protein (GFP),phosphorylation,protein interactions,two-component analysis}
+    \endentry
+    \entry{campagnolaSecondharmonicImagingMicroscopy2003}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0e8b5340b2f6a611335b045cb5ca0e92}{%
+           family={Campagnola},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1b69dbbe3f9ac90095047b9b464b86ee}{%
+           family={Loew},
+           familyi={L\bibinitperiod},
+           given={Leslie\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{fullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{bibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authorbibnamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authornamehash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \strng{authorfullhash}{9c8d9e3db87bd85a494d9a177ac62c71}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1087-0156, 1546-1696}
+      \field{journaltitle}{Nature Biotechnology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Nat Biotechnol}
+      \field{title}{Second-Harmonic Imaging Microscopy for Visualizing Biomolecular Arrays in Cells, Tissues and Organisms}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{21}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1356\bibrangedash 1360}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nbt894
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nbt894
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nbt894
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
