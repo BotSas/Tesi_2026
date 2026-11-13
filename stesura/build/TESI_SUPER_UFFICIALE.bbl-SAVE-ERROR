@@ -109,8 +109,8 @@
       \strng{authorbibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
       \strng{authornamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
       \strng{authorfullhash}{f83fe4f4e013c5855a3018bf92ba394d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{1}
@@ -183,8 +183,8 @@
       \strng{authorbibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
       \strng{authornamehash}{8eba3ef001fff43c7f7d681e006bb24b}
       \strng{authorfullhash}{dbdeb4d292e0ba399640215c52751846}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Introduction: Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates. Methods: Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope. Results: Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88\%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates. Discussion: Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.}
@@ -307,8 +307,8 @@
       \strng{authorbibnamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authornamehash}{6b65fefc61ef07dfae5fcb9291d4aceb}
       \strng{authorfullhash}{6b65fefc61ef07dfae5fcb9291d4aceb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd}
@@ -341,8 +341,8 @@
       \strng{authorbibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
       \strng{authornamehash}{e39fee53d5eef107b9af19db4c3dcb66}
       \strng{authorfullhash}{e39fee53d5eef107b9af19db4c3dcb66}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phasor approach to fluorescence lifetime imaging, and more recently hyperspectral fluorescence imaging, has increased the use of these techniques, and improved the ease and intuitiveness of the data analysis. The fit-free nature of the phasor plots increases the speed of the analysis and reduces the dimensionality, optimization of data handling and storage. The reciprocity principle between the real and imaginary space—where the phasor and the pixel that the phasor originated from are linked and can be converted from one another—has helped the expansion of this method. The phasor coordinates calculated from a pixel, where multiple fluorescent species are present, depends on the phasor positions of those components. The relative positions are governed by the linear combination properties of the phasor space. According to this principle, the phasor position of a pixel with multiple components lies inside the polygon whose vertices are occupied by the phasor positions of these individual components and the distance between the image phasor to any of the vertices is inversely proportional to the fractional intensity contribution of that component to the total fluorescence from that image pixel. The higher the fractional intensity contribution of a vertex, the closer is the resultant phasor. The linear additivity in the phasor space can be exploited to obtain the fractional intensity contribution from multiple species and quantify their contribution. This review details the various mathematical models that can be used to obtain two/three/four components from phasor space with known phasor signatures and then how to obtain both the fractional intensities and phasor positions without any prior knowledge of either, assuming they are mono-exponential in nature. We note that other than for blind components, there are no restrictions on the type of the decay or their phasor positions for linear combinations to be valid—and they are applicable to complicated fluorescence lifetime decays from components with intensity decays described by multi-exponentials.}
@@ -405,8 +405,8 @@
       \strng{authorbibnamehash}{d2074ef601efa0362a6274084477d133}
       \strng{authornamehash}{d2074ef601efa0362a6274084477d133}
       \strng{authorfullhash}{33a799c76f4c657745b8963a10ea161b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1754-2189, 1750-2799}
@@ -577,8 +577,8 @@
       \strng{authorbibnamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authornamehash}{754b3dec5e203c19b9a5798bbb902222}
       \strng{authorfullhash}{5c6d59dd7aace093923bfee7f6c640e6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Abstract Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves 1 and in the first imaging of a black hole 2 . Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.}
@@ -631,8 +631,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -695,8 +695,8 @@
       \strng{authorbibnamehash}{79d1a653924d9cf728478de270b9245a}
       \strng{authornamehash}{79d1a653924d9cf728478de270b9245a}
       \strng{authorfullhash}{e68688e7d509df5e3978d60fabc6f25f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Fluorescence lifetime imaging microscopy (FLIM) is a powerful technique used to probe the local environment of fluorophores. The fit-free phasor approach to FLIM data is increasingly being used due to its ease of interpretation. To date, no open-source graphical user interface (GUI) for phasor analysis of FLIM data is available in Python, thus limiting the widespread use of phasor analysis in biomedical research. Here, we present Fluorescence Lifetime Ultimate Explorer (FLUTE), a Python GUI that is designed to fill this gap. FLUTE simplifies and automates many aspects of the analysis of FLIM data acquired in the time domain, such as calibrating the FLIM data, performing interactive exploration of the phasor plot, displaying phasor plots and FLIM images with different lifetime contrasts simultaneously, and calculating the distance from known molecular species. After applying desired filters and thresholds, the final edited datasets can be exported for further user-specific analysis. FLUTE has been tested using several FLIM datasets including autofluorescence of zebrafish embryos and in vitro cells. In summary, our user-friendly GUI extends the advantages of phasor plotting by making the data visualization and analysis easy and interactive, allows for analysis of large FLIM datasets, and accelerates FLIM analysis for non-specialized labs.}
@@ -748,8 +748,8 @@
       \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
       \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
@@ -867,8 +867,8 @@
       \strng{authorbibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
       \strng{authornamehash}{9a1f9219d00cef023c61c6fd71576d04}
       \strng{authorfullhash}{9a1f9219d00cef023c61c6fd71576d04}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Pandas is a powerful data structures for data analysis, time series, and statistics.}
@@ -918,8 +918,8 @@
       \strng{authorbibnamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authornamehash}{8dc25129778923dc701bf0aafe4079d7}
       \strng{authorfullhash}{8dc25129778923dc701bf0aafe4079d7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Graphical representation of fluorescence lifetime imaging microscopy data demonstrates that a mixture of two components with single exponential decays can be resolved by single frequency measurements. We derive a method based on linear fitting that allows the calculation of the fluorescence lifetimes of the two components. We show that introduction of proper error-weighting results in a non-linear method that is mathematically identical to a global analysis algorithm that was recently derived. The graphical approach was applied to cellular data obtained from a lifetime-based phosphorylation assay for the epidermal growth factor receptor and yielded results similar to those obtained by a global analysis algorithm.}

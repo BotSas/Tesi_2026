@@ -1,9 +1,28 @@
 \chapter{Fondamenti teorici}\label{sec:cenni_teorici}
 
-\section{Decadimento di fluorescenza e \textit{FLIM}} %OK
+\section{La fluorescenza}
 
-Con il termine ``tempo di vita di fluorescenza'' si fa riferimento al tempo medio necessario perché una molecola allo stato eccitato emetta un fotone per tornare allo stato fondamentale. Il processo richiede in media tempi dell'ordine di grandezza del nanosecondo ($\sim 10^{-9}$s).\\
-La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma dal tempo $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale. Questo decadimento spontaneo è descritto da un andamento esponenziale decrescente:
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/jablonski.png}
+    \caption{Diagramma di Jablonski \cite[Sez. 1.1]{mastersBookReviewPrinciples2008a}}
+    \label{fig:jablonski}
+\end{wrapfigure}
+
+La fluorescenza e la fosforescenza costituiscono le due forme di fotoluminescenza, ovvero il processo di emissione spontanea di un fotone da parte di una molecola che, in seguito all'assorbimento di radiazione elettromagnetica, si rilassa da uno stato elettronico eccitato verso lo stato fondamentale.  Le molecole in grado di produrre luminescenza sono dette \textit{fluorofori}~\cite[Sez. 1.1]{mastersBookReviewPrinciples2008a}.
+
+I processi fisici di assorbimento ed emissione possono essere meglio illustrati mediante un diagramma di Jablonski (immagine~\ref{fig:jablonski}), in cui sono rappresentati lo stato elettronico fondamentale di singoletto $\mathcal{S}_0$, gli stati eccitati di singoletto $\mathcal{S}_1$ e $\mathcal{S}_2$, e il primo stato eccitato di tripletto $\mathcal{T}_1$, ciascuno suddiviso nei rispettivi livelli energetici vibrazionali.\\
+A temperatura ambiente, l'assorbimento radiativo avviene quasi esclusivamente dallo stato vibrazionale fondamentale di $\mathcal{S}_0$, e promuove un elettrone a uno degli stati vibrazionali di $\mathcal{S}_1$ in modo pressoché istantaneo. Prima dell'emissione, la molecola torna nello stato vibrazionale fondamentale di $\mathcal{S}_1$ attraverso fenomeni di conversione interna non radiativi (di durata dell'ordine $\sim 10^{-12}\,\text{s}$). il tempo medio in cui la molecola rimane allo stato elettronico eccitato è detto ``tempo di vita di fluorescenza'', ed è appunto dell'ordine di $\sim10^{-9}\,\text{s}$ \cite[Sez. 1.2]{mastersBookReviewPrinciples2008a}.\\
+Da questo stato, la molecola può tornare allo stato fondamentale $\mathcal{S}_0$ emettendo un fotone di fluorescenza; il tempo medio $\tau$ che un fluoroforo trascorre allo stato eccitato prima di tornare in $\mathcal{S}_0$ è detto \textit{tempo di vita di fluorescenza}. A causa dei fenomeni di conversione interna, il fotone emesso ha energia minore (dunque lunghezza d'onda maggiore) rispetto a quello assorbito; questo dà luogo al fenomeno dello \textit{shift di Stokes}, ed è visibile come uno spostamento verso il rosso dello spettro di emissione rispetto a quello di assorbimento \cite[Sez.~1.2]{mastersBookReviewPrinciples2008a}.
+
+In alternativa, esiste una piccola probabilità che le molecole nello stato elettronico $\mathcal{S}_1$ possano subire un'inversione di spin verso $\mathcal{T}_1$, uno stato di tripletto. Questo fenomeno prende il nome di \textit{intersystem crossing}, e il successivo decadimento $\mathcal{T}_1 \rightarrow \mathcal{S}_0$ dà luogo alla fosforescenza.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Decadimenti di fluorescenza e FLIM}
+
+La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma dal tempo medio $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale.
+Se si considera una popolazione di molecole fluorofore eccitata a un istante $t=0$, tale transizione sarà descritta da un andamento esponenziale decrescente:
 \begin{equation}
     I(t) =I_0 \, e^{-t/\tau}
     \label{eq:decadimento}
@@ -13,18 +32,32 @@ La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tr
 Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere intrinsecamente indipendente sia dalla concentrazione di fluoroforo che dalla lunghezza del cammino ottico \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente queste limitazioni.
 Esso risulta inoltre fortemente sensibile alle variazioni di parametri ambientali come il pH, la concentrazione ionica, e lo stato ossidativo. Dunque, un ulteriore beneficio della FLIM è la possibilità di monitorare processi biochimici che avvengono allo stato eccitato, quali il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}, oppure l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotide}) e FAD (\textit{flavin adenin dinucleotide}), due coenzimi (e fluorofori endogeni) fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.
 
-Dal punto di vista operativo, lo studio dei tempi di vita di fluorescenza in laboratorio avviene mediante l'eccitazione da parte di un laser periodico del campione e la raccolta mediante un fotorivelatore dei conseguenti decadimenti. L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (Time-Correlated Single Photon Counting): il campione viene scansionato pixel per pixel sfruttando un laser pulsato a impulsi periodici e molto brevi (frequenza $\nu \sim 20-80\, \text{MHz}$, durata $\sim 10^{-12} \,\text{s}$), mentre un rivelatore registra i fotoni di fluorescenza emessi e il loro tempo di ritardo rispetto all'impulso di eccitazione \cite{mastersBookReviewPrinciples2008a}. %vedo se citare FLUTE o altro
-Ogni iterazione raccoglie tipicamente un singolo fotone; ripetendo la misurazione per migliaia di impulsi, per ogni pixel viene accumulato un istogramma dei ritardi, che ricostruisce la curva di decadimento di fluorescenza descritta in \ref{eq:decadimento}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Tecnica di acquisizione TCSPC}
+
+L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (\textit{Time-Correlated Single Photon Counting}): il campione viene scansionato pixel per pixel sfruttando un laser pulsato a impulsi periodici e molto brevi (frequenza $\nu \sim 20\text{--}80\,\text{MHz}$, durata $\sim 10^{-12}\,\text{s}$), mentre un fotorivelatore registra i fotoni di fluorescenza emessi \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}. Per ciascun fotone rilevato viene misurato il tempo di ritardo rispetto all'impulso di eccitazione; ripetendo la misurazione per migliaia di cicli, in ogni pixel viene accumulato un istogramma dei ritardi che ricostruisce la curva di decadimento di fluorescenza descritta in (\ref{eq:decadimento}).
+
+\begin{wrapfigure}{l}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.45\textwidth]{immagini/tcspc.png}
+    \caption{Principio del TCSPC. \textit{In alto}: impulso laser (verde) e decadimento teorico (rosso). \textit{Al centro}: singoli fotoni rilevati a diversi tempi di ritardo su $N$ cicli. \textit{In basso}: istogramma finale dei tempi di arrivo che ricostruisce la curva di decadimento. \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}.}
+    \label{fig:tcspc}
+\end{wrapfigure}
+Nel TCSPC i parametri di acquisizione vengono regolati in modo da rilevare molto meno di un fotone per impulso laser (tipicamente un fotone ogni $100$ impulsi). Ciò permette di ovviare a un limite fisico della strumentazione: dopo la misurazione di ogni fotone, l'elettronica incorre in un tempo morto durante il quale non è in grado di rilevare altri eventi. Se il tasso di conteggio fosse più elevato, l'istogramma risulterebbe sbilanciato verso tempi di vita più brevi, poiché la probabilità di emissione è massima nei primi istanti successivi all'eccitazione e verrebbe registrato sistematicamente solo il primo fotone in arrivo.
+
+\vspace{-5pt}
+
+\paragraph{Elettronica di acquisizione}
+La misura del ritardo temporale tra eccitazione ed emissione è affidata a un'elettronica dedicata. Sia l'impulso laser sia il segnale del fotone rilevato passano attraverso un discriminatore a frazione costante (CFD, \textit{Constant Fraction Discriminator}), che ne individua con precisione l'istante di arrivo eliminando l'incertezza legata alle fluttuazioni di ampiezza degli impulsi. Successivamente, il primo segnale avvia un convertitore tempo-ampiezza (TAC, \textit{Time-to-Amplitude Converter}), il quale genera una rampa di tensione crescente linearmente nel tempo fino a quando non viene interrotta dall'arrivo del secondo segnale; la tensione finale risulta così direttamente proporzionale al ritardo tra i due eventi, e viene infine tradotta in un valore numerico da un convertitore analogico-digitale (ADC, \textit{Analog-to-Digital Converter}).
+
+Attualmente la maggior parte delle misure TCSPC viene effettuata in \textit{modalità inversa}: il segnale di emissione viene utilizzato per avviare il TAC, mentre l'impulso laser successivo lo arresta. Questa procedura è dovuta al tempo necessario al TAC per essere azzerato dopo ogni avvio: dato che nella maggior parte dei cicli non vengono rilevati fotoni, il TAC arriverebbe inutilmente a fine rampa a ogni impulso del laser. Utilizzare i rari eventi di emissione come segnale di \textit{start} permette dunque di attivare il TAC solo quando necessario, riducendo la probabilità di errore; il tempo di ritardo viene poi calcolato per differenza: $T_{\text{laser}}-t_{\text{segnale}}$ \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% $f_k = \frac{\alpha_k \tau_k}{\sum_j \alpha_j \tau_j}$
-% strumentopolo misterioso (peso dei fasori in funzione di fraz molare e tdv di ogni fluoroforo)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 \subsection{Interpolazione multi-esponenziale dei decadimenti} %OK
 

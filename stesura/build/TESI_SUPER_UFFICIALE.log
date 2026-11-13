@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  12 NOV 2026 20:27
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.10.2)  13 NOV 2026 03:33
  system commands enabled.
  file:line:error style messages enabled.
 **/home/aras/Documents/Tesi_2026/stesura/TESI_SUPER_UFFICIALE.tex
@@ -1486,23 +1486,25 @@ Package biblatex Info: Automatic encoding selection.
 \openout8 = TESI_SUPER_UFFICIALE.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'TESI_SUPER_UFFICIALE.bbl' found.
- (./build/TESI_SUPER_UFFICIALE.bbl)
+ (./TESI_SUPER_UFFICIALE.bbl)
 Package biblatex Info: Reference section=0 on input line 129.
 Package biblatex Info: Reference segment=0 on input line 129.
-<TESI_SUPER_UFFICIALE-frn.pdf, id=127, 597.50829pt x 845.04709pt>
+<TESI_SUPER_UFFICIALE-frn.pdf, id=143, 597.50829pt x 845.04709pt>
 File: TESI_SUPER_UFFICIALE-frn.pdf Graphic file (type pdf)
 <use TESI_SUPER_UFFICIALE-frn.pdf>
 Package luatex.def Info: TESI_SUPER_UFFICIALE-frn.pdf  used on input line 131.
 (luatex.def)             Requested size: 597.50682pt x 845.04503pt.
  [1
 
-<build/TESI_SUPER_UFFICIALE-frn.pdf>] [2] (./build/TESI_SUPER_UFFICIALE.toc)
+<build/TESI_SUPER_UFFICIALE-frn.pdf>] [2] (./build/TESI_SUPER_UFFICIALE.toc [3
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write10
 
 \openout10 = TESI_SUPER_UFFICIALE.toc
- [3
+ [4] (./sezioni/01_introduzione.tex
+Capitolo 1.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sezioni/01_introduzione.tex
 Overfull \hbox (4.9149pt too wide) in paragraph at lines 10--12
 []\TU/lmr/m/n/12 L’a-na-li-si FLIM tra-di-zio-na-le si ba-sa sul-l’in-ter-po-la-zio-ne espo-nen-zia-le o multi-esponenziale
  []
@@ -1510,50 +1512,74 @@ Overfull \hbox (4.9149pt too wide) in paragraph at lines 10--12
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4
+ [5
 
-]) (./sezioni/02_fondamenti_teorici.tex [5]
-Capitolo 1.
+]) (./sezioni/02_fondamenti_teorici.tex [6]
+Capitolo 2.
+<immagini/jablonski.png, id=260, 941.5175pt x 447.6725pt>
+File: immagini/jablonski.png Graphic file (type png)
+<use immagini/jablonski.png>
+Package luatex.def Info: immagini/jablonski.png  used on input line 7.
+(luatex.def)             Requested size: 227.62206pt x 108.22914pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6
+ [7
 
-] [7]
-Underfull \vbox (badness 6284) has occurred while \output is active []
+<./immagini/jablonski.png>] [8]
+<immagini/tcspc.png, id=291, 522.95375pt x 657.45625pt>
+File: immagini/tcspc.png Graphic file (type png)
+<use immagini/tcspc.png>
+Package luatex.def Info: immagini/tcspc.png  used on input line 45.
+(luatex.def)             Requested size: 204.85846pt x 257.55055pt.
+ [9<./immagini/tcspc.png>]
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
 
  []
 
-[10]
-<immagini/2_comp_example.pdf, id=304, 570.74794pt x 400.2558pt>
+
+Underfull \vbox (badness 2343) has occurred while \output is active []
+
+ [12]
+<immagini/2_comp_example.pdf, id=351, 570.74794pt x 400.2558pt>
 File: immagini/2_comp_example.pdf Graphic file (type pdf)
 <use immagini/2_comp_example.pdf>
-Package luatex.def Info: immagini/2_comp_example.pdf  used on input line 161.
+Package luatex.def Info: immagini/2_comp_example.pdf  used on input line 194.
 (luatex.def)             Requested size: 223.07211pt x 156.43504pt.
-<immagini/3_comp_example.pdf, id=305, 570.74794pt x 400.2558pt>
+<immagini/3_comp_example.pdf, id=352, 570.74794pt x 400.2558pt>
 File: immagini/3_comp_example.pdf Graphic file (type pdf)
 <use immagini/3_comp_example.pdf>
-Package luatex.def Info: immagini/3_comp_example.pdf  used on input line 167.
+Package luatex.def Info: immagini/3_comp_example.pdf  used on input line 200.
 (luatex.def)             Requested size: 223.07211pt x 156.43504pt.
- [11<./immagini/2_comp_example.pdf><./immagini/3_comp_example.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]) (./sezioni/03_sviluppo_del_modello.tex [13]
-Capitolo 2.
-<immagini/exp.pdf, id=433, 1003.92632pt x 353.87927pt>
+ [13]
+Underfull \vbox (badness 7981) has occurred while \output is active []
+
+ [14<./immagini/2_comp_example.pdf><./immagini/3_comp_example.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+[15]) (./sezioni/03_sviluppo_del_modello.tex [16]
+Capitolo 3.
+<immagini/exp.pdf, id=483, 1003.92632pt x 353.87927pt>
 File: immagini/exp.pdf Graphic file (type pdf)
 <use immagini/exp.pdf>
 Package luatex.def Info: immagini/exp.pdf  used on input line 19.
@@ -1561,7 +1587,7 @@ Package luatex.def Info: immagini/exp.pdf  used on input line 19.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14
+[17
 
 ]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
@@ -1569,35 +1595,35 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
 )
-<immagini/noise_none_example.pdf, id=446, 1003.92632pt x 353.87927pt>
+<immagini/noise_none_example.pdf, id=496, 1003.92632pt x 353.87927pt>
 File: immagini/noise_none_example.pdf Graphic file (type pdf)
 <use immagini/noise_none_example.pdf>
 Package luatex.def Info: immagini/noise_none_example.pdf  used on input line 77.
 (luatex.def)             Requested size: 455.24411pt x 160.46994pt.
-<immagini/noise_10_example.pdf, id=447, 1003.92632pt x 353.87927pt>
+<immagini/noise_10_example.pdf, id=497, 1003.92632pt x 353.87927pt>
 File: immagini/noise_10_example.pdf Graphic file (type pdf)
 <use immagini/noise_10_example.pdf>
 Package luatex.def Info: immagini/noise_10_example.pdf  used on input line 84.
 (luatex.def)             Requested size: 455.24411pt x 160.46994pt.
-<immagini/noise_20_example.pdf, id=448, 1003.92632pt x 353.87927pt>
+<immagini/noise_20_example.pdf, id=498, 1003.92632pt x 353.87927pt>
 File: immagini/noise_20_example.pdf Graphic file (type pdf)
 <use immagini/noise_20_example.pdf>
 Package luatex.def Info: immagini/noise_20_example.pdf  used on input line 91.
 (luatex.def)             Requested size: 455.24411pt x 160.46994pt.
- [15<./immagini/exp.pdf>]
+ [18<./immagini/exp.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16<./immagini/noise_none_example.pdf><./immagini/noise_10_example.pdf><./immagini/noise_20_example.pdf>]
+ [19<./immagini/noise_none_example.pdf><./immagini/noise_10_example.pdf><./immagini/noise_20_example.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-<immagini/double_exponential_phasor.pdf, id=746, 570.75359pt x 400.24889pt>
+<immagini/double_exponential_phasor.pdf, id=795, 570.75359pt x 400.24889pt>
 File: immagini/double_exponential_phasor.pdf Graphic file (type pdf)
 <use immagini/double_exponential_phasor.pdf>
 Package luatex.def Info: immagini/double_exponential_phasor.pdf  used on input line 126.
 (luatex.def)             Requested size: 318.66948pt x 223.47215pt.
-<immagini/three_exponential_phasor.pdf, id=747, 570.75359pt x 400.24889pt>
+<immagini/three_exponential_phasor.pdf, id=796, 570.75359pt x 400.24889pt>
 File: immagini/three_exponential_phasor.pdf Graphic file (type pdf)
 <use immagini/three_exponential_phasor.pdf>
 Package luatex.def Info: immagini/three_exponential_phasor.pdf  used on input line 135.
@@ -1610,13 +1636,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[17]
+[20]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/311D747E223205166D9159423FC0119F1350B347DE913863EA7F5725E6FE860F.pygtex)
 Overfull \vbox (18.22047pt too high) detected at line 167
  []
 
-[18<./immagini/double_exponential_phasor.pdf><./immagini/three_exponential_phasor.pdf>]
+[21<./immagini/double_exponential_phasor.pdf><./immagini/three_exponential_phasor.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1628,10 +1654,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [22]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/901EF6567AD0B31970F3313B49BA2F7D1350B347DE913863EA7F5725E6FE860F.pygtex)
-<immagini/IRF_single.pdf, id=862, 859.36871pt x 426.14928pt>
+<immagini/IRF_single.pdf, id=912, 859.36871pt x 426.14928pt>
 File: immagini/IRF_single.pdf Graphic file (type pdf)
 <use immagini/IRF_single.pdf>
 Package luatex.def Info: immagini/IRF_single.pdf  used on input line 249.
@@ -1640,13 +1666,13 @@ Package luatex.def Info: immagini/IRF_single.pdf  used on input line 249.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20]
+[23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21<./immagini/IRF_single.pdf>]
+ [24<./immagini/IRF_single.pdf>]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/C254712A83E7DA63361E03AA8FC1D6431350B347DE913863EA7F5725E6FE860F.pygtex)
-<immagini/IRF_single_ph.pdf, id=948, 570.75359pt x 400.24889pt>
+<immagini/IRF_single_ph.pdf, id=998, 570.75359pt x 400.24889pt>
 File: immagini/IRF_single_ph.pdf Graphic file (type pdf)
 <use immagini/IRF_single_ph.pdf>
 Package luatex.def Info: immagini/IRF_single_ph.pdf  used on input line 291.
@@ -1655,8 +1681,8 @@ Package luatex.def Info: immagini/IRF_single_ph.pdf  used on input line 291.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22]
-<immagini/IRF_three_ph.pdf, id=962, 570.75359pt x 400.24889pt>
+[25]
+<immagini/IRF_three_ph.pdf, id=1011, 570.75359pt x 400.24889pt>
 File: immagini/IRF_three_ph.pdf Graphic file (type pdf)
 <use immagini/IRF_three_ph.pdf>
 Package luatex.def Info: immagini/IRF_three_ph.pdf  used on input line 311.
@@ -1665,14 +1691,20 @@ Package luatex.def Info: immagini/IRF_three_ph.pdf  used on input line 311.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./sezioni/04_test_su_immagini.tex [23<./immagini/IRF_single_ph.pdf><./immagini/IRF_three_ph.pdf>] [24]
-Capitolo 3.
-<immagini/flat_embryo3.png, id=1064, 380.1402pt x 302.0886pt>
+) (./sezioni/04_test_su_immagini.tex [26<./immagini/IRF_single_ph.pdf><./immagini/IRF_three_ph.pdf>] [27]
+Capitolo 4.
+
+LaTeX Warning: Citation 'gottliebFLUTEPythonGUI2023a' on page 28 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'hoyerXarrayNDLabeled2017' on page 28 undefined on input line 9.
+
+<immagini/flat_embryo3.png, id=1112, 380.1402pt x 302.0886pt>
 File: immagini/flat_embryo3.png Graphic file (type png)
 <use immagini/flat_embryo3.png>
 Package luatex.def Info: immagini/flat_embryo3.png  used on input line 15.
 (luatex.def)             Requested size: 218.51521pt x 173.65349pt.
-<immagini/flat_embryo5.png, id=1065, 386.6445pt x 302.0886pt>
+<immagini/flat_embryo5.png, id=1113, 386.6445pt x 302.0886pt>
 File: immagini/flat_embryo5.png Graphic file (type png)
 <use immagini/flat_embryo5.png>
 Package luatex.def Info: immagini/flat_embryo5.png  used on input line 22.
@@ -1680,86 +1712,142 @@ Package luatex.def Info: immagini/flat_embryo5.png  used on input line 22.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28
 
 ]
-<immagini/phasor_comparison.pdf, id=1079, 570.75359pt x 400.24889pt>
+
+LaTeX Warning: Citation 'gottliebFLUTEPythonGUI2023a' on page 29 undefined on input line 52.
+
+
+LaTeX Warning: Citation 'gottliebFLUTEPythonGUI2023a' on page 29 undefined on input line 53.
+
+<immagini/phasor_comparison.pdf, id=1121, 570.75359pt x 400.24889pt>
 File: immagini/phasor_comparison.pdf Graphic file (type pdf)
 <use immagini/phasor_comparison.pdf>
 Package luatex.def Info: immagini/phasor_comparison.pdf  used on input line 75.
 (luatex.def)             Requested size: 341.43307pt x 239.43053pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26<./immagini/flat_embryo3.png><./immagini/flat_embryo5.png>]
+[29<./immagini/flat_embryo3.png><./immagini/flat_embryo5.png>]
+
+LaTeX Warning: Citation 'christophgohlkePhasorpyPhasorpyV0122026' on page 30 undefined on input line 96.
+
+
 Overfull \hbox (8.62871pt too wide) in paragraph at lines 95--98
 \TU/lmr/m/n/12 sta-to ap-pli-ca-to al-l’im-ma-gi-ne un fil-tro me-dian, me-dian-te \TU/lmtt/m/n/12 phasorpy.phasor_filter_median\TU/lmr/m/n/12 ,
  []
+
+
+Overfull \hbox (11.18132pt too wide) in paragraph at lines 95--98
+\TU/lmr/m/n/12 fun-zio-ne im-por-ta-ta da \TU/lmr/m/it/12 Pha-sor-Py \TU/lmr/m/n/12 [[]]. Que-
+ []
+
+[30<./immagini/phasor_comparison.pdf>]
+
+LaTeX Warning: Citation 'christophgohlkePhasorpyPhasorpyV0122026' on page 31 undefined on input line 99.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[27<./immagini/phasor_comparison.pdf>]
-<immagini/phasor_comparison_median.pdf, id=1131, 570.75359pt x 400.24889pt>
+<immagini/phasor_comparison_median.pdf, id=1169, 570.75359pt x 400.24889pt>
 File: immagini/phasor_comparison_median.pdf Graphic file (type pdf)
 <use immagini/phasor_comparison_median.pdf>
 Package luatex.def Info: immagini/phasor_comparison_median.pdf  used on input line 103.
 (luatex.def)             Requested size: 341.43307pt x 239.43053pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28<./immagini/phasor_comparison_median.pdf>]
-<immagini/ROI_phasor_embryo3.pdf, id=1176, 570.75359pt x 400.24889pt>
+[31<./immagini/phasor_comparison_median.pdf>]
+<immagini/ROI_phasor_embryo3.pdf, id=1214, 570.75359pt x 400.24889pt>
 File: immagini/ROI_phasor_embryo3.pdf Graphic file (type pdf)
 <use immagini/ROI_phasor_embryo3.pdf>
 Package luatex.def Info: immagini/ROI_phasor_embryo3.pdf  used on input line 132.
 (luatex.def)             Requested size: 341.43307pt x 239.43053pt.
- [29<./immagini/ROI_phasor_embryo3.pdf>]
+ [32<./immagini/ROI_phasor_embryo3.pdf>]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- (./build/_minted-TESI_SUPER_UFFICIALE/C3313C0CE1E8A4938407FE47E90C05FD1350B347DE913863EA7F5725E6FE860F.pygtex)
-Underfull \vbox (badness 1472) has occurred while \output is active []
+ (./build/_minted-TESI_SUPER_UFFICIALE/C3313C0CE1E8A4938407FE47E90C05FD1350B347DE913863EA7F5725E6FE860F.pygtex) [33]
 
- [30] [31]
-<immagini/embryo5_IRF.pdf, id=1244, 570.75359pt x 400.24889pt>
+LaTeX Warning: Citation 'christophgohlkePhasorpyPhasorpyV0122026' on page 34 undefined on input line 199.
+
+
+LaTeX Warning: Citation 'thepandasdevelopmentteamPandasdevPandasPandas2026' on page 34 undefined on input line 201.
+
+
+Overfull \hbox (152.03198pt too wide) in paragraph at lines 201--204
+\TU/lmr/m/n/12 rag-grup-pa-te in un uni-co \TU/lmr/m/it/12 da-ta-fra-me \TU/lmr/m/n/12 di \TU/lmr/m/it/12 Pan-das \TU/lmr/m/n/12 [[]];
+ []
+
+
+LaTeX Warning: Citation 'claytonGraphicalRepresentationMulticomponent2004' on page 34 undefined on input line 215.
+
+
+LaTeX Warning: Citation 'claytonGraphicalRepresentationMulticomponent2004' on page 34 undefined on input line 216.
+
+
+Overfull \hbox (13.15996pt too wide) in paragraph at lines 215--218
+\TU/lmr/m/n/12 pre-va-len-za di due so-le spe-cie [[]]. 
+ []
+
+
+Overfull \hbox (133.98804pt too wide) in paragraph at lines 215--218
+\TU/lmr/m/n/12 ne li-nea-re e in-ter-se-zio-ne con il se-mi-cer-chio uni-ver-sa-le [[]]. 
+ []
+
+[34]
+
+LaTeX Warning: Citation 'gottliebFLUTEPythonGUI2023a' on page 35 undefined on input line 237.
+
+
+LaTeX Warning: Citation 'campagnolaSecondharmonicImagingMicroscopy2003' on page 35 undefined on input line 239.
+
+<immagini/embryo5_IRF.pdf, id=1273, 570.75359pt x 400.24889pt>
 File: immagini/embryo5_IRF.pdf Graphic file (type pdf)
 <use immagini/embryo5_IRF.pdf>
 Package luatex.def Info: immagini/embryo5_IRF.pdf  used on input line 245.
 (luatex.def)             Requested size: 341.43307pt x 239.43053pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/red_green_yellow.pdf, id=1246, 570.75359pt x 400.24889pt>
+
+LaTeX Warning: Citation 'claytonGraphicalRepresentationMulticomponent2004' on page 35 undefined on input line 258.
+
+
+Overfull \hbox (224.70007pt too wide) in paragraph at lines 257--260
+\TU/lmr/m/n/12 la pre-sen-za di al-tre mo-le-co-le che pro-du-co-no au-to-fluo-re-scen-za en-do-ge-na [[]]. 
+ []
+
+[35]
+<immagini/red_green_yellow.pdf, id=1281, 570.75359pt x 400.24889pt>
 File: immagini/red_green_yellow.pdf Graphic file (type pdf)
 <use immagini/red_green_yellow.pdf>
 Package luatex.def Info: immagini/red_green_yellow.pdf  used on input line 265.
 (luatex.def)             Requested size: 341.43307pt x 239.43053pt.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/ROI1_and_ROI2.pdf, id=1247, 614.295pt x 794.97pt>
+<immagini/ROI1_and_ROI2.pdf, id=1282, 614.295pt x 794.97pt>
 File: immagini/ROI1_and_ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI1_and_ROI2.pdf>
 Package luatex.def Info: immagini/ROI1_and_ROI2.pdf  used on input line 278.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI1.pdf, id=1248, 614.295pt x 794.97pt>
+<immagini/ROI1.pdf, id=1283, 614.295pt x 794.97pt>
 File: immagini/ROI1.pdf Graphic file (type pdf)
 <use immagini/ROI1.pdf>
 Package luatex.def Info: immagini/ROI1.pdf  used on input line 286.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-<immagini/ROI2.pdf, id=1249, 614.295pt x 794.97pt>
+<immagini/ROI2.pdf, id=1284, 614.295pt x 794.97pt>
 File: immagini/ROI2.pdf Graphic file (type pdf)
 <use immagini/ROI2.pdf>
 Package luatex.def Info: immagini/ROI2.pdf  used on input line 293.
 (luatex.def)             Requested size: 223.07211pt x 288.67567pt.
-[32]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/resadeiconti.pdf, id=1259, 570.75359pt x 400.24889pt>
+<immagini/resadeiconti.pdf, id=1286, 570.75359pt x 400.24889pt>
 File: immagini/resadeiconti.pdf Graphic file (type pdf)
 <use immagini/resadeiconti.pdf>
 Package luatex.def Info: immagini/resadeiconti.pdf  used on input line 306.
@@ -1772,33 +1860,37 @@ Overfull \hbox (1.82281pt too wide) in paragraph at lines 317--319
 \TU/lmr/m/n/12 Quest’ipotesi è av-va-lo-ra-ta dal fat-to che la lun-ghez-za d’on-da di ec-ci-ta-zio-ne ($\OML/cmm/m/it/12 [] \OT1/cmr/m/n/12 = 1100 []$\TU/lmr/m/n/12 )
  []
 
-[33<./immagini/embryo5_IRF.pdf><./immagini/red_green_yellow.pdf>]
+
+Underfull \vbox (badness 1199) has occurred while \output is active []
+
+ [36<./immagini/embryo5_IRF.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35<./immagini/resadeiconti.pdf>]
+ [37<./immagini/red_green_yellow.pdf>] [38<./immagini/ROI1_and_ROI2.pdf><./immagini/ROI1.pdf><./immagini/ROI2.pdf>]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
  (./build/_minted-TESI_SUPER_UFFICIALE/7746343DB43773F6612BB508C2CFEC831350B347DE913863EA7F5725E6FE860F.pygtex)
-Underfull \vbox (badness 1648) detected at line 395
+Overfull \vbox (1.22523pt too high) detected at line 395
  []
 
-[36]
+[39<./immagini/resadeiconti.pdf>]
 Overfull \hbox (21.87888pt too wide) in paragraph at lines 447--449
-\TU/lmr/m/n/12 Si può os-ser-va-re dal-la ta-bel-la [][]3.1[][] che l’el-lit-ti-ci-tà del-le spe-cie a emis-sio-ne ver-de ($\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0890\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0168 \OMS/cmsy/m/n/12 
+\TU/lmr/m/n/12 Si può os-ser-va-re dal-la ta-bel-la [][]4.1[][] che l’el-lit-ti-ci-tà del-le spe-cie a emis-sio-ne ver-de ($\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0890\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0168 \OMS/cmsy/m/n/12 
  []
 
 Missing character: There is no ° (U+00B0) in font cmr12!
 Missing character: There is no ° (U+00B0) in font cmr12!
 
-Underfull \vbox (badness 2213) has occurred while \output is active []
+Underfull \vbox (badness 2221) has occurred while \output is active []
 
- [37]
+ [40]
 \openout6 = TESI_SUPER_UFFICIALE.pyg
- (./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex)) (./sezioni/05_conclusioni.tex [38]
-Capitolo 4.
-<immagini/panel1.png, id=1513, 1827.82875pt x 903.375pt>
+ (./build/_minted-TESI_SUPER_UFFICIALE/1F1BFE4A7863AD9252E04280D45E7A8C1350B347DE913863EA7F5725E6FE860F.pygtex)) (./sezioni/05_conclusioni.tex [41]
+Capitolo 5.
+<immagini/panel1.png, id=1541, 1827.82875pt x 903.375pt>
 File: immagini/panel1.png Graphic file (type png)
 <use immagini/panel1.png>
 Package luatex.def Info: immagini/panel1.png  used on input line 14.
@@ -1806,7 +1898,7 @@ Package luatex.def Info: immagini/panel1.png  used on input line 14.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<immagini/panel2.png, id=1515, 1672.2475pt x 864.22874pt>
+<immagini/panel2.png, id=1543, 1672.2475pt x 864.22874pt>
 File: immagini/panel2.png Graphic file (type png)
 <use immagini/panel2.png>
 Package luatex.def Info: immagini/panel2.png  used on input line 24.
@@ -1814,44 +1906,55 @@ Package luatex.def Info: immagini/panel2.png  used on input line 24.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39
-
-] [40<./immagini/panel1.png><./immagini/panel2.png>]) [41
-
-]
-Overfull \hbox (13.79941pt too wide) in paragraph at lines 174--174
-\TU/lmtt/m/n/12 13 / issue - 02 / 029901 / Book - Review - Principles - of - Fluorescence - Spectroscopy -
- []
-
 [42
 
-] [43] (./build/TESI_SUPER_UFFICIALE.aux)
+] [43<./immagini/panel1.png><./immagini/panel2.png>]
+Capitolo 6.
+) [44
+
+]
+Overfull \hbox (9.13615pt too wide) in paragraph at lines 174--174
+\TU/lmr/m/n/12 3668, 1560-2281. \TU/lmr/m/sc/12 doi\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 10 . 1117 / 1 . 2904580$[][]\TU/lmr/m/n/12 . \TU/lmr/m/sc/12 url\TU/lmr/m/n/12 : [][]$\TU/lmtt/m/n/12 https : / / www . spiedigitallibrary .
+ []
+
+[45
+
+] [46] (./build/TESI_SUPER_UFFICIALE.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `TESI_SUPER_UFFICIALE.out' has not changed.
-(rerunfilecheck)             Checksum: DA3675C844918E92E3B9C7394D01EAA8;7268.
+(rerunfilecheck)             Checksum: C9F9084E3096AF11CF1F4FF46D60D954;7827.
 runsystem(rm build//TESI_SUPER_UFFICIALE.pyg)...executed.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                TESI_SUPER_UFFICIALE
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'TESI_SUPER_UFFICIALE.run.xml'.
 
 \openout1 = TESI_SUPER_UFFICIALE.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 53863 strings out of 476553
+ 53850 strings out of 476553
  125081,2373549 words of node,token memory allocated
- 1005 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 101 attribute, 77 glue_spec, 52 attribute_list, 2 write, 17 pdf_action nodes
-   avail lists: 2:2699,3:538,4:277,5:388,6:98,7:8304,8:187,9:755,10:35,11:1252,12:2
- 74350 multiletter control sequences out of 65536+600000
- 68 fonts using 6266439 bytes
- 105i,15n,115p,2599b,1933s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on TESI_SUPER_UFFICIALE.pdf (43 pages, 2904792 bytes).
+ 909 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 85 attribute, 77 glue_spec, 44 attribute_list, 2 write, 9 pdf_action nodes
+   avail lists: 1:1,2:2765,3:421,4:261,5:390,6:103,7:7539,8:187,9:784,10:49,11:1207,12:2
+ 74330 multiletter control sequences out of 65536+600000
+ 67 fonts using 6134751 bytes
+ 105i,15n,115p,2177b,2094s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on TESI_SUPER_UFFICIALE.pdf (46 pages, 3144450 bytes).
 
-PDF statistics: 1750 PDF objects out of 2073 (max. 8388607)
- 1226 compressed objects within 13 object streams
- 125 named destinations out of 1000 (max. 131072)
- 256 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1754 PDF objects out of 2073 (max. 8388607)
+ 1221 compressed objects within 13 object streams
+ 126 named destinations out of 1000 (max. 131072)
+ 288 words of extra memory for PDF output out of 10000 (max. 100000000)
 
