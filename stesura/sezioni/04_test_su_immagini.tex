@@ -68,7 +68,7 @@ Inoltre, va specificato che il fluoroforo utilizzato per la calibrazione deve av
 
 
 
-Operativamente, il fasore legato alla legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluoresceina ($\tau = 4\,\mathrm{ns}$) utilizzando la funzione \texttt{extract\_irf}. La funzione somma i decadimenti contenuti nei singoli pixel (per massimizzare il segnale) e calcola il fasore associato al segnale totale; parallelamente ricava le coordinate del del fasore sul semicerchio universale associato per un decadimento mono-esponenziale puro a $\tau$ noto. Le coordinate di quest'ultimo vengono ricavate utilizzando le formule \ref{eq:S_G_freq_domain}.\\
+Operativamente, il fasore legato alla \textit{IRF} è stato estratto dal file di calibrazione con fluoresceina ($\tau = 4\,\mathrm{ns}$) utilizzando la funzione \texttt{extract\_irf}. La funzione somma i decadimenti contenuti nei singoli pixel (per massimizzare il segnale) e calcola il fasore associato al segnale totale; parallelamente ricava le coordinate del fasore sul semicerchio universale associato a un decadimento mono-esponenziale puro a $\tau$ noto. Le coordinate di quest'ultimo vengono ricavate utilizzando le formule \ref{eq:S_G_freq_domain}.\\
 Infine, viene eseguita una deconvoluzione come divisione sul piano complesso tra il fasore del segnale totale e quello relativo all'esponenziale puro (come descritto nella sezione \ref{sec:deconvoluzione}): si estrae così il fasore della IRF.
 \begin{figure}[h!]
     \centering
@@ -445,7 +445,7 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
 Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.
 
 L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse maggiore dell'ellisse; può essere utilizzato per calcolare l'inclinazione di questa rispetto alle coordinate $(G, S)$: $\theta = \arctan(v_S / v_G)$, dove $v_S$ e $v_G$ sono le proiezioni di $v_1$ sulle coordinate cartesiane.\\
-È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale segnale di \textit{SHG}.
+È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale di \textit{SHG}.
 %_________________________________________________________________________
 
 

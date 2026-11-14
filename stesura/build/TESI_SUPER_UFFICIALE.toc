@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.2.3}Rappresentazione di decadimenti multi-esponenziali}{13}{subsection.2.2.3}%
 \contentsline {paragraph}{Miscele a due componenti}{13}{equation.2.2.6}%
 \contentsline {paragraph}{Miscele a tre componenti}{13}{equation.2.2.7}%
-\contentsline {section}{\numberline {2.3}Funzione di risposta strumentale}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Funzione di risposta strumentale}{13}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Convoluzione tra IRF e segnale di fluorescenza}{15}{subsection.2.3.1}%
 \contentsline {paragraph}{Osservazioni sull'implementazione}{15}{equation.2.3.9}%
 \contentsline {chapter}{\numberline {3}Simulazione di segnali}{17}{chapter.3}%
