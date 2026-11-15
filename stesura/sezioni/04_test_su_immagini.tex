@@ -6,7 +6,7 @@ Per lo scopo sono state studiate due immagini estratte da un articolo del proget
 
 Il primo \textit{dataset} contiene, oltre all'immagine del campione, un file di calibrazione con fluoroforo a tempo di vita noto (fluoresceina, $\tau = 4\,\mathrm{ns}$).\\
 La seconda immagine invece è corredata, oltre che da un file di calibrazione con amido ($\tau = 0\,\mathrm{ns}$), anche da due rilevazioni ottenute attraverso un filtro rosso ($\lambda = 607\,\mathrm{nm}$) e uno verde ($\lambda = 550\,\mathrm{nm}$), che catturano i decadimenti di fluorescenza di specie fluorofore diverse.\\
-Ogni immagine è esportata come file \textit{tiff}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione, i dati sono stati organizzati all'interno di una struttura \textit{xarray} \cite{hoyerXarrayNDLabeled2017} tridimensionale, indicizzata dalle dimensioni \texttt{time}, \texttt{x} e \texttt{y}.
+Ogni immagine è esportata come file \textit{tiff}, e riporta il numero di fotoni emessi da ciascun pixel in funzione del tempo. Per l'elaborazione, i dati sono stati organizzati all'interno di una struttura \textit{xarray} tridimensionale, indicizzata dalle dimensioni \texttt{time}, \texttt{x} e \texttt{y}.
 \begin{figure}[h!]
     \centering
 
@@ -73,7 +73,7 @@ Infine, viene eseguita una deconvoluzione come divisione sul piano complesso tra
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\textwidth]{immagini/phasor_comparison.pdf}
-    \caption{Rappresentazione sul piano dei fasori della nuvola di dati grezza originale, e di quella deconvoluta. All'interno di ogni nuvola è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
+    \caption{Rappresentazione sul piano dei fasori del cluster di dati grezzi originale, e di quella deconvoluta. All'interno di ogni cluster è evidenziato il fasore medio, con le sue barre d'errore (deviazione standard della media). Ulteriori delucidazioni sulla valutazione delle incertezze verranno fornite in una sezione successiva.}
     \label{fig:embryo3_IRF}
 \end{figure}
 %____________________________
@@ -81,11 +81,9 @@ Infine, viene eseguita una deconvoluzione come divisione sul piano complesso tra
 \subsubsection{Osservazioni}
 
 Osservando la rappresentazione dei dati grezzi sul piano dei fasori, è possibile fare alcune valutazioni.\\
-Un primo successo è sicuramente la posizione della cluster interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.
+Un primo successo è sicuramente la posizione del cluster interamente all'interno del semicerchio universale, relativamente lontana dal bordo. Ciò significa che a seguito della deconvoluzione con la \textit{IRF} sono stati correttamente individuati dei decadimenti di intensità multi-esponenziali per i singoli pixel.
 
-Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi particolarmente significativa, sia per l'alta varianza sulla posizione (correlata a un'alta varianza nel rapporto di concentrazione dei fluorofori nei vari punti del campione), sia per l'incidenza di rumore.
-
-In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.
+Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi particolarmente significativa, sia per l'alta varianza sulla posizione (correlata a un'alta varianza nel rapporto di concentrazione dei fluorofori nei vari punti del campione), sia per l'incidenza di rumore. In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare a questi problemi.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,10 +91,10 @@ In questa sezione vengono presentate le soluzioni che si sono scelte per ovviare
 \subsection{Filtro \textit{"median"} sul piano dei fasori}
 
 Raccolte dati con un numero ridotto di fotoni per acquisizione sono più soggette a una tipologia di errore statistico detto "\textit{shot noise}", un rumore Poissoniano dovuto alla natura discreta dei fotoni.\\
-Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi. Per ridurre la dispersione spaziale dei fasori, è stato applicato all'immagine un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, funzione importata da \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}. Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel, la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.
+Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi. Per ridurre la dispersione spaziale dei fasori, è stato applicato all'immagine un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, funzione importata da \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}. Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.
 % \cite{Davide :)}.% grazie Davide
 
-La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, i pixel vuoti vengono ignorati per il calcolo della mediana per evitare di "affievolire" artificiosamente il segnale sui bordi dell'immagine o di una struttura del campione. Tuttavia vengono preservati come \texttt{NaN} (\textit{Not a Number}, ovvero pixel privi di conteggi validi) i pixel che erano precedentemente stati considerati vuoti. In questo modo, non vengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti \cite{christophgohlkePhasorpyPhasorpyV0122026}.\\
+La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, i pixel vuoti vengono ignorati per il calcolo della mediana per evitare di "affievolire" artificiosamente il segnale sui bordi dell'immagine o di una struttura del campione. Tuttavia vengono preservati come \texttt{NaN} (\textit{Not a Number}, ovvero pixel privi di conteggi validi) i pixel che erano precedentemente stati considerati vuoti. In questo modo, non vengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti \cite{christophgohlkePhasorpyPhasorpyV0122026}.
 
 \begin{figure}[h!]
     \centering
@@ -106,7 +104,7 @@ La funzione è definita \textit{NaN-aware}: per un pixel con intensità non null
     \label{fig:phasor_comparison_median}
 \end{figure}
 
-
+\vspace{-10pt}
 È opportuno precisare le ragioni per cui il filtro median spaziale sulle matrici $(G, S)$ rappresenta uno standard nell'analisi fasoriale, sostituendo filtri di \textit{smoothing} sull'immagine, i quali agiscono tramite una maschera mobile che scorre sull'immagine e assegna al pixel centrale la media dei decadimenti adiacenti.
 
 Un filtro a media mobile, scorrendo sul confine tra due regioni con decadimenti a tempi di vita diversi, assegnerebbe ai pixel intermedi segnali fittizi, ottenuti mescolando artificialmente due segnali reali differenti.\\
@@ -144,7 +142,7 @@ Si è scelto di non limitare mai la selezione a un singolo punto, ma di permette
 La selezione della regione di interesse (ROI) è uno strumento la cui utilità dipende fortemente dalla scelta del centro e dell'ampiezza dell'area che si decide di studiare. Vengono di seguito elencati alcuni accorgimenti necessari per una buona selezione:
 \begin{itemize}
     \item È consigliato scegliere una regione del campione che riporti un'intensità di emissione sufficiente; infatti, \textit{pixel} contenenti pochi fotoni saranno più soggetti a errori strumentali o legati al rumore statistico.
-    \item Inoltre, è preferibile non selezionare aree sovrapposte a due o più sezioni del campione. \textit{Pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti alla stessa struttura biologica.
+    \item È preferibile non selezionare aree sovrapposte a due o più sezioni del campione: \textit{pixel} spazialmente ravvicinati nell'acquisizione possono essere associati a fasori di decadimento anche molto diversi tra loro; la loro media e varianza hanno significato statistico solo se appartengono tutti alla stessa struttura biologica.
 \end{itemize}
 
 
@@ -196,9 +194,9 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
     \item Per prima cosa, viene calcolato il valore di soglia, ovvero il numero di fotoni minimo perché un pixel venga utilizzato per il calcolo dei fasori, invece che sostituito da \texttt{NaN}. Ciò avviene moltiplicando la percentuale di soglia al conteggio massimo tra i pixel della ROI.
     Il parametro \texttt{skipna} permette di ignorare i pixel completamente vuoti, riducendo i tempi di elaborazione.
     
-    \item In seguito si utilizza la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati filtrati via nel passaggio precedente.
+    \item In seguito si utilizza la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati esclusi nel passaggio precedente.
     
-    \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas} \cite{thepandasdevelopmentteamPandasdevPandasPandas2026}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
+    \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
     Il comando \texttt{.ravel} invece trasforma le matrici bi-dimensionali in un array sequenziale, facendo perdere definitivamente il collegamento tra matrici delle coordinate fasoriali e posizione spaziale dei pixel.\\
     Quest'ultimo passaggio è il motivo per il quale l'eliminazione dei valori sotto soglia deve essere eseguita come ultima operazione.
 \end{itemize}  % sistemare l'italiano? boh
@@ -212,8 +210,7 @@ Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel c
 \subsection{Osservazioni finali sull'immagine 1}
 
 % nella sezione teorica, spiegare tutto citando \cite{claytonGraphicalRepresentationMulticomponent2004}.
-Osservando la distribuzione dei fasori ottenuta per l'immagine 1 (Figura \ref{fig:embryo3_ROI}), si nota come il cluster appaia raccolto, distribuito in modo apparentemente. Questo comportamento suggerisce la presenza di molteplici processi di fluorescenza endogena, piuttosto che di una prevalenza di due sole specie \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
-Non risulta dunque fisicamente possibile effettuare una scomposizione in fluorofori puri non noti tramite metodi geometrici, ad esempio un estrazione dei $\tau$ mediante interpolazione lineare e intersezione con il semicerchio universale \cite{claytonGraphicalRepresentationMulticomponent2004}.
+Osservando la distribuzione dei fasori ottenuta per l'immagine 1 (Figura \ref{fig:embryo3_ROI}), si nota come il cluster appaia raccolto, distribuito in modo sostanzialmente omogeneo. Questo comportamento suggerisce la presenza di molteplici processi di fluorescenza endogena, piuttosto che di una prevalenza di due sole specie. Non è dunque possibile effettuare una scomposizione in fluorofori puri non noti tramite metodi geometrici, ad esempio un estrazione dei $\tau$ mediante interpolazione lineare e intersezione con il semicerchio universale \cite{claytonGraphicalRepresentationMulticomponent2004}.
 %  Per questo motivo, non è possibile utilizzare il metodo di estrazione delle coordinate fasoriali del fluorofori puri riportato nella sezione teorica.
 
 
@@ -234,17 +231,17 @@ Inoltre, la presenza di due acquisizioni aggiuntive ottenute tramite filtri di e
 
 Il file di calibrazione con amido, associato alla seconda immagine, è stato sottoposto allo stesso processo di estrazione della IRF utilizzato per la calibrazione della prima immagine.
 
-Come risulterà evidente in seguito, osservando la dispersione della nuvola di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.
+Come risulterà evidente in seguito, osservando la dispersione del cluster di decadimenti nel piano dei fasori, uno o più fluorofori presenti nel campione mostrano un tempo di vita di fluorescenza uguale o inferiore a 1 ns. Questo giustifica la scelta dell'amido per la calibrazione \cite{gottliebFLUTEPythonGUI2023a}.
 
 Occorre precisare che sebbene l'amido non sia considerato un cromoforo, è comunque in grado di produrre un segnale ottico di scattering non lineare detto "generazione di seconda armonica" o SHG, un processo che vede la conversione di due fotoni incidenti di lunghezza d'onda nel vicino infrarosso in un fotone uscente di luce visibile \cite{campagnolaSecondharmonicImagingMicroscopy2003}.\\
-L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro studio paragonandolo a un'emissione di fluorescenza con tempo di vita $\tau=0\,\text{ns}$.
+L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo in questo studio paragonandolo a un'emissione di fluorescenza con tempo di vita $\tau=0\,\text{ns}$.
 
     
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\linewidth]{immagini/embryo5_IRF.pdf} 
 %    \vspace{-7cm}
-    \caption{Rappresentazione sul piano dei fasori dei cluster di fasori relative al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median ($\texttt{repeat}=2$).}
+    \caption{Rappresentazione sul piano dei fasori dei cluster di fasori relativi al segnale originale dell'immagine 2 (azzurro), e a quello deconvoluto dalla IRF (giallo) rispettivamente. Entrambe le nuvole sono state rappresentate dopo l'applicazione del filtro median ($\texttt{repeat}=2$).}
     \label{fig:embryo5_IRF}
 \end{figure}
 
@@ -254,10 +251,9 @@ L'evento è virtualmente istantaneo, dunque è possibile utilizzarlo nel nostro 
 \subsection{Confronto tra il rapporto di fluorofori in regioni distinte}
 \label{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}
 
-La forma allungata della nuvola di dati deconvoluta può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentrazione diverso nelle varie regioni del campione.\\
-Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.\\
-Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.
-
+La forma allungata del cluster di dati deconvoluto può essere ricondotta al caso di decadimento di fluorescenza bi-esponenziale, ovvero provocato dalla coesistenza di due fluorofori in rapporto di concentrazione diverso nelle varie regioni del campione.\\
+Tuttavia, l'embrione non è un ambiente otticamente pulito: l'ambiente biologico favorisce la presenza di altre molecole che producono autofluorescenza endogena \cite{claytonGraphicalRepresentationMulticomponent2004}.
+Per questo motivo, nemmeno in questo caso è fisicamente rilevante ricavare due tempi di vita di due sostanze mediante interpolazione dei fasori e intersezione con il semicerchio universale.\\
 Se però si suppone che ad emettere fluorescenza nel rosso e nel verde siano due diverse famiglie di fluorofori, è possibile effettuare uno studio del rapporto di concentrazione nei vari punti del campione.
 \begin{figure}[h!]
     \centering
@@ -318,18 +314,17 @@ Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\
 % %schifo, elaborare
 % già scritto prima non serve ripetere
 
-La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro delle nuvola dei fasori.\\
+La nuvola di fasori "verdi" risulta particolarmente estesa: probabilmente il segnale è dominato dalla generazione di seconda armonica, tuttavia è possibile che esistano altri fenomeni di fluorescenza endogena all'interno della cellula che emettono alla stessa lunghezza d'onda, e che contribuiscono a spostare il centro del cluster dei fasori.\\
 Al contrario, è probabile che l'acquisizione con filtro rosso catturi un singolo processo di fluorescenza, o più fenomeni a tempo di vita simile. Ciò si evince dalla forma isotropa della distribuzione di fasori.
 
-Nonostante questa differenza, è stata considerata media e deviazione standard di nuvola rossa e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione \ref{sec:errore_statistico_sui_fasori}). % schifo? più che altro non sono sicura che questa roba sia tutta giusta e di aver usato il linguaggio corretto
-
+Nonostante questa differenza, sono state considerate media e deviazione standard dei cluster rosso e verde come per due specie fluorofore definite indipendenti, per semplicità di elaborazione (e impossibilità di separare i due o più contributi all'emissione verde con i dati a disposizione). La varianza sull'acquisizione verde risulterà molto maggiore per questo motivo, e richiederà una gestione particolare (si fa riferimento alla sezione~\ref{sec:errore_statistico_sui_fasori}). 
 
 
 %___________________________________________________________________
 
 \subsubsection{Risultati numerici}
 
-In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore "verde" e "rossa", nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.
+In seguito, è stato calcolato il rapporto di concentrazione delle due specie fluorofore \textit{verde} e \textit{rossa}, nel fasore medio delle due regioni selezionate. A questo scopo è stato utilizzato il procedimento sviluppato e collaudato nella sezione \ref{sec:verifica_del_rapporto_di_concentrazione}: proiezione del fasore medio sul segmento congiungente i fasori medi rosso e verde, e rapporto di lunghezza dei due sotto-segmenti così formati.
 
 \begin{table}[h!]
 
@@ -393,7 +388,7 @@ def cloud_statistics(G, S):
 Le prime righe di codice si limitano a trasformare i \textit{dataframe} di $G$ ed $S$ in array, unirli in un'unica matrice a due colonne, ed eliminare i fasori con una o due coordinate \texttt{NaN}.\\
 Dopo aver calcolato media, matrice di covarianza e deviazione standard, viene effettuata la diagonalizzazione mediante la funzione \texttt{numpy.linalg.eigh} di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020}.
 
-Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvole: rossa, verde, e le due regioni scelte.
+Si osservano di seguito i risultati della diagonalizzazione per i quattro cluster: rosso, verde, e i due relativi alle regioni scelte.
 \begin{align*}
     \Sigma_{\text{red}} &= 10^{-4} \begin{bmatrix} 
         3.053 & -0.255 \\ 
@@ -442,10 +437,10 @@ Si osservano di seguito i risultati della diagonalizzazione per le quattro nuvol
     % \end{tabular}
 
 \noindent Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$ ($\lambda_1$ e $\lambda_2$ autovalori della matrice di covarianza), dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
-Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.0890/0.0168 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.0176/0.0112\approx 1.57$), come previsto.
+Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.089/0.017 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.018/0.011\approx 1.57$), come previsto.
 
 L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse maggiore dell'ellisse; può essere utilizzato per calcolare l'inclinazione di questa rispetto alle coordinate $(G, S)$: $\theta = \arctan(v_S / v_G)$, dove $v_S$ e $v_G$ sono le proiezioni di $v_1$ sulle coordinate cartesiane.\\
-È possibile notare da questo parametro che gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale di \textit{SHG}.
+È possibile notare da questo parametro come gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale di \textit{SHG}.
 %_________________________________________________________________________
 
 
@@ -456,7 +451,7 @@ L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse ma
 Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapporto di concentrazione delle specie fluorofore rossa e verde nelle due regioni di interesse.
 
 Invece di utilizzare la formula standard alle derivate parziali per la propagazione dell'errore, si è scelto di utilizzare una simulazione Monte Carlo.\\
-A questo proposito, sono stati generati $10000$ fasori "simulati" per ognuna delle quattro nuvole di partenza (rossa, verde, e le due zone di interesse), a partire dalla matrice di covarianza di ognuna, ricavata in precedenza con \texttt{cloud\_statistics}.\\
+A questo proposito, sono stati generati $10000$ fasori ``simulati'' per ognuno dei quattro cluster di partenza a partire dalla matrice di covarianza di ognuna, ricavata in precedenza con \texttt{cloud\_statistics}.\\
 Per la generazione, è stata utilizzata \texttt{numpy.random.default\_rng}, generatore di numeri pseudo-casuali di \textit{Numpy}, e in particolare il suo metodo \texttt{multivariate\_normal}, che permette ai dati generati di seguire una distribuzione normale multivariata.
 
 Successivamente è stato impostato un ciclo \texttt{for} che prende le componenti $i$-esime dei quattro \textit{array} contenenti i fasori simulati e calcola le frazioni di concentrazione associate per ogni iterazione.\\

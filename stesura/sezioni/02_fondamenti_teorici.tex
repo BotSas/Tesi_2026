@@ -5,14 +5,14 @@
 \begin{wrapfigure}{r}{0.5\textwidth}
     \centering
     \includegraphics[width=0.5\textwidth]{immagini/jablonski.png}
-    \caption{Diagramma di Jablonski \cite[Sez. 1.1]{mastersBookReviewPrinciples2008a}}
+    \caption{Diagramma di Jablonski \cite[Sez. 1.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}}.
     \label{fig:jablonski}
 \end{wrapfigure}
 
-La fluorescenza e la fosforescenza costituiscono le due forme di fotoluminescenza, ovvero il processo di emissione spontanea di un fotone da parte di una molecola che, in seguito all'assorbimento di radiazione elettromagnetica, si rilassa da uno stato elettronico eccitato verso lo stato fondamentale.  Le molecole in grado di produrre luminescenza sono dette \textit{fluorofori}~\cite[Sez. 1.1]{mastersBookReviewPrinciples2008a}.
+La fluorescenza e la fosforescenza costituiscono le due forme di fotoluminescenza, ovvero il processo di emissione spontanea di un fotone da parte di una molecola che, in seguito all'assorbimento di radiazione elettromagnetica, si rilassa da uno stato elettronico eccitato verso lo stato fondamentale.  Le molecole in grado di produrre luminescenza sono dette \textit{fluorofori}~\cite[Sez. 1.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.
 
-I processi fisici di assorbimento ed emissione possono essere meglio illustrati mediante un diagramma di Jablonski (immagine~\ref{fig:jablonski}), in cui sono rappresentati lo stato elettronico fondamentale di singoletto $\mathcal{S}_0$, gli stati eccitati di singoletto $\mathcal{S}_1$ e $\mathcal{S}_2$, e il primo stato eccitato di tripletto $\mathcal{T}_1$, ciascuno suddiviso nei rispettivi livelli energetici vibrazionali.\\
-A temperatura ambiente, l'assorbimento radiativo avviene quasi esclusivamente dallo stato vibrazionale fondamentale di $\mathcal{S}_0$, e promuove un elettrone a uno degli stati vibrazionali di $\mathcal{S}_1$ in modo pressoché istantaneo. Prima dell'emissione, la molecola torna nello stato vibrazionale fondamentale di $\mathcal{S}_1$ attraverso fenomeni di conversione interna non radiativi (di durata dell'ordine $\sim 10^{-12}\,\text{s}$). il tempo medio in cui la molecola rimane allo stato elettronico eccitato è detto ``tempo di vita di fluorescenza'', ed è appunto dell'ordine di $\sim10^{-9}\,\text{s}$ \cite[Sez. 1.2]{mastersBookReviewPrinciples2008a}.\\
+I processi fisici di assorbimento ed emissione possono essere meglio illustrati mediante un diagramma di Jablonski (figura~\ref{fig:jablonski}), in cui sono rappresentati lo stato elettronico fondamentale di singoletto $\mathcal{S}_0$, gli stati eccitati di singoletto $\mathcal{S}_1$ e $\mathcal{S}_2$, e il primo stato eccitato di tripletto $\mathcal{T}_1$, ciascuno suddiviso nei rispettivi livelli energetici vibrazionali.\\
+A temperatura ambiente, l'assorbimento radiativo avviene quasi esclusivamente dallo stato vibrazionale fondamentale di $\mathcal{S}_0$, e promuove un elettrone a uno degli stati vibrazionali di $\mathcal{S}_1$ in modo pressoché istantaneo. Prima dell'emissione, la molecola torna nello stato vibrazionale fondamentale di $\mathcal{S}_1$ attraverso fenomeni di conversione interna non radiativi (di durata dell'ordine di $\sim 10^{-12}\,\text{s}$). Il tempo medio in cui la molecola rimane allo stato elettronico eccitato è detto \textit{tempo di vita di fluorescenza}, ed è dell'ordine di $\sim10^{-9}\,\text{s}$ \cite[Sez. 1.2]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.\\
 
 In alternativa, esiste una piccola probabilità che le molecole nello stato elettronico $\mathcal{S}_1$ possano subire un'inversione di spin verso $\mathcal{T}_1$, uno stato di tripletto. Questo fenomeno prende il nome di \textit{intersystem crossing}, e il successivo decadimento $\mathcal{T}_1 \rightarrow \mathcal{S}_0$ dà luogo alla fosforescenza.
 
@@ -20,39 +20,38 @@ In alternativa, esiste una piccola probabilità che le molecole nello stato elet
 
 \subsection{Decadimenti di fluorescenza e FLIM}
 
-La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma dal tempo medio $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale.
+La microscopia a tempi di vita di fluorescenza (FLIM) è una tecnica di imaging spettroscopica che permette di mappare i tempi di vita delle specie fluorescenti presenti in un campione biologico. Il contrasto delle immagini ottenute, dunque, non dipende dall'intensità della fluorescenza ma appunto dal tempo medio $\tau$ che una molecola trascorre nello stato eccitato prima di tornare allo stato fondamentale.
 Se si considera una popolazione di molecole fluorofore eccitata a un istante $t=0$, tale transizione sarà descritta da un andamento esponenziale decrescente:
 \begin{equation}
     I(t) =I_0 \, e^{-t/\tau}
     \label{eq:decadimento}
 \end{equation}
 
-La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nello stimare la concentrazione del fluoroforo all'interno dei tessuti biologici. L'intensità misurata, infatti, non dipende solo dalla concentazione, ma risente di fattori complessi quali interazioni specifiche con altre molecole presenti nel campione, le fluttuazioni della sorgente di eccitazione e i fenomeni di \textit{photobleaching} \cite[Sez. 22]{mastersBookReviewPrinciples2008a}.\\ %controllare
+La microscopia di fluorescenza tradizionale presenta alcune criticità, prima tra tutte la difficoltà nello stimare la concentrazione del fluoroforo all'interno dei tessuti biologici. L'intensità misurata, infatti, non dipende solo dalla concentrazione, ma risente di fattori complessi quali interazioni specifiche con altre molecole presenti nel campione e fluttuazioni della sorgente di eccitazione.
+%\cite[Sez. 22]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.\\ %controllare
 Il tempo di vita di fluorescenza, invece, offre il vantaggio di essere intrinsecamente indipendente sia dalla concentrazione di fluoroforo che dalla lunghezza del cammino ottico \cite{bastiaensFluorescenceLifetimeImaging1999a}, aggirando completamente queste limitazioni.
-Esso risulta inoltre fortemente sensibile alle variazioni di parametri ambientali come il pH, la concentrazione ionica, e lo stato ossidativo. Dunque, un ulteriore beneficio della FLIM è la possibilità di monitorare processi biochimici che avvengono allo stato eccitato, quali il trasferimento di energia per risonanza (\textit{FRET}) \cite{bastiaensFluorescenceLifetimeImaging1999a}, oppure l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotide}) e FAD (\textit{flavin adenin dinucleotide}), due coenzimi (e fluorofori endogeni) fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.
+Esso risulta inoltre fortemente sensibile alle variazioni di parametri ambientali come il pH, la concentrazione ionica, e lo stato ossidativo. Dunque, un ulteriore beneficio della FLIM è la possibilità di monitorare processi biochimici che avvengono allo stato eccitato, quali il trasferimento di energia per risonanza (FRET) \cite{bastiaensFluorescenceLifetimeImaging1999a}, oppure l'evoluzione della concentrazione relativa di NADH (\textit{nicotinammide adenine dinucleotide}) e FAD (\textit{flavin adenin dinucleotide}), due coenzimi (e fluorofori endogeni) fondamentali nella regolazione del metabolismo cellulare \cite{huComparisonPhasorAnalysis2023}.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Tecnica di acquisizione TCSPC}
-
-L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (\textit{Time-Correlated Single Photon Counting}): il campione viene scansionato pixel per pixel sfruttando un laser pulsato a impulsi periodici e molto brevi (frequenza $\nu \sim 20\text{--}80\,\text{MHz}$, durata $\sim 10^{-12}\,\text{s}$), mentre un fotorivelatore registra i fotoni di fluorescenza emessi \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}. Per ciascun fotone rilevato viene misurato il tempo di ritardo rispetto all'impulso di eccitazione; ripetendo la misurazione per migliaia di cicli, in ogni pixel viene accumulato un istogramma dei ritardi che ricostruisce la curva di decadimento di fluorescenza descritta in (\ref{eq:decadimento}).
+L'acquisizione sperimentale di immagini FLIM avviene tipicamente mediante la tecnica TCSPC (\textit{Time-Correlated Single Photon Counting}): il campione viene scansionato pixel per pixel sfruttando un laser pulsato a impulsi periodici e molto brevi (frequenza $\nu \sim 20\text{--}80\,\text{MHz}$, durata $\sim 10^{-12}\,\text{s}$), mentre un fotorivelatore registra i fotoni di fluorescenza emessi \cite[Sez.~4.3.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}. Per ciascun fotone rilevato viene misurato il tempo di ritardo rispetto all'impulso di eccitazione; ripetendo la misurazione per migliaia di cicli, in ogni pixel viene accumulato un istogramma dei ritardi che ricostruisce la curva di decadimento di fluorescenza descritta in (\ref{eq:decadimento}).
 
 \begin{wrapfigure}{l}{0.5\textwidth}
     \centering
     \includegraphics[width=0.45\textwidth]{immagini/tcspc.png}
-    \caption{Principio del TCSPC. \textit{In alto}: impulso laser (verde) e decadimento teorico (rosso). \textit{Al centro}: singoli fotoni rilevati a diversi tempi di ritardo su $N$ cicli. \textit{In basso}: istogramma finale dei tempi di arrivo che ricostruisce la curva di decadimento. \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}.}
+    \caption{Principio del TCSPC. \textit{In alto}: impulso laser (verde) e decadimento teorico (rosso). \textit{Al centro}: singoli fotoni rilevati a diversi tempi di ritardo su $N$ cicli. \textit{In basso}: istogramma finale dei tempi di arrivo che ricostruisce la curva di decadimento. \cite[Sez.~4.3.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.}
     \label{fig:tcspc}
 \end{wrapfigure}
+
 Nel TCSPC i parametri di acquisizione vengono regolati in modo da rilevare molto meno di un fotone per impulso laser (tipicamente un fotone ogni $100$ impulsi). Ciò permette di ovviare a un limite fisico della strumentazione: dopo la misurazione di ogni fotone, l'elettronica incorre in un tempo morto durante il quale non è in grado di rilevare altri eventi. Se il tasso di conteggio fosse più elevato, l'istogramma risulterebbe sbilanciato verso tempi di vita più brevi, poiché la probabilità di emissione è massima nei primi istanti successivi all'eccitazione e verrebbe registrato sistematicamente solo il primo fotone in arrivo.
 
-\vspace{-5pt}
+%\paragraph{Elettronica di acquisizione}
+La misura del ritardo temporale tra eccitazione ed emissione è affidata a un'elettronica dedicata. Sia l'impulso laser sia il segnale del fotone rilevato passano attraverso un discriminatore a frazione costante (CFD, \textit{Constant Fraction Discriminator}), che ne individua con precisione l'istante di arrivo eliminando l'incertezza legata aa eventuali fluttuazioni di ampiezza degli impulsi. Successivamente, il primo segnale avvia un convertitore tempo-ampiezza (TAC, \textit{Time-to-Amplitude Converter}), il quale genera una rampa di tensione che cresce linearmente nel tempo fino a quando non viene interrotta dall'arrivo del secondo segnale; la tensione finale risulta così direttamente proporzionale al ritardo tra i due eventi, e viene infine tradotta in un valore numerico da un convertitore analogico-digitale (ADC, \textit{Analog-to-Digital Converter}).
 
-\paragraph{Elettronica di acquisizione}
-La misura del ritardo temporale tra eccitazione ed emissione è affidata a un'elettronica dedicata. Sia l'impulso laser sia il segnale del fotone rilevato passano attraverso un discriminatore a frazione costante (CFD, \textit{Constant Fraction Discriminator}), che ne individua con precisione l'istante di arrivo eliminando l'incertezza legata alle fluttuazioni di ampiezza degli impulsi. Successivamente, il primo segnale avvia un convertitore tempo-ampiezza (TAC, \textit{Time-to-Amplitude Converter}), il quale genera una rampa di tensione crescente linearmente nel tempo fino a quando non viene interrotta dall'arrivo del secondo segnale; la tensione finale risulta così direttamente proporzionale al ritardo tra i due eventi, e viene infine tradotta in un valore numerico da un convertitore analogico-digitale (ADC, \textit{Analog-to-Digital Converter}).
-
-Attualmente la maggior parte delle misure TCSPC viene effettuata in \textit{modalità inversa}: il segnale di emissione viene utilizzato per avviare il TAC, mentre l'impulso laser successivo lo arresta. Questa procedura è dovuta al tempo necessario al TAC per essere azzerato dopo ogni avvio: dato che nella maggior parte dei cicli non vengono rilevati fotoni, il TAC arriverebbe inutilmente a fine rampa a ogni impulso del laser. Utilizzare i rari eventi di emissione come segnale di \textit{start} permette dunque di attivare il TAC solo quando necessario, riducendo la probabilità di errore; il tempo di ritardo viene poi calcolato per differenza: $T_{\text{laser}}-t_{\text{segnale}}$ \cite[Sez.~4.3.1]{mastersBookReviewPrinciples2008a}.
+Attualmente la maggior parte delle misure TCSPC viene effettuata in \textit{modalità inversa}: il segnale di emissione viene utilizzato per avviare il TAC, mentre l'impulso laser successivo lo arresta. Questa procedura è dovuta al tempo necessario al TAC per essere azzerato dopo ogni avvio: dato che nella maggior parte dei cicli non vengono rilevati fotoni, il TAC arriverebbe inutilmente alla tensione massima a ogni impulso del laser. Utilizzare i rari eventi di emissione come segnale di \textit{start} permette dunque di attivare il TAC solo quando necessario, riducendo la probabilità di errore; il tempo di ritardo viene poi calcolato per differenza: $T_{\text{laser}}-t_{\text{segnale}}$ \cite[Sez.~4.3.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,9 +75,9 @@ Tenendo conto della normalizzazione delle frazioni $\alpha_j$ definita nell'equa
     \label{eq:tau_medio}
 \end{equation}
 
-\noindent Pertanto, qualora sia noto a priori il numero di fluorofori presenti nel campione, è possibile risalire ai valori di $\alpha_j$ e $\tau_j$ si ognuno, mediante un \textit{fit} multi-esponenziale \cite{mastersBookReviewPrinciples2008a}.
+\noindent Pertanto, qualora sia noto a priori il numero di fluorofori presenti nel campione, è possibile risalire ai valori di $\alpha_j$ e $\tau_j$ di ognuno, mediante un fit multi-esponenziale \cite{lakowiczPrinciplesFluorescenceSpectroscopy2006}.
 
-Tuttavia, l'approccio basato sul \textit{fitting} nel dominio del tempo presenta notevoli limitazioni: l'interpolazione stessa diventa computazionalmente onerosa su immagini ad alta risoluzione (dunque con un gran numero di pixel), e risulta sempre più sensibile al rumore statistico all'aumentare del numero di specie fluorofore nel campione (e dunque parametri liberi nel modello). A ciò si aggiunge la presenza della funzione di risposta strumentale (IRF, \textit{Instrument Response Function}), che introduce una distorsione temporale al segnale di intensità, rendendo necessaria una deconvoluzione per estrarre correttamente i tempi di vita nel dominio temporale (come discusso nella sezione~\ref{sec:funzione_di_risposta_dello_strumento}) \cite{huComparisonPhasorAnalysis2023}.
+Tuttavia, l'approccio basato sul \textit{fitting} nel dominio del tempo presenta notevoli limitazioni: l'interpolazione stessa diventa computazionalmente onerosa su immagini ad alta risoluzione (dunque con un gran numero di pixel), e risulta sempre più sensibile al rumore statistico all'aumentare del numero di specie fluorofore nel campione (e dunque parametri liberi nel modello). A ciò si aggiunge la presenza della funzione di risposta strumentale (IRF, \textit{Instrument Response Function}), che introduce una distorsione temporale al segnale di intensità, rendendo necessaria una deconvoluzione per estrarre correttamente i tempi di vita nel dominio del tempo (come discusso nella sezione~\ref{sec:funzione_di_risposta_dello_strumento}) \cite{huComparisonPhasorAnalysis2023}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,7 +87,7 @@ Tuttavia, l'approccio basato sul \textit{fitting} nel dominio del tempo presenta
 \section{Introduzione al metodo dei fasori}
 \label{sec:trasformazione_dei_fasori}
 
-Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei fasori, una tecnica che identifica ogni decadimento di fluorescenza mediante un singolo punto nel piano dei fasori, identificato dalle coordinate $S$ e $G$, definite dai primi due termini della trasformata di Fourier del segnale di fluorescenza: 
+Un metodo alternativo al fit multi-esponenziale è l'analisi con il \textit{metodo dei fasori}, una tecnica che identifica ogni decadimento di fluorescenza mediante un singolo punto nel piano dei fasori, identificato dalle coordinate $S$ e $G$ definite dai primi due termini della trasformata di Fourier del segnale di fluorescenza: 
 
 \begin{equation}
     G(\omega)=\frac{\int_{0}^{T}I(t)\,\cos(n \omega t)\,dt}{\int_{0}^{T}I(t)\,dt} 
@@ -97,20 +96,20 @@ Un metodo alternativo al fit multi-esponenziale è l'analisi con il metodo dei f
     \label{eq:fourier_S_G_integral}
 \end{equation}
 
-\noindent dove $\omega = 2 \pi \nu$, $\nu$ frequenza del laser \cite{mastersBookReviewPrinciples2008a}, mentre $n$ indica il numero di armonica. In questo studio verrà studiata solo la rappresentazione con $n=1$, ovvero la prima armonica.\\ % la seconda armonica permette di...
-È bene osservare che:
-\begin{itemize}
-    \item Il denominatore di $S$ e $G$ funge da normalizzazione e rappresenta fisicamente l'area totale sottesa al grafico del segnale nel dominio del tempo, ovvero l'intensità totale della fluorescenza (il numero totale di fotoni raccolti)
-    \item Il numeratore rappresenta invece la prima armonica della Trasformata di Fourier, scomposta analiticamente nella sua parte reale e immaginaria mediante l'identità di Eulero: $e^{-i\omega t} = \cos(\omega t) - i \sin(\omega t)$
+\noindent dove $\omega = 2 \pi \nu$, $\nu$ frequenza del laser \cite[Sez. 4.1.1]{lakowiczPrinciplesFluorescenceSpectroscopy2006}, mentre $n$ indica il numero di armonica. In questo studio verrà studiata solo la rappresentazione con $n=1$, ovvero la prima armonica. % la seconda armonica permette di...
+
+\noindent È bene osservare che:
+\begin{itemize}[parsep=4pt]
+    \item Il denominatore di $S$ e $G$ funge da normalizzazione e rappresenta fisicamente l'area totale sottesa al grafico del segnale nel dominio del tempo, ovvero l'intensità totale della fluorescenza (il numero totale di fotoni raccolti).
+    \item Il numeratore rappresenta invece la prima armonica della Trasformata di Fourier, scomposta analiticamente nella sua parte reale e immaginaria mediante l'identità di Eulero: $e^{-i\omega t} = \cos(\omega t) - i \sin(\omega t)$.
 \end{itemize}
 In un esperimento reale, il campione studiato viene suddiviso in pixel, e per ognuno viene raccolto il segnale di fluorescenza; in seguito viene assegnata una coppia di coordinate $(S, G)$ ad ogni decadimento.
-
 
 %__________________________________________________ 
 
 \subsection{Il semicerchio universale} %OK
 
-È possibile dimostrare analiticamente che a tutti i decadimenti mono-esponenziali puri (\ref{eq:decadimento}) corrispondono fasori che giacciono su una semicirconferenza di diametro unitario nel semipiano $S \ge 0$, nota come ``semicerchio universale'', sulla quale i tempi di vita $\tau$ variano da $\tau = 0$ nel punto $(1, 0)$ fino a tendere all'origne $(0, 0)$ per $\tau \to \infty$ (avvicinandosi a tale estremo già per $\tau \simeq T_{\text{laser}}$).\\
+È possibile dimostrare analiticamente che a tutti i decadimenti mono-esponenziali puri (equazione~\ref{eq:decadimento}) corrispondono fasori che giacciono su una semicirconferenza di diametro unitario nel semipiano $S \ge 0$, nota come \textit{semicerchio universale}, sulla quale i tempi di vita $\tau$ variano da $\tau = 0$ nel punto $(1, 0)$ fino a tendere all'origne $(0, 0)$ per $\tau \to \infty$ (avvicinandosi a tale estremo per $\tau \simeq T_{\text{laser}}$).\\
 A tale scopo, si ricava la soluzione analitica dei primi due coefficienti di Fourier di un segnale di fluorescenza mono-esponenziale:
 \[
 \begin{cases} 
@@ -128,9 +127,9 @@ Razionalizzando il denominatore e separando la componente reale ($G = \text{Re}(
     G = \frac{1}{1 + (\omega\tau)^2}\;\; , \qquad S = \frac{\omega\tau}{1 + (\omega\tau)^2}
     \label{eq:S_G_freq_domain}
 \end{equation}
-È possibile verificare che queste due equazioni definiscono una curva parametrica al variare di $\tau$ nel piano $G/S$, che corrisponde esattamente a un semicerchio di diametro unitario centrato in $(0.5, 0)$ e a valori positivi di $S$ \cite{mastersBookReviewPrinciples2008a}. Per fare ciò, è sufficiente calcolare $S^2 + G^2$, sostituendo le formule appena ricavate, e verificare che il risultato sia uguale a $G$, per otenere l'equazione di una semicirconferenza con queste caratteristiche.
+È possibile verificare che queste due equazioni definiscono una curva parametrica al variare di $\tau$ nel piano $G/S$, che corrisponde esattamente a un semicerchio di diametro unitario centrato in $(0.5, 0)$ e a valori positivi di $S$ \cite[Sez. 4.1.2]{lakowiczPrinciplesFluorescenceSpectroscopy2006}. Per fare ciò, è sufficiente calcolare $S^2 + G^2$, sostituendo le formule appena ricavate, e verificare che il risultato sia uguale a $G$, per otenere l'equazione di una semicirconferenza con queste caratteristiche.
 
-La definizione \ref{eq:S_G_freq_domain} delle coordinate fasoriali si rivela utile per la rappresentazione sul piano dei fasori di decadimenti esponenziali teorici, ovvero ``puliti'' (in assenza di rumore) e con $\tau$ noto a priori.\\
+La definizione \ref{eq:S_G_freq_domain} delle coordinate del piano dei fasori si rivela utile per la rappresentazione sul piano dei fasori di decadimenti esponenziali teorici, ovvero privi di rumore e con $\tau$ noto a priori.\\
 
 
 % da richiamare quando spiego la generazione di esponenziali singoli doppi tripli (l'ho usato per calcolare il target)
@@ -143,17 +142,17 @@ Un metodo alternativo alle coordinate cartesiane $(S, G)$ per individuare un pun
 \begin{equation*}
     G = m \cos \phi \qquad S = m \sin \phi
 \end{equation*}
-dove $m = \sqrt{G^2 + S^2}$ assume il nome di \textit{fattore di modulazione}, e $\phi = \arctan{S/G}$ rappresenta lo sfasamento del segnale di fluorescenza rispetto all'onda di eccitazione.
+dove $m=\sqrt{G^2 + S^2}$ assume il nome di \textit{fattore di modulazione}, e $\phi = \arctan{(S/G)}$ rappresenta lo sfasamento del segnale di fluorescenza rispetto all'onda di eccitazione.
 
 Sebbene non sia stata utilizzata all'interno del codice di questa trattazione, la rappresentazione polare offre un'interpretazione geometrica utile per comprendere intuitivamente le trasformazioni subite dai punti sul piano dei fasori \cite{malacridaPhasorPlotUniversal2021}:
-\begin{itemize}
+\begin{itemize}[parsep=4pt]
     \item Rotazione: una variazione dell'angolo polare ($\Delta \phi$) corrisponde a un anticipo o un ritardo fisso del segnale
     ovvero uno sfasamento dell'angolo polare.
     \item Scalatura: ad uno smorzamento di $m$ corrisponde un allargamento del profilo temporale.
 \end{itemize}
 L'esempio più consono a questo studio riguarda la deconvoluzione della IRF (\textit{Instrument Response Function}, ovvero la funzione di risposta strumentale) dal segnale totale. Come conseguenza del teorema della convoluzione, infatti, l'operazione appena descritta si trasforma in una divisione nel piano complesso \cite[Sez. 2.9.6]{oppenheim_discrete_2009}; in coordinate polari, ciò equivale esattamente a una scalatura dei moduli e a una rotazione attorno all'origine:
 \begin{equation*}
-    m_{decadimento} = m_{segnale} / m_{IRF}\;\;, \qquad \phi_{decadimento} = \phi_{segnale} - \phi_{IRF}
+    m_{\text{decadimento}} = m_{\text{segnale}} / m_{\text{IRF}}\;\;, \qquad \phi_{\text{decadimento}} = \phi_{\text{segnale}} - \phi_{\text{IRF}}
 \end{equation*}
 Per una trattazione più approfondita sulla procedura di deconvoluzione della IRF, si rimanda alla sezione \ref{sec:funzione_di_risposta_dello_strumento}.\\
 
@@ -162,11 +161,11 @@ Per una trattazione più approfondita sulla procedura di deconvoluzione della IR
 \subsection{Rappresentazione di decadimenti multi-esponenziali} %OK
 \label{sec:rappresentazione_di_decadimenti_multi_esponenziali}
 
-Si consideri un campione dove coesistono più specie fluorofore, il cui segnale di fluorescenza complessivo è dunque dato da una combinazione lineare di esponenziali puri, come mostrato nella \ref{eq:exponential_intensity}.\\
-Per la proprietà di linearità della trasformata di Fourier, anche il fasore risultante associato a un pixel avrà coordinate $(G, S)$ descritte da una combinazione lineare delle coordinate $(G_k, S_k)$ delle singole specie pure \cite{torradoLinearCombinationProperties2022}. Ricordando che l'intensità integrata di ciascuna componente esponenziale è pari a $\alpha_k \tau_k$, tali frazioni sono legate ai parametri dell'equazione (\ref{eq:exponential_intensity}) dalla relazione:
+Si consideri un campione dove coesistono più specie fluorofore, il cui segnale di fluorescenza complessivo è dunque dato da una combinazione lineare di esponenziali puri, come mostrato nell'equazione~\ref{eq:exponential_intensity}.\\
+Per la proprietà di linearità della trasformata di Fourier, anche il fasore risultante associato a un pixel avrà coordinate $(G, S)$ descritte da una combinazione lineare delle coordinate $(G_k, S_k)$ delle singole specie pure \cite{torradoLinearCombinationProperties2022}. Ricordando che l'intensità integrata di ciascuna componente esponenziale è pari a $\alpha_k\, \tau_k$, tali frazioni sono legate ai parametri dell'equazione (\ref{eq:exponential_intensity}) dalla relazione:
 
 \begin{equation}
-    G = \sum_{k} f_k G_k\;\; , \qquad S = \sum_{k} f_k S_k \qquad \text{con} \quad \sum_{k} f_k = 1
+    G = \sum_{k} f_k\, G_k\;\; , \qquad S = \sum_{k} f_k \,S_k \qquad \text{con} \quad \sum_{k} f_k = 1
     \label{eq:phasor_additivity}
 \end{equation}
 
@@ -175,15 +174,8 @@ Poiché nella definizione dei fasori (\ref{eq:fourier_S_G_integral}) le coordina
 % \begin{equation*}
 %     f_k = \frac{\alpha_k \tau_k}{\sum_j \alpha_j \tau_j} = \frac{\alpha_k \tau_k}{\tau_m}
 % \end{equation*}
-Questa proprietà di additività lineare permette di risolvere geometricamente la composizione delle miscele direttamente sul piano dei fasori \cite{torradoLinearCombinationProperties2022}:
-\paragraph{Miscele a due componenti}: il fasore misto $P$ si posiziona sempre lungo il segmento congiungente i fasori delle due specie pure $A$ e $B$. L'intensità frazionaria di ciascuna componente risulta inversamente proporzionale alla distanza dal rispettivo vertice:
-\begin{equation}
-    f_A:f_B=\overline{PB}:\overline{PA}\;\; \Rightarrow\;\; f_B=\frac{\overline{AP}}{\overline{AB}}
-    \label{eq:intens_frazionaria_B}
-\end{equation}
-$f_A$ può essere ricavata per complementarità ($f_A=1-f_B$).
+Questa proprietà di additività lineare permette di risolvere geometricamente la composizione delle miscele direttamente sul piano dei fasori \cite{torradoLinearCombinationProperties2022}, come mostrato di seguito.
 
-\paragraph{Miscele a tre componenti}: il fasore misto $P$ cade all'interno del triangolo di vertici $A$, $B$, $C$ (fasori associati alle tre specie pure). La frazione di intensità relativa di una data specie risulta proporzionale all'area del sotto-triangolo opposto al vertice.
 
 \begin{figure}[h!]
     \centering
@@ -191,15 +183,30 @@ $f_A$ può essere ricavata per complementarità ($f_A=1-f_B$).
     \begin{subfigure}[t]{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/2_comp_example.pdf}
-        \caption{Rappresentazione sul piano dei fasori di un decadimento bi-esponenziale senza aggiunta di rumore, con $f_A = 0.6$, $\tau_A=0.4\,\text{ns}$ e $f_B = 0.4$, $\tau_B=4\,\text{ns}$.}
+        \caption{Decadimento bi-esponenziale con $f_A = 0.6$, $\tau_A = 0.4\,\text{ns}$ e $f_B = 0.4$, $\tau_B = 4\,\text{ns}$.}
+        \label{fig:2_comp_example}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.49\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/3_comp_example.pdf}
-        \caption{Rappresentazione sul piano dei fasori di un decadimento tri-esponenziale senza aggiunta di rumore, con $f_A = 0.3$, $\tau_A=0.5\,\text{ns}$, $f_B = 0.5$, $\tau_B=2.5\,\text{ns}$ e $f_C= 0.2$, $\tau_C=6\,\text{ns}$.}
+        \caption{Decadimento tri-esponenziale con $f_A = 0.3$, $\tau_A = 0.5\,\text{ns}$, $f_B = 0.5$, $\tau_B = 2.5\,\text{ns}$ e $f_C = 0.2$, $\tau_C = 6\,\text{ns}$.}
+        \label{fig:3_comp_example}
     \end{subfigure}
+
+    \caption{Rappresentazione sul piano dei fasori di decadimenti multi-esponenziali simulati senza aggiunta di rumore.}
+    \label{fig:multicomp_examples}
 \end{figure}
+
+
+\paragraph{Miscele a due componenti} Il fasore misto $P$ si posiziona sempre lungo il segmento congiungente i fasori delle due specie pure $A$ e $B$. L'intensità frazionaria di ciascuna componente è inversamente proporzionale alla distanza dal rispettivo vertice:
+\begin{equation}
+    f_A:f_B=\overline{PB}:\overline{PA}\;\; \Rightarrow\;\; f_B=\frac{\overline{AP}}{\overline{AB}}
+    \label{eq:intens_frazionaria_B}
+\end{equation}
+$f_A$ può essere ricavata per complementarità ($f_A=1-f_B$).
+
+\paragraph{Miscele a tre componenti} Il fasore misto $P$ cade all'interno del triangolo di vertici $A$, $B$, $C$ (fasori associati alle tre specie pure). La frazione di intensità relativa di una data specie risulta proporzionale all'area del sotto-triangolo opposto al vertice.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -208,10 +215,10 @@ $f_A$ può essere ricavata per complementarità ($f_A=1-f_B$).
 \section{Funzione di risposta strumentale} %OK
 \label{sec:funzione_di_risposta_dello_strumento}
 
-Lo studio e la correzione della IRF costituiscono un passaggio fondamentale nell'analisi dei dati FLIM tramite metodo dei fasori. \\
+Lo studio e la correzione della IRF costituiscono un passaggio fondamentale nell'analisi dei dati FLIM tramite metodo dei fasori.\\
 Come descritto in precedenza, l'emissione di fluorescenza è indotta da un laser a impulsi periodici che eccita le molecole fluorofore presenti nel campione; i fotoni emessi da quest'ultimo vengono raccolti da un fotorivelatore e registrati da una scheda di acquisizione, che li converte in un segnale digitale.\\
 Apparati sperimentali diversi possono produrre profili di decadimento anche molto differenti tra loro, a causa delle variazioni nella larghezza temporale dell'impulso laser, nella dispersione ottica e dei tempi di risposta delle componenti elettroniche.\\
-Nonostante gli impulsi del laser siano molto brevi, la risposta complessiva dell'apparato introduce un'incertezza temporale, che in molti casi, può raggiungere ordini di grandezza paragonabili a quelli dei tempi di vita di fluorescenza oggetto di studio. Si rivela dunque necessario separare il decadimento reale dalla IRF tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.
+Nonostante gli impulsi del laser siano molto brevi, la risposta complessiva dell'apparato introduce un'incertezza temporale che, in molti casi, può raggiungere ordini di grandezza paragonabili a quelli dei tempi di vita di fluorescenza oggetto di studio. Si rivela quindi necessario separare il decadimento reale dalla IRF tramite una deconvoluzione, processo che richiede di conoscere la forma di entrambe le funzioni \cite{ranjitFitfreeAnalysisFluorescence2018}.
 
 Nel dominio del tempo, tuttavia, la misura diretta del profilo dell'IRF presenta diverse criticità sperimentali. In primo luogo, nei microscopi FLIM risulta complesso utilizzare una soluzione di scattering, poiché i filtri ottici bloccano i fotoni aventi lunghezza d'onda pari a quella di eccitazione per proteggere i rivelatori.\\
 In aggiunta a ciò, il segnale subisce una distorsione temporale (solitamente un allargamento) nell'attraversare l'obiettivo, che deve essere adeguatamente quantificata \cite{ranjitFitfreeAnalysisFluorescence2018}.\\
@@ -230,21 +237,21 @@ Il fasore del segnale sperimentale misurato $z_{\text{segnale}}$ può quindi ess
 
 \subsection{Convoluzione tra IRF e segnale di fluorescenza} %OK
 
-Per comprendere fisicamente perché la risposta strumentale e il decadimento di fluorescenza $I(t)$ si combinino tramite un'operazione di convoluzione anziché una semplice somma o moltiplicazione punto a punto, è utile ricorrere al principio di sovrapposizione lineare.\\
+Per comprendere fisicamente perché la risposta strumentale e il decadimento di fluorescenza $I(t)$ si combinino tramite un'operazione di convoluzione anziché una semplice somma o moltiplicazione punto a punto, è utile ricorrere al principio di sovrapposizione lineare.
 
-Se l'impulso di eccitazione e la risposta del rivelatore fossero istantanei (descrivibile matematicamente mediante una distribuzione \textit{Dirac-$\delta$}), tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante $t=0$, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}.
-Nella realtà, l'impulso strumentale possiede un'estensione temporale finita descritta dalla funzione IRF(t).\\
+Se l'impulso di eccitazione e la risposta del rivelatore fossero istantanei (descrivibili matematicamente mediante una distribuzione \textit{Dirac-$\delta$}), tutte le molecole di fluoroforo verrebbero eccitate nello stesso istante $t=0$, dunque avrebbero pari probabilità di decadimento al tempo \textit{t}, e si osserverebbe un decadimento di intensità di forma esponenziale decrescente \cite[Sez. 4.3.3]{lakowiczPrinciplesFluorescenceSpectroscopy2006}.
+Nella realtà, l'impulso strumentale possiede un'estensione temporale finita descritta dalla funzione $\textit{IRF}(t)$.\\
 Si immagini dunque di suddividere tale impulso in tanti istanti temporali successivi: all'istante $t_k$ l'intensità del laser sarà pari a $\textit{IRF}(t_k)$, e la frazione di molecole eccitate in tale istante inizierà a decadere seguendo la legge traslata $I(t-t_k)$ per tutti i tempi $t\ge t_k$, dove l'argomento $t-t_k$ rappresenta il tempo trascorso dall'eccitazione.\\
-Moltiplicando le due funzioni si ottiene il contributo elementare all'intensità osservata al tempo $t$ dovuto alle sole molecole eccitate all'istante $t_k$: $\textit{IRF}(t_k)I(t-t_k)$.\\
-Per ricavare l'intensità complessiva al tempo $t$, sarà quindi necessario sommare i contributi relativi a tutti gli istanti di eccitazione precedenti ($t_k\le t$) \cite[Sez. 4.3.3]{mastersBookReviewPrinciples2008a}:
+Moltiplicando le due funzioni si ottiene il contributo elementare all'intensità osservata al tempo $t$ dovuto alle sole molecole eccitate all'istante $t_k$: $\textit{IRF}(t_k)\;I(t-t_k)$.\\
+Per ricavare l'intensità complessiva al tempo $t$, sarà quindi necessario sommare i contributi relativi a tutti gli istanti di eccitazione precedenti ($t_k\le t$) \cite[Sez. 4.3.3]{lakowiczPrinciplesFluorescenceSpectroscopy2006}:
 \begin{equation}
-    I_{tot}(t) = \sum_{t_k \le t} \, \textit{IRF}(t_k) \, I(t - t_k)
+    I_{tot}(t) = \sum_{t_k \le t} \, \textit{IRF}(t_k) \; I(t - t_k)
     \label{eq:convoluzione}
 \end{equation}
 La relazione così ottenuta coincide esattamente con la definizione matematica di convoluzione discreta tra una funzione $I$ e una funzione troncata \textit{IRF}.
 \paragraph{Osservazioni sull'implementazione}
 \begin{itemize}
-    \item Nel codice sviluppato in questo studio, il calcolo della convoluzione tra decadimento di fluorescenza e IRF non viene eseguito valutando direttamente la sommatoria nel dominio del tempo (\ref{eq:convoluzione}), bensì adoperando una definizione operativa che fa uso della Trasformata di Fourier Veloce (FFT). Per ulteriori approfondimenti si fa riferimento alla sezione \ref{sec:generazione_dei_segnali} (generazione dei segnali).
+    \item Nel codice sviluppato in questo studio, il calcolo della convoluzione tra decadimento di fluorescenza e IRF non viene eseguito valutando direttamente la sommatoria nel dominio del tempo (equazione~\ref{eq:convoluzione}), bensì adottando una definizione operativa che fa uso della \textit{Trasformata di Fourier veloce} (FFT). Per ulteriori approfondimenti si fa riferimento alla sezione~\ref{sec:generazione_dei_segnali} (generazione dei segnali).
     \item Dato che l'acquisizione sperimentale avviene raggruppando i fotoni rilevati in \textit{bin} di larghezza pre-determinata $\Delta t$, sarebbe necessario pesare ogni contributo \textit{k}-esimo per questo fattore. Nell'implementazione operativa tale costante moltiplicativa viene inglobata dalla normalizzazione rispetto al numero totale di conteggi.
 \end{itemize}
 

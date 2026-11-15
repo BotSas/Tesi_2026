@@ -1,18 +1,20 @@
 \chapter{Simulazione di segnali} %OK
 \label{sec:sviluppo_del_modello} 
 
-La stesura del codice è articolata in due fasi fondamentali: la simulazione di segnali di decadimento (e la relativa analisi) e lo studio di dataset sperimentali reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
-Questo primo capitolo si concentra sulla prima fase: la generazione di segnali e la validazione degli algoritmi di analisi, impiegati nello studio delle  immagini in un secondo momento.
+La stesura del codice\footnote{Il codice sorgente sviluppato per questo lavoro di tesi è disponibile nella seguente repository Github: \url{https://github.com/BotSas/Tesi_2026}.} è articolata in due fasi fondamentali: la simulazione di segnali di decadimento (e la relativa analisi) e lo studio di dataset sperimentali reali, acquisite tramite tecniche di microscopia a fluorescenza.\\
+Questo capitolo si concentra sulla prima fase: la generazione di segnali e la validazione degli algoritmi di analisi, impiegati nello studio delle  immagini in un secondo momento.
+
+
 
 
 \section{Generazione dei segnali} %OK
 \label{sec:generazione_dei_segnali}
 
-\subsection{Decadimenti singoli e rappresentazione sul piano dei fasori} %OK
+\subsection{Decadimenti mono-esponenziali e rappresentazione sul piano dei fasori} %OK
 
-Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale, i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata.\\
+Per riprodurre numericamente un'acquisizione TCSPC relativa a un decadimento mono-esponenziale, i tempi di arrivo dei singoli fotoni sono stati generati campionando una distribuzione esponenziale di parametro $\tau$ tramite il generatore pseudocasuale di \textit{Numpy} (\texttt{np.random.exponential}) \cite{harrisArrayProgrammingNumPy2020}. Per includere la periodicità del laser di eccitazione (di periodo $T_{\text{laser}}=12.5\,\text{ns}$ dunque $\nu_{\text{laser}}=80\,\text{MHz}$), è stato implementato un algoritmo di \textit{wrap-around}: ai tempi è stato applicato l'operatore modulo $T_\text{laser}$, che fa sì che il ritardo dei decadimenti con $t\ge T_{\text{laser}}$ venga calcolato rispetto all'impulso successivo; gli eventi sono poi stati raggruppati in un istogramma con \textit{bin} di larghezza fissata.
+
 La correttezza dell'algoritmo di generazione è stata verificata stimando il parametro $\tau$ attraverso un fit con il metodo della \textit{Binned Negative Log Likelihood} (facendo uso della libreria \textit{iMinuit}~\cite{jamesMinuitSystemFunction1975}).
-
 \begin{figure}[h!]
 
     \centering
@@ -47,8 +49,7 @@ La correttezza dell'algoritmo di generazione è stata verificata stimando il par
 
 
 \end{table}
-
-Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori:
+Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori mediante la funzione \texttt{phasor\_calc} riportata di seguito.
 
 %anche LavenderBlush preme (OldLace, Ivory, Lavender)
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
@@ -61,7 +62,7 @@ def phasor_calc (n, harm_n = 1):
 
     return G, S
 \end{minted}
-Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate fasoriali: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali; quando si calcola la Trasformata di Fourier discreta su un campione di \textit{N} eventi, vengono generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della Trasformata, la seconda metà di questa lista di numeri risulta ridondante in quanto complesso coniugato della prima metà ($\textit{Im}\left[z\right] = 0 \Rightarrow z^* = z$). L'uso di \texttt{rfft} calcola unicamente le frequenze non negative, dimezzando il costo computazionale.
+Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate $(G, S)$: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali; quando si calcola la Trasformata di Fourier discreta su un campione di \textit{N} eventi, vengono generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della Trasformata, la seconda metà di questa lista di numeri risulta ridondante in quanto complesso coniugato della prima metà ($\textit{Im}\left[z\right] = 0 \Rightarrow z^* = z$). L'uso di \texttt{rfft} calcola unicamente le frequenze non negative, dimezzando il costo computazionale.
 
 
 %_______________________________________________________________________________________
@@ -75,31 +76,30 @@ Sebbene l'incertezza intrinseca nel conteggio di pochi fotoni (\textit{shot nois
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/noise_none_example.pdf}
-        \caption{}
+        \caption{$\text{SNR} = 15\,\text{dB}$.}
         \label{fig:noise_examples_a}
     \end{subfigure}
     
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/noise_10_example.pdf}
-        \caption{}
+        \caption{$\text{SNR} = 8\,\text{dB}$.}
         \label{fig:noise_examples_b}
     \end{subfigure}
     
     \begin{subfigure}{\linewidth}
         \centering
         \includegraphics[width=\linewidth]{immagini/noise_20_example.pdf}
-        \caption{}
+        \caption{$\text{SNR} = 2\,\text{dB}$.}
         \label{fig:noise_examples_c}
     \end{subfigure}
-    \caption{Esempi di decadimento a singola esponenziale per diversi valori di SNR:
-    (a) 15 dB, (b) 8 dB e (c) 2 dB.}
+    \caption{Esempi di decadimento a singola esponenziale ($\tau = 4\,\text{ns}$, $N=20000$) per diversi valori di SNR.}
     \label{fig:noise_examples}
 \end{figure}
 
 \subsubsection{Osservazioni}
 Osservando le immagini \ref{fig:noise_examples}, risulta evidente come una diminuzione del rapporto segnale-rumore comporti uno spostamento sistematico del fasore relativo al decadimento verso l'interno del semicerchio, in particolare verso l'origine.\\
-Al diminuire del \textit{signal-noise ratio} le fluttuazioni gaussiane diventano più ampie, dunque il numero di \textit{bin} che finisce per contenere un conteggio negativo aumenta. Questi \textit{bin}, tuttavia, vengono azzerati tramite \textit{clipping}, in quanto privi di senso fisico. L'effetto finale è quindi quello di un fondo piatto positivo, non correlato con la frequenza di modulazione del laser; il fasore puro corrispondente a questo fondo cade dunque nell'origine. Di conseguenza, il fondo agisce come una specie aggiuntiva, spostando il segnale verso l'origine.
+Al diminuire del \textit{signal-noise ratio} le fluttuazioni gaussiane diventano più ampie, dunque il numero di \textit{bin} che finisce per contenere un conteggio negativo aumenta. Questi \textit{bin}, tuttavia, vengono azzerati tramite \textit{clipping}, in quanto privi di senso fisico. L'effetto finale è quindi quello di un fondo piatto positivo, non correlato con la frequenza di modulazione del laser; il fasore puro corrispondente a questo fondo cade dunque nell'origine. Di conseguenza, il fondo agisce come una specie aggiuntiva, spostando il segnale verso l'origine~\cite{lanzanoEncodingDecodingSpatiotemporal2015}.
 
 Da questo punto in avanti della trattazione, qualsiasi segnale simulato (non estratto da un'immagine reale) includerà un contributo di rumore gaussiano generato con la stessa procedura. Il valore di \textit{SNR} sarà specificato nella didascalia.\\
 
@@ -177,7 +177,7 @@ da cui si ricava per complementarietà $f_A = 1 - f_B$.
 %________________________________________________________________________________
 
 \subsubsection{Decadimento a triplo esponenziale}
-Per le miscele a tre componenti, la frazione corrispondente a ciascun fluoroforo è stata ottenuta determinando l'area del sotto-triangolo individuato dal fasore misto $P$ e dai tre verici puri $A$, $B$, $C$. Ogni area è stata ricavata analiticamente mediante la formula dell'area di Gauss (o \textit{shoelace formula}):
+Per le miscele a tre componenti, la frazione corrispondente a ciascun fluoroforo è stata ottenuta determinando l'area del sotto-triangolo individuato dal fasore misto $P$ e dai tre vertici puri $A$, $B$, $C$. Ogni area è stata ricavata analiticamente mediante la formula dell'area di Gauss (o \textit{shoelace formula}):
 \begin{equation}
     \mathcal{A} = \frac{1}{2}\left|\,\sum_{i=1}^{n}\,(G_{i}\,S_{i+1}-G_{i+1}\,S_{i})\,\right|
     \label{eq:shoelace_formula}
@@ -188,7 +188,7 @@ Infine viene effettuata una divisione tra l'area di ciascun sotto-triangolo e l'
 %__________________________________________________________________________
 
 \subsubsection{Risultati}
-I segnali simulati a doppio e triplo esponenziale mostrati nelle immagini \ref{fig:double_decay}, \ref{fig:triple_decay} sono stati rappresentati sul piano dei fasori, estraendo le coordinate del fasore misto $P$ e quelle degli esponenziali singoli associati alle specie pure. Sfruttando gli algoritmi presentati, sono state stimate le intensità frazionarie e confrontate con i valori teorici decisi a priori per la generazione dei segnali.
+I segnali a doppio e triplo esponenziale generati sono stati proiettati sul piano dei fasori (immagini~\ref{fig:double_decay},~\ref{fig:triple_decay}), dove sono state estratte le coordinate del fasore misto $P$ e quelle degli esponenziali singoli associati alle specie pure. Sfruttando gli algoritmi presentati, sono state stimate le intensità frazionarie e confrontate con i valori teorici decisi a priori per la generazione dei segnali.
 \begin{table}[h!]
 
     \centering
@@ -221,7 +221,7 @@ I risultati riportati nella tabella~\ref{tab:rapporti_23_exp} mostrano un ottimo
 \label{sec:generazione_analisi_IRF}
 
 Come già affrontato nella sezione \ref{sec:funzione_di_risposta_dello_strumento}, un segnale FLIM reale è dato dalla convoluzione temporale tra la funzione di risposta strumentale e il segnale di decadimento vero e proprio.\\
-Per simulare dati di acquisizione realistici è stato dunque necessario modellizzare una IRF di forma gausiana. Operativamente, viene impiegata la stessa griglia di \textit{bin} temporali utilizzata per i decadimenti, sulla quale viene generato un profilo gaussiano:
+Per simulare dati di acquisizione realistici è stato dunque necessario modellizzare una IRF di forma gaussiana. Operativamente, viene impiegata la stessa griglia di \textit{bin} temporali utilizzata per i decadimenti, sulla quale viene generato un profilo gaussiano:
 \begin{equation*}
     \text{IRF}(t) \propto \exp\left(-\frac{(t - \mu)^2}{2\sigma^2}\right)
 \end{equation*}
@@ -274,7 +274,7 @@ La differenza sostanziale sta in come avviene la traslazione di $I(t)$ (segnale 
 \label{sec:deconvoluzione}
 Per rappresentare correttamente il decadimento sul piano dei fasori, è necessario effettuare un'operazione di deconvoluzione che separi il segnale di fluorescenza dal contributo della IRF. A causa della presenza del rumore aggiunto in fase di simulazione, i fasori deconvoluti non coincideranno esattamente con quelli teorici calcolati prima della convoluzione.
 
-Come discusso nella sezione teorica, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale: la deconvoluzione si ricuce dunque a una divisione tra numeri complessi nel piano dei fasori:
+Come discusso nella sezione teorica, si è sfruttata la proprietà \ref{eq:convoluzione_fasori} per la separazione dei fasori relativi alle due componenti di segnale: la deconvoluzione si riduce dunque a una divisione tra numeri complessi nel piano dei fasori:
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def phasor_deconv(G_meas, S_meas, G_irf, S_irf): 
  
@@ -288,7 +288,7 @@ def phasor_deconv(G_meas, S_meas, G_irf, S_irf):
     return G_deconvol, S_deconvol
 \end{minted}   
 
-\begin{figure}[h!]
+\begin{figure}[!t]
     \centering
     \includegraphics[width=0.7\textwidth]{immagini/IRF_single_ph.pdf}
     \caption{Rappresentazione sul piano dei fasori di un segnale a esponenziale singolo convoluto con IRF. Sono rappresentati i fasori della IRF e del decadimento puro. SNR$ = 20\,\text{dB}$.}
@@ -308,7 +308,7 @@ La stessa procedura di convoluzione e successiva deconvoluzione è stata applica
 Il procedimento di generazione del segnale è stato eseguito come descritto nella sezione~\ref{sec:generazione_di_decadimenti_a_exp_multipli}; dopodiché sono state eseguite la convoluzione con la IRF e l'aggiunta del rumore tramite la funzione~\texttt{simulation\_with\_IRF}, descritta nella sezione~\ref{sec:convoluzione_con_la_IRF}.
 Calcolati i fasori del segnale misurato della miscela e della IRF, è stata eseguita la deconvoluzione tramite la funzione \texttt{phasor\_deconv} (presentata nella sezione \ref{sec:deconvoluzione}), ottenendo il fasore corrispondente al segnale di decadimento (figura~\ref{fig:irf_double_decay_ph}).
 
-\begin{figure}[h!]
+\begin{figure}[!t]
     \centering
     \includegraphics[width=0.7\textwidth]{immagini/IRF_three_ph.pdf}
     \caption{Rappresentazione di un segnale a esponenziale doppio convoluto con IRF. Sono rappresentati i fasori della IRF e i decadimenti puri. SNR$ = 20\,\text{dB}$.}
@@ -316,7 +316,7 @@ Calcolati i fasori del segnale misurato della miscela e della IRF, è stata eseg
 \end{figure}
 
 Si riporta nella tabella~\ref{tab:rapporti_concentrazione_IRF} il confronto del rapporto tra le intensità frazionarie impostate nelle simulazioni e quello ricavato dal piano dei fasori dopo la deconvoluzione.
-\begin{table}[h!]
+\begin{table}[!t]
     \centering
     \setlength{\tabcolsep}{8pt}
     \begin{tabular}{cc}

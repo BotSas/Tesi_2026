@@ -19,54 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{mastersBookReviewPrinciples2008a}{article}{}
-      \name{author}{1}{}{%
-        {{hash=7e3f66e1ea483434321029e016c34b49}{%
-           family={Joseph\bibnamedelimb R.\bibnamedelimi Lakowicz},
-           familyi={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim L\bibinitperiod},
-           given={Barry\bibnamedelima R.},
-           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{7e3f66e1ea483434321029e016c34b49}
-      \strng{fullhash}{7e3f66e1ea483434321029e016c34b49}
-      \strng{bibnamehash}{7e3f66e1ea483434321029e016c34b49}
-      \strng{authorbibnamehash}{7e3f66e1ea483434321029e016c34b49}
-      \strng{authornamehash}{7e3f66e1ea483434321029e016c34b49}
-      \strng{authorfullhash}{7e3f66e1ea483434321029e016c34b49}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{This PDF file contains the editorial “Principles of Fluorescence Spectroscopy, Third Edition” for JBO Vol. 13 Issue 02}
-      \field{day}{1}
-      \field{issn}{1083-3668, 1560-2281}
-      \field{journaltitle}{Journal of Biomedical Optics}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{02}
-      \field{shortjournal}{J. Biomed. Opt.}
-      \field{shorttitle}{Book {{Review}}}
-      \field{title}{Book {{Review}}: {{Principles}} of {{Fluorescence Spectroscopy}}, {{Third Edition}}}
-      \field{urlday}{9}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{13}
-      \field{year}{2008}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1117/1.2904580
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/C97KXBBZ/Joseph R. Lakowicz - 2008 - Book Review Principles of Fluorescence Spectroscopy, Third Edition.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
-      \endverb
-      \verb{url}
-      \verb https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-13/issue-02/029901/Book-Review-Principles-of-Fluorescence-Spectroscopy-Third-Edition/10.1117/1.2904580.full
-      \endverb
-    \endentry
     \entry{bastiaensFluorescenceLifetimeImaging1999a}{article}{}
       \name{author}{6}{}{%
         {{hash=34705e4e20e09c3666ed1a173e076505}{%
@@ -109,8 +61,8 @@
       \strng{authorbibnamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
       \strng{authornamehash}{4c4c6d2f45d2d1243f7bebf80c42615f}
       \strng{authorfullhash}{f83fe4f4e013c5855a3018bf92ba394d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{day}{1}
@@ -183,8 +135,8 @@
       \strng{authorbibnamehash}{8eba3ef001fff43c7f7d681e006bb24b}
       \strng{authornamehash}{8eba3ef001fff43c7f7d681e006bb24b}
       \strng{authorfullhash}{dbdeb4d292e0ba399640215c52751846}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Introduction: Autofluorescence imaging of the coenzymes reduced nicotinamide (phosphate) dinucleotide (NAD(P)H) and oxidized flavin adenine dinucleotide (FAD) provides a label-free method to detect cellular metabolism and phenotypes. Time-domain fluorescence lifetime data can be analyzed by exponential decay fitting to extract fluorescence lifetimes or by a fit-free phasor transformation to compute phasor coordinates. Methods: Here, fluorescence lifetime data analysis by biexponential decay curve fitting is compared with phasor coordinate analysis as input data to machine learning models to predict cell phenotypes. Glycolysis and oxidative phosphorylation of MCF7 breast cancer cells were chemically inhibited with 2-deoxy-d-glucose and sodium cyanide, respectively; and fluorescence lifetime images of NAD(P)H and FAD were obtained using a multiphoton microscope. Results: Machine learning algorithms built from either the extracted lifetime values or phasor coordinates predict MCF7 metabolism with a high accuracy (∼88\%). Similarly, fluorescence lifetime images of M0, M1, and M2 macrophages were acquired and analyzed by decay fitting and phasor analysis. Machine learning models trained with features from curve fitting discriminate different macrophage phenotypes with improved performance over models trained using only phasor coordinates. Discussion: Altogether, the results demonstrate that both curve fitting and phasor analysis of autofluorescence lifetime images can be used in machine learning models for classification of cell phenotype from the lifetime data.}
@@ -341,8 +293,8 @@
       \strng{authorbibnamehash}{e39fee53d5eef107b9af19db4c3dcb66}
       \strng{authornamehash}{e39fee53d5eef107b9af19db4c3dcb66}
       \strng{authorfullhash}{e39fee53d5eef107b9af19db4c3dcb66}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The phasor approach to fluorescence lifetime imaging, and more recently hyperspectral fluorescence imaging, has increased the use of these techniques, and improved the ease and intuitiveness of the data analysis. The fit-free nature of the phasor plots increases the speed of the analysis and reduces the dimensionality, optimization of data handling and storage. The reciprocity principle between the real and imaginary space—where the phasor and the pixel that the phasor originated from are linked and can be converted from one another—has helped the expansion of this method. The phasor coordinates calculated from a pixel, where multiple fluorescent species are present, depends on the phasor positions of those components. The relative positions are governed by the linear combination properties of the phasor space. According to this principle, the phasor position of a pixel with multiple components lies inside the polygon whose vertices are occupied by the phasor positions of these individual components and the distance between the image phasor to any of the vertices is inversely proportional to the fractional intensity contribution of that component to the total fluorescence from that image pixel. The higher the fractional intensity contribution of a vertex, the closer is the resultant phasor. The linear additivity in the phasor space can be exploited to obtain the fractional intensity contribution from multiple species and quantify their contribution. This review details the various mathematical models that can be used to obtain two/three/four components from phasor space with known phasor signatures and then how to obtain both the fractional intensities and phasor positions without any prior knowledge of either, assuming they are mono-exponential in nature. We note that other than for blind components, there are no restrictions on the type of the decay or their phasor positions for linear combinations to be valid—and they are applicable to complicated fluorescence lifetime decays from components with intensity decays described by multi-exponentials.}
@@ -631,8 +583,8 @@
       \strng{authorbibnamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authornamehash}{f89ddc4197de0ff1e52e970514beb377}
       \strng{authorfullhash}{f89ddc4197de0ff1e52e970514beb377}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00104655}
@@ -659,6 +611,80 @@
       \endverb
       \verb{url}
       \verb https://linkinghub.elsevier.com/retrieve/pii/0010465575900399
+      \endverb
+    \endentry
+    \entry{lanzanoEncodingDecodingSpatiotemporal2015}{article}{}
+      \name{author}{6}{}{%
+        {{hash=81d8b18471085921a63c7ce2bca84a09}{%
+           family={Lanzanò},
+           familyi={L\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a4d89c76b71f8b811ffc22539f692d3e}{%
+           family={Coto\bibnamedelima Hernández},
+           familyi={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Iván},
+           giveni={I\bibinitperiod}}}%
+        {{hash=9b2d9e8c991184f453abe23708d91df7}{%
+           family={Castello},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=aed32bc9542b0814aa555a05c11274ac}{%
+           family={Gratton},
+           familyi={G\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c56cffcd1717df458099ff77df05d2a1}{%
+           family={Diaspro},
+           familyi={D\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0658098ac445e91e4b0c72ecf4a05cf2}{%
+           family={Vicidomini},
+           familyi={V\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{00f1ecdf26e52331e61760ca35639432}
+      \strng{fullhash}{e6851ddd566356b584092e637af6b38b}
+      \strng{bibnamehash}{00f1ecdf26e52331e61760ca35639432}
+      \strng{authorbibnamehash}{00f1ecdf26e52331e61760ca35639432}
+      \strng{authornamehash}{00f1ecdf26e52331e61760ca35639432}
+      \strng{authorfullhash}{e6851ddd566356b584092e637af6b38b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract The challenge of increasing the spatial resolution of an optical microscope beyond the diffraction limit can be reduced to a spectroscopy task by proper manipulation of the molecular states. The nanoscale spatial distribution of the molecules inside the detection volume of a scanning microscope can be encoded within the fluorescence dynamics and decoded by resolving the signal into its dynamics components. Here we present a robust and general method to decode this information using phasor analysis. As an example of the application of this method, we optically generate spatially controlled gradients in the fluorescence lifetime by stimulated emission. Spatial resolution can be increased indefinitely by increasing the number of resolved dynamics components up to a maximum determined by the amount of noise. We demonstrate that the proposed method provides nanoscale imaging of subcellular structures, opening new routes in super-resolution microscopy based on the encoding/decoding of spatial information through manipulation of molecular dynamics.}
+      \field{day}{2}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Encoding and Decoding Spatio-Temporal Information for Super-Resolution Microscopy}
+      \field{urlday}{11}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6701}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms7701
+      \endverb
+      \verb{file}
+      \verb /home/aras/Zotero/storage/KUYAP2FL/Lanzanò et al. - 2015 - Encoding and decoding spatio-temporal information for super-resolution microscopy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/ncomms7701
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/ncomms7701
       \endverb
     \endentry
     \entry{gottliebFLUTEPythonGUI2023a}{article}{}
@@ -729,62 +755,6 @@
       \endverb
       \keyw{Data visualization,FLIM,fluorescence lifetime microscopy,phasor analysis,Python}
     \endentry
-    \entry{hoyerXarrayNDLabeled2017}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4a22828b76006f42d747b699d2ef5167}{%
-           family={Hoyer},
-           familyi={H\bibinitperiod},
-           given={Stephan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=f0b7a9acbfd82a66cfeb3e4871c7f8e5}{%
-           family={Hamman},
-           familyi={H\bibinitperiod},
-           given={Joe},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f05fde17715c233356bf18743764aeac}
-      \strng{fullhash}{f05fde17715c233356bf18743764aeac}
-      \strng{bibnamehash}{f05fde17715c233356bf18743764aeac}
-      \strng{authorbibnamehash}{f05fde17715c233356bf18743764aeac}
-      \strng{authornamehash}{f05fde17715c233356bf18743764aeac}
-      \strng{authorfullhash}{f05fde17715c233356bf18743764aeac}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{xarray is an open source project and Python package that provides a toolkit and data structures for N-dimensional labeled arrays. Our approach combines an application programing interface (API) inspired by pandas with the Common Data Model for self-described scientific data. Key features of the xarray package include label-based indexing and arithmetic, interoperability with the core scientific Python packages (e.g., pandas, NumPy, Matplotlib), out-of-core computation on datasets that don’t fit into memory, a wide range of serialization and input/output (I/O) options, and advanced multi-dimensional data manipulation tools such as group-by and resampling. xarray, as a data model and analytics toolkit, has been widely adopted in the geoscience community but is also used more broadly for multi-dimensional data analysis in physics, machine learning and finance.}
-      \field{day}{5}
-      \field{hour}{0}
-      \field{issn}{2049-9647}
-      \field{journaltitle}{Journal of Open Research Software}
-      \field{langid}{english}
-      \field{minute}{0}
-      \field{month}{4}
-      \field{number}{1}
-      \field{second}{0}
-      \field{shorttitle}{Xarray}
-      \field{timezone}{Z}
-      \field{title}{Xarray: {{N-D}} Labeled {{Arrays}} and {{Datasets}} in {{Python}}}
-      \field{urlday}{17}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{volume}{5}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.5334/jors.148
-      \endverb
-      \verb{file}
-      \verb /home/aras/Zotero/storage/9D3S9Q6Q/Hoyer and Hamman - 2017 - xarray N-D labeled Arrays and Datasets in Python.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
-      \endverb
-      \verb{url}
-      \verb https://openresearchsoftware.metajnl.com/articles/10.5334/jors.148
-      \endverb
-    \endentry
     \entry{christophgohlkePhasorpyPhasorpyV0122026}{software}{}
       \name{author}{5}{}{%
         {{hash=52e2684c111b194e1f15fa06b0ce4544}{%
@@ -847,52 +817,6 @@
       \verb{url}
       \verb https://zenodo.org/doi/10.5281/zenodo.13862586
       \endverb
-    \endentry
-    \entry{thepandasdevelopmentteamPandasdevPandasPandas2026}{software}{}
-      \name{author}{1}{}{%
-        {{hash=9a1f9219d00cef023c61c6fd71576d04}{%
-           family={team},
-           familyi={t\bibinitperiod},
-           given={The},
-           giveni={T\bibinitperiod},
-           prefix={pandas\bibnamedelima development},
-           prefixi={p\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Zenodo}%
-      }
-      \strng{namehash}{9a1f9219d00cef023c61c6fd71576d04}
-      \strng{fullhash}{9a1f9219d00cef023c61c6fd71576d04}
-      \strng{bibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
-      \strng{authorbibnamehash}{9a1f9219d00cef023c61c6fd71576d04}
-      \strng{authornamehash}{9a1f9219d00cef023c61c6fd71576d04}
-      \strng{authorfullhash}{9a1f9219d00cef023c61c6fd71576d04}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Pandas is a powerful data structures for data analysis, time series, and statistics.}
-      \field{day}{22}
-      \field{month}{10}
-      \field{shorttitle}{Pandas-Dev/Pandas}
-      \field{title}{Pandas-Dev/Pandas: {{Pandas}}}
-      \field{urlday}{30}
-      \field{urlmonth}{10}
-      \field{urlyear}{2026}
-      \field{version}{v3.1.0}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.5281/ZENODO.3509134
-      \endverb
-      \verb{urlraw}
-      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
-      \endverb
-      \verb{url}
-      \verb https://zenodo.org/doi/10.5281/zenodo.3509134
-      \endverb
-      \keyw{alignment,data analysis,data science,flexible,pandas,python}
     \endentry
     \entry{claytonGraphicalRepresentationMulticomponent2004}{article}{}
       \name{author}{3}{}{%
@@ -1001,6 +925,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{lakowiczPrinciplesFluorescenceSpectroscopy2006}
 \endrefsection
 \endinput
 
