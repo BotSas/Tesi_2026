@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{lakowiczPrinciplesFluorescenceSpectroscopy2006}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b86c8be1b6c46f7d4c8b0c6956236e75}{%
+           family={Lakowicz},
+           familyi={L\bibinitperiod},
+           given={Joseph\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{fullhash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{bibnamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authorbibnamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authornamehash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \strng{authorfullhash}{b86c8be1b6c46f7d4c8b0c6956236e75}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{978-0-387-31278-1}
+      \field{title}{Principles of Fluorescence Spectroscopy}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-0-387-46312-4
+      \endverb
+    \endentry
     \entry{bastiaensFluorescenceLifetimeImaging1999a}{article}{}
       \name{author}{6}{}{%
         {{hash=34705e4e20e09c3666ed1a173e076505}{%
@@ -925,7 +958,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{lakowiczPrinciplesFluorescenceSpectroscopy2006}
 \endrefsection
 \endinput
 

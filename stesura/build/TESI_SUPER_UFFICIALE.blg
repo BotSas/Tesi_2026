@@ -1,17 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'build/TESI_SUPER_UFFICIALE.blg'
-[44] biber:340> INFO - === Sun Nov 15, 2026, 21:12:59
-[54] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
-[100] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
-[109] Biber.pm:4419> INFO - Processing section 0
-[115] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[120] bibtex.pm:1713> INFO - LaTeX decoding ...
-[166] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[284] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[284] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[284] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
-[284] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[293] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
-[299] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
-[300] Biber.pm:131> WARN - I didn't find a database entry for 'lakowiczPrinciplesFluorescenceSpectroscopy2006' (section 0)
-[300] Biber.pm:133> INFO - WARNINGS: 1
+[59] biber:340> INFO - === Sun Nov 15, 2026, 21:25:36
+[69] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
+[123] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
+[132] Biber.pm:4419> INFO - Processing section 0
+[141] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[147] bibtex.pm:1713> INFO - LaTeX decoding ...
+[194] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[323] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[323] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[324] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[324] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[333] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
+[340] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
