@@ -45,4 +45,4 @@
 \contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{38}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{40}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Interfaccia grafica interattiva}{42}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{44}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{45}{chapter.6}%

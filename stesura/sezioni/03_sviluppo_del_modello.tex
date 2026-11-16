@@ -62,7 +62,7 @@ def phasor_calc (n, harm_n = 1):
 
     return G, S
 \end{minted}
-Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate $(G, S)$: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali; quando si calcola la Trasformata di Fourier discreta su un campione di \textit{N} eventi, vengono generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della Trasformata, la seconda metà di questa lista di numeri risulta ridondante in quanto complesso coniugato della prima metà ($\textit{Im}\left[z\right] = 0 \Rightarrow z^* = z$). L'uso di \texttt{rfft} calcola unicamente le frequenze non negative, dimezzando il costo computazionale.
+Si noti l'utilizzo della \texttt{rfft} (\textit{Real Fast Fourier Transform}) di \textit{Numpy} \cite{harrisArrayProgrammingNumPy2020} per il calcolo delle coordinate $(G,\, S)$: il segnale studiato è un segnale fisico, dunque costituito da numeri puramente reali; quando si calcola la Trasformata di Fourier discreta su un campione di \textit{N} eventi, vengono generati \textit{N} numeri complessi. A causa della simmetria Hermitiana della Trasformata, la seconda metà di questa lista di numeri risulta ridondante in quanto complesso coniugato della prima metà ($\textit{Im}\left[z\right] = 0 \Rightarrow z^* = z$). L'uso di \texttt{rfft} calcola unicamente le frequenze non negative, dimezzando il costo computazionale.
 
 
 %_______________________________________________________________________________________

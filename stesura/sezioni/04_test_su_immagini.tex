@@ -21,6 +21,7 @@ Ogni immagine è esportata come file \textit{tiff}, e riporta il numero di foton
         \centering
         \includegraphics[width=\linewidth]{immagini/flat_embryo5.png}
         \caption{Immagine 2 - embrione di Zebrafish a circa 5 giorni dalla fecondazione.}
+        \label{fig:zebra5}
     \end{subfigure}
     \caption{Rappresentazione ``appiattita'' dei due campioni, dove il colore di ogni pixel dipende dall'emissione totale, indipendentemente dalla forma del decadimento.}
 \end{figure}
@@ -91,7 +92,7 @@ Tuttavia, lo studio di questi fasori nel suo insieme non fornisce un'analisi par
 \subsection{Filtro \textit{"median"} sul piano dei fasori}
 
 Raccolte dati con un numero ridotto di fotoni per acquisizione sono più soggette a una tipologia di errore statistico detto "\textit{shot noise}", un rumore Poissoniano dovuto alla natura discreta dei fotoni.\\
-Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi. Per ridurre la dispersione spaziale dei fasori, è stato applicato all'immagine un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, funzione importata da \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}. Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.
+Questo rumore ha ordine di grandezza $1/\sqrt{N}$, $N$ numero di eventi per bin, dunque tende a ridursi all'aumentare del numero di eventi. Per ridurre la dispersione spaziale dei fasori, è stato applicato all'immagine un filtro median, mediante \texttt{phasorpy.phasor\_filter\_median}, funzione importata da \textit{PhasorPy} \cite{christophgohlkePhasorpyPhasorpyV0122026}. Questa funzione agisce scorrendo sulle due matrici composte rispettivamente dalle coordinate $(G,\, S)$ di ogni pixel dell'immagine originale, e assegnando a ogni pixel la coordinata mediana in un quadrato di lato determinato dal parametro \texttt{size} della funzione, e centrato nel pixel stesso.
 % \cite{Davide :)}.% grazie Davide
 
 La funzione è definita \textit{NaN-aware}: per un pixel con intensità non nulla, i pixel vuoti vengono ignorati per il calcolo della mediana per evitare di "affievolire" artificiosamente il segnale sui bordi dell'immagine o di una struttura del campione. Tuttavia vengono preservati come \texttt{NaN} (\textit{Not a Number}, ovvero pixel privi di conteggi validi) i pixel che erano precedentemente stati considerati vuoti. In questo modo, non vengono introdotti fasori "nuovi", ovvero decadimenti relativi a rapporti di concentrazione non esistenti \cite{christophgohlkePhasorpyPhasorpyV0122026}.
@@ -105,7 +106,7 @@ La funzione è definita \textit{NaN-aware}: per un pixel con intensità non null
 \end{figure}
 
 \vspace{-10pt}
-È opportuno precisare le ragioni per cui il filtro median spaziale sulle matrici $(G, S)$ rappresenta uno standard nell'analisi fasoriale, sostituendo filtri di \textit{smoothing} sull'immagine, i quali agiscono tramite una maschera mobile che scorre sull'immagine e assegna al pixel centrale la media dei decadimenti adiacenti.
+È opportuno precisare le ragioni per cui il filtro median spaziale sulle matrici $(G,\, S)$ rappresenta uno standard nell'analisi fasoriale, sostituendo filtri di \textit{smoothing} sull'immagine, i quali agiscono tramite una maschera mobile che scorre sull'immagine e assegna al pixel centrale la media dei decadimenti adiacenti.
 
 Un filtro a media mobile, scorrendo sul confine tra due regioni con decadimenti a tempi di vita diversi, assegnerebbe ai pixel intermedi segnali fittizi, ottenuti mescolando artificialmente due segnali reali differenti.\\
 Al contrario, in tali regioni un filtro mediano si limiterebbe a selezionare un valore realmente esistente all'interno della maschera; come conseguenza, i bordi vengono resi più nitidi e gli \textit{outlier} causati dal rumore vengono eliminati. Grazie all'additività delle coordinate fasoriali (\ref{eq:phasor_additivity}), il calcolo della mediana non altera il punto medio della distribuzione, dunque le relazioni geometriche lineari (come segmenti e aree dei triangoli), necessarie per la scomposizione in specie fluorofore, vengono conservate  \cite{ranjitFitfreeAnalysisFluorescence2018}.
@@ -117,7 +118,7 @@ Inoltre, il filtro mediano può essere applicato iterativamente più volte (attr
 \subsection{Selezione della regione di interesse}
 
 Esiste una relazione bidirezionale tra i pixel dell'immagine nel dominio spaziale e i punti sul piano dei fasori, nota come ``principio di reciprocità'' \cite{ranjitFitfreeAnalysisFluorescence2018}.
-È utlile dunque implementare nel codice uno strumento che sfrutti questa proprietà, permettendo di selezionare ed evidenziare la corrispondente distribuzione di fasori sul piano $(G, S)$.
+È utlile dunque implementare nel codice uno strumento che sfrutti questa proprietà, permettendo di selezionare ed evidenziare la corrispondente distribuzione di fasori sul piano $(G,\, S)$.
 
 % Si è voluto inoltre lavorare sulla selezione di regioni sull'immagine nel dominio temporale, per ottenere i corrispondenti fasori; in questo modo, sarà possibile ottenere informazioni sulla differente composizione delle regioni, o mostrare in quali parti di tessuto hanno luogo interazioni o processi in grado di alterare il processo di fluorescenza.\\
 
@@ -219,7 +220,7 @@ Osservando la distribuzione dei fasori ottenuta per l'immagine 1 (Figura \ref{fi
 
 \section{Immagine 2 - Decadimenti multi-esponenziali}
 
-Il secondo \textit{dataset}, acquisito con tecniche di microscopia a due fotoni di lunghezze d'onda nel vicino infrarosso, fornisce dati sufficienti per condurre un'analisi più dettagliata.
+Il secondo \textit{dataset} (immagine~\ref{fig:zebra5}), acquisito con tecniche di microscopia a due fotoni di lunghezze d'onda nel vicino infrarosso, fornisce dati sufficienti per condurre un'analisi più dettagliata.
 
 Nonostante il campione non sia stato trattato con fluorofori esogeni, la distribuzione globale dei fasori mostra una forma allungata (Figura \ref{fig:embryo5_IRF}); ciò suggerisce che i segnali dei singoli pixel possano essere considerati come decadimenti bi-esponenziali, quindi combinazioni lineari di due componenti.\\
 Inoltre, la presenza di due acquisizioni aggiuntive ottenute tramite filtri di emissione colorati (rosso, $\lambda_{\textit{red}} = 607\,\mathrm{nm}$ e verde, $\lambda_{\textit{red}} = 550\,\mathrm{nm}$), permette di isolare due popolazioni diverse di specie fluorofore, che possono essere utilizzate come riferimenti per stimare il contributo relativo delle due emissioni nelle varie regioni dell'embrione.
@@ -307,7 +308,7 @@ I decadimenti dei pixel presenti nelle due regioni sono stati trasposti sul pian
 % nella caption: repeat = 2, incertezze trattate in seguito, viene mostrata la posizione in relazione alle nuvole totali (sullo sfondo chiare).
 
 
-Nella figura \ref{fig:embryo5_IRF_redgreen} è possibile osservare come i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
+Nella figura \ref{fig:embryo5_IRF_redgreen} è possibile osservare come i fasori relativi all'acquisizione con filtro verde tendono ad accumularsi vicino al punto del piano dei fasori di coordinate $(G,\, S)=(1, 0)$, che corrisponde a decadimenti istantanei ($\tau=0$). Ciò implica che la radiazione verde che viene sondata con questa acquisizione sia un'emissione \textit{SHG} e non fluorescenza.\\
 Quest'ipotesi è avvalorata dal fatto che la lunghezza d'onda di eccitazione ($\lambda_{ecc}= 1100\;\text{nm}$) sia esattamente il doppio della lunghezza d'onda filtrata ($\lambda_{verde}= 550\;\text{nm}$); questo rientra perfettamente nella modalità operativa della microscopia a due fotoni.
 
 % Inoltre, questo spiegherebbe l'utilizzo di amido per la calibrazione.\\
@@ -413,7 +414,7 @@ Si osservano di seguito i risultati della diagonalizzazione per i quattro cluste
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{l c c c c}
         \toprule
-        \textbf{Dataset} & \textbf{Media $(G, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
+        \textbf{Dataset} & \textbf{Media $(G,\, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
         \midrule
         \textbf{Red} & $(0.632,\; 0.457)$ & $0.018$ & $0.011$ & $171.9^\circ$ \\
         \textbf{Green} & $(0.953,\; 0.062)$ & $0.089$ & $0.017$ & $136.7^\circ$ \\
@@ -439,7 +440,7 @@ Si osservano di seguito i risultati della diagonalizzazione per i quattro cluste
 \noindent Il rapporto tra lunghezza di asse maggiore e minore dell'ellisse, ottenuti come $a_{maj} = \sqrt{\lambda_1}$ e $a_{min} = \sqrt{\lambda_2}$ ($\lambda_1$ e $\lambda_2$ autovalori della matrice di covarianza), dà un'idea del rapporto tra errore dato dalla separazione delle specie fluorofore e \textit{shot noise}. Più questo rapporto è alto, più la nuvola è ellittica.\\
 Si può osservare dalla tabella \ref{tab:pca_summary} che l'ellitticità delle specie a emissione verde ($0.089/0.017 \approx 5.30$) è molto maggiore di quella della specie rossa ($0.018/0.011\approx 1.57$), come previsto.
 
-L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse maggiore dell'ellisse; può essere utilizzato per calcolare l'inclinazione di questa rispetto alle coordinate $(G, S)$: $\theta = \arctan(v_S / v_G)$, dove $v_S$ e $v_G$ sono le proiezioni di $v_1$ sulle coordinate cartesiane.\\
+L'autovettore $v_1$ della matrice di covarianza indica la direzione dell'asse maggiore dell'ellisse; può essere utilizzato per calcolare l'inclinazione di questa rispetto alle coordinate $(G,\, S)$: $\theta = \arctan(v_S / v_G)$, dove $v_S$ e $v_G$ sono le proiezioni di $v_1$ sulle coordinate cartesiane.\\
 È possibile notare da questo parametro come gli assi della nuvola rossa siano quasi paralleli agli assi cartesiani ($171.90°\approx180°$), confermando ancora una volta come il filtro rosso blocchi quasi completamente il segnale di \textit{SHG}.
 %_________________________________________________________________________
 

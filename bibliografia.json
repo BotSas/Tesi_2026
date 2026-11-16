@@ -2008,6 +2008,38 @@
       "select": "zotero://select/library/items/VPCP8RLT"
     },
     {
+      "key": "IL4WETEW",
+      "version": 0,
+      "itemType": "book",
+      "title": "Principles of fluorescence spectroscopy",
+      "date": "2006",
+      "DOI": "10.1007/978-0-387-46312-4",
+      "citationKey": "lakowiczPrinciplesFluorescenceSpectroscopy2006",
+      "publisher": "Springer",
+      "place": "Boston, MA",
+      "ISBN": "978-0-387-31278-1",
+      "edition": "3",
+      "creators": [
+        {
+          "firstName": "Joseph R.",
+          "lastName": "Lakowicz",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [],
+      "relations": {},
+      "dateAdded": "2026-11-15T19:19:20Z",
+      "dateModified": "2026-11-15T19:19:20Z",
+      "uri": "http://zotero.org/users/local/0gkItI9k/items/IL4WETEW",
+      "itemID": 266,
+      "attachments": [],
+      "notes": [],
+      "autoJournalAbbreviation": "",
+      "itemKey": "IL4WETEW",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/IL4WETEW"
+    },
+    {
       "key": "Y3QVXITT",
       "version": 0,
       "itemType": "journalArticle",

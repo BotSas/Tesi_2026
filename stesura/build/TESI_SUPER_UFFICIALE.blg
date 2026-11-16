@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'build/TESI_SUPER_UFFICIALE.blg'
-[59] biber:340> INFO - === Sun Nov 15, 2026, 21:25:36
-[69] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
-[123] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
-[132] Biber.pm:4419> INFO - Processing section 0
-[141] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[147] bibtex.pm:1713> INFO - LaTeX decoding ...
-[194] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[323] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[323] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
-[324] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
-[324] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
-[333] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
-[340] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
+[107] biber:340> INFO - === Mon Nov 16, 2026, 00:55:01
+[124] Biber.pm:419> INFO - Reading 'build/TESI_SUPER_UFFICIALE.bcf'
+[198] Biber.pm:979> INFO - Found 14 citekeys in bib section 0
+[213] Biber.pm:4419> INFO - Processing section 0
+[224] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[233] bibtex.pm:1713> INFO - LaTeX decoding ...
+[296] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[497] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[497] UCollate.pm:68> INFO - Overriding locale 'it-IT' defaults 'variable = shifted' with 'variable = non-ignorable'
+[498] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'it-IT'
+[498] Biber.pm:4245> INFO - No sort tailoring available for locale 'it-IT'
+[512] bbl.pm:660> INFO - Writing 'build/TESI_SUPER_UFFICIALE.bbl' with encoding 'UTF-8'
+[521] bbl.pm:763> INFO - Output to build/TESI_SUPER_UFFICIALE.bbl
