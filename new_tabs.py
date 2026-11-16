@@ -201,6 +201,8 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
 
         image_size = 550
 
+        max_counts = float(np.nanmax(flat_image)) if np.nanmax(flat_image) > 0 else 1.0
+
         image = hv.Image(
             (np.arange(nx), np.arange(ny), flat_image.T),
             kdims=["x", "y"],
@@ -208,10 +210,10 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
         ).opts(
             cmap="magma",
             colorbar=True,
+            clim=(0, max_counts),
+            clabel="Photons",
             frame_width=image_size,
             frame_height=image_size,
-            width=image_size,
-            height=image_size,
             aspect="equal",
             tools=["tap", "hover"],
             active_tools=["tap"],
@@ -286,10 +288,10 @@ def _render_tab4(file_bytes, roi_width, median_size, threshold_pct, irf_g, irf_s
                 pn.Column(
                     hv.DynamicMap(image_with_roi, streams=[tap]),
                     # hv.DynamicMap(roi_decay, streams=[tap]),
-                    width=image_size + 80,
+                    width=image_size + 150,
                 ),
                 hv.DynamicMap(roi_phasors, streams=[tap]),
-                width=2 * image_size + 80,
+                width=2 * image_size + 200,
                 sizing_mode="fixed",
             ),
             sizing_mode="fixed",
