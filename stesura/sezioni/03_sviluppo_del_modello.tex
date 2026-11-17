@@ -50,7 +50,7 @@ La correttezza dell'algoritmo di generazione è stata verificata stimando il par
 
 \end{table}
 Successivamente, il decadimento esponenziale è stato trasformato in un punto sul piano dei fasori mediante la funzione \texttt{phasor\_calc} riportata di seguito.
-
+ 
 %anche LavenderBlush preme (OldLace, Ivory, Lavender)
 \begin{minted}[bgcolor = Beige, linenos, frame = leftline, style = manni, fontsize = \small]{python}
 def phasor_calc (n, harm_n = 1): 
@@ -295,7 +295,7 @@ def phasor_deconv(G_meas, S_meas, G_irf, S_irf):
     \label{fig:irf_sing_decay_ph}
 \end{figure}
 
-Osservando la rappresentazione sul piano dei fasori (\ref{fig:irf_sing_decay_ph}), è possibile confermare visivamente la validità \ref{eq:convoluzione_fasori}: in coordinate polari, la divisione per $z_{\text{IRF}}$ sottrae alla fase del segnale misurato un angolo $\phi_\text{IRF}$, introdotto dal ritardo strumentale, e ne modifica il modulo ($m_{\text{segnale}}=m_{\text{IRF}} \cdot m_{\text{decadimento}}$).
+Osservando la rappresentazione sul piano dei fasori (\ref{fig:irf_sing_decay_ph}), è possibile confermare visivamente la validità della~\ref{eq:convoluzione_fasori}: in coordinate polari, la divisione per $z_{\text{IRF}}$ sottrae alla fase del segnale misurato un angolo $\phi_\text{IRF}$, introdotto dal ritardo strumentale, e ne modifica il modulo ($m_{\text{segnale}}=m_{\text{IRF}} \cdot m_{\text{decadimento}}$).
 
 
 %%%%%%%5%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -307,16 +307,15 @@ La stessa procedura di convoluzione e successiva deconvoluzione è stata applica
 
 Il procedimento di generazione del segnale è stato eseguito come descritto nella sezione~\ref{sec:generazione_di_decadimenti_a_exp_multipli}; dopodiché sono state eseguite la convoluzione con la IRF e l'aggiunta del rumore tramite la funzione~\texttt{simulation\_with\_IRF}, descritta nella sezione~\ref{sec:convoluzione_con_la_IRF}.
 Calcolati i fasori del segnale misurato della miscela e della IRF, è stata eseguita la deconvoluzione tramite la funzione \texttt{phasor\_deconv} (presentata nella sezione \ref{sec:deconvoluzione}), ottenendo il fasore corrispondente al segnale di decadimento (figura~\ref{fig:irf_double_decay_ph}).
-
-\begin{figure}[!t]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{immagini/IRF_three_ph.pdf}
     \caption{Rappresentazione di un segnale a esponenziale doppio convoluto con IRF. Sono rappresentati i fasori della IRF e i decadimenti puri. SNR$ = 20\,\text{dB}$.}
     \label{fig:irf_double_decay_ph}
+    \vspace*{\fill}
 \end{figure}
-
 Si riporta nella tabella~\ref{tab:rapporti_concentrazione_IRF} il confronto del rapporto tra le intensità frazionarie impostate nelle simulazioni e quello ricavato dal piano dei fasori dopo la deconvoluzione.
-\begin{table}[!t]
+\begin{table}[h!]
     \centering
     \setlength{\tabcolsep}{8pt}
     \begin{tabular}{cc}

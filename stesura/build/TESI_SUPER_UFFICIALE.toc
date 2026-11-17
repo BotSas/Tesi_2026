@@ -1,48 +1,48 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Fondamenti teorici}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}La fluorescenza}{7}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Decadimenti di fluorescenza e FLIM}{8}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Tecnica di acquisizione TCSPC}{8}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Interpolazione multi-esponenziale dei decadimenti}{10}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Introduzione al metodo dei fasori}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Il semicerchio universale}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Definizione mediante coordinate polari}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Rappresentazione di decadimenti multi-esponenziali}{13}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {2}Fondamenti teorici}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}La fluorescenza}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Decadimenti di fluorescenza e FLIM}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Tecnica di acquisizione TCSPC}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Interpolazione multi-esponenziale dei decadimenti}{11}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Introduzione al metodo dei fasori}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Il semicerchio universale}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Definizione mediante coordinate polari}{13}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Rappresentazione di decadimenti multi-esponenziali}{14}{subsection.2.2.3}%
 \contentsline {paragraph}{Miscele a due componenti}{14}{figure.caption.4}%
-\contentsline {paragraph}{Miscele a tre componenti}{14}{equation.2.2.7}%
-\contentsline {section}{\numberline {2.3}Funzione di risposta strumentale}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Convoluzione tra IRF e segnale di fluorescenza}{15}{subsection.2.3.1}%
-\contentsline {paragraph}{Osservazioni sull'implementazione}{15}{equation.2.3.9}%
-\contentsline {chapter}{\numberline {3}Simulazione di segnali}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Generazione dei segnali}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Decadimenti mono-esponenziali e rappresentazione sul piano dei fasori}{17}{subsection.3.1.1}%
-\contentsline {subsubsection}{Generazione del rumore}{18}{table.caption.6}%
-\contentsline {subsubsection}{Osservazioni}{20}{figure.caption.7}%
-\contentsline {subsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{20}{subsection.3.1.2}%
-\contentsline {subsubsection}{Decadimento a doppio esponenziale}{20}{figure.caption.8}%
-\contentsline {subsubsection}{Decadimento a triplo esponenziale}{22}{figure.caption.8}%
-\contentsline {subsubsection}{Risultati}{22}{equation.3.1.1}%
-\contentsline {section}{\numberline {3.2}Generazione e analisi della IRF}{23}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Convoluzione con la IRF}{23}{subsection.3.2.1}%
-\contentsline {subsubsection}{Osservazioni aggiuntive}{24}{figure.caption.10}%
-\contentsline {subsection}{\numberline {3.2.2}Deconvoluzione}{25}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Decadimento a doppio esponenziale}{25}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Analisi di \textit {dataset} FLIM reali}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{28}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{29}{subsection.4.1.1}%
-\contentsline {subsubsection}{Osservazioni}{29}{figure.caption.15}%
-\contentsline {subsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{30}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Selezione della regione di interesse}{32}{subsection.4.1.3}%
-\contentsline {paragraph}{Criteri di selezione}{32}{figure.caption.17}%
-\contentsline {subsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{33}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{34}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{34}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{35}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{35}{subsection.4.2.2}%
-\contentsline {subsubsection}{Risultati numerici}{38}{figure.caption.21}%
-\contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{38}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{40}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Interfaccia grafica interattiva}{42}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusioni}{45}{chapter.6}%
+\contentsline {paragraph}{Miscele a tre componenti}{15}{equation.2.2.7}%
+\contentsline {section}{\numberline {2.3}Funzione di risposta strumentale}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Convoluzione tra IRF e segnale di fluorescenza}{16}{subsection.2.3.1}%
+\contentsline {paragraph}{Osservazioni sull'implementazione}{17}{equation.2.3.9}%
+\contentsline {chapter}{\numberline {3}Simulazione di segnali}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Generazione dei segnali}{18}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Decadimenti mono-esponenziali e rappresentazione sul piano dei fasori}{18}{subsection.3.1.1}%
+\contentsline {subsubsection}{Generazione del rumore}{19}{table.caption.6}%
+\contentsline {subsubsection}{Osservazioni}{21}{figure.caption.7}%
+\contentsline {subsection}{\numberline {3.1.2}Decadimenti a esponenziali multipli}{21}{subsection.3.1.2}%
+\contentsline {subsubsection}{Decadimento a doppio esponenziale}{22}{figure.caption.8}%
+\contentsline {subsubsection}{Decadimento a triplo esponenziale}{23}{figure.caption.8}%
+\contentsline {subsubsection}{Risultati}{23}{equation.3.1.1}%
+\contentsline {section}{\numberline {3.2}Generazione e analisi della IRF}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Convoluzione con la IRF}{24}{subsection.3.2.1}%
+\contentsline {subsubsection}{Osservazioni aggiuntive}{26}{figure.caption.10}%
+\contentsline {subsection}{\numberline {3.2.2}Deconvoluzione}{26}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Decadimento a doppio esponenziale}{27}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Analisi di \textit {dataset} FLIM reali}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Immagine 1 - elaborazione dei dati}{30}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Isolamento e deconvoluzione della IRF}{30}{subsection.4.1.1}%
+\contentsline {subsubsection}{Osservazioni}{31}{figure.caption.15}%
+\contentsline {subsection}{\numberline {4.1.2}Filtro \textit {"median"} sul piano dei fasori}{31}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Selezione della regione di interesse}{33}{subsection.4.1.3}%
+\contentsline {paragraph}{Criteri di selezione}{34}{figure.caption.17}%
+\contentsline {subsection}{\numberline {4.1.4}\textit {Thresholding} e implementazione}{34}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Osservazioni finali sull'immagine 1}{36}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Immagine 2 - Decadimenti multi-esponenziali}{36}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Estrazione della IRF e generazione di seconda armonica}{36}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Confronto tra il rapporto di fluorofori in regioni distinte}{37}{subsection.4.2.2}%
+\contentsline {subsubsection}{Risultati numerici}{39}{figure.caption.21}%
+\contentsline {subsection}{\numberline {4.2.3}Errore statistico sui fasori}{40}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Propagazione delle incertezze}{42}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Interfaccia grafica interattiva}{44}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusioni}{47}{chapter.6}%

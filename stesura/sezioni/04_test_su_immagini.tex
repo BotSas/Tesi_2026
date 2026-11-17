@@ -191,18 +191,18 @@ La selezione della regione di interesse avviene dopo il filtro median: il filtro
 
 Il \textit{thresholding}, ovvero l'esclusione dal calcolo dei fasori dei pixel con numero di fotoni insufficiente, avviene per ultimo, e include tre passaggi fondamentali:
 
-\begin{itemize}
+\begin{itemize}[itemsep = 0.5pt, topsep = 4pt]
     \item Per prima cosa, viene calcolato il valore di soglia, ovvero il numero di fotoni minimo perché un pixel venga utilizzato per il calcolo dei fasori, invece che sostituito da \texttt{NaN}. Ciò avviene moltiplicando la percentuale di soglia al conteggio massimo tra i pixel della ROI.
     Il parametro \texttt{skipna} permette di ignorare i pixel completamente vuoti, riducendo i tempi di elaborazione.
     
-    \item In seguito si utilizza la funzione importata \texttt{phasorpy.filter.\allowbreak phasor\_threshold} \cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \textit{NaN} i fasori corrispondenti a pixel che sono stati esclusi nel passaggio precedente.
+    \item Si utilizza quindi la funzione \texttt{phasorpy.filter.\allowbreak phasor\_threshold}~\cite{christophgohlkePhasorpyPhasorpyV0122026}, che prende in input le coordinate fasoriali dell'intera immagine e sostituisce con \texttt{NaN} i fasori corrispondenti a pixel che sono stati esclusi nel passaggio precedente.
     
     \item Infine, le matrici con le coordinate $S$ e $G$, oltre a \texttt{fft0} (matrice di intensità), vengono raggruppate in un unico \textit{dataframe} di \textit{Pandas}; inoltre, tramite il comando \texttt{.where(valid\_mask,\allowbreak drop = True)}, tutti i punti \texttt{NaN} vengono eliminati dagli array.
     Il comando \texttt{.ravel} invece trasforma le matrici bi-dimensionali in un array sequenziale, facendo perdere definitivamente il collegamento tra matrici delle coordinate fasoriali e posizione spaziale dei pixel.\\
     Quest'ultimo passaggio è il motivo per il quale l'eliminazione dei valori sotto soglia deve essere eseguita come ultima operazione.
 \end{itemize}  % sistemare l'italiano? boh
 
-
+\vspace{15pt}
 % inserire immagine piano fasori ROI immagine 1
 
 
@@ -223,7 +223,7 @@ Osservando la distribuzione dei fasori ottenuta per l'immagine 1 (Figura \ref{fi
 Il secondo \textit{dataset} (immagine~\ref{fig:zebra5}), acquisito con tecniche di microscopia a due fotoni di lunghezze d'onda nel vicino infrarosso, fornisce dati sufficienti per condurre un'analisi più dettagliata.
 
 Nonostante il campione non sia stato trattato con fluorofori esogeni, la distribuzione globale dei fasori mostra una forma allungata (Figura \ref{fig:embryo5_IRF}); ciò suggerisce che i segnali dei singoli pixel possano essere considerati come decadimenti bi-esponenziali, quindi combinazioni lineari di due componenti.\\
-Inoltre, la presenza di due acquisizioni aggiuntive ottenute tramite filtri di emissione colorati (rosso, $\lambda_{\textit{red}} = 607\,\mathrm{nm}$ e verde, $\lambda_{\textit{red}} = 550\,\mathrm{nm}$), permette di isolare due popolazioni diverse di specie fluorofore, che possono essere utilizzate come riferimenti per stimare il contributo relativo delle due emissioni nelle varie regioni dell'embrione.
+Inoltre, la presenza di due acquisizioni aggiuntive ottenute tramite filtri di emissione colorati (rosso, $\lambda_{\text{rosso}} = 607\,\mathrm{nm}$ e verde, $\lambda_{\text{verde}} = 550\,\mathrm{nm}$), permette di isolare due popolazioni diverse di specie fluorofore, che possono essere utilizzate come riferimenti per stimare il contributo relativo delle due emissioni nelle varie regioni dell'embrione.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -413,7 +413,7 @@ Si osservano di seguito i risultati della diagonalizzazione per i quattro cluste
     \setlength{\tabcolsep}{5pt} 
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{l c c c c}
-        \toprule
+        \toprule 
         \textbf{Dataset} & \textbf{Media $(G,\, S)$} & \textbf{Asse magg. ($a_{\text{maj}}$)} & \textbf{Asse min. ($a_{\text{min}}$)} & \textbf{Angolo ($\theta$)} \\
         \midrule
         \textbf{Red} & $(0.632,\; 0.457)$ & $0.018$ & $0.011$ & $171.9^\circ$ \\
@@ -453,7 +453,7 @@ Viene qui dimostrato come è stata ricavata l'incertezza sul calcolo del rapport
 
 Invece di utilizzare la formula standard alle derivate parziali per la propagazione dell'errore, si è scelto di utilizzare una simulazione Monte Carlo.\\
 A questo proposito, sono stati generati $10000$ fasori ``simulati'' per ognuno dei quattro cluster di partenza a partire dalla matrice di covarianza di ognuna, ricavata in precedenza con \texttt{cloud\_statistics}.\\
-Per la generazione, è stata utilizzata \texttt{numpy.random.default\_rng}, generatore di numeri pseudo-casuali di \textit{Numpy}, e in particolare il suo metodo \texttt{multivariate\_normal}, che permette ai dati generati di seguire una distribuzione normale multivariata.
+Per la generazione, è stata utilizzata \texttt{random.default\_rng}, generatore di numeri pseudo-casuali di \textit{Numpy}, e in particolare il suo metodo \texttt{multivariate\_normal}, che permette ai dati generati di seguire una distribuzione normale multivariata.
 
 Successivamente è stato impostato un ciclo \texttt{for} che prende le componenti $i$-esime dei quattro \textit{array} contenenti i fasori simulati e calcola le frazioni di concentrazione associate per ogni iterazione.\\
 La frazione è stata estratta con lo stesso procedimento utilizzato per i valori medi nella sezione \ref{sec:generazione_di_decadimenti_a_exp_multipli}.
@@ -467,5 +467,5 @@ for i in range(n_sim): # P = ROI phasor, A = red, B = green
         P = p2_sim[i], A = red_sim[i], B = green_sim[i]
     )
 \end{minted}
-È stata infine estratta la deviazione standard dai quattro \textit{array} ottenuti (\texttt{f1\_ROI1\_sims}, \texttt{f2\_ROI1\_sims}, \texttt{f1\_ROI2\_sims} e \texttt{f2\_ROI2\_sims}); quest'ultima è stata associata come incertezza statistica ai risultati calcolati nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}.
+È stata infine estratta la deviazione standard dagli \textit{array} ottenuti (\texttt{f1\_ROI1\_sims}, \texttt{f2\_ROI1\_sims}, \texttt{f1\_ROI2\_sims} e \texttt{f2\_ROI2\_sims}); quest'ultima è stata associata come incertezza statistica ai risultati calcolati nella sezione \ref{sec:confronto_tra_il_rapporto_di_fluorofori_in_regioni_distinte}.
 % metto qui la panel app? o non la inserisco proprio nella tesi?

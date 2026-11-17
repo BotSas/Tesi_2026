@@ -4,9 +4,9 @@
 %%% Preambolo del documento %%%
 % Non toccate questa roba, a meno che non siate abbastanza sgamati da sapere quello che state facendo, tipo vi piacciono di più certi pacchetti rispetto ad altri, o magari ve ne manca qualcuno.
 \documentclass[a4paper, 12pt, twoside]{report}
-\usepackage[top=2.5cm, bottom=2.5cm, inner=2.5cm, outer=2.5cm]{geometry}
+%\usepackage[top=2.5cm, bottom=2.5cm, inner=2.5cm, outer=2.5cm]{geometry}
 % da sostituire in caso di stampa fronte-retro
-%\usepackage[top=2.5cm, bottom=2.5cm, inner=4cm, outer=4cm, right=2.5cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, inner=4cm, outer=2.5cm]{geometry}
 \usepackage[utf8]{inputenc} % codifica UTF-8
 \usepackage[italian]{babel}
 \usepackage{amsmath}
@@ -124,6 +124,9 @@
   \fancyhf{}
   \fancyfoot[C]{-- \thepage\ --}
 }
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
 % FINE ROBA AGGIUNTA DA SAS ----------------------------------------------------
 
 

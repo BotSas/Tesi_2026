@@ -780,12 +780,6 @@
       \verb{file}
       \verb /home/aras/Zotero/storage/ZC8MQV4C/Gottlieb et al. - 2023 - FLUTE A Python GUI for interactive phasor analysis of FLIM data.pdf
       \endverb
-      \verb{urlraw}
-      \verb https://www.cambridge.org/core/journals/biological-imaging/article/flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data/862F290EC14187741BDA6B58E9868FA2
-      \endverb
-      \verb{url}
-      \verb https://www.cambridge.org/core/journals/biological-imaging/article/flute-a-python-gui-for-interactive-phasor-analysis-of-flim-data/862F290EC14187741BDA6B58E9868FA2
-      \endverb
       \keyw{Data visualization,FLIM,fluorescence lifetime microscopy,phasor analysis,Python}
     \endentry
     \entry{christophgohlkePhasorpyPhasorpyV0122026}{software}{}
